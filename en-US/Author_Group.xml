@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE authorgroup PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Manual_ERPNext.ent">
+%BOOK_ENTITIES;
+]>
+<authorgroup>
+	<author>
+		<firstname>William</firstname>
+		<surname>Moreno</surname>
+		<affiliation>
+			<orgname>RMS Consultores</orgname>
+			<orgdiv>Sistemas Contables</orgdiv>
+		</affiliation>
+		<email>william.moreno@rmsconsultoresnicaragua.com</email>
+	</author>
+</authorgroup>
+

@@ -1,0 +1,71 @@
+﻿<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Manual_ERPNext.ent">
+%BOOK_ENTITIES;
+]>
+<chapter id="chap-ERPNext-Manual_ERPNext-Concepts_and_Terms">
+	<title>Concepts and Terms</title>
+	<para>
+		Before you start implementation, lets get familiar with the terminology that is used and some basic concepts in ERPNext.
+	</para>
+	<section id="sect-ERPNext-Manual_ERPNext-Concepts_and_Terms-Basic_Concepts">
+		<title>Basic Concepts</title>
+		<para>
+			<emphasis role="bold">Company:</emphasis> This represents the Company records for which ERPNext is setup. With this same setup, you can create multiple Company records, each representing a different legal entity. The accounting for each Company will be different, but they will share the Customer, Supplier and Item records
+		</para>
+		<para>
+			<emphasis role="bold">Customer:</emphasis> Represents a customer. A Customer can be an individual or an organizations. You can create multiple Contacts and Addresses for each Customer.
+		</para>
+		<para>
+			<emphasis role="bold">Supplier:</emphasis> Represents a supplier of goods or services. Your telephone company is a Supplier, so is your raw materials Supplier. Again, a Supplier can be an individual or an organization and has multiple Contacts and Addresses.
+		</para>
+		<para>
+			<emphasis role="bold">Item:</emphasis> A Product, sub-product or Service that is either bought, sold or manufactured and is uniquely identified.
+		</para>
+		<para>
+			<emphasis role="bold">Account:</emphasis> An Account is a heading under which financial and business transactions are carried on. For example, “Travel Expense” is an account, “Customer Zoe”, “Supplier Mae” are accounts. ERPNext creates accounts for Customers and Suppliers automatically.
+		</para>	
+		<para>
+			<emphasis role="bold">Address:</emphasis> An address represents location details of a Customer or Supplier. These can be of different locations such as Head Office, Factory, Warehouse, Shop etc.
+		</para>
+		<para>
+			<emphasis role="bold">Contact:</emphasis> An individual Contact belongs to a Customer or Supplier or is just an independent. A Contact has a name and contact details like email and phone number.
+		</para>
+		<para>
+			<emphasis role="bold">Communication:</emphasis> A list of all Communication with a Contact or Lead. All emails sent from the system are added to the Communication table.
+		</para>
+		<para>
+			<emphasis role="bold">Price List:</emphasis> A Price List is a place where different rate plans can be stored. It’s a name you give to a set of Item Prices stored under a particular List.
+		</para>
+	</section>
+	<section id="sect-ERPNext-Manual_ERPNext-Concepts_and_Terms-Accounting">
+		<title>Accounting</title>
+		<para>
+			<emphasis role="bold">Company:</emphasis> This represents the Company records for which ERPNext is setup. With this same setup, you can create multiple Company records, each representing a different legal entity. The accounting for each Company will be different, but they will share the Customer, Supplier and Item records
+		</para>
+		<para>
+			<emphasis role="bold">Customer:</emphasis> Represents a customer. A Customer can be an individual or an organizations. You can create multiple Contacts and Addresses for each Customer.
+		</para>
+		<para>
+			<emphasis role="bold">Supplier:</emphasis> Represents a supplier of goods or services. Your telephone company is a Supplier, so is your raw materials Supplier. Again, a Supplier can be an individual or an organization and has multiple Contacts and Addresses.
+		</para>
+		<para>
+			<emphasis role="bold">Item:</emphasis> A Product, sub-product or Service that is either bought, sold or manufactured and is uniquely identified.
+		</para>
+		<para>
+			<emphasis role="bold">Account:</emphasis> An Account is a heading under which financial and business transactions are carried on. For example, “Travel Expense” is an account, “Customer Zoe”, “Supplier Mae” are accounts. ERPNext creates accounts for Customers and Suppliers automatically.
+		</para>	
+		<para>
+			<emphasis role="bold">Address:</emphasis> An address represents location details of a Customer or Supplier. These can be of different locations such as Head Office, Factory, Warehouse, Shop etc.
+		</para>
+		<para>
+			<emphasis role="bold">Contact:</emphasis> An individual Contact belongs to a Customer or Supplier or is just an independent. A Contact has a name and contact details like email and phone number.
+		</para>
+		<para>
+			<emphasis role="bold">Communication:</emphasis> A list of all Communication with a Contact or Lead. All emails sent from the system are added to the Communication table.
+		</para>
+		<para>
+			<emphasis role="bold">Price List:</emphasis> A Price List is a place where different rate plans can be stored. It’s a name you give to a set of Item Prices stored under a particular List.
+		</para>
+	</section>
+</chapter>
+
