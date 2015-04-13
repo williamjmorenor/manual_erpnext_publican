@@ -1,0 +1,20 @@
+﻿<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Manual_ERPNext.ent">
+%BOOK_ENTITIES;
+]>
+<chapter id="chap-ERPNext-Manual_ERPNext-Setting_Up">
+	<title>Setting Up</title>
+	<para>
+		Setting up an ERP system is like starting your business all over again, although in the virtual world. Thankfully it is not as hard as the real business and you get to do a trial too!
+	</para>
+	<para>
+		Implementation requires the implementer to take a step back and set aside some time to do this right. This is usually not a couple-of-hours, after-work kind of a project.
+	</para>
+	<section id="sect-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard">
+		<title>Setup Wizard</title>
+		<para>
+		The Setup Wizard helps you quickly setup your ERPnext by helping you create your company, Items, Customer, Suppliers and will also setup a basic website with this data. Here is a quick overview of the steps:
+		</para>
+	</section>
+</chapter>
+
