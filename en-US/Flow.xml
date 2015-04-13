@@ -1,0 +1,20 @@
+﻿<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Manual_ERPNext.ent">
+%BOOK_ENTITIES;
+]>
+<chapter id="chap-ERPNext-Manual_ERPNext-Flow">
+	<title>Flow Of Transactions In ERPNext</title>
+	<para>
+		This diagram covers how ERPNext tracks your company information across key functions. This diagram does not cover all the features of ERPNext.
+	</para>
+	<mediaobject>
+	<imageobject>
+		<imagedata fileref="./images/flow_overview.png" />
+	</imageobject>
+	<textobject><phrase>Flow Of Transactions In ERPNext</phrase></textobject>
+	</mediaobject>
+	<para>
+		<emphasis role="bold">Note:</emphasis><emphasis> Not all of the steps are mandatory. ERPNext allows you to freely skip steps if you want to simplify the process.</emphasis>
+	</para>
+</chapter>
+

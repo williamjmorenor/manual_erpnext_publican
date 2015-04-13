@@ -171,5 +171,29 @@
 			<emphasis role="bold">Production Planning Tool:</emphasis> A tool for automatic creation of Production Orders and Purchase Requests based on Open Sales Orders in a given period.
 		</para>
 	</section>
+	<section id="sect-ERPNext-Manual_ERPNext-Concepts_and_Terms-Setup">
+		<title>Setup / Customization</title>
+		<para>
+			<emphasis role="bold">Custom Field:</emphasis> A user defined field on a form / table.
+		</para>
+		<para>
+			<emphasis role="bold">Global Defaults:</emphasis> This is the section where you set default values for various parameters of the system.
+		</para>
+		<para>
+			<emphasis role="bold">Print Heading:</emphasis> Text of your terms of contract.
+		</para>
+		<para>
+			<emphasis role="bold">Unit of Measure (UOM:</emphasis> How quantity is measured for an Item. For example (Kg, No, Pair, Packet) etc.
+		</para>
+	</section>
+	<section id="sect-ERPNext-Manual_ERPNext-Concepts_and_Terms-Website">
+		<title>Website</title>
+		<para>
+			<emphasis role="bold">Blog Post:</emphasis> A short article that appears in the “Blog” section of the website generated from the ERPNext website module. Blog is a short from of “Web Log”.
+		</para>
+		<para>
+			<emphasis role="bold">Web Page:</emphasis> A web page with a unique URL (web address) on the website generated from ERPNext.
+		</para>
+	</section>
 </chapter>
 
