@@ -124,5 +124,37 @@
 			<emphasis role="bold">Item Group:</emphasis> A classification of Item.
 		</para>
 	</section>
+	<section id="sect-ERPNext-Manual_ERPNext-Concepts_and_Terms-Human_Resource">
+		<title>Human Resource Management</title>
+		<para>
+			<emphasis role="bold">Employee:</emphasis> Record of a person who has been in present or past, in the employment of the company.
+		</para>
+		<para>
+			<emphasis role="bold">Leave Application:</emphasis> A record of an approved or rejected request for leave.
+		</para>
+		<para>
+			<emphasis role="bold">Leave Type:</emphasis> A type of leave (for example, Sick Leave, Maternity Leave etc.)
+		</para>
+		<para>
+			<emphasis role="bold">Salary Manager:</emphasis> A tool that will help creation of multiple Salary Slips for Employees.
+		</para>
+		<para>
+			<emphasis role="bold">Salary Slip:</emphasis> A record of the monthly salary given to an Employee.
+		</para>
+		<para>
+			<emphasis role="bold">Salary Structure:</emphasis> A template identifying all the components of an Employees' salary (earnings) and tax and other social security deductions.
+		</para>
+		<para>
+			<emphasis role="bold">Appraisal:</emphasis> A record of the performance of an Employee over a specified period based on certain parameters.
+		</para>
+		<para>
+			<emphasis role="bold">Appraisal Template:</emphasis> A template recording the different parameters of Employee performance and their weightage for a particular role.
+
+
+		</para>
+		<para>
+			<emphasis role="bold">Attendance:</emphasis> A record indicating presence or absence of an Employee on a particular day.
+		</para>
+	</section>
 </chapter>
 
