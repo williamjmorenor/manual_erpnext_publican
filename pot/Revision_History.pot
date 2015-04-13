@@ -1,0 +1,25 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2015-04-12 21:23-0600\n"
+"PO-Revision-Date: 2015-04-12 21:23-0600\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"Language: en-US \n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Publican v4.2.6\n"
+
+msgid "Historia de revisiones"
+msgstr ""
+
+msgid "William"
+msgstr ""
+
+msgid "Moreno"
+msgstr ""
+
+msgid "Initial creation by publican from <ulink url=\"https://manual.erpnext.com/\">ERPNext Manual</ulink>"
+msgstr ""
+

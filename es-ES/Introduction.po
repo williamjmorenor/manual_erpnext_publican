@@ -1,0 +1,64 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2015-04-12 21:23-0600\n"
+"PO-Revision-Date: 2015-04-12 21:23-0600\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"Language: en-US \n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Publican v4.2.6\n"
+
+msgid "Introduction"
+msgstr ""
+
+msgid "If you are running a small business that has a few employees, you understand that it's hard to manage the dynamic nature of doing businesses. You are already using a software like Accounting, and may be some more to manage your inventory and sales (or CRM)."
+msgstr ""
+
+msgid "An ERP brings all of this together in one place."
+msgstr ""
+
+msgid "Small businesses are not so different from large ones. They contain most of the complexities of a large business along with many other constraints. Small businesses have to communicate with customers, do accounts, pay taxes, do payroll, manage timelines, deliver quality, answer questions, and keep everyone happy just like in large businesses."
+msgstr ""
+
+msgid "Large businesses have the advantage of using advanced data systems to manage their process efficiently. Small businesses, on the other hand, typically struggle to keep things organized. They often use a mix of apps like spreadsheets, accounting software, web CRM etc to manage.The problem is, not everyone is on the same page. An ERP changes that."
+msgstr ""
+
+msgid "ERPNext"
+msgstr ""
+
+msgid "ERPNext helps you to manage all your business information in one application and use it to manage operations and take decisions based on data. Among other things, ERPNext will help you to:"
+msgstr ""
+
+msgid "Track all Invoices and Payments."
+msgstr ""
+
+msgid "Know what quantity of which product is available in stock."
+msgstr ""
+
+msgid "Identify open customer queries."
+msgstr ""
+
+msgid "Manage payroll."
+msgstr ""
+
+msgid "Assign tasks and follow up on them."
+msgstr ""
+
+msgid "Maintain a database of all your customers, suppliers and their contacts."
+msgstr ""
+
+msgid "Prepare quotes."
+msgstr ""
+
+msgid "Get reminders on maintenance schedules."
+msgstr ""
+
+msgid "Publish your website."
+msgstr ""
+
+msgid "And a lot lot lot more."
+msgstr ""
+

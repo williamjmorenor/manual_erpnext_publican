@@ -156,5 +156,20 @@
 			<emphasis role="bold">Attendance:</emphasis> A record indicating presence or absence of an Employee on a particular day.
 		</para>
 	</section>
+	<section id="sect-ERPNext-Manual_ERPNext-Concepts_and_Terms-Manufacturing">
+		<title>Manufacturing</title>
+		<para>
+			<emphasis role="bold">Bill of Materials (BOM):</emphasis> A list of Operations and Items with their quantities, that are required to produce another Item. A Bill of Materials (BOM) is used to plan purchases and do product costing.
+		</para>
+		<para>
+			<emphasis role="bold">Workstation:</emphasis> A place where a BOM operation takes place. It is useful to calculate the direct cost of the product.
+		</para>
+		<para>
+			<emphasis role="bold">Production Order:</emphasis> A document signaling production (manufacture) of a particular Item with specified quantities.
+		</para>
+		<para>
+			<emphasis role="bold">Production Planning Tool:</emphasis> A tool for automatic creation of Production Orders and Purchase Requests based on Open Sales Orders in a given period.
+		</para>
+	</section>
 </chapter>
 
