@@ -16,5 +16,65 @@
 		The Setup Wizard helps you quickly setup your ERPnext by helping you create your company, Items, Customer, Suppliers and will also setup a basic website with this data. Here is a quick overview of the steps:
 		</para>
 	</section>
+	<section id="sect-ERPNext-Manual_ERPNext-Setting_Up-Setp_1">
+		<title>Step 1: Language</title>
+		<para>
+		Select your language. ERPNext is available in more than 20 languages.
+		</para>
+		<mediaobject>
+		<imageobject>
+		<imagedata fileref="./images/step-1.png" />
+		</imageobject>
+		<textobject><phrase>Setup - Setp 1: Language</phrase></textobject>
+		</mediaobject>
+	</section>
+	<section id="sect-ERPNext-Manual_ERPNext-Setting_Up-Setp_2">
+		<title>Step 2: Profile Details</title>
+		<para>
+		Enter Users Profile Details like Name, User ID and preferred password.
+		</para>
+		<mediaobject>
+		<imageobject>
+		<imagedata fileref="./images/step-2.png" />
+		</imageobject>
+		<textobject><phrase>Step 2: Profile Details</phrase></textobject>
+		</mediaobject>
+	</section>
+	<section id="sect-ERPNext-Manual_ERPNext-Setting_Up-Setp_3">
+		<title>Step 3: Company Details</title>
+		<para>
+		Enter Company Details like Name, Abbreviation and Financial Year Details.
+		</para>
+		<mediaobject>
+		<imageobject>
+		<imagedata fileref="./images/step-3.png" />
+		</imageobject>
+		<textobject><phrase>Step 3: Company Details</phrase></textobject>
+		</mediaobject>
+	</section>
+	<section id="sect-ERPNext-Manual_ERPNext-Setting_Up-Setp_4">
+		<title>Step 4: Currency and Timezone</title>
+		<para>
+		Set your country name, currency and timezone.
+		</para>
+		<mediaobject>
+		<imageobject>
+		<imagedata fileref="./images/step-4.png" />
+		</imageobject>
+		<textobject><phrase>Step 4: Currency and Timezone</phrase></textobject>
+		</mediaobject>
+	</section>
+	<section id="sect-ERPNext-Manual_ERPNext-Setting_Up-Setp_5">
+		<title>Step 5: Letterhead and Logo</title>
+		<para>
+		Attach Company Letterhead and Company Logo..
+		</para>
+		<mediaobject>
+		<imageobject>
+		<imagedata fileref="./images/step-5.png" />
+		</imageobject>
+		<textobject><phrase>Step 5: Letterhead and Logo</phrase></textobject>
+		</mediaobject>
+	</section>
 </chapter>
 
