@@ -117,23 +117,6 @@
 		<para>
 		<emphasis role="bold">Difference between a customer name and a contact name</emphasis> 
 		</para>
-		<para>
-		A customer name is the name of the organisation and a contact name is the name of the user who is operating the ERPNext system.
-		</para>
-		<para>
-		For Example: If American Power Mills is an organisation name and their founder Shiv Agarwal has installed ERPNext on his system. Then,
-		</para>
-		<itemizedlist>
-  		<listitem>
-   			<para><emphasis role="bold">Customer Name:</emphasis> American Power Mills</para>
-   		</listitem>
-  		<listitem>
-   			<para><emphasis role="bold">Contact Name: </emphasis> American Power Mills</para>Shiv Agarwal
-   		</listitem>
-		</itemizedlist>
-		<para>
-		To understand Customer in detail visit Customer Details
-		</para>
 	</section>
 	<section id="sect-ERPNext-Manual_ERPNext-Setting_Up-Setp_8">
 		<title>Step 8: Suppliers</title>
@@ -150,7 +133,7 @@
 		To understand Suppliers in detail visit Supplier Master
 		</para>
 	</section>
-	<section id="sect-ERPNext-Manual_ERPNext-Setting_Up-Setp_5">
+	<section id="sect-ERPNext-Manual_ERPNext-Setting_Up-Setp_9">
 		<title>Step 9: Item Names</title>
 		<para>
 		In this final step, please enter the names of the Items you buy or sell.
@@ -172,4 +155,3 @@
 		</para>
 	</section>
 </chapter>
-
