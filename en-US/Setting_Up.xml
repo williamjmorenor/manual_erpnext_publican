@@ -67,7 +67,7 @@
 	<section id="sect-ERPNext-Manual_ERPNext-Setting_Up-Setp_5">
 		<title>Step 5: Letterhead and Logo</title>
 		<para>
-		Attach Company Letterhead and Company Logo..
+		Attach Company Letterhead and Company Logo.
 		</para>
 		<mediaobject>
 		<imageobject>
@@ -75,6 +75,101 @@
 		</imageobject>
 		<textobject><phrase>Step 5: Letterhead and Logo</phrase></textobject>
 		</mediaobject>
+	</section>
+	<section id="sect-ERPNext-Manual_ERPNext-Setting_Up-Setp_6">
+		<title>Step 6: Tax Details</title>
+		<para>
+		Enter any three types of taxes which you regularly pay. This wizard will create a tax master which will calculate the taxes as per the tax-type.
+		</para>
+		<mediaobject>
+		<imageobject>
+		<imagedata fileref="./images/step-6.png" />
+		</imageobject>
+		<textobject><phrase>Step 6: Tax Details</phrase></textobject>
+		</mediaobject>
+		<para>
+		Just set the tax name and the standard percentage levied.
+		</para>		
+		<para>
+		Some examples of tax types are given below.
+		</para>
+		<para>
+		<emphasis role="bold">VAT:</emphasis> A value added tax (VAT) is a form of consumption tax. From the perspective of the buyer, it is a tax on the purchase price. From that of the seller, it is a tax only on the value added to a product, material, or a service. From an accounting point of view, by the stage of its manufacture or distribution. The manufacturer remits to the government the difference between these two amounts, and retains the rest for themselves to offset the taxes they had previously paid on the inputs.
+		</para>
+		<para>
+		The purpose of VAT is to generate tax revenues to the government similar to the corporate income tax or the personal income tax. For Example: When you shop at a departmental store and avail discount on the products, the store charges you 5% extra on the total bill as the VAT.
+		</para>
+		<para>
+		To setup VAT in the setup wizard , simply enter the percentage amount levied by your government. To setup VAT at a later stage read setting-up-taxes
+		</para>
+	</section>
+	<section id="sect-ERPNext-Manual_ERPNext-Setting_Up-Setp_7">
+		<title>Step 7: Customers</title>
+		<para>
+		Enter your Customer names and the contact person from that organisation.
+		</para>
+		<mediaobject>
+		<imageobject>
+		<imagedata fileref="./images/step-7.png" />
+		</imageobject>
+		<textobject><phrase>Step 7: Customers</phrase></textobject>
+		</mediaobject>
+		<para>
+		<emphasis role="bold">Difference between a customer name and a contact name</emphasis> 
+		</para>
+		<para>
+		A customer name is the name of the organisation and a contact name is the name of the user who is operating the ERPNext system.
+		</para>
+		<para>
+		For Example: If American Power Mills is an organisation name and their founder Shiv Agarwal has installed ERPNext on his system. Then,
+		</para>
+		<itemizedlist>
+  		<listitem>
+   			<para><emphasis role="bold">Customer Name:</emphasis> American Power Mills</para>
+   		</listitem>
+  		<listitem>
+   			<para><emphasis role="bold">Contact Name: </emphasis> American Power Mills</para>Shiv Agarwal
+   		</listitem>
+		</itemizedlist>
+		<para>
+		To understand Customer in detail visit Customer Details
+		</para>
+	</section>
+	<section id="sect-ERPNext-Manual_ERPNext-Setting_Up-Setp_8">
+		<title>Step 8: Suppliers</title>
+		<para>
+		Enter a few of your Suppliers' names.
+		</para>
+		<mediaobject>
+		<imageobject>
+		<imagedata fileref="./images/step-8.png" />
+		</imageobject>
+		<textobject><phrase>Step 8: Suppliers</phrase></textobject>
+		</mediaobject>
+		<para>
+		To understand Suppliers in detail visit Supplier Master
+		</para>
+	</section>
+	<section id="sect-ERPNext-Manual_ERPNext-Setting_Up-Setp_5">
+		<title>Step 9: Item Names</title>
+		<para>
+		In this final step, please enter the names of the Items you buy or sell.
+		</para>
+		<mediaobject>
+		<imageobject>
+		<imagedata fileref="./images/step-9.png" />
+		</imageobject>
+		<textobject><phrase>Step 9: Item Names</phrase></textobject>
+		</mediaobject>
+		<para>
+		Please set the group of the item (Product / Service) and unit of measure. Don't worry you will be able to edit all of this later.
+		</para>
+<para>
+		<emphasis role="bold">Thats it!</emphasis> 
+		</para>
+		<para>
+		Once you are done with the setup wizard you will see the familiar desktop page.
+		</para>
 	</section>
 </chapter>
 
