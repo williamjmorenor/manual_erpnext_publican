@@ -117,6 +117,20 @@
 		<para>
 		<emphasis role="bold">Difference between a customer name and a contact name</emphasis> 
 		</para>
+		<para>
+		A customer name is the name of the organisation and a contact name is the name of the user who is operating the ERPNext system. For Example: If American Power Mills is an organisation name and their founder Shiv Agarwal has installed ERPNext on his system. Then,
+		</para>
+		<itemizedlist>
+		<listitem>
+   			<para><emphasis role="bold">Customer Name:</emphasis> American Power Mills</para>
+   		</listitem>
+<listitem>
+   			<para><emphasis role="bold">Contact Name:</emphasis> Shiv Agarwal</para>
+   		</listitem>
+		</itemizedlist>
+		<para>
+		To understand Customer in detail visit Customer Details
+		</para>
 	</section>
 	<section id="sect-ERPNext-Manual_ERPNext-Setting_Up-Setp_8">
 		<title>Step 8: Suppliers</title>
