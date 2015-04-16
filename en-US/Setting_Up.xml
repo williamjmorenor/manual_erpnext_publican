@@ -10,13 +10,12 @@
 	<para>
 		Implementation requires the implementer to take a step back and set aside some time to do this right. This is usually not a couple-of-hours, after-work kind of a project.
 	</para>
-	<section id="sect-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard">
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard">
 		<title>Setup Wizard</title>
 		<para>
 		The Setup Wizard helps you quickly setup your ERPnext by helping you create your company, Items, Customer, Suppliers and will also setup a basic website with this data. Here is a quick overview of the steps:
 		</para>
-	</section>
-	<section id="sect-ERPNext-Manual_ERPNext-Setting_Up-Setp_1">
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_1">
 		<title>Step 1: Language</title>
 		<para>
 		Select your language. ERPNext is available in more than 20 languages.
@@ -27,8 +26,8 @@
 		</imageobject>
 		<textobject><phrase>Setup - Setp 1: Language</phrase></textobject>
 		</mediaobject>
-	</section>
-	<section id="sect-ERPNext-Manual_ERPNext-Setting_Up-Setp_2">
+	</sect2>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_2">
 		<title>Step 2: Profile Details</title>
 		<para>
 		Enter Users Profile Details like Name, User ID and preferred password.
@@ -39,8 +38,8 @@
 		</imageobject>
 		<textobject><phrase>Step 2: Profile Details</phrase></textobject>
 		</mediaobject>
-	</section>
-	<section id="sect-ERPNext-Manual_ERPNext-Setting_Up-Setp_3">
+	</sect2>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_3">
 		<title>Step 3: Company Details</title>
 		<para>
 		Enter Company Details like Name, Abbreviation and Financial Year Details.
@@ -51,8 +50,8 @@
 		</imageobject>
 		<textobject><phrase>Step 3: Company Details</phrase></textobject>
 		</mediaobject>
-	</section>
-	<section id="sect-ERPNext-Manual_ERPNext-Setting_Up-Setp_4">
+	</sect2>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_4">
 		<title>Step 4: Currency and Timezone</title>
 		<para>
 		Set your country name, currency and timezone.
@@ -63,8 +62,8 @@
 		</imageobject>
 		<textobject><phrase>Step 4: Currency and Timezone</phrase></textobject>
 		</mediaobject>
-	</section>
-	<section id="sect-ERPNext-Manual_ERPNext-Setting_Up-Setp_5">
+	</sect2>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_5">
 		<title>Step 5: Letterhead and Logo</title>
 		<para>
 		Attach Company Letterhead and Company Logo.
@@ -75,8 +74,8 @@
 		</imageobject>
 		<textobject><phrase>Step 5: Letterhead and Logo</phrase></textobject>
 		</mediaobject>
-	</section>
-	<section id="sect-ERPNext-Manual_ERPNext-Setting_Up-Setp_6">
+	</sect2>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_6">
 		<title>Step 6: Tax Details</title>
 		<para>
 		Enter any three types of taxes which you regularly pay. This wizard will create a tax master which will calculate the taxes as per the tax-type.
@@ -102,8 +101,8 @@
 		<para>
 		To setup VAT in the setup wizard , simply enter the percentage amount levied by your government. To setup VAT at a later stage read setting-up-taxes
 		</para>
-	</section>
-	<section id="sect-ERPNext-Manual_ERPNext-Setting_Up-Setp_7">
+	</sect2>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_7">
 		<title>Step 7: Customers</title>
 		<para>
 		Enter your Customer names and the contact person from that organisation.
@@ -131,8 +130,8 @@
 		<para>
 		To understand Customer in detail visit Customer Details
 		</para>
-	</section>
-	<section id="sect-ERPNext-Manual_ERPNext-Setting_Up-Setp_8">
+	</sect2>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_8">
 		<title>Step 8: Suppliers</title>
 		<para>
 		Enter a few of your Suppliers' names.
@@ -146,8 +145,8 @@
 		<para>
 		To understand Suppliers in detail visit Supplier Master
 		</para>
-	</section>
-	<section id="sect-ERPNext-Manual_ERPNext-Setting_Up-Setp_9">
+	</sect2>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_9">
 		<title>Step 9: Item Names</title>
 		<para>
 		In this final step, please enter the names of the Items you buy or sell.
@@ -167,5 +166,23 @@
 		<para>
 		Once you are done with the setup wizard you will see the familiar desktop page.
 		</para>
-	</section>
+	</sect2>
+	</sect1>
+	<xi:include href="Users.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="Settings.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="Data.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="Email.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="Printing.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="Taxes.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="Pos.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="Prices.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="Authorization.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="SMS.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="Stock_Reconciliation.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="Territory.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="Backups.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="Workflows.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="Bar_Code.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="Company.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 </chapter>
+

@@ -1,10 +1,10 @@
-﻿<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+﻿<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
 <!ENTITY % BOOK_ENTITIES SYSTEM "Manual_ERPNext.ent">
 %BOOK_ENTITIES;
 ]>
-<chapter id="chap-ERPNext-Manual_ERPNext-Pos">
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Pos">
 	<title>POS Setting</title>
 	<para>
 	POS Setting
 	</para>
-</chapter>
+</sect1>

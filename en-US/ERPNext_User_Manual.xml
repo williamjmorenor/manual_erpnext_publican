@@ -7,25 +7,7 @@
 	<xi:include href="Book_Info.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	<xi:include href="Preface.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	<xi:include href="Introduction.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Concepts.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Flow.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	<xi:include href="Setting_Up.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Users.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Settings.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Data.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Email.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Printing.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Taxes.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Pos.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Prices.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Authorization.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="SMS.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Stock_Reconciliation.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Territory.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Backups.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Workflows.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Bar_Code.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Company.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	<xi:include href="Revision_History.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	<index />
 </book>
