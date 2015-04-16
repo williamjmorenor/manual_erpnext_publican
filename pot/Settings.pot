@@ -11,6 +11,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Publican v4.2.6\n"
 
-msgid "Preface"
+msgid "Settings"
+msgstr ""
+
+msgid "System Settings"
+msgstr ""
+
+msgid "Show or Hide Modules"
+msgstr ""
+
+msgid "Naming Series"
+msgstr ""
+
+msgid "Global Defaults"
 msgstr ""
 

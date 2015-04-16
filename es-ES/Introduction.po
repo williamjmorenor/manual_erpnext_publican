@@ -17,11 +17,7 @@ msgid "Introduction"
 msgstr "Introducción"
 
 msgid "If you are running a small business that has a few employees, you understand that it's hard to manage the dynamic nature of doing businesses. You are already using a software like Accounting, and may be some more to manage your inventory and sales (or CRM)."
-msgstr ""
-"Si usted esta dirigiendo una pequeña empresa con pocos empleados, usted "
-"entiende que es difícil la naturaleza dinámica de hacer negocios. "
-"Posiblemente usted usar aplicaciones para contabilidad, y posiblemente "
-"algunas mas para controlar su inventario o ventas (o un CRM)."
+msgstr "Si usted esta dirigiendo una pequeña empresa con pocos empleados, usted entiende que es difícil la naturaleza dinámica de hacer negocios. Posiblemente usted usar aplicaciones para contabilidad, y posiblemente algunas mas para controlar su inventario o ventas (o un CRM)."
 
 msgid "An ERP brings all of this together in one place."
 msgstr "Un ERP proporciona todas esas funciones en un solo lugar."
@@ -67,3 +63,4 @@ msgstr ""
 
 msgid "And a lot lot lot more."
 msgstr ""
+

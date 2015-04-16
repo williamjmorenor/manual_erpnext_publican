@@ -6,7 +6,7 @@
 	 <simpara>
 		<revhistory>
 			<revision>
-				<revnumber>0.0-0.2</revnumber>
+				<revnumber>0.0-0.3</revnumber>
 				<date>Thu Apr 16 2015</date>
 				<author>
 					<firstname>William</firstname>
@@ -18,6 +18,23 @@
 						<member>Los archivos de traducción sincronizados con fuentes XML 0.0-0</member>
 					</simplelist>
 				</revdescription>
+			</revision>
+			 <revision>
+				<revnumber>0.0-0.2</revnumber>
+				 <date>Thu Apr 16 2015</date>
+				 <author>
+					<firstname>William</firstname>
+					 <surname>Moreno</surname>
+					 <email>william.moreno@rmsconsultoresnicaragua.com</email>
+				</author>
+				 <revdescription>
+					<simplelist>
+						<member>Los archivos de traducción sincronizados con fuentes XML 0.0-0</member>
+
+					</simplelist>
+
+				</revdescription>
+
 			</revision>
 			 <revision>
 				<revnumber>0.0-0.1</revnumber>

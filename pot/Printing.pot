@@ -11,6 +11,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Publican v4.2.6\n"
 
-msgid "Preface"
+msgid "Printing and Branding"
+msgstr ""
+
+msgid "Print Settings"
+msgstr ""
+
+msgid "Print Format Builder"
+msgstr ""
+
+msgid "Print Headings"
+msgstr ""
+
+msgid "Letter Heads"
+msgstr ""
+
+msgid "Address Template"
+msgstr ""
+
+msgid "Terms And Conditions"
 msgstr ""
 

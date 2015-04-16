@@ -11,6 +11,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Publican v4.2.6\n"
 
-msgid "Preface"
+msgid "Email"
+msgstr ""
+
+msgid "Email Accounts"
+msgstr ""
+
+msgid "Email Alerts"
+msgstr ""
+
+msgid "Email Digest"
+msgstr ""
+
+msgid "Sending Email from any Document"
 msgstr ""
 

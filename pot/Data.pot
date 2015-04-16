@@ -11,6 +11,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Publican v4.2.6\n"
 
-msgid "Preface"
+msgid "Data Management"
+msgstr ""
+
+msgid "Data Import Tool"
+msgstr ""
+
+msgid "Bulk Renaming of Records"
 msgstr ""
 
