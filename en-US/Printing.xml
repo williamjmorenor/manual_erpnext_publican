@@ -1,0 +1,46 @@
+﻿<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Manual_ERPNext.ent">
+%BOOK_ENTITIES;
+]>
+<chapter id="chap-ERPNext-Manual_ERPNext-Printing">
+	<title>Printing and Branding</title>
+	<para>
+	Printing and Branding
+	</para>
+	<section id="sect-ERPNext-Manual_ERPNext-Printing-Settings">
+		<title>Print Settings</title>
+		<para>
+		Print Settings
+		</para>
+	</section>
+	<section id="sect-ERPNext-Manual_ERPNext-Printing-Format">
+		<title>Print Format Builder</title>
+		<para>
+		Print Format Builder
+		</para>
+	</section>
+	<section id="sect-ERPNext-Manual_ERPNext-Printing-Headings">
+		<title>Print Headings</title>
+		<para>
+		Print Headings
+		</para>
+	</section>
+	<section id="sect-ERPNext-Manual_ERPNext-Printing-Letter">
+		<title>Letter Heads</title>
+		<para>
+		Letter Heads
+		</para>
+	</section>
+	<section id="sect-ERPNext-Manual_ERPNext-Printing-Address">
+		<title>Address Template</title>
+		<para>
+		Address Template
+		</para>
+	</section>
+	<section id="sect-ERPNext-Manual_ERPNext-Printing-Terms">
+		<title>Terms And Conditions</title>
+		<para>
+		Terms And Conditions
+		</para>
+	</section>
+</chapter>

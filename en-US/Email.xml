@@ -1,0 +1,34 @@
+﻿<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Manual_ERPNext.ent">
+%BOOK_ENTITIES;
+]>
+<chapter id="chap-ERPNext-Manual_ERPNext-Email">
+	<title>Email</title>
+	<para>
+	Email
+	</para>
+	<section id="sect-ERPNext-Manual_ERPNext-Email-Accounts">
+		<title>Email Accounts</title>
+		<para>
+		Email Accounts
+		</para>
+	</section>
+	<section id="sect-ERPNext-Manual_ERPNext-Email-Alerts">
+		<title>Email Alerts</title>
+		<para>
+		Email Alerts
+		</para>
+	</section>
+	<section id="sect-ERPNext-Manual_ERPNext-Email-Digest">
+		<title>Email Digest</title>
+		<para>
+		Email Digest
+		</para>
+	</section>
+	<section id="sect-ERPNext-Manual_ERPNext-Email-Sending">
+		<title>Sending Email from any Document</title>
+		<para>
+		Sending Email from any Document
+		</para>
+	</section>
+</chapter>

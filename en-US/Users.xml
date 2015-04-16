@@ -1,0 +1,34 @@
+﻿<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Manual_ERPNext.ent">
+%BOOK_ENTITIES;
+]>
+<chapter id="chap-ERPNext-Manual_ERPNext-Users">
+	<title>Users And Permissions</title>
+	<para>
+	Users And Permissions
+	</para>
+<section id="sect-ERPNext-Manual_ERPNext-Users-Adding">
+		<title>Adding Users</title>
+		<para>
+		Adding Users
+		</para>
+	</section>
+<section id="sect-ERPNext-Manual_ERPNext-Users-Roles">
+		<title>Role Based Permissions</title>
+		<para>
+		Role Based Permissions
+		</para>
+	</section>
+<section id="sect-ERPNext-Manual_ERPNext-Users-Permissions">
+		<title>User Permissions</title>
+		<para>
+		User Permissions
+		</para>
+	</section>
+<section id="sect-ERPNext-Manual_ERPNext-Users-Sharing">
+		<title>Sharing</title>
+		<para>
+		Sharing
+		</para>
+	</section>
+</chapter>
