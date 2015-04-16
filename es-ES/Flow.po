@@ -11,15 +11,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Publican v4.2.6\n"
 
-msgid "Historia de revisiones"
+msgid "Flow Of Transactions In ERPNext"
 msgstr ""
 
-msgid "William"
+msgid "This diagram covers how ERPNext tracks your company information across key functions. This diagram does not cover all the features of ERPNext."
 msgstr ""
 
-msgid "Moreno"
-msgstr ""
-
-msgid "Initial creation by publican from <ulink url=\"https://manual.erpnext.com/\">ERPNext Manual</ulink>"
+msgid "<emphasis role=\"bold\">Note:</emphasis><emphasis> Not all of the steps are mandatory. ERPNext allows you to freely skip steps if you want to simplify the process.</emphasis>"
 msgstr ""
 

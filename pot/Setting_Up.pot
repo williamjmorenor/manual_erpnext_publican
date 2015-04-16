@@ -1,0 +1,112 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2015-04-15 20:50-0600\n"
+"PO-Revision-Date: 2015-04-15 20:50-0600\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"Language: en-US \n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Publican v4.2.6\n"
+
+msgid "Setting Up"
+msgstr ""
+
+msgid "Setting up an ERP system is like starting your business all over again, although in the virtual world. Thankfully it is not as hard as the real business and you get to do a trial too!"
+msgstr ""
+
+msgid "Implementation requires the implementer to take a step back and set aside some time to do this right. This is usually not a couple-of-hours, after-work kind of a project."
+msgstr ""
+
+msgid "Setup Wizard"
+msgstr ""
+
+msgid "The Setup Wizard helps you quickly setup your ERPnext by helping you create your company, Items, Customer, Suppliers and will also setup a basic website with this data. Here is a quick overview of the steps:"
+msgstr ""
+
+msgid "Step 1: Language"
+msgstr ""
+
+msgid "Select your language. ERPNext is available in more than 20 languages."
+msgstr ""
+
+msgid "Step 2: Profile Details"
+msgstr ""
+
+msgid "Enter Users Profile Details like Name, User ID and preferred password."
+msgstr ""
+
+msgid "Step 3: Company Details"
+msgstr ""
+
+msgid "Enter Company Details like Name, Abbreviation and Financial Year Details."
+msgstr ""
+
+msgid "Step 4: Currency and Timezone"
+msgstr ""
+
+msgid "Set your country name, currency and timezone."
+msgstr ""
+
+msgid "Step 5: Letterhead and Logo"
+msgstr ""
+
+msgid "Attach Company Letterhead and Company Logo."
+msgstr ""
+
+msgid "Step 6: Tax Details"
+msgstr ""
+
+msgid "Enter any three types of taxes which you regularly pay. This wizard will create a tax master which will calculate the taxes as per the tax-type."
+msgstr ""
+
+msgid "Just set the tax name and the standard percentage levied."
+msgstr ""
+
+msgid "Some examples of tax types are given below."
+msgstr ""
+
+msgid "<emphasis role=\"bold\">VAT:</emphasis> A value added tax (VAT) is a form of consumption tax. From the perspective of the buyer, it is a tax on the purchase price. From that of the seller, it is a tax only on the value added to a product, material, or a service. From an accounting point of view, by the stage of its manufacture or distribution. The manufacturer remits to the government the difference between these two amounts, and retains the rest for themselves to offset the taxes they had previously paid on the inputs."
+msgstr ""
+
+msgid "The purpose of VAT is to generate tax revenues to the government similar to the corporate income tax or the personal income tax. For Example: When you shop at a departmental store and avail discount on the products, the store charges you 5% extra on the total bill as the VAT."
+msgstr ""
+
+msgid "To setup VAT in the setup wizard , simply enter the percentage amount levied by your government. To setup VAT at a later stage read setting-up-taxes"
+msgstr ""
+
+msgid "Step 7: Customers"
+msgstr ""
+
+msgid "Enter your Customer names and the contact person from that organisation."
+msgstr ""
+
+msgid "<emphasis role=\"bold\">Difference between a customer name and a contact name</emphasis>"
+msgstr ""
+
+msgid "Step 8: Suppliers"
+msgstr ""
+
+msgid "Enter a few of your Suppliers' names."
+msgstr ""
+
+msgid "To understand Suppliers in detail visit Supplier Master"
+msgstr ""
+
+msgid "Step 9: Item Names"
+msgstr ""
+
+msgid "In this final step, please enter the names of the Items you buy or sell."
+msgstr ""
+
+msgid "Please set the group of the item (Product / Service) and unit of measure. Don't worry you will be able to edit all of this later."
+msgstr ""
+
+msgid "<emphasis role=\"bold\">Thats it!</emphasis>"
+msgstr ""
+
+msgid "Once you are done with the setup wizard you will see the familiar desktop page."
+msgstr ""
+

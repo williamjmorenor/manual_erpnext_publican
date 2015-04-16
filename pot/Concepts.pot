@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2015-04-12 21:23-0600\n"
-"PO-Revision-Date: 2015-04-12 21:23-0600\n"
+"POT-Creation-Date: 2015-04-15 20:50-0600\n"
+"PO-Revision-Date: 2015-04-15 20:50-0600\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
 "Language: en-US \n"
@@ -177,5 +177,29 @@ msgid "<emphasis role=\"bold\">Production Order:</emphasis> A document signaling
 msgstr ""
 
 msgid "<emphasis role=\"bold\">Production Planning Tool:</emphasis> A tool for automatic creation of Production Orders and Purchase Requests based on Open Sales Orders in a given period."
+msgstr ""
+
+msgid "Setup / Customization"
+msgstr ""
+
+msgid "<emphasis role=\"bold\">Custom Field:</emphasis> A user defined field on a form / table."
+msgstr ""
+
+msgid "<emphasis role=\"bold\">Global Defaults:</emphasis> This is the section where you set default values for various parameters of the system."
+msgstr ""
+
+msgid "<emphasis role=\"bold\">Print Heading:</emphasis> Text of your terms of contract."
+msgstr ""
+
+msgid "<emphasis role=\"bold\">Unit of Measure (UOM:</emphasis> How quantity is measured for an Item. For example (Kg, No, Pair, Packet) etc."
+msgstr ""
+
+msgid "Website"
+msgstr ""
+
+msgid "<emphasis role=\"bold\">Blog Post:</emphasis> A short article that appears in the “Blog” section of the website generated from the ERPNext website module. Blog is a short from of “Web Log”."
+msgstr ""
+
+msgid "<emphasis role=\"bold\">Web Page:</emphasis> A web page with a unique URL (web address) on the website generated from ERPNext."
 msgstr ""
 
