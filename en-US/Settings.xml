@@ -58,18 +58,46 @@
 		You can have multiple series for all your transactions. It is common to have a separate series for each financial year. For example in Sales Invoice you could have:
 		</para>
 		<itemizedlist>
-			<listitem>INV120001</listitem>
-			<listitem>INV120002</listitem>
-			<listitem>INV-A-120002</listitem>
+			<listitem><para>INV120001</para></listitem>
+			<listitem><para>INV120002</para></listitem>
+			<listitem><para>INV-A-120002</para></listitem>
 		</itemizedlist>
 		<para>
 		etc. You could also have a separate series for each type of Customer or for each of your retail outlets.
 		</para>
+		<para>
+		<emphasis role="Bold">Managing Naming Series for Documents</emphasis>
+		</para>
+		<para>
+		To setup a series, go to:
+		</para>
+		<programlisting>
+		Setup > Tools > Update Numbering Series
+		</programlisting>
+		<para>
+		In this form:
+		</para>
+		<orderedlist>
+			<listitem><para>Select the transaction for which you want to make the series The system will update the current series in the text box.</para></listitem>
+			<listitem><para>Edit the series as required with unique prefixes for each series. Each prefix must be on a new line.</para></listitem>
+			<listitem><para>The first prefix will be the default prefix. If you want the user to explicitly select a series instead of the default one, check the “User must always select” check box.</para></listitem>
+		</orderedlist>
+		<para>You can also update the starting point of a series by entering the series name and the starting point in the “Update Series” section.</para>
 	</sect2>
 	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup-Settings-Global">
 		<title>Global Defaults</title>
 		<para>
-		Global Defaults
+		You can set default values for your documents from Global Defaults
 		</para>
+		<programlisting>
+		Setup > Settings > Global Defaults
+		</programlisting>
+		<para>Whenever a new document is created, these values will be set as default.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/global-defaults.png" />
+			</imageobject>
+			<textobject><phrase>Global Defaults</phrase></textobject>
+		</mediaobject>
 	</sect2>
 </sect1>
