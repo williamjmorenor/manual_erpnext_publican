@@ -1,0 +1,52 @@
+﻿<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Manual_ERPNext.ent">
+%BOOK_ENTITIES;
+]>
+<chapter id="chap-ERPNext-Manual_ERPNext-Collaboration">
+	<title>Collaboration Tools</title>
+	<para>
+	Text
+	</para>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Collaboration-ToDo">
+		<title>To Do</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Collaboration-Forms">
+		<title>Collaborating Around Forms</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Collaboration-Messages">
+		<title>Messages</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Collaboration-Notes">
+		<title>Notes</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Collaboration-Calendar">
+		<title>Calendar</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Collaboration-Assignment">
+		<title>Assignmet</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Collaboration-Tags">
+		<title>Tags</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+</chapter>

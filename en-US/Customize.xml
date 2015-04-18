@@ -1,0 +1,88 @@
+﻿<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Manual_ERPNext.ent">
+%BOOK_ENTITIES;
+]>
+<chapter id="chap-ERPNext-Manual_ERPNext-Customize">
+	<title>Collaboration Tools</title>
+	<para>
+	Text
+	</para>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Customize-Field">
+		<title>Custom Field</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Customize-Script">
+		<title>Custom Script</title>
+		<para>
+		Text
+		</para>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Customize-Script-Samples">
+		<title>Custom Script Examples</title>
+		<para>
+		Text
+		</para>
+			<sect3 id="sect3-ERPNext-Manual_ERPNext-Customize-Script-Samples-Values">
+			<title>Custom Script Fetch Values From Master</title>
+			<para>
+			Text
+			</para>
+			</sect3>
+			<sect3 id="sect3-ERPNext-Manual_ERPNext-Customize-Script-Samples-Date">
+			<title>Date Validation</title>
+			<para>
+			Text
+			</para>
+			</sect3>
+			<sect3 id="sect3-ERPNext-Manual_ERPNext-Customize-Script-Samples-Item_Code">
+			<title>Generate Item Code Based On Custom Logic</title>
+			<para>
+			Text
+			</para>
+			</sect3>
+			<sect3 id="sect3-ERPNext-Manual_ERPNext-Customize-Script-Samples-Read_Only">
+			<title>Make Read Only After Saving</title>
+			<para>
+			Text
+			</para>
+			</sect3>
+			<sect3 id="sect3-ERPNext-Manual_ERPNext-Customize-Script-Samples-Restrict">
+			<title>Restrict Cancel Rights</title>
+			<para>
+			Text
+			</para>
+			</sect3>
+			<sect3 id="sect3-ERPNext-Manual_ERPNext-Customize-Script-Samples-Stock">
+			<title>Restrict Purpose of Stock Entry</title>
+			<para>
+			Text
+			</para>
+			</sect3>
+			<sect3 id="sect3-ERPNext-Manual_ERPNext-Customize-Script-Samples-Child">
+			<title>Restrict User Based on Child Record</title>
+			<para>
+			Text
+			</para>
+			</sect3>
+		</sect2>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Customize-Form">
+		<title>Customize Form</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Customize-Hiding">
+		<title>Hiding Modules And Features</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Customize-Print">
+		<title>Print Format</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+</chapter>
