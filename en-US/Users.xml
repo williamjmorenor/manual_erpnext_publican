@@ -21,6 +21,16 @@
 		<programlisting>
 		Setup > User
 		</programlisting>
+		<sect3>
+		<title>List of Users</title>
+		<para>To add new user, click on "New".</para>
+		<mediaobject>
+		<imageobject>
+		<imagedata fileref="./images/user-1.png" />
+		</imageobject>
+		<textobject><phrase>Add New Image</phrase></textobject>
+		</mediaobject>
+		</sect3>
 	</sect2>
 	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Users-Roles">
 		<title>Role Based Permissions</title>
