@@ -1,0 +1,136 @@
+﻿<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Manual_ERPNext.ent">
+%BOOK_ENTITIES;
+]>
+<chapter id="chap-ERPNext-Manual_ERPNext-Accounts">
+	<title>Accounts</title>
+	<para>
+	Accounts
+	</para>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Introduction">
+		<title>Introduction to Accounting</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Sales">
+		<title>Sales</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Purchase">
+		<title>Purchase Invoice</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Payments">
+		<title>Making Payments</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Advance">
+		<title>Advance Payment Entry</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Journal">
+		<title>Journal Vouchers</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Credit">
+		<title>Credir Limit</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Openning">
+		<title>Openning Entry</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Closing">
+		<title>Closing a Financial Period</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Reports">
+		<title>Accounting Reports</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Entries">
+		<title>Accounting Entries</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Reconciliation">
+		<title>Bank Reconciliation</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Budgeting">
+		<title>Budgetting</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Chart">
+		<title>Chart Of Accounts</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Cost_Center">
+		<title>Cost Center and Budgeting</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Fiscal_Year">
+		<title>Fiscal Year</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Openning_Accounts">
+		<title>Openning Accounts</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Payment">
+		<title>Payment Tool</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Payment_Reconsiliation">
+		<title>Payment Reconciliation</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-POS">
+		<title>Point Of Sale POS Invoice</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Item">
+		<title>Item</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+</chapter>

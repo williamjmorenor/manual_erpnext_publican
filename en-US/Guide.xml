@@ -1,0 +1,221 @@
+﻿<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Manual_ERPNext.ent">
+%BOOK_ENTITIES;
+]>
+<chapter id="chap-ERPNext-Manual_ERPNext-Guide">
+	<title>Guide Books</title>
+	<para>
+	Guide Books.
+	</para>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Guide-Engineer">
+		<title>Engineer To Order</title>
+		<para>
+		Engineer To Order
+		</para>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Overview">
+			<title>Overview</title>
+			<para>
+			Overview
+			</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Setting">
+			<title>Setting Up</title>
+			<para>
+			Setting Up
+			</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Boom">
+			<title>Bill of Material</title>
+			<para>
+			BOM
+			</para>
+		</sect2>		
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Phase">
+			<title>Proposal Phase</title>
+			<para>
+			Proposal Phase
+			</para>
+		</sect2>
+
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Sales_Order">
+			<title>Sales Order</title>
+			<para>
+			Sales Order
+			</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Advance">
+			<title>Advance Payment Entry</title>
+			<para>
+			Text
+			</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Product">
+			<title>Product Planning Tool</title>
+			<para>
+			Text
+			</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Buying">
+			<title>Buying</title>
+			<para>
+			Text
+			</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Manufacturing">
+			<title>Manufacturing</title>
+			<para>
+			Text
+			</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Billing">
+			<title>Shipping and Billing</title>
+			<para>
+			Text
+			</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Reports">
+			<title>Reports</title>
+			<para>
+			Text
+			</para>
+		</sect2>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Guide-Make">
+		<title>Make To Order</title>
+		<para>
+		Make To Order
+		</para>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Overview">
+			<title>Overview</title>
+			<para>
+			Text
+			</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Setting">
+			<title>Setting Up</title>
+			<para>
+			Text
+			</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Bill">
+			<title>Bill of Materials</title>
+			<para>
+			Text
+			</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Price">
+			<title>Price List</title>
+			<para>
+			Text
+			</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Sales">
+			<title>Sales Order</title>
+			<para>
+			Text
+			</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Production">
+			<title>Production Planning Tool</title>
+			<para>
+			Text
+			</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Purchase">
+			<title>Purchase Order</title>
+			<para>
+			Text
+			</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Manufacturing">
+			<title>Manufacturing</title>
+			<para>
+			Text
+			</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Shipping">
+			<title>Shipping and Billing</title>
+			<para>
+			Text
+			</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Reports">
+			<title>Reports</title>
+			<para>
+			Text
+			</para>
+		</sect2>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Guide-Order">
+		<title>Make To Stock</title>
+		<para>
+		Make To Stock
+		</para>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Overview">
+		<title>Overview</title>
+		<para>
+		Text
+		</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Setting">
+		<title>Setting Up</title>
+		<para>
+		Text
+		</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Bill">
+		<title>Bill of Materials</title>
+		<para>
+		Text
+		</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Price">
+		<title>Price List</title>
+		<para>
+		Text
+		</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Planning">
+		<title>Planning and Forecasting</title>
+		<para>
+		Text
+		</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Production">
+		<title>Production Planning Tool</title>
+		<para>
+		Text
+		</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Buying">
+		<title>Buying</title>
+		<para>
+		Text
+		</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Supplier">
+		<title>Supplier Billing</title>
+		<para>
+		Text
+		</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Manufacturing">
+		<title>Manufacturing</title>
+		<para>
+		Text
+		</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Selling">
+		<title>Selling and Custumer Billing</title>
+		<para>
+		Text
+		</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Reports">
+		<title>Reports</title>
+		<para>
+		Text
+		</para>
+		</sect2>
+	</sect1>
+</chapter>

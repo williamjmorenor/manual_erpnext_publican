@@ -5,13 +5,22 @@
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Users">
 	<title>Users And Permissions</title>
 	<para>
-	Users And Permissions
+	In ERPNext, you can create multiple users and assign them different roles. There are some users which can only access the public facing part of ERPNext (i.e. the website). Such users are called "Website Users".
+	</para>
+	<para>
+	ERPNext implements permission control at the User and Role level. Each user in the system can be assigned multiple roles and permissions.
+	</para>
+	<para>
+	The most important role is the "System Manager". Any user having this role can add other users and set roles to all users.
 	</para>
 	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Users-Adding">
 		<title>Adding Users</title>
 		<para>
-		Adding Users
+		Users can be added by the System Manager. If you are a System Manager, you can add Users via
 		</para>
+		<programlisting>
+		Setup > User
+		</programlisting>
 	</sect2>
 	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Users-Roles">
 		<title>Role Based Permissions</title>

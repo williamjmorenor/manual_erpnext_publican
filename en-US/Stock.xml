@@ -1,0 +1,130 @@
+﻿<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Manual_ERPNext.ent">
+%BOOK_ENTITIES;
+]>
+<chapter id="chap-ERPNext-Manual_ERPNext-Stock">
+	<title>Stock</title>
+	<para>
+	Stock
+	</para>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Stock-Item">
+		<title>Item Master</title>
+		<para>
+		Text
+		</para>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Stock-Item-Codification">
+		<title>Item Codification</title>
+		<para>
+		Texto
+		</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Stock-Item-Valuation">
+		<title>Item Valuation FIFO and Moving Average</title>
+		<para>
+		Texto
+		</para>
+		</sect2>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Stock-Wharehouse">
+	<title>Warehouse</title>
+	<para>
+	Text
+	</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Stock-Group">
+	<title>Item Group</title>
+	<para>
+	Text
+	</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Stock-Serialized">
+	<title>Serialized Inventory</title>
+	<para>
+	Text
+	</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Stock-Batchwise">
+	<title>Batchwise Inventory</title>
+	<para>
+	Text
+	</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Stock-Purchase">
+	<title>Purchase Receipt</title>
+	<para>
+	Text
+	</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Stock-Delivery">
+	<title>Delivery Note</title>
+	<para>
+	Text
+	</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Stock-Entry">
+	<title>Stock Entry</title>
+	<para>
+	Text
+	</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Stock-Material">
+	<title>Material Issue</title>
+	<para>
+	Text
+	</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Stock-Sales_Return">
+	<title>Sales Return</title>
+	<para>
+	Text
+	</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Stock-Purchace_Return">
+	<title>Purchase Return</title>
+	<para>
+	Text
+	</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Stock-Projected">
+	<title>Project Quantity</title>
+	<para>
+	Text
+	</para>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Stock-Projected-Perpetual">
+		<title>Perpetual Inventory</title>
+		<para>
+		Text
+		</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Stock-Projected-Migrate">
+		<title>Migrate to Perpetual Inventory</title>
+		<para>
+		Text
+		</para>
+		</sect2>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Stock-Valuation">
+	<title>Item Valuation Fifo And Moving Average</title>
+	<para>
+	Text
+	</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Stock-Opening">
+	<title>Opening Stock</title>
+	<para>
+	Text
+	</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Stock-Landed">
+	<title>Landed Cost</title>
+	<para>
+	Text
+	</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Stock-Best">
+	<title>Best Practices</title>
+	<para>
+	Text
+	</para>
+	</sect1>
+</chapter>
