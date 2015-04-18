@@ -1,0 +1,70 @@
+﻿<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Manual_ERPNext.ent">
+%BOOK_ENTITIES;
+]>
+<chapter id="chap-ERPNext-Manual_ERPNext-Manufacturing">
+	<title>Manufacturing</title>
+	<para>
+	Text
+	</para>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Manufacturing-BOM">
+		<title>Bill Of Materials</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Manufacturing-Planing">
+		<title>Production Planning Tool</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Manufacturing-Production">
+		<title>Production Order</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Manufacturing-Subcontrating">
+		<title>Subcontrating</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Manufacturing-Make_To_Order">
+		<title>Make To Order Manufacturing</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Manufacturing-Make_To_Stock">
+		<title>Make To Stock Manufacturing</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Manufacturing-Quality_Inspection">
+		<title>Quality Inspection</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Manufacturing-BOM_Replace">
+		<title>BOM Replace Tool</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Manufacturing-MRP">
+		<title>MRP</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Manufacturing-Learn">
+		<title>Learn Manufacturing</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+</chapter>

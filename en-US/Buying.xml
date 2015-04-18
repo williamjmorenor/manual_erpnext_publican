@@ -1,0 +1,52 @@
+﻿<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Manual_ERPNext.ent">
+%BOOK_ENTITIES;
+]>
+<chapter id="chap-ERPNext-Manual_ERPNext-Buying">
+	<title>Buying</title>
+	<para>
+	Text
+	</para>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Buying-Setting">
+		<title>Buying Setting</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Buying-Type">
+		<title>Supplier Type</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Buying-Master">
+		<title>Supplier Master</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Buying-Request">
+		<title>Material Request</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Buying-Quotation">
+		<title>Supplier Quotation</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Buying-Order">
+		<title>Purchase Order</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Buying-Taxes">
+		<title>Purchase Taxes</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+</chapter>

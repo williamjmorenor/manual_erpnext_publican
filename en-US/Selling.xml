@@ -1,0 +1,106 @@
+﻿<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Manual_ERPNext.ent">
+%BOOK_ENTITIES;
+]>
+<chapter id="chap-ERPNext-Manual_ERPNext-Selling">
+	<title>Selling</title>
+	<para>
+	Text
+	</para>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Selling-Setup">
+		<title>Selling Setup</title>
+		<para>
+		Text
+		</para>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Selling-Setup-Group">
+		<title>Customer Group</title>
+		<para>
+		Text
+		</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Selling-Setup-Partner">
+		<title>Sales Partner</title>
+		<para>
+		Text
+		</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Selling-Setup-Person">
+		<title>Sales Person</title>
+		<para>
+		Text
+		</para>
+		</sect2>
+		<sect2 id="sect2-ERPNext-Manual_ERPNext-Selling-Setup-Setting">
+		<title>Selling Settings</title>
+		<para>
+		Text
+		</para>
+		</sect2>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Selling-Master">
+		<title>Customer Master</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Selling-Discount">
+		<title>Discount</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Selling-Lead">
+		<title>Lead</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Selling-Opportunity">
+		<title>Opportunity</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Selling-Quotation">
+		<title>Quotation</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Selling-Sales_Order">
+		<title>Sales Order</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Selling-Sales_Person">
+		<title>Sales_Order</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Selling-Sales_Bill_Target">
+		<title>Sales Person Target Allocation</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Selling-Sales_Bill">
+		<title>Sales Bill of Material</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Selling-Campaing">
+		<title>Campaing</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Selling-Item_Price">
+		<title>Item Price</title>
+		<para>
+		Text
+		</para>
+	</sect1>
+</chapter>
