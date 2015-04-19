@@ -5,18 +5,110 @@
 <sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Data">
 	<title>Data Management</title>
 	<para>
-	Data Management
+	You can import, export bulk edit data from and to spreadsheet files (.csv) from the Data Import Export Tool. This tool will be very helpful initially to setup your data from other systems.
 	</para>
 	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Data-Import">
 		<title>Data Import Tool</title>
 		<para>
-		Data Import Tool
+		The Data Import Tool is a great way to upload (or edit) bulk data, specially master data, into the system. To Open the data import tool, you either go to Setup or go to the Transaction you want to Import. If Data Import is allowed, you will see an Import Button:
 		</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/data-import-1.png" />
+			</imageobject>
+			<textobject><phrase>Data Import</phrase></textobject>
+		</mediaobject>
+	<para>The tool has two sections, one to download a template and the second to upload the data.</para>
+	<note><para>Only those DocTypes are allowed for Import whose Document Type is "Master" or Allow Import property is set.</para></note>
+	<sect3>
+		<title>Downloading The Template</title>
+		<para>Data in ERPNext is stored in tables, much like a spreadsheet with columns and rows of data. Each entity in ERPNext can have multiple child tables associated with it too. The child tables are linked to the parent tables and are implemented where there are multiple values for any property. For example an Item can have multiple prices, An Invoice has multiple Items and so on.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/data-import-2.png" />
+			</imageobject>
+			<textobject><phrase>Data Import</phrase></textobject>
+		</mediaobject>
+		<itemizedlist>
+			<listitem><para>Click on the table you want to download or "All Tables"</para></listitem>
+			<listitem><para>For bulk editing, you can click on "Download With Data"</para></listitem>
+		</itemizedlist>
+	</sect3>
+	<sect3>
+	<title>Fill in the Template</title>
+	<para>After downloading the template, open it in a spreadsheet application and fill in the data below the column headings.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/data-import-3.png" />
+			</imageobject>
+			<textobject><phrase>Data Import</phrase></textobject>
+		</mediaobject>
+		<para>Then export your template or save it as a Comma Separated Values (CSV) file.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/data-import-4.png" />
+			</imageobject>
+			<textobject><phrase>Data Import</phrase></textobject>
+		</mediaobject>
+	</sect3>
+	<sect3>
+	<title>Upload the .csv File</title>
+	<para>Finally attach the .csv file in the section. Click on the "Upload and Import" button.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/data-import-5.png" />
+			</imageobject>
+			<textobject><phrase>Data Import</phrase></textobject>
+		</mediaobject>
+		<orderedlist>
+			<listitem><para>Make sure that if your application allows, use encoding as UTF-8.</para></listitem>
+			<listitem><para>Keep the ID column blank for new records.</para></listitem>
+		</orderedlist>
+	</sect3>
+	<sect3>
+	<title>Uploading All Tables (Main + Child)</title>
+	<para>If you select all tables, you will get columns belonging to all the tables in one row separated by ~ columns. If you have multiple child rows then you must start a new main item on a new row.</para>
+	<note><para>To see how its done, enter a few records manually using forms and export "All Tables" with "Download with Data"</para></note>
+	</sect3>
+	<sect3>
+	<title>Overwriting</title>
+	<para>ERPNext also allows you to overwrite all or certain columns. If you want to update certain columns, you can download the template with data. Remember to check on the Overwrite box before uploading.</para>
+	<warning><para>For child records, if you select Overwrite, it will delete all the child records of that parent.</para></warning>
+	</sect3>
+	<sect3>
+	<title>Upload Limitations</title>
+	<para>ERPNext restricts the amount of data you can upload in one file. Though the number may vary based on the type of data. It is usually safe to upload around 1000 rows of a table at one go. If the system will not accept, then you will see an error.</para>
+	<para>Why is this? Uploading a lot of data can cause your system to crash, specially if there are other users doing things in parallel. Hence ERPNext restricts the number of “writes” you can process in one request.</para>
+		<sect4>
+		<title>How to Attach files?</title>
+		<para>When you open a form, on the right sidebar, you will see a section to attach files. Click on “Add” and select the file you want to attach. Click on “Upload” and you are set.</para>
+		</sect4>
+		<sect4>
+		<title>What is a CSV file?</title>
+		<para>A CSV (Comma Separated Value) file is a data file that you can upload into ERPNext to update various data. Any spreadsheet file from popular spreadsheet applications like MS Excel or Open Office Spreadsheet can be saved as a CSV file.</para>
+		<para>If you are using Microsoft Excel and using non-English characters, make sure to save your file encoded as UTF-8. For older versions of Excel, there is no clear way of saving as UTF-8. So save your file as a CSV, then open it in Notepad, and save as “UTF-8”. (Sorry blame Microsoft for this!)</para>
+		</sect4>
+	</sect3>
 	</sect2>
 	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Data-Renaming">
 		<title>Bulk Renaming of Records</title>
 		<para>
-		Bulk Renaming of Records
+		You can rename a document if ERPNext (if it is allowed) by going to Menu > Rename in the document.
 		</para>
+		<para>Alternatively, if you want to rename a whole bunch of records, just go to:</para>
+		<programlisting>
+		Setup > Data > Rename Tool
+		</programlisting>
+		<para>This tool will allow you to rename multiple records at the same time.</para>
+		<sect3>
+		<title>Example</title>
+		<para>To rename multiple records, upload a .csv file with the old name in the first column and the new name in the second column and click on Upload.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/rename.png" />
+			</imageobject>
+			<textobject><phrase>Rename</phrase></textobject>
+		</mediaobject>
+		</sect3>
 	</sect2>
 </sect1>
