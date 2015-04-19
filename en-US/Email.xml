@@ -5,13 +5,60 @@
 <sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Email">
 	<title>Email</title>
 	<para>
-	Email
+	Email is at the heart of electronic communication and ERPNext is deeply integrated with Email. You can create multiple email accounts, automatically create transactions like Lead, Issue from incoming emails, send documents to your contacts via ERPnext. You can also setup email digests and email alerts to send you reminders.
 	</para>
 	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Email-Accounts">
 		<title>Email Accounts</title>
 		<para>
-		Email Accounts
+		You can manage multiple incoming and outgoing Email Accounts in ERPNext. There has to be atleast one default outgoing account and one default incoming account. If you are on the ERPNext cloud, the default outgoing email is set by Frappe Team.
 		</para>
+		<note><para>Note for self implementers: For outgoing emails, you should setup your own SMTP server or sign up with an SMTP relay service like mandrill.com or sendgrid.com that allows a larger number of transactional emails to be sent. Regular email services like GMail will restrict you to a limited number of emails per day.</para></note>
+		<sect3>
+		<title>Default Email Accounts</title>
+		<para>ERPNext will create templates for a bunch of email accounts by default. Not all of them are enabled. To enable them, you must set your account details.</para>
+		<para>There are 2 types of email accounts, outgoing and incoming. Outgoing email accounts use an SMTP service to send emails and emails are retrived from your inbox using a POP service. Most email providers such as GMail, Outlook or Yahoo provide these services.</para>
+				<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/email-account-list.png" />
+			</imageobject>
+			<textobject><phrase>Email list</phrase></textobject>
+		</mediaobject>
+		</sect3>
+		<sect3>
+		<title>Outgoing Email Accounts</title>
+		<para>All emails sent from the system, either by the user to a contact or notifications or transaction emails, will be sent from an Outgoing Email Account.</para>
+		<para>To setup an outgoing Email Account, check on Enable Outgoing and set your SMTP server settings, if you are using a popular email service, these will be preset for you.</para>
+				<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/email-account-sending.png" />
+			</imageobject>
+			<textobject><phrase>Email Sending</phrase></textobject>
+		</mediaobject>
+		</sect3>
+		<sect3>
+		<title>Incoming Email Accounts</title>
+		<para>To setup an incoming Email Account, check on Enable Incoming and set your POP3 settings, if you are using a popular email service, these will be preset for you.</para>
+				<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/email-account-incoming.png" />
+			</imageobject>
+			<textobject><phrase>Email Incoming</phrase></textobject>
+		</mediaobject>
+		</sect3>
+		<sect3>
+		<title>How ERPNext handles replies</title>
+		<para>In ERPNext when you send an email to a contact like a customer, the sender will be the user who sent the email. In the Reply-To property, the email id will be of the default incoming account (like replies@yourcompany.com). ERPNext will automatically extract these emails from the incoming account and tag it to the relvant communication</para>
+		</sect3>
+		<sect3>
+		<title>Notification for unreplied messages</title>
+		<para>If you would like ERPNext to notify you if an email is unreplied for a certain amount of time, then you can set Notify if Unreplied. Here you can set the number of minutes to wait before notifications are sent and whom the notifications must go to.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/email-account-unreplied.png" />
+			</imageobject>
+			<textobject><phrase>Email Incoming</phrase></textobject>
+		</mediaobject>
+		</sect3>
 	</sect2>
 	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Email-Alerts">
 		<title>Email Alerts</title>
