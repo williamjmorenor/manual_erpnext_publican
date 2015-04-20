@@ -27,30 +27,6 @@
 		<textobject><phrase>Setup - Setp 1: Language</phrase></textobject>
 		</mediaobject>
 	</sect2>
-	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_2">
-		<title>Step 2: Profile Details</title>
-		<para>
-		Enter Users Profile Details like Name, User ID and preferred password.
-		</para>
-		<mediaobject>
-		<imageobject>
-		<imagedata fileref="./images/step-2.png" />
-		</imageobject>
-		<textobject><phrase>Step 2: Profile Details</phrase></textobject>
-		</mediaobject>
-	</sect2>
-	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_3">
-		<title>Step 3: Company Details</title>
-		<para>
-		Enter Company Details like Name, Abbreviation and Financial Year Details.
-		</para>
-		<mediaobject>
-		<imageobject>
-		<imagedata fileref="./images/step-3.png" />
-		</imageobject>
-		<textobject><phrase>Step 3: Company Details</phrase></textobject>
-		</mediaobject>
-	</sect2>
 	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_4">
 		<title>Step 4: Currency and Timezone</title>
 		<para>
@@ -58,10 +34,42 @@
 		</para>
 		<mediaobject>
 		<imageobject>
-		<imagedata fileref="./images/step-4.png" />
+		<imagedata fileref="./images/step-2.png" />
 		</imageobject>
 		<textobject><phrase>Step 4: Currency and Timezone</phrase></textobject>
 		</mediaobject>
+	</sect2>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_3">
+		<title>Step 3: Profile Details</title>
+		<para>
+		Enter Users Profile Details like Name, User ID and preferred password.
+		</para>
+		<mediaobject>
+		<imageobject>
+		<imagedata fileref="./images/step-3.png" />
+		</imageobject>
+		<textobject><phrase>Step 3: User Details</phrase></textobject>
+		</mediaobject>
+	</sect2>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_2">
+		<title>Step 2: Company Details</title>
+		<para>
+		Enter Company Details like Name, Abbreviation and Financial Year Details.
+		</para>
+		<mediaobject>
+		<imageobject>
+		<imagedata fileref="./images/step-2.png" />
+		</imageobject>
+		<textobject><phrase>Step 2: Company Details</phrase></textobject>
+		</mediaobject>
+		<sect3>
+			<title>Company Abbreviation</title>
+			<para>These will be appened to your Account Heads, for example if your abbreviation is WP, then your Sales account will be Sales - WPL</para><para>For Example: East Wind will be abbreviated as EW. Shades of Green will be abbreviated as SOG. In case you wish to give your own abbreviation, you can do so. The text field allows any type of text.</para>
+			</sect3>
+			<sect3>
+			<title>Financial Year</title>
+			<para>Any annual period at the end of which a firm's accounts are made up is called a Financial Year. Some countries have their account year starting from 1st January and some 1st April.</para><para>The end date will be set automatically</para>
+			</sect3>
 	</sect2>
 	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_5">
 		<title>Step 5: Letterhead and Logo</title>

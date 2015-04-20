@@ -1,0 +1,82 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2015-04-19 20:14-0600\n"
+"PO-Revision-Date: 2015-04-19 20:14-0600\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"Language: en-US \n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Publican v4.2.6\n"
+
+msgid "Accounts"
+msgstr ""
+
+msgid "Introduction to Accounting"
+msgstr ""
+
+msgid "Text"
+msgstr ""
+
+msgid "Sales"
+msgstr ""
+
+msgid "Purchase Invoice"
+msgstr ""
+
+msgid "Making Payments"
+msgstr ""
+
+msgid "Advance Payment Entry"
+msgstr ""
+
+msgid "Journal Vouchers"
+msgstr ""
+
+msgid "Credir Limit"
+msgstr ""
+
+msgid "Openning Entry"
+msgstr ""
+
+msgid "Closing a Financial Period"
+msgstr ""
+
+msgid "Accounting Reports"
+msgstr ""
+
+msgid "Accounting Entries"
+msgstr ""
+
+msgid "Bank Reconciliation"
+msgstr ""
+
+msgid "Budgetting"
+msgstr ""
+
+msgid "Chart Of Accounts"
+msgstr ""
+
+msgid "Cost Center and Budgeting"
+msgstr ""
+
+msgid "Fiscal Year"
+msgstr ""
+
+msgid "Openning Accounts"
+msgstr ""
+
+msgid "Payment Tool"
+msgstr ""
+
+msgid "Payment Reconciliation"
+msgstr ""
+
+msgid "Point Of Sale POS Invoice"
+msgstr ""
+
+msgid "Item"
+msgstr ""
+

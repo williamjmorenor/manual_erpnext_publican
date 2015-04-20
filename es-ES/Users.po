@@ -14,15 +14,153 @@ msgstr ""
 msgid "Users And Permissions"
 msgstr ""
 
+msgid "In ERPNext, you can create multiple users and assign them different roles. There are some users which can only access the public facing part of ERPNext (i.e. the website). Such users are called \"Website Users\"."
+msgstr ""
+
+msgid "ERPNext implements permission control at the User and Role level. Each user in the system can be assigned multiple roles and permissions."
+msgstr ""
+
+msgid "The most important role is the \"System Manager\". Any user having this role can add other users and set roles to all users."
+msgstr ""
+
 msgid "Adding Users"
+msgstr ""
+
+msgid "Users can be added by the System Manager. If you are a System Manager, you can add Users via"
+msgstr ""
+
+msgid ""
+"\n"
+"		Setup &gt; User\n"
+"		"
+msgstr ""
+
+msgid "List of Users"
+msgstr ""
+
+msgid "To add new user, click on \"New\"."
+msgstr ""
+
+msgid "Add the user details"
+msgstr ""
+
+msgid "Add user details such as First Name, Last Name, Email etc."
+msgstr ""
+
+msgid "The user's Email will become the user id."
+msgstr ""
+
+msgid "After adding these details, save the user."
+msgstr ""
+
+msgid "Setting Roles"
+msgstr ""
+
+msgid "After saving, you will see a list of roles and a checkbox next to it. Just check the roles you want the the user to have and save the document. To click on what permissions translate into roles, click on the role name."
+msgstr ""
+
+msgid "Setting Module Access"
+msgstr ""
+
+msgid "Users will have access to all modules for which they have role based access. If you want to block certain modules for certain users, un-check the module from the list."
+msgstr ""
+
+msgid "Security Settings"
+msgstr ""
+
+msgid "If you wish to give the user access to the system only between office hours, or during weekends, mention it under security settings."
 msgstr ""
 
 msgid "Role Based Permissions"
 msgstr ""
 
+msgid "ERPNext has a role-based permission system. It means that you can assign Roles to Users, and set Permissions on Roles. The permission structure also allows you to define different permission rules for different fields, using a concept called Permission \"Level\" of a field. Once roles are assigned to a user, it gives you the ability to limit access for a user to only specic documents."
+msgstr ""
+
+msgid "To start with, go to:"
+msgstr ""
+
+msgid ""
+"\n"
+"		Setup &gt; Users and Permissions &gt; Role Permissions Manager\n"
+"		"
+msgstr ""
+
+msgid "Permissions are applied on a combination of:"
+msgstr ""
+
+msgid "<emphasis role=\"bold\">Roles:</emphasis> As we saw earlier, Users are assigned to Roles and it is on these Roles that permission rules are applied."
+msgstr ""
+
+msgid "<emphasis role=\"bold\">Document Types:</emphasis> Each type of document, master or transaction, has a separate list of Role based permissions."
+msgstr ""
+
+msgid "<emphasis>Examples of Document Types are Sales Invoice, Leave Application, Stock Entry, etc.</emphasis>"
+msgstr ""
+
+msgid "<emphasis role=\"bold\">Permission \"Levels\":</emphasis> In each document, you can group fields by \"levels\". Each group of field is denoted by a unique number (0, 1, 2, 3, etc.). A separate set of permission rules can be applied to each field group. By default all fields are of level 0."
+msgstr ""
+
+msgid "<emphasis>Permission \"Level\" connects the group of fields with level X to a permission rule with level X.</emphasis>"
+msgstr ""
+
+msgid "<emphasis role=\"bold\">Document Stages:</emphasis> Permissions are applied on each stage of the document like on Creation, Saving, Submission, Cancellation and Amendment. A role can be permitted to Print, Email, Import or Export data, access Reports, or define User Permissions."
+msgstr ""
+
+msgid "<emphasis role=\"bold\">Apply User Permissions: </emphasis> This switch decides whether User Permissions should be applied for the role on selected Document Stages."
+msgstr ""
+
+msgid "If enabled, a user with that role will be able to access only specific Documents for that Document Type. Such specific Document access is defined in the list of User Permissions. Additionally, User Permissions defined for other Document Types also get applied if they are related to the current Document Type through Link Fields."
+msgstr ""
+
+msgid "To set, User Permissions go to:"
+msgstr ""
+
+msgid ""
+"\n"
+"		Setup &gt; Users and Permissions &gt; User Permissions Manager\n"
+"		"
+msgstr ""
+
+msgid "<emphasis role=\"bold\">To add a new rule, </emphasis> click on \"Add a New Rule\" button and a pop-up box will ask you to select a Role and a Permission Level. Once you select this and click on \"Add\", this will add a new row to your rules table."
+msgstr ""
+
+msgid "Leave Application is a good <emphasis role=\"bold\">example</emphasis> that encompasses all areas of Permission System."
+msgstr ""
+
+msgid "<emphasis role=\"bold\">It should be created by an Employee. </emphasis> For this, Employee Role should be given Read, Write, Create permissions."
+msgstr ""
+
+msgid "<emphasis role=\"bold\">An Employee should only be able to access his/her Leave Application. </emphasis> Hence, Apply User Permissions should be enabled for Employee Role, and a User Permission record should be created for each User Employee combination. (This effort is reduced for Employee Document Type, by programmatically creating User Permission records.)"
+msgstr ""
+
+msgid "<emphasis role=\"bold\">HR Manager should be able to see all Leave Applications. </emphasis> Create a Permission Rule for HR Manager at Level 0, with Read permissions. Apply User Permissions should be disabled."
+msgstr ""
+
+msgid "<emphasis role=\"bold\">Leave Approver should be able to see and update Leave Applications applicable to him/her. </emphasis> Leave Approver is given Read and Write access at Level 0, with Apply User Permissions enabled. Relevant Employee Documents should be enlisted in the User Permissions of Leave Approvers. (This effort is reduced for Leave Approvers mentioned in Employee Documents, by programmatically creating User Permission records.)"
+msgstr ""
+
+msgid "<emphasis role=\"bold\">It should be Approved / Rejected only by HR User or Leave Approver. </emphasis> The Status field of Leave Application is set at Level 1. HR User and Leave Approver are given Read and Write permissions for Level 1, while everyone else (All) are given Read permission for Level 1."
+msgstr ""
+
+msgid "<emphasis role=\"bold\">HR User should be able to delegate Leave Applications to his/her subordinates HR. </emphasis> User is given the right to Set User Permissions. A User with HR User role would be able to defined User Permissions on Leave Application for other users."
+msgstr ""
+
 msgid "User Permissions"
 msgstr ""
 
+msgid "Limit access for a User to a set of documents using User Permissions Manager."
+msgstr ""
+
+msgid "Role Base Permissions define the periphery of document types within which a user with a set of Roles can move around in. However, you can have an even finer control by defining User Permissions for a User. By setting specific documents in User Permissions list, you can limit access for that User to specific documents of a particular DocType, on the condition that \"Apply User Permissions\" is checked in Role Permissions Manager."
+msgstr ""
+
 msgid "Sharing"
+msgstr ""
+
+msgid "In addition to user and role permissions, you can also Share a document with another user if you have sharing rights."
+msgstr ""
+
+msgid "To share a document, open the document, click on the \"+\" icon under sharing and select the user"
 msgstr ""
 

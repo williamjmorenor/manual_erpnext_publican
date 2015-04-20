@@ -11,6 +11,30 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Publican v4.2.6\n"
 
-msgid "POS Setting"
+msgid "Collaboration Tools"
+msgstr ""
+
+msgid "Text"
+msgstr ""
+
+msgid "To Do"
+msgstr ""
+
+msgid "Collaborating Around Forms"
+msgstr ""
+
+msgid "Messages"
+msgstr ""
+
+msgid "Notes"
+msgstr ""
+
+msgid "Calendar"
+msgstr ""
+
+msgid "Assignmet"
+msgstr ""
+
+msgid "Tags"
 msgstr ""
 

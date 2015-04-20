@@ -11,6 +11,30 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Publican v4.2.6\n"
 
-msgid "POS Setting"
+msgid "Buying"
+msgstr ""
+
+msgid "Text"
+msgstr ""
+
+msgid "Buying Setting"
+msgstr ""
+
+msgid "Supplier Type"
+msgstr ""
+
+msgid "Supplier Master"
+msgstr ""
+
+msgid "Material Request"
+msgstr ""
+
+msgid "Supplier Quotation"
+msgstr ""
+
+msgid "Purchase Order"
+msgstr ""
+
+msgid "Purchase Taxes"
 msgstr ""
 

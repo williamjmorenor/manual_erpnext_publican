@@ -185,7 +185,6 @@ msgstr ""
 msgid "<emphasis role=\"bold\">Custom Field:</emphasis> A user defined field on a form / table."
 msgstr ""
 
-#, fuzzy
 msgid "<emphasis role=\"bold\">Global Defaults:</emphasis> This is the sect2 where you set default values for various parameters of the system."
 msgstr ""
 

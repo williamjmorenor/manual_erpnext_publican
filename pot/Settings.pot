@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2015-04-16 01:31-0600\n"
-"PO-Revision-Date: 2015-04-16 01:31-0600\n"
+"POT-Creation-Date: 2015-04-19 20:14-0600\n"
+"PO-Revision-Date: 2015-04-19 20:14-0600\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
 "Language: en-US \n"
@@ -14,15 +14,105 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
+msgid "In <emphasis>Setup &gt; Settings</emphasis> you will find ways to manage your system settings like defaults, number and currency formats, global session timeout settings etc."
+msgstr ""
+
 msgid "System Settings"
+msgstr ""
+
+msgid "You can localize ERPNext to use particular timezone, date, number or currency format and also set global session expiry via System Settings."
+msgstr ""
+
+msgid "To open System Settings, go to:"
+msgstr ""
+
+msgid ""
+"\n"
+"		Setup &gt; Settings &gt; System Settings\n"
+"		"
 msgstr ""
 
 msgid "Show or Hide Modules"
 msgstr ""
 
+msgid "You can globally switch off certain desktop module via:"
+msgstr ""
+
+msgid ""
+"\n"
+"		Setup &gt; Settings &gt; Show or Hide Modules\n"
+"		"
+msgstr ""
+
+msgid "For example if you are in the services business, you want to hide the Manufacturing Module, you can do this via Show or Hide Modules"
+msgstr ""
+
 msgid "Naming Series"
 msgstr ""
 
+msgid "<emphasis role=\"Bold\">Naming Series</emphasis>"
+msgstr ""
+
+msgid "Data records are broadly classified as “Master” or “Transaction”. A master record is a record that has a “name”, for example a Customer, Item, Supplier, Employee etc. A Transaction is a record that has a “number”. Examples of transactions include Sales Invoices, Quotations etc. You make transactions against a number of master records."
+msgstr ""
+
+msgid "ERPNext allows you to make prefixes to your transactions, with each prefix forming its own series. For example a series with prefix INV12 will have numbers INV120001, INV120002 and so on."
+msgstr ""
+
+msgid "You can have multiple series for all your transactions. It is common to have a separate series for each financial year. For example in Sales Invoice you could have:"
+msgstr ""
+
+msgid "INV120001"
+msgstr ""
+
+msgid "INV120002"
+msgstr ""
+
+msgid "INV-A-120002"
+msgstr ""
+
+msgid "etc. You could also have a separate series for each type of Customer or for each of your retail outlets."
+msgstr ""
+
+msgid "<emphasis role=\"Bold\">Managing Naming Series for Documents</emphasis>"
+msgstr ""
+
+msgid "To setup a series, go to:"
+msgstr ""
+
+msgid ""
+"\n"
+"		Setup &gt; Tools &gt; Update Numbering Series\n"
+"		"
+msgstr ""
+
+msgid "In this form:"
+msgstr ""
+
+msgid "Select the transaction for which you want to make the series The system will update the current series in the text box."
+msgstr ""
+
+msgid "Edit the series as required with unique prefixes for each series. Each prefix must be on a new line."
+msgstr ""
+
+msgid "The first prefix will be the default prefix. If you want the user to explicitly select a series instead of the default one, check the “User must always select” check box."
+msgstr ""
+
+msgid "You can also update the starting point of a series by entering the series name and the starting point in the “Update Series” section."
+msgstr ""
+
 msgid "Global Defaults"
+msgstr ""
+
+msgid "You can set default values for your documents from Global Defaults"
+msgstr ""
+
+msgid ""
+"\n"
+"		Setup &gt; Settings &gt; Global Defaults\n"
+"		"
+msgstr ""
+
+msgid "Whenever a new document is created, these values will be set as default."
 msgstr ""
 

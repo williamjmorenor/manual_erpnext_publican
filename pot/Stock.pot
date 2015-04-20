@@ -1,0 +1,82 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2015-04-19 20:14-0600\n"
+"PO-Revision-Date: 2015-04-19 20:14-0600\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"Language: en-US \n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Publican v4.2.6\n"
+
+msgid "Stock"
+msgstr ""
+
+msgid "Item Master"
+msgstr ""
+
+msgid "Text"
+msgstr ""
+
+msgid "Item Codification"
+msgstr ""
+
+msgid "Texto"
+msgstr ""
+
+msgid "Item Valuation FIFO and Moving Average"
+msgstr ""
+
+msgid "Warehouse"
+msgstr ""
+
+msgid "Item Group"
+msgstr ""
+
+msgid "Serialized Inventory"
+msgstr ""
+
+msgid "Batchwise Inventory"
+msgstr ""
+
+msgid "Purchase Receipt"
+msgstr ""
+
+msgid "Delivery Note"
+msgstr ""
+
+msgid "Stock Entry"
+msgstr ""
+
+msgid "Material Issue"
+msgstr ""
+
+msgid "Sales Return"
+msgstr ""
+
+msgid "Purchase Return"
+msgstr ""
+
+msgid "Project Quantity"
+msgstr ""
+
+msgid "Perpetual Inventory"
+msgstr ""
+
+msgid "Migrate to Perpetual Inventory"
+msgstr ""
+
+msgid "Item Valuation Fifo And Moving Average"
+msgstr ""
+
+msgid "Opening Stock"
+msgstr ""
+
+msgid "Landed Cost"
+msgstr ""
+
+msgid "Best Practices"
+msgstr ""
+

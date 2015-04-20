@@ -11,15 +11,39 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Publican v4.2.6\n"
 
-msgid "ERPNext User Manual"
+msgid "Manufacturing"
 msgstr ""
 
-msgid "ERP for Entrepreneurs."
+msgid "Text"
 msgstr ""
 
-msgid "ERPNext"
+msgid "Bill Of Materials"
 msgstr ""
 
-msgid "ERPNext helps you take full control of your business. It is as powerful as it is easy to use."
+msgid "Production Planning Tool"
+msgstr ""
+
+msgid "Production Order"
+msgstr ""
+
+msgid "Subcontrating"
+msgstr ""
+
+msgid "Make To Order Manufacturing"
+msgstr ""
+
+msgid "Make To Stock Manufacturing"
+msgstr ""
+
+msgid "Quality Inspection"
+msgstr ""
+
+msgid "BOM Replace Tool"
+msgstr ""
+
+msgid "MRP"
+msgstr ""
+
+msgid "Learn Manufacturing"
 msgstr ""
 

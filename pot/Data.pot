@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2015-04-16 01:31-0600\n"
-"PO-Revision-Date: 2015-04-16 01:31-0600\n"
+"POT-Creation-Date: 2015-04-19 20:14-0600\n"
+"PO-Revision-Date: 2015-04-19 20:14-0600\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
 "Language: en-US \n"
@@ -14,9 +14,117 @@ msgstr ""
 msgid "Data Management"
 msgstr ""
 
+msgid "You can import, export bulk edit data from and to spreadsheet files (.csv) from the Data Import Export Tool. This tool will be very helpful initially to setup your data from other systems."
+msgstr ""
+
 msgid "Data Import Tool"
 msgstr ""
 
+msgid "The Data Import Tool is a great way to upload (or edit) bulk data, specially master data, into the system. To Open the data import tool, you either go to Setup or go to the Transaction you want to Import. If Data Import is allowed, you will see an Import Button:"
+msgstr ""
+
+msgid "The tool has two sections, one to download a template and the second to upload the data."
+msgstr ""
+
+msgid "Only those DocTypes are allowed for Import whose Document Type is \"Master\" or Allow Import property is set."
+msgstr ""
+
+msgid "Downloading The Template"
+msgstr ""
+
+msgid "Data in ERPNext is stored in tables, much like a spreadsheet with columns and rows of data. Each entity in ERPNext can have multiple child tables associated with it too. The child tables are linked to the parent tables and are implemented where there are multiple values for any property. For example an Item can have multiple prices, An Invoice has multiple Items and so on."
+msgstr ""
+
+msgid "Click on the table you want to download or \"All Tables\""
+msgstr ""
+
+msgid "For bulk editing, you can click on \"Download With Data\""
+msgstr ""
+
+msgid "Fill in the Template"
+msgstr ""
+
+msgid "After downloading the template, open it in a spreadsheet application and fill in the data below the column headings."
+msgstr ""
+
+msgid "Then export your template or save it as a Comma Separated Values (CSV) file."
+msgstr ""
+
+msgid "Upload the .csv File"
+msgstr ""
+
+msgid "Finally attach the .csv file in the section. Click on the \"Upload and Import\" button."
+msgstr ""
+
+msgid "Make sure that if your application allows, use encoding as UTF-8."
+msgstr ""
+
+msgid "Keep the ID column blank for new records."
+msgstr ""
+
+msgid "Uploading All Tables (Main + Child)"
+msgstr ""
+
+msgid "If you select all tables, you will get columns belonging to all the tables in one row separated by ~ columns. If you have multiple child rows then you must start a new main item on a new row."
+msgstr ""
+
+msgid "To see how its done, enter a few records manually using forms and export \"All Tables\" with \"Download with Data\""
+msgstr ""
+
+msgid "Overwriting"
+msgstr ""
+
+msgid "ERPNext also allows you to overwrite all or certain columns. If you want to update certain columns, you can download the template with data. Remember to check on the Overwrite box before uploading."
+msgstr ""
+
+msgid "For child records, if you select Overwrite, it will delete all the child records of that parent."
+msgstr ""
+
+msgid "Upload Limitations"
+msgstr ""
+
+msgid "ERPNext restricts the amount of data you can upload in one file. Though the number may vary based on the type of data. It is usually safe to upload around 1000 rows of a table at one go. If the system will not accept, then you will see an error."
+msgstr ""
+
+msgid "Why is this? Uploading a lot of data can cause your system to crash, specially if there are other users doing things in parallel. Hence ERPNext restricts the number of “writes” you can process in one request."
+msgstr ""
+
+msgid "How to Attach files?"
+msgstr ""
+
+msgid "When you open a form, on the right sidebar, you will see a section to attach files. Click on “Add” and select the file you want to attach. Click on “Upload” and you are set."
+msgstr ""
+
+msgid "What is a CSV file?"
+msgstr ""
+
+msgid "A CSV (Comma Separated Value) file is a data file that you can upload into ERPNext to update various data. Any spreadsheet file from popular spreadsheet applications like MS Excel or Open Office Spreadsheet can be saved as a CSV file."
+msgstr ""
+
+msgid "If you are using Microsoft Excel and using non-English characters, make sure to save your file encoded as UTF-8. For older versions of Excel, there is no clear way of saving as UTF-8. So save your file as a CSV, then open it in Notepad, and save as “UTF-8”. (Sorry blame Microsoft for this!)"
+msgstr ""
+
 msgid "Bulk Renaming of Records"
+msgstr ""
+
+msgid "You can rename a document if ERPNext (if it is allowed) by going to Menu &gt; Rename in the document."
+msgstr ""
+
+msgid "Alternatively, if you want to rename a whole bunch of records, just go to:"
+msgstr ""
+
+msgid ""
+"\n"
+"		Setup &gt; Data &gt; Rename Tool\n"
+"		"
+msgstr ""
+
+msgid "This tool will allow you to rename multiple records at the same time."
+msgstr ""
+
+msgid "Example"
+msgstr ""
+
+msgid "To rename multiple records, upload a .csv file with the old name in the first column and the new name in the second column and click on Upload."
 msgstr ""
 

@@ -11,6 +11,21 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Publican v4.2.6\n"
 
-msgid "POS Setting"
+msgid "Customer Portal"
+msgstr ""
+
+msgid "Text"
+msgstr ""
+
+msgid "Customer Orders Invoices And Shipping Status"
+msgstr ""
+
+msgid "Portal Login"
+msgstr ""
+
+msgid "Sing Up"
+msgstr ""
+
+msgid "Issues"
 msgstr ""
 

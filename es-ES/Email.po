@@ -14,13 +14,138 @@ msgstr ""
 msgid "Email"
 msgstr ""
 
-msgid "Email Accounts"
+msgid "Email is at the heart of electronic communication and ERPNext is deeply integrated with Email. You can create multiple email accounts, automatically create transactions like Lead, Issue from incoming emails, send documents to your contacts via ERPnext. You can also setup email digests and email alerts to send you reminders."
+msgstr ""
+
+#, fuzzy
+msgid "Default Email Accounts"
+msgstr ""
+
+msgid "You can manage multiple incoming and outgoing Email Accounts in ERPNext. There has to be atleast one default outgoing account and one default incoming account. If you are on the ERPNext cloud, the default outgoing email is set by Frappe Team."
+msgstr ""
+
+msgid "Note for self implementers: For outgoing emails, you should setup your own SMTP server or sign up with an SMTP relay service like mandrill.com or sendgrid.com that allows a larger number of transactional emails to be sent. Regular email services like GMail will restrict you to a limited number of emails per day."
+msgstr ""
+
+#, fuzzy
+msgid "Default Email Accounts"
+msgstr ""
+
+msgid "ERPNext will create templates for a bunch of email accounts by default. Not all of them are enabled. To enable them, you must set your account details."
+msgstr ""
+
+msgid "There are 2 types of email accounts, outgoing and incoming. Outgoing email accounts use an SMTP service to send emails and emails are retrived from your inbox using a POP service. Most email providers such as GMail, Outlook or Yahoo provide these services."
+msgstr ""
+
+msgid "Outgoing Email Accounts"
+msgstr ""
+
+msgid "All emails sent from the system, either by the user to a contact or notifications or transaction emails, will be sent from an Outgoing Email Account."
+msgstr ""
+
+msgid "To setup an outgoing Email Account, check on Enable Outgoing and set your SMTP server settings, if you are using a popular email service, these will be preset for you."
+msgstr ""
+
+msgid "Incoming Email Accounts"
+msgstr ""
+
+msgid "To setup an incoming Email Account, check on Enable Incoming and set your POP3 settings, if you are using a popular email service, these will be preset for you."
+msgstr ""
+
+msgid "How ERPNext handles replies"
+msgstr ""
+
+msgid "In ERPNext when you send an email to a contact like a customer, the sender will be the user who sent the email. In the Reply-To property, the email id will be of the default incoming account (like replies@yourcompany.com). ERPNext will automatically extract these emails from the incoming account and tag it to the relvant communication"
+msgstr ""
+
+msgid "Notification for unreplied messages"
+msgstr ""
+
+msgid "If you would like ERPNext to notify you if an email is unreplied for a certain amount of time, then you can set Notify if Unreplied. Here you can set the number of minutes to wait before notifications are sent and whom the notifications must go to."
 msgstr ""
 
 msgid "Email Alerts"
 msgstr ""
 
+msgid "You can configure various email alerts in your system to remind you of important activities such as:"
+msgstr ""
+
+msgid "Completion date of a Task."
+msgstr ""
+
+msgid "Expected Delivery Date of a Sales Order."
+msgstr ""
+
+msgid "Expected Payment Date."
+msgstr ""
+
+msgid "Reminder of followup."
+msgstr ""
+
+msgid "If an Order greater than a particular value is received or sent."
+msgstr ""
+
+msgid "Expiry notification for a Contract."
+msgstr ""
+
+msgid "Completion / Status change of a Task."
+msgstr ""
+
+msgid "For this, you need to setup an Email Alert."
+msgstr ""
+
+msgid "Setup &gt; Email &gt; Email Alert"
+msgstr ""
+
+msgid "Setting Up An Alert"
+msgstr ""
+
+msgid "To setup an Email Alert:"
+msgstr ""
+
+msgid "Select which Document Type you want watch changes on."
+msgstr ""
+
+msgid "Define what events you want to watch. Events are:"
+msgstr ""
+
+msgid "New: When a new document of the selected type is made."
+msgstr ""
+
+msgid "Save / Submit / Cancel: When a document of the selected type is saved, submitted, cancelled."
+msgstr ""
+
+msgid "Value Change: When a particular value in the selected type changes."
+msgstr ""
+
+msgid "Days Before / Days After: Trigger this alert a few days before or after the <emphasis role=\"Bold\">Reference Date</emphasis>. To set the days, set <emphasis role=\"Bold\">Days Before or After</emphasis>. This can be useful in reminding you of upcoming due dates or reminding you to follow up on certain leads of quotations."
+msgstr ""
+
+msgid "Set additional conditions if you want."
+msgstr ""
+
+msgid "Set the recipients of this alert. The recipient could either be a field of the document or a list of fixed email ids."
+msgstr ""
+
+msgid "Compose the message"
+msgstr ""
+
 msgid "Email Digest"
+msgstr ""
+
+msgid "Email Digests allow you to get regular updates about your sales, expenses and other critical numbers directly in your Inbox."
+msgstr ""
+
+msgid "Email Digests are a great way for top managers to keep track of the big numbers like “Sales Booked” or “Amount Collected” or “Invoices Raised” etc."
+msgstr ""
+
+msgid "To set up Email Digest, go to:"
+msgstr ""
+
+msgid ""
+"\n"
+"		Setup &gt; Email &gt; Email Digest\n"
+"		"
 msgstr ""
 
 msgid "Sending Email from any Document"

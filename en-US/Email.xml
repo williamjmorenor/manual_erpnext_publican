@@ -63,14 +63,83 @@
 	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Email-Alerts">
 		<title>Email Alerts</title>
 		<para>
-		Email Alerts
+		You can configure various email alerts in your system to remind you of important activities such as:
 		</para>
+		<orderedlist>
+			<listitem>
+				<para>Completion date of a Task.</para>
+			</listitem>
+			<listitem>
+				<para>Expected Delivery Date of a Sales Order.</para>
+			</listitem>
+			<listitem>
+				<para>Expected Payment Date.</para>
+			</listitem>
+			<listitem>
+				<para>Reminder of followup.</para>
+			</listitem>
+			<listitem>
+				<para>If an Order greater than a particular value is received or sent.</para>
+			</listitem>
+			<listitem>
+				<para>Expiry notification for a Contract.</para>
+			</listitem>
+			<listitem>
+				<para>Completion / Status change of a Task.</para>
+			</listitem>
+		</orderedlist>
+		<para>For this, you need to setup an Email Alert.</para>
+		<programlisting>Setup > Email > Email Alert</programlisting>
+		<sect3>
+		<title>Setting Up An Alert</title>
+		<para>To setup an Email Alert:</para>
+		<orderedlist>
+			<listitem>
+				<para>Select which Document Type you want watch changes on.</para>
+			</listitem>
+			<listitem>
+				<para>Define what events you want to watch. Events are:</para>
+				<orderedlist>
+					<listitem>
+						<para>New: When a new document of the selected type is made.</para>
+					</listitem>
+					<listitem>
+						<para>Save / Submit / Cancel: When a document of the selected type is saved, submitted, cancelled.</para>
+					</listitem>
+					<listitem>
+						<para>Value Change: When a particular value in the selected type changes.</para>
+					</listitem>
+					<listitem>
+						<para>Days Before / Days After: Trigger this alert a few days before or after the <emphasis role="Bold">Reference Date</emphasis>. To set the days, set <emphasis role="Bold">Days Before or After</emphasis>. This can be useful in reminding you of upcoming due dates or reminding you to follow up on certain leads of quotations.</para>
+					</listitem>
+				</orderedlist>
+			</listitem>
+			<listitem>
+				<para>Set additional conditions if you want.</para>
+			</listitem>
+			<listitem>
+				<para>Set the recipients of this alert. The recipient could either be a field of the document or a list of fixed email ids.</para>
+			</listitem>
+			<listitem>
+				<para>Compose the message</para>
+			</listitem>
+		</orderedlist>
+		</sect3>
 	</sect2>
 	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Email-Digest">
 		<title>Email Digest</title>
 		<para>
-		Email Digest
+		Email Digests allow you to get regular updates about your sales, expenses and other critical numbers directly in your Inbox.
 		</para>
+		<para>
+		Email Digests are a great way for top managers to keep track of the big numbers like “Sales Booked” or “Amount Collected” or “Invoices Raised” etc.
+		</para>
+		<para>
+		To set up Email Digest, go to:
+		</para>
+		<programlisting>
+		Setup > Email > Email Digest
+		</programlisting>
 	</sect2>
 	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Email-Sending">
 		<title>Sending Email from any Document</title>

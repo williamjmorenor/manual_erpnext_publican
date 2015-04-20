@@ -11,6 +11,33 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Publican v4.2.6\n"
 
-msgid "POS Setting"
+msgid "Human Resource"
+msgstr ""
+
+msgid "Text"
+msgstr ""
+
+msgid "Employee Master"
+msgstr ""
+
+msgid "Leave"
+msgstr ""
+
+msgid "Attendance"
+msgstr ""
+
+msgid "Salary And Payroll"
+msgstr ""
+
+msgid "Expende Claim"
+msgstr ""
+
+msgid "Apraisal"
+msgstr ""
+
+msgid "Holiday list"
+msgstr ""
+
+msgid "Human Resource Setup"
 msgstr ""
 

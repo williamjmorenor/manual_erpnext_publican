@@ -11,6 +11,30 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Publican v4.2.6\n"
 
-msgid "POS Setting"
+msgid "Website"
+msgstr ""
+
+msgid "Text"
+msgstr ""
+
+msgid "Website Setup"
+msgstr ""
+
+msgid "Websites"
+msgstr ""
+
+msgid "Website Forms"
+msgstr ""
+
+msgid "Styling The Website"
+msgstr ""
+
+msgid "Blog Post"
+msgstr ""
+
+msgid "Add Productos to Website"
+msgstr ""
+
+msgid "Shopping Cart"
 msgstr ""
 
