@@ -144,7 +144,12 @@
 	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Email-Sending">
 		<title>Sending Email from any Document</title>
 		<para>
-		Sending Email from any Document
-		</para>
+		In ERPNext you can send any document as email (with a PDF attachment) by clicking on Menu > Email from any open document.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/send-email.gif" />
+			</imageobject>
+			<textobject><phrase>Send Email</phrase></textobject>
+		</mediaobject>
 	</sect2>
 </sect1>
