@@ -5,6 +5,6 @@
 <sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Workflows">
 	<title>Workflows</title>
 	<para>
-	Workflows
+	In order to allow multiple people to submit multiple requests, for approvals, by multiple users, ERPNext requires you to fill the workflow conditions. ERPNext tracks the multiple permissions before submission.
 	</para>
 </sect1>

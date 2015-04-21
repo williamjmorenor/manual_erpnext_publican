@@ -190,7 +190,5 @@
 	<xi:include href="Territory.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	<xi:include href="Backups.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	<xi:include href="Workflows.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Bar_Code.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Company.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 </chapter>
 

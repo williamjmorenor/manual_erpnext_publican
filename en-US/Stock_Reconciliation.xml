@@ -39,7 +39,7 @@
 		</para>
 	<mediaobject>
 		<imageobject>
-			<imagedata fileref="./image/stock-reco-template.png" />
+			<imagedata fileref="./images/stock-reco-template.png" />
 		</imageobject>
 		<textobject><phrase>Stock Reconciliation</phrase></textobject>
 	</mediaobject>
@@ -51,7 +51,7 @@
 		</para>
 	<mediaobject>
 		<imageobject>
-			<imagedata fileref="./image/stock-reco-data.png" />
+			<imagedata fileref="./images/stock-reco-data.png" />
 		</imageobject>
 		<textobject><phrase>Stock Reconciliation</phrase></textobject>
 	</mediaobject>
@@ -69,7 +69,7 @@
 		</para>
 	<mediaobject>
 		<imageobject>
-			<imagedata fileref="./image/stock-reco-browse.png" />
+			<imagedata fileref="./images/stock-reco-browse.png" />
 		</imageobject>
 		<textobject><phrase>Stock Reconciliation</phrase></textobject>
 	</mediaobject>
@@ -98,7 +98,7 @@ When making Stock Reconciliation for updating opening balance, then you should s
 		</para>
 	<mediaobject>
 		<imageobject>
-			<imagedata fileref="./image/stock-reco-upload.png" />
+			<imagedata fileref="./images/stock-reco-upload.png" />
 		</imageobject>
 		<textobject><phrase>Stock Reconciliation</phrase></textobject>
 	</mediaobject>	
