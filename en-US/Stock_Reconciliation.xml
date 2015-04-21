@@ -5,6 +5,103 @@
 <sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Stock_Reconciliation">
 	<title>Stock Reconciliation For Non Serialized Item</title>
 	<para>
-	Stock Reconciliation For Non Serialized Item
+	Stock Reconciliation is the process of counting and evaluating stock-in-trade, usually at an organisations year end in order to value the total stock for preparation of the accounts. In this process actual physical stocks are checked and recorded in the system. The actual stocks and the stock in the system should be in agreement and accurate. If they are not, you can use the stock reconciliation tool to reconcile stock balance and value with actuals.
 	</para>
+	<para>
+	Difference between Serialized and Non-serialized Items.
+	</para>
+	<para>
+	A serial number is a unique, identifying number or group of numbers and letters assigned to an individual Item. Serialized items are generally high value items for which you need to warranty's and service agreements. Mostly items as machinery, equipments and high-value electronics (computers, printers etc.) are serialized.
+	</para>
+	<para>
+	Non Serialized items are generally fast moving and low value item, hence doesn't need tracking for each unit. Items like screw, cotton waste, other consumables, stationary products can be categorized as non-serialized.
+	</para>
+	<note>
+	<para>Stock Reconciliation option is available for the non serialized Items only. For seriazlized and batch items, you should create Material Receipt entry in Stock Entry form.</para>
+	</note>
+	<sect2>
+	<title>Opening Stocks</title>
+	<para>You can upload your opening stock balance in the system using Stock Reconciliation. Stock Reconciliation will update your stock for a given Item on a given date for a given Warehouse to the given quantity.
+	</para>
+	<note>
+	<para>Tip: Stock Reconciliation can also be used to update the “value” of an Item. To understand how Items are valued read Valuation.</para>
+	</note>
+	<para>
+	To perform Stock Reconciliation, go to:
+	</para>
+	<programlisting>
+	Stock >> Tools >> Stock Reconciliation >> New Stock Reconciliation
+	</programlisting>
+		<sect3>
+		<title>Download Template</title>
+		<para>
+		A predefined template of an spreadsheet file should be followed for importing item's stock levels and valuations. Open new Stock Reconciliation form to see download option.
+		</para>
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="./image/stock-reco-template.png" />
+		</imageobject>
+		<textobject><phrase>Stock Reconciliation</phrase></textobject>
+	</mediaobject>
+		</sect3>
+		<sect3>
+		<title>Enter Data in csv file.</title>
+		<para>
+		Fill the template with the information than you want to update.
+		</para>
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="./image/stock-reco-data.png" />
+		</imageobject>
+		<textobject><phrase>Stock Reconciliation</phrase></textobject>
+	</mediaobject>
+	<para>
+	The csv format is case-sensitive. Do not edit the headers which are preset in the template. In the Item Code and Warehouse column, enter exact Item Code and Warehouse as created in your ERPNext account. For quatity, enter stock level you wish to set for that item, in a specific warehouse. If you do not want to change the quantity or valuation rate of an Item, you should leave it blank.
+	</para>
+	<note>
+		<para>Note: Make sure you do not put zero if you do not want to change the quantity amount or valuation amount. The system will calculate zero as zero quantity. So leave the field blank.</para>
+	</note>
+		</sect3>
+		<sect3>
+		<title>Upload file and Enter Values in Stock Reconciliation Form</title>
+		<para>
+		Save and upload your .csv file
+		</para>
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="./image/stock-reco-browse.png" />
+		</imageobject>
+		<textobject><phrase>Stock Reconciliation</phrase></textobject>
+	</mediaobject>
+		<para>
+		Posting Date: Posting Date will be date when you want uploaded stock to reflect in the report. Posting Date selection option allows you making back dated stock reconcialiation as well.
+		</para>
+		<para>
+		Difference Account:
+
+When making Stock Reconciliation for updating opening balance, then you should select Balance Sheet account. Bydefault Temporary Asset and Temporary Liability Account are created in the chart of account which can be used here. Since Warehouse ledger is debit account, Difference Account selected here should be "Temporary Liability Account", which is credit account.
+		</para>
+		<para>
+		If you are making Stock Reconciliation for correcting stock level or valuation of an item, then you can select any expense account in which you would want difference amount (derived from difference of valuation of item) should be booked. If Expense Account is selected as Difference Account, you will also need to select Cost Center as it is mandatory with any income and expense account selection.
+		</para>
+		<para>
+		After reviewing saved Reconciliation Data, submit the Stock Reconciliation. On successful submission, the data will be updated in the system. To check the submitted data go to stock and view stock level report.
+		</para>
+		<note>
+		<para>Note: While filling the valuation rates of Items, if you wish to find out the valuation rates of all items, you can go to stock and click on Item Prices report. The report will show you all types of rates.</para>
+		</note>
+		</sect3>
+		<sect3>
+		<title>Review the reconciliation data</title>
+		<para>
+		Verify your information.
+		</para>
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="./image/stock-reco-upload.png" />
+		</imageobject>
+		<textobject><phrase>Stock Reconciliation</phrase></textobject>
+	</mediaobject>	
+	</sect3>
+	</sect2>
 </sect1>

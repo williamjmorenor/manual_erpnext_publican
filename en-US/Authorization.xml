@@ -5,6 +5,12 @@
 <sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Authorization">
 	<title>Authorization Rule</title>
 	<para>
-	Authorization Rule
+	Authorization Rule is a tool to define rule for conditional authorization.
 	</para>
+	<para>
+	If you sales and purchase transactions of higher value or discount requires an authorization from senior manager, you can set authorization rule for it. To create new Authorization Rule, go to:
+	</para>
+	<programlisting>
+	Setup >> Customize >> Authorization Rule
+	</programlisting>
 </sect1>
