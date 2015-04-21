@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2015-04-19 20:14-0600\n"
-"PO-Revision-Date: 2015-04-19 20:14-0600\n"
+"POT-Creation-Date: 2015-04-21 00:43-0600\n"
+"PO-Revision-Date: 2015-04-21 00:43-0600\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
 "Language: en-US \n"
@@ -12,5 +12,14 @@ msgstr ""
 "X-Generator: Publican v4.2.6\n"
 
 msgid "SMS Setting"
+msgstr ""
+
+msgid "To integrate SMS in ERPNext, approach a SMS Gateway Provider who provides HTTP API. They will create an account for you and will provide an unique username and password."
+msgstr ""
+
+msgid "To configure SMS Settings in ERPNext, find out their HTTP API (a document which describes the method of accessing their SMS interface from 3rd party applications). In this document, you will get an URL which is used to send the SMS using HTTP request. Using this URL, you can configure SMS Settings in ERPNext."
+msgstr ""
+
+msgid "Note: the string up to the \"?\" is the SMS Gateway URL"
 msgstr ""
 

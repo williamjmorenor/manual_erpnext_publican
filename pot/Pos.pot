@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2015-04-19 20:14-0600\n"
-"PO-Revision-Date: 2015-04-19 20:14-0600\n"
+"POT-Creation-Date: 2015-04-21 00:43-0600\n"
+"PO-Revision-Date: 2015-04-21 00:43-0600\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
 "Language: en-US \n"
@@ -12,5 +12,23 @@ msgstr ""
 "X-Generator: Publican v4.2.6\n"
 
 msgid "POS Setting"
+msgstr ""
+
+msgid "POS includes advanced features to cater to different functionality, such as inventory management, CRM, financials, warehousing, etc., all built into the POS software. Prior to the modern POS, all of these functions were done independently and required the manual re-keying of information, which could lead to entry errors."
+msgstr ""
+
+msgid "If you are in retail operations, you want your Point of Sale to be as quick and efficient as possible. To do this, you can create a POS Setting for a user from:"
+msgstr ""
+
+msgid ""
+"\n"
+"	Accounts &gt; Point-of-Sale Setting\n"
+"	"
+msgstr ""
+
+msgid "Set default values as defined."
+msgstr ""
+
+msgid "If you specify a particular User, the POS setting will be applied only to that User. If the User option is left blank, the setting will be set for all users. To understand POS in detail visit Point of Sale"
 msgstr ""
 

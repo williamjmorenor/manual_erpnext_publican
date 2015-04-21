@@ -14,3 +14,12 @@ msgstr ""
 msgid "Third Party Backups"
 msgstr ""
 
+msgid "If you wish to store your backups on a periodic basis,on Dropbox, you can do it directly through ERPNext."
+msgstr ""
+
+msgid ""
+"\n"
+"	Setup &gt; Manage 3rd Party Backups\n"
+"	"
+msgstr ""
+

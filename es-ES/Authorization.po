@@ -14,3 +14,15 @@ msgstr ""
 msgid "Authorization Rule"
 msgstr ""
 
+msgid "Authorization Rule is a tool to define rule for conditional authorization."
+msgstr ""
+
+msgid "If you sales and purchase transactions of higher value or discount requires an authorization from senior manager, you can set authorization rule for it. To create new Authorization Rule, go to:"
+msgstr ""
+
+msgid ""
+"\n"
+"	Setup &gt;&gt; Customize &gt;&gt; Authorization Rule\n"
+"	"
+msgstr ""
+

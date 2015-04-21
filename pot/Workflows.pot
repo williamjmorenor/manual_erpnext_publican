@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2015-04-19 20:14-0600\n"
-"PO-Revision-Date: 2015-04-19 20:14-0600\n"
+"POT-Creation-Date: 2015-04-21 00:43-0600\n"
+"PO-Revision-Date: 2015-04-21 00:43-0600\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
 "Language: en-US \n"
@@ -12,5 +12,8 @@ msgstr ""
 "X-Generator: Publican v4.2.6\n"
 
 msgid "Workflows"
+msgstr ""
+
+msgid "In order to allow multiple people to submit multiple requests, for approvals, by multiple users, ERPNext requires you to fill the workflow conditions. ERPNext tracks the multiple permissions before submission."
 msgstr ""
 

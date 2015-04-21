@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2015-04-19 20:14-0600\n"
-"PO-Revision-Date: 2015-04-19 20:14-0600\n"
+"POT-Creation-Date: 2015-04-21 00:43-0600\n"
+"PO-Revision-Date: 2015-04-21 00:43-0600\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
 "Language: en-US \n"
@@ -14,21 +14,168 @@ msgstr ""
 msgid "Printing and Branding"
 msgstr ""
 
+msgid "Documents that you send to your customers carry your brand and image and they must be tailored to your requirements. ERPNext gives you many options so that you can set your oraganization's branding in your documents."
+msgstr ""
+
 msgid "Print Settings"
+msgstr ""
+
+msgid "In Print Settings you can set your default printing preferences like Paper Size, default text size, whether you want output as PDF or HTML etc."
+msgstr ""
+
+msgid "To edit print settings, go to:"
+msgstr ""
+
+msgid ""
+"\n"
+"		Setup &gt; Printing and Branding &gt; Print Settings\n"
+"		"
 msgstr ""
 
 msgid "Print Format Builder"
 msgstr ""
 
+msgid "The Print Format Builder helps you quickly make a simple customized Print Format by dragging and dropping data fields and adding custom text or HTML."
+msgstr ""
+
+msgid "You can create a new Print Format either by going to:"
+msgstr ""
+
+msgid ""
+"\n"
+"		Setup &gt; Printing and Branding &gt; Print Format Builder\n"
+"		"
+msgstr ""
+
+msgid "or Open the document for which you want to make a print format. Click the Printer icon, or go to Menu &gt; Print and click on the Edit button. Note: You must have System Manager permission to do this."
+msgstr ""
+
+msgid "Make a new Format"
+msgstr ""
+
+msgid "Add a new Field"
+msgstr ""
+
+msgid "To add a field, just drag it from the left sidebar and add it in your layout. You can edit the layout by clicking on the settings icon.To add a field, just drag it from the left sidebar and add it in your layout. You can edit the layout by clicking on the settings icon."
+msgstr ""
+
+msgid "Remove Field"
+msgstr ""
+
+msgid "To remove a field, just drag it back into the fields sidebar."
+msgstr ""
+
+msgid "Cutomize"
+msgstr ""
+
+msgid "You can add customized text, HTML in your print format, just add the Custom HTML field (in dark colour) and add it to the the place where you want to add the text. Then click on Edit HTML to edit your content."
+msgstr ""
+
+msgid "To save your format, just click on the Save button on the top."
+msgstr ""
+
 msgid "Print Headings"
+msgstr ""
+
+msgid "Print Headings are the names which you can give to your sales invoices, supplier quotations etc. You can create a list of names for different business communications. You can create print headings from :"
+msgstr ""
+
+msgid ""
+"\n"
+"		Setup &gt; Printing &gt; Print Heading &gt; New Print Heading\n"
+"		"
+msgstr ""
+
+msgid "Example of a change in print heading is shown below:"
 msgstr ""
 
 msgid "Letter Heads"
 msgstr ""
 
+msgid "You can manage multiple letter heads in ERPNext. In a letter head you can:"
+msgstr ""
+
+msgid "Create an image with your logo, brand and other information that you want to put on your letter head."
+msgstr ""
+
+msgid "Attach the image in your Letter Head record by clicking on image icon to automatically generate the HTML required for this Letter Head."
+msgstr ""
+
+msgid "If you want to make this the default letter head, click on “Is Default”."
+msgstr ""
+
+msgid "Your letter head will now appear in all Prints and Emails of documents."
+msgstr ""
+
+msgid "You can create / manage Letter Heads from:"
+msgstr ""
+
+msgid ""
+"\n"
+"		Setup &gt; Printing &gt; Letter Head &gt; New Letter Head\n"
+"		"
+msgstr ""
+
+msgid "This is how the letter head looks in a document print:"
+msgstr ""
+
 msgid "Address Template"
 msgstr ""
 
+msgid "Each region has its own way of defining Addresses. To manage multiple address formats for your Documents (like Quotation, Purchase Invoice etc.), you can create country-wise Address Templates."
+msgstr ""
+
+msgid ""
+"\n"
+"		Setup &gt; Printing and Branding &gt; Address Template\n"
+"		"
+msgstr ""
+
+msgid "A default Address Template is created when you setup the system. You can either edit or update it or create a new template."
+msgstr ""
+
+msgid "One template is default and will apply to all countries that do not have an specific template."
+msgstr ""
+
+msgid "<emphasis role=\"Bold\">Template</emphasis>"
+msgstr ""
+
+msgid "The templating engine is based on HTML and the Jinja Templating system and all the fields (including Custom Fields) will be available for creating the template."
+msgstr ""
+
+msgid "<emphasis role=\"Bold\">Example</emphasis>"
+msgstr ""
+
 msgid "Terms And Conditions"
+msgstr ""
+
+msgid "Terms and conditions are the general and special arrangements, provisions, requirements, rules, specifications, and standards that a company follows. These specifications are an integral part of an agreement or contract that the company gets into with its customers, suppliers or partners."
+msgstr ""
+
+msgid "Make a new Terms and Conditions"
+msgstr ""
+
+msgid "To setup Terms and Condition master, go to:"
+msgstr ""
+
+msgid ""
+"\n"
+"		Selling &gt; Terms and Condition &gt; New\n"
+"		"
+msgstr ""
+
+msgid "Editing in HTML"
+msgstr ""
+
+msgid "Content of Terms and Condition can be formatted as per your preference, and also insert images where needed. If you have expertise in HTML, you will also find option to edit the content of Terms and Condition in HTML."
+msgstr ""
+
+msgid "This also allows you to use Terms and Condition master for footer, which otherwise is not availale in ERPNext as dedicated functionality. Since contents of Terms and Condition is always the last to appear in the print format, details of footer should be inserted at the end of the content, so that it actually appears as footer in the print format."
+msgstr ""
+
+msgid "Select in Transaction"
+msgstr ""
+
+msgid "In transactions, you will find section of Terms and Condition where you will be able to search and fetched required Terms and Condition master."
 msgstr ""
 

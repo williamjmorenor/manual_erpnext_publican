@@ -17,10 +17,7 @@ msgid "Setting Up"
 msgstr "Configuración"
 
 msgid "Setting up an ERP system is like starting your business all over again, although in the virtual world. Thankfully it is not as hard as the real business and you get to do a trial too!"
-msgstr ""
-"Configurar un sistema ERP es como iniciar un negocio de nuevo, soló que "
-"virtualmente. Afortunadamente no es tan difícil como en negocios reales y "
-"!Usted puede hacer una prueba también¡ "
+msgstr "Configurar un sistema ERP es como iniciar un negocio de nuevo, soló que virtualmente. Afortunadamente no es tan difícil como en negocios reales y !Usted puede hacer una prueba también¡ "
 
 msgid "Implementation requires the implementer to take a step back and set aside some time to do this right. This is usually not a couple-of-hours, after-work kind of a project."
 msgstr ""
@@ -144,3 +141,4 @@ msgstr ""
 
 msgid "Once you are done with the setup wizard you will see the familiar desktop page."
 msgstr ""
+
