@@ -1,25 +1,28 @@
+# William Moreno Reyes <william>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2015-04-21 00:43-0600\n"
-"PO-Revision-Date: 2015-04-21 00:43-0600\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: None\n"
-"Language: en-US \n"
+"PO-Revision-Date: 2015-04-21 01:25-0600\n"
+"Last-Translator: William Moreno Reyes <william>\n"
+"Language-Team: william\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Publican v4.2.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
 
 msgid "ERPNext User Manual"
-msgstr ""
+msgstr "Manual de Usuario de ERPNext"
 
 msgid "ERP for Entrepreneurs."
-msgstr ""
+msgstr "Un ERP para emprendedores"
 
 msgid "ERPNext"
-msgstr ""
+msgstr "ERPNext"
 
 msgid "ERPNext helps you take full control of your business. It is as powerful as it is easy to use."
 msgstr ""
-
+"ERPNext le ayuda a tener un control total de su negocio. Es tanto poderoso "
+"como fácil de usar."

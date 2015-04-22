@@ -1,69 +1,133 @@
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2015-04-21 00:43-0600\n"
-"PO-Revision-Date: 2015-04-21 00:43-0600\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: None\n"
-"Language: en-US \n"
+"PO-Revision-Date: 2015-04-21 20:10-0600\n"
+"Last-Translator: William Moreno Reyes <william>\n"
+"Language-Team: william\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Publican v4.2.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
 
 msgid "Concepts and Terms"
-msgstr ""
+msgstr "Conceptos y Términos"
 
 msgid "Before you start implementation, lets get familiar with the terminology that is used and some basic concepts in ERPNext."
 msgstr ""
+"Antes de iniciar con la implementación, hay que familiarizarse con la "
+"terminología requerida y algunos conceptos básicos en ERPNext."
 
 msgid "Basic Concepts"
-msgstr ""
+msgstr "Conceptos Básicos"
 
 msgid "<emphasis role=\"bold\">Company:</emphasis> This represents the Company records for which ERPNext is setup. With this same setup, you can create multiple Company records, each representing a different legal entity. The accounting for each Company will be different, but they will share the Customer, Supplier and Item records"
 msgstr ""
+" <emphasis role=\"bold\">Compañía:</emphasis> Representa los registros de la "
+"Empresa para la cual se configura ERPNext. Con esta misma configuración "
+"puede crear múltiples registros de empresas, cada una representando a "
+"entidad legal diferente. La contabilidad de cada Compañía sera diferente, "
+"pero las empresas compartirán la misma base de Clientes, Proveedores y "
+"Artículos."
 
 msgid "<emphasis role=\"bold\">Customer:</emphasis> Represents a customer. A Customer can be an individual or an organizations. You can create multiple Contacts and Addresses for each Customer."
 msgstr ""
+"<emphasis role=\"bold\">Cliente:</emphasis> Representa un cliente. Un Cliente "
+"puede ser un individuo o una organización. Puede crear varios Contactos y "
+"Direcciones para cada Cliente."
 
 msgid "<emphasis role=\"bold\">Supplier:</emphasis> Represents a supplier of goods or services. Your telephone company is a Supplier, so is your raw materials Supplier. Again, a Supplier can be an individual or an organization and has multiple Contacts and Addresses."
 msgstr ""
+"<emphasis role=\"bold\">Proveedor:</emphasis> Representa un proveedor de "
+"bienes o servicios. Su compañía telefónica es un Proveedor, también lo es su "
+"proveedor de materias primas, un Proveedor puede ser un individuo o una "
+"organización y tener varios Contactos y Direcciones."
 
 msgid "<emphasis role=\"bold\">Item:</emphasis> A Product, sub-product or Service that is either bought, sold or manufactured and is uniquely identified."
 msgstr ""
+"<emphasis role=\"bold\">Articulo:</emphasis> Un Producto, Sub - Producto o "
+"Servicio que es tanto, vendido o manufacturado así como unicamente "
+"identificable."
 
 msgid "<emphasis role=\"bold\">Account:</emphasis> An Account is a heading under which financial and business transactions are carried on. For example, “Travel Expense” is an account, “Customer Zoe”, “Supplier Mae” are accounts. ERPNext creates accounts for Customers and Suppliers automatically."
 msgstr ""
+"<emphasis role=\"bold\">Cuenta:</emphasis> Una cuenta es una sección donde se "
+"registran transacciones financieras o comerciales. Por ejemplo, “Gastos de "
+"Viaje” es una cuenta, “Cliente Zoe”, “Proveedor Mae” son cuentas. ERPNext "
+"crea cuentas para Clientes y Proveedores automáticamente."
 
 msgid "<emphasis role=\"bold\">Address:</emphasis> An address represents location details of a Customer or Supplier. These can be of different locations such as Head Office, Factory, Warehouse, Shop etc."
 msgstr ""
+"<emphasis role=\"bold\">Dirección:</emphasis> Una dirección representa "
+"detalles sobre la localización de un Cliente o Proveedor. Pueden haber "
+"diferentes direcciones como Oficina Central, Fabrica, Inventario, Tienda "
+"etc."
 
 msgid "<emphasis role=\"bold\">Contact:</emphasis> An individual Contact belongs to a Customer or Supplier or is just an independent. A Contact has a name and contact details like email and phone number."
 msgstr ""
+"<emphasis role=\"bold\">Contacto:</emphasis> Un Contacto individual pertenece "
+"a un Cliente o Proveedor o es independiente. Un Contacto tiene un nombre y "
+"detalles de contacto como un correo electrónico y número de teléfono."
 
 msgid "<emphasis role=\"bold\">Communication:</emphasis> A list of all Communication with a Contact or Lead. All emails sent from the system are added to the Communication table."
 msgstr ""
+"<emphasis role=\"bold\">Comunicación:</emphasis> Una lista de todas las "
+"Comunicaciones con un Contacto o una Oportunidad. Todos los correos enviados "
+"desde el sistema se agregan a la tabla de comunicaciones."
 
 msgid "<emphasis role=\"bold\">Price List:</emphasis> A Price List is a place where different rate plans can be stored. It’s a name you give to a set of Item Prices stored under a particular List."
 msgstr ""
+"<emphasis role=\"bold\">Lista de Precios:</emphasis> Una lista de precios es "
+"un lugar donde se guardan diferente planes de tarifas. Es un nombre que le "
+"da a una serie de Precios de Artículos que se guardad bajo una sola lista."
 
 msgid "Accounting"
-msgstr ""
+msgstr "Contabilidad"
 
 msgid "<emphasis role=\"bold\">Fiscal Year:</emphasis> Represents a Financial Year or Accounting Year. You can operate multiple Fiscal Years at the same time. Each Fiscal Year has a start date and an end date and transactions can only be recorded in this period. When you “close” a fiscal year, it's balances are transferred as “opening” balances for the next fiscal year."
 msgstr ""
+"<emphasis role=\"bold\">Periodo Fiscal:</emphasis> Representa un Año Fiscal o "
+"Año Contable. Puede trabajar en varios Periodos Fiscales al mismo tiempo. "
+"Cada Periodo Fiscal tiene una fecha de inicio y una de fin y las "
+"transacciones soló pueden registrarse en ese periodo. Cuando \"cierra\" un "
+"Periodo Fiscal, sus saldos son transferidos como los saldos iniciales del "
+"próximo periodo fiscal."
 
 msgid "<emphasis role=\"bold\">Cost Center:</emphasis> A Cost Center is like an Account, but the only difference is that its structure represents your business more closely than Accounts. For example in your Chart of Accounts, you separate your expenses by type (say travel, marketing etc). In your Chart of Cost Centers, you can separate them by product line or business group (for example online sales, retail sales)."
 msgstr ""
+"<emphasis role=\"bold\">Centro de Costos:</emphasis> Un Centro de Costos es "
+"similar a una Cuenta con la única diferencia que su estructura representa a "
+"su negocio de forma mas cercana que una Cuenta. Por ejemplo en su Catalogo "
+"de Cuentas, usted separa sus gastos por tipo (transporte, publicidad, etc.). "
+"En sus Centros de Costos puede separarlos por lineas de productos o grupos "
+"de negocios (por ejemplo ventas en linea, ventas locales)."
 
 msgid "<emphasis role=\"bold\">Journal Voucher:</emphasis> A document that contains General Ledger (GL) entries and the sum of Debits and Credits of those entries is the same. In ERPNext you can update Payments, Returns etc using Journal Vouchers."
 msgstr ""
+"<emphasis role=\"bold\">Comprobante de Diario:</emphasis> Un documento que "
+"contiene entradas del Libro Mayor y la suma de los Débitos y Créditos de "
+"esas entradas en el mismo. En ERPNext puede actualizar Pagos, Devoluciones, "
+"etc. usando Comprobantes de Diario. "
 
 msgid "<emphasis role=\"bold\">Sales Invoice:</emphasis> A bill sent to Customers for delivery of Items (goods or services)."
 msgstr ""
+"<emphasis role=\"bold\">Factura de Ventas:</emphasis> Una factura enviada a "
+"los Clientes por el envió de Artículos (bienes o servicios)."
 
 msgid "<emphasis role=\"bold\">Purchase Invoice:</emphasis> A bill sent by a Supplier for delivery of Items (goods or services)."
 msgstr ""
+"<emphasis role=\"bold\">Factura de Compras:</emphasis> Una factura enviada a "
+"los Proveedores por el envió de Artículos (bienes o servicios)."
 
 msgid "<emphasis role=\"bold\">Currency:</emphasis> ERPNext allows you to book transactions in multiple currencies. There is only one currency for your book of accounts though. While posting your Invoices, payments in different currencies, the amount is converted to the default currency by the specified conversion rate."
 msgstr ""
@@ -202,4 +266,3 @@ msgstr ""
 
 msgid "<emphasis role=\"bold\">Web Page:</emphasis> A web page with a unique URL (web address) on the website generated from ERPNext."
 msgstr ""
-
