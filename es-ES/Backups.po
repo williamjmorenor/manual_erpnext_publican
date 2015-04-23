@@ -17,12 +17,11 @@ msgid "Third Party Backups"
 msgstr "Respaldos de Terceros"
 
 msgid "If you wish to store your backups on a periodic basis,on Dropbox, you can do it directly through ERPNext."
-msgstr ""
-"Si desea guardar sus respaldos periódicamente, en Dropbox, puede hacerlo "
-"directamente desde ERPNext."
+msgstr "Si desea guardar sus respaldos periódicamente, en Dropbox, puede hacerlo directamente desde ERPNext."
 
 msgid ""
 "\n"
 "	Setup &gt; Manage 3rd Party Backups\n"
 "	"
 msgstr "Configuración &gt; Administrar Respaldos de Terceros"
+

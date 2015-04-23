@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2015-04-21 00:43-0600\n"
-"PO-Revision-Date: 2015-04-21 00:43-0600\n"
+"POT-Creation-Date: 2015-04-23 10:23-0600\n"
+"PO-Revision-Date: 2015-04-23 10:23-0600\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
 "Language: en-US \n"
@@ -23,16 +23,28 @@ msgstr ""
 msgid "Setup Wizard"
 msgstr ""
 
+msgid "The first time than you logging into ERPNext you will need to create the firt company and define many defaults settings like language and currency."
+msgstr ""
+
 msgid "The Setup Wizard helps you quickly setup your ERPnext by helping you create your company, Items, Customer, Suppliers and will also setup a basic website with this data. Here is a quick overview of the steps:"
 msgstr ""
 
 msgid "Step 1: Language"
 msgstr ""
 
+msgid "You can change the System Language after Septup Wizard, but some things of the system will not be updated. Please be carefull selecting the system language. You will note than the Setup Wizard will update to the selected language."
+msgstr ""
+
+msgid "This step is mandatory."
+msgstr ""
+
 msgid "Select your language. ERPNext is available in more than 20 languages."
 msgstr ""
 
-msgid "Step 4: Currency and Timezone"
+msgid "Step 2: Currency and Timezone"
+msgstr ""
+
+msgid "Please note than many settings and options in ERPNext are specifics and only available for certains countries. For example Charts of Account are Country Specifics, is there is a Chart of Accounts available for your country ERPNext will let you select it in the Wizard Setup"
 msgstr ""
 
 msgid "Set your country name, currency and timezone."
@@ -41,10 +53,13 @@ msgstr ""
 msgid "Step 3: Profile Details"
 msgstr ""
 
+msgid "This will be the system administrator, please choose a strong password and be sure to not forget it."
+msgstr ""
+
 msgid "Enter Users Profile Details like Name, User ID and preferred password."
 msgstr ""
 
-msgid "Step 2: Company Details"
+msgid "Step 4: Company Details"
 msgstr ""
 
 msgid "Enter Company Details like Name, Abbreviation and Financial Year Details."
@@ -69,6 +84,9 @@ msgid "The end date will be set automatically"
 msgstr ""
 
 msgid "Step 5: Letterhead and Logo"
+msgstr ""
+
+msgid "This step is not mandatory."
 msgstr ""
 
 msgid "Attach Company Letterhead and Company Logo."

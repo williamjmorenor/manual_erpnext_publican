@@ -1,0 +1,58 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2015-04-22 17:50-0600\n"
+"PO-Revision-Date: 2015-04-22 17:50-0600\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"Language: en-US \n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Publican v4.2.6\n"
+
+msgid "Collaboration Tools"
+msgstr ""
+
+msgid "Text"
+msgstr ""
+
+msgid "Custom Field"
+msgstr ""
+
+msgid "Custom Script"
+msgstr ""
+
+msgid "Custom Script Examples"
+msgstr ""
+
+msgid "Custom Script Fetch Values From Master"
+msgstr ""
+
+msgid "Date Validation"
+msgstr ""
+
+msgid "Generate Item Code Based On Custom Logic"
+msgstr ""
+
+msgid "Make Read Only After Saving"
+msgstr ""
+
+msgid "Restrict Cancel Rights"
+msgstr ""
+
+msgid "Restrict Purpose of Stock Entry"
+msgstr ""
+
+msgid "Restrict User Based on Child Record"
+msgstr ""
+
+msgid "Customize Form"
+msgstr ""
+
+msgid "Hiding Modules And Features"
+msgstr ""
+
+msgid "Print Format"
+msgstr ""
+

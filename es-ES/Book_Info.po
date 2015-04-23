@@ -23,6 +23,5 @@ msgid "ERPNext"
 msgstr "ERPNext"
 
 msgid "ERPNext helps you take full control of your business. It is as powerful as it is easy to use."
-msgstr ""
-"ERPNext le ayuda a tener un control total de su negocio. Es tanto poderoso "
-"como fácil de usar."
+msgstr "ERPNext le ayuda a tener un control total de su negocio. Es tanto poderoso como fácil de usar."
+

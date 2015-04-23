@@ -18,18 +18,14 @@ msgid "Authorization Rule"
 msgstr "Regla de Autorización"
 
 msgid "Authorization Rule is a tool to define rule for conditional authorization."
-msgstr ""
-"La Regla de Autorización es una herramienta para definir reglas para "
-"autorizaciones condicionales."
+msgstr "La Regla de Autorización es una herramienta para definir reglas para autorizaciones condicionales."
 
 msgid "If you sales and purchase transactions of higher value or discount requires an authorization from senior manager, you can set authorization rule for it. To create new Authorization Rule, go to:"
-msgstr ""
-"Si sus operaciones de compra y venta de montos mayores o descuentos "
-"necesitan la autorización de un administrador, puede establecer una regla de "
-"autorización para ello. Para crear una nueva regla de autorización valla a:"
+msgstr "Si sus operaciones de compra y venta de montos mayores o descuentos necesitan la autorización de un administrador, puede establecer una regla de autorización para ello. Para crear una nueva regla de autorización valla a:"
 
 msgid ""
 "\n"
 "	Setup &gt;&gt; Customize &gt;&gt; Authorization Rule\n"
 "	"
 msgstr "Configuración &gt;&gt; Personalizar &gt;&gt; Regla de Autorización"
+

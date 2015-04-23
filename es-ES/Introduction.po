@@ -1,64 +1,73 @@
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2015-04-21 00:43-0600\n"
-"PO-Revision-Date: 2015-04-21 00:43-0600\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: None\n"
-"Language: en-US \n"
+"PO-Revision-Date: 2015-04-23 09:40-0600\n"
+"Last-Translator: William Moreno Reyes <william>\n"
+"Language-Team: william\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Publican v4.2.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
 
 msgid "Introduction"
-msgstr ""
+msgstr "Introducción"
 
 msgid "If you are running a small business that has a few employees, you understand that it's hard to manage the dynamic nature of doing businesses. You are already using a software like Accounting, and may be some more to manage your inventory and sales (or CRM)."
-msgstr ""
+msgstr "Si está dirigiendo un negocio pequeño con pocos empleados, entiende que es difícil manejar la dinámica naturaleza de hacer negocios. Usted esta usando una aplicación para Contabilidad, y probablemente algunas mas para manejar su inventario y ventas (tal vez un CRM)."
 
 msgid "An ERP brings all of this together in one place."
-msgstr ""
+msgstr "Un ERP proporciona todas esas funciones en un solo lugar."
 
 msgid "Small businesses are not so different from large ones. They contain most of the complexities of a large business along with many other constraints. Small businesses have to communicate with customers, do accounts, pay taxes, do payroll, manage timelines, deliver quality, answer questions, and keep everyone happy just like in large businesses."
-msgstr ""
+msgstr "Las empresas pequeñas no son diferentes de las grandes entidades. Tienen la misma complejidad de una gran organización junto a otros retos. Las empresas pequeñas tienen que mantener comunicación con sus clientes, llevar su contabilidad, pagar impuestos, pagar planillas, administrar ciclos de tiempo, mantener la calidad, responder las inquietudes de los clientes y mantener a todos felices como una grandes empresa."
 
 msgid "Large businesses have the advantage of using advanced data systems to manage their process efficiently. Small businesses, on the other hand, typically struggle to keep things organized. They often use a mix of apps like spreadsheets, accounting software, web CRM etc to manage.The problem is, not everyone is on the same page. An ERP changes that."
-msgstr ""
+msgstr "Grandes empresas tiene la ventaja de contar con sistemas avanzados para administrar eficientemente sus procesos, por otro lado, generalmente luchan por mantener todo en orden. Ellos usan una mezcla de aplicaciones como hojas de calculo, aplicaciones de contabilidad, un CRM web. El problema es que no todos están en la misma aplicación. Un ERP cambia eso."
 
 msgid "ERPNext"
-msgstr ""
+msgstr "ERPNext"
 
 msgid "ERPNext helps you to manage all your business information in one application and use it to manage operations and take decisions based on data. Among other things, ERPNext will help you to:"
-msgstr ""
+msgstr "ERPNext le ayuda a manejar toda la información de su negocio en una sola aplicación y usarla para manejar todas las operaciones de la empresa y tomar decisiones basados en la información disponible. Entre otras cosas, ERPNext le ayudara a:"
 
 msgid "Track all Invoices and Payments."
-msgstr ""
+msgstr "Registrar todas las Facturas y Pagos."
 
 msgid "Know what quantity of which product is available in stock."
-msgstr ""
+msgstr "Conocer la cantidad disponible de cada producto en el inventario."
 
 msgid "Identify open customer queries."
-msgstr ""
+msgstr "Identificar las necesidades de sus clientes."
 
 msgid "Manage payroll."
-msgstr ""
+msgstr "Manejar la Planilla."
 
 msgid "Assign tasks and follow up on them."
-msgstr ""
+msgstr "Asignar tareas y darles seguimiento."
 
 msgid "Maintain a database of all your customers, suppliers and their contacts."
-msgstr ""
+msgstr "Manejar una base de datos de todos sus clientes, proveedores y sus contactos."
 
 msgid "Prepare quotes."
-msgstr ""
+msgstr "Preparar presupuestos."
 
 msgid "Get reminders on maintenance schedules."
-msgstr ""
+msgstr "Obtener recordatorios del calendario de mantenimiento."
 
 msgid "Publish your website."
-msgstr ""
+msgstr "Publicar su sitio web."
 
 msgid "And a lot lot lot more."
-msgstr ""
+msgstr "Y muchas cosas mas."
 

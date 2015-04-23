@@ -13,8 +13,8 @@
 	</imageobject>
 	<textobject><phrase>Flow Of Transactions In ERPNext</phrase></textobject>
 	</mediaobject>
-	<para>
-		<emphasis role="bold">Note:</emphasis><emphasis> Not all of the steps are mandatory. ERPNext allows you to freely skip steps if you want to simplify the process.</emphasis>
-	</para>
+	<note>
+	<para> Not all of the steps are mandatory. ERPNext allows you to freely skip steps if you want to simplify the process.</para>
+	</note>
 </sect1>
 

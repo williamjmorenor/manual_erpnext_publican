@@ -12,11 +12,20 @@
 	</para>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard">
 		<title>Setup Wizard</title>
+		<note>
+		<para>The first time than you logging into ERPNext you will need to create the firt company and define many defaults settings like language and currency.</para>
+		</note>
 		<para>
 		The Setup Wizard helps you quickly setup your ERPnext by helping you create your company, Items, Customer, Suppliers and will also setup a basic website with this data. Here is a quick overview of the steps:
 		</para>
 	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_1">
 		<title>Step 1: Language</title>
+		<warning>
+		<para>You can change the System Language after Septup Wizard, but some things of the system will not be updated. Please be carefull selecting the system language. You will note than the Setup Wizard will update to the selected language.</para>
+		</warning>
+		<important>
+		<para>This step is mandatory.</para>
+		</important>		
 		<para>
 		Select your language. ERPNext is available in more than 20 languages.
 		</para>
@@ -28,7 +37,13 @@
 		</mediaobject>
 	</sect2>
 	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_4">
-		<title>Step 4: Currency and Timezone</title>
+		<title>Step 2: Currency and Timezone</title>
+		<note>
+		<para>Please note than many settings and options in ERPNext are specifics and only available for certains countries. For example Charts of Account are Country Specifics, is there is a Chart of Accounts available for your country ERPNext will let you select it in the Wizard Setup</para>
+		</note>
+		<important>
+		<para>This step is mandatory.</para>
+		</important>
 		<para>
 		Set your country name, currency and timezone.
 		</para>
@@ -41,6 +56,12 @@
 	</sect2>
 	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_3">
 		<title>Step 3: Profile Details</title>
+		<warning>
+		<para>This will be the system administrator, please choose a strong password and be sure to not forget it.</para>
+		</warning>
+		<important>
+		<para>This step is mandatory.</para>
+		</important>
 		<para>
 		Enter Users Profile Details like Name, User ID and preferred password.
 		</para>
@@ -52,7 +73,10 @@
 		</mediaobject>
 	</sect2>
 	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_2">
-		<title>Step 2: Company Details</title>
+		<title>Step 4: Company Details</title>
+		<important>
+		<para>This step is mandatory.</para>
+		</important>
 		<para>
 		Enter Company Details like Name, Abbreviation and Financial Year Details.
 		</para>
@@ -73,6 +97,9 @@
 	</sect2>
 	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_5">
 		<title>Step 5: Letterhead and Logo</title>
+		<important>
+		<para>This step is not mandatory.</para>
+		</important>
 		<para>
 		Attach Company Letterhead and Company Logo.
 		</para>
@@ -85,6 +112,9 @@
 	</sect2>
 	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_6">
 		<title>Step 6: Tax Details</title>
+		<important>
+		<para>This step is not mandatory.</para>
+		</important>
 		<para>
 		Enter any three types of taxes which you regularly pay. This wizard will create a tax master which will calculate the taxes as per the tax-type.
 		</para>
@@ -112,6 +142,9 @@
 	</sect2>
 	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_7">
 		<title>Step 7: Customers</title>
+		<important>
+		<para>This step is not mandatory.</para>
+		</important>
 		<para>
 		Enter your Customer names and the contact person from that organisation.
 		</para>
@@ -141,6 +174,9 @@
 	</sect2>
 	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_8">
 		<title>Step 8: Suppliers</title>
+		<important>
+		<para>This step is not mandatory.</para>
+		</important>
 		<para>
 		Enter a few of your Suppliers' names.
 		</para>
@@ -156,6 +192,9 @@
 	</sect2>
 	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_9">
 		<title>Step 9: Item Names</title>
+		<important>
+		<para>This step is not mandatory.</para>
+		</important>
 		<para>
 		In this final step, please enter the names of the Items you buy or sell.
 		</para>
