@@ -28,3 +28,9 @@ publican install_brand --path "C:/Program Files/Publican/Common_Content"
 
 3- publican build --langs=all --formats=pdf,html,epub
 
+#Prepare for transalation
+1- publican update_pot
+
+2- publican update_po --langs=land-code --firstname= --surname= --email=
+
+This will create a directory for the language you want to translate with .po files, to see suported lang codes see: http://docs.fedoraproject.org/en-US/Fedora_Contributor_Documentation/1/html/Users_Guide/appe-Users_Guide-Language_codes.html
