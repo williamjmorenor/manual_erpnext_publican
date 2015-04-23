@@ -12,11 +12,13 @@
 # William Moreno Reyes <william>, 2015.
 # William Moreno Reyes <william>, 2015.
 # William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2015-04-21 00:43-0600\n"
-"PO-Revision-Date: 2015-04-23 09:36-0600\n"
+"PO-Revision-Date: 2015-04-23 10:39-0600\n"
 "Last-Translator: William Moreno Reyes <william>\n"
 "Language-Team: william\n"
 "Language: es\n"
@@ -145,12 +147,22 @@ msgstr "La Solicitud de vacaciones en un buen <emphasis role=\"bold\">ejemplo</e
 
 msgid "<emphasis role=\"bold\">It should be created by an Employee. </emphasis> For this, Employee Role should be given Read, Write, Create permissions."
 msgstr ""
+"<emphasis role=\"bold\">Debe ser creada por un empleado. </emphasis> Para "
+"esto, el Rol de Empleado debe tener permisos de Escritura, Lectura y "
+"Creación."
 
 msgid "<emphasis role=\"bold\">An Employee should only be able to access his/her Leave Application. </emphasis> Hence, Apply User Permissions should be enabled for Employee Role, and a User Permission record should be created for each User Employee combination. (This effort is reduced for Employee Document Type, by programmatically creating User Permission records.)"
 msgstr ""
+"<emphasis role=\"bold\">Un empleado debe tener acceso soló a sus solicitudes. "
+"</emphasis> Luego, los Permisos de Usuario deben ser habilitados para el Rol "
+"de Empleado, y un Permiso de Usuario debe ser creado para cada Combinación "
+"de Usuario Empleado. (Este esfuerzo se reduce para el Tipo de Documento "
+"Empleado, creando automáticamente registros de Permisos de Usuario)."
 
 msgid "<emphasis role=\"bold\">HR Manager should be able to see all Leave Applications. </emphasis> Create a Permission Rule for HR Manager at Level 0, with Read permissions. Apply User Permissions should be disabled."
 msgstr ""
+"<emphasis role=\"bold\">El Administrador de Recursos Humanos debe tener acceso "
+"a todas las Solicitudes de Vacaciones.</emphasis> "
 
 msgid "<emphasis role=\"bold\">Leave Approver should be able to see and update Leave Applications applicable to him/her. </emphasis> Leave Approver is given Read and Write access at Level 0, with Apply User Permissions enabled. Relevant Employee Documents should be enlisted in the User Permissions of Leave Approvers. (This effort is reduced for Leave Approvers mentioned in Employee Documents, by programmatically creating User Permission records.)"
 msgstr ""
@@ -178,4 +190,3 @@ msgstr ""
 
 msgid "To share a document, open the document, click on the \"+\" icon under sharing and select the user"
 msgstr ""
-
