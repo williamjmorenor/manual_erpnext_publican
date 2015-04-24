@@ -1,130 +1,208 @@
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2015-04-21 00:43-0600\n"
-"PO-Revision-Date: 2015-04-21 00:43-0600\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: None\n"
-"Language: en-US \n"
+"PO-Revision-Date: 2015-04-23 19:31-0600\n"
+"Last-Translator: William Moreno Reyes <william>\n"
+"Language-Team: william\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Publican v4.2.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
 
 msgid "Data Management"
-msgstr ""
+msgstr "Administración de Datos"
 
 msgid "You can import, export bulk edit data from and to spreadsheet files (.csv) from the Data Import Export Tool. This tool will be very helpful initially to setup your data from other systems."
 msgstr ""
+"Puede importar, exportar datos desde y hacia una hoja de calculo (.csv) "
+"desde la Herramienta de Importación y Exportación de Datos. Esta herramienta "
+"le sera muy útil inicialmente para configurar sus datos de otro sistema."
 
 msgid "Data Import Tool"
-msgstr ""
+msgstr "Herramienta para Importar Datos"
 
 msgid "The Data Import Tool is a great way to upload (or edit) bulk data, specially master data, into the system. To Open the data import tool, you either go to Setup or go to the Transaction you want to Import. If Data Import is allowed, you will see an Import Button:"
 msgstr ""
+"La Herramienta para Importar Datos es una buena forma para subir (o editar) "
+"datos, especialmente datos principales, al sistema. Para Abrir la "
+"herramienta para importar datos, puede tanto ir a la Configuración o a la "
+"Transacción que desea Importar. Si la Importación de Datos se permite, "
+"encontrara el Botón de Importar."
 
 msgid "The tool has two sections, one to download a template and the second to upload the data."
 msgstr ""
+"La herramienta tiene dos secciones, uno para descargar una plantilla y el "
+"segundo para subir los datos."
 
 msgid "Only those DocTypes are allowed for Import whose Document Type is \"Master\" or Allow Import property is set."
 msgstr ""
+"Solo aquellos Documentos que son permitidos para Importar son aquellos en "
+"que el Tipo de Documento es \"Master\" o la opción de Permitir Importar esta "
+"seleccionada."
 
 msgid "Downloading The Template"
-msgstr ""
+msgstr "Descargar la Plantilla"
 
 msgid "Data in ERPNext is stored in tables, much like a spreadsheet with columns and rows of data. Each entity in ERPNext can have multiple child tables associated with it too. The child tables are linked to the parent tables and are implemented where there are multiple values for any property. For example an Item can have multiple prices, An Invoice has multiple Items and so on."
 msgstr ""
+"La información de ERPNext se almacena en tablas, muy similares a hojas de "
+"datos con columnas y filas de datos. Cada entidad en ERPNext puede tener "
+"múltiples tablas hijos asociadas con ellas también. Las tablas hijo están "
+"vinculadas a las tablas principales y son implementadas donde hay múltiples "
+"valores para cada propiedad. Por ejemplo un Articulo puede tener precios, "
+"una Factura tiene múltiples Artículos y así sucesivamente."
 
 msgid "Click on the table you want to download or \"All Tables\""
-msgstr ""
+msgstr "Clic en la tabla que desea descargar o \"Todas la Tablas\""
 
 msgid "For bulk editing, you can click on \"Download With Data\""
-msgstr ""
+msgstr "Para edición de datos, puede hacer clic en \"Descargar con Datos\""
 
 msgid "Fill in the Template"
-msgstr ""
+msgstr "Llenar los datos en la Plantilla"
 
 msgid "After downloading the template, open it in a spreadsheet application and fill in the data below the column headings."
 msgstr ""
+"Después de descargar la plantilla, ábrala en una aplicación de hoja de "
+"calculo y llene los datos en la columna debajo la columna de encabezados."
 
 msgid "Then export your template or save it as a Comma Separated Values (CSV) file."
 msgstr ""
+"Después exporte su plantilla o guárdela como un  Archivo Separado con Comas "
+"(CSV)."
 
 msgid "Upload the .csv File"
-msgstr ""
+msgstr "Suba el archivo .csv"
 
 msgid "Finally attach the .csv file in the section. Click on the \"Upload and Import\" button."
 msgstr ""
+"Finalmente adjunte el archivo .csv en la sección correspondiente. Clic en el "
+"botón \"Subir e Importar\"."
 
 msgid "Make sure that if your application allows, use encoding as UTF-8."
 msgstr ""
+"Asegúrese que la aplicación que utilice permite usar la codificación como "
+"UTF-8."
 
 msgid "Keep the ID column blank for new records."
-msgstr ""
+msgstr "Mantenga la columna de ID en blanco para nuevos registros."
 
 msgid "Uploading All Tables (Main + Child)"
-msgstr ""
+msgstr "Suba Todas las Tables (Principal + Hijos)"
 
 msgid "If you select all tables, you will get columns belonging to all the tables in one row separated by ~ columns. If you have multiple child rows then you must start a new main item on a new row."
 msgstr ""
+"Si usted selecciona todas las tables, podrá obtener columnas pertenecientes "
+"a todas las tables en una fila separada por columnas. Si usted tiene "
+"múltiples filas hijos tiene que iniciar un nuevo ítem principal en una nueva "
+"columna."
 
 msgid "To see how its done, enter a few records manually using forms and export \"All Tables\" with \"Download with Data\""
 msgstr ""
+"Para poder observar como funciona, introduzca unos pocos registros "
+"manualmente usando los formularios del sistema y luego exporte \"Todas las "
+"Tablas\" con la opción \" Descargar con Datos\"."
 
 msgid "Overwriting"
-msgstr ""
+msgstr "Sobre escribir datos"
 
 msgid "ERPNext also allows you to overwrite all or certain columns. If you want to update certain columns, you can download the template with data. Remember to check on the Overwrite box before uploading."
 msgstr ""
+"ERPNext también permite sobre escribir todas o algunas columnas. Si desea "
+"actualizar actualizar solo ciertas columnas, puede descargar la plantillas "
+"con datos. Recuerde Seleccionar la opción de Sobre Escribir antes de subir "
+"los datos."
 
 msgid "For child records, if you select Overwrite, it will delete all the child records of that parent."
 msgstr ""
+"Para registros hijos, si usted desea Sobre Escribir, esto borrara todas la "
+"tablas hijos de esa tabla padre,"
 
 msgid "Upload Limitations"
-msgstr ""
+msgstr "Limitaciones al Subir"
 
 msgid "ERPNext restricts the amount of data you can upload in one file. Though the number may vary based on the type of data. It is usually safe to upload around 1000 rows of a table at one go. If the system will not accept, then you will see an error."
 msgstr ""
+"ERPNext restringe la cantidad de datos que puede subir en un solo archivo. "
+"Ahora el número puede variar según el tipo de datos. Usualmente es seguro "
+"subir alrededor de 1000 filas para una tabla de una sola vez. Si el sistema "
+"no acepta esa cantidad, recibirá un mensaje de error."
 
 msgid "Why is this? Uploading a lot of data can cause your system to crash, specially if there are other users doing things in parallel. Hence ERPNext restricts the number of “writes” you can process in one request."
 msgstr ""
+"¿Porqué es esta limitación? Subir muchos datos de una vez puede hacer que su "
+"sistema falle, especialmente si hay varios usuarios trabajando en "
+"paralelos. Dado que ERPNext restringe el número de \"escrituras\" que puede "
+"realizar en una sola operación."
 
 msgid "How to Attach files?"
-msgstr ""
+msgstr "¿Como adjuntar archivos?"
 
 msgid "When you open a form, on the right sidebar, you will see a section to attach files. Click on “Add” and select the file you want to attach. Click on “Upload” and you are set."
 msgstr ""
+"Cuando usted abre una forma, en la columna derecha, podrá ver una sección "
+"para subir archivos. Clic en \"Agregar\" y seleccione el archivo que desea "
+"adjuntar. Clic en \"Subir\" y usted esta listo."
 
 msgid "What is a CSV file?"
-msgstr ""
+msgstr "¿Qué es un archivo CSV?"
 
 msgid "A CSV (Comma Separated Value) file is a data file that you can upload into ERPNext to update various data. Any spreadsheet file from popular spreadsheet applications like MS Excel or Open Office Spreadsheet can be saved as a CSV file."
 msgstr ""
+"Un archivo CSV (Archivo Separado por Comas) es un archivos de datos que "
+"subir a ERPNext para actualizar varios datos. Cada aplicación de hoja de "
+"calculo como MS Excel o Open Office puede ser guardado como un archivo CSV. "
 
 msgid "If you are using Microsoft Excel and using non-English characters, make sure to save your file encoded as UTF-8. For older versions of Excel, there is no clear way of saving as UTF-8. So save your file as a CSV, then open it in Notepad, and save as “UTF-8”. (Sorry blame Microsoft for this!)"
 msgstr ""
+"Si usted esta usando Microsoft Excel y utilizando caracteres no Ingleses, "
+"asegurece de guardar su archivo con codificac UTF-8. Para versiones "
+"anteriores de Excel, no hay forma clara de guardar como UTF-8. Así que "
+"guarde su archivo como CSV, luego abra el documento en Notepad, y guarde el "
+"archivo como \"UTF-8\". (¡Lo sentimos odien a Microsoft por esto!)"
 
 msgid "Bulk Renaming of Records"
-msgstr ""
+msgstr "Renombrando Registros"
 
 msgid "You can rename a document if ERPNext (if it is allowed) by going to Menu &gt; Rename in the document."
 msgstr ""
+"Puede cambiar el nombre de un documento en ERPNext (si tiene permiso de "
+"hacerlo) en Menú &gt; Renombrar en el documento."
 
 msgid "Alternatively, if you want to rename a whole bunch of records, just go to:"
-msgstr ""
+msgstr "Alternativamente, si quiere renombrar muchos archivos, solo valla a:"
 
 msgid ""
 "\n"
 "		Setup &gt; Data &gt; Rename Tool\n"
 "		"
-msgstr ""
+msgstr "Configuración &gt; Datos &gt; Herramienta de Renombrado"
 
 msgid "This tool will allow you to rename multiple records at the same time."
 msgstr ""
+"Esta herramienta le permitirá renombrar múltiples registros al mismo tiempo."
 
 msgid "Example"
-msgstr ""
+msgstr "Ejemplo"
 
 msgid "To rename multiple records, upload a .csv file with the old name in the first column and the new name in the second column and click on Upload."
 msgstr ""
-
+"Para renombrar múltiples registros, suba un archivo .csv con los viejos "
+"nombre en la primer columna y el nuevo en la segunda columna y clic en "
+"Subir. "

@@ -1,154 +1,229 @@
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2015-04-21 00:43-0600\n"
-"PO-Revision-Date: 2015-04-21 00:43-0600\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: None\n"
-"Language: en-US \n"
+"PO-Revision-Date: 2015-04-23 20:36-0600\n"
+"Last-Translator: William Moreno Reyes <william>\n"
+"Language-Team: william\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Publican v4.2.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
 
 msgid "Email"
-msgstr ""
+msgstr "Correo Electrónico"
 
 msgid "Email is at the heart of electronic communication and ERPNext is deeply integrated with Email. You can create multiple email accounts, automatically create transactions like Lead, Issue from incoming emails, send documents to your contacts via ERPnext. You can also setup email digests and email alerts to send you reminders."
 msgstr ""
+"El Correo Electrónico esta en el centro de las comunicaciones electrónicas y "
+"ERPNext esta profundamente integrado con el Correo Electrónico. Puede crear "
+"múltiples cuentas de correo electrónico, automáticamente crear "
+"transacciones como Oportunidades, a partir de correos entrantes. enviar "
+"documentos a sus contactos vía ERPNext. Puede configurar boletines y alertas "
+"de correo electrónico para enviar recordatorios."
 
 msgid "Email Accounts"
-msgstr ""
+msgstr "Cuentas de Correo Electrónico"
 
 msgid "You can manage multiple incoming and outgoing Email Accounts in ERPNext. There has to be atleast one default outgoing account and one default incoming account. If you are on the ERPNext cloud, the default outgoing email is set by Frappe Team."
 msgstr ""
+"Puede manejar multiples cuentas de Correo Electrónico entrantes o salientes "
+"en ERPNext. Debe haber al menos una cuenta de correo electrónico saliente "
+"por defecto y una cuenta de correo entrante. Si esta en la versión de "
+"ERPNext en la nube, el correo electrónico saliente de salida es definido por "
+"el equipo de Frappe."
 
 msgid "Note for self implementers: For outgoing emails, you should setup your own SMTP server or sign up with an SMTP relay service like mandrill.com or sendgrid.com that allows a larger number of transactional emails to be sent. Regular email services like GMail will restrict you to a limited number of emails per day."
 msgstr ""
+"Nota para implementadores por cuenta propia: Para cuentas de correo "
+"electrónico saliente, debe configurar su propio servidor SMTP o darse de "
+"alta en un proveedor de servicios SMTP como mandrill.com o sendgrid.com que "
+"permite un gran número de transacciones de correo electrónica para ser "
+"enviadas. Servicios de correo electrónicos regulares como Gmail restringen "
+"el servicio a un número limitado de envió por día."
 
 msgid "Default Email Accounts"
-msgstr ""
+msgstr "Cuenta de Correo Electrónico por Defecto"
 
 msgid "ERPNext will create templates for a bunch of email accounts by default. Not all of them are enabled. To enable them, you must set your account details."
 msgstr ""
+"ERPNext creara por defecto plantillas para las cuentas de correo electrónico "
+"por defecto. No todas están están habilitadas. Para habilitarlas luego, "
+"debe configurar sus detalles de cuenta."
 
 msgid "There are 2 types of email accounts, outgoing and incoming. Outgoing email accounts use an SMTP service to send emails and emails are retrived from your inbox using a POP service. Most email providers such as GMail, Outlook or Yahoo provide these services."
 msgstr ""
+"Hay 2 tipos de cuentas de correo electrónico, saliente y entrante. Las "
+"cuentas de Correo Saliente usan un servicio SMTP para enviar correos "
+"electrónicos y los correos electrónicos son recibidos en su bandeja de "
+"entrada vía el servicio POP. Muchos proveedores de servicios de Correo "
+"Electrónicos como Gmail, Outlook o Yahoo proveen este servicio."
 
 msgid "Outgoing Email Accounts"
-msgstr ""
+msgstr "Cuentas de Correo Electrónico Saliente"
 
 msgid "All emails sent from the system, either by the user to a contact or notifications or transaction emails, will be sent from an Outgoing Email Account."
 msgstr ""
+"Todos los correos enviados del sistema, sean enviados por un usuario, "
+"notificaciones o correos electrónicos de transacciones, serán enviados "
+"usando una Cuenta de Correo Electrónico Saliente."
 
 msgid "To setup an outgoing Email Account, check on Enable Outgoing and set your SMTP server settings, if you are using a popular email service, these will be preset for you."
 msgstr ""
+"Para configurar una Cuenta de Correo Electrónico o Habilitar Correo Saliente "
+"y configurar sus opciones de servidor SMTP, si esta usando un servicio "
+"popular de correo electrónico, estas serán presentadas a usted por el "
+"sistema."
 
 msgid "Incoming Email Accounts"
-msgstr ""
+msgstr "Cuentas de Correo Electrónico Entrante"
 
 msgid "To setup an incoming Email Account, check on Enable Incoming and set your POP3 settings, if you are using a popular email service, these will be preset for you."
 msgstr ""
+"Para configurar una cuenta de Correo Electrónico Entrante y establecer su "
+"configuración POP3, si usted esta usando un servicio popular de correo "
+"electrónico, estas serán presentadas a usted por el sistema."
 
 msgid "How ERPNext handles replies"
-msgstr ""
+msgstr "Como maneja ERPNext las respuestas"
 
 msgid "In ERPNext when you send an email to a contact like a customer, the sender will be the user who sent the email. In the Reply-To property, the email id will be of the default incoming account (like replies@yourcompany.com). ERPNext will automatically extract these emails from the incoming account and tag it to the relvant communication"
 msgstr ""
+"En ERPNext cuando envía un correo electrónico a un contacto como un cliente, "
+"el emisor sera el usuario que envió el correo electrónico. En la opción de "
+"\"Responder A:\" la cuenta de correo electrónico sera la cuenta por defecto "
+"para correo electrónico entrante. (como respuestas@sucompañia.com). ERPNext "
+"automáticamente extrae esos correos de la cuenta de correo entrante "
+"predeterminada y las etiqueta en las comunicaciones relevantes."
 
 msgid "Notification for unreplied messages"
-msgstr ""
+msgstr "Notificaciones para correos sin respuesta"
 
 msgid "If you would like ERPNext to notify you if an email is unreplied for a certain amount of time, then you can set Notify if Unreplied. Here you can set the number of minutes to wait before notifications are sent and whom the notifications must go to."
 msgstr ""
+"Si desea que ERPNext le notifique si un correo electrónico no ha sido "
+"respondido durante un cierto periodo de tiempo, puede especificar "
+"Notificación de Correo sin Respuesta. Aquí puede definir el número de "
+"minutos a esperar antes de que envié la notificaciones y que personas deben "
+"ser notificadas."
 
 msgid "Email Alerts"
-msgstr ""
+msgstr "Alertas de Correo Electrónico"
 
 msgid "You can configure various email alerts in your system to remind you of important activities such as:"
 msgstr ""
+"Puede configurar varias alertas de correo electrónico en el sistema para "
+"recordarle actividades importantes como:"
 
 msgid "Completion date of a Task."
-msgstr ""
+msgstr "Fecha limite para completar una Tarea."
 
 msgid "Expected Delivery Date of a Sales Order."
-msgstr ""
+msgstr "Fecha Programada de Envía de una Orden de Venta."
 
 msgid "Expected Payment Date."
-msgstr ""
+msgstr "Fecha Programada de Pago."
 
 msgid "Reminder of followup."
-msgstr ""
+msgstr "Recordatorio de una actividad."
 
 msgid "If an Order greater than a particular value is received or sent."
-msgstr ""
+msgstr "Si una orden mayor a un valor particular a sido recibida o enviada."
 
 msgid "Expiry notification for a Contract."
-msgstr ""
+msgstr "Fecha de Espiración de un Contrato."
 
 msgid "Completion / Status change of a Task."
-msgstr ""
+msgstr "Estado / Finalización de una Tarea."
 
 msgid "For this, you need to setup an Email Alert."
-msgstr ""
+msgstr "Para esto, debe configurar Alertas de Correo Electrónico."
 
 msgid "Setup &gt; Email &gt; Email Alert"
 msgstr ""
+"Configuración &gt; Correo Electrónico &gt; Alertas de Correo Electrónico"
 
 msgid "Setting Up An Alert"
-msgstr ""
+msgstr "Configurando una Aleta"
 
 msgid "To setup an Email Alert:"
-msgstr ""
+msgstr "Para configurar una Alerta de Correo Electrónico:"
 
 msgid "Select which Document Type you want watch changes on."
-msgstr ""
+msgstr "Seleccione cual Tipo de Documento cuyos cambios desea monitorear."
 
 msgid "Define what events you want to watch. Events are:"
-msgstr ""
+msgstr "Definir cuales eventos desea monitorear. Eventos como:"
 
 msgid "New: When a new document of the selected type is made."
-msgstr ""
+msgstr "Nuevo: Cuando un nuevo documento del tipo seleccionado es creado."
 
 msgid "Save / Submit / Cancel: When a document of the selected type is saved, submitted, cancelled."
 msgstr ""
+"Guardar / Presentar / Cancelar: Cuando un documento del tipo seleccionado se "
+"guarda, enviá o cancela."
 
 msgid "Value Change: When a particular value in the selected type changes."
 msgstr ""
+"Cambio de Valor: Cuando un valor particular en el tipo seleccionado cambia."
 
 msgid "Days Before / Days After: Trigger this alert a few days before or after the <emphasis role=\"Bold\">Reference Date</emphasis>. To set the days, set <emphasis role=\"Bold\">Days Before or After</emphasis>. This can be useful in reminding you of upcoming due dates or reminding you to follow up on certain leads of quotations."
 msgstr ""
+"Días Antes / Días Después: Envíe esta alerta unos días antes o después de "
+"<emphasis role=\"Bold\">la Fecha de Referencia</emphasis>. Para configurar los "
+"días, configure <emphasis role=\"Bold\">Días Antes o Después</emphasis>. Esto "
+"puede ser útil para enviar recordatorios de fechas de pago próximas o "
+"recordarle darle seguimiento a una oportunidad o proforma."
 
 msgid "Set additional conditions if you want."
-msgstr ""
+msgstr "Configurar condiciones adicionales si desea."
 
 msgid "Set the recipients of this alert. The recipient could either be a field of the document or a list of fixed email ids."
 msgstr ""
+"Seleccione el objetivo de esta aleta. El objetivo puede ser un campo de un "
+"documento o una lista de correos electrónicos inactivos."
 
 msgid "Compose the message"
-msgstr ""
+msgstr "Crear el Mensaje"
 
 msgid "Email Digest"
-msgstr ""
+msgstr "Correos Electrónicos de Resumen"
 
 msgid "Email Digests allow you to get regular updates about your sales, expenses and other critical numbers directly in your Inbox."
 msgstr ""
+"Los Correos Electrónicos de Resumen o Boletines les permiten obtener "
+"actualizaciones regulares sobre ventas, gastos y otros datos críticos "
+"directamente en su correo electrónico."
 
 msgid "Email Digests are a great way for top managers to keep track of the big numbers like “Sales Booked” or “Amount Collected” or “Invoices Raised” etc."
 msgstr ""
+"Los Boletines son una gran forma para los administradores para dar "
+"seguimiento a valores importantes como \"Ventas Completadas\" o \"Cantidad "
+"Captada\" o \"Facturas Atrasadas\" etc."
 
 msgid "To set up Email Digest, go to:"
-msgstr ""
+msgstr "Para configurar un Boletín de Correo Electrónico, valla a:"
 
 msgid ""
 "\n"
 "		Setup &gt; Email &gt; Email Digest\n"
 "		"
 msgstr ""
+"Configuración &gt; Correo Electrónico &gt; Boletín de Correo Electrónico"
 
 msgid "Sending Email from any Document"
-msgstr ""
+msgstr "Enviando Correo Electrónico desde todo Documento"
 
 msgid "In ERPNext you can send any document as email (with a PDF attachment) by clicking on Menu &gt; Email from any open document."
 msgstr ""
-
+"En ERPNext puede enviar todo documento como un correo electrónico (con un "
+"PDF adjunto) haga clic en Menú &gt; Correo Electrónico desde cualquier "
+"documento abierto."

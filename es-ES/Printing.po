@@ -1,181 +1,246 @@
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2015-04-21 00:43-0600\n"
-"PO-Revision-Date: 2015-04-21 00:43-0600\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: None\n"
-"Language: en-US \n"
+"PO-Revision-Date: 2015-04-23 22:54-0600\n"
+"Last-Translator: William Moreno Reyes <william>\n"
+"Language-Team: william\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Publican v4.2.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
 
 msgid "Printing and Branding"
-msgstr ""
+msgstr "Impresión"
 
 msgid "Documents that you send to your customers carry your brand and image and they must be tailored to your requirements. ERPNext gives you many options so that you can set your oraganization's branding in your documents."
 msgstr ""
+"Los documentos que enviá a sus clientes llegan su logo e imagen y deben ser "
+"personalizados según sus necesidades. ERPNext le brinda muchas opciones para "
+"personalizar la imagen de su empresa en sus documentos."
 
 msgid "Print Settings"
-msgstr ""
+msgstr "Configuración de Impression"
 
 msgid "In Print Settings you can set your default printing preferences like Paper Size, default text size, whether you want output as PDF or HTML etc."
 msgstr ""
+"En la Configuración de Impression puede establecer las preferencias por "
+"defecto de impresión como Tamaño de Papel, Tamaño de Texto, el formato de "
+"salida como PDF o HTML."
 
 msgid "To edit print settings, go to:"
-msgstr ""
+msgstr "Para editar la configuración de impresión, valla a:"
 
 msgid ""
 "\n"
 "		Setup &gt; Printing and Branding &gt; Print Settings\n"
 "		"
-msgstr ""
+msgstr "Configuración &gt; Impresión &gt; Configuración de Impression."
 
 msgid "Print Format Builder"
-msgstr ""
+msgstr "Herramienta de Formatos de Impresión"
 
 msgid "The Print Format Builder helps you quickly make a simple customized Print Format by dragging and dropping data fields and adding custom text or HTML."
 msgstr ""
+"La Herramienta de Creación de Formatos de Impresión les permite crear "
+"rápidamente formatos de Impresión Personalizados arrastrando, eliminando y "
+"agregando campos de texto personalizado o HTML."
 
 msgid "You can create a new Print Format either by going to:"
-msgstr ""
+msgstr "Puede crear un nuevo Formato de Impresión desde:"
 
 msgid ""
 "\n"
 "		Setup &gt; Printing and Branding &gt; Print Format Builder\n"
 "		"
-msgstr ""
+msgstr "Configuración &gt; Impresión &gt; Herramienta de Formatos de Impresión"
 
 msgid "or Open the document for which you want to make a print format. Click the Printer icon, or go to Menu &gt; Print and click on the Edit button. Note: You must have System Manager permission to do this."
 msgstr ""
+"o Abrir el documento a partir del cual desea hacer un formato de impresión. "
+"Clic en el Icono de la Impresora, o valla a Menú &gt; Impresión y Clic en el "
+"botón Editar. Debe tener permisos de Administrador para acceder a esta "
+"opción."
 
 msgid "Make a new Format"
-msgstr ""
+msgstr "Crear un nuevo Formato"
 
 msgid "Add a new Field"
-msgstr ""
+msgstr "Agregar un nuevo campo"
 
 msgid "To add a field, just drag it from the left sidebar and add it in your layout. You can edit the layout by clicking on the settings icon.To add a field, just drag it from the left sidebar and add it in your layout. You can edit the layout by clicking on the settings icon."
 msgstr ""
+"Para agregar un nuevo campo, solo lo debe arrastrar de la barra izquierda y "
+"agregarlo a su diseño. Puede editar el formato haciendo Clic en el icono de "
+"configuración."
 
 msgid "Remove Field"
-msgstr ""
+msgstr "Eliminar un Campo"
 
 msgid "To remove a field, just drag it back into the fields sidebar."
 msgstr ""
+"Para eliminar un campo, solo debe arrastrarlo de nuevo a la barra lateral."
 
 msgid "Cutomize"
-msgstr ""
+msgstr "Personalización"
 
 msgid "You can add customized text, HTML in your print format, just add the Custom HTML field (in dark colour) and add it to the the place where you want to add the text. Then click on Edit HTML to edit your content."
 msgstr ""
+"Puede agregar texto personalizado, tambien HTML es su formato de impresión, "
+"solo agregue un campo HTML (en color oscuro) y agreguelo en el lugar que "
+"quiere mostrar el texto. Luego clic en Editar HTML para editar el contenido."
 
 msgid "To save your format, just click on the Save button on the top."
 msgstr ""
 
 msgid "Print Headings"
-msgstr ""
+msgstr "Encabezados de Impresión"
 
 msgid "Print Headings are the names which you can give to your sales invoices, supplier quotations etc. You can create a list of names for different business communications. You can create print headings from :"
 msgstr ""
+"Los Encabezados de Impresión son los nombre que puede dar a sus facturas de "
+"venta, proformas de proveedores etc. Puede crear una lista de nombres para "
+"diferentes comunicaciones de negocios. Para crear encabezados de impresión "
+"desde:"
 
 msgid ""
 "\n"
 "		Setup &gt; Printing &gt; Print Heading &gt; New Print Heading\n"
 "		"
 msgstr ""
+"Configuración &gt; Impresión &gt; Encabezados de Impresión &gt; Nuevo "
+"Encabezado de Impresión"
 
 msgid "Example of a change in print heading is shown below:"
 msgstr ""
+"Ejemplo de de una cambio a un Encabezado de Impresión esta a continuación:"
 
 msgid "Letter Heads"
-msgstr ""
+msgstr "Membretes"
 
 msgid "You can manage multiple letter heads in ERPNext. In a letter head you can:"
-msgstr ""
+msgstr "Puede manejar varios membretes en ERPNext. En un membrete puede:"
 
 msgid "Create an image with your logo, brand and other information that you want to put on your letter head."
 msgstr ""
+"Crear una imagen con su logo, marca y otra información que quiera colorar en "
+"su membrete."
 
 msgid "Attach the image in your Letter Head record by clicking on image icon to automatically generate the HTML required for this Letter Head."
 msgstr ""
+"Agregue una imagen en su membrete haciendo clic en el icono de la imagen "
+"para automáticamente generar el HTML requerido para el membrete."
 
 msgid "If you want to make this the default letter head, click on “Is Default”."
 msgstr ""
+"Si desea configurar este membrete como el membrete por defecto, clic en \"Es "
+"Predeterminado\"."
 
 msgid "Your letter head will now appear in all Prints and Emails of documents."
 msgstr ""
+"Su membrete ahora aparcera en todas las Impresiones y Correos Electrónicos "
+"de documentos."
 
 msgid "You can create / manage Letter Heads from:"
-msgstr ""
+msgstr "Puede crear / administrar membretes desde:"
 
 msgid ""
 "\n"
 "		Setup &gt; Printing &gt; Letter Head &gt; New Letter Head\n"
 "		"
-msgstr ""
+msgstr "Configuración &gt; Impresión &gt; Membretes &gt; Nuevo Membrete"
 
 msgid "This is how the letter head looks in a document print:"
-msgstr ""
+msgstr "Así es como el membrete se aprecia un una documento impreso:"
 
 msgid "Address Template"
-msgstr ""
+msgstr "Plantilla de Dirección"
 
 msgid "Each region has its own way of defining Addresses. To manage multiple address formats for your Documents (like Quotation, Purchase Invoice etc.), you can create country-wise Address Templates."
 msgstr ""
+"Cada región tiene su propio forma de definir direcciones. Para administrar "
+"diferentes formatos de dirección para sus Documentos (como Proformas, "
+"Ordenes de Compra, etc), puede crear Plantillas de Direcciones por país."
 
 msgid ""
 "\n"
 "		Setup &gt; Printing and Branding &gt; Address Template\n"
 "		"
-msgstr ""
+msgstr "Configuración &gt; Impresión &gt; Plantillas de Dirección"
 
 msgid "A default Address Template is created when you setup the system. You can either edit or update it or create a new template."
 msgstr ""
+"Un Plantilla de Direcciones por defecto se crea al configurar el sistema. "
+"Puede editarla, actualizarla o crear una plantilla nueva."
 
 msgid "One template is default and will apply to all countries that do not have an specific template."
 msgstr ""
+"Una plantilla es por defecto y sera aplicada a todos los países que no "
+"tengan una plantilla especifica."
 
 msgid "<emphasis role=\"Bold\">Template</emphasis>"
-msgstr ""
+msgstr "<emphasis role=\"Bold\">Plantilla</emphasis>"
 
 msgid "The templating engine is based on HTML and the Jinja Templating system and all the fields (including Custom Fields) will be available for creating the template."
 msgstr ""
+"El motor de plantillas se basa en HTML y en sistema de plantillas Jinja y "
+"todos los campos (incluidos Campos Personalizados) están disponibles para "
+"crear la plantilla."
 
 msgid "<emphasis role=\"Bold\">Example</emphasis>"
-msgstr ""
+msgstr "<emphasis role=\"Bold\">Ejemplo</emphasis>"
 
 msgid "Terms And Conditions"
-msgstr ""
+msgstr "Términos y Condiciones"
 
 msgid "Terms and conditions are the general and special arrangements, provisions, requirements, rules, specifications, and standards that a company follows. These specifications are an integral part of an agreement or contract that the company gets into with its customers, suppliers or partners."
 msgstr ""
+"Los Términos y Condiciones son los acuerdos, provisiones, requerimientos, "
+"reglas, especificaciones y estándares generales y específicos que sigue la "
+"compañía. Estas especificaciones son parte integral de una acuerdo o "
+"contrato que la compañía establezca con sus clientes, proveedores o socios."
 
 msgid "Make a new Terms and Conditions"
-msgstr ""
+msgstr "Crear nuevos Términos y Condiciones"
 
 msgid "To setup Terms and Condition master, go to:"
-msgstr ""
+msgstr "Para configurar los Términos y Condiciones, valla a:"
 
 msgid ""
 "\n"
 "		Selling &gt; Terms and Condition &gt; New\n"
 "		"
-msgstr ""
+msgstr "Ventas &gt; Términos y Condiciones &gt; Nuevo"
 
 msgid "Editing in HTML"
-msgstr ""
+msgstr "Editando en HTML"
 
 msgid "Content of Terms and Condition can be formatted as per your preference, and also insert images where needed. If you have expertise in HTML, you will also find option to edit the content of Terms and Condition in HTML."
 msgstr ""
+"El contenido de los Términos y Condiciones puede ser editado según sus "
+"preferencias, y puede insertar imágenes según sea necesario. Si tiene "
+"experiencia en HTML, podrá encontrar opciones para editar el contenido en "
+"HTML."
 
 msgid "This also allows you to use Terms and Condition master for footer, which otherwise is not availale in ERPNext as dedicated functionality. Since contents of Terms and Condition is always the last to appear in the print format, details of footer should be inserted at the end of the content, so that it actually appears as footer in the print format."
 msgstr ""
+"Esto le permite usar el administrador de Términos y Servicios para el pie de "
+"página, si bien no esta disponible como una función especifica. El "
+"contenido de los Terminos y Condiciones siempre es el último en aparecer en "
+"el formato de impresión, detalles de pie de página deben ser insertados al "
+"final del contenido, así que es donde actualmente para aparece como pie de "
+"página."
 
 msgid "Select in Transaction"
-msgstr ""
+msgstr "Seleccionar en la Transacción"
 
 msgid "In transactions, you will find section of Terms and Condition where you will be able to search and fetched required Terms and Condition master."
 msgstr ""
-
+"En las transacciones, puede seleccionar los Términos y Condiciones donde "
+"podrá elegirlos del administrador."

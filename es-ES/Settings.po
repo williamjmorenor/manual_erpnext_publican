@@ -1,118 +1,159 @@
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2015-04-21 00:43-0600\n"
-"PO-Revision-Date: 2015-04-21 00:43-0600\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: None\n"
-"Language: en-US \n"
+"PO-Revision-Date: 2015-04-23 18:10-0600\n"
+"Last-Translator: William Moreno Reyes <william>\n"
+"Language-Team: william\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Publican v4.2.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
 
 msgid "Settings"
-msgstr ""
+msgstr "Configuración"
 
 msgid "In <emphasis>Setup &gt; Settings</emphasis> you will find ways to manage your system settings like defaults, number and currency formats, global session timeout settings etc."
 msgstr ""
+"En <emphasis>Configuración &gt; Ajustes</emphasis> encontrara como "
+"administrar la configuración de sus sistema como formato de números y "
+"moneda, tiempo de expiración de sesión, etc."
 
 msgid "System Settings"
-msgstr ""
+msgstr "Configuración del Sistema"
 
 msgid "You can localize ERPNext to use particular timezone, date, number or currency format and also set global session expiry via System Settings."
 msgstr ""
+"Puede especificar a ERPNext a usar una zona horaria en particular, número o "
+"formato de moneda y también en cuento tiempo debe expirar una sesión de "
+"usuario."
 
 msgid "To open System Settings, go to:"
-msgstr ""
+msgstr "Para abrir la Configuración del Sistema, valla a:"
 
 msgid ""
 "\n"
 "		Setup &gt; Settings &gt; System Settings\n"
 "		"
-msgstr ""
+msgstr "Configuración &gt; Ajustes &gt; Ajustes del Sistema"
 
 msgid "Show or Hide Modules"
-msgstr ""
+msgstr "Mostrar u Ocular Módulos"
 
 msgid "You can globally switch off certain desktop module via:"
-msgstr ""
+msgstr "Puede eliminar de forma global un elemento del escritorio vía:"
 
 msgid ""
 "\n"
 "		Setup &gt; Settings &gt; Show or Hide Modules\n"
 "		"
-msgstr ""
+msgstr "Configuración &gt; Ajustes &gt; Mostrar u Ocultar Modulos"
 
 msgid "For example if you are in the services business, you want to hide the Manufacturing Module, you can do this via Show or Hide Modules"
 msgstr ""
+"por ejemplo si esta en negocio de los sistemas, y quiere ocultar el Módulo "
+"de Fabricación, puede hacerlo a través de Mostrar u Ocultar Módulos."
 
 msgid "Naming Series"
-msgstr ""
+msgstr "Nombrando Series"
 
 msgid "<emphasis role=\"Bold\">Naming Series</emphasis>"
-msgstr ""
+msgstr "<emphasis role=\"Bold\">Nombrando Series</emphasis>"
 
 msgid "Data records are broadly classified as “Master” or “Transaction”. A master record is a record that has a “name”, for example a Customer, Item, Supplier, Employee etc. A Transaction is a record that has a “number”. Examples of transactions include Sales Invoices, Quotations etc. You make transactions against a number of master records."
 msgstr ""
+"Los registros de datos son básicamente clasificados como \"Principal\" o "
+"\"Transacción\". Un registro principal es un registro que tiene un \"nombre\" "
+"como un Cliente, Articulo, Proveedor, Empleado, etc. Una transacción es un "
+"registro que tiene un \"nombre\". Ejemplos de transacciones incluyen Facturas "
+"de Ventas, Proformas, etc. Usted realiza transacciones contra un número de "
+"registros principales."
 
 msgid "ERPNext allows you to make prefixes to your transactions, with each prefix forming its own series. For example a series with prefix INV12 will have numbers INV120001, INV120002 and so on."
 msgstr ""
+"ERPNext le permite crear prefijos para las transacciones, donde cada prefijo "
+"forma su propia serie. Por ejemplo una serie con prefijo INV12 tendrá "
+"números como INV120001, INV120002 y así sucesivamente."
 
 msgid "You can have multiple series for all your transactions. It is common to have a separate series for each financial year. For example in Sales Invoice you could have:"
 msgstr ""
+"Puede tener múltiples varias series para todas sus transacciones. Es común "
+"tener una serie separada para año fiscal. Por ejemplo en Facturas de Ventas "
+"podrá tener:"
 
 msgid "INV120001"
-msgstr ""
+msgstr "INV120001"
 
 msgid "INV120002"
-msgstr ""
+msgstr "INV120002"
 
 msgid "INV-A-120002"
-msgstr ""
+msgstr "INV-A-120002"
 
 msgid "etc. You could also have a separate series for each type of Customer or for each of your retail outlets."
 msgstr ""
+"etc. También puede tener series separadas para tipo de Cliente o para cada "
+"uno de sus ciclos principales."
 
 msgid "<emphasis role=\"Bold\">Managing Naming Series for Documents</emphasis>"
 msgstr ""
+"<emphasis role=\"Bold\">Administrando Nombres de Series para "
+"Documentos</emphasis>"
 
 msgid "To setup a series, go to:"
-msgstr ""
+msgstr "Para configurar una serie, valla a:"
 
 msgid ""
 "\n"
 "		Setup &gt; Tools &gt; Update Numbering Series\n"
 "		"
-msgstr ""
+msgstr "Configuración &gt; Herramientas &gt; Actualizar Nombres de Series"
 
 msgid "In this form:"
-msgstr ""
+msgstr "De esta forma:"
 
 msgid "Select the transaction for which you want to make the series The system will update the current series in the text box."
 msgstr ""
+"Seleccione la transacción para la que quiere actualizar la serie. El sistema "
+"va a actualizar las series actuales y las va a mostrar en la caja de texto."
 
 msgid "Edit the series as required with unique prefixes for each series. Each prefix must be on a new line."
 msgstr ""
+"Editar las series según sean requeridas con prefijos únicos para cada serie. "
+"Cada prefijo debe ser agregado en una nueva linea."
 
 msgid "The first prefix will be the default prefix. If you want the user to explicitly select a series instead of the default one, check the “User must always select” check box."
 msgstr ""
+"El primer prefijo se convertirá en la opción predeterminada. Si desea que un "
+"usuario seleccione de forma explicita el prefijo de la serie en vez de la "
+"opción predeterminada, seleccione la opción \"Usuario debe seleccionar "
+"siempre\"."
 
 msgid "You can also update the starting point of a series by entering the series name and the starting point in the “Update Series” section."
 msgstr ""
+"Siempre puede actualizar el punto de inicio de una serie configurando el "
+"nombre de la serie y el punto de inicio en la sección \"Actualizar Serie\"."
 
 msgid "Global Defaults"
-msgstr ""
+msgstr "Ajustes Globales"
 
 msgid "You can set default values for your documents from Global Defaults"
 msgstr ""
+"Usted puede configurar valores para sus documentos desde Ajustes Globales"
 
 msgid ""
 "\n"
 "		Setup &gt; Settings &gt; Global Defaults\n"
 "		"
-msgstr ""
+msgstr "Configuración &gt; Ajustes &gt; Configuración Global"
 
 msgid "Whenever a new document is created, these values will be set as default."
 msgstr ""
-
+"Cada vez que un nuevo documento sea creado, estos valores serán configurados "
+"por defecto."
