@@ -4,11 +4,16 @@
 # William Moreno Reyes <william>, 2015.
 # William Moreno Reyes <william>, 2015.
 # William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2015-04-21 00:43-0600\n"
-"PO-Revision-Date: 2015-04-23 20:36-0600\n"
+"PO-Revision-Date: 2015-04-24 08:36-0600\n"
 "Last-Translator: William Moreno Reyes <william>\n"
 "Language-Team: william\n"
 "Language: es\n"
@@ -46,9 +51,9 @@ msgstr ""
 "Nota para implementadores por cuenta propia: Para cuentas de correo "
 "electrónico saliente, debe configurar su propio servidor SMTP o darse de "
 "alta en un proveedor de servicios SMTP como mandrill.com o sendgrid.com que "
-"permite un gran número de transacciones de correo electrónica para ser "
+"permiten un gran número de transacciones de correo electrónica para ser "
 "enviadas. Servicios de correo electrónicos regulares como Gmail restringen "
-"el servicio a un número limitado de envió por día."
+"el servicio a un número limitado de envíos por día."
 
 msgid "Default Email Accounts"
 msgstr "Cuenta de Correo Electrónico por Defecto"
@@ -56,12 +61,12 @@ msgstr "Cuenta de Correo Electrónico por Defecto"
 msgid "ERPNext will create templates for a bunch of email accounts by default. Not all of them are enabled. To enable them, you must set your account details."
 msgstr ""
 "ERPNext creara por defecto plantillas para las cuentas de correo electrónico "
-"por defecto. No todas están están habilitadas. Para habilitarlas luego, "
-"debe configurar sus detalles de cuenta."
+"por defecto. No están habilitadas. Para habilitarlas  debe configurar sus "
+"detalles de cuenta."
 
 msgid "There are 2 types of email accounts, outgoing and incoming. Outgoing email accounts use an SMTP service to send emails and emails are retrived from your inbox using a POP service. Most email providers such as GMail, Outlook or Yahoo provide these services."
 msgstr ""
-"Hay 2 tipos de cuentas de correo electrónico, saliente y entrante. Las "
+"Hay 2 tipos de cuentas de correo electrónico: saliente y entrante. Las "
 "cuentas de Correo Saliente usan un servicio SMTP para enviar correos "
 "electrónicos y los correos electrónicos son recibidos en su bandeja de "
 "entrada vía el servicio POP. Muchos proveedores de servicios de Correo "
@@ -72,8 +77,8 @@ msgstr "Cuentas de Correo Electrónico Saliente"
 
 msgid "All emails sent from the system, either by the user to a contact or notifications or transaction emails, will be sent from an Outgoing Email Account."
 msgstr ""
-"Todos los correos enviados del sistema, sean enviados por un usuario, "
-"notificaciones o correos electrónicos de transacciones, serán enviados "
+"Todos los correos enviados del sistema, sean enviados por un usuario o "
+"notificaciones y correos electrónicos de transacciones, serán enviados "
 "usando una Cuenta de Correo Electrónico Saliente."
 
 msgid "To setup an outgoing Email Account, check on Enable Outgoing and set your SMTP server settings, if you are using a popular email service, these will be preset for you."
@@ -199,7 +204,7 @@ msgstr "Correos Electrónicos de Resumen"
 
 msgid "Email Digests allow you to get regular updates about your sales, expenses and other critical numbers directly in your Inbox."
 msgstr ""
-"Los Correos Electrónicos de Resumen o Boletines les permiten obtener "
+"Los Correos Electrónicos de Resumen o Boletines le permiten obtener "
 "actualizaciones regulares sobre ventas, gastos y otros datos críticos "
 "directamente en su correo electrónico."
 

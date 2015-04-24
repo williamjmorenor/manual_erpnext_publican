@@ -3,11 +3,17 @@
 # William Moreno Reyes <william>, 2015.
 # William Moreno Reyes <william>, 2015.
 # William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2015-04-21 00:43-0600\n"
-"PO-Revision-Date: 2015-04-23 10:06-0600\n"
+"PO-Revision-Date: 2015-04-24 12:01-0600\n"
 "Last-Translator: William Moreno Reyes <william>\n"
 "Language-Team: william\n"
 "Language: es\n"
@@ -21,19 +27,31 @@ msgid "Setting Up"
 msgstr "Configuración"
 
 msgid "Setting up an ERP system is like starting your business all over again, although in the virtual world. Thankfully it is not as hard as the real business and you get to do a trial too!"
-msgstr "Configurar un sistema ERP es como iniciar nuevamente su negocio de nuevo, soló que virtualmente. Por suerte no es tan duro como en el mundo real y usted puede hacer  pruebas también."
+msgstr ""
+"Configurar un sistema ERP es como iniciar nuevamente su negocio, soló que "
+"virtualmente. Por suerte no es tan duro como en el mundo real y usted puede "
+"hacer las pruebas que necesite."
 
 msgid "Implementation requires the implementer to take a step back and set aside some time to do this right. This is usually not a couple-of-hours, after-work kind of a project."
-msgstr "La implementación requiere al administrador a reiniciar y a dedicar algún tiempo para configurarlo correctamente. Este no suele un proyecto de pocas para después del trabajo."
+msgstr ""
+"La implementación requiere al administrador a retomar el proceso y a dedicar "
+"algún tiempo para configurarlo correctamente. Este no suele un proyecto de "
+"pocas para después del trabajo."
 
 msgid "Setup Wizard"
 msgstr "Asistente de Configuración"
 
 msgid "The first time than you logging into ERPNext you will need to create the firt company and define many defaults settings like language and currency."
-msgstr "La primera que inicie sesión en ERPNext usted deberá crear la primera compañía y definir varias configuraciones como el idioma y moneda."
+msgstr ""
+"La primera vez que inicie sesión en ERPNext usted deberá crear la primera "
+"compañía y definir varias configuraciones como el idioma y moneda."
 
 msgid "The Setup Wizard helps you quickly setup your ERPnext by helping you create your company, Items, Customer, Suppliers and will also setup a basic website with this data. Here is a quick overview of the steps:"
-msgstr "El asistente de configuración le permite rápidamente configurar ERPNext ayudandole a crear su empresa en el sistema, Artículos, Clientes, Proveedores al mismo tiempo creara un sitio web básico con sus datos. Aquí hay un rápido detalle de los pasos:"
+msgstr ""
+"El asistente de configuración le permite rápidamente configurar ERPNext "
+"ayudandole a crear su empresa en el sistema así como algunos Artículos, "
+"Clientes, Proveedores al mismo tiempo creara un sitio web básico con sus "
+"datos. Aquí hay un rápido detalle de los pasos:"
 
 msgid "Step 1: Language"
 msgstr "Paso 1: Idioma"
@@ -42,7 +60,7 @@ msgid "You can change the System Language after Septup Wizard, but some things o
 msgstr "Puede cambiar el Idioma del Sistema después del Asistente de Configuración, pero  algunos aspectos del sistema no serán actualizados. Por favor sea cuidadoso seleccionando el idioma del sistema. Usted notara que el Asistente de Configuración se actualizara al idioma seleccionado."
 
 msgid "This step is mandatory."
-msgstr ""
+msgstr "Este paso es obligatorio."
 
 msgid "Select your language. ERPNext is available in more than 20 languages."
 msgstr "Seleccione su idioma. ERPNext esta disponible en mas de 20 idiomas."
@@ -52,18 +70,26 @@ msgstr "Paso 2: Moneda y Zona Horaria"
 
 msgid "Please note than many settings and options in ERPNext are specifics and only available for certains countries. For example Charts of Account are Country Specifics, is there is a Chart of Accounts available for your country ERPNext will let you select it in the Wizard Setup"
 msgstr ""
+"Por favor note que varios aspectos de ERPNext son específicos solo a ciertos "
+"países. Por ejemplo los Catálogos de Cuentas son específicos del país, si "
+"hay un catalogo de cuentas disponible para su país ERPNext le permitirá "
+"seleccionarlo en el Asistente de Configuración."
 
 msgid "Set your country name, currency and timezone."
-msgstr "Configure el nombre, moneda y zona horaria"
+msgstr "Configure el país, moneda y zona horaria."
 
 msgid "Step 3: Profile Details"
 msgstr "Paso 3: Detalles del Perfil"
 
 msgid "This will be the system administrator, please choose a strong password and be sure to not forget it."
 msgstr ""
+"Este sera el administrador del sistema, por favor escoja una contraseña "
+"fuerte y asegurese de no olvidarla."
 
 msgid "Enter Users Profile Details like Name, User ID and preferred password."
-msgstr "Introduzca los Detalles del Perfil como nombre, ID de Usuario y configure la contraseña."
+msgstr ""
+"Introduzca los Detalles del Perfil como nombre, ID de Usuario y configure la "
+"contraseña."
 
 msgid "Step 4: Company Details"
 msgstr "Paso 4: Detalles de la Compañia"
@@ -93,7 +119,7 @@ msgid "Step 5: Letterhead and Logo"
 msgstr "Paso 5: Encabezado y Logo"
 
 msgid "This step is not mandatory."
-msgstr ""
+msgstr "Este paso no es obligatorio."
 
 msgid "Attach Company Letterhead and Company Logo."
 msgstr "Adjunte el Encabezado de su Compañía y su Logo."
@@ -102,7 +128,10 @@ msgid "Step 6: Tax Details"
 msgstr "Paso 6: Detalle de Impuestos"
 
 msgid "Enter any three types of taxes which you regularly pay. This wizard will create a tax master which will calculate the taxes as per the tax-type."
-msgstr "Introduzca los tres impuestos principales que suele pagar. Este asistente de configuración creara un registro con el cual calcular los impuestos para cada tipo de impuestos."
+msgstr ""
+"Introduzca los tres impuestos principales que suele pagar. Este asistente de "
+"configuración creara un registro con el cual calcular los impuestos para "
+"cada tipo de impuestos."
 
 msgid "Just set the tax name and the standard percentage levied."
 msgstr "Solo determine el nombre del impuesto y el porcentaje aplicado."
@@ -111,25 +140,48 @@ msgid "Some examples of tax types are given below."
 msgstr "Algunos ejemplos de tipos de impuesto se detallan a continuación."
 
 msgid "<emphasis role=\"bold\">VAT:</emphasis> A value added tax (VAT) is a form of consumption tax. From the perspective of the buyer, it is a tax on the purchase price. From that of the seller, it is a tax only on the value added to a product, material, or a service. From an accounting point of view, by the stage of its manufacture or distribution. The manufacturer remits to the government the difference between these two amounts, and retains the rest for themselves to offset the taxes they had previously paid on the inputs."
-msgstr "<emphasis role=\"bold\">IVA:</emphasis> El impuesto al valor agregado (IVA) es un ejemplo a los impuestos de consumo. Desde el punto de vista del comprador, el impuesto se agrega al valor de la compra. Para el vendedor,  es un impuesto solo al valor agregado al producto, material o servicio. Desde un punto de vista contable, en este nivel nivel de producción o comercialización. El vendedor paga al gobierno la diferencia entre ambos montos, y conserva el monto restante para ellos mismos para compensar el impuesto que ellos previamente han pagado de sus fondos."
+msgstr ""
+"<emphasis role=\"bold\">IVA:</emphasis> El impuesto al valor agregado (IVA) es "
+"un ejemplo a los impuestos de consumo. Desde el punto de vista del "
+"comprador, el impuesto se agrega al valor de la compra. Para el vendedor,  "
+"es un impuesto solo al valor agregado al producto, material o servicio. "
+"Desde un punto de vista contable, en este nivel nivel de producción o "
+"comercialización. El vendedor paga al gobierno la diferencia entre ambos "
+"montos, y conserva el monto restante para ellos mismos para compensar el "
+"impuesto que ellos previamente han pagado de sus fondos."
 
 msgid "The purpose of VAT is to generate tax revenues to the government similar to the corporate income tax or the personal income tax. For Example: When you shop at a departmental store and avail discount on the products, the store charges you 5% extra on the total bill as the VAT."
-msgstr "El propósito del IVA es generar ingresos por impuestos al gobierno de forma similar al impuesto corporativo a las ganancias. Por ejemplo: Cuando compra en una tienda comercial, la tienda le cobra un 15% extra del total facturado como IVA."
+msgstr ""
+"El propósito del IVA es generar ingresos por impuestos al gobierno de forma "
+"similar al impuesto corporativo a las ganancias. Por ejemplo: Cuando compra "
+"en una tienda comercial, la tienda le cobra un 15% extra del total facturado "
+"como IVA."
 
 msgid "To setup VAT in the setup wizard , simply enter the percentage amount levied by your government. To setup VAT at a later stage read setting-up-taxes"
-msgstr "Para configurar el IVA en el asistente de configuración, solo ingrese el porcentaje respectivo. Para configurar el IVA posteriormente visite Configurando Impuestos."
+msgstr ""
+"Para configurar el IVA en el asistente de configuración, solo ingrese el "
+"porcentaje respectivo. Para configurar el IVA posteriormente visite "
+"Configurando Impuestos."
 
 msgid "Step 7: Customers"
 msgstr "Paso 7: Clientes"
 
 msgid "Enter your Customer names and the contact person from that organisation."
-msgstr "Introduzca los nombres de sus Clientes y las personas de contacto para esas organizaciones."
+msgstr ""
+"Introduzca los nombres de sus Clientes y las personas de contacto para esas "
+"organizaciones."
 
 msgid "<emphasis role=\"bold\">Difference between a customer name and a contact name</emphasis>"
-msgstr "<emphasis role=\"bold\">Diferencia entre un Cliente y un Nombre de Contacto</emphasis>"
+msgstr ""
+"<emphasis role=\"bold\">Diferencia entre un Cliente y un Nombre de "
+"Contacto</emphasis>"
 
 msgid "A customer name is the name of the organisation and a contact name is the name of the user who is operating the ERPNext system. For Example: If American Power Mills is an organisation name and their founder Shiv Agarwal has installed ERPNext on his system. Then,"
-msgstr "El nombre de un cliente es el nombre de una organización y el nombre del contacto es el nombre para el usuario que esta operando el sistema ERPNext. Por ejemplo: Si RMS Consultores es una organización y su fundador es William Moreno."
+msgstr ""
+"El nombre de un cliente es el nombre de una organización y el nombre del "
+"contacto es el nombre para el usuario que esta operando el sistema ERPNext. "
+"Por ejemplo: Si RMS Consultores es una organización y su fundador es William "
+"Moreno."
 
 msgid "<emphasis role=\"bold\">Customer Name:</emphasis> American Power Mills"
 msgstr "<emphasis role=\"bold\">Nombre del Cliente:</emphasis> RMS Consultores"
@@ -163,4 +215,3 @@ msgstr "<emphasis role=\"bold\">¡Eso es todo!</emphasis>"
 
 msgid "Once you are done with the setup wizard you will see the familiar desktop page."
 msgstr "Una vez que se haya terminado el asistente de configuración accederá al escritorio."
-

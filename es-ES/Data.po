@@ -11,11 +11,18 @@
 # William Moreno Reyes <william>, 2015.
 # William Moreno Reyes <william>, 2015.
 # William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2015-04-21 00:43-0600\n"
-"PO-Revision-Date: 2015-04-23 19:31-0600\n"
+"PO-Revision-Date: 2015-04-24 08:30-0600\n"
 "Last-Translator: William Moreno Reyes <william>\n"
 "Language-Team: william\n"
 "Language: es\n"
@@ -32,7 +39,7 @@ msgid "You can import, export bulk edit data from and to spreadsheet files (.csv
 msgstr ""
 "Puede importar, exportar datos desde y hacia una hoja de calculo (.csv) "
 "desde la Herramienta de Importación y Exportación de Datos. Esta herramienta "
-"le sera muy útil inicialmente para configurar sus datos de otro sistema."
+"le sera muy útil inicialmente para configurar sus datos desde otro sistema."
 
 msgid "Data Import Tool"
 msgstr "Herramienta para Importar Datos"
@@ -108,10 +115,10 @@ msgstr "Suba Todas las Tables (Principal + Hijos)"
 
 msgid "If you select all tables, you will get columns belonging to all the tables in one row separated by ~ columns. If you have multiple child rows then you must start a new main item on a new row."
 msgstr ""
-"Si usted selecciona todas las tables, podrá obtener columnas pertenecientes "
-"a todas las tables en una fila separada por columnas. Si usted tiene "
-"múltiples filas hijos tiene que iniciar un nuevo ítem principal en una nueva "
-"columna."
+"Si usted selecciona todas las tablas, podrá obtener columnas pertenecientes "
+"a todas las tablas del sistema en una solá fila separada por columnas. Si "
+"usted tiene múltiples filas hijos tiene que iniciar un nuevo ítem principal "
+"en una nueva fila."
 
 msgid "To see how its done, enter a few records manually using forms and export \"All Tables\" with \"Download with Data\""
 msgstr ""
@@ -140,16 +147,16 @@ msgstr "Limitaciones al Subir"
 msgid "ERPNext restricts the amount of data you can upload in one file. Though the number may vary based on the type of data. It is usually safe to upload around 1000 rows of a table at one go. If the system will not accept, then you will see an error."
 msgstr ""
 "ERPNext restringe la cantidad de datos que puede subir en un solo archivo. "
-"Ahora el número puede variar según el tipo de datos. Usualmente es seguro "
-"subir alrededor de 1000 filas para una tabla de una sola vez. Si el sistema "
-"no acepta esa cantidad, recibirá un mensaje de error."
+"El número puede variar según el tipo de datos. Usualmente es seguro subir "
+"alrededor de 1000 filas para una tabla de una sola vez. Si el sistema no "
+"acepta esa cantidad, recibirá un mensaje de error."
 
 msgid "Why is this? Uploading a lot of data can cause your system to crash, specially if there are other users doing things in parallel. Hence ERPNext restricts the number of “writes” you can process in one request."
 msgstr ""
 "¿Porqué es esta limitación? Subir muchos datos de una vez puede hacer que su "
-"sistema falle, especialmente si hay varios usuarios trabajando en "
-"paralelos. Dado que ERPNext restringe el número de \"escrituras\" que puede "
-"realizar en una sola operación."
+"sistema falle, especialmente si hay varios usuarios trabajando en paralelo. "
+"Debido a que ERPNext restringe el número de \"escrituras\" que puede realizar "
+"en una sola operación."
 
 msgid "How to Attach files?"
 msgstr "¿Como adjuntar archivos?"
@@ -166,13 +173,14 @@ msgstr "¿Qué es un archivo CSV?"
 msgid "A CSV (Comma Separated Value) file is a data file that you can upload into ERPNext to update various data. Any spreadsheet file from popular spreadsheet applications like MS Excel or Open Office Spreadsheet can be saved as a CSV file."
 msgstr ""
 "Un archivo CSV (Archivo Separado por Comas) es un archivos de datos que "
-"subir a ERPNext para actualizar varios datos. Cada aplicación de hoja de "
-"calculo como MS Excel o Open Office puede ser guardado como un archivo CSV. "
+"puede subir a ERPNext para actualizar varios datos. Cada aplicación de hoja "
+"de calculo como MS Excel o Open Office puede ser guardado como un archivo "
+"CSV. "
 
 msgid "If you are using Microsoft Excel and using non-English characters, make sure to save your file encoded as UTF-8. For older versions of Excel, there is no clear way of saving as UTF-8. So save your file as a CSV, then open it in Notepad, and save as “UTF-8”. (Sorry blame Microsoft for this!)"
 msgstr ""
 "Si usted esta usando Microsoft Excel y utilizando caracteres no Ingleses, "
-"asegurece de guardar su archivo con codificac UTF-8. Para versiones "
+"asegurece de guardar su archivo con codificación UTF-8. Para versiones "
 "anteriores de Excel, no hay forma clara de guardar como UTF-8. Así que "
 "guarde su archivo como CSV, luego abra el documento en Notepad, y guarde el "
 "archivo como \"UTF-8\". (¡Lo sentimos odien a Microsoft por esto!)"
@@ -204,5 +212,5 @@ msgstr "Ejemplo"
 msgid "To rename multiple records, upload a .csv file with the old name in the first column and the new name in the second column and click on Upload."
 msgstr ""
 "Para renombrar múltiples registros, suba un archivo .csv con los viejos "
-"nombre en la primer columna y el nuevo en la segunda columna y clic en "
+"nombres en la primer columna y los nuevos en la segunda columna y clic en "
 "Subir. "

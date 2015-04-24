@@ -2,11 +2,13 @@
 # William Moreno Reyes <william>, 2015.
 # William Moreno Reyes <william>, 2015.
 # William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2015-04-21 00:43-0600\n"
-"PO-Revision-Date: 2015-04-24 00:07-0600\n"
+"PO-Revision-Date: 2015-04-24 08:52-0600\n"
 "Last-Translator: William Moreno Reyes <william>\n"
 "Language-Team: william\n"
 "Language: es\n"
@@ -67,8 +69,8 @@ msgstr "Administrador de Impuestos de Venta y Cargos"
 
 msgid "You must usually collect taxes from your Customer and pay them to the government. At times, you may have to pay multiple taxes to multiple government bodies like local government, state or provincial and federal or central government."
 msgstr ""
-"Generalmente debe trasladas impuestos a sus Clientes y pagarlos al estado. "
-"En ocasiones debe pagar varios impuesto a varios entes del estado, como "
+"Generalmente debe trasladar impuestos a sus Clientes y pagarlos al estado. "
+"En ocasiones debe pagar varios impuestos a varios entes del estado, como "
 "gobierno local, regional o central."
 
 msgid "The way ERPNext sets up taxes is via templates. Other types of charges that may apply to your invoices (like shipping, insurance etc.) can also be configured as taxes."
@@ -78,7 +80,7 @@ msgstr ""
 "puede ser configurados de forma similar a los impuestos."
 
 msgid "Select template and modify as per your need."
-msgstr "Selecciones una plantilla según sus necesidades."
+msgstr "Seleccione una plantilla según sus necesidades."
 
 msgid "To create a new sales tax template called Sales Taxes and Charges Master, you have to go to:"
 msgstr ""

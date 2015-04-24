@@ -2,11 +2,17 @@
 # William Moreno Reyes <william>, 2015.
 # William Moreno Reyes <william>, 2015.
 # William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2015-04-21 00:43-0600\n"
-"PO-Revision-Date: 2015-04-23 22:54-0600\n"
+"PO-Revision-Date: 2015-04-24 08:47-0600\n"
 "Last-Translator: William Moreno Reyes <william>\n"
 "Language-Team: william\n"
 "Language: es\n"
@@ -92,12 +98,14 @@ msgstr "Personalización"
 
 msgid "You can add customized text, HTML in your print format, just add the Custom HTML field (in dark colour) and add it to the the place where you want to add the text. Then click on Edit HTML to edit your content."
 msgstr ""
-"Puede agregar texto personalizado, tambien HTML es su formato de impresión, "
+"Puede agregar texto personalizado, tambien HTML en su formato de impresión, "
 "solo agregue un campo HTML (en color oscuro) y agreguelo en el lugar que "
 "quiere mostrar el texto. Luego clic en Editar HTML para editar el contenido."
 
 msgid "To save your format, just click on the Save button on the top."
 msgstr ""
+"Para guardar su formato, solo haga clic en Botón Guardar en la parte "
+"superior."
 
 msgid "Print Headings"
 msgstr "Encabezados de Impresión"
@@ -176,20 +184,20 @@ msgstr "Configuración &gt; Impresión &gt; Plantillas de Dirección"
 
 msgid "A default Address Template is created when you setup the system. You can either edit or update it or create a new template."
 msgstr ""
-"Un Plantilla de Direcciones por defecto se crea al configurar el sistema. "
+"Una Plantilla de Direcciones por defecto se crea al configurar el sistema. "
 "Puede editarla, actualizarla o crear una plantilla nueva."
 
 msgid "One template is default and will apply to all countries that do not have an specific template."
 msgstr ""
-"Una plantilla es por defecto y sera aplicada a todos los países que no "
-"tengan una plantilla especifica."
+"Una plantilla se define por defecto y sera aplicada a todos los países que "
+"no tengan una plantilla especifica."
 
 msgid "<emphasis role=\"Bold\">Template</emphasis>"
 msgstr "<emphasis role=\"Bold\">Plantilla</emphasis>"
 
 msgid "The templating engine is based on HTML and the Jinja Templating system and all the fields (including Custom Fields) will be available for creating the template."
 msgstr ""
-"El motor de plantillas se basa en HTML y en sistema de plantillas Jinja y "
+"El motor de plantillas se basa en HTML y en el sistema de plantillas Jinja y "
 "todos los campos (incluidos Campos Personalizados) están disponibles para "
 "crear la plantilla."
 
@@ -203,8 +211,8 @@ msgid "Terms and conditions are the general and special arrangements, provisions
 msgstr ""
 "Los Términos y Condiciones son los acuerdos, provisiones, requerimientos, "
 "reglas, especificaciones y estándares generales y específicos que sigue la "
-"compañía. Estas especificaciones son parte integral de una acuerdo o "
-"contrato que la compañía establezca con sus clientes, proveedores o socios."
+"compañía. Estas especificaciones son parte integral de un acuerdo o contrato "
+"que la compañía establezca con sus clientes, proveedores o socios."
 
 msgid "Make a new Terms and Conditions"
 msgstr "Crear nuevos Términos y Condiciones"
@@ -234,8 +242,7 @@ msgstr ""
 "página, si bien no esta disponible como una función especifica. El "
 "contenido de los Terminos y Condiciones siempre es el último en aparecer en "
 "el formato de impresión, detalles de pie de página deben ser insertados al "
-"final del contenido, así que es donde actualmente para aparece como pie de "
-"página."
+"final del contenido, así que actualmente aparece como pie de página."
 
 msgid "Select in Transaction"
 msgstr "Seleccionar en la Transacción"

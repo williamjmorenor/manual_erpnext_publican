@@ -6,11 +6,12 @@
 # William Moreno Reyes <william>, 2015.
 # William Moreno Reyes <william>, 2015.
 # William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2015-04-21 00:43-0600\n"
-"PO-Revision-Date: 2015-04-23 09:40-0600\n"
+"PO-Revision-Date: 2015-04-24 07:47-0600\n"
 "Last-Translator: William Moreno Reyes <william>\n"
 "Language-Team: william\n"
 "Language: es\n"
@@ -30,7 +31,13 @@ msgid "An ERP brings all of this together in one place."
 msgstr "Un ERP proporciona todas esas funciones en un solo lugar."
 
 msgid "Small businesses are not so different from large ones. They contain most of the complexities of a large business along with many other constraints. Small businesses have to communicate with customers, do accounts, pay taxes, do payroll, manage timelines, deliver quality, answer questions, and keep everyone happy just like in large businesses."
-msgstr "Las empresas pequeñas no son diferentes de las grandes entidades. Tienen la misma complejidad de una gran organización junto a otros retos. Las empresas pequeñas tienen que mantener comunicación con sus clientes, llevar su contabilidad, pagar impuestos, pagar planillas, administrar ciclos de tiempo, mantener la calidad, responder las inquietudes de los clientes y mantener a todos felices como una grandes empresa."
+msgstr ""
+"Las empresas pequeñas no son diferentes de las grandes entidades. Tienen la "
+"misma complejidad de una gran organización junto a otros retos. Las empresas "
+"pequeñas tienen que mantener comunicación con sus clientes, llevar su "
+"contabilidad, pagar impuestos, pagar planillas, administrar ciclos de "
+"tiempo, mantener la calidad, responder las inquietudes de los clientes y "
+"mantener a todos felices como lo hacen las grandes empresa."
 
 msgid "Large businesses have the advantage of using advanced data systems to manage their process efficiently. Small businesses, on the other hand, typically struggle to keep things organized. They often use a mix of apps like spreadsheets, accounting software, web CRM etc to manage.The problem is, not everyone is on the same page. An ERP changes that."
 msgstr "Grandes empresas tiene la ventaja de contar con sistemas avanzados para administrar eficientemente sus procesos, por otro lado, generalmente luchan por mantener todo en orden. Ellos usan una mezcla de aplicaciones como hojas de calculo, aplicaciones de contabilidad, un CRM web. El problema es que no todos están en la misma aplicación. Un ERP cambia eso."
@@ -70,4 +77,3 @@ msgstr "Publicar su sitio web."
 
 msgid "And a lot lot lot more."
 msgstr "Y muchas cosas mas."
-

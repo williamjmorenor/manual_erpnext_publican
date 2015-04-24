@@ -1,9 +1,11 @@
 # William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2015-04-21 00:43-0600\n"
-"PO-Revision-Date: 2015-04-24 00:33-0600\n"
+"PO-Revision-Date: 2015-04-24 12:17-0600\n"
 "Last-Translator: William Moreno Reyes <william>\n"
 "Language-Team: william\n"
 "Language: es\n"
@@ -25,8 +27,7 @@ msgstr ""
 msgid "Why would you want Price Lists? You have different prices for different zones (based on the shipping costs), for different currencies etc."
 msgstr ""
 "¿Para qué necesita Listas de Precios? Puede tener diferentes precios para "
-"diferentes áreas (basado en el costo de transporte) para diferentes monedas, "
-"etc."
+"diferentes áreas (basado en el costo de transporte) o en monedas, etc."
 
 msgid "An Item can have multiple prices based on customer, currency, region, shipping cost etc, which can be stored as different rate plans. In ERPNext, you are required to store all the lists separately. Buying Price List is different from Selling Price List and thus is stored separately."
 msgstr ""
@@ -71,8 +72,8 @@ msgstr "Paso 4: Seleccione Compra y Venta"
 
 msgid "Select for which transaction this Price List is application. Mostly it will be one of the Buying or Selling, however you can choose both as well."
 msgstr ""
-"Seleccione para tipo de transacciones es esta lista de precios. Generalmente "
-"sera solo de Compra o Venta, pero puede seleccionar ambos."
+"Seleccione para que tipo de transacciones es esta lista de precios. "
+"Generalmente sera solo de Compra o Venta, pero puede seleccionar ambos."
 
 msgid "Step 5: Select Territory"
 msgstr "Paso 5: Territorio"
