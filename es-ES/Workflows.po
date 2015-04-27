@@ -17,8 +17,5 @@ msgid "Workflows"
 msgstr "Flujo de Trabajo"
 
 msgid "In order to allow multiple people to submit multiple requests, for approvals, by multiple users, ERPNext requires you to fill the workflow conditions. ERPNext tracks the multiple permissions before submission."
-msgstr ""
-"Con el fin de permitir a varias personas realizar múltiples solicitudes, de "
-"aprobación, de múltiples usuarios, ERPNext requiere que cumpla la condición "
-"del flujo de trabajo. ERPNext registra varios permisos antes de "
-"presentarlos."
+msgstr "Con el fin de permitir a varias personas realizar múltiples solicitudes, de aprobación, de múltiples usuarios, ERPNext requiere que cumpla la condición del flujo de trabajo. ERPNext registra varios permisos antes de presentarlos."
+

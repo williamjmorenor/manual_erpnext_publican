@@ -19,18 +19,11 @@ msgid "SMS Setting"
 msgstr "Configuración de SMS"
 
 msgid "To integrate SMS in ERPNext, approach a SMS Gateway Provider who provides HTTP API. They will create an account for you and will provide an unique username and password."
-msgstr ""
-"Para integrar SMS en ERPNext, necesita un proveedor de servicios de "
-"mensajería de texto que provea una API para HTTP. Ellos crearan una cuenta "
-"para usted con un nombre de usuario y contraseña únicos."
+msgstr "Para integrar SMS en ERPNext, necesita un proveedor de servicios de mensajería de texto que provea una API para HTTP. Ellos crearan una cuenta para usted con un nombre de usuario y contraseña únicos."
 
 msgid "To configure SMS Settings in ERPNext, find out their HTTP API (a document which describes the method of accessing their SMS interface from 3rd party applications). In this document, you will get an URL which is used to send the SMS using HTTP request. Using this URL, you can configure SMS Settings in ERPNext."
-msgstr ""
-"Para configurar las opciones de SMS en ERPNext, encuentre la API HTTP (un "
-"documento que describe como acceder a su interfaz de SMS por una aplicación "
-"de terceros). Es este documento encontrara una URL que sera usada para "
-"enviar SMS usando solicitudes HTTP. Usando esta URL, podrá configurar el uso "
-"de SMS en ERPNext"
+msgstr "Para configurar las opciones de SMS en ERPNext, encuentre la API HTTP (un documento que describe como acceder a su interfaz de SMS por una aplicación de terceros). Es este documento encontrara una URL que sera usada para enviar SMS usando solicitudes HTTP. Usando esta URL, podrá configurar el uso de SMS en ERPNext"
 
 msgid "Note: the string up to the \"?\" is the SMS Gateway URL"
 msgstr "Nota: el texto antes del signo \"?\" es la URL de salida para SMS"
+

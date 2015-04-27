@@ -18,11 +18,19 @@
 # William Moreno Reyes <william>, 2015.
 # William Moreno Reyes <william>, 2015.
 # William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2015-04-22 17:50-0600\n"
-"PO-Revision-Date: 2015-04-27 15:58-0600\n"
+"PO-Revision-Date: 2015-04-27 16:35-0600\n"
 "Last-Translator: William Moreno Reyes <william>\n"
 "Language-Team: william\n"
 "Language: es\n"
@@ -249,72 +257,117 @@ msgstr "Factura \"Pro Forma\""
 
 msgid "If you want to give an Invoice to a Customer to make a payment before you deliver, i.e. you operate on a payment first basis, you should create a Quotation and title it as a “Pro-forma Invoice” (or something similar) using the Print Heading feature."
 msgstr ""
+"Si quiere dar a un Cliente una Factura para hacer un pago antes de haga el "
+"envió, por ejemplo trabaja en una sistema de pagos adelantados, debe crear "
+"una Cotización y definiría como una \"Factura Pro Forma\" (o algo similar) "
+"usando las opciones de membrete."
 
 msgid "“Pro Forma” means for formality. Why do this? Because if you book a Sales Invoice it will show up in your “Accounts Receivable” and “Income”. This is not ideal as your Customer may or may not decide to pay up. But since your Customer wants an “Invoice”, you could give the Customer a Quotation (in ERPNext) titled as “Pro Forma Invoice”. This way everyone is happy."
 msgstr ""
+"\"Pro Forma\" por asunto de formalidad. ¿Porqué hacer esto? Porque si registra "
+"una Factura de Venta esta aparecerá en sus \"Cuentas por Cobrar\" y de "
+"\"Ingresos\". Esto no es lo ideal si su cliente decide hacer o no hacer el "
+"pago. Pero debido a que su Cliente va a necesitar una \"Factura\", puede darle "
+"al cliente una Pro Forma (en ERPNext) con el titulo de \"Factura Pro Forma\". "
+"Esta mantendrá a todos felices."
 
 msgid "Purchase Invoice"
-msgstr ""
+msgstr "Factura de Compra"
 
 msgid "Purchase Invoice is the exact opposite of your Sales Invoice. It is the bill that your Supplier sends you for products or services delivered. Here you accrue expenses to your Supplier. Making a Purchase Invoice is very similar to making a Purchase Order."
 msgstr ""
+"Factura de Compra es exactamente lo opuesto a las Facturas de Venta. Es la "
+"factura que le envía su proveedor por productos o servicios enviados. Aquí "
+"devenga pagos a sus proveedores. Hacer una Factura de Compra es similar a "
+"hacer una Factura de Venta."
 
 msgid "To make a new Purchase Invoice, go to:"
-msgstr ""
+msgstr "Para hacer una nueva Factura de Compra, valla a:"
 
 msgid ""
 "\n"
 "		Accounts &gt; Documents &gt; Purchase Invoice &gt; New Purchase Invoice\n"
 "		"
 msgstr ""
+"Contabilidad &gt; Documentos &gt; Factura de Compra &gt; Nueva Factura de "
+"Compra"
 
 msgid "or click on “Make Purchase Invoice” in Purchase Order or Purchase Receipt."
 msgstr ""
+"o Clic en \"Hacer Factura de Compra\" en una Orden de Compra o Recibo de "
+"Compra."
 
 msgid "The concept of “Posting Date” is again same as Sales Invoice. “Bill No” and “Bill Date” helps to track the bill number as set by your Supplier for reference."
 msgstr ""
+"El concepto de \"Fecha de Registro\" es igual similar a una Factura de Venta. "
+"\"No de Factura\" y \"Fecha de Factura\" le ayudan a llevar control el número de "
+"factura definido por su Proveedor como referencia."
 
 msgid "Like in Sales Invoice, you have to enter an Expense or an Asset account for each row in your Items table. This helps to indicate if the Item is an Asset or an Expense. You must also enter a Cost Center. These can also be set in the Item master."
 msgstr ""
+"Como en las Facturas de Ventas, tiene que ingresar una cuenta de Gastos o "
+"una Cuenta de Activo para cada registro de su registro de Artículos. Esto "
+"ayuda a indicar si el Articulo es un Activo o un Gasto. También debe "
+"configurar un Centro de Costos.  Esto puede configurarse desde el maestro de "
+"Artículos."
 
 msgid "The Purchase Invoice will affect your accounts as follows:"
 msgstr ""
+"La Factura de Compra afectara sus cuentas como se detalla a continuación:"
 
 msgid "Accounting entries (GL Entry) for a typical double entry “purchase”:"
 msgstr ""
+"Registros Contables (Entradas del Libro Mayor) de un registro tipico por "
+"partida doble de una \"compra\":"
 
 msgid "Debits:"
-msgstr ""
+msgstr "Debitos:"
 
 msgid "Expense or Asset (net totals, excluding taxes)"
-msgstr ""
+msgstr "Gasto o Activo (Total Neto, excluyendo impuestos)"
 
 msgid "Taxes (assets if VAT-type or expense again)."
-msgstr ""
+msgstr "Impuestos (impuestos de tipo IVA)."
 
 msgid "Credits:"
-msgstr ""
+msgstr "Creditos:"
 
 msgid "Supplier"
-msgstr ""
+msgstr "Proveedor"
 
 msgid "To see entries in your Purchase Invoice after you “Submit”, click on “View Ledger”."
 msgstr ""
+"Para ver los registros de su Factura de Proveedor después de \"Presentar\", "
+"clic en \"Ver Registros\"."
 
 msgid "Is purchase an “Expense” or an “Asset”?"
-msgstr ""
+msgstr "¿Es la compra un \"Gasto\" o un \"Activo\"?"
 
 msgid "If the Item is consumed immediately on purchase, or if it is a service, then the purchase becomes an “Expense”. For example, a telephone bill or travel bill is an “Expense” - it is already consumed."
 msgstr ""
+"Si los Artículos se consumen inmediatamente en la compra, o si es un "
+"servicio, la compra es un \"Gasto\". Por ejemplo, una factura telefónica o un "
+"factura de viaje es un \"Gasto\" - si ya se ha realizado."
 
 msgid "For inventory Items, that have a value, these purchases are not yet “Expense”, because they still have a value while they remain in your stock. They are “Assets”. If they are raw-materials (used in a process), they will become “Expense” the moment they are consumed in the process. If they are to be sold to a Customer, they become “Expense” when you ship them to the Customer."
 msgstr ""
+"Para Articulos del Inventario, que tiene un valor, estas compras no son "
+"\"Gastos\", porque tienen un valor que aun esta en el inventario. Son "
+"\"Activos\". Si son materias primas (usadas en un proceso), ellos se "
+"convertirán en un \"Gasto\" al momento en que se consuman durante el proceso. "
+"Si ellos son para ser vendidos a un Cliente, se volverán un \"Gasto\" cuando "
+"se envíen al Cliente."
 
 msgid "Deducting Taxes at Source"
-msgstr ""
+msgstr "Deduciendo Impuestos en la Fuente"
 
 msgid "In many countries, the law may require you to deduct taxes, while paying your suppliers. These taxes could be based on a standard rate. Under these type of schemes, typically if a Supplier crosses a certain threshold of payment, and if the type of product is taxable, you may have to deduct some tax (which you pay back to your government, on your Supplier’s behalf)."
 msgstr ""
+"En muchos países, las leyes obligan a deducir impuestos, al momento de pagar "
+"a los proveedores.  Estos impuestos se pueden basar en una tasa estándar. "
+"Según este tipo de esquemas, generalmente si un Proveedor acumula cierto "
+"monto de pago, y el producto es grabable posiblemente debe deducir algunos "
+"impuestos (los que deberá pagar al gobierno, a nombre del Proveedor)."
 
 msgid "To do this, you will have to make a new Tax Account under “Tax Liabilities” or similar and credit this Account by the percent you are bound to deduct for every transaction."
 msgstr ""

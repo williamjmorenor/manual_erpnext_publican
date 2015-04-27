@@ -20,15 +20,11 @@ msgid "Flow Of Transactions In ERPNext"
 msgstr "Flujo de Transacciones en ERPNext"
 
 msgid "This diagram covers how ERPNext tracks your company information across key functions. This diagram does not cover all the features of ERPNext."
-msgstr ""
-"Este diagrama muestra como ERPNext maneja la información de la empresa a "
-"través de sus funciones clave. Este diagrama no cubre todas las funciones de "
-"ERPNext."
+msgstr "Este diagrama muestra como ERPNext maneja la información de la empresa a través de sus funciones clave. Este diagrama no cubre todas las funciones de ERPNext."
 
 msgid "Not all of the steps are mandatory. ERPNext allows you to freely skip steps if you want to simplify the process."
-msgstr ""
-"No todos estos pasos son obligatorios. ERPNext le permite libremente obviar "
-"pasos si usted desea simplificar el proceso."
+msgstr "No todos estos pasos son obligatorios. ERPNext le permite libremente obviar pasos si usted desea simplificar el proceso."
 
 #~ msgid "<emphasis role=\"bold\">Note:</emphasis><emphasis> Not all of the steps are mandatory. ERPNext allows you to freely skip steps if you want to simplify the process.</emphasis>"
 #~ msgstr "<emphasis role=\"bold\">Nota:</emphasis><emphasis> No todos estos pasos son obligatorios. ERPNext le permite libremente obviar estos pasos si usted desea simplificar el proceso.</emphasis>"
+

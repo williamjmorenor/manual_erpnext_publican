@@ -17,15 +17,8 @@ msgid "Territory"
 msgstr "Territorio"
 
 msgid "Territory is a place to signify where your customers come from. If you operate in one country, you can give that country name as your Territory. For Example, India, US, or Rest of the World, could be your Territories. If you operate in many locations, ERPNext allows you to create more Territories. You can also have child Territories under parent Territories. This helps in assigning different regions to different sales staff."
-msgstr ""
-"Un Territorio es un lugar de donde provienen nuestros clientes. Si tiene "
-"operaciones un país, puede usar el nombre del país como nombre del "
-"Territorio. Por Ejemplo: Nicaragua, Costa Rica, Honduras, Guatemala o Resto "
-"del Mundo, podrían ser sus Territorios. Si opera en varias localidades "
-"ERPNext le permite crear mas Territorios. Puede también crear Territorios "
-"Hijos bajo Territorios Padres. Esto le ayuda a asignar diferentes regiones a "
-"diferentes equipos de ventas."
+msgstr "Un Territorio es un lugar de donde provienen nuestros clientes. Si tiene operaciones un país, puede usar el nombre del país como nombre del Territorio. Por Ejemplo: Nicaragua, Costa Rica, Honduras, Guatemala o Resto del Mundo, podrían ser sus Territorios. Si opera en varias localidades ERPNext le permite crear mas Territorios. Puede también crear Territorios Hijos bajo Territorios Padres. Esto le ayuda a asignar diferentes regiones a diferentes equipos de ventas."
 
 msgid "To add more territories to an existing tree, click on \"Add Child\""
-msgstr ""
-"Para agregar mas Territorios a un árbol existente, clic en \"Agregar Hijo\""
+msgstr "Para agregar mas Territorios a un árbol existente, clic en \"Agregar Hijo\""
+
