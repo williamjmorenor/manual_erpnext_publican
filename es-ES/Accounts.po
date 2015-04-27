@@ -1,38 +1,481 @@
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <william>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2015-04-22 17:50-0600\n"
-"PO-Revision-Date: 2015-04-22 17:50-0600\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: None\n"
-"Language: en-US \n"
+"PO-Revision-Date: 2015-04-27 15:58-0600\n"
+"Last-Translator: William Moreno Reyes <william>\n"
+"Language-Team: william\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Publican v4.2.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
 
 msgid "Accounts"
+msgstr "Contabilidad"
+
+msgid "At the end of sales and purchase cycle comes billing and payments. You may have an accountant in your team, or you may be doing accounting yourself, or you may have outsourced your accounting. In all the cases financial accounting forms the core of any business management system like an ERP."
 msgstr ""
+"Al final del ciclo de compras y ventas viene la facturación y pago. Puede "
+"tener un contador en su equipo, o puede estar llevando la contabilidad por "
+"usted mismo, o puede haber contratado un contador externo. En todos los "
+"casos la contabilidad financiera forma parte del núcleo de la sistema de "
+"administración financiera como un ERP."
+
+msgid "In ERPNext, your accounting operations consists of 3 main transactions:"
+msgstr ""
+"En ERPNext, su contabilidad consiste en 3 tipos principales de "
+"transacciones:"
+
+msgid "Sales Invoice: The bills that you raise to your Customers for the products or services you provide."
+msgstr ""
+"Facturas de Venta: Las facturas que hace a sus Clientes por los Productos y "
+"Servicios que vende."
+
+msgid "Purchase Invoice: Bills that your Suppliers give you for their products or services."
+msgstr ""
+"Factura de Compra: Factura que su Proveedor emite por productos o servicios."
+
+msgid "Journal Vouchers: For accounting entries, like payments, credit and other types."
+msgstr ""
+"Comprobante de Diario: Para registros contables, como pagos, créditos y "
+"otros tipos."
 
 msgid "Introduction to Accounting"
-msgstr ""
+msgstr "Introducción a la Contabilidad"
 
-msgid "Text"
+msgid "People new to accounting are often confused with the terms Debit and Credit. Contrary to their meaning, these terms have nothing to do with who owes what."
 msgstr ""
+"Personas iniciándose  en la contabilidad generalmente se sienten confundidos "
+"con el concepto de Debe y Haber. Al contrario de su significado literal, "
+"estos términos no tienen nada que ver con quien debe que."
+
+msgid "Debit and Credit"
+msgstr "Débito y Crédito"
+
+msgid "Debit and Credit are conventions. All accounting follows these, so that it is easy to understand the state of finances in a universal manner. These conventions are:"
+msgstr ""
+"Débitos y Créditos son convenciones. Todos los contadores los siguen, así es "
+"fácil comprender el estado financiero de una empresa universalmente. Estas "
+"convenciones son:"
+
+msgid "All Accounts are of type Debit or Credit."
+msgstr "Todas las cuentas tienen movimientos Débito o Crédito."
+
+msgid "Assets and Expenses (and their sub-groups) are always Debit."
+msgstr "Activos y Gastos (y sus sub cuentas) son de Saldo Deudor."
+
+msgid "Liabilities and Income (and their sub-groups) are always Credit."
+msgstr "Pasivos e Ingresos (y sus sub cuentas) son de Saldo Acreedor."
+
+msgid "In all accounting entries, you “debit” an Account or “credit” one."
+msgstr ""
+"En todos los movimientos contables, \"debita\" una Cuenta y \"acredita\" otra."
+
+msgid "When you “debit” a Debit Account (an asset or expense), its value increases (“add” operation). When you “credit” a Debit Account, its value decreases (“subtract” operation). The same rule applies for Credit Accounts. “Crediting” a Credit Account, increases its value, “debiting” it decreases its value."
+msgstr ""
+"Cuando \"débita\" una Cuenta de Saldo Deudor (Activos o Gastos), aumenta su "
+"valor (un cargo a la cuenta). Cuando \"acredita\" una Cuenta de Saldo Deudor, "
+"su valor disminuye (un abono a la cuenta). La misma regla aplica para "
+"Cuentas de Saldo Acreedor. \"Acreditar\" una Cuenta de Saldo Acreedor, aumenta "
+"su valor, \"Debitarla\" disminuye su valor."
+
+msgid "All accounting transactions (like a sales or a payment) must affect at least two different Accounts and sum of debits must be equal to sum of credits for the transaction. This is called the “double-entry bookkeeping system”."
+msgstr ""
+"Todas las transacciones contables (como una venta o un pago) debe afectar al "
+"menos dos cuentas diferentes y la suma de los débitos debe ser igual que la "
+"suma de los créditos para la operación. Esta se conoce como \"sistema de "
+"contabilidad por partida doble\"."
+
+msgid "Still confused? These conventions will become clear as you make transactions."
+msgstr ""
+"¿Confundido? Todos estos conceptos se irán aclarando según valla realizando "
+"operaciones."
+
+msgid "Accrual System"
+msgstr "Sistema de Devengo"
+
+msgid "Another important concept to understand in Accounting is accrual. This is important when your payment happens separately from delivery."
+msgstr ""
+"Otro concepto importante para entender la contabilidad es el concepto de "
+"devengo. Este concepto es importante cuando sus pagos ocurren en fechas "
+"diferentes a la ventas."
+
+msgid "For example, you buy X from a Supplier and your Supplier sends you a bill and expects you to pay in, for example, seven days. Even if you have not yet paid your Supplier, your expense must be booked immediately. This expense is booked against a group of Accounts called “Accounts Payable” that is the sum of all your outstanding dues to your Suppliers. This is called accrual. When you pay your Supplier, you will cancel his dues and update your bank account."
+msgstr ""
+"Por ejemplo, usted compra un producto X de un Proveedor y su Proveedor le "
+"enviá una factura de crédito en espera de su pago, por ejemplo en siete "
+"días. Incluso si usted no ha realizado en pago a su Proveedor, usted debe "
+"contabilizar inmediatamente sus gastos. Este gasto se contabiliza contra un "
+"grupo de Cuentas llamado \"Cuentas por Pagar\" que representa la suma de todos "
+"los pagos pendientes a sus proveedores. Esto se conoce como devengo. Cuando "
+"paga a un proveedor, debe cancelar sus deudas y actualizar su cuenta "
+"bancaria."
+
+msgid "ERPNext works on an accrual system. The transactions that accrue income and expense are Sales Invoice and Purchase Invoice."
+msgstr ""
+"ERPNext trabaja con un sistema de devengo. Las transacciones que se acumulan "
+"como ingresos y gastos son de facturas de ventas y compras."
+
+msgid "In retail, typically, delivery and payment happens at the same time. To cover this scenario, we have in ERPNext a POS Invoice (POS = Point of Sales). More on that later."
+msgstr ""
+"En ventas al detalle, la entrega de los productos y los pagos suceden al "
+"mismo momento. Para cubrir este escenario, en ERPNext hay una Factura de POS "
+"(POS = Punto de Venta). Mas sobre eso después."
 
 msgid "Sales"
+msgstr "Ventas"
+
+msgid "A Sales Invoice is a bill that you send to your customers, against which the customer processes the payment. Sales Invoice is an accounting transaction. On submission of Sales Invoice, the system updates the receivable and books income against a Customer Account."
+msgstr ""
+"Una Factura de Venta es una factura que enviá a sus clientes, contra la que "
+"sus cliente realizan sus pagos. La Factura de Venta es una transacción "
+"contable. Al crear una Factura de Venta, el sistema actualiza el monto por "
+"cobrar y registra el ingreso contra una Cuenta de Clientes."
+
+msgid "You can create a Sales Invoice directly from"
+msgstr "Puede crear una Factura de Ventas directamente desde:"
+
+msgid ""
+"\n"
+"		Accounting &gt; Documents &gt; Sales Invoice &gt; New Sales Invoice\n"
+"		"
+msgstr ""
+"Contabilidad &gt; Documentos &gt; Facturas de Venta &gt; Nueva Factura de "
+"Venta"
+
+msgid "or Click on Make Invoice at the right hand corner of the Delivery Note."
+msgstr "o Clic en Hacer Factura en la esquina derecha de una Nota de Envió."
+
+msgid "Accounting Impact"
+msgstr "Impacto en la Contabilidad"
+
+msgid "All Sales must be booked against an “Income Account”. This refers to an Account in the “Income” section of your Chart of Accounts. It is a good practice to classify your income by type (like product income, service income etc). The Income Account must be set for each row of the Items table."
+msgstr ""
+"Todas la ventas deben ser registradas contra un \"Cuenta de Ingresos\". Esto "
+"se refiere a una cuenta la sección \"Ingresos\" de su Catalogo de Cuentas. Es "
+"una buena practica clasificar sus ingresos por tipo (como Ventas de "
+"Productos, Ventas de Servicios, etc.)- La Cuenta de Ingresos se debe definir "
+"es cada registro del maestro de Artículos."
+
+msgid "To set default Income Accounts for Items, you can set it in the Item or Item Group."
+msgstr ""
+"Para configurar la Cuenta de Ingresos por defecto para los Artículos, puede "
+"definirla en el Articulo o Grupo de Artículos."
+
+msgid "The other account that is affected is the Account of the Customer. That is automatically set from “Debit To” in the heading section."
+msgstr ""
+"La otra cuenta afectada es la Cuenta del Cliente. Es configurada "
+"automáticamente en la sección \"Debitar a\":"
+
+msgid "You must also mention the Cost Centers in which your Income must be booked. Remember that your Cost Centers tell you the profitability of the different lines of business or product. You can also set a default Cost Center in the Item master."
+msgstr ""
+"Debe también mencionar el Centro de Costos en la que se registrara el "
+"Ingreso. Recuerde que el Centro de Costos registra el rendimiento de sus "
+"diferentes lineas de negocios o productos. Puede también definir un Centro "
+"de Costos por defecto desde el Administrador de Artículos."
+
+msgid "Accounting entries (GL Entry) for a typical double entry “Sale”:"
+msgstr ""
+"Registros Contables (Entrada de Libro Mayor) para un registro por partida "
+"doble de una \"Venta\":"
+
+msgid "When booking a sale (accrual):"
+msgstr "Cuando se registra una venta (devengo):"
+
+msgid "Debit: Customer (grand total) Credit: Income (net total, minus taxes for each Item) Credit: Taxes (liabilities to be paid to the government)"
+msgstr ""
+"Débito: Cliente (Gran Total) Crédito: Ingreso (Total Neto: Menos impuestos "
+"para cada Articulo) Crédito: Impuestos (Cuentas por pagar al estado)"
+
+msgid "To see entries in your Sales Invoice after you “Submit”, click on “View Ledger”."
+msgstr ""
+"Para ver los registros de su Factura de Venta después de \"Presentarla\", clic "
+"en \"Ver Registro\"."
+
+msgid "Dates"
+msgstr "Fechas"
+
+msgid "Posting Date: The date on which the Sales Invoice will affect your books of accounts i.e. your General Ledger. This will affect all your balances in that accounting period."
+msgstr ""
+"Fecha de Registro: La fecha en que la Factura de Venta en que se registrara "
+"la cuenta, por ejemplo en su Mayor General. Esto afecta sus registros en el "
+"periodo contable."
+
+msgid "Due Date: The date on which the payment is due (if you have sold on credit). This can be automatically set from the Customer master."
+msgstr ""
+"Fecha de Pago: La fecha en que el pago es realizado (si realizo la venta de "
+"crédito). Esto puede definirse automáticamente desde el Administrador de "
+"Clientes."
+
+msgid "Recurring Invoices"
+msgstr "Facturas Recurrentes"
+
+msgid "If you have a contract with a Customer where you bill the Customer on a monthly, quarterly, half-yearly or annual basis, you can check the “Recurring Invoice” box. Here you can fill in the details of how frequently you want to bill this Invoice and the period for which the contract is valid."
+msgstr ""
+"Si tiene un contrato con un Cliente al que le factura mensual, quincenal, "
+"semestral o anualmente, puede seleccionar la opción \"Facturación "
+"Recurrente\". Aquí puede llenar los detalles de que con que periodicidad "
+"desea facturar y el periodo para el que es valido en contrato."
+
+msgid "ERPNext will automatically create new Invoices and mail it to the email ids you set."
+msgstr ""
+"ERPNext automáticamente generara nuevas Facturas y enviarlos por correo a "
+"los clientes definidos."
+
+msgid "\"Pro Forma\" Invoice"
+msgstr "Factura \"Pro Forma\""
+
+msgid "If you want to give an Invoice to a Customer to make a payment before you deliver, i.e. you operate on a payment first basis, you should create a Quotation and title it as a “Pro-forma Invoice” (or something similar) using the Print Heading feature."
+msgstr ""
+
+msgid "“Pro Forma” means for formality. Why do this? Because if you book a Sales Invoice it will show up in your “Accounts Receivable” and “Income”. This is not ideal as your Customer may or may not decide to pay up. But since your Customer wants an “Invoice”, you could give the Customer a Quotation (in ERPNext) titled as “Pro Forma Invoice”. This way everyone is happy."
 msgstr ""
 
 msgid "Purchase Invoice"
 msgstr ""
 
+msgid "Purchase Invoice is the exact opposite of your Sales Invoice. It is the bill that your Supplier sends you for products or services delivered. Here you accrue expenses to your Supplier. Making a Purchase Invoice is very similar to making a Purchase Order."
+msgstr ""
+
+msgid "To make a new Purchase Invoice, go to:"
+msgstr ""
+
+msgid ""
+"\n"
+"		Accounts &gt; Documents &gt; Purchase Invoice &gt; New Purchase Invoice\n"
+"		"
+msgstr ""
+
+msgid "or click on “Make Purchase Invoice” in Purchase Order or Purchase Receipt."
+msgstr ""
+
+msgid "The concept of “Posting Date” is again same as Sales Invoice. “Bill No” and “Bill Date” helps to track the bill number as set by your Supplier for reference."
+msgstr ""
+
+msgid "Like in Sales Invoice, you have to enter an Expense or an Asset account for each row in your Items table. This helps to indicate if the Item is an Asset or an Expense. You must also enter a Cost Center. These can also be set in the Item master."
+msgstr ""
+
+msgid "The Purchase Invoice will affect your accounts as follows:"
+msgstr ""
+
+msgid "Accounting entries (GL Entry) for a typical double entry “purchase”:"
+msgstr ""
+
+msgid "Debits:"
+msgstr ""
+
+msgid "Expense or Asset (net totals, excluding taxes)"
+msgstr ""
+
+msgid "Taxes (assets if VAT-type or expense again)."
+msgstr ""
+
+msgid "Credits:"
+msgstr ""
+
+msgid "Supplier"
+msgstr ""
+
+msgid "To see entries in your Purchase Invoice after you “Submit”, click on “View Ledger”."
+msgstr ""
+
+msgid "Is purchase an “Expense” or an “Asset”?"
+msgstr ""
+
+msgid "If the Item is consumed immediately on purchase, or if it is a service, then the purchase becomes an “Expense”. For example, a telephone bill or travel bill is an “Expense” - it is already consumed."
+msgstr ""
+
+msgid "For inventory Items, that have a value, these purchases are not yet “Expense”, because they still have a value while they remain in your stock. They are “Assets”. If they are raw-materials (used in a process), they will become “Expense” the moment they are consumed in the process. If they are to be sold to a Customer, they become “Expense” when you ship them to the Customer."
+msgstr ""
+
+msgid "Deducting Taxes at Source"
+msgstr ""
+
+msgid "In many countries, the law may require you to deduct taxes, while paying your suppliers. These taxes could be based on a standard rate. Under these type of schemes, typically if a Supplier crosses a certain threshold of payment, and if the type of product is taxable, you may have to deduct some tax (which you pay back to your government, on your Supplier’s behalf)."
+msgstr ""
+
+msgid "To do this, you will have to make a new Tax Account under “Tax Liabilities” or similar and credit this Account by the percent you are bound to deduct for every transaction."
+msgstr ""
+
+msgid "Taxes are an essential part of accounting, if you are miscalculating taxes your business may be at risk of fines and tax charges. If you are unsure about the calculation or application of any tax consult your accountant or tax specialist."
+msgstr ""
+
 msgid "Making Payments"
+msgstr ""
+
+msgid "Payments made against Sales Invoices or Purchase Invoices can be made by clicking on “Make Payment Entry” button on “Submitted” invoices."
+msgstr ""
+
+msgid "Update the “Bank Account” (you can also set the default account in the Company master)."
+msgstr ""
+
+msgid "Update posting date."
+msgstr ""
+
+msgid "Enter the cheque number, cheque date."
+msgstr ""
+
+msgid "Save and Submit."
+msgstr ""
+
+msgid "Payments can also be made independent of invoices by creating a new Journal Voucher and selecting the type of payment."
+msgstr ""
+
+msgid "Incoming Payment: For payments from Customers:"
+msgstr ""
+
+msgid "Debit: Bank or Cash Account"
+msgstr ""
+
+msgid "Credit: Customer"
+msgstr ""
+
+msgid "Remember to add “Against Sales Invoice” or “Is Advance” as applicable."
+msgstr ""
+
+msgid "Outgoing Payment: For payments to Suppliers:"
+msgstr ""
+
+msgid "Debit: Supplier"
+msgstr ""
+
+msgid "Credit: Bank or Cash Account"
+msgstr ""
+
+msgid "Reconciling Cheque Payments"
+msgstr ""
+
+msgid "If you are receiving payments or making payments via cheques, the bank statements will not accurately match the dates of your entry, this is because the bank usually takes time to “clear” these payments. Also you may have mailed a cheque to your Supplier and it may be a few days before it is received and deposited by the Supplier. In ERPNext you can synchronize your bank statements and your Journal Vouchers using the “Bank Reconciliation” tool."
+msgstr ""
+
+msgid "To use this, go to:"
+msgstr ""
+
+msgid ""
+"\n"
+"		Accounts &gt; Tools &gt; Bank Reconciliation\n"
+"		"
+msgstr ""
+
+msgid "Select your “Bank” Account and enter the dates of your statement. Here you will get all the “Bank Voucher” type entries. In each of the entry on the right most column, update the “Clearance Date” and click on “Update”."
+msgstr ""
+
+msgid "By doing this you will be able to sync your bank statements and entries into the system."
+msgstr ""
+
+msgid "Managing Outstanding Payments"
+msgstr ""
+
+msgid "In most cases, apart from retail sales, billing and payments are separate activities. There are several combinations in which these payments are done. These cases apply to both sales and purchases."
+msgstr ""
+
+msgid "They can be upfront (100% in advance)."
+msgstr ""
+
+msgid "Post shipment. Either on delivery or within a few days of delivery."
+msgstr ""
+
+msgid "Part in advance and part on or post delivery."
+msgstr ""
+
+msgid "Payments can be made together for a bunch of invoices."
+msgstr ""
+
+msgid "Advances can be given together for a bunch of invoices (and can be split across invoices)."
+msgstr ""
+
+msgid "ERPNext allows you to manage all these scenarios. All accounting entries (GL Entry) can be made against a Sales Invoice, Purchase Invoice or Journal Vouchers (in special cases, an invoice can be made via a Sales Invoice too)."
+msgstr ""
+
+msgid "The total outstanding amount against an invoice is the sum of all the accounting entries that are made “against” (or are linked to) that invoice. This way you can combine or split payments in Journal Vouchers to manage the scenarios."
+msgstr ""
+
+msgid "Matching Payments to Invoices"
+msgstr ""
+
+msgid "In complex scenarios, especially in the capital goods industry, sometimes there is no direct link between payments and invoices. You send invoices to your Customers and your Customer sends you block payments or payments based on some schedule that is not linked to your invoices."
+msgstr ""
+
+msgid "In such cases, you can use the Payment to Invoice Matching Tool."
+msgstr ""
+
+msgid ""
+"\n"
+"		Accounts &gt; Tools &gt; Payment Reconciliation\n"
+"		"
+msgstr ""
+
+msgid "In this tool, you can select an account (your Customer’s account) and click on “Pull Payment Entries” and it will select all un-linked Journal Vouchers and Sales Invoices from that Customer."
+msgstr ""
+
+msgid "To cancel off some payments and invoices, select the Invoices and Journal Vouchers and click on “Reconcile”."
 msgstr ""
 
 msgid "Advance Payment Entry"
 msgstr ""
 
+msgid "Payment done by the customer before accepting delivery of the product is an Advance Payment. For Orders of high value, the business houses expect to receive advance."
+msgstr ""
+
+msgid "For Example: Consider a customer- Jane D'souza placing an order for a double bed costing Rs 100000/- She is asked to give some advance before the furniture house begins work on her order. She gives them Rs 1000/- in cash."
+msgstr ""
+
+msgid "Go to Accounts and open a new Journal Voucher to make the advance entry."
+msgstr ""
+
+msgid ""
+"\n"
+"		Accounts &gt; Documents &gt; Journal Voucher &gt; New Journal Voucher\n"
+"		"
+msgstr ""
+
+msgid "Mention the voucher type as cash voucher. This differs for different customers. If somebody pays by cheque the voucher type will be Bank Voucher. Then select the customer account and make the respective debit and credit entries."
+msgstr ""
+
+msgid "Since the customer has given 10000/- as cash advance,it will be recorded as a credit entry against the customer. To balance it with the debit entry[Double accounting Entry]enter 10000/- as debit against the company's cash account. In the row \"Is Advance\" click 'Yes'."
+msgstr ""
+
+msgid "Double Entry Accounting"
+msgstr ""
+
+msgid "Double entry bookkeeping is a system of accounting in which every transaction has a corresponding positive and negative entry : debits and credits. Every transaction involves a debit entry in one account and a credit entry in another account. This means that every transaction must be recorded in two accounts; one account will be debited because it receives value and the other account will be credited because it has given value."
+msgstr ""
+
+msgid "Save and submit the JV. If this document is not saved it will not be pulled in other accounting documents."
+msgstr ""
+
+msgid "When you make a new Sales Invoice for the same customer, mention the advance in the Sales Invoice Form."
+msgstr ""
+
+msgid "To link the Sales Invoice to the Journal Voucher which mentions the advance payment entry, click on ‘Get Advances Received’. Allocate the amount of advance in the advances table. The accounting will be adjusted accordingly."
+msgstr ""
+
 msgid "Journal Vouchers"
+msgstr ""
+
+msgid "Text"
 msgstr ""
 
 msgid "Credir Limit"
@@ -79,4 +522,3 @@ msgstr ""
 
 msgid "Item"
 msgstr ""
-
