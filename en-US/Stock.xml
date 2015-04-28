@@ -5,12 +5,46 @@
 <chapter id="chap-ERPNext-Manual_ERPNext-Stock">
 	<title>Stock</title>
 	<para>
-	Stock
+	For most small business that deal in physical goods, a large part of their net worth is invested in the stock in hand.
+	</para>
+	<para>
+	There are three main types of entries:
+	</para>
+	<itemizedlist>
+		<listitem>
+			<para>Purchase Receipt: Items received from Suppliers against Purchase Orders.</para>
+		</listitem>
+		<listitem>
+			<para>Stock Entry: Items transferred from one Warehouse to another.</para>
+		</listitem>
+		<listitem>
+			<para>Delivery Note: Items shipped to Customers.</para>
+		</listitem>
+	</itemizedlist>
+	<para>
+	Tracking stock is not just about adding and subtracting quantities. Some complications arise when:
+	</para>
+	<itemizedlist>
+		<listitem>
+			<para>Back-dated (past) entries are made / edited: This affects future stock levels and may lead to negative stock.</para>
+		</listitem>
+		<listitem>
+			<para>Stock has to be valued based on First-in-First-out: ERPNext needs to maintain a sequence of all transactions to know the exact value of your Items.</para>
+		</listitem>
+		<listitem>
+			<para>Stock reports are required at any point in time in the past: You have to lookup what was the quantity / value your stock of Item X on date Y.</para>
+		</listitem>
+	</itemizedlist>
+	<para>
+	To manage this, ERPNext collects all inventory transactions in a table called the Stock Ledger Entry. All Purchase Receipts, Stock Entries and Delivery Notes update this table.
 	</para>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Stock-Item">
 		<title>Item Master</title>
 		<para>
-		Text
+		An Item is your companys' product or a service. The term Item is applicable to your core products as well as your raw materials. It can be a product or service that you buy/sell from your customers/ suppliers. ERPNext allows you to manage all sorts of items like raw-materials, sub-assemblies, finished goods, item variants and service items.
+		</para>
+		<para>
+		ERPNext is optimized for itemized management of your sales and purchase. If you are in services, you can create an Item for each services that your offer. Completing the Item Master is very essential for successful implementation of ERPNext.
 		</para>
 		<sect2 id="sect2-ERPNext-Manual_ERPNext-Stock-Item-Codification">
 		<title>Item Codification</title>
