@@ -5,102 +5,554 @@
 <chapter id="chap-ERPNext-Manual_ERPNext-Selling">
 	<title>Selling</title>
 	<para>
-	Text
+	Selling is the communication that happens with the customer prior to and during the sale. You might be managing all the communication yourself or you may have a small team of sales people to handle this. ERPNext helps you track the communication leading up to the sale, by keeping all your documents in an organized and searchable manner.
+	</para>
+	<para>
+	ERPNext helps you track business Opportunities from Leads and Customers, send them Quotations and make confirmed Sales Orders.
 	</para>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Selling-Setup">
 		<title>Selling Setup</title>
 		<para>
-		Text
+		This section includes information on how to setup customer groups, sales partners, sales persons and terms and conditions. It has instructions on how to configure selling settings, in order to enable default fields.
 		</para>
 		<sect2 id="sect2-ERPNext-Manual_ERPNext-Selling-Setup-Group">
 		<title>Customer Group</title>
 		<para>
-		Text
+		Customer Group is a category where you specify your customer group type. Your customers can be Individuals or they can be corporate(Company) customers. Your customers could also be government officials or non-profit organisations. ERPNext allows you to create your own Customer Groups. To create a new Customer Group, go to
+		</para>
+		<programlisting>
+		Selling > Setup > Customer Group
+		</programlisting>
+		<para>
+		Customer Group master is maintained in tree strcuture. This allows you to set parent Customer Groups, and Child Customer Groups under those Parent Groups. Setting up this structure shall allow you making intelligent sales report based on Customer Group master.
 		</para>
 		</sect2>
 		<sect2 id="sect2-ERPNext-Manual_ERPNext-Selling-Setup-Partner">
 		<title>Sales Partner</title>
 		<para>
-		Text
+		People who assist you in getting business are termed as Sales Partners. Sales Partners can be represented by different names in ERPNext. You can call them Channel Partner, Distributor, Dealer, Agent, Retailer, Implementation Partner, Reseller etc. For each Sales Partner, you can define commission offer to them. When Sales Partner is selected in transactions, there commission is calculated over Net Total of Sales Order/Invoice or Delivery Note.
+		</para>
+		<para>
+		You can track Sales Personwise commission in the report under Selling module. To create a sales partner go to:
+		</para>
+		<programlisting>
+		Selling > Setup > Sales Partner
+		</programlisting>
+		<para>
+		Sales Partners are saved with Sales Partner name provided by user.
+		</para>
+		<para>
+		To include the name of your Partner on your website, check the "Show in Website" box. When click on "Show in Website", you will see field where you can attach logo of partner's company and enter brief and introduction of partner.
 		</para>
 		</sect2>
 		<sect2 id="sect2-ERPNext-Manual_ERPNext-Selling-Setup-Person">
 		<title>Sales Person</title>
 		<para>
-		Text
+		The person who helps in selling your products or services is called a Sales Person. Sales Person master is maintained in tree struture. This allows you defining the heirarchy within the Sales Team. To add/edit Sales Person, go to:
+		</para>
+		<programlisting>
+		Selling > Setup > Sales Person
+		</programlisting>
+		<para>
+		A Sales Person Group called "Sales Team" will be created by default. You can click in it to find option to insert new parent and child Sales Person records. Sales Person master will be saved with the name of Sales Person.
 		</para>
 		</sect2>
 		<sect2 id="sect2-ERPNext-Manual_ERPNext-Selling-Setup-Setting">
 		<title>Selling Settings</title>
 		<para>
-		Text
+		Selling Setting is where you can define propertiese which will be applied in your selling transactions. Let's check into each property one by one.
 		</para>
+		<sect3>
+			<title>Customer Naming By</title>
+			<para>
+			When customer is saved, system generated unique ID for that Customer. Using that Customer ID, you can select Customer in other transactions. Bydefault Customer will be saved with Customer Name. If you wish to save Customer using a naming series, you should set Customer Naming By as "Naming Series". You can set Naming Series for customer naming from:
+			</para>
+			<programlisting>
+			Setup > Settings > Naming Series
+			</programlisting>
+		</sect3>
+		<sect3>
+			<title>Campaign Naming By</title>
+			<para>
+			Just like for Customer, you can also configure as how ID will be generated for the Campaign master. Bydefault Campaign will be saved with Campaign Name provided while its creation.
+			</para>
+		</sect3>
+		<sect3>
+			<title>Default Customer Group</title>
+			<para>
+			Customer Group in this field will be auto-updated when you open new Customer form. While converting Quotation created for Lead into Sales Order, system attempts to convert Lead into Customer in the backend. While creating Customer in the backend, system pickup Customer Group and Territory as defined in the Selling Setting. If system doesn't find any values, then following validation message will be raised.
+			</para>
+			<para>
+			To resolve this, you should: Either manually convert Lead into Customer, and define Customer Group and Territory manually while creating Customer, or define Default Customer Group and Territory in the Selling Setting. Then you should have Lead automatically converted into Customer when convert Quotation into Sales Order.
+			</para>
+		</sect3>
+		<sect3>
+			<title>Default Territory</title>
+			<para>
+			Territory defined in this field will be auto-updated in the Territory field of Customer master. Just like Customer Group, Territory is also checked when system tries creating Customer in the backend.
+			</para>
+		</sect3>
+		<sect3>
+			<title>Sales Order Required</title>
+			<para>
+			If you wish to make Sales Order creation mandatory before creation of Sales Invoice, then you should set Sales Order Required field as Yes. Bydefault, this will be "No" for a value.
+			</para>
+		</sect3>
+		<sect3>
+			<title> Delivery Note Required</title>
+			<para>
+			To make Delivery Note creation as mandatory before Sales Invoice creation, you should set this field as "Yes". It will be "No" by default.
+			</para>
+		</sect3>
+		<sect3>
+			<title> Default Price List</title>
+			<para>
+			Price List set in this field will be auto-updated in the Price List field of Sales transactions.
+			</para>
+		</sect3>
+		<sect3>
+			<title> Maintain Same Rate Throughout Sales Cycle</title>
+			<para>
+			System bydefault validates that item price will be same throughout sales cycle (Sales Order - Delivery Note - Sales Invoice). If you could have item price changing within the cycle, and you need to bypass validation of same rate throughout cycle, then you should uncheck this field and save.
+			</para>
+		</sect3>
+		<sect3>
+			<title> Allow User to Edit Price List Rate in Transaction</title>
+			<para>
+			Item table of the sale transactions has field called Price List Rate. This field be non-editale by default in all the sales transactions. This is to ensure that price of an item is fetched from Item Price record, and user is not able to edit it. If you need to enable user to edit Item Price, fetched from Price List of an item, you should uncheck this field.
+			</para>
+		</sect3>
 		</sect2>
 	</sect1>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Selling-Master">
 		<title>Customer Master</title>
 		<para>
-		Text
+		A customer, who is sometimes known as a client, buyer, or purchaser is the one who receives goods, services, products, or ideas, from a seller for a monetary consideration. A customer can also receive goods or services from a vendor or a supplier for other valuable considerations. You can either directly create your Customers via
 		</para>
+		<programlisting>
+		Selling > Customer
+		</programlisting>
+		<para>
+		or upload it via the Data Import Tool.
+		</para>
+		<note>
+		<para>Customers are separate from Contacts and Addresses. A Customer can have multiple Contacts and Addresses.</para>
+		</note>
+		<sect2>
+			<title>Contacts and Addresses</title>
+			<para>
+			 Contacts and Addresses in ERPNext are stored separately so that you can attach multiple Contacts or Addresses to Customers and Suppliers. To add a Contact or Address directly from the Customer record, click on “New Contact” or “New Address”.
+			</para>
+			<note>
+			<para>When you select a Customer in any transaction, one Contact and Address gets pre-selected. This is the “Default Contact or Address”.</para>			
+			</note>
+			<para>
+			To Import multiple Contacts and Addresses from a spreadsheet, use the Data Import Tool.
+			</para>
+		</sect2>
+		<sect2>
+			<title>Integration with Accounts</title>
+			<para>
+			In ERPNext, there is a separate Account record for each Customer, for each Company. When you create a new Customer, ERPNext will automatically create an Account Ledger for the Customer under “Accounts Receivable” in the Company set in the Customer record.
+			</para>
+			<important>
+			<para> If you want to change the Account Group under which the Customer Account is created, you can set it in the Company master.</para>
+			</important>
+			<para>
+			If you want to create an Account in another Company, just change the Company value and “Save” the Customer again.
+			</para>
+		</sect2>
+		<sect2>
+			<title>Customer Settings</title>
+			<para>
+			You can link a Price List to a Customer (select “Default Price List”), so that when you select that Customer, the Price List will be automatically selected. You can set “Credit Days” so that it is automatically set in the Sales Invoices made against this Customer. You can set how much credit you want to allow for a Customer by adding the “Credit Limit”. You can also set a global “Credit Limit” in the Company master. ERPNext allows you to group your Customers and also divide them into Territories. Grouping will help you get better analysis of your data and identify which Customers are profitable and which are not. Territories will help you set sales targets for the respective territories.
+			</para>
+		</sect2>
+		<sect2>
+			<title>Customer Group</title>
+			<para>
+			You can group your Customers so that you can get trend analysis for each group. Typically Customers are grouped by market segment (that is usually based on your domain).
+			</para>
+			<note>
+			<para> If you think all this is too much effort, you can leave it at “Default Customer Group”. But all this effort, will pay off when you start getting reports.</para>
+			</note>
+		</sect2>
+		<sect2>
+			<title>Territory</title>
+			<para>
+			If your business operates in multiple Territories (could be countries, states or cities) it is usually a great idea to build your structure in the system. Once you group your Customers by Territories, you can set annual targets for each Item Group and get reports that will show your actual performance in the territory v/s what you had planned.
+			</para>
+		</sect2>
+		<sect2>
+			<title>Sales Person</title>
+			<para>
+			Sales Persons behave exactly like Territories. You can create an organization chart of Sales Persons where each Sales Person’s target can be set individually. Again as in Territory, the target has to be set against Item Group.
+			</para>
+		</sect2>
+		<sect2>
+			<title>Sales Partner</title>
+			<para>
+			A Sales Partner is a third party distributor / dealer / commission agent / affiliate / reseller who sells the companies products, for a commission. This is useful if you make the end sale to the Customer, involving your Sales Partner. If you sell to your Sales Partner who in-turn sells it to the Customer, then you must make a Customer instead.
+			</para>
+		</sect2>
 	</sect1>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Selling-Discount">
 		<title>Discount</title>
 		<para>
-		Text
+		While making your sales transactions like a Quotation (or Sales Order) you would already have noticed that there is a “Discount” column. On the left is the “Price List Rate” on the right is the “Basic Rate”. You can add a “Discount” value to update the basic rate.
 		</para>
+		<para>
+		Since your taxes are calculated on Items, you must apply your discounts here so that you apply the tax on the discounted rate, which is the case for most taxes.
+		</para>
+		<para>
+		The second way to apply discount is to add it in your Taxes and Charges table. This way you can explicitly show the Customer the discount you have applied on the order. If you choose this method, remember that you will tax your Customer at the full rate, not the discounted rate. So this is not a good way to track discounts.
+		</para>
+		<para>
+		There is a third way to do it. Create an Item called “Discount” and make sure that all the taxes apply in the same way as the main Items. (This method is useful if only one type of tax is applicable on the sale). This way your “Discount” will appear as an expense. You will see a slightly higher income and expense but your profits will still remain the same. This method might be interesting where you want detailed accounting of your discounts.
+		</para>
+		<note>
+		<para>The maximum Discount that can be applied on an Item can be fixed in the Item master.</para>
+		</note>
 	</sect1>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Selling-Lead">
 		<title>Lead</title>
 		<para>
-		Text
+		To get the customer through the door, you may be doing all or any of the following:
 		</para>
+		<itemizedlist>
+			<listitem>
+				<para>Listing your product on directories.</para>
+			</listitem>
+			<listitem>
+				<para>Maintaining an updated and searchable website.</para>
+			</listitem>
+			<listitem>
+				<para>Meeting people at trade events.</para>
+			</listitem>
+			<listitem>
+				<para>Advertising your product or services.</para>
+			</listitem>
+		</itemizedlist>
+		<para>
+		When you send out the word that you are around and have something valuable to offer, people will come in to check out your product. These are your Leads.
+		</para>
+		<para>
+		They are called Leads because they may lead you to a sale. Sales people usually work on leads by calling them, building a relationship and sending information about their products or services. It is important to track all this conversation to enable another person who may have to follow-up on that contact. The new person is then able to know the history of that particular Lead. To create a Lead, go to:
+		</para>
+		<programlisting>
+		Selling > Lead > New Lead
+		</programlisting>
+		<para>
+		ERPNext gives you a lot of options you may want to store about your Leads. For example what is the source, how likely are they to give you business etc. If you have a healthy number of leads, this information will help you prioritize who you want to work with.
+		</para>
+		<note>
+		<para>ERPNext makes it easy to follow-up on leads by updating the “Next Contact” details. This will add a new event in the Calendar for the User who has to contact the lead next.</para>
+		</note>
+		<sect2>
+			<title>Difference between Lead, Contact and Customer</title>
+			<para>
+			The difference is that a Lead is a potential Customer, someone who can give you business. A Customer is an organization or individual who has given you business before (and has an Account in your system). A Contact is a person who belongs to the Customer.
+			</para>
+			<para>
+			A Lead can be converted to a Customer by clicking on the “Create Customer” button. Once the Customer is created, the Lead becomes “Converted” and any further Opportunities from the same source can be created against the Customer.
+			</para>
+		</sect2>
 	</sect1>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Selling-Opportunity">
 		<title>Opportunity</title>
 		<para>
-		Text
+		When you know a Lead is looking for some products or services to buy, you can track that as an Opportunity. You can create an Opportunity from:
 		</para>
+		<programlisting>
+		Selling > Opportunity > New Opportunity
+		</programlisting>
+		<para>
+		You can also open a “Open” Lead and click on “Create Opportunity” button.
+		</para>
+		<para>
+		An Opportunity can also come from an existing Customer. You can create multiple Opportunities against the same Lead. In Opportunity, apart from the Communication, you can also add the Items for which the Lead or Contact is looking for.
+		</para>
+		<important>
+		<para>Leads and Opportunities are often referred as your “Sales Pipeline” this is what you need to track if you want to be able to predict how much business you are going to get in the future. Its always a good idea to be able to track what is coming in order to adjust your resources.</para>
+		</important>
 	</sect1>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Selling-Quotation">
 		<title>Quotation</title>
 		<para>
-		Text
+		During a sale, the customer may request for a written note about the products or services you are planning to offer, along with the prices and other terms of engagement. This is called a “Proposal” or an “Estimate” or a “Pro Forma Invoice”or a Quotation. To create a new Quotation go to:
 		</para>
+		<programlisting>
+		Selling > Quotation > New Quotation
+		</programlisting>
+		<para>
+		A Quotation contains details about:
+		</para>
+		<itemizedlist>
+			<listitem>
+				<para>The recipient of the Quotation.</para>
+			</listitem>
+			<listitem>
+				<para>The Items and quantities you are offering.</para>
+			</listitem>
+			<listitem>
+				<para>The rates at which they are offered. For details refer.</para>
+			</listitem>
+			<listitem>
+				<para>The taxes applicable.</para>
+			</listitem>
+			<listitem>
+				<para>Other charges (like shipping, insurance) if applicable.</para>
+			</listitem>
+			<listitem>
+				<para>The validity of contract.</para>
+			</listitem>
+			<listitem>
+				<para>The time of delivery.</para>
+			</listitem>
+			<listitem>
+				<para>Other conditions.</para>
+			</listitem>
+		</itemizedlist>
+		<note>
+		<para>Images look great on Quotations. To add images to your Quotations, attach the corresponding image in the Item master.</para>
+		</note>
+		<sect2>
+			<title>Rates</title>
+			<para>
+			The rates you quote may depend on two things.
+			</para>
+			<itemizedlist>
+				<listitem>
+					<para>The Price List: If you have multiple Price Lists, you can select a Price List or tag it to the Customer (so that it is auto-selected). Your Item prices will automatically be updated from the Price List.</para>
+				</listitem>
+				<listitem>
+					<para>The Currency: If you are quoting to a Customer in a different currency, you will have to update the conversion rates to enable ERPNext to save the information in your standard Currency. This will help you to analyze the value of your Quotations in standard Currency.</para>
+				</listitem>
+			</itemizedlist>
+		</sect2>
+		<sect2>
+			<title>Taxes</title>
+			<para>
+To add taxes to your Quotation, you can either select a tax template, Sales Taxes and Charges Master or add the taxes on your own. You can add taxes in the same manner as the Sales Taxes and Charges Master.
+			</para>
+		</sect2>
+		<sect2>
+			<title>Terms and Conditions</title>
+			<para>
+			Each Quotation must ideally contain a set of terms, of your contract. It is usually a good idea to make templates of your Terms and Conditions, so that you have a standard set of terms. You can do this by going to:
+			</para>
+			<programlisting>
+			Selling > Terms and Conditions
+			</programlisting>
+			<sect3>
+				<title>What should Terms and Conditions Contain?</title>
+				<itemizedlist>
+					<listitem>
+						<para>Validity of the offer.</para>
+					</listitem>
+					<listitem>
+						<para>Payment Terms (In Advance, On Credit, part advance etc).</para>
+					</listitem>
+					<listitem>
+						<para>What is extra (or payable by the Customer).</para>
+					</listitem>
+					<listitem>
+						<para>Safety / usage warning.</para>
+					</listitem>
+					<listitem>
+						<para>Warranty if any.</para>
+					</listitem>
+					<listitem>
+						<para>Returns Policy.</para>
+					</listitem>
+					<listitem>
+						<para>Terms of shipping, if applicable.</para>
+					</listitem>
+				<listitem>
+						<para>Ways of addressing disputes, indemnity, liability, etc.</para>
+					</listitem>
+				<listitem>
+						<para>Address and Contact of your Company.</para>
+					</listitem>
+				</itemizedlist>
+			</sect3>
+			<sect3>
+				<title>Submission</title>
+				<para>
+				Quotation is a “Submittable” transaction. Since you send this Quotation to your Customer or Lead, you must freeze it so that changes are not made after you send the Quotation. See Document Stages.
+				</para>
+				<note>
+				<para>Quotations can also be titled as “Proforma Invoice” or “Proposal”. Select the right heading in the “Print Heading” field in the “More Info” section. To create new Print Headings go to Setup > Branding and Printing > Print Headings.</para>
+				</note>
+			</sect3>
+			<sect3>
+				<title>Discount</title>
+				<para>
+				While making your sales transactions like a Quotation (or Sales Order) you would already have noticed that there is a “Discount” column. On the left is the “Price List Rate” on the right is the “Basic Rate”. You can add a “Discount” value to update the basic rate. To understand more about discount read Discount.
+				</para>
+			</sect3>
+		</sect2>
 	</sect1>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Selling-Sales_Order">
 		<title>Sales Order</title>
 		<para>
-		Text
+		The Sales Order confirms your sales and triggers purchase (Material Request) shipment (Delivery Note), billing (Sales Invoice) and manufacturing (Production Plan). A Sales Order is usually a binding Contract with your Customer. Once your customer confirms the Quotation you can convert your Quotation into a Sales Order.
 		</para>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Selling-Sales_Person">
-		<title>Sales_Order</title>
 		<para>
-		Text
+		Alternatively, you can create a Sales Order directly from:
 		</para>
+		<programlisting>
+		Selling > Sales Order > New Sales Order
+		</programlisting>
+		<para>
+		Most of the information in your Sales Order is the same as the Quotation. There are a few amongst other things that a Sales Order will ask you to update.
+		</para>
+		<itemizedlist>
+			<listitem>
+				<para>Expected date of delivery.</para>
+			</listitem>
+			<listitem>
+				<para>Customer Purchase Order number: If your customer has sent you a Purchase Order, you can update its number for future reference (in billing).</para>
+			</listitem>
+		</itemizedlist>
+		<sect2>
+			<title>Packing List</title>
+			<para>
+			The “Packing List” table will be automatically updated when you “Save” the Sales Order. If any Items in your table are Sales BOM (packets), then the “Packing List” will contain the exploded (detailed) list of your Items.
+			</para>
+		</sect2>
+		<sect2>
+			<title>Reservation and Warehouses</title>
+			<para>
+If your Sales Order contains Items for which inventory is tracked (Is Stock Item is “Yes”) then, ERPNext will ask you for “Reservation Warehouse”. If you have set a default Warehouse for the Item, it will automatically set this Warehouse here. This “reserved” quantity will help you project what is the quantity you need to purchase based on all your commitments.
+			</para>
+		</sect2>
+		<sect2>
+			<title>Sales Team</title>
+			<para>
+			Sales Partner: If this Sale was booked via a Sales Partner, you can update the Sales Partner’s details with commission and other info that you can aggregate.
+			</para>
+			<para>
+			Sales Persons: ERPNext allows you to tag multiple Sales Persons who may have worked on this deal. You can also split the amount in targets of different Sales Persons and track how much incentives they earned on this deal.
+			</para>
+		</sect2>
+		<sect2>
+			<title>Recurring Sales Orders</title>
+			<para>
+			If you have a recurring contract with a Customer where you are required to generate a Sales Order on a monthly, quarterly, half-yearly or annual basis, you can check the “Convert To Recurring Order” box.
+			</para>
+			<para>
+			Here you can fill in the details like; of how frequently you want to generate an Order in the 'Recurring Type' field, specify the day of of the month on which the Order needs to be generated in the 'Repeat On Day Of Month' field and the date on which the recurring orders should stop in the 'End Date' field.
+			</para>
+			<itemizedlist>
+				<listitem>
+					<para>Recurring Type: Here you can update how frequently you want to generate an Order.</para>
+				</listitem>
+				<listitem>
+					<para>Repeat On Day Of Month: You can specify the day of of the month on which the Order needs to be generated.</para>
+				</listitem>
+				<listitem>
+					<para>End Date: The date on which the recurring orders should stop can be specified here.</para>
+				</listitem>
+			</itemizedlist>
+			<para>
+			On updating the Sales Order, a Recurring ID will be generated which will be same for all recurring orders generated from this particular Sales Order. ERPNext will automatically create new Order and mail a notification to the email IDs you set in the 'Notification Email Address'field.
+			</para>
+		</sect2>
+		<sect2>
+			<title>Next Steps</title>
+			<para>
+			Once you “Submit” your Sales Order, you can now trigger different aspects of your organization:
+			</para>
+			<itemizedlist>
+				<listitem>
+					<para>To begin purchase click on “Make Purchase Request”</para>
+				</listitem>
+				<listitem>
+					<para>To make a shipment entry click on “Make Delivery Note”</para>
+				</listitem>
+				<listitem>
+					<para>To bill, make “Make Sales Invoice”</para>
+				</listitem>
+				<listitem>
+					<para>To stop further process on this Sales Order, click on “Stop”</para>
+				</listitem>
+			</itemizedlist>
+		</sect2>
+		<sect2>
+			<title>Submission</title>
+			<para>
+			Sales Order is a “Submittable” transaction. See Document Stages. You will be able to execute dependent steps (like making a Delivery Note) only after “Submitting” this Sales Order.
+			</para>
+			<sect3>
+				<title>Sales Order with Order type Maintenance</title>
+				<para>
+				When the 'Order Type' of the Sales Order is 'Maintenance' follow the steps given below:
+				</para>
+				<para>
+				Step 1: Enter Currency, Price list and Item details.
+				</para>
+				<para>
+				Step 2: Mention taxes and other information.
+				</para>
+				<para>
+				Step 3: Save and Submit the form.
+				</para>
+				<para>
+				Step 4: Once the form is submitted, the Action button will provide three choices.i) Maintenance Visit ii) Maintenance Schedule iii) Invoice.
+				</para>
+				<note>
+				<para>By clicking on the Action button and selecting 'Maintenance Visit' you can directly fill the visit form. The Sales Order details will be fetched directly.</para>
+				</note>
+				<note>
+				<para>By clicking on the Action button and selecting 'Maintenance Schedule' you can fill the schedule details. The Sales Order details will be fetched directly.</para>
+				</note>
+				<note>
+				<para>By clicking on the Invoice button you can make an Invoice for your services . The sales orders details will be fetched directly.</para>
+				</note>
+			</sect3>
+		</sect2>
 	</sect1>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Selling-Sales_Bill_Target">
 		<title>Sales Person Target Allocation</title>
 		<para>
-		Text
+		With management of Sales Person, ERPNext also allow you to assign target to Sales Persons based on Item Group and Territory. Based on target allocated and actual sales booked by Sales Person, you will get target variance report for the Sales Person.
 		</para>
+		<para>
+		To allocate target, you should open specific Sales Person master.
+		</para>
+		<programlisting>
+		Selling > Setup > Sales Person > (Open Sales Person)
+		</programlisting>
+		<sect2>
+			<title>Campaign</title>
+			<para>
+			A Campaign is a full-scale implementation of a sales strategy to promote a product or a service. This is done in a market segment of a particular geographical area, to achieve specified objectives.
+			</para>
+		</sect2>
 	</sect1>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Selling-Sales_Bill">
 		<title>Sales Bill of Material</title>
 		<para>
-		Text
+		Sales BOM stands for Sales Bill-of-Material. It's a master where you can list item which are bundled together and sold as one item. For instance, when laptop is delivered, you need to ensure that charger, mouse and laptop bag are delivered and stock level of these items gets affected. To address this scenario, you can set create Sales BOM for the main item, i.e. laptop, and list deliverable items i.e. laptop + charger + other accessories as child items. Following are the steps on how to setup Sales BOM master, and how is it used in the sales transactions. To create new Sales BOM, Go to:
 		</para>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Selling-Campaing">
-		<title>Campaing</title>
+		<programlisting>
+		Selling >> Setup >> Sales BOM >> New
+		</programlisting>
 		<para>
-		Text
+		In Sales BOM master, there are two sections. Sales BOM Item and Package Item. In Sales BOM item, you will select a Parent Item. The parent item must be a non-stock item. This is non-stock item because there is no stock maintained for it but only the Package Items. If you want to maintain stock for the Parent Item, then you must create a regular Bill of Material (BOM) and package them using a Stock Entry Transactions.
 		</para>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Selling-Item_Price">
-		<title>Item Price</title>
 		<para>
-		Text
+		In Package Item section, you will list all the child items for which we maintain stock and is delivered to customer.
 		</para>
+		<para>
+		Save Sales BOM after enter Sales BOM and Packing Items, with Qty. Once Sales BOM is saved, it will not be editable again. When making Sales transactions like Sales Invoice, Sales Order and Delivery Note, Parent Item will be selected in the main item table. On selection on Parent Item in the main item table, its child items will be fetched in Packing List table of the transaction. If child item is the serialized item, you will be able to specify its Serial Mo. in packing List table itself. On submission of transaction, system will reduce the stock level of child items from warehouse specified in Packing List table.
+		</para>
+		<sect2>
+			<title>Use Sales BOM to Manage Schemes: </title>
+			<para>
+			This work-around in Sales BOM was discovered when a customer dealing into nutrition product asked for feature to manage schemes like "Buy One Get One Free". To manage the same, he created a non-stock item which was used as Parent Item. In description of item, he entered scheme details with items image indicating the offer. The saleable product was selected in Package Item where qty was two. Hence every time they sold one qty of Parent item under scheme, system deducted two quantities of product from Warehouse.
+			</para>
+		</sect2>
 	</sect1>
 </chapter>
