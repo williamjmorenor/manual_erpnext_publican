@@ -5,48 +5,192 @@
 <chapter id="chap-ERPNext-Manual_ERPNext-Website">
 	<title>Website</title>
 	<para>
-	Text
+	Websites are a core component of any business and having a good website usually means:
+	</para>
+	<orderedlist>
+		<listitem>
+			<para>Invest lot of money.</para>
+		</listitem>
+		<listitem>
+			<para>Difficult to update.</para>
+		</listitem>
+		<listitem>
+			<para>Not interactive.</para>
+		</listitem>
+	</orderedlist>
+	<para>
+	Unless you are a web designer yourself. Wouldn't it be nice if there was a way to update your product catalog on your site automatically from your ERP? We thought exactly the same and hence built a small Website Development app right inside ERPNext! Using ERPNext’s Website module, you can
+	</para>
+	<orderedlist>
+		<listitem>
+			<para>Create Web Pages.</para>
+		</listitem>
+		<listitem>
+			<para>Write a Blog.</para>
+		</listitem>
+		<listitem>
+			<para>Publish your Product Catalog using the Item master</para>
+		</listitem>
+	</orderedlist>
+	<para>
+	Though not necessary, to make a good website, you might have to know a bit of HTML / CSS or hire the services of a professional. The good part is that once this is setup, you can add and edit content, blogs and products directly from your ERP.
 	</para>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Website-Setup">
 		<title>Website Setup</title>
 		<para>
-		Text
+		This is the layout of a ERPNext´s Website
 		</para>
+		<para>
+		Top Bar: The header has two main parts, the “Brand” or the logo section and the menu items. These menu items can directly link to Web Pages or the Blogs page or Products page. The standard Website header bar is with black background.
+		</para>
+		<para>
+		Background: The website is generated using a standard width of 900 pixels and has a page “effect”. You can set a background color or image to enhance the effect of the page.
+		</para>
+		<para>
+		Content: The inner content of your pages has a width of 800px and if it is a two-column layout like Blog, it will have a width of 540 px.
+		</para>
+		<para>
+		Footer: The footer section contains a list of links (this is where you typically put links like “Contact Us”, “Terms and Conditions”,etc) and the name of your company.
+		</para>
+		<sect2>
+			<title>Defining Menus and Home Page</title>
+			<para>
+			To define the Top Bar Menus, Brand, Footers and Home Page, go to:
+			</para>
+			<programlisting>
+			Website > Website Settings
+			</programlisting>
+			<note>
+			<para>Create seperate web pages which will be linked to the main web-icons like company, contact, products etc.</para>
+			</note>
+			<note>
+			<para>A menu item cannot be linked to a page and also be a parent. For example, if you click on About button, it will show a drop-down list, whose items will be clickable. There will be no page on About. About will not open into a page. It is only a button. The drop-down list menu will be clickable and open into new pages.</para>
+			</note>
+		</sect2>
 	</sect1>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Website-Website">
 		<title>Websites</title>
 		<para>
-		Text
+		Static Content like your Home Page, About Us, Contact Us, Terms pages can be created using the Web Page. To create a new Web Page, go to:
+		</para>
+		<programlisting>
+		Website > Web Page > New Web Page
+		</programlisting>
+		<para>
+		A web site will have the next sections:
+		</para>
+		<para>
+		Title: The first thing to set is the title of your page. The title has the maximum weight for search engines so choose a title that reflects the keywords that you are targeting for your audience.
+		</para>
+		<para>
+		Content: After selecting your layout, you can add content (text, images, etc) to each of your content boxes. You can add content in Markdown or HTML format. Read the section on how to format using Markdown, for more details.
+		</para>
+		<para>
+		Page Link: The web link to your page will be the value of the “Page Name” field + “.html”. For example if your page name is contact-us, the web link of your page will be yoursite.com/contact-us.html.
+		</para>
+		<para>
+		Images: You can attach images to your web page and show them using the HTML tag or using markdown format. the link to your file will be assets/manualerpnextcom/old_images/erpnext/filename
 		</para>
 	</sect1>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Website-Forms">
 		<title>Website Forms</title>
 		<para>
-		Text
+		Add forms to the website that will add / update data in your tables. Allow users to edit / manage multiple web forms. You can add forms in your website for example, Contact Us, Inquiry, Complaint etc. Data from these can fill up records like Lead, Opportunity, Issue etc. The user can also be allowed manage multiple records (like Complaints etc.). To create a new Web Form go to:
 		</para>
+		<programlisting>
+		Website > Web Form > New Web Form
+		</programlisting>
+		<para>
+		And fill the next information:
+		</para>
+		<orderedlist>
+			<listitem>
+				<para>Set the Web Form title and url.</para>
+			</listitem>
+			<listitem>
+				<para>Select the DocType in which you want the user to store the records.</para>
+			</listitem>
+			<listitem>
+				<para>Select if you require the user to login, edit records, manage multiple records etc.</para>
+			</listitem>
+			<listitem>
+				<para>Add the fields you want in the record.</para>
+			</listitem>
+		</orderedlist>
+		<note>
+		<para>Once you create the web form, you can view it on the url and test it out!</para>
+		</note>
+		<note>
+		<para>Your data will be stored in the table you have selected.</para>
+		</note>
 	</sect1>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Website-Styling">
 		<title>Styling The Website</title>
 		<para>
-		Text
+		You can set some basic styles to your page using the styles feature.
+		</para>
+		<para>
+		Some of the things than you can costumize are:
+		</para>
+		<para>
+		Background: You can either set a solid background by selecting a color. You can attach a file and select it in the “Background Image” box.
+		</para>
+		<para>
+		Fonts: Fonts: Font family of your body text (includes some Open Source fonts). Font- size: Font-size of your website body text (large is good). Heading Font: Font family of your headings. Apart from this you can also add custom style rules using CSS.
+		</para>
+		<para>
+		Custom CSS: There are tons of CSS rules and tricks that fall out of scope of this manual. But you could add your own style to certain elements like h1, h2 etc and also create your own style classes that you can use in elements in your body content.
 		</para>
 	</sect1>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Website-Blog">
 		<title>Blog Post</title>
 		<para>
-		Text
+		Blogs are a great way to share your thoughts about your business and keep your customers and readers updated of what you are up to. In the age of internet, writing assumes a lot of significance because when people come to your website, they want to read about you and your product. To create a new blog, just create a new Blog from:
+		</para>
+		<programlisting>
+		Website > Blog > New Blog
+		</programlisting>
+		<para>
+		You can format a blog using the Markdown format.You can also access your blog by going to the page “blog.html”.
 		</para>
 	</sect1>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Website-Products">
 		<title>Add Productos to Website</title>
 		<para>
-		Text
+		To list your Item on the Website, fill the Item details and save the file. Once the file is saved, a plus (+) button will appear next to the Image icon. Click on the plus button and add your Item image. The html code will be generated automatically.
 		</para>
+		<para>
+		Under the Website section, please check the box that says 'show in Website'. Once the box is checked, the page will display other fields for entering information.
+		</para>
+		<para>
+		The page name will be generated automatically. Mention the Item-Group under which the Item will be displayed.
+		</para>
+		<sect2>
+			<title>Item Groups</title>
+			<para>
+			Mention the Item Group under this column. If you wish to list your Item under the broad category products, name your Item Group as Products. In case you have various varieties of Item and want to classify them under different names, make Item Groups with those names and check the box that says 'show in Website'. For Example, if you wish to create a category called 'Bags', create a Item Group named Bags.
+			</para>
+			<para>
+			Once the Item Group is created go to the Website Settings page under Website. Enter the Label, Url, and Parent Label.
+			</para>
+			<sect3>
+				<title>Webpage labels</title>
+				<para>
+				Add more Items under a particular Item Group. To add more Items under a certain Label, mention the Item Group on the Item Page. The Items will be added automatically on the Webpage, under the Item Group Label. For Example, To add Item-Kiddies Bag and Butterfly Print Bag, check the 'Show in Website'box. The Items will be placed under the Label Bags on the Webpage.
+				</para>
+			</sect3>
+		</sect2>
 	</sect1>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Website-Shopping">
 		<title>Shopping Cart</title>
 		<para>
-		Text
+		On the Webpage, a shopping cart is an icon that allows you to store all the things that you have earmarked for purchasing. It is a graphical representation of a shopping basket or a shopping cart that allows you to save the items you intend to buy. This software displays the price of the product . It also displays shipping and handling charges, along with taxes, if applicable. To set up a shopping cart, go to the selling module.
+		</para>
+		<programlisting>
+		Selling > Shopping Cart Settings
+		</programlisting>
+		<para>
+		On the Website, the shopping cart image will be seen below the Item price. Customers can click on the cart and enter the amount of quantity they wish to buy. The Item number will be stored on the right hand corner of the page, next to the flower sign.
 		</para>
 	</sect1>
 </chapter>
