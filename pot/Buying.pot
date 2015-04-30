@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2015-04-27 14:58-0600\n"
-"PO-Revision-Date: 2015-04-27 14:58-0600\n"
+"POT-Creation-Date: 2015-04-30 10:03-0600\n"
+"PO-Revision-Date: 2015-04-30 10:03-0600\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
 "Language: en-US \n"
@@ -14,27 +14,252 @@ msgstr ""
 msgid "Buying"
 msgstr ""
 
-msgid "Text"
-msgstr ""
-
-msgid "Buying Setting"
+msgid "If your business involves physical goods, buying is one of your core business activity. Your suppliers are as important as your customers and they must be provided with as much accurate information as possible. Buying in right amounts, in right quantities, can affect your cash flow and profitability. ERPNext contains a set of transactions that will make your buying process as efficient and seamless as possible."
 msgstr ""
 
 msgid "Supplier Type"
 msgstr ""
 
+msgid "A supplier may be distinguished from a contractor or subcontractor, who commonly adds specialized input to deliverables. A supplier is also known as a vendor. There are different types of suppliers based on their goods and products. ERPNext allows you to create your own categories of suppliers. These categories are known as Supplier Type. For Example, if your suppliers are mainly pharmaceutical companies and FMCG distributors, You can create a new Type for them and name them accordingly. Based on what the suppliers supply, they are classified into different categories called Supplier Type. There can be different types of suppliers. You can create your own category of Supplier Type."
+msgstr ""
+
+msgid ""
+"\n"
+"		Buying &gt; Setup &gt; Supplier Type &gt; New Supplier Type\n"
+"		"
+msgstr ""
+
+msgid "You can classify your suppliers from a range of choice available in ERPNext. Choose from a set of given options like Distributor, Electrical,Hardware, Local, Pharmaceutical, Raw material, Services etc. Classifying your supplier into different types facilitates accounting and payments."
+msgstr ""
+
 msgid "Supplier Master"
+msgstr ""
+
+msgid "Suppliers are companies or individuals who provide you with products or services. They are treated in exactly the same manner as Customers in ERPNext. You can create a new Supplier via:"
+msgstr ""
+
+msgid ""
+"\n"
+"		Buying &gt; Documents &gt; Supplier &gt; New Supplier\n"
+"		"
+msgstr ""
+
+msgid "Contacts and Addresses"
+msgstr ""
+
+msgid "Contacts and Addresses in ERPNext are stored separately so that you can attach multiple Contacts or Addresses to Customers and Suppliers. To add a Contact or Address go to Buying and click on “New Contact” or “New Address”."
+msgstr ""
+
+msgid "When you select a Supplier in any transaction, one Contact and Address gets pre-selected. This is the “Default Contact or Address”. So make sure you set your defaults correctly!"
+msgstr ""
+
+msgid "Integration with Accounts"
+msgstr ""
+
+msgid "In ERPNext, there is a separate Account record for each Supplier, of Each company. When you create a new Supplier, ERPNext will automatically create an Account Ledger for the Supplier under “Accounts Payable” in the Company set in the Supplier record."
+msgstr ""
+
+msgid "If you want to change the Account Group under which the Supplier Account is created, you can set it in the Company master."
+msgstr ""
+
+msgid "If you want to create an Account in another Company, just change the Company value and “Save” the Supplier again."
+msgstr ""
+
+msgid ""
+"\n"
+"			Buying &gt; Contact &gt; New Contact\n"
+"			"
+msgstr ""
+
+msgid "You can also import from the Data Import Tool"
 msgstr ""
 
 msgid "Material Request"
 msgstr ""
 
+msgid "A Material Request is a simple document identifying a requirement of a set of Items (products or services) for a particular reason. To generate a Material Request manually go to:"
+msgstr ""
+
+msgid ""
+"\n"
+"		Buying &gt; Documents &gt; Material Request &gt; New Material Request\n"
+"		"
+msgstr ""
+
+msgid "A Material Request can be generated:"
+msgstr ""
+
+msgid "By a User."
+msgstr ""
+
+msgid "Automatically from a Sales Order."
+msgstr ""
+
+msgid "Automatically when the Projected Quantity of an Item in stores reaches a particular level."
+msgstr ""
+
+msgid "Automatically from your Bill of Materials if you use Production Plan to plan your manufacturing activities."
+msgstr ""
+
+msgid "In the Material Request form:"
+msgstr ""
+
+msgid "Fill in the Items you want and their quantities."
+msgstr ""
+
+msgid "If your Items are inventory items, you must also mention the Warehouse where you expect these Items to be delivered. This helps to keep track of the Projected Quantity for this Item."
+msgstr ""
+
+msgid "You can optionally add the Terms, using the Terms and Conditions master and also the reason."
+msgstr ""
+
+msgid "Material Request is not mandatory. It is ideal if you have centralized buying so that you can collect this information from various departments."
+msgstr ""
+
+msgid "Authorization"
+msgstr ""
+
+msgid "If you want your Material Request to be authorized by a senior person like a Purchase Manager then you can give “Submit” rights only to that person. Everyone can create requests, but only the authorized person can “Submit”."
+msgstr ""
+
 msgid "Supplier Quotation"
+msgstr ""
+
+msgid "A Supplier Quotation is a formal statement of promise by potential supplier to supply the goods or services required by a buyer, at specified prices, and within a specified period. A quotation may also contain terms of sale and payment, and warranties. Acceptance of quotation by the buyer constitutes an agreement binding on both parties. You can make a supplier quotation from a Material Request"
+msgstr ""
+
+msgid "You can also make a Supplier Quotation directly from:"
+msgstr ""
+
+msgid ""
+"\n"
+"		Buying &gt; Documents &gt; Supplier Quotation &gt; New Supplier Quotation\n"
+"		"
+msgstr ""
+
+msgid "If you have multiple Suppliers who supply you with the same Item, you usually send out a message (Request for Quote) to various Suppliers. In many cases, especially if you have centralized buying, you may want to record all the quotes so that:"
+msgstr ""
+
+msgid "You can easily compare prices in the future."
+msgstr ""
+
+msgid "Audit whether all Suppliers were given the opportunity to quote."
+msgstr ""
+
+msgid "Supplier Quotations are not necessary for most small businesses. Always evaluate the cost of collecting information to the value it really provides! You could only do this for high value items."
 msgstr ""
 
 msgid "Purchase Order"
 msgstr ""
 
+msgid "A Purchase Order is analogous to a Sales Order. It is usually a binding contract with your Supplier that you promise to buy a set of Items under the given conditions. A Purchase Order can be automatically created from a Material Request or Supplier Quotation."
+msgstr ""
+
+msgid "In ERPNext, you can also make a Purchase Order directly by going to:"
+msgstr ""
+
+msgid ""
+"\n"
+"		Buying &gt; Documents &gt; Purchase Order &gt; New Purchase Order\n"
+"		"
+msgstr ""
+
+msgid "Entering a Purchase Order is very similar to a Purchase Request, additionally you will have to set:"
+msgstr ""
+
+msgid "Supplier."
+msgstr ""
+
+msgid "A “Required By” date on each Item: If you are expecting part delivery, your Supplier will know how much quantity to deliver at which date. This will help you from preventing over-supply. It will also help you to track how well your Supplier is doing on timeliness."
+msgstr ""
+
+msgid "Taxes"
+msgstr ""
+
+msgid "If your Supplier is going to charge you additional taxes or charge like a shipping or insurance charge, you can add it here. It will help you to accurately track your costs. Also, if some of these charges add to the value of the product you will have to mention them in the Taxes table. You can also use templates for your taxes. For more information on setting up your taxes see the Purchase Taxes and Charges Master."
+msgstr ""
+
+msgid "Value Added Taxes (VAT)"
+msgstr ""
+
+msgid "Many a times, the tax paid by you to a Supplier, for an Item, is the same tax which you collect from your Customer. In many regions, what you pay to your government is only the difference between what you collect from your Customer and what you pay to your Supplier. This is called Value Added Tax (VAT)."
+msgstr ""
+
+msgid "For example you buy Items worth X and sell them for 1.3X. So your Customer pays 1.3 times the tax you pay your Supplier. Since you have already paid tax to your Supplier for X, what you owe your government is only the tax on 0.3X."
+msgstr ""
+
+msgid "This is very easy to track in ERPNext since each tax head is also an Account. Ideally you must create two Accounts for each type of VAT you pay and collect, “Purchase VAT-X” (asset) and “Sales VAT-X” (liability), or something to that effect."
+msgstr ""
+
+msgid "Purchase UOM and Stock UOM Conversion"
+msgstr ""
+
+msgid "You can change your UOM as per your stock requirements in the Purchase Order form. For example, If you have bought your raw material in large quantities with UOM -boxes, and wish to stock them in UOM- Nos; you can do so while making your Purchase Order."
+msgstr ""
+
+msgid "Step 1: Store UOM as Nos in the Item form."
+msgstr ""
+
+msgid "Step 2: In the Purchase Order mention UOM as Box. (Since material arrives in Boxes)."
+msgstr ""
+
+msgid "Step 3: In the Warehouse and Reference section, the UOM will be pulled in as Nos (from the Item form)."
+msgstr ""
+
+msgid "Step 4: Mention the UOM conversion factor. For example, (100);If one box has 100 pieces."
+msgstr ""
+
+msgid "Step 5: Notice that the stock quantity will be updated accordingly."
+msgstr ""
+
+msgid "Step 6: Save and Submit the Form."
+msgstr ""
+
 msgid "Purchase Taxes"
+msgstr ""
+
+msgid "For Tax Accounts that you want to use in the tax templates, you must mention them as type “Tax” in your Chart of Accounts. Similar to your Sales Taxes and Charges Master is the Purchase Taxes and Charges Master. This is the tax template that you can use in your Purchase Orders and Purchase Invoices."
+msgstr ""
+
+msgid ""
+"\n"
+"		Buying &gt; Setup &gt; Purchase Taxes and Charges Master &gt; New Purchase Taxes and Charges Master\n"
+"		"
+msgstr ""
+
+msgid "You can specify if the tax / charge is only for valuation (not a part of total) or only for total (does not add value to the item) or for both. If you select a particular tax as your Default tax, the system will apply this tax to all the purchase transactions by default."
+msgstr ""
+
+msgid "Calculation Type"
+msgstr ""
+
+msgid "This can be on Net Total (that is the sum of basic amount). On Previous Row Total / Amount (for cumulative taxes or charges). If you select this option, the tax will be applied as a percentage of the previous row (in the tax table) amount or total. Actual (as mentioned)."
+msgstr ""
+
+msgid "Account Head: The Account ledger under which this tax will be booked."
+msgstr ""
+
+msgid "Cost Center: If the tax / charge is an income (like shipping) or expense it needs to be booked against a Cost Center."
+msgstr ""
+
+msgid "Description: Description of the tax (that will be printed in invoices / quotes)."
+msgstr ""
+
+msgid "Rate: Tax rate."
+msgstr ""
+
+msgid "Amount: Tax amount."
+msgstr ""
+
+msgid "Total: Cumulative total to this point."
+msgstr ""
+
+msgid "Enter Row: If based on \"Previous Row Total\" you can select the row number which will be taken as a base for this calculation (default is the previous row)."
+msgstr ""
+
+msgid "Consider Tax or Charge for: In this section you can specify if the tax / charge is only for valuation (not a part of total) or only for total (does not add value to the item) or for both."
+msgstr ""
+
+msgid "Add or Deduct: Whether you want to add or deduct the tax."
 msgstr ""
 

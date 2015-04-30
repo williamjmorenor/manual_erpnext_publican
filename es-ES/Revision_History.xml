@@ -5,91 +5,9 @@
 	<title>Historia de revisiones</title>
 	 <simpara>
 		<revhistory>
-			<revision>
-				<revnumber>0.0-0.6</revnumber>
-				<date>Mon Apr 27 2015</date>
-				<author>
-					<firstname>William</firstname>
-					<surname>Moreno</surname>
-					<email>william.moreno@rmsconsultoresnicaragua.com</email>
-				</author>
-				<revdescription>
-					<simplelist>
-						<member>Los archivos de traducción sincronizados con fuentes XML 0.0-0</member>
-					</simplelist>
-				</revdescription>
-			</revision>
-			 <revision>
-				<revnumber>0.0-0.5</revnumber>
-				 <date>Thu Apr 23 2015</date>
-				 <author>
-					<firstname>William</firstname>
-					 <surname>Moreno</surname>
-					 <email>william.moreno@rmsconsultoresnicaragua.com</email>
-				</author>
-				 <revdescription>
-					<simplelist>
-						<member>Los archivos de traducción sincronizados con fuentes XML 0.0-0</member>
-
-					</simplelist>
-
-				</revdescription>
-
-			</revision>
-			 <revision>
-				<revnumber>0.0-0.4</revnumber>
-				 <date>Thu Apr 23 2015</date>
-				 <author>
-					<firstname>William</firstname>
-					 <surname>Moreno</surname>
-					 <email>william.moreno@rmsconsultoresnicaragua.com</email>
-				</author>
-				 <revdescription>
-					<simplelist>
-						<member>Los archivos de traducción sincronizados con fuentes XML 0.0-0</member>
-
-					</simplelist>
-
-				</revdescription>
-
-			</revision>
-			 <revision>
-				<revnumber>0.0-0.3</revnumber>
-				 <date>Thu Apr 23 2015</date>
-				 <author>
-					<firstname>William</firstname>
-					 <surname>Moreno</surname>
-					 <email>william.moreno@rmsconsultoresnicaragua.com</email>
-				</author>
-				 <revdescription>
-					<simplelist>
-						<member>Los archivos de traducción sincronizados con fuentes XML 0.0-0</member>
-
-					</simplelist>
-
-				</revdescription>
-
-			</revision>
-			 <revision>
-				<revnumber>0.0-0.2</revnumber>
-				 <date>Wed Apr 22 2015</date>
-				 <author>
-					<firstname>William</firstname>
-					 <surname>Moreno</surname>
-					 <email>william.moreno@rmsconsultoresnicaragua.com</email>
-				</author>
-				 <revdescription>
-					<simplelist>
-						<member>Los archivos de traducción sincronizados con fuentes XML 0.0-0</member>
-
-					</simplelist>
-
-				</revdescription>
-
-			</revision>
 			 <revision>
 				<revnumber>0.0-0.1</revnumber>
-				 <date>Tue Apr 21 2015</date>
+				 <date>Thu Apr 23 2015</date>
 				 <author>
 					<firstname>William</firstname>
 					 <surname>Moreno</surname>
@@ -97,7 +15,7 @@
 				</author>
 				 <revdescription>
 					<simplelist>
-						<member>Los archivos de traducción sincronizados con fuentes XML 0.0-0</member>
+						<member>Traducción Inicial del Manual</member>
 
 					</simplelist>
 
