@@ -26,7 +26,7 @@
 			</listitem>
 		</itemizedlist>
 		<para>
-		Most small and medium sized manufacturing businesses are based on a make-to- order or engineer-to-order system and so is ERPNext. For engineer-to-order systems, the Manufacturing module should be used along with the Projects module.
+		Most small and medium sized manufacturing businesses are based on a make-to- order or engineer-to-order system and so is ERPNext. For engineer-to-order systems, the Manufacturing module should be used along with the Projects module. See <xref linkend="billing-projects"/>
 		</para>
 		<sect2>
 			<title>Manufacturing and Inventory</title>	

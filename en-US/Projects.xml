@@ -138,7 +138,7 @@
 			You can also create a new Time Log via Calendar.
 			</para>
 			<sect3>
-				<title>Billing using Time Logs</title>
+				<title id="billing-projects">Billing using Time Logs</title>
 				<indexterm><primary>Projects</primary><secondary>Time Log</secondary><tertiary>Billing</tertiary><seealso>Types of Production Planning</seealso></indexterm>
 				<para>
 				If you wish to bill against a Time Log you need to select the 'Billable' option. In the costing section, the system will pull up the Costing and Billing rate from Activity Cost based on the Employee and Activity Type specified. The system shall then calculate the Costing and Billing amount based on the Hours mentioned in the Time Log. If 'Billable' is not selected, the system shall display the 'Billing Amount' as 0. After submitting the Time Log, you need to create Time Log batch to further bill the Time Log.
