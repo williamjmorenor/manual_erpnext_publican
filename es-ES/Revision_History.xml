@@ -5,6 +5,20 @@
 	<title>Historia de revisiones</title>
 	 <simpara>
 		<revhistory>
+			<revision>
+				<revnumber>0.0-0.2</revnumber>
+				<date>Fri May 1 2015</date>
+				<author>
+					<firstname>William</firstname>
+					<surname>Moreno</surname>
+					<email>williamjmorenor@gmail.com</email>
+				</author>
+				<revdescription>
+					<simplelist>
+						<member>Los archivos de traducción sincronizados con fuentes XML 0.0-0</member>
+					</simplelist>
+				</revdescription>
+			</revision>
 			 <revision>
 				<revnumber>0.0-0.1</revnumber>
 				 <date>Thu Apr 23 2015</date>

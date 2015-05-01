@@ -14,30 +14,342 @@ msgstr ""
 msgid "Human Resource"
 msgstr ""
 
-msgid "Text"
+msgid "The Human Resources (HR) Module covers the processes linked to managing a team of co-workers. Most important feature here is processing the payroll by using the Salary Manager to generate Salary Slips. Most countries have complex tax rules stating which expenses the company can make on behalf of the Employees. There are a set of rules for the company to deduct taxes and social security from employee payroll. ERPNext allows to accomodate all types of taxes and their calculation."
+msgstr ""
+
+msgid "It also maintains a complete employee database including contact information, salary details, attendance, performance evaluation, and appraisal records."
 msgstr ""
 
 msgid "Employee Master"
 msgstr ""
 
+msgid "There are many fields you can add in your Employee records. As the organisation grows, it becomes difficult to manage more records. It is advisable to keep updating and entering records to facilitate data management of employees. Employee records also help in keeping a list of your team’s skills, previous employment history and emergency information. To create new Employee go to:"
+msgstr ""
+
+msgid ""
+"\n"
+"		HR &gt; Employee &gt; New Employee\n"
+"		"
+msgstr ""
+
+msgid "Numbering Employees (Employee ID)"
+msgstr ""
+
+msgid "By default, in ERPNext Employee Records are Numbered. You can have multiple series if you are a really large company and want to have separate numbering series for separate locations etc. You can set the numbering series just like any other transaction by going to:"
+msgstr ""
+
+msgid ""
+"\n"
+"			Setup &gt; Customize &gt; Document Numbering Series.\n"
+"			"
+msgstr ""
+
+msgid "Alternatively, you can create employees by the “Employee Number” field if you already have an existing Employee Numbering system you want to follow. To set this, go to:"
+msgstr ""
+
+msgid ""
+"\n"
+"			Setup &gt; Global Defaults &gt; HR\n"
+"			"
+msgstr ""
+
 msgid "Leave"
+msgstr ""
+
+msgid "Fixed number of leaves per Employee can be allocated using the Leave Allocation Tool. If you have special leaves to be allocated, you can also allocate them manually by creating new Leave Allocation records."
+msgstr ""
+
+msgid ""
+"\n"
+"		HR &gt; Leave Allocation &gt; New Leave Allocation\n"
+"		"
+msgstr ""
+
+msgid "If your company has a formal system where Employees have to apply for leaves to be able to qualify as paid leaveas, you can create Leave Application to track approval and usage of leaves. You have to mention the Employee, Leave Type and the period for which the leave is taken. If you want specific users to approve leaves, you can give “Submission” rights to those users only."
+msgstr ""
+
+msgid ""
+"\n"
+"		HR &gt; Leave Application &gt; Make New Leave Application\n"
+"		"
+msgstr ""
+
+msgid "If you want all users to create their own Leave Applications, you can set their “Employee ID” as a match rule in the Leave Application Permission settings."
 msgstr ""
 
 msgid "Attendance"
 msgstr ""
 
+msgid "An Attendance record stating that an Employee has been present on a particular day can be created manually by:"
+msgstr ""
+
+msgid ""
+"\n"
+"		HR &gt; Attendance &gt; New Attendance ￼\n"
+"		"
+msgstr ""
+
+msgid "It can also be done by collecting attendance information via an automated system like a swipe card. You can even upload a CSV file with the attendance information. You can get a monthly report of your Attendance data by going to the “Monthly Attendance Details” report. To upload the attendance go to:"
+msgstr ""
+
+msgid ""
+"\n"
+"		HR &gt; Upload Attendance\n"
+"		"
+msgstr ""
+
 msgid "Salary And Payroll"
+msgstr ""
+
+msgid "Salary is a fixed amount of money or compensation paid to an employee by an employer in return for the work performed . Payroll is the administration of financial records of employees' salaries, wages, bonuses, net pay, and deductions. To process Payroll in ERPNext:"
+msgstr ""
+
+msgid "Create Salary Structures for all Employees."
+msgstr ""
+
+msgid "Generate Salary Slips via the Salary Manager Tool."
+msgstr ""
+
+msgid "Book the Salary in your Accounts."
+msgstr ""
+
+msgid "Salary Structure"
+msgstr ""
+
+msgid "The Salary Structure represents how Salaries are calculated based on Earnings and Deductions. Salary structures are used to help organizations: 1. Maintain pay levels that are competitive with the external labor market, 2. Maintain internal pay relationships among jobs, 3. Recognize and reward differences in level of responsibility, skill, and performance, and manage pay expenditures. The usual components of the salary structure include:"
+msgstr ""
+
+msgid "Basic Salary: It is the taxable base income and generally not more than 40% of CTC."
+msgstr ""
+
+msgid "House Rent Allowance: The HRA constitutes 40 to 50% of the basic salary."
+msgstr ""
+
+msgid "Special Allowances: Makes up for the remainder part of the salary, mostly smaller than the basic salary which is completely taxable."
+msgstr ""
+
+msgid "Leave Travel Allowance: The non-taxable amount paid by the employer to the employee for vacation/trips with family within India."
+msgstr ""
+
+msgid "Gratuity: It is basically a lump sum amount paid by the employer when the employee resigns from the organization or retires."
+msgstr ""
+
+msgid "PF: Fund collected during emergency or old age. 12% of the basic salary is automatically deducted and goes to the employee provident fund."
+msgstr ""
+
+msgid "Medical Allowance: The employer pays the employee for the medical expenditures incurred. It is tax free up to Rs.15,000."
+msgstr ""
+
+msgid "Bonus: Taxable part of the CTC, usually a once a year lump sum amount, given to the employee based on the individual’s as well as the organizational performance for the year."
+msgstr ""
+
+msgid "Employee Stock Options: ESOPS are Free/discounted shares given by the company to the employees. This is done to primarily increase employee retention."
+msgstr ""
+
+msgid "To create a new Salary Structure go to:"
+msgstr ""
+
+msgid ""
+"\n"
+"			HR &gt; Salary Structure &gt; New Salary Structure\n"
+"			"
+msgstr ""
+
+msgid "In the Salary Structure:"
+msgstr ""
+
+msgid "Select the Employee."
+msgstr ""
+
+msgid "Set the starting date from which this is valid (Note: There can only be one Salary Structure that can be “Active” for an Employee during any period)."
+msgstr ""
+
+msgid "In the “Earnings” and “Deductions” table all your defined Earning Type and Deductions Type will be auto-populated. Set the values of the Earnings and Deductions and save the Salary Structure."
+msgstr ""
+
+msgid "Leave Without Pay"
+msgstr ""
+
+msgid "Leave Without Pay (LWP) happens when an Employee runs out of allocated leaves or takes a leave without an approval (via Leave Application). If you want ERPNext to automatically deduct salary in case of LWP, then you must check on the “Apply LWP” column in the Earning Type and Deduction Type masters. The amount of pay cut is the proportion of LWP days divided by the total working days for the month (based on the Holiday List). If you don’t want ERPNext to manage LWP, just don’t click on LWP in any of the Earning Types and Deduction Types."
+msgstr ""
+
+msgid "Creating Salary Slips"
+msgstr ""
+
+msgid "Once the Salary Structure is created, you can make a salary slip from the same form or you can process your payroll for the month using the Salary Manager. To create a salary slip from Salary Structure, click on the button Make Salary Slip. Through Salary Manager:"
+msgstr ""
+
+msgid ""
+"\n"
+"				HR &gt; Process Payroll\n"
+"				"
+msgstr ""
+
+msgid "In the Salary Manager tool:"
+msgstr ""
+
+msgid "Select the Company for which you want to create the Salary Slips."
+msgstr ""
+
+msgid "Select the Month and the Year for which you want to create the Salary Slips."
+msgstr ""
+
+msgid "Click on “Create Salary Slips”. This will create Salary Slip records for each active Employee for the month selected. If the Salary Slips are created, the system will not create any more Salary Slips. All updates will be shown in the “Activity Log” section."
+msgstr ""
+
+msgid "Once all Salary Slips are created, you can check if they are created correctly or edit it if you want to deduct Leave Without Pay."
+msgstr ""
+
+msgid "After checking, you can “Submit” them all together by clicking on “Submit Salary Slips”. 1. If you want them to be automatically emailed to the Employee, make sure to check the “Send Email” box."
+msgstr ""
+
+msgid "Booking Salaries in Accounts"
+msgstr ""
+
+msgid "The final step is to book the Salaries in your Accounts. Salaries in businesses are usually dealt with extreme privacy. In most cases, the companies issues a single payment to the bank combining all salaries and the bank distributes the salaries to each employee’s salary account. This way there is only one payment entry in the company’s books of accounts and anyone with access to the company’s accounts will not have access to the individual salaries."
+msgstr ""
+
+msgid "The salary payment entry is a Journal Voucher entry that debits the total salary of all Employees to the Salary Account and credits the company’s bank Account. To generate your salary payment voucher from the Salary Manager, click on “Make Bank Voucher” and a new Journal Voucher with the total salaries will be created."
 msgstr ""
 
 msgid "Expende Claim"
 msgstr ""
 
+msgid "Expense Claim is made when Employee’s make expenses out of their pocket on behalf of the company. For example, if they take a customer out for lunch, they can make a request for reimbursement via the Expense Claim form. To make a new Expense Claim, go to:"
+msgstr ""
+
+msgid ""
+"\n"
+"		HR &gt; Expense Claim &gt; New Expense Claim\n"
+"		"
+msgstr ""
+
+msgid "Set the Employee ID, date and the list of expenses that are to be claimed and “Submit” the record."
+msgstr ""
+
+msgid "Approving Expenses"
+msgstr ""
+
+msgid "The person making the claim must also set the id of the user who will “Approve” these expenses and set the “Assign To” to notify the user of the request Approve. If the Approver sees the “form”, she or he can update the “Approved Amounts” and click on “Approve”. To cancel the claim, they can click on the “Reject” button. Comments can be added in the Comments section explaining why the claim was approved or rejected."
+msgstr ""
+
+msgid "Booking the Expense and Reimbursement"
+msgstr ""
+
+msgid "The approved Expense Claim must then be converted into a Journal Voucher and a payment must be made. Note: This amount should not be clubbed with Salary because the amount will then be taxable to the Employee."
+msgstr ""
+
+msgid "Linking with Task and Project"
+msgstr ""
+
+msgid "To Link Expense Claim with Task or Project specify the Task or the Project while making an Expense Claim"
+msgstr ""
+
 msgid "Apraisal"
+msgstr ""
+
+msgid "In ERPNext, you can manage Employee Appraisals by creating an Appraisal Template for each role with the parameters that define the performance by giving appropriate weightage to each parameter."
+msgstr ""
+
+msgid ""
+"\n"
+"		HR &gt; Appraisal &gt; New Appraisal\n"
+"		"
+msgstr ""
+
+msgid "Step 1: Select an Appraisal Template. After you select the template, the remaining form appears."
+msgstr ""
+
+msgid "Step 2: Enter Employee Details"
+msgstr ""
+
+msgid "Once the Appraisal Template is completed, you can create Appraisal records for each period where you track performance. You can give points out of 5 for each parameter and the system will calculate the overall performance of the Employee. To make the Appraisal final, make sure to “Submit” it."
 msgstr ""
 
 msgid "Holiday list"
 msgstr ""
 
+msgid "Holiday List is a list which contains the dates of holidays along with the occasion of that holiday. The list is generally valid for one calendar year. Most organisations have a standard Holiday-List for their employees. Some even have different holiday lists for laborers and a different one for management staff. To set up a holiday list in the system, Go to Human Resources Module and Click on Holiday List."
+msgstr ""
+
+msgid ""
+"\n"
+"		Human Resources &gt;Holiday List &gt; New Holiday List\n"
+"		"
+msgstr ""
+
+msgid "Step 1: Give a name to the Holiday list."
+msgstr ""
+
+msgid "Step 2: Mention the Fiscal Year"
+msgstr ""
+
+msgid "Step 3: State the Weekly off."
+msgstr ""
+
+msgid "Step 4: Click on the button 'Get Weekly Off Dates'. This step will fill the box below with yearly off dates with day as the de"
+msgstr ""
+
+msgid "Click on Add new row to add more dates"
+msgstr ""
+
+msgid "Mention the holiday reason in the description and select the date from the 'Date' field."
+msgstr ""
+
+msgid "If you have selected a holiday list in the Employment Details form, the system will give priority to the form mentioned here. It will fetch the list mentioned in the form rather than the one which you may have specified as Default; However, if there is no list in the employment details form, the default list will be fetched."
+msgstr ""
+
+msgid "You can form as many holiday lists as you wish. For example, if you have a mill, you can have one list for mill workers and another list for office staff. You can manage between lists by attaching their respective holiday list to their respective employment detail form."
+msgstr ""
+
 msgid "Human Resource Setup"
 msgstr ""
+
+msgid "The HR module has a setup process where you create the masters for all the major activities. To setup your Employee master you must first create:"
+msgstr ""
+
+msgid "Employment Type (like Permanent, Temp, Contractor, Intern etc)."
+msgstr ""
+
+msgid "Branch (if there are multiple offices)."
+msgstr ""
+
+msgid "Department (if any, like Accounting, Sales etc)."
+msgstr ""
+
+msgid "Designation (CEO, Sales Manager etc)."
+msgstr ""
+
+msgid "Grade (A, B, C etc, usually based on seniority)."
+msgstr ""
+
+msgid "Leave Setup"
+msgstr ""
+
+msgid "To setup Leaves, create:"
+msgstr ""
+
+msgid "Leave Type (like Sick Leave, Travel Leave etc)."
+msgstr ""
+
+msgid "Holiday List (list of annual holidays for the year - these days will not be considered in Leave Applications)."
+msgstr ""
+
+msgid "Payroll (Salary) Setup"
+msgstr ""
+
+msgid "In ERPNext, salaries have two types of components, earnings (basic salary, expenses paid by the company, like telephone bill, travel allowance etc) and deductions (amounts deducted for taxes, social security etc). To setup payroll, you must first setup all the different types of earnings and deductions. These are:"
+msgstr ""
+
+msgid "Earning Type"
+msgstr ""
+
+msgid "Deduction Type"
+msgstr ""
+
+msgid "These are just labels, we will see how to use them when we discuss the payroll section."
+msgstr ""
+
+#~ msgid "Text"
+#~ msgstr ""
 

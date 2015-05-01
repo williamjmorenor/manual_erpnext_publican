@@ -263,9 +263,9 @@ msgstr ""
 msgid "Add or Deduct: Whether you want to add or deduct the tax."
 msgstr ""
 
-#~ msgid "Text"
+#~ msgid "Buying Setting"
 #~ msgstr ""
 
-#~ msgid "Buying Setting"
+#~ msgid "Text"
 #~ msgstr ""
 
