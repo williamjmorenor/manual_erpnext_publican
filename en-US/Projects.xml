@@ -4,6 +4,7 @@
 ]>
 <chapter id="chap-ERPNext-Manual_ERPNext-Projects">
 	<title>Projects</title>
+	<indexterm><primary>Projects</primary></indexterm>
 	<para>
 	ERPNext helps you manage your Projects by breaking them into Tasks and allocating them to different people.
 	</para>
@@ -15,6 +16,7 @@
 	</para>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Projects-Project">
 		<title>Project</title>
+		<indexterm><primary>Projects</primary><secondary>Project</secondary></indexterm>
 		<para>
 		Project management in ERPNext is Task driven. You can create Project and assign multiple Tasks against it.
 		</para>
@@ -57,6 +59,7 @@
 		</sect2>
 			<sect2>
 				<title>Gantt Chart</title>
+				<indexterm><primary>Projects</primary><secondary>Project</secondary><tertiary>Gantt Chart</tertiary></indexterm>
 				<para>
 				A Gantt Chart illustrates a project schedule. ERPNext gives you a illustrated view of tasks scheduled against that project in Gantt Chart View.
 				</para>
@@ -67,6 +70,7 @@
 	</sect1>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Projects-Task">
 		<title>Task</title>
+		<indexterm><primary>Projects</primary><secondary>Task</secondary></indexterm>
 		<para>
 		Project is divided into Tasks. In ERPNext, you can also create a Task independently. A Task can have either of the following status - Open, Working, Pending Review, Closed, Cancelled.
 		</para>
@@ -93,6 +97,7 @@
 	</sect1>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Projects-Time">
 		<title>Time Log</title>
+		<indexterm><primary>Projects</primary><secondary>Time Log</secondary></indexterm>
 		<para>
 		Time Logs are a way to track time worked. They can be used to track the following
 		</para>
@@ -129,6 +134,7 @@
 			</para>
 			<sect3>
 				<title>Billing using Time Logs</title>
+				<indexterm><primary>Projects</primary><secondary>Time Log</secondary><tertiary>Billing</tertiary><seealso>Types of Production Planning</seealso></indexterm>
 				<para>
 				If you wish to bill against a Time Log you need to select the 'Billable' option. In the costing section, the system will pull up the Costing and Billing rate from Activity Cost based on the Employee and Activity Type specified. The system shall then calculate the Costing and Billing amount based on the Hours mentioned in the Time Log. If 'Billable' is not selected, the system shall display the 'Billing Amount' as 0. After submitting the Time Log, you need to create Time Log batch to further bill the Time Log.
 				</para>

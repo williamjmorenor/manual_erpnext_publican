@@ -4,11 +4,13 @@
 ]>
 <chapter id="chap-ERPNext-Manual_ERPNext-Manufacturing">
 	<title>Manufacturing</title>
+	<indexterm><primary>Manufacturing</primary></indexterm>
 	<para>
 	The Manufacturing module in ERPNext helps you to maintain multi-level Bill of Materials (BOMs) for your Items. It helps in product costing, production planning , creating production orders for your manufacturing shop floors and planning inventory by getting your material requirement via BOMs (also called Material Requirements Planning MRP).
 	</para>
 	<sect1>
 		<title>Types of Production Planning</title>
+		<indexterm id="manufacturingtipe"><primary>Manufacturing</primary><secondary>Types of Production Planning</secondary></indexterm>
 		<para>
 		Broadly there are three types of Production Planning Systems:
 		</para>
@@ -35,6 +37,8 @@
 	</sect1>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Manufacturing-BOM">
 		<title>Bill Of Materials</title>
+		<indexterm><primary>Manufacturing</primary><secondary>Bill Of Materials</secondary></indexterm>
+		<indexterm><primary>Manufacturing</primary><secondary>BOM</secondary></indexterm>
 		<para>
 		At the heart of the Manufacturing system is the Bill of Materials (BOM). The BOM is a list of all materials (either bought or made) and operations that go into a finished product or sub-Item. In ERPNext, the component could have its own BOM hence forming a tree of Items with multiple levels. To make accurate Purchase Requests, you must always maintain correct BOMs. To make a new BOM:
 		</para>
