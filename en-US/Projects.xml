@@ -3,6 +3,11 @@
 %BOOK_ENTITIES;
 ]>
 <chapter id="chap-ERPNext-Manual_ERPNext-Projects">
+	<chapterinfo>
+		<keywordset>
+			<keyword>Project</keyword>
+		</keywordset>
+	</chapterinfo>
 	<title>Projects</title>
 	<indexterm><primary>Projects</primary></indexterm>
 	<para>
