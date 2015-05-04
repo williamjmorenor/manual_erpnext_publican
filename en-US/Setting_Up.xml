@@ -215,19 +215,1184 @@
 		</para>
 	</sect2>
 	</sect1>
-	<xi:include href="Users.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Settings.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Data.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Email.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Printing.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Taxes.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Pos.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Prices.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Authorization.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="SMS.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Stock_Reconciliation.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Territory.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Backups.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Workflows.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Users">
+	<title>Users And Permissions</title>
+	<para>
+	In ERPNext, you can create multiple users and assign them different roles. There are some users which can only access the public facing part of ERPNext (i.e. the website). Such users are called "Website Users".
+	</para>
+	<para>
+	ERPNext implements permission control at the User and Role level. Each user in the system can be assigned multiple roles and permissions.
+	</para>
+	<para>
+	The most important role is the "System Manager". Any user having this role can add other users and set roles to all users.
+	</para>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Users-Adding">
+		<title>Adding Users</title>
+		<para>
+		Users can be added by the System Manager. If you are a System Manager, you can add Users via
+		</para>
+		<programlisting>
+		Setup > User
+		</programlisting>
+			<sect3>
+			<title>List of Users</title>
+			<para>To add new user, click on "New".</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="./images/user-1.png" />
+				</imageobject>
+				<textobject><phrase>Add New User</phrase></textobject>
+			</mediaobject>
+			</sect3>
+			<sect3>
+			<title>Add the user details</title>
+			<para>Add user details such as First Name, Last Name, Email etc.</para>
+<para>The user's Email will become the user id.</para><para>After adding these details, save the user.</para>
+			</sect3>
+			<sect3>
+			<title>Setting Roles</title>
+			<para>After saving, you will see a list of roles and a checkbox next to it. Just check the roles you want the the user to have and save the document. To click on what permissions translate into roles, click on the role name.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="./images/user-2.png" />
+				</imageobject>
+				<textobject><phrase>Setting Roles</phrase></textobject>
+			</mediaobject>
+			</sect3>
+			<sect3>
+			<title>Setting Module Access</title>
+			<para>Users will have access to all modules for which they have role based access. If you want to block certain modules for certain users, un-check the module from the list.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="./images/user-3.png" />
+				</imageobject>
+				<textobject><phrase>Setting Module Access</phrase></textobject>
+			</mediaobject>
+			</sect3>
+			<sect3>
+			<title>Security Settings</title>
+			<para>If you wish to give the user access to the system only between office hours, or during weekends, mention it under security settings.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="./images/user-4.png" />
+				</imageobject>
+				<textobject><phrase>Security Settings</phrase></textobject>
+			</mediaobject>
+			</sect3>
+	</sect2>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Users-Roles">
+		<title>Role Based Permissions</title>
+		<para>
+		ERPNext has a role-based permission system. It means that you can assign Roles to Users, and set Permissions on Roles. The permission structure also allows you to define different permission rules for different fields, using a concept called Permission "Level" of a field. Once roles are assigned to a user, it gives you the ability to limit access for a user to only specic documents.
+		</para>
+		<para>
+		To start with, go to:
+		</para>
+		<programlisting>
+		Setup > Users and Permissions > Role Permissions Manager
+		</programlisting>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/user-5.png" />
+			</imageobject>
+			<textobject><phrase>Role Permissions Manager</phrase></textobject>
+		</mediaobject>
+		<para>Permissions are applied on a combination of:</para>
+		<itemizedlist>
+  		<listitem>
+   			<para><emphasis role="bold">Roles:</emphasis> As we saw earlier, Users are assigned to Roles and it is on these Roles that permission rules are applied.</para>
+   		</listitem>
+  		<listitem>
+   			<para><emphasis role="bold">Document Types:</emphasis> Each type of document, master or transaction, has a separate list of Role based permissions. </para> <para><emphasis>Examples of Document Types are Sales Invoice, Leave Application, Stock Entry, etc.</emphasis></para>
+   		</listitem>
+  		<listitem>
+   			<para><emphasis role="bold">Permission "Levels":</emphasis> In each document, you can group fields by "levels". Each group of field is denoted by a unique number (0, 1, 2, 3, etc.). A separate set of permission rules can be applied to each field group. By default all fields are of level 0.</para> <para> <emphasis>Permission "Level" connects the group of fields with level X to a permission rule with level X.</emphasis></para>
+   		</listitem>
+  		<listitem>
+   			<para><emphasis role="bold">Document Stages:</emphasis> Permissions are applied on each stage of the document like on Creation, Saving, Submission, Cancellation and Amendment. A role can be permitted to Print, Email, Import or Export data, access Reports, or define User Permissions.</para>
+   		</listitem>
+  		<listitem>
+   			<para><emphasis role="bold">Apply User Permissions: </emphasis> This switch decides whether User Permissions should be applied for the role on selected Document Stages.</para>
+   		</listitem>
+		</itemizedlist>
+		<para>If enabled, a user with that role will be able to access only specific Documents for that Document Type. Such specific Document access is defined in the list of User Permissions. Additionally, User Permissions defined for other Document Types also get applied if they are related to the current Document Type through Link Fields.</para>
+		<para>To set, User Permissions go to:</para>
+		<programlisting>
+		Setup > Users and Permissions > User Permissions Manager
+		</programlisting>
+		<para><emphasis role="bold">To add a new rule,  </emphasis> click on "Add a New Rule" button and a pop-up box will ask you to select a Role and a Permission Level. Once you select this and click on "Add", this will add a new row to your rules table.</para>
+		<para>Leave Application is a good <emphasis role="bold">example</emphasis> that encompasses all areas of Permission System.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/user-6.png" />
+			</imageobject>
+			<textobject><phrase>Leave Application</phrase></textobject>
+		</mediaobject>
+		<para><emphasis role="bold">It should be created by an Employee. </emphasis> For this, Employee Role should be given Read, Write, Create permissions.</para>
+   		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/user-6-1.png" />
+			</imageobject>
+			<textobject><phrase>Leave Application</phrase></textobject>
+		</mediaobject>
+		<para><emphasis role="bold">An Employee should only be able to access his/her Leave Application. </emphasis> Hence, Apply User Permissions should be enabled for Employee Role, and a User Permission record should be created for each User Employee combination. (This effort is reduced for Employee Document Type, by programmatically creating User Permission records.)</para>
+   		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/user-6-2.png" />
+			</imageobject>
+			<textobject><phrase>Leave Application</phrase></textobject>
+		</mediaobject>
+		<para><emphasis role="bold">HR Manager should be able to see all Leave Applications. </emphasis> Create a Permission Rule for HR Manager at Level 0, with Read permissions. Apply User Permissions should be disabled.</para>
+   		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/user-6-3.png" />
+			</imageobject>
+			<textobject><phrase>Leave Application</phrase></textobject>
+		</mediaobject>
+		<para><emphasis role="bold">Leave Approver should be able to see and update Leave Applications applicable to him/her. </emphasis> Leave Approver is given Read and Write access at Level 0, with Apply User Permissions enabled. Relevant Employee Documents should be enlisted in the User Permissions of Leave Approvers. (This effort is reduced for Leave Approvers mentioned in Employee Documents, by programmatically creating User Permission records.)</para>
+   		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/user-6-4.png" />
+			</imageobject>
+			<textobject><phrase>Leave Application</phrase></textobject>
+		</mediaobject>
+		<para><emphasis role="bold">It should be Approved / Rejected only by HR User or Leave Approver.  </emphasis> The Status field of Leave Application is set at Level 1. HR User and Leave Approver are given Read and Write permissions for Level 1, while everyone else (All) are given Read permission for Level 1.</para>
+   		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/user-6-5.png" />
+			</imageobject>
+			<textobject><phrase>Leave Application</phrase></textobject>
+		</mediaobject>
+		<para><emphasis role="bold">HR User should be able to delegate Leave Applications to his/her subordinates  HR. </emphasis> User is given the right to Set User Permissions. A User with HR User role would be able to defined User Permissions on Leave Application for other users.</para>
+   		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/user-6-5.png" />
+			</imageobject>
+			<textobject><phrase>Leave</phrase></textobject>
+		</mediaobject>
+	</sect2>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Users-Permissions">
+		<title>User Permissions</title>
+		<para>
+		Limit access for a User to a set of documents using User Permissions Manager.
+		</para>
+		<para>
+		Role Base Permissions define the periphery of document types within which a user with a set of Roles can move around in. However, you can have an even finer control by defining User Permissions for a User. By setting specific documents in User Permissions list, you can limit access for that User to specific documents of a particular DocType, on the condition that "Apply User Permissions" is checked in Role Permissions Manager.
+		</para>
+   		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/user-7.png" />
+			</imageobject>
+			<textobject><phrase>User Permissions Manager</phrase></textobject>
+		</mediaobject>
+	</sect2>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Users-Sharing">
+		<title>Sharing</title>
+		<para>
+		In addition to user and role permissions, you can also Share a document with another user if you have sharing rights.
+		</para>
+		<para>
+		To share a document, open the document, click on the "+" icon under sharing and select the user
+		</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/share.gif" />
+			</imageobject>
+			<textobject><phrase>Share</phrase></textobject>
+		</mediaobject>
+	</sect2>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Setup-Settings">
+	<title>Settings</title>
+	<para>
+	In <emphasis>Setup > Settings</emphasis> you will find ways to manage your system settings like defaults, number and currency formats, global session timeout settings etc.
+	</para>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup-Settings-System">
+		<title>System Settings</title>
+		<para>
+		You can localize ERPNext to use particular timezone, date, number or currency format and also set global session expiry via System Settings.
+		</para>
+		<para>
+		To open System Settings, go to:
+		</para>
+		<programlisting>
+		Setup > Settings > System Settings
+		</programlisting>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/system-settings.png" />
+			</imageobject>
+			<textobject><phrase>System Settings</phrase></textobject>
+		</mediaobject>
+	</sect2>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup-Settings-Modules">
+		<title>Show or Hide Modules</title>
+		<para>
+		You can globally switch off certain desktop module via:
+		</para>
+		<programlisting>
+		Setup > Settings > Show or Hide Modules
+		</programlisting>
+		<para>
+		For example if you are in the services business, you want to hide the Manufacturing Module, you can do this via Show or Hide Modules
+		</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/show-hide-modules.png" />
+			</imageobject>
+			<textobject><phrase>Show or Hide Modules</phrase></textobject>
+		</mediaobject>
+	</sect2>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup-Settings-Series">
+		<title>Naming Series</title>
+		<para>
+		<emphasis role="Bold">Naming Series</emphasis>
+		</para>
+		<para>
+		Data records are broadly classified as “Master” or “Transaction”. A master record is a record that has a “name”, for example a Customer, Item, Supplier, Employee etc. A Transaction is a record that has a “number”. Examples of transactions include Sales Invoices, Quotations etc. You make transactions against a number of master records.
+		</para>
+		<para>
+		ERPNext allows you to make prefixes to your transactions, with each prefix forming its own series. For example a series with prefix INV12 will have numbers INV120001, INV120002 and so on.
+		</para>
+		<para>
+		You can have multiple series for all your transactions. It is common to have a separate series for each financial year. For example in Sales Invoice you could have:
+		</para>
+		<itemizedlist>
+			<listitem><para>INV120001</para></listitem>
+			<listitem><para>INV120002</para></listitem>
+			<listitem><para>INV-A-120002</para></listitem>
+		</itemizedlist>
+		<para>
+		etc. You could also have a separate series for each type of Customer or for each of your retail outlets.
+		</para>
+		<para>
+		<emphasis role="Bold">Managing Naming Series for Documents</emphasis>
+		</para>
+		<para>
+		To setup a series, go to:
+		</para>
+		<programlisting>
+		Setup > Tools > Update Numbering Series
+		</programlisting>
+		<para>
+		In this form:
+		</para>
+		<orderedlist>
+			<listitem><para>Select the transaction for which you want to make the series The system will update the current series in the text box.</para></listitem>
+			<listitem><para>Edit the series as required with unique prefixes for each series. Each prefix must be on a new line.</para></listitem>
+			<listitem><para>The first prefix will be the default prefix. If you want the user to explicitly select a series instead of the default one, check the “User must always select” check box.</para></listitem>
+		</orderedlist>
+		<para>You can also update the starting point of a series by entering the series name and the starting point in the “Update Series” section.</para>
+	</sect2>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup-Settings-Global">
+		<title>Global Defaults</title>
+		<para>
+		You can set default values for your documents from Global Defaults
+		</para>
+		<programlisting>
+		Setup > Settings > Global Defaults
+		</programlisting>
+		<para>Whenever a new document is created, these values will be set as default.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/global-defaults.png" />
+			</imageobject>
+			<textobject><phrase>Global Defaults</phrase></textobject>
+		</mediaobject>
+	</sect2>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Data">
+	<title>Data Management</title>
+	<para>
+	You can import, export bulk edit data from and to spreadsheet files (.csv) from the Data Import Export Tool. This tool will be very helpful initially to setup your data from other systems.
+	</para>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Data-Import">
+		<title>Data Import Tool</title>
+		<para>
+		The Data Import Tool is a great way to upload (or edit) bulk data, specially master data, into the system. To Open the data import tool, you either go to Setup or go to the Transaction you want to Import. If Data Import is allowed, you will see an Import Button:
+		</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/data-import-1.png" />
+			</imageobject>
+			<textobject><phrase>Data Import</phrase></textobject>
+		</mediaobject>
+	<para>The tool has two sections, one to download a template and the second to upload the data.</para>
+	<note><para>Only those DocTypes are allowed for Import whose Document Type is "Master" or Allow Import property is set.</para></note>
+	<sect3>
+		<title>Downloading The Template</title>
+		<para>Data in ERPNext is stored in tables, much like a spreadsheet with columns and rows of data. Each entity in ERPNext can have multiple child tables associated with it too. The child tables are linked to the parent tables and are implemented where there are multiple values for any property. For example an Item can have multiple prices, An Invoice has multiple Items and so on.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/data-import-2.png" />
+			</imageobject>
+			<textobject><phrase>Data Import</phrase></textobject>
+		</mediaobject>
+		<itemizedlist>
+			<listitem><para>Click on the table you want to download or "All Tables"</para></listitem>
+			<listitem><para>For bulk editing, you can click on "Download With Data"</para></listitem>
+		</itemizedlist>
+	</sect3>
+	<sect3>
+	<title>Fill in the Template</title>
+	<para>After downloading the template, open it in a spreadsheet application and fill in the data below the column headings.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/data-import-3.png" />
+			</imageobject>
+			<textobject><phrase>Data Import</phrase></textobject>
+		</mediaobject>
+		<para>Then export your template or save it as a Comma Separated Values (CSV) file.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/data-import-4.png" />
+			</imageobject>
+			<textobject><phrase>Data Import</phrase></textobject>
+		</mediaobject>
+	</sect3>
+	<sect3>
+	<title>Upload the .csv File</title>
+	<para>Finally attach the .csv file in the section. Click on the "Upload and Import" button.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/data-import-5.png" />
+			</imageobject>
+			<textobject><phrase>Data Import</phrase></textobject>
+		</mediaobject>
+		<orderedlist>
+			<listitem><para>Make sure that if your application allows, use encoding as UTF-8.</para></listitem>
+			<listitem><para>Keep the ID column blank for new records.</para></listitem>
+		</orderedlist>
+	</sect3>
+	<sect3>
+	<title>Uploading All Tables (Main + Child)</title>
+	<para>If you select all tables, you will get columns belonging to all the tables in one row separated by ~ columns. If you have multiple child rows then you must start a new main item on a new row.</para>
+	<note><para>To see how its done, enter a few records manually using forms and export "All Tables" with "Download with Data"</para></note>
+	</sect3>
+	<sect3>
+	<title>Overwriting</title>
+	<para>ERPNext also allows you to overwrite all or certain columns. If you want to update certain columns, you can download the template with data. Remember to check on the Overwrite box before uploading.</para>
+	<warning><para>For child records, if you select Overwrite, it will delete all the child records of that parent.</para></warning>
+	</sect3>
+	<sect3>
+	<title>Upload Limitations</title>
+	<para>ERPNext restricts the amount of data you can upload in one file. Though the number may vary based on the type of data. It is usually safe to upload around 1000 rows of a table at one go. If the system will not accept, then you will see an error.</para>
+	<para>Why is this? Uploading a lot of data can cause your system to crash, specially if there are other users doing things in parallel. Hence ERPNext restricts the number of “writes” you can process in one request.</para>
+		<sect4>
+		<title>How to Attach files?</title>
+		<para>When you open a form, on the right sidebar, you will see a section to attach files. Click on “Add” and select the file you want to attach. Click on “Upload” and you are set.</para>
+		</sect4>
+		<sect4>
+		<title>What is a CSV file?</title>
+		<para>A CSV (Comma Separated Value) file is a data file that you can upload into ERPNext to update various data. Any spreadsheet file from popular spreadsheet applications like MS Excel or Open Office Spreadsheet can be saved as a CSV file.</para>
+		<para>If you are using Microsoft Excel and using non-English characters, make sure to save your file encoded as UTF-8. For older versions of Excel, there is no clear way of saving as UTF-8. So save your file as a CSV, then open it in Notepad, and save as “UTF-8”. (Sorry blame Microsoft for this!)</para>
+		</sect4>
+	</sect3>
+	</sect2>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Data-Renaming">
+		<title>Bulk Renaming of Records</title>
+		<para>
+		You can rename a document if ERPNext (if it is allowed) by going to Menu > Rename in the document.
+		</para>
+		<para>Alternatively, if you want to rename a whole bunch of records, just go to:</para>
+		<programlisting>
+		Setup > Data > Rename Tool
+		</programlisting>
+		<para>This tool will allow you to rename multiple records at the same time.</para>
+		<sect3>
+		<title>Example</title>
+		<para>To rename multiple records, upload a .csv file with the old name in the first column and the new name in the second column and click on Upload.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/rename.png" />
+			</imageobject>
+			<textobject><phrase>Rename</phrase></textobject>
+		</mediaobject>
+		</sect3>
+	</sect2>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Email">
+	<title>Email</title>
+	<para>
+	Email is at the heart of electronic communication and ERPNext is deeply integrated with Email. You can create multiple email accounts, automatically create transactions like Lead, Issue from incoming emails, send documents to your contacts via ERPnext. You can also setup email digests and email alerts to send you reminders.
+	</para>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Email-Accounts">
+		<title>Email Accounts</title>
+		<para>
+		You can manage multiple incoming and outgoing Email Accounts in ERPNext. There has to be atleast one default outgoing account and one default incoming account. If you are on the ERPNext cloud, the default outgoing email is set by Frappe Team.
+		</para>
+		<note><para>Note for self implementers: For outgoing emails, you should setup your own SMTP server or sign up with an SMTP relay service like mandrill.com or sendgrid.com that allows a larger number of transactional emails to be sent. Regular email services like GMail will restrict you to a limited number of emails per day.</para></note>
+		<sect3>
+		<title>Default Email Accounts</title>
+		<para>ERPNext will create templates for a bunch of email accounts by default. Not all of them are enabled. To enable them, you must set your account details.</para>
+		<para>There are 2 types of email accounts, outgoing and incoming. Outgoing email accounts use an SMTP service to send emails and emails are retrived from your inbox using a POP service. Most email providers such as GMail, Outlook or Yahoo provide these services.</para>
+				<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/email-account-list.png" />
+			</imageobject>
+			<textobject><phrase>Email list</phrase></textobject>
+		</mediaobject>
+		</sect3>
+		<sect3>
+		<title>Outgoing Email Accounts</title>
+		<para>All emails sent from the system, either by the user to a contact or notifications or transaction emails, will be sent from an Outgoing Email Account.</para>
+		<para>To setup an outgoing Email Account, check on Enable Outgoing and set your SMTP server settings, if you are using a popular email service, these will be preset for you.</para>
+				<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/email-account-sending.png" />
+			</imageobject>
+			<textobject><phrase>Email Sending</phrase></textobject>
+		</mediaobject>
+		</sect3>
+		<sect3>
+		<title>Incoming Email Accounts</title>
+		<para>To setup an incoming Email Account, check on Enable Incoming and set your POP3 settings, if you are using a popular email service, these will be preset for you.</para>
+				<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/email-account-incoming.png" />
+			</imageobject>
+			<textobject><phrase>Email Incoming</phrase></textobject>
+		</mediaobject>
+		</sect3>
+		<sect3>
+		<title>How ERPNext handles replies</title>
+		<para>In ERPNext when you send an email to a contact like a customer, the sender will be the user who sent the email. In the Reply-To property, the email id will be of the default incoming account (like replies@yourcompany.com). ERPNext will automatically extract these emails from the incoming account and tag it to the relvant communication</para>
+		</sect3>
+		<sect3>
+		<title>Notification for unreplied messages</title>
+		<para>If you would like ERPNext to notify you if an email is unreplied for a certain amount of time, then you can set Notify if Unreplied. Here you can set the number of minutes to wait before notifications are sent and whom the notifications must go to.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/email-account-unreplied.png" />
+			</imageobject>
+			<textobject><phrase>Email Incoming</phrase></textobject>
+		</mediaobject>
+		</sect3>
+	</sect2>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Email-Alerts">
+		<title>Email Alerts</title>
+		<para>
+		You can configure various email alerts in your system to remind you of important activities such as:
+		</para>
+		<orderedlist>
+			<listitem>
+				<para>Completion date of a Task.</para>
+			</listitem>
+			<listitem>
+				<para>Expected Delivery Date of a Sales Order.</para>
+			</listitem>
+			<listitem>
+				<para>Expected Payment Date.</para>
+			</listitem>
+			<listitem>
+				<para>Reminder of followup.</para>
+			</listitem>
+			<listitem>
+				<para>If an Order greater than a particular value is received or sent.</para>
+			</listitem>
+			<listitem>
+				<para>Expiry notification for a Contract.</para>
+			</listitem>
+			<listitem>
+				<para>Completion / Status change of a Task.</para>
+			</listitem>
+		</orderedlist>
+		<para>For this, you need to setup an Email Alert.</para>
+		<programlisting>Setup > Email > Email Alert</programlisting>
+		<sect3>
+		<title>Setting Up An Alert</title>
+		<para>To setup an Email Alert:</para>
+		<orderedlist>
+			<listitem>
+				<para>Select which Document Type you want watch changes on.</para>
+			</listitem>
+			<listitem>
+				<para>Define what events you want to watch. Events are:</para>
+				<orderedlist>
+					<listitem>
+						<para>New: When a new document of the selected type is made.</para>
+					</listitem>
+					<listitem>
+						<para>Save / Submit / Cancel: When a document of the selected type is saved, submitted, cancelled.</para>
+					</listitem>
+					<listitem>
+						<para>Value Change: When a particular value in the selected type changes.</para>
+					</listitem>
+					<listitem>
+						<para>Days Before / Days After: Trigger this alert a few days before or after the <emphasis role="Bold">Reference Date</emphasis>. To set the days, set <emphasis role="Bold">Days Before or After</emphasis>. This can be useful in reminding you of upcoming due dates or reminding you to follow up on certain leads of quotations.</para>
+					</listitem>
+				</orderedlist>
+			</listitem>
+			<listitem>
+				<para>Set additional conditions if you want.</para>
+			</listitem>
+			<listitem>
+				<para>Set the recipients of this alert. The recipient could either be a field of the document or a list of fixed email ids.</para>
+			</listitem>
+			<listitem>
+				<para>Compose the message</para>
+			</listitem>
+		</orderedlist>
+		</sect3>
+	</sect2>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Email-Digest">
+		<title>Email Digest</title>
+		<para>
+		Email Digests allow you to get regular updates about your sales, expenses and other critical numbers directly in your Inbox.
+		</para>
+		<para>
+		Email Digests are a great way for top managers to keep track of the big numbers like “Sales Booked” or “Amount Collected” or “Invoices Raised” etc.
+		</para>
+		<para>
+		To set up Email Digest, go to:
+		</para>
+		<programlisting>
+		Setup > Email > Email Digest
+		</programlisting>
+	</sect2>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Email-Sending">
+		<title>Sending Email from any Document</title>
+		<para>
+		In ERPNext you can send any document as email (with a PDF attachment) by clicking on Menu > Email from any open document.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/send-email.gif" />
+			</imageobject>
+			<textobject><phrase>Send Email</phrase></textobject>
+		</mediaobject>
+	</sect2>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Printing">
+	<title>Printing and Branding</title>
+	<para>
+	Documents that you send to your customers carry your brand and image and they must be tailored to your requirements. ERPNext gives you many options so that you can set your oraganization's branding in your documents.
+	</para>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Printing-Settings">
+		<title>Print Settings</title>
+		<para>
+		In Print Settings you can set your default printing preferences like Paper Size, default text size, whether you want output as PDF or HTML etc.
+		</para>
+		<para>
+		To edit print settings, go to:
+		</para>
+		<programlisting>
+		Setup > Printing and Branding > Print Settings
+		</programlisting>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/print-settings.png" />
+			</imageobject>
+			<textobject><phrase>Print Settings</phrase></textobject>
+		</mediaobject>
+	</sect2>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Printing-Format">
+		<title>Print Format Builder</title>
+		<para>
+		The Print Format Builder helps you quickly make a simple customized Print Format by dragging and dropping data fields and adding custom text or HTML.
+		</para>
+		<para>
+		You can create a new Print Format either by going to:
+		</para>
+		<programlisting>
+		Setup > Printing and Branding > Print Format Builder
+		</programlisting>
+		<para>
+		or Open the document for which you want to make a print format. Click the Printer icon, or go to Menu > Print and click on the Edit button. Note: You must have System Manager permission to do this.
+		</para>
+		<sect3>
+		<title>Make a new Format</title>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/print-format-builder-1.gif" />
+			</imageobject>
+			<textobject><phrase>Print Settings</phrase></textobject>
+		</mediaobject>
+		</sect3>
+		<sect3>
+		<title>Add a new Field</title>
+		<para>
+		To add a field, just drag it from the left sidebar and add it in your layout. You can edit the layout by clicking on the settings  icon.To add a field, just drag it from the left sidebar and add it in your layout. You can edit the layout by clicking on the settings  icon.
+		</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/print-format-builder-2.gif" />
+			</imageobject>
+			<textobject><phrase>Print Settings</phrase></textobject>
+		</mediaobject>
+		</sect3>
+		<sect3>
+		<title>Remove Field</title>
+		<para>
+		To remove a field, just drag it back into the fields sidebar.
+		</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/print-format-builder-3.gif" />
+			</imageobject>
+			<textobject><phrase>Print Settings</phrase></textobject>
+		</mediaobject>
+		</sect3>
+		<sect3>
+		<title>Cutomize</title>
+		<para>
+		You can add customized text, HTML in your print format, just add the Custom HTML field (in dark colour) and add it to the the place where you want to add the text. Then click on Edit HTML to edit your content.
+		</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/print-format-builder-4.gif" />
+			</imageobject>
+			<textobject><phrase>Print Settings</phrase></textobject>
+		</mediaobject>
+		<para>
+		To save your format, just click on the Save button on the top.
+		</para>
+		</sect3>
+	</sect2>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Printing-Headings">
+		<title>Print Headings</title>
+		<para>
+		Print Headings are the names which you can give to your sales invoices, supplier quotations etc. You can create a list of names for different business communications. You can create print headings from :
+		</para>
+		<programlisting>
+		Setup > Printing > Print Heading > New Print Heading
+		</programlisting>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/print-heading.png"/>
+			</imageobject>
+			<textobject><phrase>Print Settings</phrase></textobject>
+		</mediaobject>
+		<para>
+		Example of a change in print heading is shown below:
+		</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/print-heading-1.png"/>
+			</imageobject>
+			<textobject><phrase>Print Settings</phrase></textobject>
+		</mediaobject>
+	</sect2>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Printing-Letter">
+		<title>Letter Heads</title>
+		<para>
+		You can manage multiple letter heads in ERPNext. In a letter head you can:
+		</para>
+		<itemizedlist>
+			<listitem>
+				<para>Create an image with your logo, brand and other information that you want to put on your letter head.</para>
+			</listitem>
+			<listitem>
+				<para>Attach the image in your Letter Head record by clicking on image icon to automatically generate the HTML required for this Letter Head.</para>
+			</listitem>
+			<listitem>
+				<para>If you want to make this the default letter head, click on “Is Default”.</para>
+			</listitem>
+		</itemizedlist>
+		<para>
+		Your letter head will now appear in all Prints and Emails of documents.
+		</para>
+		<para>
+		You can create / manage Letter Heads from:
+		</para>
+		<programlisting>
+		Setup > Printing > Letter Head > New Letter Head
+		</programlisting>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/letter-head.png"/>
+			</imageobject>
+			<textobject><phrase>Letter Head</phrase></textobject>
+		</mediaobject>
+		<para>
+		This is how the letter head looks in a document print:
+		</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/letter-head-1.png"/>
+			</imageobject>
+			<textobject><phrase>Letter Head</phrase></textobject>
+		</mediaobject>
+	</sect2>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Printing-Address">
+		<title>Address Template</title>
+		<para>
+		Each region has its own way of defining Addresses. To manage multiple address formats for your Documents (like Quotation, Purchase Invoice etc.), you can create country-wise Address Templates.
+		</para>
+		<programlisting>
+		Setup > Printing and Branding > Address Template
+		</programlisting>
+		<para>
+		A default Address Template is created when you setup the system. You can either edit or update it or create a new template.
+		</para>
+		<para>
+		One template is default and will apply to all countries that do not have an specific template.
+		</para>
+		<para>
+		<emphasis role="Bold">Template</emphasis>
+		</para>
+		<para>
+		The templating engine is based on HTML and the Jinja Templating system and all the fields (including Custom Fields) will be available for creating the template.
+		</para>
+
+		<para>
+		<emphasis role="Bold">Example</emphasis>
+		</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/address-format.png"/>
+			</imageobject>
+			<textobject><phrase>Address Template</phrase></textobject>
+		</mediaobject>
+	</sect2>
+	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Printing-Terms">
+		<title>Terms And Conditions</title>
+		<para>
+		Terms and conditions are the general and special arrangements, provisions, requirements, rules, specifications, and standards that a company follows. These specifications are an integral part of an agreement or contract that the company gets into with its customers, suppliers or partners.
+		</para>
+		<sect3>
+		<title>Make a new Terms and Conditions</title>
+		<para>
+		To setup Terms and Condition master, go to:
+		</para>
+		<programlisting>
+		Selling > Terms and Condition > New
+		</programlisting>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/terms-1.png"/>
+			</imageobject>
+			<textobject><phrase>Terms</phrase></textobject>
+		</mediaobject>
+		</sect3>
+		<sect3>
+		<title>Editing in HTML</title>
+		<para>
+		Content of Terms and Condition can be formatted as per your preference, and also insert images where needed. If you have expertise in HTML, you will also find option to edit the content of Terms and Condition in HTML.
+		</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/terms-2.png"/>
+			</imageobject>
+			<textobject><phrase>Terms</phrase></textobject>
+		</mediaobject>
+		<para>
+		This also allows you to use Terms and Condition master for footer, which otherwise is not availale in ERPNext as dedicated functionality. Since contents of Terms and Condition is always the last to appear in the print format, details of footer should be inserted at the end of the content, so that it actually appears as footer in the print format.
+		</para>
+		</sect3>
+		<sect3>
+		<title>Select in Transaction</title>
+		<para>
+		In transactions, you will find section of Terms and Condition where you will be able to search and fetched required Terms and Condition master.
+		</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/terms-3.png"/>
+			</imageobject>
+			<textobject><phrase>Terms</phrase></textobject>
+		</mediaobject>
+		</sect3>
+	</sect2>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Taxes">
+	<title>Setting Up Taxes</title>
+	<para>
+	One of the primary motivator for compulsory use of accounting tools is calculation of Taxes. You may or may not make money but your government will (to help your country be safe and prosperous). And if you don’t calculate your taxes correctly, they get very unhappy. Ok, philosophy aside, ERPNext allows you to make configurable tax templates that you can apply to your sales or purchase.
+	</para>
+	<para>
+	Tax Accounts: For Tax Accounts that you want to use in the tax templates, you must go to Chart of Accounts and mention them as type “Tax” in your Chart of Item.
+	</para>
+	<para>
+	Item Tax: If some of your Items require different tax rates as compared to others, mention them in the Item tax table. Even if you have selected your sales and purchase taxes as default tax rates, the system will pull the Item tax rate for calculations. Item tax will get preference over other sales or purchase taxes. However, if you wish to apply default sales and purchase taxes, do not mention item tax rates in the Item master. The system will then select the sales or purchase tax rate specified by you as default rates.
+	</para>
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="./images/item-tax-1.png" />
+		</imageobject>
+		<textobject><phrase>Taxes</phrase></textobject>
+	</mediaobject>
+	<para>
+	Inclusive and Exclusive Tax: ERPNext allows you to enter Item rates which are tax inclusive.
+	</para>
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="./images/inclusive-tax.png" />
+		</imageobject>
+		<textobject><phrase>Taxes</phrase></textobject>
+	</mediaobject>	
+	<para>
+	Exception to the rule: Item tax settings are required only if a particular Item has a different tax rate than the rate defined in the standard tax Account
+	</para>
+	<para>
+	Item tax is overwrite-able: You can overwrite or change the item tax rate by going to the Item master in the Item tax table.
+	</para>
+	<sect2>
+	<title>Sales Taxes and Charges Master</title>
+	<para>
+	You must usually collect taxes from your Customer and pay them to the government. At times, you may have to pay multiple taxes to multiple government bodies like local government, state or provincial and federal or central government.
+	</para>
+	<para>
+	The way ERPNext sets up taxes is via templates. Other types of charges that may apply to your invoices (like shipping, insurance etc.) can also be configured as taxes.	
+	</para>
+	<para>
+	Select template and modify as per your need.
+	</para>
+	<para>
+	To create a new sales tax template called Sales Taxes and Charges Master, you have to go to:
+	</para>
+	<programlisting>
+	Setup > Accounts > Sales Taxes and Charge Master
+	</programlisting>
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="./images/sales-tax-master.png" />
+		</imageobject>
+		<textobject><phrase>Sales Taxes Master</phrase></textobject>
+	</mediaobject>	
+	<para>
+	When you create a new master, you will have to add a row for each tax type.
+	</para>
+	<para>
+	The tax rate you define here will be the standard tax rate for all Items. If there are Items that have different rates, they must be added in the Item Tax table in the Item master.
+	</para>
+	<para>
+	In each row, you have to mention:
+	</para>
+	<itemizedlist>
+		<listitem>
+			<para>Calculation Type:</para>
+		</listitem>
+		<listitem>
+		<itemizedlist>
+			<listitem>
+				<para>On Net Total : This can be on net total (total amount without taxes).</para>
+			</listitem>
+			<listitem>
+				<para>On Previous Row Total/Amount: You can apply taxes on previous row total / amount. If you select this option, the tax will be applied as a percentage of the previous row (in the tax table) amount or total. Previous row amount means a particular tax amount.And, previous row total means net total plus taxes applied up to that row. In the Enter Row Field, mention row number on which you want to apply the current tax. If you want to apply the tax on the 3rd row, mention "3" in the Enter Row field.</para>
+			</listitem>
+			<listitem>
+				<para>Actual : Enter as per actual amount in rate column.</para>
+			</listitem>
+		</itemizedlist>
+		</listitem>
+		<listitem>
+			<para>Account Head: The Account ledger under which this tax will be booked</para>
+		</listitem>
+		<listitem>
+			<para>Cost Center: If the tax / charge is an income (like shipping) it needs to be booked against - a Cost Center.</para>
+		</listitem>
+		<listitem>
+			<para>Description: Description of the tax (that will be printed in invoices / quotes).</para>
+		</listitem>
+		<listitem>
+			<para>Rate: Tax rate.</para>
+		</listitem>
+		<listitem>
+			<para>Amount: Tax amount.</para>
+		</listitem>
+		<listitem>
+			<para>Total: Cumulative total to this point</para>
+		</listitem>
+		<listitem>
+			<para>Enter Row: If based on "Previous Row Total" you can select the row number which will be taken as a base for this calculation (default is the previous row).</para>
+		</listitem>
+		<listitem>
+			<para>Is this Tax included in Basic Rate?: If you check this, it means that this tax will not be shown below the item table, but will be included in the rate in your main item table. This is useful when you want to give a flat price (inclusive of all taxes) to your customers.</para>
+		</listitem>
+	</itemizedlist>
+	<para>Once you setup your template, you can select this in your sales transactions.</para>
+	</sect2>
+	<sect2>
+	<title>Purchase Taxes and Charges Master</title>
+	<para>
+	Similar to your Sales Taxes and Charges Master is the Purchase Taxes and Charges Master.
+	</para>
+	<para>
+	This is the tax template that you can use in your Purchase Orders and Purchase Invoices. If you have value added taxes (VAT), where you pay to the government the difference between your incoming and outgoing taxes, you can select the same Account that you use for sales taxes. For more details see Purchase Taxes.
+	</para>
+	<para>
+	The columns in this table are similar to the Sales Taxes and Charges Master with the difference as follows:
+	</para>
+	<para>
+	Consider Tax or Charge for: In this section you can specify if the tax / charge is only for valuation (not a part of total) or only for total (does not add value to the item) or for both.
+	</para>
+	</sect2>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Pos">
+	<title>POS Setting</title>
+	<para>
+	POS includes advanced features to cater to different functionality, such as inventory management, CRM, financials, warehousing, etc., all built into the POS software. Prior to the modern POS, all of these functions were done independently and required the manual re-keying of information, which could lead to entry errors.
+	</para>
+	<para>
+	If you are in retail operations, you want your Point of Sale to be as quick and efficient as possible. To do this, you can create a POS Setting for a user from:
+	</para>
+	<programlisting>
+	Accounts > Point-of-Sale Setting
+	</programlisting>
+	<para>
+	Set default values as defined.
+	</para>
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="./images/pos-setting.png" />
+		</imageobject>
+		<textobject><phrase>Sales Taxes Master</phrase></textobject>
+	</mediaobject>	
+	<warning>
+		<para>
+		If you specify a particular User, the POS setting will be applied only to that User. If the User option is left blank, the setting will be set for all users. To understand POS in detail visit Point of Sale	
+		</para>
+	</warning>
+</sect1>
+<sect1 id="chap-ERPNext-Manual_ERPNext-Setting_Up-Price">
+	<title>Price List</title>
+	<para>
+	ERPNext lets you maintain multiple selling and buying prices for an Item using Price Lists. A PriceList is a name you can give to a set of Item prices.
+	</para>
+	<para>
+	Why would you want Price Lists? You have different prices for different zones (based on the shipping costs), for different currencies etc.
+	</para>
+	<para>
+	An Item can have multiple prices based on customer, currency, region, shipping cost etc, which can be stored as different rate plans. In ERPNext, you are required to store all the lists separately. Buying Price List is different from Selling Price List and thus is stored separately.
+	</para>
+	<para>
+	Standard Buying and Selling Price List are created by default.
+	</para>
+	<para>
+	<emphasis role="Bold">Step to create Price List.</emphasis>
+	</para>
+	<para>
+	Step 1: Go to
+	</para>
+	<programlisting>
+	Selling/Buying/Stock > Setup > Price List >> New
+	</programlisting>
+	<para>
+	Step 2: Enter name of new Price List.
+	</para>
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="./images/price-list-name.png" />
+		</imageobject>
+		<textobject><phrase>Price List</phrase></textobject>
+	</mediaobject>
+	<para>
+	Step 3: Select Currency
+	</para>
+	<para>
+	Select Currency for this Price List. Currency option in Price List allows you to maintain item's price in Currency other than your companies base currency.
+	</para>
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="./images/price-list-currency.png" />
+		</imageobject>
+		<textobject><phrase>Price List Currency</phrase></textobject>
+	</mediaobject>
+	<para>
+	Step 4: Select Buying and Selling
+	</para>
+	<para>
+	Select for which transaction this Price List is application. Mostly it will be one of the Buying or Selling, however you can choose both as well.
+	</para>
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="./images/price-list-for.png" />
+		</imageobject>
+		<textobject><phrase>Price List Currency</phrase></textobject>
+	</mediaobject>
+	<para>
+	Step 5: Select Territory
+	</para>
+	<para>
+	Select Territory for which this Price List will be applicable.
+	</para>
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="./images/price-list-territory.png" />
+		</imageobject>
+		<textobject><phrase>Price List Currency</phrase></textobject>
+	</mediaobject>
+	<para>
+	Step 6: Save Price List.
+	</para>
+	<para>
+These Price List will be used when creating Item Price record to track selling or buying price of an item. Click here to learn more about Item Price.
+	</para>
+	<para>
+	To disable specific Price List, uncheck Enabled field in it. Disabled Price List will not be availale for selection in the Sales and Purchase transactions.
+	</para>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Authorization">
+	<title>Authorization Rule</title>
+	<para>
+	Authorization Rule is a tool to define rule for conditional authorization.
+	</para>
+	<para>
+	If you sales and purchase transactions of higher value or discount requires an authorization from senior manager, you can set authorization rule for it. To create new Authorization Rule, go to:
+	</para>
+	<programlisting>
+	Setup >> Customize >> Authorization Rule
+	</programlisting>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-SMS">
+	<title>SMS Setting</title>
+	<para>
+	To integrate SMS in ERPNext, approach a SMS Gateway Provider who provides HTTP API. They will create an account for you and will provide an unique username and password.
+	</para>
+	<para>
+	To configure SMS Settings in ERPNext, find out their HTTP API (a document which describes the method of accessing their SMS interface from 3rd party applications). In this document, you will get an URL which is used to send the SMS using HTTP request. Using this URL, you can configure SMS Settings in ERPNext.
+	</para>
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="./images/sms-setting2.jpg" />
+		</imageobject>
+		<textobject><phrase>SMS Settings</phrase></textobject>
+	</mediaobject>
+	<note>
+		<para>Note: the string up to the "?" is the SMS Gateway URL</para>
+	</note>
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="./images/sms-settings1.png" />
+		</imageobject>
+		<textobject><phrase>SMS Settings</phrase></textobject>
+	</mediaobject>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Stock_Reconciliation">
+	<title>Stock Reconciliation For Non Serialized Item</title>
+	<para>
+	Stock Reconciliation is the process of counting and evaluating stock-in-trade, usually at an organisations year end in order to value the total stock for preparation of the accounts. In this process actual physical stocks are checked and recorded in the system. The actual stocks and the stock in the system should be in agreement and accurate. If they are not, you can use the stock reconciliation tool to reconcile stock balance and value with actuals.
+	</para>
+	<para>
+	Difference between Serialized and Non-serialized Items.
+	</para>
+	<para>
+	A serial number is a unique, identifying number or group of numbers and letters assigned to an individual Item. Serialized items are generally high value items for which you need to warranty's and service agreements. Mostly items as machinery, equipments and high-value electronics (computers, printers etc.) are serialized.
+	</para>
+	<para>
+	Non Serialized items are generally fast moving and low value item, hence doesn't need tracking for each unit. Items like screw, cotton waste, other consumables, stationary products can be categorized as non-serialized.
+	</para>
+	<note>
+	<para>Stock Reconciliation option is available for the non serialized Items only. For seriazlized and batch items, you should create Material Receipt entry in Stock Entry form.</para>
+	</note>
+	<sect2>
+	<title>Opening Stocks</title>
+	<para>You can upload your opening stock balance in the system using Stock Reconciliation. Stock Reconciliation will update your stock for a given Item on a given date for a given Warehouse to the given quantity.
+	</para>
+	<note>
+	<para>Tip: Stock Reconciliation can also be used to update the “value” of an Item. To understand how Items are valued read Valuation.</para>
+	</note>
+	<para>
+	To perform Stock Reconciliation, go to:
+	</para>
+	<programlisting>Stock >> Tools >> Stock Reconciliation >> New Stock Reconciliation
+	</programlisting>
+		<sect3>
+		<title>Download Template</title>
+		<para>
+		A predefined template of an spreadsheet file should be followed for importing item's stock levels and valuations. Open new Stock Reconciliation form to see download option.
+		</para>
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="./images/stock-reco-template.png" />
+		</imageobject>
+		<textobject><phrase>Stock Reconciliation</phrase></textobject>
+	</mediaobject>
+		</sect3>
+		<sect3>
+		<title>Enter Data in csv file.</title>
+		<para>
+		Fill the template with the information than you want to update.
+		</para>
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="./images/stock-reco-data.png" />
+		</imageobject>
+		<textobject><phrase>Stock Reconciliation</phrase></textobject>
+	</mediaobject>
+	<para>
+	The csv format is case-sensitive. Do not edit the headers which are preset in the template. In the Item Code and Warehouse column, enter exact Item Code and Warehouse as created in your ERPNext account. For quatity, enter stock level you wish to set for that item, in a specific warehouse. If you do not want to change the quantity or valuation rate of an Item, you should leave it blank.
+	</para>
+	<note>
+		<para>Note: Make sure you do not put zero if you do not want to change the quantity amount or valuation amount. The system will calculate zero as zero quantity. So leave the field blank.</para>
+	</note>
+		</sect3>
+		<sect3>
+		<title>Upload file and Enter Values in Stock Reconciliation Form</title>
+		<para>
+		Save and upload your .csv file
+		</para>
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="./images/stock-reco-browse.png" />
+		</imageobject>
+		<textobject><phrase>Stock Reconciliation</phrase></textobject>
+	</mediaobject>
+		<para>
+		Posting Date: Posting Date will be date when you want uploaded stock to reflect in the report. Posting Date selection option allows you making back dated stock reconcialiation as well.
+		</para>
+		<para>
+		Difference Account:
+
+When making Stock Reconciliation for updating opening balance, then you should select Balance Sheet account. Bydefault Temporary Asset and Temporary Liability Account are created in the chart of account which can be used here. Since Warehouse ledger is debit account, Difference Account selected here should be "Temporary Liability Account", which is credit account.
+		</para>
+		<para>
+		If you are making Stock Reconciliation for correcting stock level or valuation of an item, then you can select any expense account in which you would want difference amount (derived from difference of valuation of item) should be booked. If Expense Account is selected as Difference Account, you will also need to select Cost Center as it is mandatory with any income and expense account selection.
+		</para>
+		<para>
+		After reviewing saved Reconciliation Data, submit the Stock Reconciliation. On successful submission, the data will be updated in the system. To check the submitted data go to stock and view stock level report.
+		</para>
+		<note>
+		<para>Note: While filling the valuation rates of Items, if you wish to find out the valuation rates of all items, you can go to stock and click on Item Prices report. The report will show you all types of rates.</para>
+		</note>
+		</sect3>
+		<sect3>
+		<title>Review the reconciliation data</title>
+		<para>
+		Verify your information.
+		</para>
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="./images/stock-reco-upload.png" />
+		</imageobject>
+		<textobject><phrase>Stock Reconciliation</phrase></textobject>
+	</mediaobject>	
+	</sect3>
+	</sect2>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Territory">
+	<title>Territory</title>
+	<para>
+	Territory is a place to signify where your customers come from. If you operate in one country, you can give that country name as your Territory. For Example, India, US, or Rest of the World, could be your Territories. If you operate in many locations, ERPNext allows you to create more Territories. You can also have child Territories under parent Territories. This helps in assigning different regions to different sales staff.
+	</para>
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="./images/territory-tree.png" />
+		</imageobject>
+		<textobject><phrase>Stock Reconciliation</phrase></textobject>
+	</mediaobject>	
+	<para>
+	To add more territories to an existing tree, click on "Add Child"
+	</para>
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="./images/territory-tree-1.png" />
+		</imageobject>
+		<textobject><phrase>Stock Reconciliation</phrase></textobject>
+	</mediaobject>
+</sect1>
+<sect1 id="chap-ERPNext-Manual_ERPNext-Setting_Up-Backups">
+	<title>Third Party Backups</title>
+	<para>
+	If you wish to store your backups on a periodic basis,on Dropbox, you can do it directly through ERPNext.
+	</para>
+	<programlisting>Setup > Manage 3rd Party Backups
+	</programlisting>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Workflows">
+	<title>Workflows</title>
+	<para>
+	In order to allow multiple people to submit multiple requests, for approvals, by multiple users, ERPNext requires you to fill the workflow conditions. ERPNext tracks the multiple permissions before submission.
+	</para>
+</sect1>
 </chapter>
 

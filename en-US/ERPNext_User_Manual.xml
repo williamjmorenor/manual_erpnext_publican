@@ -16,6 +16,9 @@
 	<xi:include href="Support.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	<xi:include href="Human_Resource.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	<xi:include href="Website.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="Collaboration.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="Guide.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="Customize.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	<xi:include href="Revision_History.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	<index />
 </book>

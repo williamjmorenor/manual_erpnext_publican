@@ -20,8 +20,7 @@
 		<para>
 		Customer Group is a category where you specify your customer group type. Your customers can be Individuals or they can be corporate(Company) customers. Your customers could also be government officials or non-profit organisations. ERPNext allows you to create your own Customer Groups. To create a new Customer Group, go to
 		</para>
-		<programlisting>
-		Selling > Setup > Customer Group
+		<programlisting>Selling > Setup > Customer Group
 		</programlisting>
 		<para>
 		Customer Group master is maintained in tree strcuture. This allows you to set parent Customer Groups, and Child Customer Groups under those Parent Groups. Setting up this structure shall allow you making intelligent sales report based on Customer Group master.
@@ -35,8 +34,7 @@
 		<para>
 		You can track Sales Personwise commission in the report under Selling module. To create a sales partner go to:
 		</para>
-		<programlisting>
-		Selling > Setup > Sales Partner
+		<programlisting>Selling > Setup > Sales Partner
 		</programlisting>
 		<para>
 		Sales Partners are saved with Sales Partner name provided by user.
@@ -50,8 +48,7 @@
 		<para>
 		The person who helps in selling your products or services is called a Sales Person. Sales Person master is maintained in tree struture. This allows you defining the heirarchy within the Sales Team. To add/edit Sales Person, go to:
 		</para>
-		<programlisting>
-		Selling > Setup > Sales Person
+		<programlisting>Selling > Setup > Sales Person
 		</programlisting>
 		<para>
 		A Sales Person Group called "Sales Team" will be created by default. You can click in it to find option to insert new parent and child Sales Person records. Sales Person master will be saved with the name of Sales Person.
@@ -67,8 +64,7 @@
 			<para>
 			When customer is saved, system generated unique ID for that Customer. Using that Customer ID, you can select Customer in other transactions. Bydefault Customer will be saved with Customer Name. If you wish to save Customer using a naming series, you should set Customer Naming By as "Naming Series". You can set Naming Series for customer naming from:
 			</para>
-			<programlisting>
-			Setup > Settings > Naming Series
+			<programlisting>Setup > Settings > Naming Series
 			</programlisting>
 		</sect3>
 		<sect3>
@@ -129,8 +125,7 @@
 		<para>
 		A customer, who is sometimes known as a client, buyer, or purchaser is the one who receives goods, services, products, or ideas, from a seller for a monetary consideration. A customer can also receive goods or services from a vendor or a supplier for other valuable considerations. You can either directly create your Customers via
 		</para>
-		<programlisting>
-		Selling > Customer
+		<programlisting>Selling > Customer
 		</programlisting>
 		<para>
 		or upload it via the Data Import Tool.
@@ -239,8 +234,7 @@
 		<para>
 		They are called Leads because they may lead you to a sale. Sales people usually work on leads by calling them, building a relationship and sending information about their products or services. It is important to track all this conversation to enable another person who may have to follow-up on that contact. The new person is then able to know the history of that particular Lead. To create a Lead, go to:
 		</para>
-		<programlisting>
-		Selling > Lead > New Lead
+		<programlisting>Selling > Lead > New Lead
 		</programlisting>
 		<para>
 		ERPNext gives you a lot of options you may want to store about your Leads. For example what is the source, how likely are they to give you business etc. If you have a healthy number of leads, this information will help you prioritize who you want to work with.
@@ -263,8 +257,7 @@
 		<para>
 		When you know a Lead is looking for some products or services to buy, you can track that as an Opportunity. You can create an Opportunity from:
 		</para>
-		<programlisting>
-		Selling > Opportunity > New Opportunity
+		<programlisting>Selling > Opportunity > New Opportunity
 		</programlisting>
 		<para>
 		You can also open a “Open” Lead and click on “Create Opportunity” button.
@@ -281,8 +274,7 @@
 		<para>
 		During a sale, the customer may request for a written note about the products or services you are planning to offer, along with the prices and other terms of engagement. This is called a “Proposal” or an “Estimate” or a “Pro Forma Invoice”or a Quotation. To create a new Quotation go to:
 		</para>
-		<programlisting>
-		Selling > Quotation > New Quotation
+		<programlisting>Selling > Quotation > New Quotation
 		</programlisting>
 		<para>
 		A Quotation contains details about:
@@ -341,8 +333,7 @@ To add taxes to your Quotation, you can either select a tax template, Sales Taxe
 			<para>
 			Each Quotation must ideally contain a set of terms, of your contract. It is usually a good idea to make templates of your Terms and Conditions, so that you have a standard set of terms. You can do this by going to:
 			</para>
-			<programlisting>
-			Selling > Terms and Conditions
+			<programlisting>Selling > Terms and Conditions
 			</programlisting>
 			<sect3>
 				<title>What should Terms and Conditions Contain?</title>
@@ -401,8 +392,7 @@ To add taxes to your Quotation, you can either select a tax template, Sales Taxe
 		<para>
 		Alternatively, you can create a Sales Order directly from:
 		</para>
-		<programlisting>
-		Selling > Sales Order > New Sales Order
+		<programlisting>Selling > Sales Order > New Sales Order
 		</programlisting>
 		<para>
 		Most of the information in your Sales Order is the same as the Quotation. There are a few amongst other things that a Sales Order will ask you to update.

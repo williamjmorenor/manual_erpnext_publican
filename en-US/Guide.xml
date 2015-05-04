@@ -2,7 +2,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "Manual_ERPNext.ent">
 %BOOK_ENTITIES;
 ]>
-<chapter id="chap-ERPNext-Manual_ERPNext-Guide">
+<appendix id="chap-ERPNext-Manual_ERPNext-Guide">
 	<title>Guide Books</title>
 	<para>
 	Guide Books.
@@ -218,4 +218,4 @@
 		</para>
 		</sect2>
 	</sect1>
-</chapter>
+</appendix>

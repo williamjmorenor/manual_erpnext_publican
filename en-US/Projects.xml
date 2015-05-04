@@ -131,8 +131,7 @@
 			<para>
 			To create a new Time Log, you can go to
 			</para>
-			<programlisting>
-			Projects > Time Log > new Time Log
+			<programlisting>Projects > Time Log > new Time Log
 			</programlisting>
 			<para>
 			You can also create a new Time Log via Calendar.

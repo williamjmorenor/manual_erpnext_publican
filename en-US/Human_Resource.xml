@@ -15,22 +15,19 @@
 		<para>
 		There are many fields you can add in your Employee records. As the organisation grows, it becomes difficult to manage more records. It is advisable to keep updating and entering records to facilitate data management of employees. Employee records also help in keeping a list of your team’s skills, previous employment history and emergency information. To create new Employee go to:
 		</para>
-		<programlisting>
-		HR > Employee > New Employee
+		<programlisting>HR > Employee > New Employee
 		</programlisting>
 		<sect2>
 			<title>Numbering Employees (Employee ID)</title>
 			<para>
 			By default, in ERPNext Employee Records are Numbered. You can have multiple series if you are a really large company and want to have separate numbering series for separate locations etc. You can set the numbering series just like any other transaction by going to:
 			</para>
-			<programlisting>
-			Setup > Customize > Document Numbering Series.
+			<programlisting>Setup > Customize > Document Numbering Series.
 			</programlisting>
 			<para>
 			Alternatively, you can create employees by the “Employee Number” field if you already have an existing Employee Numbering system you want to follow. To set this, go to:
 			</para>
-			<programlisting>
-			Setup > Global Defaults > HR
+			<programlisting>Setup > Global Defaults > HR
 			</programlisting>
 		</sect2>
 	</sect1>
@@ -39,14 +36,12 @@
 		<para>
 		Fixed number of leaves per Employee can be allocated using the Leave Allocation Tool. If you have special leaves to be allocated, you can also allocate them manually by creating new Leave Allocation records.
 		</para>
-		<programlisting>
-		HR > Leave Allocation > New Leave Allocation
+		<programlisting>HR > Leave Allocation > New Leave Allocation
 		</programlisting>
 		<para>
 		If your company has a formal system where Employees have to apply for leaves to be able to qualify as paid leaveas, you can create Leave Application to track approval and usage of leaves. You have to mention the Employee, Leave Type and the period for which the leave is taken. If you want specific users to approve leaves, you can give “Submission” rights to those users only.
 		</para>
-		<programlisting>
-		HR > Leave Application > Make New Leave Application
+		<programlisting>HR > Leave Application > Make New Leave Application
 		</programlisting>
 		<para>
 		If you want all users to create their own Leave Applications, you can set their “Employee ID” as a match rule in the Leave Application Permission settings.
@@ -57,14 +52,12 @@
 		<para>
 		An Attendance record stating that an Employee has been present on a particular day can be created manually by:
 		</para>
-		<programlisting>
-		HR > Attendance > New Attendance ￼
+		<programlisting>HR > Attendance > New Attendance 
 		</programlisting>
 		<para>
 		It can also be done by collecting attendance information via an automated system like a swipe card. You can even upload a CSV file with the attendance information. You can get a monthly report of your Attendance data by going to the “Monthly Attendance Details” report. To upload the attendance go to:
 		</para>
-		<programlisting>
-		HR > Upload Attendance
+		<programlisting>HR > Upload Attendance
 		</programlisting>
 	</sect1>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Human_Resource-Salary">
@@ -118,8 +111,7 @@
 			<para>
 			To create a new Salary Structure go to:
 			</para>
-			<programlisting>
-			HR > Salary Structure > New Salary Structure
+			<programlisting>HR > Salary Structure > New Salary Structure
 			</programlisting>
 			<para>
 			In the Salary Structure:
@@ -146,8 +138,7 @@
 				<para>
 				Once the Salary Structure is created, you can make a salary slip from the same form or you can process your payroll for the month using the Salary Manager. To create a salary slip from Salary Structure, click on the button Make Salary Slip. Through Salary Manager:
 				</para>
-				<programlisting>
-				HR > Process Payroll
+				<programlisting>HR > Process Payroll
 				</programlisting>
 				<para>
 				In the Salary Manager tool:
@@ -186,8 +177,7 @@
 		<para>
 		Expense Claim is made when Employee’s make expenses out of their pocket on behalf of the company. For example, if they take a customer out for lunch, they can make a request for reimbursement via the Expense Claim form. To make a new Expense Claim, go to:
 		</para>
-		<programlisting>
-		HR > Expense Claim > New Expense Claim
+		<programlisting>HR > Expense Claim > New Expense Claim
 		</programlisting>
 		<para>
 		Set the Employee ID, date and the list of expenses that are to be claimed and “Submit” the record.
@@ -216,8 +206,7 @@
 		<para>
 		In ERPNext, you can manage Employee Appraisals by creating an Appraisal Template for each role with the parameters that define the performance by giving appropriate weightage to each parameter.
 		</para>
-		<programlisting>
-		HR > Appraisal > New Appraisal
+		<programlisting>HR > Appraisal > New Appraisal
 		</programlisting>
 		<para>
 		Step 1: Select an Appraisal Template. After you select the template, the remaining form appears.
@@ -234,8 +223,7 @@
 		<para>
 		Holiday List is a list which contains the dates of holidays along with the occasion of that holiday. The list is generally valid for one calendar year. Most organisations have a standard Holiday-List for their employees. Some even have different holiday lists for laborers and a different one for management staff. To set up a holiday list in the system, Go to Human Resources Module and Click on Holiday List.
 		</para>
-		<programlisting>
-		Human Resources >Holiday List > New Holiday List
+		<programlisting>Human Resources >Holiday List > New Holiday List
 		</programlisting>
 		<para>
 		Step 1: Give a name to the Holiday list.

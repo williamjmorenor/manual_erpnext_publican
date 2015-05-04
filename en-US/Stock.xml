@@ -116,8 +116,7 @@ We believe if you do this small investment, it will help you rationalize things 
 	<para>
 	To go to Warehouse, click on Stock and go to Warehouse under Masters. You could also go to the Setup module and click on Warehouse under Master Data.
 	</para>
-	<programlisting>
-	Stock > Warehouse > New Warehouse
+	<programlisting>Stock > Warehouse > New Warehouse
 	</programlisting>
 	<para>
 	In ERPNext, every Warehouse must belong to a specific company, to maintain company wise stock balance. The Warehouses are saved with their respective company’s abbreviations. This facilitates in identifying which Warehouse belongs to which company, at a glance.
@@ -143,8 +142,7 @@ We believe if you do this small investment, it will help you rationalize things 
 	<para>
 	You can also create your own Item groups .
 	</para>
-	<programlisting>
-	Stock > Item Group
+	<programlisting>Stock > Item Group
 	</programlisting>
 	</sect1>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Stock-Serialized">
@@ -203,8 +201,7 @@ We believe if you do this small investment, it will help you rationalize things 
 	<para>
 	On every stock transaction (Purchase Receipt, Delivery Note, POS Invoice) made for batch item, you should provider item's Batch No. To create new Batch No. master for an item, go to:
 	</para>
-	<programlisting>
-	Stock > Setup > Batch > New
+	<programlisting>Stock > Setup > Batch > New
 	</programlisting>
 	<para>
 	Batch master is created before creation of Purchase Receipt. Hence eveytime their is Purchase Receipt or Production entry being made for a batch item, you will first create its Batch No, and then select it in Purcase order or Production Entry.
@@ -230,8 +227,7 @@ We believe if you do this small investment, it will help you rationalize things 
 	<para>
 	You can make a Purchase Receipt directly from:
 	</para>
-	<programlisting>
-	Stock > Purchase Receipt > New Purchase Receipt
+	<programlisting>Stock > Purchase Receipt > New Purchase Receipt
 	</programlisting>
 	<para>
 	or from a “Submitted” Purchase Order, by clicking on “Make Purchase Receipt”.
@@ -292,8 +288,7 @@ We believe if you do this small investment, it will help you rationalize things 
 	<para>
 	A Delivery Note is made when a shipment is shipped from the company’s Warehouse. A copy of the Delivery Note is usually sent with the transporter. The Delivery Note contains the list of Items that are sent in the shipment and updates the inventory. The entry of the Delivery Note is very similar to a Purchase Receipt. You can create a new Delivery Note from:
 	</para>
-	<programlisting>
-	Stock > Delivery Note > New Delivery Note
+	<programlisting>Stock > Delivery Note > New Delivery Note
 	</programlisting>
 	<para>
 	or from a “Submitted” Sales Order (that is not already shipped) by clicking on “Make Delivery Note”.
@@ -312,8 +307,7 @@ We believe if you do this small investment, it will help you rationalize things 
 		<para>
 		If you are doing container shipment or by weight, then you can use the Packing Slip to breakup your Delivery Note into smaller units. To make a Packing Slip go to:
 		</para>
-		<programlisting>
-		Stock > Packing Slip > New Packing Slip
+		<programlisting>Stock > Packing Slip > New Packing Slip
 		</programlisting>
 		<para>
 		You can create multiple Packing Slips for your Delivery Note and ERPNext will ensure that the quantities in the Packing Slip do not exceed the quantities in the Delivery Note.
@@ -337,8 +331,7 @@ We believe if you do this small investment, it will help you rationalize things 
 	<para>
 	A Stock Entry is a simple document that lets you record Item movement from a Warehouse, to a Warehouse and between Warehouses. To make a Stock Entry you have to go to:
 	</para>
-	<programlisting>
-	Stock > Stock Entry
+	<programlisting>Stock > Stock Entry
 	</programlisting>
 	<para>
 	This can also be useful in tracking:
@@ -366,8 +359,7 @@ We believe if you do this small investment, it will help you rationalize things 
 	<para>
 	A Warehouse stocks materials required for manufacturing or trading. The Material Issue form has to be submitted to order materials out of a Warehouse by any department.
 	</para>
-	<programlisting>
-	Stock > Stock Entry > New Stock Entry
+	<programlisting>Stock > Stock Entry > New Stock Entry
 	</programlisting>
 	<para>
 	Go to Stock Entry. Click on New Stock Entry Select the option “Material Issue” under Purpose. Provide Source Warehouse details. Provide the BOM Number. Save
@@ -381,8 +373,7 @@ We believe if you do this small investment, it will help you rationalize things 
 	<para>
 	Goods sold being returned is quite a common practice in Business. They could be returned by the customer on quality issues, non-delivery on agreed date, or any other reason. ERPNext allows this transaction for ease of accounting.
 	</para>
-	<programlisting>
-	Stock > Stock Entry > New Stock Entry
+	<programlisting>Stock > Stock Entry > New Stock Entry
 	</programlisting>
 	<para>
 	Step 1: Select Purpose as "Sales Return"
@@ -425,8 +416,7 @@ We believe if you do this small investment, it will help you rationalize things 
 	<para>
 	ERPNext has an option to account for products that are returned to the supplier. This may be on account of a number of reasons like defects in goods, quality not matching, the buyer not needing the stock, etc. The transactions dealing with return of goods are also accounting transactions and have to be recorded in the books of accounts just like any other accounting transaction.
 	</para>
-	<programlisting>
-	Stock > Stock Entry > New Stock Entry
+	<programlisting>Stock > Stock Entry > New Stock Entry
 	</programlisting>
 	<para>
 	Step 1: Select Purpose as Purchase Return. Enter Purchase Return No and the Default Source Warehouse. Source Warehouse is a place from where you issue or transfer materials.
@@ -487,8 +477,7 @@ We believe if you do this small investment, it will help you rationalize things 
 		<para>
 		Having a tight control of the projected inventory is crucial to determine shortages and to calculate the right order quantity.
 		</para>
-		<programlisting>
-		Projected Qty = Actual Qty + Planned Qty + Requested Qty + Ordered Qty - Reserved Qty
+		<programlisting>Projected Qty = Actual Qty + Planned Qty + Requested Qty + Ordered Qty - Reserved Qty
 		</programlisting>
 		<itemizedlist>
 			<listitem>
@@ -567,8 +556,7 @@ We believe if you do this small investment, it will help you rationalize things 
 					<para>Activate Perpetual Inventory</para>
 				</listitem>
 			</orderedlist>
-			<programlisting>
-			Setup > Accounts Settings > Make Accounting Entry For Every Stock Movement
+			<programlisting>Setup > Accounts Settings > Make Accounting Entry For Every Stock Movement
 			</programlisting>
 		</sect3>
 		<sect3>
@@ -614,8 +602,7 @@ The difference between the value of the items remaining to be sold and the previ
 				</listitem>
 				<listitem>
 					<para>Activate Perpetual Inventory</para>
-					<programlisting>
-					Setup > Accounts Settings > Make Accounting Entry For Every Stock Movement
+					<programlisting>Setup > Accounts Settings > Make Accounting Entry For Every Stock Movement
 					</programlisting>
 				</listitem>
 			<listitem>
@@ -672,8 +659,7 @@ The difference between the value of the items remaining to be sold and the previ
 			<para>Moving Average: In this method, ERPNext assumes that the value of the item at any point is the average price of the units of that Item in stock. For example, if the value of an Item is X in a Warehouse with quantity Y and another quantity Y1 is added to the Warehouse at cost X1, the new value X2 would be:</para>
 		</listitem>
 	</itemizedlist>
-		<programlisting>
-		New Value X2 = (X * Y + X1 * Y1) / (Y + Y1)
+		<programlisting>New Value X2 = (X * Y + X1 * Y1) / (Y + Y1)
 		</programlisting>
 	</sect1>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Stock-Opening">
@@ -681,8 +667,7 @@ The difference between the value of the items remaining to be sold and the previ
 	<para>
 	Opening Stock is the Stock quantity in the beginning of every accounting year of an organisation. The closing Stock with the prior accounting year becomes the opening Stock with the existing accounting year. Opening Stock can be done for serialized Items as well as non-serialized Items.To update opening stock for non-serialized Item, you should perform Stock Reconciliation. For serialised Item, you can make Stock Entry of type Material Receipt.
 	</para>
-	<programlisting>
-	Stock > Stock Reconciliation > New Stock Reconciliation
+	<programlisting>Stock > Stock Reconciliation > New Stock Reconciliation
 	</programlisting>
 	<para>
 	In both cases, you should enter "Difference/Expense Account" as Temporary Opening account. On submission of the document, system will debit Warehouse account which is an asset account and credit difference/expense account. Before making these entries, make sure you have enabled "Perpetual Inventory" by checking Stock Settings page. If you are not making opening Stock Entry, you can select "Stock Adjustment" account in Difference/Expense Account field which is an expense account.
@@ -712,8 +697,7 @@ The difference between the value of the items remaining to be sold and the previ
 			<para>
 			You can update landed cost any time in the future via Landed Cost Voucher.
 			</para>
-			<programlisting>
-			Stock > Tools > Landed Cost Voucher
+			<programlisting>Stock > Tools > Landed Cost Voucher
 			</programlisting>
 			<para>
 			In the document, you can select multiple Purchase Receipts and fetch all items from those Purchase Receipts. Then you should add applicable charges in “Taxes and Charges” table. You can easily delete an item if the added charges is not applicable to that item. The added charges are proportionately distributed among all the items based their amount.

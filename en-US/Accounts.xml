@@ -79,8 +79,7 @@
 		<para>
 		You can create a Sales Invoice directly from
 		</para>
-		<programlisting>
-		Accounting > Documents > Sales Invoice > New Sales Invoice
+		<programlisting>Accounting > Documents > Sales Invoice > New Sales Invoice
 		</programlisting>
 		<para>
 		or Click on Make Invoice at the right hand corner of the Delivery Note.
@@ -148,8 +147,7 @@
 		<para>
 		To make a new Purchase Invoice, go to:
 		</para>
-		<programlisting>
-		Accounts > Documents > Purchase Invoice > New Purchase Invoice
+		<programlisting>Accounts > Documents > Purchase Invoice > New Purchase Invoice
 		</programlisting>
 		<para>
 		or click on “Make Purchase Invoice” in Purchase Order or Purchase Receipt.
@@ -265,8 +263,7 @@
 		<para>
 		To use this, go to:
 		</para>
-		<programlisting>
-		Accounts > Tools > Bank Reconciliation
+		<programlisting>Accounts > Tools > Bank Reconciliation
 		</programlisting>
 		<para>
 		Select your “Bank” Account and enter the dates of your statement. Here you will get all the “Bank Voucher” type entries. In each of the entry on the right most column, update the “Clearance Date” and click on “Update”.
@@ -312,8 +309,7 @@
 		<para>
 		In such cases, you can use the Payment to Invoice Matching Tool.
 		</para>
-		<programlisting>
-		Accounts > Tools > Payment Reconciliation
+		<programlisting>Accounts > Tools > Payment Reconciliation
 		</programlisting>
 		<para>
 		In this tool, you can select an account (your Customer’s account) and click on “Pull Payment Entries” and it will select all un-linked Journal Vouchers and Sales Invoices from that Customer.
@@ -334,8 +330,7 @@
 		<para>
 		Go to Accounts and open a new Journal Voucher to make the advance entry.
 		</para>
-		<programlisting>
-		Accounts > Documents > Journal Voucher > New Journal Voucher
+		<programlisting>Accounts > Documents > Journal Voucher > New Journal Voucher
 		</programlisting>
 		<para>
 		Mention the voucher type as cash voucher. This differs for different customers. If somebody pays by cheque the voucher type will be Bank Voucher. Then select the customer account and make the respective debit and credit entries.
@@ -367,8 +362,7 @@
 		<para>
 		To create a Journal Voucher go to:
 		</para>
-		<programlisting>
-		Accounts > Documents > Journal Voucher > New Journal Voucher
+		<programlisting>Accounts > Documents > Journal Voucher > New Journal Voucher
 		</programlisting>
 		<para>
 		In a Journal Voucher, you must select.
@@ -449,8 +443,7 @@
 		<para>
 		To set credit limit go to Customer- Master
 		</para>
-		<programlisting>
-		Selling > Document > Customer
+		<programlisting>Selling > Document > Customer
 		</programlisting>
 		<para>
 		Go to the 'More Info section' and enter the amount in the field Credit Limit.
@@ -526,8 +519,7 @@
 				Make sure to set “Is Opening” as “Yes” in the More Info section.
 				</para>
 				</note>
-				<programlisting>
-				Setup > Opening Accounts and Stock > Opening Accounting Entries.
+				<programlisting>Setup > Opening Accounts and Stock > Opening Accounting Entries.
 				</programlisting>
 				<para>
 				Complete Journal Entries on the Debit and Credit side.
@@ -600,8 +592,7 @@
 		<para>
 		By doing this, your balance in your Income and Expense Accounts become zero. You start a new Fiscal Year (or period) with a balanced Balance Sheet and fresh Profit and Loss account. In ERPNext after making all the special entries via Journal Voucher for the current fiscal year, you should set all your Income and Expense accounts to zero via:
 		</para>
-		<programlisting>
-		Accounts > Tools > Period Closing Voucher
+		<programlisting>Accounts > Tools > Period Closing Voucher
 		</programlisting>
 		<para>
 		Posting Date will be when this entry should be executed. If your Fiscal Year ends on 31st December, then that date should be selected as Posting Date in the Period Closing Voucher.
@@ -671,8 +662,7 @@
 		<para>
 		To add clearance entries go to:
 		</para>
-		<programlisting>
-		Accounts > Tools > Bank Reconciliation
+		<programlisting>Accounts > Tools > Bank Reconciliation
 		</programlisting>
 		<sect2>
 			<title>Bank Reconciliation Tool</title>
@@ -707,8 +697,7 @@
 		<para>
 		In order to allocate budget, go to
 		</para>
-		<programlisting>
-		Accounts > Setup > Chart of Cost Centers
+		<programlisting>Accounts > Setup > Chart of Cost Centers
 		</programlisting>
 		<para>
 		and click on Chart of Cost Center. Select a Cost Center and click on Open.
@@ -754,8 +743,7 @@
 		<para>
 		To edit your Chart of Accounts in ERPNext go to:
 		</para>
-		<programlisting>
-		Accounts > Setup > Chart of Accounts
+		<programlisting>Accounts > Setup > Chart of Accounts
 		</programlisting>
 		<para>
 		Chart of Accounts is a tree view of the names of the Accounts (Ledgers and Groups) that a Company requires to manage its books of accounts. ERPNext sets up a simple chart of accounts for each Company you create, but you have to modify it according to your needs and legal requirements. ￼ For each company, Chart of Accounts signifies the way to classify the accounting entries, mostly based on statutory (tax, compliance to government regulations) requirements.
@@ -865,8 +853,7 @@
 			<para>
 			To setup your Chart of Cost Centers go to:
 			</para>
-			<programlisting>
-			Accounts > Setup > Chart of Cost Centers
+			<programlisting>Accounts > Setup > Chart of Cost Centers
 			</programlisting>
 			<para>
 			Cost centers help you in one more activity, budgeting.
@@ -883,8 +870,7 @@
 			<para>
 			You can define it in the Cost Center. If you have seasonal sales you can also define a budget distribution that the budget will follow.
 			</para>
-			<programlisting>
-			Accounts > Setup > Budget Distribution > New Budget Distribution
+			<programlisting>Accounts > Setup > Budget Distribution > New Budget Distribution
 			</programlisting>
 			<sect3>
 				<title>Budget Actions</title>
@@ -934,8 +920,7 @@
 		<para>
 		To go to Payment Tool, go to:
 		</para>
-		<programlisting>
-		Accounts > Tools > Payment Tool
+		<programlisting>Accounts > Tools > Payment Tool
 		</programlisting>
 		<orderedlist>
 			<listitem>
@@ -1010,8 +995,7 @@
 			<orderedlist>
 				<listitem>
 					<para>Enable POS View via
-					<programlisting>
-					(Setup > Customize > Feature Setup)
+					<programlisting>(Setup > Customize > Feature Setup)
 					</programlisting>
 					</para>
 				</listitem>

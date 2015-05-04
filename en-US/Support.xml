@@ -15,8 +15,7 @@
 		<para>
 		Issue is an incoming query from your Customer, usually via email or from the “Contact” section of your website. (To fully integrate the Support Ticket to email, see the Email Settings section). To create a new Issue, go to:
 		</para>
-		<programlisting>
-		Support > Issue > New Issue
+		<programlisting>Support > Issue > New Issue
 		</programlisting>
 		<note>
 		<para>A dedicated support email id is a good way to integrate incoming queries via email. For example, you can send support queries to ERPNext at support@erpnext.com and it will automatically create a Issue in the Frappe system.</para>
@@ -56,8 +55,7 @@
 		<para>
 		You must also add a description of the Customer’s issue and assign it to the person who needs to look into solving the issue. To create a new Customer Issue:
 		</para>
-		<programlisting>
-		Support > Customer Issue > New Customer Issue
+		<programlisting>Support > Customer Issue > New Customer Issue
 		</programlisting>
 		<para>
 		If a Customer visit is required to address the issue, you can create a new Maintenance Visit record from this.
@@ -68,8 +66,7 @@
 		<para>
 		A Maintenance Visit is a record of a visit made by an engineer to a Customer’s premise usually against a Customer Issue. You can create a new Maintenance Visit from:
 		</para>
-		<programlisting>
-		Support > Maintenance Visit > New Maintenance Visit
+		<programlisting>Support > Maintenance Visit > New Maintenance Visit
 		</programlisting>
 		<para>
 		The Maintenance Visit contains information about the:
@@ -98,8 +95,7 @@
 		<para>
 		All machines require regular maintenance, specially those that contain a lot of moving parts, so if you are in the business of maintaining those or have some of them in your own premises, this is a useful tool to plan a calendar of activities for its maintenance. If the Customer Issue refers to “Breakdown Maintenance”, this refers to “Preventive Maintenance”. To create a new Maintenance Schedule go to:
 		</para>
-		<programlisting>
-		Support > Maintenance Schedule > New Maintenance Schedule
+		<programlisting>Support > Maintenance Schedule > New Maintenance Schedule
 		</programlisting>
 		<para>
 		In the Maintenance Schedule, there are two sections:

@@ -2,7 +2,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "Manual_ERPNext.ent">
 %BOOK_ENTITIES;
 ]>
-<chapter id="chap-ERPNext-Manual_ERPNext-Customize">
+<appendix id="chap-ERPNext-Manual_ERPNext-Customize">
 	<title>Collaboration Tools</title>
 	<para>
 	Text
@@ -85,4 +85,4 @@
 		Text
 		</para>
 	</sect1>
-</chapter>
+</appendix>

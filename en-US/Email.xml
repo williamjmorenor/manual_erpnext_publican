@@ -137,8 +137,7 @@
 		<para>
 		To set up Email Digest, go to:
 		</para>
-		<programlisting>
-		Setup > Email > Email Digest
+		<programlisting>Setup > Email > Email Digest
 		</programlisting>
 	</sect2>
 	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Email-Sending">
