@@ -5,7 +5,7 @@ To make a Stock Entry you have to go to:
 
 > Stock > Stock Entry
 
-![Stock Entry](assets/manual_erpnext_com/old_images/erpnext/stock-entry.png)
+![Stock Entry](/assets/manual_erpnext_com/old_images/erpnext/stock-entry.png)
 
 This can also be useful in tracking:
 
@@ -22,3 +22,4 @@ Warehouse” or both (if you are recording a movement).
 
 > **Note:** To update Stock from a spreadsheet, see Stock Reconciliation.
 
+{next}

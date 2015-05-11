@@ -9,14 +9,14 @@ You can either directly create your Customers via
 
 or upload it via the Data Import Tool.
 
-![Customer Master](assets/manual_erpnext_com/old_images/erpnext/customer.png)
+![Customer Master](/assets/manual_erpnext_com/old_images/erpnext/customer.png)
 
 > Note: Customers are separate from Contacts and Addresses. A Customer can
 have multiple Contacts and Addresses.
 
 ### Contacts and Addresses
 
-￼ Contacts and Addresses in ERPNext are stored separately so that you can
+Contacts and Addresses in ERPNext are stored separately so that you can
 attach multiple Contacts or Addresses to Customers and Suppliers.
 
 To add a Contact or Address directly from the Customer record, click on “New
@@ -68,9 +68,9 @@ based on your domain).
 
 > Tip: If you think all this is too much effort, you can leave it at “Default
 Customer Group”. But all this effort, will pay off when you start getting
-reports. ￼ An example of a sample report is given below:
+reports. An example of a sample report is given below:
 
-![Sales Analytics](assets/manual_erpnext_com/old_images/erpnext/sales-analytics-customer.png)
+![Sales Analytics](/assets/manual_erpnext_com/old_images/erpnext/sales-analytics-customer.png)
 
 ### Territory
 
@@ -97,3 +97,4 @@ Partner.
 If you sell to your Sales Partner who in-turn sells it to the Customer, then
 you must make a Customer instead.
 
+{next}

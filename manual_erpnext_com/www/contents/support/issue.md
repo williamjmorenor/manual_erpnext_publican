@@ -7,11 +7,11 @@ queries via email. For example, you can send support queries to ERPNext at
 support@erpnext.com and it will automatically create a Issue in the
 Frappe system.
 
-  
+
 
 > Support > Issue > New Issue
 
-![Issue](assets/manual_erpnext_com/old_images/erpnext/support-ticket.png)
+![Issue](/assets/manual_erpnext_com/old_images/erpnext/support-ticket.png)
 
 #### Discussion Thread
 
@@ -44,3 +44,4 @@ You can allocate the Issue by using the “Assign To” feature in the
 right sidebar. This will add a new To Do to the user and also send a message
 indicating that this Issue is allocated.
 
+{next}

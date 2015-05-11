@@ -9,13 +9,13 @@ or open a “Open” Lead and click on “Create Opportunity” button.
 
 #### Figure 1: Create Oportunity 
 
-![Opportunity](assets/manual_erpnext_com/old_images/erpnext/opportunity.png)
+![Opportunity](/assets/manual_erpnext_com/old_images/erpnext/opportunity.png)
 
 You can also open a “Open” Lead and click on “Create Opportunity” button.
 
 #### Figure 2: Create Opportunity from an open Lead
 
-![Opportunity 1](assets/manual_erpnext_com/old_images/erpnext/opportunity-1.png)
+![Opportunity 1](/assets/manual_erpnext_com/old_images/erpnext/opportunity-1.png)
 
 An Opportunity can also come from an existing Customer. You can create
 multiple Opportunities against the same Lead. In Opportunity, apart from the
@@ -27,3 +27,4 @@ Pipeline” this is what you need to track if you want to be able to predict how
 much business you are going to get in the future. Its always a good idea to be
 able to track what is coming in order to adjust your resources.
 
+{next}

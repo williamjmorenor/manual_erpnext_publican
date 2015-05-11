@@ -1,7 +1,7 @@
 Your Chart of Accounts is mainly designed to provide reports to the government
-and tax authorities. ￼ Most businesses have multiple activities like different
+and tax authorities. Most businesses have multiple activities like different
 product lines, market segments, areas of business, etc that share some common
-overheads.They should ideally have their own structure to report, whether they
+overheads. They should ideally have their own structure to report, whether they
 are profitable or not. For this purpose, there is an alternate structure,
 called the Chart of Cost Centers.
 
@@ -35,7 +35,7 @@ To setup your Chart of Cost Centers go to:
 
 > Accounts > Setup > Chart of Cost Centers
 
-![Chart of Cost Center](assets/manual_erpnext_com/old_images/erpnext/chart-of-cost-centers.png)
+![Chart of Cost Center](/assets/manual_erpnext_com/old_images/erpnext/chart-of-cost-centers.png)
 
 Cost centers help you in one more activity, budgeting.
 
@@ -56,9 +56,7 @@ define a budget distribution that the budget will follow.
 
 > Accounts > Setup > Budget Distribution > New Budget Distribution
 
-![Budget Distribution](assets/manual_erpnext_com/old_images/erpnext/budgeting.png)
-
-￼
+![Budget Distribution](/assets/manual_erpnext_com/old_images/erpnext/budgeting.png)
 
 #### Budget Actions
 
@@ -80,3 +78,4 @@ Center. For example if you have a Cost Center “Online Sales”, you can restri
 “Advertising Budget” by creating a row with that Account and defining the
 amount.
 
+{next}

@@ -10,7 +10,7 @@ You can make a Purchase Receipt directly from:
 
 or from a “Submitted” Purchase Order, by clicking on “Make Purchase Receipt”.
 
-![Purchase Receipt](assets/manual_erpnext_com/old_images/erpnext/purchase-receipt.png)
+![Purchase Receipt](/assets/manual_erpnext_com/old_images/erpnext/purchase-receipt.png)
 
 ### Rejections
 
@@ -74,3 +74,5 @@ will come to know of Customs Duty etc only when your “Clearing Agent” sends
 you a bill. If you want to attribute this cost to your purchased Items, you
 will have to use the Landed Cost Wizard. Why “Landed Cost”? Because it
 represents the charges that you paid when it landed in your possession.
+
+{next}

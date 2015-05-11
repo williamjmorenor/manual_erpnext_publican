@@ -27,7 +27,7 @@ setup, check the box that says Item Barcode.
   
 #### Figure 1: Check the box 'Item Barcode'
 
-![](assets/manual_erpnext_com/old_images/erpnext/barcode-1.png)  
+![](/assets/manual_erpnext_com/old_images/erpnext/barcode-1.png)  
 
   
 
@@ -59,7 +59,7 @@ Then go to Accounts and click on Sales Invoice. Check the box 'Is POS'
   
 #### Figure 2: Check the box 'Is POS'
 
-![](assets/manual_erpnext_com/old_images/erpnext/barcode-2.png)  
+![](/assets/manual_erpnext_com/old_images/erpnext/barcode-2.png)  
 
   
 
@@ -72,3 +72,4 @@ Go to Item and click on Add new row.
 The cursor will automatically be placed in the bar-code field. Thus you can
 immediately scan the bar-code and proceed with your operations.
 
+{next}

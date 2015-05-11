@@ -8,7 +8,7 @@ Orders and Purchase Invoices.
 > Buying > Setup > Purchase Taxes and Charges Master > New Purchase Taxes and Charges
 Master
 
-![Purchase-Taxes](assets/manual_erpnext_com/old_images/erpnext/purchase-taxes.png)
+![Purchase-Taxes](/assets/manual_erpnext_com/old_images/erpnext/purchase-taxes.png)
 
   
 
@@ -35,3 +35,4 @@ amount or total. Actual (as mentioned).
   * **Consider Tax or Charge for:** In this section you can specify if the tax / charge is only for valuation (not a part of total) or only for total (does not add value to the item) or for both.
   * **Add or Deduct:** Whether you want to add or deduct the tax.
 
+{next}

@@ -25,7 +25,7 @@ Invoice or Journal Voucher.
 
 #### Figure 1: Payment Reconciliation.
 
-![](assets/manual_erpnext_com/old_images/erpnext/payment-reconciliation-1.png)  
+![](/assets/manual_erpnext_com/old_images/erpnext/payment-reconciliation-1.png)  
 
   
 
@@ -48,4 +48,4 @@ You will get a message that says 'Amount allocated successfully'
 __Step 6:__ Click again on 'Pull Payment Entries' to refresh the tables with
 filters.
 
-  
+{next}

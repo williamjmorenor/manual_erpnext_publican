@@ -6,7 +6,7 @@ To create a new Web Page, go to:
 
 > Website > Web Page > New Web Page
 
-![Web Page](assets/manual_erpnext_com/old_images/erpnext/webpage.png)
+![Web Page](/assets/manual_erpnext_com/old_images/erpnext/webpage.png)
 
 #### Title
 
@@ -31,3 +31,4 @@ page will be yoursite.com/contact-us.html.
 You can attach images to your web page and show them using the  HTML tag or
 using markdown format. the link to your file will be assets/manual_erpnext_com/old_images/erpnext/filename
 
+{next}

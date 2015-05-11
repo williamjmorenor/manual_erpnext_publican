@@ -1,4 +1,6 @@
-Point of sale (POS) is the place where a retail transaction is completed. It
+# Point of Sale Invoice
+
+Point of Sale (POS) is the place where a retail transaction is completed. It
 is the point at which a customer makes a payment to the merchant in exchange
 for goods or services. For retail operations, the delivery of goods, accrual
 of sale and payment all happens in one event, that is usually called the
@@ -25,9 +27,9 @@ Open any sales / purchase transaction. Click on the Computer <i class="icon-desk
 
 #### Different sections of the POS
 
-  * Update Stock: If this is checked, Stock Ledger Entries will be made when you “Submit” this Sales Invoice thereby eliminating the need for a separate Delivery Note. 
-  * In your Items table, update inventory information like Warehouse (saved as default), Serial Number, or Batch Number if applicable. 
-  * Update Payment Details like your Bank / Cash Account, Paid amount etc. 
+  * Update Stock: If this is checked, Stock Ledger Entries will be made when you “Submit” this Sales Invoice thereby eliminating the need for a separate Delivery Note.
+  * In your Items table, update inventory information like Warehouse (saved as default), Serial Number, or Batch Number if applicable.
+  * Update Payment Details like your Bank / Cash Account, Paid amount etc.
   * If you are writing off certain amount. For example when you receive extra cash as a result of not having exact denomination of change, check on ‘Write off Outstanding Amount’ and set the Account.
 
 ### Adding an Item
@@ -40,7 +42,7 @@ clicking on the Item image and the other, is through the Barcode / Serial No.
 
 **Barcode / Serial No** \- A Barcode / Serial No is an optical machine-readable representation of data relating to the object to which it is attached. Enter Barcode / Serial No in the box as shown in the image below and pause for a second, the item will be automatically added to the cart.
 
-![POS](assets/manual_erpnext_com/old_images/erpnext/pos-add-item.png)
+![POS](/assets/manual_erpnext_com/old_images/erpnext/pos-add-item.png)
 
 > Tip: To change the quantity of an Item, enter your desired quantity in the
 quantity box. These are mostly used if the same Item is purchased in bulk.
@@ -61,7 +63,7 @@ button.
 
 > Delete button appears only when Items are selected.
 
-![POS](assets/manual_erpnext_com/old_images/erpnext/pos-remove-item.png)
+![POS](/assets/manual_erpnext_com/old_images/erpnext/pos-remove-item.png)
 
 ### Make Payment
 
@@ -72,7 +74,7 @@ ready to make the Payment. Payment process is divided into 3 steps -
   2. Select your “Mode of Payment”.
   3. Click on “Pay” button to Save the document.
 
-![POS Payment](assets/manual_erpnext_com/old_images/erpnext/pos-make-payment.png)
+![POS Payment](/assets/manual_erpnext_com/old_images/erpnext/pos-make-payment.png)
 
 Submit the document to finalise the record. After the document is submitted,
 you can either print or email it directly to the customer.
@@ -91,5 +93,6 @@ Credits:
   * Customer (payment)
   * Write Off (optional)
 
-To see entries after “Submit”, click on “View Ledger”.￼
+To see entries after “Submit”, click on “View Ledger”.
 
+{next}

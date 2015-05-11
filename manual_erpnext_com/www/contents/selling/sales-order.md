@@ -11,7 +11,7 @@ a Sales Order.
 
 #### Figure 1:Sales Order Flow-Chart
 
-![Sales Order](assets/manual_erpnext_com/old_images/erpnext/sales-order-f.jpg)
+![Sales Order](/assets/manual_erpnext_com/old_images/erpnext/sales-order-f.jpg)
 
 Alternatively, you can create a Sales Order directly from:
 
@@ -19,7 +19,7 @@ Alternatively, you can create a Sales Order directly from:
 
 #### Figure 2: Create Sales Order
 
-![Sales Order](assets/manual_erpnext_com/old_images/erpnext/sales-order.png)
+![Sales Order](/assets/manual_erpnext_com/old_images/erpnext/sales-order.png)
 
 Most of the information in your Sales Order is the same as the Quotation.
 There are a few amongst other things that a Sales Order will ask you to
@@ -68,7 +68,7 @@ ERPNext will automatically create new Order and mail a notification to the email
 
 #### Figure 3: Recurring Sales Order
 
-![Sales Order](assets/manual_erpnext_com/old_images/erpnext/sales-order-recurring.png)
+![Sales Order](/assets/manual_erpnext_com/old_images/erpnext/sales-order-recurring.png)
 
 #### Next Steps
 
@@ -102,12 +102,14 @@ choices.i) Maintenance Visit ii) Maintenance Schedule iii) Invoice.
 
 
 
-> Note 1: By clicking on the Action button and selecting 'Maintenance Visit' you can directly fill the visit form. The Sales Order details will be fetched
-directly.
+> **Note 1:**   
+By clicking on the Action button and selecting 'Maintenance Visit' you can directly fill the visit form. The Sales Order details will be fetched directly.    
 
-> Note 2: By clicking on the Action button and selecting 'Maintenance Schedule' you can fill the schedule details. The Sales Order details will be fetched
-directly.
+> **Note 2:**    
+By clicking on the Action button and selecting 'Maintenance Schedule' you can fill the schedule details. The Sales Order details will be fetched directly.
 
-> Note 3: By clicking on the Invoice button you can make an Invoice for your
+> **Note 3:**    
+By clicking on the Invoice button you can make an Invoice for your
 services . The sales orders details will be fetched directly.
 
+{next}

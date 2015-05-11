@@ -20,7 +20,7 @@ Stock Reconciliation will update your stock for a given Item on a given date
 for a given Warehouse to the given quantity.
 
 Tip: Stock Reconciliation can also be used to update the “value” of an Item.
-To understand how Items are valued read [Valuation](/contents/stock/item-master/item-valuation-fifo-and-moving-average).
+To understand how Items are valued read [Valuation](/contents/stock/item-valuation-fifo-and-moving-average).
 
 To perform Stock Reconciliation, go to:
 
@@ -30,11 +30,11 @@ To perform Stock Reconciliation, go to:
 
 A predefined template of an spreadsheet file should be followed for importing item's stock levels and valuations. Open new Stock Reconciliation form to see download option.
 
-![Stock Reco Template](assets/manual_erpnext_com/old_images/erpnext/stock-reco-template.png)
+![Stock Reco Template](/assets/manual_erpnext_com/old_images/erpnext/stock-reco-template.png)
 
 #### Step 2: Enter Data in csv file.
 
-![Stock Reco Data](assets/manual_erpnext_com/old_images/erpnext/stock-reco-data.png)
+![Stock Reco Data](/assets/manual_erpnext_com/old_images/erpnext/stock-reco-data.png)
 
 The csv format is case-sensitive. Do not edit the headers which are preset in the template. In the Item Code and Warehouse column, enter exact Item Code and Warehouse as created in your ERPNext account. For quatity, enter stock level you wish to set for that item, in a specific warehouse. If you do not want to change the quantity or valuation rate of an Item, you should leave it blank.
 
@@ -44,7 +44,7 @@ So leave the field blank.
 
 #### **Step 3: Upload file and Enter Values in Stock Reconciliation Form
 
-![Stock Reco Browse](assets/manual_erpnext_com/old_images/erpnext/stock-reco-browse.png)
+![Stock Reco Browse](/assets/manual_erpnext_com/old_images/erpnext/stock-reco-browse.png)
 
 **Posting Date**
 
@@ -66,11 +66,11 @@ report. The report will show you all types of rates.
 
 #### Step 4: Review the reconciliation data
 
-![Stock Reco Review](assets/manual_erpnext_com/old_images/erpnext/stock-reco-upload.png)
+![Stock Reco Review](/assets/manual_erpnext_com/old_images/erpnext/stock-reco-upload.png)
 
 ### Stock Ledger Report
 
-![Stock Reco Ledger](assets/manual_erpnext_com/old_images/erpnext/stock-reco-ledger.png)
+![Stock Reco Ledger](/assets/manual_erpnext_com/old_images/erpnext/stock-reco-ledger.png)
 
 **How Stock Reconciliation Works**
 
@@ -155,3 +155,5 @@ Let's assume Purchase Receipt entry is made on 5th January, 2014, that is on dat
 	</table>
 </html>
 As per the updated logic, irrespective of receipt/issue entry made for an item, balance quantity as set via Stock Reconciliation will not be affected.
+
+{next}

@@ -15,7 +15,7 @@ sub-contracting feature of ERPNext.
   2. Create a Warehouse for your Supplier so that you can keep track of Items supplied. (you may supply a months worth of Items in one go).
   3. For the processed Item, in the Item master, set “Is Sub Contracted Item” to “Yes”.
 
-![Subcontract](assets/manual_erpnext_com/old_images/erpnext/subcontract.png)
+![Subcontract](/assets/manual_erpnext_com/old_images/erpnext/subcontract.png)
 
   
 
@@ -37,3 +37,4 @@ correct stock is maintained at the Supplier’s end.
 > Note 2: ERPNext will automatically add the raw material rate for your
 valuation purpose when you receive the finished Item in your stock.
 
+{next}

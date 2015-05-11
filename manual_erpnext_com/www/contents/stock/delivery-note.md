@@ -13,7 +13,7 @@ create a new Delivery Note from:
 or from a “Submitted” Sales Order (that is not already shipped) by clicking on
 “Make Delivery Note”.
 
-![Delivery Note](assets/manual_erpnext_com/old_images/erpnext/delivery-note.png)
+![Delivery Note](/assets/manual_erpnext_com/old_images/erpnext/delivery-note.png)
 
 You can also “fetch” the details from an unshipped Sales Order.
 
@@ -53,3 +53,4 @@ Amount” box in the “More Info” section.
 A Stock Ledger Entry is made for each Item and stock is updated. Pending
 Quantity in the Sales Order is updated (if applicable).
 
+{next}

@@ -4,7 +4,7 @@ Maintenance Visit from:
 
 > Support > Maintenance Visit > New Maintenance Visit
 
-![Maintenance Visit](assets/manual_erpnext_com/old_images/erpnext/maintenance-visit.png)
+![Maintenance Visit](/assets/manual_erpnext_com/old_images/erpnext/maintenance-visit.png)
 
 The Maintenance Visit contains information about the:
 
@@ -14,3 +14,4 @@ The Maintenance Visit contains information about the:
   * The person who carried out the actions.
   * Feedback from the Customer.
 
+{next}
