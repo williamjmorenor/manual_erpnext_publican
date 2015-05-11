@@ -12,9 +12,10 @@ msgstr ""
 "X-Generator: Publican v4.2.6\n"
 
 #, fuzzy
-msgid "Project."
+msgid "Projects"
 msgstr ""
 
+#, fuzzy
 msgid "Projects"
 msgstr ""
 
@@ -128,7 +129,6 @@ msgstr ""
 msgid "Tasks."
 msgstr ""
 
-#, fuzzy
 msgid "Project."
 msgstr ""
 
@@ -141,9 +141,7 @@ msgstr ""
 msgid "To create a new Time Log, you can go to"
 msgstr ""
 
-msgid ""
-"\n"
-"			Projects &gt; Time Log &gt; new Time Log\n"
+msgid "Projects &gt; Time Log &gt; new Time Log\n"
 "			"
 msgstr ""
 

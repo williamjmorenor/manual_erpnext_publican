@@ -65,9 +65,7 @@ msgstr ""
 msgid "To define the Top Bar Menus, Brand, Footers and Home Page, go to:"
 msgstr ""
 
-msgid ""
-"\n"
-"			Website &gt; Website Settings\n"
+msgid "Website &gt; Website Settings\n"
 "			"
 msgstr ""
 
@@ -83,9 +81,7 @@ msgstr ""
 msgid "Static Content like your Home Page, About Us, Contact Us, Terms pages can be created using the Web Page. To create a new Web Page, go to:"
 msgstr ""
 
-msgid ""
-"\n"
-"		Website &gt; Web Page &gt; New Web Page\n"
+msgid "Website &gt; Web Page &gt; New Web Page\n"
 "		"
 msgstr ""
 
@@ -110,9 +106,7 @@ msgstr ""
 msgid "Add forms to the website that will add / update data in your tables. Allow users to edit / manage multiple web forms. You can add forms in your website for example, Contact Us, Inquiry, Complaint etc. Data from these can fill up records like Lead, Opportunity, Issue etc. The user can also be allowed manage multiple records (like Complaints etc.). To create a new Web Form go to:"
 msgstr ""
 
-msgid ""
-"\n"
-"		Website &gt; Web Form &gt; New Web Form\n"
+msgid "Website &gt; Web Form &gt; New Web Form\n"
 "		"
 msgstr ""
 
@@ -161,9 +155,7 @@ msgstr ""
 msgid "Blogs are a great way to share your thoughts about your business and keep your customers and readers updated of what you are up to. In the age of internet, writing assumes a lot of significance because when people come to your website, they want to read about you and your product. To create a new blog, just create a new Blog from:"
 msgstr ""
 
-msgid ""
-"\n"
-"		Website &gt; Blog &gt; New Blog\n"
+msgid "Website &gt; Blog &gt; New Blog\n"
 "		"
 msgstr ""
 
@@ -203,13 +195,53 @@ msgstr ""
 msgid "On the Webpage, a shopping cart is an icon that allows you to store all the things that you have earmarked for purchasing. It is a graphical representation of a shopping basket or a shopping cart that allows you to save the items you intend to buy. This software displays the price of the product . It also displays shipping and handling charges, along with taxes, if applicable. To set up a shopping cart, go to the selling module."
 msgstr ""
 
-msgid ""
-"\n"
-"		Selling &gt; Shopping Cart Settings\n"
+msgid "Selling &gt; Shopping Cart Settings\n"
 "		"
 msgstr ""
 
 msgid "On the Website, the shopping cart image will be seen below the Item price. Customers can click on the cart and enter the amount of quantity they wish to buy. The Item number will be stored on the right hand corner of the page, next to the flower sign."
+msgstr ""
+
+msgid "Customer Portal"
+msgstr ""
+
+msgid "Customer Portal is designed to give easy accesibility to customers of a company. This portal allows customers to login and find out information relevant to them.They can trace communication history of their mails. They can also check order status by logging into the website."
+msgstr ""
+
+msgid "Customer Orders Invoices And Shipping Status"
+msgstr ""
+
+msgid "ERPNext Web Portal gives your customers quick access to their Orders, Invoices and Shipments Customers can check the status of their orders, invoices, and shipping status by logging on to the web."
+msgstr ""
+
+msgid "Once an order is raised, either using the Shopping Cart or from within ERPNext, your customer can view the order and keep an eye on the billing and shipment status. When the invoice and payment against these orders are submitted, the customer can see the updated status on the portal, at a glance."
+msgstr ""
+
+msgid "Sign Up"
+msgstr ""
+
+msgid "Customers have to log-in to the Company Website, and sign-up as a customer."
+msgstr ""
+
+msgid "Step 1: Click on Login Icon."
+msgstr ""
+
+msgid "Step 2: Click on Sign Up Icon."
+msgstr ""
+
+msgid "Step 3: Enter Customer Name and ID. After the sign up process, a mail will be sent to the customers email id with the password details."
+msgstr ""
+
+msgid "Portal Login"
+msgstr ""
+
+msgid "To login into the customer account, the customer has to use his email id and the password sent by ERPNext; generated through the sign-up process."
+msgstr ""
+
+msgid "Issues"
+msgstr ""
+
+msgid "The customer portal makes it very easy for a customer to raise concerns. A simple and intuitive interface facilitates your customer to report their concerns as Issues. They can view the complete thread of their conversation."
 msgstr ""
 
 #~ msgid "Text"

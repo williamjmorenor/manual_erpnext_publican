@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2015-05-01 16:22-0600\n"
-"PO-Revision-Date: 2015-05-01 16:22-0600\n"
+"POT-Creation-Date: 2015-05-10 23:05-0600\n"
+"PO-Revision-Date: 2015-05-10 23:05-0600\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
 "Language: en-US \n"
@@ -11,48 +11,48 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Publican v4.2.6\n"
 
-msgid "Collaboration Tools"
+msgid "Customize ERPNext"
 msgstr ""
 
-msgid "Text"
+msgid "ERPNext offers many tools to customize the system. You simplify the forms by hiding features you don’t need using Disable Features and Module Setup, add Custom Fields, change form properties, like adding more options to drop-downs or hiding fields using Customize Form View and make your own Print Formats by using HTML Templates. You can also create multiple Letter Heads for your Prints."
 msgstr ""
 
 msgid "Custom Field"
 msgstr ""
 
+msgid "Custom Field feature allows you to insert fields in the existing masters and transactions as per your requirement. While inseting custom field, you can define its properties like:"
+msgstr ""
+
+msgid "Field Name/Label"
+msgstr ""
+
+msgid "Field Type"
+msgstr ""
+
+msgid "Mandatory/Non-Mandatory"
+msgstr ""
+
+msgid "Insert After Field"
+msgstr ""
+
+msgid "To add a Custom Field, go to:"
+msgstr ""
+
+msgid "Setup &gt; Customize &gt; Custom Field &gt; New Custom Field"
+msgstr ""
+
+msgid "You can also insert new Custom Field from Customize Form tool."
+msgstr ""
+
 msgid "Custom Script"
 msgstr ""
 
-msgid "Custom Script Examples"
+msgid "If you wish to change any ERPNext form formats, you can do so by using Custom Scripts. For example, if you wish to add a submit button after saving, to a Lead form, you can do so by creating your own script:"
 msgstr ""
 
-msgid "Custom Script Fetch Values From Master"
+msgid "Setup &gt; Customization &gt; Custom Script"
 msgstr ""
 
-msgid "Date Validation"
-msgstr ""
-
-msgid "Generate Item Code Based On Custom Logic"
-msgstr ""
-
-msgid "Make Read Only After Saving"
-msgstr ""
-
-msgid "Restrict Cancel Rights"
-msgstr ""
-
-msgid "Restrict Purpose of Stock Entry"
-msgstr ""
-
-msgid "Restrict User Based on Child Record"
-msgstr ""
-
-msgid "Customize Form"
-msgstr ""
-
-msgid "Hiding Modules And Features"
-msgstr ""
-
-msgid "Print Format"
+msgid "Custim Scripts should be written using the Python programming language. It is recommended to have prior knowledge of programming before experimenting with Custom scritps as they can affect the stability of the system."
 msgstr ""
 

@@ -115,9 +115,7 @@ msgstr "Una Factura de Venta es una factura que enviá a sus clientes, contra la
 msgid "You can create a Sales Invoice directly from"
 msgstr "Puede crear una Factura de Ventas directamente desde:"
 
-msgid ""
-"\n"
-"		Accounting &gt; Documents &gt; Sales Invoice &gt; New Sales Invoice\n"
+msgid "Accounting &gt; Documents &gt; Sales Invoice &gt; New Sales Invoice\n"
 "		"
 msgstr "Contabilidad &gt; Documentos &gt; Facturas de Venta &gt; Nueva Factura de Venta"
 
@@ -188,9 +186,7 @@ msgstr "Factura de Compra es exactamente lo opuesto a las Facturas de Venta. Es 
 msgid "To make a new Purchase Invoice, go to:"
 msgstr "Para hacer una nueva Factura de Compra, valla a:"
 
-msgid ""
-"\n"
-"		Accounts &gt; Documents &gt; Purchase Invoice &gt; New Purchase Invoice\n"
+msgid "Accounts &gt; Documents &gt; Purchase Invoice &gt; New Purchase Invoice\n"
 "		"
 msgstr "Contabilidad &gt; Documentos &gt; Factura de Compra &gt; Nueva Factura de Compra"
 
@@ -303,9 +299,7 @@ msgstr ""
 msgid "To use this, go to:"
 msgstr ""
 
-msgid ""
-"\n"
-"		Accounts &gt; Tools &gt; Bank Reconciliation\n"
+msgid "Accounts &gt; Tools &gt; Bank Reconciliation\n"
 "		"
 msgstr ""
 
@@ -351,9 +345,7 @@ msgstr ""
 msgid "In such cases, you can use the Payment to Invoice Matching Tool."
 msgstr ""
 
-msgid ""
-"\n"
-"		Accounts &gt; Tools &gt; Bank Reconciliation\n"
+msgid "Accounts &gt; Tools &gt; Bank Reconciliation\n"
 "		"
 msgstr ""
 
@@ -375,9 +367,7 @@ msgstr ""
 msgid "Go to Accounts and open a new Journal Voucher to make the advance entry."
 msgstr ""
 
-msgid ""
-"\n"
-"		Accounts &gt; Documents &gt; Journal Voucher &gt; New Journal Voucher\n"
+msgid "Accounts &gt; Documents &gt; Journal Voucher &gt; New Journal Voucher\n"
 "		"
 msgstr ""
 
@@ -481,9 +471,7 @@ msgstr ""
 msgid "To set credit limit go to Customer- Master"
 msgstr ""
 
-msgid ""
-"\n"
-"		Selling &gt; Document &gt; Customer\n"
+msgid "Selling &gt; Document &gt; Customer\n"
 "		"
 msgstr ""
 
@@ -558,9 +546,7 @@ msgstr ""
 msgid "Make sure to set “Is Opening” as “Yes” in the More Info section."
 msgstr ""
 
-msgid ""
-"\n"
-"				Setup &gt; Opening Accounts and Stock &gt; Opening Accounting Entries.\n"
+msgid "Setup &gt; Opening Accounts and Stock &gt; Opening Accounting Entries.\n"
 "				"
 msgstr ""
 
@@ -627,9 +613,7 @@ msgstr ""
 msgid "By doing this, your balance in your Income and Expense Accounts become zero. You start a new Fiscal Year (or period) with a balanced Balance Sheet and fresh Profit and Loss account. In ERPNext after making all the special entries via Journal Voucher for the current fiscal year, you should set all your Income and Expense accounts to zero via:"
 msgstr ""
 
-msgid ""
-"\n"
-"		Accounts &gt; Tools &gt; Period Closing Voucher\n"
+msgid "Accounts &gt; Tools &gt; Period Closing Voucher\n"
 "		"
 msgstr ""
 
@@ -737,9 +721,7 @@ msgstr ""
 msgid "In order to allocate budget, go to"
 msgstr ""
 
-msgid ""
-"\n"
-"		Accounts &gt; Setup &gt; Chart of Cost Centers\n"
+msgid "Accounts &gt; Setup &gt; Chart of Cost Centers\n"
 "		"
 msgstr ""
 
@@ -785,9 +767,7 @@ msgstr ""
 msgid "To edit your Chart of Accounts in ERPNext go to:"
 msgstr ""
 
-msgid ""
-"\n"
-"		Accounts &gt; Setup &gt; Chart of Accounts\n"
+msgid "Accounts &gt; Setup &gt; Chart of Accounts\n"
 "		"
 msgstr ""
 
@@ -896,9 +876,7 @@ msgstr ""
 msgid "To setup your Chart of Cost Centers go to:"
 msgstr ""
 
-msgid ""
-"\n"
-"			Accounts &gt; Setup &gt; Chart of Cost Centers\n"
+msgid "Accounts &gt; Setup &gt; Chart of Cost Centers\n"
 "			"
 msgstr ""
 
@@ -915,9 +893,7 @@ msgstr ""
 msgid "You can define it in the Cost Center. If you have seasonal sales you can also define a budget distribution that the budget will follow."
 msgstr ""
 
-msgid ""
-"\n"
-"			Accounts &gt; Setup &gt; Budget Distribution &gt; New Budget Distribution\n"
+msgid "Accounts &gt; Setup &gt; Budget Distribution &gt; New Budget Distribution\n"
 "			"
 msgstr ""
 
@@ -963,9 +939,7 @@ msgstr ""
 msgid "To go to Payment Tool, go to:"
 msgstr ""
 
-msgid ""
-"\n"
-"		Accounts &gt; Tools &gt; Payment Tool\n"
+msgid "Accounts &gt; Tools &gt; Payment Tool\n"
 "		"
 msgstr ""
 
@@ -1041,9 +1015,7 @@ msgstr ""
 msgid "Enable POS View via"
 msgstr ""
 
-msgid ""
-"\n"
-"					(Setup &gt; Customize &gt; Feature Setup)\n"
+msgid "(Setup &gt; Customize &gt; Feature Setup)\n"
 "					"
 msgstr ""
 
@@ -1152,12 +1124,12 @@ msgstr ""
 msgid "Step 3: Set Tax Rate as Zero in Taxes and Charges Master: In the Taxes and Other Charges master, tax rate will be updated as ZERO. It means, tax rate applicable on items will be pulled from the respective Item master. While for other items, 0% tax will be applied, means no other taxes will be applied on that item. Based on the above setting, you will have taxes applied on items as mentioned in the respective item master. Check following for an instance."
 msgstr ""
 
-#~ msgid "Accounting Entries"
+#~ msgid "Item"
 #~ msgstr ""
 
 #~ msgid "Text"
 #~ msgstr ""
 
-#~ msgid "Item"
+#~ msgid "Accounting Entries"
 #~ msgstr ""
 
