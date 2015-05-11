@@ -28,7 +28,8 @@ msgstr ""
 msgid "This section includes information on how to setup customer groups, sales partners, sales persons and terms and conditions. It has instructions on how to configure selling settings, in order to enable default fields."
 msgstr ""
 
-msgid "Customer Group"
+#, fuzzy
+msgid "Default Customer Group"
 msgstr ""
 
 msgid "Customer Group is a category where you specify your customer group type. Your customers can be Individuals or they can be corporate(Company) customers. Your customers could also be government officials or non-profit organisations. ERPNext allows you to create your own Customer Groups. To create a new Customer Group, go to"
@@ -95,7 +96,8 @@ msgstr ""
 msgid "Just like for Customer, you can also configure as how ID will be generated for the Campaign master. Bydefault Campaign will be saved with Campaign Name provided while its creation."
 msgstr ""
 
-msgid "Customer Group"
+#, fuzzy
+msgid "Default Customer Group"
 msgstr ""
 
 msgid "Customer Group in this field will be auto-updated when you open new Customer form. While converting Quotation created for Lead into Sales Order, system attempts to convert Lead into Customer in the backend. While creating Customer in the backend, system pickup Customer Group and Territory as defined in the Selling Setting. If system doesn't find any values, then following validation message will be raised."

@@ -197,8 +197,7 @@ msgstr ""
 msgid "Make the Bill of Materials based on your design document and product requirements specified by the client."
 msgstr ""
 
-#, fuzzy
-msgid "Bill of Materials"
+msgid "Bill of Material"
 msgstr ""
 
 msgid "A Bill of Material (BOM) is a list of the raw materials, sub-assemblies, intermediate assemblies, sub-components, parts and the quantities of each needed to manufacture an end product. Make separate Bill of Material for every milestone order. Make one for the final order. Every BOM will have one Operations section and one Materials section. Mention the steps and hourly rates in the Operations section and the quantity of materials required in the Materials section."
@@ -261,7 +260,8 @@ msgstr ""
 msgid "The Customer, Jane, realises that if she wants a further decrease in price, the furniture maker will offer further non-branded raw material and decrease cost. She doesn't want to compromise on quality and thus agrees to the second quote. She confirms the order and pays them Rs. 10000/- as Advance. Advance payment is seen as an order confirmation. Based on the confirmation, create a Sales Order."
 msgstr ""
 
-msgid "Sales Order"
+#, fuzzy
+msgid "Get Sales Order"
 msgstr ""
 
 msgid "A Sales Order is an order issued by a business to a Customer for products and/or services. After the proposal phase, it is time for the organisation to make a Sales Order. Based on the price agreement in the Quotation, make a Sales Order for the custom product 'Child Bed Baby'."
@@ -360,7 +360,8 @@ msgstr ""
 msgid "Quick Overview of PPT-Production Planning Tool"
 msgstr ""
 
-msgid "Sales Order"
+#, fuzzy
+msgid "Get Sales Order"
 msgstr ""
 
 msgid "Get Items from Sales Order"
@@ -639,8 +640,7 @@ msgstr ""
 msgid "Before making the Price List and the Sales Order, make the Bill of Materials based on your design document."
 msgstr ""
 
-#, fuzzy
-msgid "Bill of Materials"
+msgid "Bill of Material"
 msgstr ""
 
 msgid "A Bill of Material (BOM) is a list of the raw materials, sub-assemblies, intermediate assemblies, sub-components, parts and the quantities of each needed to manufacture an end product."
@@ -886,21 +886,18 @@ msgstr ""
 msgid "Stock &gt; Stock Balance"
 msgstr ""
 
-#~ msgid "BOM"
-#~ msgstr ""
-
-#~ msgid "Guide Books."
+#~ msgid "Text"
 #~ msgstr ""
 
 #~ msgid "Planning and Forecasting"
 #~ msgstr ""
 
-#~ msgid "Supplier Billing"
+#~ msgid "BOM"
 #~ msgstr ""
 
 #~ msgid "Selling and Custumer Billing"
 #~ msgstr ""
 
-#~ msgid "Text"
+#~ msgid "Supplier Billing"
 #~ msgstr ""
 

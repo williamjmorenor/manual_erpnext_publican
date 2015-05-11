@@ -106,8 +106,7 @@ msgstr ""
 msgid "Step 2: Get Item from Sales Orders. You can add/remove or change quantity of these Items."
 msgstr ""
 
-#, fuzzy
-msgid "Create Production Order:"
+msgid "Step 3: Create Production Orders."
 msgstr ""
 
 msgid "Step 4: Create Material Request. Create Material Request for Items with projected shortfall."
@@ -138,8 +137,7 @@ msgid "Manufacturing &gt; Production Order &gt; New Production Order\n"
 "		"
 msgstr ""
 
-#, fuzzy
-msgid "Create Production Order:"
+msgid "Step 3: Create Production Orders."
 msgstr ""
 
 msgid "Select the Item to be produced (must have a Bill of Materials)."

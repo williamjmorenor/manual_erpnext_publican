@@ -23,7 +23,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Virtaal 0.7.1\n"
 
-msgid "Setting Up"
+#, fuzzy
+msgid "Setting Up Taxes"
 msgstr "Configuración"
 
 msgid "Setting up an ERP system is like starting your business all over again, although in the virtual world. Thankfully it is not as hard as the real business and you get to do a trial too!"
@@ -164,7 +165,8 @@ msgstr "Es este paso final, por favor introduzca los detalles de los Artículos 
 msgid "Please set the group of the item (Product / Service) and unit of measure. Don't worry you will be able to edit all of this later."
 msgstr "Por favor detalle el grupo de Artículos (Producto / Servicio) y la unidad de medida (UOM). No se preocupe podrá editarlas luego. "
 
-msgid "<emphasis role=\"Bold\">Template</emphasis>"
+#, fuzzy
+msgid "<emphasis role=\"Bold\">Example</emphasis>"
 msgstr "<emphasis role=\"bold\">¡Eso es todo!</emphasis>"
 
 msgid "Once you are done with the setup wizard you will see the familiar desktop page."
@@ -212,8 +214,7 @@ msgstr ""
 msgid "After adding these details, save the user."
 msgstr ""
 
-#, fuzzy
-msgid "Settings"
+msgid "Setting Roles"
 msgstr ""
 
 msgid "After saving, you will see a list of roles and a checkbox next to it. Just check the roles you want the the user to have and save the document. To click on what permissions translate into roles, click on the role name."
@@ -324,8 +325,7 @@ msgstr ""
 msgid "To share a document, open the document, click on the \"+\" icon under sharing and select the user"
 msgstr ""
 
-#, fuzzy
-msgid "Settings"
+msgid "Setting Roles"
 msgstr ""
 
 msgid "In <emphasis>Setup &gt; Settings</emphasis> you will find ways to manage your system settings like defaults, number and currency formats, global session timeout settings etc."
@@ -364,7 +364,8 @@ msgstr ""
 msgid "Naming Series"
 msgstr ""
 
-msgid "<emphasis role=\"Bold\">Template</emphasis>"
+#, fuzzy
+msgid "<emphasis role=\"Bold\">Example</emphasis>"
 msgstr "<emphasis role=\"bold\">¡Eso es todo!</emphasis>"
 
 msgid "Data records are broadly classified as “Master” or “Transaction”. A master record is a record that has a “name”, for example a Customer, Item, Supplier, Employee etc. A Transaction is a record that has a “number”. Examples of transactions include Sales Invoices, Quotations etc. You make transactions against a number of master records."
@@ -814,13 +815,15 @@ msgstr ""
 msgid "One template is default and will apply to all countries that do not have an specific template."
 msgstr ""
 
-msgid "<emphasis role=\"Bold\">Template</emphasis>"
+#, fuzzy
+msgid "<emphasis role=\"Bold\">Example</emphasis>"
 msgstr "<emphasis role=\"bold\">¡Eso es todo!</emphasis>"
 
 msgid "The templating engine is based on HTML and the Jinja Templating system and all the fields (including Custom Fields) will be available for creating the template."
 msgstr ""
 
-msgid "<emphasis role=\"Bold\">Template</emphasis>"
+#, fuzzy
+msgid "<emphasis role=\"Bold\">Example</emphasis>"
 msgstr "<emphasis role=\"bold\">¡Eso es todo!</emphasis>"
 
 msgid "Terms And Conditions"
@@ -856,7 +859,8 @@ msgstr ""
 msgid "In transactions, you will find section of Terms and Condition where you will be able to search and fetched required Terms and Condition master."
 msgstr ""
 
-msgid "Setting Up"
+#, fuzzy
+msgid "Setting Up Taxes"
 msgstr "Configuración"
 
 msgid "One of the primary motivator for compulsory use of accounting tools is calculation of Taxes. You may or may not make money but your government will (to help your country be safe and prosperous). And if you don’t calculate your taxes correctly, they get very unhappy. Ok, philosophy aside, ERPNext allows you to make configurable tax templates that you can apply to your sales or purchase."

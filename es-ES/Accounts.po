@@ -146,8 +146,7 @@ msgstr "Cuando se registra una venta (devengo):"
 msgid "Debit: Customer (grand total) Credit: Income (net total, minus taxes for each Item) Credit: Taxes (liabilities to be paid to the government)"
 msgstr "Débito: Cliente (Gran Total) Crédito: Ingreso (Total Neto: Menos impuestos para cada Articulo) Crédito: Impuestos (Cuentas por pagar al estado)"
 
-#, fuzzy
-msgid "To see entries in your Purchase Invoice after you “Submit”, click on “View Ledger”."
+msgid "To see entries in your Sales Invoice after you “Submit”, click on “View Ledger”."
 msgstr "Para ver los registros de su Factura de Proveedor después de \"Presentar\", clic en \"Ver Registros\"."
 
 msgid "Dates"
@@ -205,8 +204,7 @@ msgstr "La Factura de Compra afectara sus cuentas como se detalla a continuació
 msgid "Accounting entries (GL Entry) for a typical double entry “purchase”:"
 msgstr "Registros Contables (Entradas del Libro Mayor) de un registro tipico por partida doble de una \"compra\":"
 
-#, fuzzy
-msgid "Debits"
+msgid "Debits:"
 msgstr "Debitos:"
 
 msgid "Expense or Asset (net totals, excluding taxes)"
@@ -215,15 +213,13 @@ msgstr "Gasto o Activo (Total Neto, excluyendo impuestos)"
 msgid "Taxes (assets if VAT-type or expense again)."
 msgstr "Impuestos (impuestos de tipo IVA)."
 
-#, fuzzy
-msgid "Credits"
+msgid "Credits:"
 msgstr "Creditos:"
 
 msgid "Supplier"
 msgstr "Proveedor"
 
-#, fuzzy
-msgid "To see entries in your Purchase Invoice after you “Submit”, click on “View Ledger”."
+msgid "To see entries in your Sales Invoice after you “Submit”, click on “View Ledger”."
 msgstr "Para ver los registros de su Factura de Proveedor después de \"Presentar\", clic en \"Ver Registros\"."
 
 msgid "Is purchase an “Expense” or an “Asset”?"
@@ -286,8 +282,7 @@ msgstr ""
 msgid "Debit: Supplier"
 msgstr ""
 
-#, fuzzy
-msgid "Credit: Bank or Cash Account."
+msgid "Credit: Bank or Cash Account"
 msgstr ""
 
 msgid "Reconciling Cheque Payments"
@@ -299,7 +294,8 @@ msgstr ""
 msgid "To use this, go to:"
 msgstr ""
 
-msgid "Accounts &gt; Tools &gt; Bank Reconciliation\n"
+#, fuzzy
+msgid "Accounts &gt; Tools &gt; Payment Reconciliation\n"
 "		"
 msgstr ""
 
@@ -345,7 +341,8 @@ msgstr ""
 msgid "In such cases, you can use the Payment to Invoice Matching Tool."
 msgstr ""
 
-msgid "Accounts &gt; Tools &gt; Bank Reconciliation\n"
+#, fuzzy
+msgid "Accounts &gt; Tools &gt; Payment Reconciliation\n"
 "		"
 msgstr ""
 
@@ -443,8 +440,7 @@ msgstr ""
 msgid "Debit: Expense Account (like Telephone expense)."
 msgstr ""
 
-#, fuzzy
-msgid "Credit: Bank or Cash Account."
+msgid "Credit: Bank or Cash Account"
 msgstr ""
 
 msgid "Bad Debts or Write Offs"
@@ -487,8 +483,7 @@ msgstr ""
 msgid "In the field Credit Controller, select the role who would be authorized to accept orders or raise credit limits of customers."
 msgstr ""
 
-#, fuzzy
-msgid "The Opening Entry"
+msgid "Openning Entry"
 msgstr ""
 
 msgid "If you are a new company you can start using ERPNext accounting module by going to chart of accounts."
@@ -536,8 +531,7 @@ msgstr ""
 msgid "A nice way to simplify opening is to use a temporary account just for opening. These accounts will become zero once all your old invoices and opening balances of bank, debt stock etc are entered. In the standard chart of accounts, a Temperory Opening account is created under assets"
 msgstr ""
 
-#, fuzzy
-msgid "The Opening Entry"
+msgid "Openning Entry"
 msgstr ""
 
 msgid "In ERPNext Opening Accounts are setup by submitting a special Journal Entries (Journal Voucher)."
@@ -650,12 +644,10 @@ msgstr ""
 msgid "Opening"
 msgstr ""
 
-#, fuzzy
-msgid "Debits"
+msgid "Debits:"
 msgstr "Debitos:"
 
-#, fuzzy
-msgid "Credits"
+msgid "Credits:"
 msgstr "Creditos:"
 
 msgid "Closing"
@@ -670,8 +662,7 @@ msgstr ""
 msgid "Sales and Purchase Register: In this report, each tax Account is transposed in columns. For each Invoice and invoice Item, you will get the amount of individual tax that has been paid, based on the Taxes and Charges table."
 msgstr ""
 
-#, fuzzy
-msgid "Bank Reconciliation Tool"
+msgid "Bank Reconciliation"
 msgstr ""
 
 msgid "A Bank Reconciliation is a process that explains the difference between the bank balance shown in an organisation's bank statement, as supplied by the bank, and the corresponding amount shown in the organisation's own accounting records at a particular point in time."
@@ -686,8 +677,7 @@ msgstr ""
 msgid "To add clearance entries go to:"
 msgstr ""
 
-#, fuzzy
-msgid "Bank Reconciliation Tool"
+msgid "Bank Reconciliation"
 msgstr ""
 
 msgid "The Bank Reconciliation tool in ERPNext, helps add clearance dates to the account statements. To Reconcile cheque payments go to Accounts and click on Bank Reconciliation."
@@ -708,8 +698,7 @@ msgstr ""
 msgid "Step 5: Click on the button 'Update Clearance Date'."
 msgstr ""
 
-#, fuzzy
-msgid "Budgeting"
+msgid "Budgetting"
 msgstr ""
 
 msgid "ERPNext will help you set and manage budgets on your Cost Centers. This is useful when, for example, you are doing online sales. You have a budget for search ads, and you want ERPNext to stop or warn you from over spending, based on that budget."
@@ -883,8 +872,7 @@ msgstr ""
 msgid "Cost centers help you in one more activity, budgeting."
 msgstr ""
 
-#, fuzzy
-msgid "Budgeting"
+msgid "Budgetting"
 msgstr ""
 
 msgid "Budgets are also great for planning purposes. When you are making plans for the next financial year, you would typically target a revenue based on which you would set your expenses. Setting a budget will ensure that your expenses do not get out of hand, at any point, as per your plans."
@@ -1124,12 +1112,12 @@ msgstr ""
 msgid "Step 3: Set Tax Rate as Zero in Taxes and Charges Master: In the Taxes and Other Charges master, tax rate will be updated as ZERO. It means, tax rate applicable on items will be pulled from the respective Item master. While for other items, 0% tax will be applied, means no other taxes will be applied on that item. Based on the above setting, you will have taxes applied on items as mentioned in the respective item master. Check following for an instance."
 msgstr ""
 
+#~ msgid "Accounting Entries"
+#~ msgstr ""
+
 #~ msgid "Item"
 #~ msgstr ""
 
 #~ msgid "Text"
-#~ msgstr ""
-
-#~ msgid "Accounting Entries"
 #~ msgstr ""
 

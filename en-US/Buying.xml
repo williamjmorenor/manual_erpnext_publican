@@ -7,6 +7,39 @@
 	<para>
 	If your business involves physical goods, buying is one of your core business activity. Your suppliers are as important as your customers and they must be provided with as much accurate information as possible. Buying in right amounts, in right quantities, can affect your cash flow and profitability. ERPNext contains a set of transactions that will make your buying process as efficient and seamless as possible.
 	</para>
+	<sect1>
+		<title>Buying Settings</title>
+		<para>
+		Buying Settings is where you can define properties which will be applied in the Buying module's transactions. 
+		</para>
+		<para>
+		Let us look at the various options that can be configured:
+		</para>
+		<orderedlist>
+			<listitem>
+				<para>Supplier Naming By: When a Supplier is saved, system generates a unique identity or name for that Supplier which can be used to refer the Supplier in various Buying transactions.
+
+If not configured otherwise, ERPNext uses the Supplier's Name as the unique name. If you want to identify Suppliers using names like SUPP-00001, SUPP-00002, or such other patterned series, select the value of Supplier Naming By as "Naming Series".
+
+You can define or select the Naming Series pattern from:<programlisting>Setup > Settings > Naming Series</programlisting></para>
+			</listitem>
+			<listitem>
+				<para>Default Supplier Type: Configure what should be the value of Supplier Type when a new Supplier is created.</para>
+			</listitem>
+			<listitem>
+				<para>Default Buying Price List: Configure what should be the value of Buying Price List when a new Buying transaction is created.</para>
+			</listitem>
+			<listitem>
+				<para>Maintain Same Rate Throughout Purchase Cycle: If this is checked, ERPNext will stop you if you change the Item's price in a Purchase Invoice or Purchase Receipt created based on a Purchase Order, i.e. it will maintain the same price throughout the purchase cycle. If there is a requirement where you need the Item's price to change, you should uncheck this option.</para>
+			</listitem>
+			<listitem>
+				<para>Purchase Order Required: If this option is configured "Yes", ERPNext will prevent you from creating a Purchase Invoice or a Purchase Receipt without first creating a Purchase Order.</para>
+			</listitem>
+			<listitem>
+				<para>Purchase Receipt Required: If this option is configured "Yes", ERPNext will prevent you from creating a Purchase Invoice without first creating a Purchase Receipt.</para>
+			</listitem>
+		</orderedlist>
+	</sect1>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Buying-Type">
 		<title>Supplier Type</title>
 		<para>

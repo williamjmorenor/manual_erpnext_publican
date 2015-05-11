@@ -545,7 +545,8 @@ msgstr ""
 msgid "In perpetual inventory, the system will maintain seperate account balance for each warehouse under separate account head. To create that account head, enter \"Create Account Under\" in Warehouse master."
 msgstr ""
 
-msgid "Activate Perpetual Inventory"
+#, fuzzy
+msgid "Migrate To Perpetual Inventory"
 msgstr ""
 
 msgid "Setup &gt; Accounts Settings &gt; Make Accounting Entry For Every Stock Movement\n"
@@ -561,7 +562,8 @@ msgstr ""
 msgid "At the end of an accounting period, the total value of items to be sold, need to be booked as the company’s assets, often known as stock-in-hand. The difference between the value of the items remaining to be sold and the previous period’s stock-in-hand value can be positive or negative. If positive, this value is removed from expenses (cost-of-goods-sold) and is added to assets (stock-in-hand / fixed-assets). If negative, a reverse entry is passed. This complete process is called Periodic Inventory. If you are an existing user using Periodic Inventory and want to use Perpetual Inventory, you have to follow some steps to migrate."
 msgstr ""
 
-msgid "Activate Perpetual Inventory"
+#, fuzzy
+msgid "Migrate To Perpetual Inventory"
 msgstr ""
 
 msgid "Existing Users, need to follow some steps to activate the new Perpetual Inventory system. As Perpetual Inventory always maintains a sync between stock and account balance, it is not possible to enable it with existing Warehouse setup. You have to create a whole new set of Warehouses, each linked to relevant account."

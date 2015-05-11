@@ -11,12 +11,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Publican v4.2.6\n"
 
-#, fuzzy
-msgid "Projects"
+msgid "Project"
 msgstr ""
 
-#, fuzzy
-msgid "Projects"
+msgid "Project"
 msgstr ""
 
 msgid "<primary>Projects</primary>"
@@ -82,8 +80,7 @@ msgstr ""
 msgid "A Gantt chart is a type of bar chart, it illustrate the start and finish dates of the terminal elements and summary elements of a project (Tasks), also show the dependency (i.e., precedence network) relationships between activities."
 msgstr ""
 
-#, fuzzy
-msgid "Tasks."
+msgid "Task"
 msgstr ""
 
 msgid "<primary>Projects</primary><secondary>Task</secondary>"
@@ -125,8 +122,7 @@ msgstr ""
 msgid "Production Order Operations."
 msgstr ""
 
-#, fuzzy
-msgid "Tasks."
+msgid "Task"
 msgstr ""
 
 msgid "Project."
