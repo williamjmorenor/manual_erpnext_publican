@@ -3,284 +3,211 @@
 %BOOK_ENTITIES;
 ]>
 <chapter id="chap-ERPNext-Manual_ERPNext-Setting_Up">
-	<title>Setting Up</title>
-	<para>
-		Setting up an ERP system is like starting your business all over again, although in the virtual world. Thankfully it is not as hard as the real business and you get to do a trial too!
-	</para>
-	<para>
-		Implementation requires the implementer to take a step back and set aside some time to do this right. This is usually not a couple-of-hours, after-work kind of a project.
-	</para>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard">
-		<title>Setup Wizard</title>
-		<note>
-		<para>The first time than you logging into ERPNext you will need to create the firt company and define many defaults settings like language and currency.</para>
-		</note>
-		<para>
-		The Setup Wizard helps you quickly setup your ERPnext by helping you create your company, Items, Customer, Suppliers and will also setup a basic website with this data. Here is a quick overview of the steps:
-		</para>
-	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_1">
-		<title>Step 1: Language</title>
-		<warning>
-		<para>You can change the System Language after Septup Wizard, but some things of the system will not be updated. Please be carefull selecting the system language. You will note than the Setup Wizard will update to the selected language.</para>
-		</warning>
-		<important>
-		<para>This step is mandatory.</para>
-		</important>		
-		<para>
-		Select your language. ERPNext is available in more than 20 languages.
-		</para>
-		<mediaobject>
-		<imageobject>
-		<imagedata fileref="./images/step-1.png" />
-		</imageobject>
-		<textobject><phrase>Setup - Setp 1: Language</phrase></textobject>
-		</mediaobject>
-	</sect2>
-	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_4">
-		<title>Step 2: Currency and Timezone</title>
-		<note>
-		<para>Please note than many settings and options in ERPNext are specifics and only available for certains countries. For example Charts of Account are Country Specifics, is there is a Chart of Accounts available for your country ERPNext will let you select it in the Wizard Setup</para>
-		</note>
-		<important>
-		<para>This step is mandatory.</para>
-		</important>
-		<para>
-		Set your country name, currency and timezone.
-		</para>
-		<mediaobject>
-		<imageobject>
-		<imagedata fileref="./images/step-2.png" />
-		</imageobject>
-		<textobject><phrase>Step 4: Currency and Timezone</phrase></textobject>
-		</mediaobject>
-	</sect2>
-	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_3">
-		<title>Step 3: Profile Details</title>
-		<warning>
-		<para>This will be the system administrator, please choose a strong password and be sure to not forget it.</para>
-		</warning>
-		<important>
-		<para>This step is mandatory.</para>
-		</important>
-		<para>
-		Enter Users Profile Details like Name, User ID and preferred password.
-		</para>
-		<mediaobject>
-		<imageobject>
-		<imagedata fileref="./images/step-3.png" />
-		</imageobject>
-		<textobject><phrase>Step 3: User Details</phrase></textobject>
-		</mediaobject>
-	</sect2>
-	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_2">
-		<title>Step 4: Company Details</title>
-		<important>
-		<para>This step is mandatory.</para>
-		</important>
-		<para>
-		Enter Company Details like Name, Abbreviation and Financial Year Details.
-		</para>
-		<mediaobject>
-		<imageobject>
-		<imagedata fileref="./images/step-2.png" />
-		</imageobject>
-		<textobject><phrase>Step 2: Company Details</phrase></textobject>
-		</mediaobject>
-		<sect3>
-			<title>Company Abbreviation</title>
-			<para>These will be appened to your Account Heads, for example if your abbreviation is WP, then your Sales account will be Sales - WPL</para><para>For Example: East Wind will be abbreviated as EW. Shades of Green will be abbreviated as SOG. In case you wish to give your own abbreviation, you can do so. The text field allows any type of text.</para>
-			</sect3>
-			<sect3>
-			<title>Financial Year</title>
-			<para>Any annual period at the end of which a firm's accounts are made up is called a Financial Year. Some countries have their account year starting from 1st January and some 1st April.</para><para>The end date will be set automatically</para>
-			</sect3>
-	</sect2>
-	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_5">
-		<title>Step 5: Letterhead and Logo</title>
-		<important>
-		<para>This step is not mandatory.</para>
-		</important>
-		<para>
-		Attach Company Letterhead and Company Logo.
-		</para>
-		<mediaobject>
-		<imageobject>
-		<imagedata fileref="./images/step-5.png" />
-		</imageobject>
-		<textobject><phrase>Step 5: Letterhead and Logo</phrase></textobject>
-		</mediaobject>
-	</sect2>
-	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_6">
-		<title>Step 6: Tax Details</title>
-		<important>
-		<para>This step is not mandatory.</para>
-		</important>
-		<para>
-		Enter any three types of taxes which you regularly pay. This wizard will create a tax master which will calculate the taxes as per the tax-type.
-		</para>
-		<mediaobject>
-		<imageobject>
-		<imagedata fileref="./images/step-6.png" />
-		</imageobject>
-		<textobject><phrase>Step 6: Tax Details</phrase></textobject>
-		</mediaobject>
-		<para>
-		Just set the tax name and the standard percentage levied.
-		</para>		
-		<para>
-		Some examples of tax types are given below.
-		</para>
-		<para>
-		<emphasis role="bold">VAT:</emphasis> A value added tax (VAT) is a form of consumption tax. From the perspective of the buyer, it is a tax on the purchase price. From that of the seller, it is a tax only on the value added to a product, material, or a service. From an accounting point of view, by the stage of its manufacture or distribution. The manufacturer remits to the government the difference between these two amounts, and retains the rest for themselves to offset the taxes they had previously paid on the inputs.
-		</para>
-		<para>
-		The purpose of VAT is to generate tax revenues to the government similar to the corporate income tax or the personal income tax. For Example: When you shop at a departmental store and avail discount on the products, the store charges you 5% extra on the total bill as the VAT.
-		</para>
-		<para>
-		To setup VAT in the setup wizard , simply enter the percentage amount levied by your government. To setup VAT at a later stage read setting-up-taxes
-		</para>
-	</sect2>
-	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_7">
-		<title>Step 7: Customers</title>
-		<important>
-		<para>This step is not mandatory.</para>
-		</important>
-		<para>
-		Enter your Customer names and the contact person from that organisation.
-		</para>
-		<mediaobject>
-		<imageobject>
-		<imagedata fileref="./images/step-7.png" />
-		</imageobject>
-		<textobject><phrase>Step 7: Customers</phrase></textobject>
-		</mediaobject>
-		<para>
-		<emphasis role="bold">Difference between a customer name and a contact name</emphasis> 
-		</para>
-		<para>
-		A customer name is the name of the organisation and a contact name is the name of the user who is operating the ERPNext system. For Example: If American Power Mills is an organisation name and their founder Shiv Agarwal has installed ERPNext on his system. Then,
-		</para>
-		<itemizedlist>
-		<listitem>
-   			<para><emphasis role="bold">Customer Name:</emphasis> American Power Mills</para>
-   		</listitem>
-<listitem>
-   			<para><emphasis role="bold">Contact Name:</emphasis> Shiv Agarwal</para>
-   		</listitem>
-		</itemizedlist>
-		<para>
-		To understand Customer in detail visit Customer Details
-		</para>
-	</sect2>
-	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_8">
-		<title>Step 8: Suppliers</title>
-		<important>
-		<para>This step is not mandatory.</para>
-		</important>
-		<para>
-		Enter a few of your Suppliers' names.
-		</para>
-		<mediaobject>
-		<imageobject>
-		<imagedata fileref="./images/step-8.png" />
-		</imageobject>
-		<textobject><phrase>Step 8: Suppliers</phrase></textobject>
-		</mediaobject>
-		<para>
-		To understand Suppliers in detail visit Supplier Master
-		</para>
-	</sect2>
-	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_9">
-		<title>Step 9: Item Names</title>
-		<important>
-		<para>This step is not mandatory.</para>
-		</important>
-		<para>
-		In this final step, please enter the names of the Items you buy or sell.
-		</para>
-		<mediaobject>
-		<imageobject>
-		<imagedata fileref="./images/step-9.png" />
-		</imageobject>
-		<textobject><phrase>Step 9: Item Names</phrase></textobject>
-		</mediaobject>
-		<para>
-		Please set the group of the item (Product / Service) and unit of measure. Don't worry you will be able to edit all of this later.
-		</para>
-<para>
-		<emphasis role="bold">Thats it!</emphasis> 
-		</para>
-		<para>
-		Once you are done with the setup wizard you will see the familiar desktop page.
-		</para>
-	</sect2>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Users">
-	<title>Users And Permissions</title>
-	<para>
-	In ERPNext, you can create multiple users and assign them different roles. There are some users which can only access the public facing part of ERPNext (i.e. the website). Such users are called "Website Users".
-	</para>
-	<para>
-	ERPNext implements permission control at the User and Role level. Each user in the system can be assigned multiple roles and permissions.
-	</para>
-	<para>
-	The most important role is the "System Manager". Any user having this role can add other users and set roles to all users.
-	</para>
-	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Users-Adding">
-		<title>Adding Users</title>
-		<para>
-		Users can be added by the System Manager. If you are a System Manager, you can add Users via
-		</para>
-		<programlisting>
-		Setup > User
-		</programlisting>
-			<sect3>
-			<title>List of Users</title>
-			<para>To add new user, click on "New".</para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="./images/user-1.png" />
-				</imageobject>
-				<textobject><phrase>Add New User</phrase></textobject>
-			</mediaobject>
-			</sect3>
-			<sect3>
-			<title>Add the user details</title>
-			<para>Add user details such as First Name, Last Name, Email etc.</para>
+<title>Setting Up</title>
+<para>Setting up an ERP system is like starting your business all over again, although
+	in the virtual world. Thankfully it is not as hard as the real business and you get to
+	do a trial too!</para>
+<para>Implementation requires the implementer to take a step back and set aside some
+	time to do this right. This is usually not a couple-of-hours, after-work kind of
+	a project.</para>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard">
+<title>Setup Wizard</title>
+<note><para>The first time than you logging into ERPNext you will need to create
+	the firt company and define many defaults settings like language and
+	currency.</para></note>
+<para>The Setup Wizard helps you quickly setup your ERPnext by helping you create
+	your company, Items, Customer, Suppliers and will also setup a basic website
+	with this data. Here is a quick overview of the steps:</para>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_1">
+<title>Step 1: Language</title>
+<warning><para>You can change the System Language after Septup Wizard, but some
+	things of the system will not be updated. Please be carefull selecting the system
+	language. You will note than the Setup Wizard will update to the selected
+	language.</para></warning>
+<important><para>This step is mandatory.</para></important>
+<para>Select your language. ERPNext is available in more than 20 languages.</para>
+<mediaobject>
+<imageobject><imagedata fileref="./images/step-1.png" /></imageobject>
+<textobject><phrase>Setup - Setp 1: Language</phrase></textobject>
+</mediaobject>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_4">
+<title>Step 2: Currency and Timezone</title>
+<note><para>Please note than many settings and options in ERPNext are
+	specifics and only available for certains countries. For example Charts
+	of Account are Country Specifics, is there is a Chart of Accounts available
+	for your country ERPNext will let you select it in the Wizard Setup</para></note>
+<important><para>This step is mandatory.</para></important>
+<para>Set your country name, currency and timezone.</para>
+<mediaobject>
+<imageobject><imagedata fileref="./images/step-2.png" /></imageobject>
+<textobject><phrase>Step 4: Currency and Timezone</phrase></textobject>
+</mediaobject>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_3">
+<title>Step 3: Profile Details</title>
+<warning><para>This will be the system administrator, please choose a strong
+	password and be sure to not forget it.</para></warning>
+<important><para>This step is mandatory.</para></important>
+<para>Enter Users Profile Details like Name, User ID and preferred password.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="./images/step-3.png" />
+</imageobject>
+<textobject><phrase>Step 3: User Details</phrase></textobject>
+</mediaobject>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_2">
+<title>Step 4: Company Details</title>
+<important><para>This step is mandatory.</para></important>
+<para>Enter Company Details like Name, Abbreviation and Financial Year Details.</para>
+<mediaobject>
+<imageobject><imagedata fileref="./images/step-2.png" /></imageobject>
+<textobject><phrase>Step 2: Company Details</phrase></textobject>
+</mediaobject>
+<sect3>
+<title>Company Abbreviation</title>
+<para>These will be appened to your Account Heads, for example if your abbreviation is WP,
+	then your Sales account will be Sales - WPL</para>
+<para>For Example: East Wind will be abbreviated as EW. Shades of Green will be abbreviated
+	as SOG. In case you wish to give your own abbreviation, you can do so. The text field
+	allows any type of text.</para>
+</sect3>
+<sect3>
+<title>Financial Year</title>
+<para>Any annual period at the end of which a firm's accounts are made up is called a Financial Year.
+	Some countries have their account year starting from 1st January and some 1st April.</para>
+<para>The end date will be set automatically</para>
+</sect3>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_5">
+<title>Step 5: Letterhead and Logo</title>
+<important><para>This step is not mandatory.</para></important>
+<para>Attach Company Letterhead and Company Logo.</para>
+<mediaobject>
+<imageobject><imagedata fileref="./images/step-5.png" /></imageobject>
+<textobject><phrase>Step 5: Letterhead and Logo</phrase></textobject>
+</mediaobject>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_6">
+<title>Step 6: Tax Details</title>
+<important><para>This step is not mandatory.</para></important>
+<para>Enter any three types of taxes which you regularly pay. This wizard will create a tax master
+	which will calculate the taxes as per the tax-type.</para>
+<mediaobject>
+<imageobject><imagedata fileref="./images/step-6.png" /></imageobject>
+<textobject><phrase>Step 6: Tax Details</phrase></textobject>
+</mediaobject>
+<para>Just set the tax name and the standard percentage levied.</para>
+<para>Some examples of tax types are given below.</para>
+<para><emphasis role="bold">VAT:</emphasis> A value added tax (VAT) is a form of consumption tax.
+From the perspective of the buyer, it is a tax on the purchase price. From that of the seller, it is
+a tax only on the value added to a product, material, or a service. From an accounting point of view,
+by the stage of its manufacture or distribution. The manufacturer remits to the government the
+difference between these two amounts, and retains the rest for themselves to offset the taxes they had
+previously paid on the inputs.</para>
+<para>The purpose of VAT is to generate tax revenues to the government similar to the corporate income
+	tax or the personal income tax. For Example: When you shop at a departmental store and avail discount
+	on the products, the store charges you 5% extra on the total bill as the VAT.</para>
+<para>To setup VAT in the setup wizard , simply enter the percentage amount levied by your government.
+	To setup VAT at a later stage read setting-up-taxes</para>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_7">
+<title>Step 7: Customers</title>
+<important><para>This step is not mandatory.</para></important>
+<para>Enter your Customer names and the contact person from that organisation.</para>
+<mediaobject>
+<imageobject><imagedata fileref="./images/step-7.png" /></imageobject>
+<textobject><phrase>Step 7: Customers</phrase></textobject>
+</mediaobject>
+<para><emphasis role="bold">Difference between a customer name and a contact name</emphasis>:A customer
+name is the name of the organisation and a contact name is the name of the user who is operating the
+ERPNext system. For Example: If American Power Mills is an organisation name and their founder Shiv
+Agarwal has installed ERPNext on his system. Then,</para>
+<itemizedlist>
+<listitem><para><emphasis role="bold">Customer Name:</emphasis> American Power Mills</para></listitem>
+<listitem><para><emphasis role="bold">Contact Name:</emphasis> Shiv Agarwal</para></listitem>
+</itemizedlist>
+<para>To understand Customer in detail visit Customer Details</para>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_8">
+<title>Step 8: Suppliers</title>
+<important><para>This step is not mandatory.</para></important>
+<para>Enter a few of your Suppliers' names.</para>
+<mediaobject>
+<imageobject><imagedata fileref="./images/step-8.png" /></imageobject>
+<textobject><phrase>Step 8: Suppliers</phrase></textobject>
+</mediaobject>
+<para>To understand Suppliers in detail visit Supplier Master</para>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Setup_Wizard-Setp_9">
+<title>Step 9: Item Names</title>
+<important><para>This step is not mandatory.</para></important>
+<para>In this final step, please enter the names of the Items you buy or sell.</para>
+<mediaobject>
+<imageobject><imagedata fileref="./images/step-9.png" /></imageobject>
+<textobject><phrase>Step 9: Item Names</phrase></textobject>
+</mediaobject>
+<para>Please set the group of the item (Product / Service) and unit of measure.
+	Don't worry you will be able to edit all of this later.</para>
+<para>		<emphasis role="bold">Thats it!</emphasis></para>
+<para>Once you are done with the setup wizard you will see the familiar desktop page.</para>
+</sect2>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Users">
+<title>Users And Permissions</title>
+<para>In ERPNext, you can create multiple users and assign them different roles. There are some users
+	which can only access the public facing part of ERPNext (i.e. the website). Such users are called
+	"Website Users".</para>
+<para>ERPNext implements permission control at the User and Role level. Each user in the system can
+	be assigned multiple roles and permissions.</para>
+<para>The most important role is the "System Manager". Any user having this role can add other users
+	and set roles to all users.</para>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Users-Adding">
+<title>Adding Users</title>
+<para>Users can be added by the System Manager. If you are a System Manager, you can add Users via</para>
+<programlisting>Setup > User</programlisting>
+<sect3>
+<title>List of Users</title>
+<para>To add new user, click on "New".</para>
+<mediaobject>
+<imageobject><imagedata fileref="./images/user-1.png" /></imageobject>
+<textobject><phrase>Add New User</phrase></textobject>
+</mediaobject>
+</sect3>
+<sect3>
+<title>Add the user details</title>
+<para>Add user details such as First Name, Last Name, Email etc.</para>
 <para>The user's Email will become the user id.</para><para>After adding these details, save the user.</para>
-			</sect3>
-			<sect3>
-			<title>Setting Roles</title>
-			<para>After saving, you will see a list of roles and a checkbox next to it. Just check the roles you want the the user to have and save the document. To click on what permissions translate into roles, click on the role name.</para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="./images/user-2.png" />
-				</imageobject>
-				<textobject><phrase>Setting Roles</phrase></textobject>
-			</mediaobject>
-			</sect3>
-			<sect3>
-			<title>Setting Module Access</title>
-			<para>Users will have access to all modules for which they have role based access. If you want to block certain modules for certain users, un-check the module from the list.</para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="./images/user-3.png" />
-				</imageobject>
-				<textobject><phrase>Setting Module Access</phrase></textobject>
+</sect3>
+<sect3>
+<title>Setting Roles</title>
+<para>After saving, you will see a list of roles and a checkbox next to it. Just check the roles you want the the
+	user to have and save the document. To click on what permissions translate into roles, click on the role name.</para>
+<mediaobject>
+<imageobject><imagedata fileref="./images/user-2.png" /></imageobject>
+<textobject><phrase>Setting Roles</phrase></textobject>
+</mediaobject>
+</sect3>
+<sect3>
+<title>Setting Module Access</title>
+<para>Users will have access to all modules for which they have role based access. If you want to block certain
+	modules for certain users, un-check the module from the list.</para>
+<mediaobject>
+<imageobject><imagedata fileref="./images/user-3.png" /></imageobject>
+<textobject><phrase>Setting Module Access</phrase></textobject>
 			</mediaobject>
 			</sect3>
 			<sect3>
 			<title>Security Settings</title>
 			<para>If you wish to give the user access to the system only between office hours, or during weekends, mention it under security settings.</para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="./images/user-4.png" />
-				</imageobject>
-				<textobject><phrase>Security Settings</phrase></textobject>
-			</mediaobject>
-			</sect3>
-	</sect2>
-	<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Users-Roles">
+<mediaobject>
+<imageobject><imagedata fileref="./images/user-4.png" /></imageobject>
+<textobject><phrase>Security Settings</phrase></textobject>
+</mediaobject>
+</sect3>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Setting_Up-Users-Roles">
 		<title>Role Based Permissions</title>
 		<para>
 		ERPNext has a role-based permission system. It means that you can assign Roles to Users, and set Permissions on Roles. The permission structure also allows you to define different permission rules for different fields, using a concept called Permission "Level" of a field. Once roles are assigned to a user, it gives you the ability to limit access for a user to only specic documents.
@@ -1018,7 +945,7 @@
 			<imagedata fileref="./images/inclusive-tax.png" />
 		</imageobject>
 		<textobject><phrase>Taxes</phrase></textobject>
-	</mediaobject>	
+	</mediaobject>
 	<para>
 	Exception to the rule: Item tax settings are required only if a particular Item has a different tax rate than the rate defined in the standard tax Account
 	</para>
@@ -1031,7 +958,7 @@
 	You must usually collect taxes from your Customer and pay them to the government. At times, you may have to pay multiple taxes to multiple government bodies like local government, state or provincial and federal or central government.
 	</para>
 	<para>
-	The way ERPNext sets up taxes is via templates. Other types of charges that may apply to your invoices (like shipping, insurance etc.) can also be configured as taxes.	
+	The way ERPNext sets up taxes is via templates. Other types of charges that may apply to your invoices (like shipping, insurance etc.) can also be configured as taxes.
 	</para>
 	<para>
 	Select template and modify as per your need.
@@ -1047,7 +974,7 @@
 			<imagedata fileref="./images/sales-tax-master.png" />
 		</imageobject>
 		<textobject><phrase>Sales Taxes Master</phrase></textobject>
-	</mediaobject>	
+	</mediaobject>
 	<para>
 	When you create a new master, you will have to add a row for each tax type.
 	</para>
@@ -1136,10 +1063,10 @@
 			<imagedata fileref="./images/pos-setting.png" />
 		</imageobject>
 		<textobject><phrase>Sales Taxes Master</phrase></textobject>
-	</mediaobject>	
+	</mediaobject>
 	<warning>
 		<para>
-		If you specify a particular User, the POS setting will be applied only to that User. If the User option is left blank, the setting will be set for all users. To understand POS in detail visit Point of Sale	
+		If you specify a particular User, the POS setting will be applied only to that User. If the User option is left blank, the setting will be set for all users. To understand POS in detail visit Point of Sale
 		</para>
 	</warning>
 </sect1>
@@ -1222,177 +1149,133 @@ These Price List will be used when creating Item Price record to track selling o
 	</para>
 </sect1>
 <sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Authorization">
-	<title>Authorization Rule</title>
-	<para>
-	Authorization Rule is a tool to define rule for conditional authorization.
-	</para>
-	<para>
-	If you sales and purchase transactions of higher value or discount requires an authorization from senior manager, you can set authorization rule for it. To create new Authorization Rule, go to:
-	</para>
-	<programlisting>
-	Setup >> Customize >> Authorization Rule
-	</programlisting>
+<title>Authorization Rule</title>
+<para>Authorization Rule is a tool to define rule for conditional authorization.</para>
+<para>If you sales and purchase transactions of higher value or discount requires an
+	authorization from senior manager, you can set authorization rule for it. To create new Authorization Rule, go to:</para>
+<programlisting>Setup >> Customize >> Authorization Rule</programlisting>
 </sect1>
 <sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-SMS">
-	<title>SMS Setting</title>
-	<para>
-	To integrate SMS in ERPNext, approach a SMS Gateway Provider who provides HTTP API. They will create an account for you and will provide an unique username and password.
-	</para>
-	<para>
-	To configure SMS Settings in ERPNext, find out their HTTP API (a document which describes the method of accessing their SMS interface from 3rd party applications). In this document, you will get an URL which is used to send the SMS using HTTP request. Using this URL, you can configure SMS Settings in ERPNext.
-	</para>
-	<mediaobject>
-		<imageobject>
-			<imagedata fileref="./images/sms-setting2.jpg" />
-		</imageobject>
-		<textobject><phrase>SMS Settings</phrase></textobject>
-	</mediaobject>
-	<note>
-		<para>Note: the string up to the "?" is the SMS Gateway URL</para>
-	</note>
-	<mediaobject>
-		<imageobject>
-			<imagedata fileref="./images/sms-settings1.png" />
-		</imageobject>
-		<textobject><phrase>SMS Settings</phrase></textobject>
-	</mediaobject>
+<title>SMS Setting</title>
+<para>To integrate SMS in ERPNext, approach a SMS Gateway Provider who provides HTTP API. They will create an account for
+	you and will provide an unique username and password.</para>
+<para>To configure SMS Settings in ERPNext, find out their HTTP API (a document which describes the method of accessing
+	their SMS interface from 3rd party applications). In this document, you will get an URL which is used to send the SMS
+	using HTTP request. Using this URL, you can configure SMS Settings in ERPNext.</para>
+<mediaobject>
+<imageobject><imagedata fileref="./images/sms-setting2.jpg" /></imageobject>
+<textobject><phrase>SMS Settings</phrase></textobject>
+</mediaobject>
+<note><para>Note: the string up to the "?" is the SMS Gateway URL</para></note>
+<mediaobject>
+<imageobject><imagedata fileref="./images/sms-settings1.png" /></imageobject>
+<textobject><phrase>SMS Settings</phrase></textobject>
+</mediaobject>
 </sect1>
 <sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Stock_Reconciliation">
-	<title>Stock Reconciliation For Non Serialized Item</title>
-	<para>
-	Stock Reconciliation is the process of counting and evaluating stock-in-trade, usually at an organisations year end in order to value the total stock for preparation of the accounts. In this process actual physical stocks are checked and recorded in the system. The actual stocks and the stock in the system should be in agreement and accurate. If they are not, you can use the stock reconciliation tool to reconcile stock balance and value with actuals.
-	</para>
-	<para>
-	Difference between Serialized and Non-serialized Items.
-	</para>
-	<para>
-	A serial number is a unique, identifying number or group of numbers and letters assigned to an individual Item. Serialized items are generally high value items for which you need to warranty's and service agreements. Mostly items as machinery, equipments and high-value electronics (computers, printers etc.) are serialized.
-	</para>
-	<para>
-	Non Serialized items are generally fast moving and low value item, hence doesn't need tracking for each unit. Items like screw, cotton waste, other consumables, stationary products can be categorized as non-serialized.
-	</para>
-	<note>
-	<para>Stock Reconciliation option is available for the non serialized Items only. For seriazlized and batch items, you should create Material Receipt entry in Stock Entry form.</para>
-	</note>
-	<sect2>
-	<title>Opening Stocks</title>
-	<para>You can upload your opening stock balance in the system using Stock Reconciliation. Stock Reconciliation will update your stock for a given Item on a given date for a given Warehouse to the given quantity.
-	</para>
-	<note>
-	<para>Tip: Stock Reconciliation can also be used to update the “value” of an Item. To understand how Items are valued read Valuation.</para>
-	</note>
-	<para>
-	To perform Stock Reconciliation, go to:
-	</para>
-	<programlisting>Stock >> Tools >> Stock Reconciliation >> New Stock Reconciliation
-	</programlisting>
-		<sect3>
-		<title>Download Template</title>
-		<para>
-		A predefined template of an spreadsheet file should be followed for importing item's stock levels and valuations. Open new Stock Reconciliation form to see download option.
-		</para>
-	<mediaobject>
-		<imageobject>
-			<imagedata fileref="./images/stock-reco-template.png" />
-		</imageobject>
-		<textobject><phrase>Stock Reconciliation</phrase></textobject>
-	</mediaobject>
-		</sect3>
-		<sect3>
-		<title>Enter Data in csv file.</title>
-		<para>
-		Fill the template with the information than you want to update.
-		</para>
-	<mediaobject>
-		<imageobject>
-			<imagedata fileref="./images/stock-reco-data.png" />
-		</imageobject>
-		<textobject><phrase>Stock Reconciliation</phrase></textobject>
-	</mediaobject>
-	<para>
-	The csv format is case-sensitive. Do not edit the headers which are preset in the template. In the Item Code and Warehouse column, enter exact Item Code and Warehouse as created in your ERPNext account. For quatity, enter stock level you wish to set for that item, in a specific warehouse. If you do not want to change the quantity or valuation rate of an Item, you should leave it blank.
-	</para>
-	<note>
-		<para>Note: Make sure you do not put zero if you do not want to change the quantity amount or valuation amount. The system will calculate zero as zero quantity. So leave the field blank.</para>
-	</note>
-		</sect3>
-		<sect3>
-		<title>Upload file and Enter Values in Stock Reconciliation Form</title>
-		<para>
-		Save and upload your .csv file
-		</para>
-	<mediaobject>
-		<imageobject>
-			<imagedata fileref="./images/stock-reco-browse.png" />
-		</imageobject>
-		<textobject><phrase>Stock Reconciliation</phrase></textobject>
-	</mediaobject>
-		<para>
-		Posting Date: Posting Date will be date when you want uploaded stock to reflect in the report. Posting Date selection option allows you making back dated stock reconcialiation as well.
-		</para>
-		<para>
-		Difference Account:
-
-When making Stock Reconciliation for updating opening balance, then you should select Balance Sheet account. Bydefault Temporary Asset and Temporary Liability Account are created in the chart of account which can be used here. Since Warehouse ledger is debit account, Difference Account selected here should be "Temporary Liability Account", which is credit account.
-		</para>
-		<para>
-		If you are making Stock Reconciliation for correcting stock level or valuation of an item, then you can select any expense account in which you would want difference amount (derived from difference of valuation of item) should be booked. If Expense Account is selected as Difference Account, you will also need to select Cost Center as it is mandatory with any income and expense account selection.
-		</para>
-		<para>
-		After reviewing saved Reconciliation Data, submit the Stock Reconciliation. On successful submission, the data will be updated in the system. To check the submitted data go to stock and view stock level report.
-		</para>
-		<note>
-		<para>Note: While filling the valuation rates of Items, if you wish to find out the valuation rates of all items, you can go to stock and click on Item Prices report. The report will show you all types of rates.</para>
-		</note>
-		</sect3>
-		<sect3>
-		<title>Review the reconciliation data</title>
-		<para>
-		Verify your information.
-		</para>
-	<mediaobject>
-		<imageobject>
-			<imagedata fileref="./images/stock-reco-upload.png" />
-		</imageobject>
-		<textobject><phrase>Stock Reconciliation</phrase></textobject>
-	</mediaobject>	
-	</sect3>
-	</sect2>
+<title>Stock Reconciliation For Non Serialized Item</title>
+<para>Stock Reconciliation is the process of counting and evaluating stock-in-trade, usually at an organisations year
+	end in order to value the total stock for preparation of the accounts. In this process actual physical stocks are
+	checked and recorded in the system. The actual stocks and the stock in the system should be in agreement and accurate.
+	If they are not, you can use the stock reconciliation tool to reconcile stock balance and value with actuals.</para>
+<para>Difference between Serialized and Non-serialized Items.</para>
+<para>A serial number is a unique, identifying number or group of numbers and letters assigned to an individual Item.
+	Serialized items are generally high value items for which you need to warranty's and service agreements. Mostly items
+	as machinery, equipments and high-value electronics (computers, printers etc.) are serialized.</para>
+<para>Non Serialized items are generally fast moving and low value item, hence doesn't need tracking for each unit. Items
+	like screw, cotton waste, other consumables, stationary products can be categorized as non-serialized.</para>
+<note><para>Stock Reconciliation option is available for the non serialized Items only. For seriazlized and batch items,
+	you should create Material Receipt entry in Stock Entry form.</para></note>
+<sect2>
+<title>Opening Stocks</title>
+<para>You can upload your opening stock balance in the system using Stock Reconciliation. Stock Reconciliation will update
+	your stock for a given Item on a given date for a given Warehouse to the given quantity.</para>
+<note><para>Tip: Stock Reconciliation can also be used to update the “value” of an Item. To understand how Items are valued
+	read Valuation.</para></note>
+<para>To perform Stock Reconciliation, go to:</para>
+<programlisting>Stock >> Tools >> Stock Reconciliation >> New Stock Reconciliation</programlisting>
+<sect3>
+<title>Download Template</title>
+<para>A predefined template of an spreadsheet file should be followed for importing item's stock levels and valuations.
+	Open new Stock Reconciliation form to see download option.</para>
+<mediaobject>
+<imageobject><imagedata fileref="./images/stock-reco-template.png" /></imageobject>
+<textobject><phrase>Stock Reconciliation</phrase></textobject>
+</mediaobject>
+</sect3>
+<sect3>
+<title>Enter Data in csv file.</title>
+<para>Fill the template with the information than you want to update.</para>
+<mediaobject>
+<imageobject><imagedata fileref="./images/stock-reco-data.png" /></imageobject>
+<textobject><phrase>Stock Reconciliation</phrase></textobject>
+</mediaobject>
+<para>The csv format is case-sensitive. Do not edit the headers which are preset in the template. In the Item Code and
+	Warehouse column, enter exact Item Code and Warehouse as created in your ERPNext account. For quatity, enter stock
+	level you wish to set for that item, in a specific warehouse. If you do not want to change the quantity or valuation
+	rate of an Item, you should leave it blank.</para>
+<note><para>Note: Make sure you do not put zero if you do not want to change the quantity amount or valuation amount.
+	The system will calculate zero as zero quantity. So leave the field blank.</para></note>
+</sect3>
+<sect3>
+<title>Upload file and Enter Values in Stock Reconciliation Form</title>
+<para>Save and upload your .csv file</para>
+<mediaobject>
+<imageobject><imagedata fileref="./images/stock-reco-browse.png" /></imageobject>
+<textobject><phrase>Stock Reconciliation</phrase></textobject>
+</mediaobject>
+<para>Posting Date: Posting Date will be date when you want uploaded stock to reflect in the report. Posting Date
+	selection option allows you making back dated stock reconcialiation as well.</para>
+<para>Difference Account: When making Stock Reconciliation for updating opening balance, then you should select
+	Balance Sheet account. Bydefault Temporary Asset and Temporary Liability Account are created in the chart of
+	account which can be used here. Since Warehouse ledger is debit account, Difference Account selected here should
+	be "Temporary Liability Account", which is credit account.</para>
+<para>If you are making Stock Reconciliation for correcting stock level or valuation of an item, then you can select
+	any expense account in which you would want difference amount (derived from difference of valuation of item) should
+	be booked. If Expense Account is selected as Difference Account, you will also need to select Cost Center as it is
+	mandatory with any income and expense account selection.</para>
+<para>After reviewing saved Reconciliation Data, submit the Stock Reconciliation. On successful submission, the data
+	will be updated in the system. To check the submitted data go to stock and view stock level report.</para>
+<note><para>Note: While filling the valuation rates of Items, if you wish to find out the valuation rates of all items,
+	you can go to stock and click on Item Prices report. The report will show you all types of rates.</para></note>
+</sect3>
+<sect3>
+<title>Review the reconciliation data</title>
+<para>
+Verify your information.
+</para>
+<mediaobject>
+<imageobject><imagedata fileref="./images/stock-reco-upload.png" /></imageobject>
+<textobject><phrase>Stock Reconciliation</phrase></textobject>
+</mediaobject>
+</sect3>
+</sect2>
 </sect1>
 <sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Territory">
-	<title>Territory</title>
-	<para>
-	Territory is a place to signify where your customers come from. If you operate in one country, you can give that country name as your Territory. For Example, India, US, or Rest of the World, could be your Territories. If you operate in many locations, ERPNext allows you to create more Territories. You can also have child Territories under parent Territories. This helps in assigning different regions to different sales staff.
-	</para>
-	<mediaobject>
-		<imageobject>
-			<imagedata fileref="./images/territory-tree.png" />
-		</imageobject>
-		<textobject><phrase>Stock Reconciliation</phrase></textobject>
-	</mediaobject>	
-	<para>
-	To add more territories to an existing tree, click on "Add Child"
-	</para>
-	<mediaobject>
-		<imageobject>
-			<imagedata fileref="./images/territory-tree-1.png" />
-		</imageobject>
-		<textobject><phrase>Stock Reconciliation</phrase></textobject>
-	</mediaobject>
+<title>Territory</title>
+<para>Territory is a place to signify where your customers come from. If you operate in one country,
+	you can give that country name as your Territory. For Example, India, US, or Rest of the World,
+	could be your Territories. If you operate in many locations, ERPNext allows you to create more Territories.
+	You can also have child Territories under parent Territories. This helps in assigning different regions to
+	different sales staff.</para>
+<mediaobject>
+<imageobject><imagedata fileref="./images/territory-tree.png" /></imageobject>
+<textobject><phrase>Stock Reconciliation</phrase></textobject>
+</mediaobject>
+<para>To add more territories to an existing tree, click on "Add Child"</para>
+<mediaobject>
+<imageobject><imagedata fileref="./images/territory-tree-1.png" /></imageobject>
+<textobject><phrase>Stock Reconciliation</phrase></textobject>
+</mediaobject>
 </sect1>
 <sect1 id="chap-ERPNext-Manual_ERPNext-Setting_Up-Backups">
-	<title>Third Party Backups</title>
-	<para>
-	If you wish to store your backups on a periodic basis,on Dropbox, you can do it directly through ERPNext.
-	</para>
-	<programlisting>Setup > Manage 3rd Party Backups
-	</programlisting>
+<title>Third Party Backups</title>
+<para>If you wish to store your backups on a periodic basis,on Dropbox, you can do it directly through ERPNext.</para>
+<programlisting>Setup > Manage 3rd Party Backups</programlisting>
 </sect1>
 <sect1 id="sect1-ERPNext-Manual_ERPNext-Setting_Up-Workflows">
-	<title>Workflows</title>
-	<para>
-	In order to allow multiple people to submit multiple requests, for approvals, by multiple users, ERPNext requires you to fill the workflow conditions. ERPNext tracks the multiple permissions before submission.
-	</para>
+<title>Workflows</title>
+<para>In order to allow multiple people to submit multiple requests, for approvals, by multiple users, ERPNext requires
+	you to fill the workflow conditions. ERPNext tracks the multiple permissions before submission.</para>
 </sect1>
 </chapter>
-

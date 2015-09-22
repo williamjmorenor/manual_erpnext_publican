@@ -5,14 +5,16 @@
 ]>
 <bookinfo id="book-ERPNext-Manual_ERPNext-Manual_ERPNext">
 	<title>ERPNext User Manual</title>
-	<subtitle>ERP for Entrepreneurs.</subtitle>
+	<subtitle>A ERP system for Entrepreneurs and SMEs.</subtitle>
 	<productname>ERPNext</productname>
 	<productnumber>5</productnumber>
-	<edition>0.1</edition>
+	<edition>0.2</edition>
 	<pubsnumber>0</pubsnumber>
 	<abstract>
 		<para>
-			ERPNext helps you take full control of your business. It is as powerful as it is easy to use.
+			Entrepreneurs and SMEs have the same complexity of large companies but do not hace the resources to invest
+			in a custom solutions to run theirs business and keep track of accounting, taxes, bills and invoices. ERPNext
+			helps you to take full control of your business. It is powerful, flexible, customisable and easy to use.
 		</para>
 	</abstract>
 	<corpauthor>
@@ -25,4 +27,3 @@
 	<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	<xi:include href="Author_Group.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 </bookinfo>
-

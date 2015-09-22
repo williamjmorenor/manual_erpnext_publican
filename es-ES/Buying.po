@@ -17,7 +17,6 @@ msgstr ""
 msgid "If your business involves physical goods, buying is one of your core business activity. Your suppliers are as important as your customers and they must be provided with as much accurate information as possible. Buying in right amounts, in right quantities, can affect your cash flow and profitability. ERPNext contains a set of transactions that will make your buying process as efficient and seamless as possible."
 msgstr ""
 
-#, fuzzy
 msgid "Buying Settings"
 msgstr ""
 
@@ -186,7 +185,8 @@ msgstr ""
 msgid "Entering a Purchase Order is very similar to a Purchase Request, additionally you will have to set:"
 msgstr ""
 
-msgid "Supplier."
+#, fuzzy
+msgid "Supplier. "
 msgstr ""
 
 msgid "A “Required By” date on each Item: If you are expecting part delivery, your Supplier will know how much quantity to deliver at which date. This will help you from preventing over-supply. It will also help you to track how well your Supplier is doing on timeliness."

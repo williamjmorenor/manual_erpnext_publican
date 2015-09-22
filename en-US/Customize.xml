@@ -3,45 +3,31 @@
 %BOOK_ENTITIES;
 ]>
 <appendix id="chap-ERPNext-Manual_ERPNext-Customize">
-	<title>Customize ERPNext</title>
-	<para>
-	ERPNext offers many tools to customize the system. You simplify the forms by hiding features you don’t need using Disable Features and Module Setup, add Custom Fields, change form properties, like adding more options to drop-downs or hiding fields using Customize Form View and make your own Print Formats by using HTML Templates. You can also create multiple Letter Heads for your Prints.
-	</para>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Customize-Field">
-		<title>Custom Field</title>
-		<para>
-		Custom Field feature allows you to insert fields in the existing masters and transactions as per your requirement. While inseting custom field, you can define its properties like:
-		</para>
-		<itemizedlist>
-			<listitem>
-				<para>Field Name/Label</para>
-			</listitem>
-			<listitem>
-				<para>Field Type</para>
-			</listitem>
-			<listitem>
-				<para>Mandatory/Non-Mandatory</para>
-			</listitem>
-			<listitem>
-				<para>Insert After Field</para>
-			</listitem>
-		</itemizedlist>
-		<para>
-		To add a Custom Field, go to:
-		</para>
-		<programlisting>Setup > Customize > Custom Field > New Custom Field</programlisting>
-		<para>
-		You can also insert new Custom Field from Customize Form tool.
-		</para>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Customize-Script">
-		<title>Custom Script</title>
-		<para>
-		If you wish to change any ERPNext form formats, you can do so by using Custom Scripts. For example, if you wish to add a submit button after saving, to a Lead form, you can do so by creating your own script:
-		</para>
-		<programlisting>Setup > Customization > Custom Script</programlisting>
-		<note>
-		<para>Custim Scripts should be written using the Python programming language. It is recommended to have prior knowledge of programming before experimenting with Custom scritps as they can affect the stability of the system.</para>
-		</note>
-	</sect1>
+<title>Customize ERPNext</title>
+<para>ERPNext offers many tools to customize the system. You simplify the forms by hiding features you don’t need using
+	Disable Features and Module Setup, add Custom Fields, change form properties, like adding more options to drop-downs or
+	hiding fields using Customize Form View and make your own Print Formats by using HTML Templates. You can also create
+	multiple Letter Heads for your Prints.</para>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Customize-Field">
+<title>Custom Field</title>
+<para>Custom Field feature allows you to insert fields in the existing masters and transactions as per your requirement.
+	While inseting custom field, you can define its properties like:</para>
+<itemizedlist>
+<listitem><para>Field Name/Label</para></listitem>
+<listitem><para>Field Type</para></listitem>
+<listitem><para>Mandatory/Non-Mandatory</para></listitem>
+<listitem><para>Insert After Field</para></listitem>
+</itemizedlist>
+<para>To add a Custom Field, go to:</para>
+<programlisting>Setup > Customize > Custom Field > New Custom Field</programlisting>
+<para>You can also insert new Custom Field from Customize Form tool.</para>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Customize-Script">
+<title>Custom Script</title>
+<para>If you wish to change any ERPNext form formats, you can do so by using Custom Scripts. For example, if you wish
+	to add a submit button after saving, to a Lead form, you can do so by creating your own script:</para>
+<programlisting>Setup > Customization > Custom Script</programlisting>
+<note><para>Custim Scripts should be written using the Python programming language. It is recommended to have prior
+	knowledge of programming before experimenting with Custom scritps as they can affect the stability of the system.</para></note>
+</sect1>
 </appendix>

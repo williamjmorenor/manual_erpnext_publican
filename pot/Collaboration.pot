@@ -1,124 +1,199 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2015-05-10 23:47-0600\n"
-"PO-Revision-Date: 2015-05-10 23:47-0600\n"
+"POT-Creation-Date: 2015-07-06 20:43-0600\n"
+"PO-Revision-Date: 2015-07-06 20:43-0600\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
-"Language: en-US \n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Publican v4.2.6\n"
 
+#. Tag: title
+#, no-c-format
 msgid "Collaboration Tools"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "We live in an era when people are very comfortable communicating, discussing, asking, assigning work and getting feedback electronically. The Internet acts as a great medium to collaborate on work too. Taking this concept into ERP system, we have designed a bunch of tools whereby you can Assign transactions, manage your To Dos, share and maintain a Calendar, maintain a company wise Knowledge Base, Tag and Comment on transactions and send your Orders, Invoices etc via Email. You can also send instant messages to other users using the Messaging tool."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "These tools are integrated into all aspects of the product so that you can effectively manage your data and collaborate with your co-workers."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "To Do"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To Do is a simple tool where all the activities assigned to you and assigned by you are listed. You can also add your own to-do items in the list."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "When task is completed, you should simply remove assignment from the assigned document. With this, task will be removed from your Todo list as well. For Todo which are not assigned via document, you can set their status as Closed from the Todo record itself."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Messages"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You can send and receive messages from the system by using the Messages tool. If you send a message to a user, and the user is logged in, it will appear as a popup message and the unread messages counter in the top toolbar will be updated."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Notes"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You can store your long notes under this section. It can contain your partner lists, frequently used passwords, terms and conditions, or any other document which needs to be shared. Following are the steps to create new Note. To create a new note, go to:"
 msgstr ""
 
+#. Tag: programlisting
+#, no-c-format
 msgid "Home &gt; Note &gt; New"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Notes can also be used as a knowledge base internally. You can also attach file in the Notes, and make it accessible to specific set of users only."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Calendar"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The Calendar is a tool where you can create and share Events and also see auto-generated events from the system. You can switch calender view based on Month, Week and Day."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Creating Events in Calender"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "There are many options to add events to the calendar"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Creating Event Manually: To create event manually, you should first determine Calender View. If Event's start and end time will be within one day, then you should first switch to Day view."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Event Based on Lead: In the Lead form, you will find a field called Next Contact By and Next Contact Date. Event will be auto created for date and person person specified in this field."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Birthday Event: Birthday Event is created based on Date of Birth specified in the Employee master."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Recurring Events: You can set events as recurring in specific interval by Checking the \"Repeat This Event\"."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Permission for Event"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You can set Event as Private or Public. Private Events will be visible only to you, and if any other user selected in the participants table. Instead of User, you can also assign permission for event based on Role. Public Event, like Birthday will be visible to all."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Event Reminders"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "There are two ways you can receive email reminder for an event:"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Enable Reminder in Event: In the Event master, checking \"Send an email reminder in the morning\" will trigger notifcation email to all the participants for this event."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Create Email Digest: To get email reminders for event, you should set Email Digest for Calender Events. Email Digest can be set from:"
 msgstr ""
 
+#. Tag: programlisting
+#, no-c-format
 msgid "Setup &gt; Email &gt; Email Digest"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Assignmet"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Assign To feature in ERPNext allows you to allocate particular document to specific user, whom needs to further work on that document. For example, if Sales Order needs to be approved/submitted by Sales Manager, first draft user can allocate that Sales Order to Sales Manager. On allocating document to Sales Manager, it will be added to that user's ToDo list. Same way, allocation can also be done to Material User and Account user who needs to create Delivery Note and Sales Invoice respectively against this Sales Note."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Permissions restriction cannot be done based on Assigned To"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Following are the steps to assign document to another user."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Step 1: Click on the Assign To Button. Assign to option is located at the footer of document. Clicking on Assignment Icon on the tool bar will fast-forward you to footer of same document."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Step 2: Assign to User. In the Assign To section, you will find option to select User to whom this document will be assigned to. You can assign one document to multiple people at a time."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "With assignment, you can also leave a comment for the review of asignee."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "User will be able to remove assignment by clicking on \"Assignment Completed\" button in the document."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Tags"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Like Assignments and Comments, you can also add your own tags to each type of transactions. These tags can help you search a document and also classify it. ERPNext will also show you all the important tags in the document list."
 msgstr ""
 

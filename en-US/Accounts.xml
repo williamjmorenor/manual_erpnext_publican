@@ -3,1125 +3,775 @@
 %BOOK_ENTITIES;
 ]>
 <chapter id="chap-ERPNext-Manual_ERPNext-Accounts">
-	<title>Accounts</title>
-	<para>
-	At the end of sales and purchase cycle comes billing and payments. You may have an accountant in your team, or you may be doing accounting yourself, or you may have outsourced your accounting. In all the cases financial accounting forms the core of any business management system like an ERP.
-	</para>
-	<para>
-	In ERPNext, your accounting operations consists of 3 main transactions:
-	</para>
-	<itemizedlist>
-		<listitem>
-			<para>Sales Invoice: The bills that you raise to your Customers for the products or services you provide.</para>
-		</listitem>
-		<listitem>
-			<para>Purchase Invoice: Bills that your Suppliers give you for their products or services.</para>
-		</listitem>
-		<listitem>
-			<para>Journal Vouchers: For accounting entries, like payments, credit and other types.</para>
-		</listitem>
-	</itemizedlist>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Introduction">
-		<title>Introduction to Accounting</title>
-		<para>
-		People new to accounting are often confused with the terms Debit and Credit. Contrary to their meaning, these terms have nothing to do with who owes what.
-		</para>
-		<sect2>
-		<title>Debit and Credit</title>
-		<para>
-		Debit and Credit are conventions. All accounting follows these, so that it is easy to understand the state of finances in a universal manner. These conventions are:
-		</para>
-	<itemizedlist>
-		<listitem>
-			<para>All Accounts are of type Debit or Credit.</para>
-		</listitem>
-		<listitem>
-			<para>Assets and Expenses (and their sub-groups) are always Debit.</para>
-		</listitem>
-		<listitem>
-			<para>Liabilities and Income (and their sub-groups) are always Credit.</para>
-		</listitem>
-		<listitem>
-			<para>In all accounting entries, you “debit” an Account or “credit” one.</para>
-		</listitem>
-		<listitem>
-			<para>When you “debit” a Debit Account (an asset or expense), its value increases (“add” operation). When you “credit” a Debit Account, its value decreases (“subtract” operation). The same rule applies for Credit Accounts. “Crediting” a Credit Account, increases its value, “debiting” it decreases its value.</para>
-		</listitem>
-		<listitem>
-			<para>All accounting transactions (like a sales or a payment) must affect at least two different Accounts and sum of debits must be equal to sum of credits for the transaction. This is called the “double-entry bookkeeping system”.</para>
-		</listitem>
-	</itemizedlist>
-		<para>
-		Still confused? These conventions will become clear as you make transactions.
-		</para>
-		</sect2>
-		<sect2>
-		<title>Accrual System</title>
-		<para>
-		Another important concept to understand in Accounting is accrual. This is important when your payment happens separately from delivery.
-		</para>
-		<para>
-		For example, you buy X from a Supplier and your Supplier sends you a bill and expects you to pay in, for example, seven days. Even if you have not yet paid your Supplier, your expense must be booked immediately. This expense is booked against a group of Accounts called “Accounts Payable” that is the sum of all your outstanding dues to your Suppliers. This is called accrual. When you pay your Supplier, you will cancel his dues and update your bank account.
-		</para>
-		<para>
-		ERPNext works on an accrual system. The transactions that accrue income and expense are Sales Invoice and Purchase Invoice.
-		</para>
-		<para>
-		In retail, typically, delivery and payment happens at the same time. To cover this scenario, we have in ERPNext a POS Invoice (POS = Point of Sales). More on that later.
-		</para>
-		</sect2>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Sales">
-		<title>Sales</title>
-		<para>
-		A Sales Invoice is a bill that you send to your customers, against which the customer processes the payment. Sales Invoice is an accounting transaction. On submission of Sales Invoice, the system updates the receivable and books income against a Customer Account.
-		</para>
-		<para>
-		You can create a Sales Invoice directly from
-		</para>
-		<programlisting>Accounting > Documents > Sales Invoice > New Sales Invoice
-		</programlisting>
-		<para>
-		or Click on Make Invoice at the right hand corner of the Delivery Note.
-		</para>
-		<sect2>
-		<title>Accounting Impact</title>
-		<para>
-		All Sales must be booked against an “Income Account”. This refers to an Account in the “Income” section of your Chart of Accounts. It is a good practice to classify your income by type (like product income, service income etc). The Income Account must be set for each row of the Items table.
-		</para>
-		<note>
-		<para>To set default Income Accounts for Items, you can set it in the Item or Item Group.</para>
-		</note>
-		<para>
-		The other account that is affected is the Account of the Customer. That is automatically set from “Debit To” in the heading section.
-		</para>
-		<para>
-		You must also mention the Cost Centers in which your Income must be booked. Remember that your Cost Centers tell you the profitability of the different lines of business or product. You can also set a default Cost Center in the Item master.
-		</para>
-		<sect3>
-		<title>Accounting entries (GL Entry) for a typical double entry “Sale”:</title>
-		<para>
-		When booking a sale (accrual):
-		</para>
-		<para>
-		Debit: Customer (grand total) Credit: Income (net total, minus taxes for each Item) Credit: Taxes (liabilities to be paid to the government)
-		</para>
-		<note>
-		<para>To see entries in your Sales Invoice after you “Submit”, click on “View Ledger”.</para>
-		</note>
-		</sect3>
-		<sect3>
-		<title>Dates</title>
-		<para>
-		Posting Date: The date on which the Sales Invoice will affect your books of accounts i.e. your General Ledger. This will affect all your balances in that accounting period.
-		</para>
-		<para>
-		Due Date: The date on which the payment is due (if you have sold on credit). This can be automatically set from the Customer master.
-		</para>
-		</sect3>
-		<sect3>
-		<title>Recurring Invoices</title>
-		<para>
-		If you have a contract with a Customer where you bill the Customer on a monthly, quarterly, half-yearly or annual basis, you can check the “Recurring Invoice” box. Here you can fill in the details of how frequently you want to bill this Invoice and the period for which the contract is valid.
-		</para>
-		<para>
-		ERPNext will automatically create new Invoices and mail it to the email ids you set.
-		</para>
-		</sect3>
-		</sect2>
-		<sect2>
-		<title>"Pro Forma" Invoice</title>
-		<para>
-		If you want to give an Invoice to a Customer to make a payment before you deliver, i.e. you operate on a payment first basis, you should create a Quotation and title it as a “Pro-forma Invoice” (or something similar) using the Print Heading feature.
-		</para>
-		<para>
-		“Pro Forma” means for formality. Why do this? Because if you book a Sales Invoice it will show up in your “Accounts Receivable” and “Income”. This is not ideal as your Customer may or may not decide to pay up. But since your Customer wants an “Invoice”, you could give the Customer a Quotation (in ERPNext) titled as “Pro Forma Invoice”. This way everyone is happy.
-		</para>
-		</sect2>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Purchase">
-		<title>Purchase Invoice</title>
-		<para>
-		Purchase Invoice is the exact opposite of your Sales Invoice. It is the bill that your Supplier sends you for products or services delivered. Here you accrue expenses to your Supplier. Making a Purchase Invoice is very similar to making a Purchase Order.
-		</para>
-		<para>
-		To make a new Purchase Invoice, go to:
-		</para>
-		<programlisting>Accounts > Documents > Purchase Invoice > New Purchase Invoice
-		</programlisting>
-		<para>
-		or click on “Make Purchase Invoice” in Purchase Order or Purchase Receipt.
-		</para>
-		<note>
-		<para>The concept of “Posting Date” is again same as Sales Invoice. “Bill No” and “Bill Date” helps to track the bill number as set by your Supplier for reference.</para>
-		</note>
-		<sect2>
-		<title>Accounting Impact</title>
-		<para>
-		Like in Sales Invoice, you have to enter an Expense or an Asset account for each row in your Items table. This helps to indicate if the Item is an Asset or an Expense. You must also enter a Cost Center. These can also be set in the Item master.
-		</para>
-		<para>
-		The Purchase Invoice will affect your accounts as follows:
-		</para>
-		<para>
-		Accounting entries (GL Entry) for a typical double entry “purchase”:
-		</para>
-		<para>Debits:</para>
-		<itemizedlist>
-			<listitem>
-				<para>Expense or Asset (net totals, excluding taxes)</para>
-			</listitem>
-			<listitem>
-				<para>Taxes (assets if VAT-type or expense again).</para>
-			</listitem>
-		</itemizedlist>
-		<para>Credits:</para>
-		<itemizedlist>
-			<listitem>
-				<para>Supplier</para>
-			</listitem>
-		</itemizedlist>
-		<para>
-		To see entries in your Purchase Invoice after you “Submit”, click on “View Ledger”.
-		</para>
-		<sect3>
-		<title>Is purchase an “Expense” or an “Asset”?</title>
-		<para>
-		If the Item is consumed immediately on purchase, or if it is a service, then the purchase becomes an “Expense”. For example, a telephone bill or travel bill is an “Expense” - it is already consumed.
-		</para>
-		<para>
-		For inventory Items, that have a value, these purchases are not yet “Expense”, because they still have a value while they remain in your stock. They are “Assets”. If they are raw-materials (used in a process), they will become “Expense” the moment they are consumed in the process. If they are to be sold to a Customer, they become “Expense” when you ship them to the Customer.
-		</para>
-		</sect3>
-		<sect3>
-		<title>Deducting Taxes at Source</title>
-		<para>
-		In many countries, the law may require you to deduct taxes, while paying your suppliers. These taxes could be based on a standard rate. Under these type of schemes, typically if a Supplier crosses a certain threshold of payment, and if the type of product is taxable, you may have to deduct some tax (which you pay back to your government, on your Supplier’s behalf).
-		</para>
-		<para>
-		To do this, you will have to make a new Tax Account under “Tax Liabilities” or similar and credit this Account by the percent you are bound to deduct for every transaction.
-		</para>
-		<important>
-		<para>Taxes are an essential part of accounting, if you are miscalculating taxes your business may be at risk of fines and tax charges. If you are unsure about the calculation or application of any tax consult your accountant or tax specialist.</para>
-		</important>
-		</sect3>
-		</sect2>
-	</sect1>		
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Payments">
-		<title>Making Payments</title>
-		<para>
-		Payments made against Sales Invoices or Purchase Invoices can be made by clicking on “Make Payment Entry” button on “Submitted” invoices.
-		</para>
-		<orderedlist>
-			<listitem>
-				<para>Update the “Bank Account” (you can also set the default account in the Company master).</para>
-			</listitem>
-			<listitem>
-				<para>Update posting date.</para>
-			</listitem>
-			<listitem>
-				<para>Enter the cheque number, cheque date.</para>
-			</listitem>
-			<listitem>
-				<para>Save and Submit.</para>
-			</listitem>
-		</orderedlist>
-		<para>
-		Payments can also be made independent of invoices by creating a new Journal Voucher and selecting the type of payment.
-		</para>
-		<para>
-		Incoming Payment: For payments from Customers:
-		</para>
-		<itemizedlist>
-			<listitem>
-				<para>Debit: Bank or Cash Account</para>
-			</listitem>
-			<listitem>
-				<para>Credit: Customer
+<title>Accounts</title>
+<para>At the end of sales and purchase cycle comes billing and payments. You may have an accountant in your team, or you may
+	be doing accounting yourself, or you may have outsourced your accounting. In all the cases financial accounting forms the
+	core of any business management system like an ERP.</para>
+<para>In ERPNext, your accounting operations consists of 3 main transactions:</para>
+<itemizedlist>
+<listitem>
+<para>Sales Invoice: The bills that you raise to your Customers for the products or services you provide.</para>
+</listitem>
+<listitem>
+<para>Purchase Invoice: Bills that your Suppliers give you for their products or services.</para>
+</listitem>
+<listitem>
+<para>Journal Vouchers: For accounting entries, like payments, credit and other types.</para>
+</listitem>
+</itemizedlist>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Introduction">
+<title>Introduction to Accounting</title>
+<para>People new to accounting are often confused with the terms Debit and Credit. Contrary to their meaning, these terms have
+			nothing to do with who owes what.</para>
+<sect2>
+<title>Debit and Credit</title>
+<para>Debit and Credit are conventions. All accounting follows these, so that it is easy to understand the state of finances in
+	a universal manner. These conventions are:</para>
+<itemizedlist>
+<listitem>
+<para>All Accounts are of type Debit or Credit.</para>
+</listitem>
+<listitem>
+<para>Assets and Expenses (and their sub-groups) are always Debit.</para>
+</listitem>
+<listitem>
+<para>Liabilities and Income (and their sub-groups) are always Credit.</para>
+</listitem>
+<listitem>
+<para>In all accounting entries, you “debit” an Account or “credit” one.</para>
+</listitem>
+<listitem>
+<para>When you “debit” a Debit Account (an asset or expense), its value increases (“add” operation). When you “credit” a Debit Account,
+	its value decreases (“subtract” operation). The same rule applies for Credit Accounts. “Crediting” a Credit Account, increases its
+	value, “debiting” it decreases its value.</para>
+</listitem>
+<listitem>
+<para>All accounting transactions (like a sales or a payment) must affect at least two different Accounts and sum of debits must be
+	equal to sum of credits for the transaction. This is called the “double-entry bookkeeping system”.</para>
+</listitem>
+</itemizedlist>
+<para>Still confused? These conventions will become clear as you make transactions.</para>
+</sect2>
+<sect2>
+<title>Accrual System</title>
+<para>Another important concept to understand in Accounting is accrual. This is important when your payment happens separately from
+	delivery.</para>
+<para>For example, you buy X from a Supplier and your Supplier sends you a bill and expects you to pay in, for example, seven days.
+	Even if you have not yet paid your Supplier, your expense must be booked immediately. This expense is booked against a group of
+	Accounts called “Accounts Payable” that is the sum of all your outstanding dues to your Suppliers. This is called accrual. When you
+	pay your Supplier, you will cancel his dues and update your bank account.</para>
+<para>ERPNext works on an accrual system. The transactions that accrue income and expense are Sales Invoice and Purchase
+	Invoice.</para>
+<para>In retail, typically, delivery and payment happens at the same time. To cover this scenario, we have in ERPNext a POS Invoice
+	(POS = Point of Sales). More on that later.</para>
+</sect2>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Sales">
+<title>Sales</title>
+<para>A Sales Invoice is a bill that you send to your customers, against which the customer processes the payment. Sales Invoice is an
+	accounting transaction. On submission of Sales Invoice, the system updates the receivable and books income against a Customer Account.
 </para>
-			</listitem>
-		</itemizedlist>
-		<note>
-		<para>Remember to add “Against Sales Invoice” or “Is Advance” as applicable.</para>
-		</note>
-		<para>
-		Outgoing Payment: For payments to Suppliers:
-		</para>
-		<itemizedlist>
-			<listitem>
-				<para>Debit: Supplier</para>
-			</listitem>
-			<listitem>
-				<para>Credit: Bank or Cash Account</para>
-			</listitem>
-		</itemizedlist>
-		<sect2>
-		<title>Reconciling Cheque Payments</title>
-		<para>
-		If you are receiving payments or making payments via cheques, the bank statements will not accurately match the dates of your entry, this is because the bank usually takes time to “clear” these payments. Also you may have mailed a cheque to your Supplier and it may be a few days before it is received and deposited by the Supplier. In ERPNext you can synchronize your bank statements and your Journal Vouchers using the “Bank Reconciliation” tool.
-		</para>
-		<para>
-		To use this, go to:
-		</para>
-		<programlisting>Accounts > Tools > Bank Reconciliation
-		</programlisting>
-		<para>
-		Select your “Bank” Account and enter the dates of your statement. Here you will get all the “Bank Voucher” type entries. In each of the entry on the right most column, update the “Clearance Date” and click on “Update”.
-		</para>
-		<para>
-		By doing this you will be able to sync your bank statements and entries into the system.
-		</para>
-		</sect2>
-		<sect2>
-		<title>Managing Outstanding Payments</title>
-		<para>
-		In most cases, apart from retail sales, billing and payments are separate activities. There are several combinations in which these payments are done. These cases apply to both sales and purchases.
-		</para>
-		<itemizedlist>
-			<listitem>
-				<para>They can be upfront (100% in advance).</para>
-			</listitem>
-			<listitem>
-				<para>Post shipment. Either on delivery or within a few days of delivery.</para>
-			</listitem>
-			<listitem>
-				<para>Part in advance and part on or post delivery.</para>
-			</listitem>
-			<listitem>
-				<para>Payments can be made together for a bunch of invoices.</para>
-			</listitem>
-			<listitem>
-				<para>Advances can be given together for a bunch of invoices (and can be split across invoices).</para>
-			</listitem>
-		</itemizedlist>
-		<para>
-		ERPNext allows you to manage all these scenarios. All accounting entries (GL Entry) can be made against a Sales Invoice, Purchase Invoice or Journal Vouchers (in special cases, an invoice can be made via a Sales Invoice too).
-		</para>
-		<para>
-		The total outstanding amount against an invoice is the sum of all the accounting entries that are made “against” (or are linked to) that invoice. This way you can combine or split payments in Journal Vouchers to manage the scenarios.
-		</para>
-		</sect2>
-		<sect2>
-		<title>Matching Payments to Invoices</title>
-		<para>
-		In complex scenarios, especially in the capital goods industry, sometimes there is no direct link between payments and invoices. You send invoices to your Customers and your Customer sends you block payments or payments based on some schedule that is not linked to your invoices.
-		</para>
-		<para>
-		In such cases, you can use the Payment to Invoice Matching Tool.
-		</para>
-		<programlisting>Accounts > Tools > Payment Reconciliation
-		</programlisting>
-		<para>
-		In this tool, you can select an account (your Customer’s account) and click on “Pull Payment Entries” and it will select all un-linked Journal Vouchers and Sales Invoices from that Customer.
-		</para>
-		<para>
-		To cancel off some payments and invoices, select the Invoices and Journal Vouchers and click on “Reconcile”.
-		</para>
-		</sect2>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Advance">
-		<title>Advance Payment Entry</title>
-		<para>
-		Payment done by the customer before accepting delivery of the product is an Advance Payment. For Orders of high value, the business houses expect to receive advance.
-		</para>
-		<para>
-		For Example: Consider a customer- Jane D'souza placing an order for a double bed costing Rs 100000/- She is asked to give some advance before the furniture house begins work on her order. She gives them Rs 1000/- in cash.
-		</para>
-		<para>
-		Go to Accounts and open a new Journal Voucher to make the advance entry.
-		</para>
-		<programlisting>Accounts > Documents > Journal Voucher > New Journal Voucher
-		</programlisting>
-		<para>
-		Mention the voucher type as cash voucher. This differs for different customers. If somebody pays by cheque the voucher type will be Bank Voucher. Then select the customer account and make the respective debit and credit entries.
-		</para>
-		<para>
-		Since the customer has given 10000/- as cash advance,it will be recorded as a credit entry against the customer. To balance it with the debit entry[Double accounting Entry]enter 10000/- as debit against the company's cash account. In the row "Is Advance" click 'Yes'.
-		</para>
-		<sect2>
-		<title>Double Entry Accounting</title>
-		<para>
-		Double entry bookkeeping is a system of accounting in which every transaction has a corresponding positive and negative entry : debits and credits. Every transaction involves a debit entry in one account and a credit entry in another account. This means that every transaction must be recorded in two accounts; one account will be debited because it receives value and the other account will be credited because it has given value.
-		</para>
-		<para>
-		Save and submit the JV. If this document is not saved it will not be pulled in other accounting documents.
-		</para>
-		<para>
-		When you make a new Sales Invoice for the same customer, mention the advance in the Sales Invoice Form.
-		</para>
-		<para>
-		To link the Sales Invoice to the Journal Voucher which mentions the advance payment entry, click on ‘Get Advances Received’. Allocate the amount of advance in the advances table. The accounting will be adjusted accordingly.
-		</para>
-		</sect2>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Journal">
-		<title>Journal Vouchers</title>
-		<para>
-		All types of accounting entries other than Sales Invoice and Purchase Invoice are made using the Journal Voucher. A Journal Voucher (also called Journal Entry) is a standard accounting transaction that affects multiple Accounts and the sum of debits is equal to the sum of credits.
-		</para>
-		<para>
-		To create a Journal Voucher go to:
-		</para>
-		<programlisting>Accounts > Documents > Journal Voucher > New Journal Voucher
-		</programlisting>
-		<para>
-		In a Journal Voucher, you must select.
-		</para>
-		<orderedlist>
-			<listitem>
-				<para>Type of Voucher from the drop down.</para>
-			</listitem>
-			<listitem>
-				<para>Add rows for the individual accounting entries. In each row, you must specify:</para>
-			</listitem>
-			<listitem>
-			<orderedlist>
-				<listitem>
-					<para>The Account that will be affected.</para>
-				</listitem>
-				<listitem>
-					<para>The amount to Debit or Credit.</para>
-				</listitem>
-				<listitem>
-					<para>The Cost Center (if it is an Income or Expense).</para>
-				</listitem>
-				<listitem>
-					<para>Against Voucher: Link it to a voucher or invoice if it affects the “outstanding” amount of that invoice.</para>
-				</listitem>
-				<listitem>
-					<para>Is Advance: Select “Yes” if you want to make it selectable in an Invoice.  Other information in case it is a Bank Payment or a bill.</para>
-				</listitem>
-			</orderedlist>
-			</listitem>
-		</orderedlist>
-		<para>
-		Difference: The “Difference” field is the difference between the Debit and Credit amounts. This should be zero if the Journal Voucher is to be “Submitted”. If this number is not zero, you can click on “Make Difference Entry” to add a new row with the amount required to make the total as zero.
-		</para>
-		<sect2>
-			<title>Common Entries</title>
-			<para>
-			A look at some of the common accounting entries that can be done via Journal Voucher.
-			</para>
-			<sect3>
-				<title>Expenses (non accruing)</title>
-				<para>
-				Many times it may not be necessary to accrue an expense, but it can be directly booked against an expense Account on payment. For example a travel allowance or a telephone bill. You can directly debit Telephone Expense (instead of your telephone company) and credit your Bank on payment.
-				</para>
-				<itemizedlist>
-					<listitem>
-						<para>Debit: Expense Account (like Telephone expense).</para>
-					</listitem>
-					<listitem>
-						<para>Credit: Bank or Cash Account.</para>
-					</listitem>
-				</itemizedlist>
-			</sect3>
-			<sect3>
-				<title>Bad Debts or Write Offs</title>
-				<para>
-				If you are writing off an Invoice as a bad debt, you can create a Journal Voucher similar to a Payment, except instead of debiting your Bank, you can debit an Expense Account called Bad Debts.
-				</para>
-				<itemizedlist>
-					<listitem>
-						<para>Debit: Bad Debts Written Off.</para>
-					</listitem>
-					<listitem>
-						<para>Credit: Asset (the Account under which you had booked the asset to be depreciated).</para>
-					</listitem>
-				</itemizedlist>
-				<note>
-					<para>There may be regulations in your country that define by how much amount you can depreciate a class of Assets.</para>
-				</note>
-			</sect3>
-		</sect2>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Credit">
-		<title>Credit Limit</title>
-		<para>
-		A credit limit is the maximum amount of credit that a financial institution or other lender will extend to a debtor for a particular line of credit. From an organisation's perspective, it is the maximum amount of credit which a customer gets on goods purchased.
-		</para>
-		<para>
-		To set credit limit go to Customer- Master
-		</para>
-		<programlisting>Selling > Document > Customer
-		</programlisting>
-		<para>
-		Go to the 'More Info section' and enter the amount in the field Credit Limit.
-		</para>
-		<para>
-		In case a need arises to allow more credit to the customer as a good-will, the Credit Controller has access to submit order even if credit limit is crossed.
-		</para>
-		<para>
-		To allow any other role to submit transactions by customers whose credit limit has expired, go to accounting settings and make changes.
-		</para>	
-		<para>
-		In the field Credit Controller, select the role who would be authorized to accept orders or raise credit limits of customers.
-		</para>	
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Openning">
-		<title>Openning Entry</title>
-		<para>
-		If you are a new company you can start using ERPNext accounting module by going to chart of accounts.
-		</para>
-		<para>
-		However, if you are migrating from a legacy accounting system like Tally or a Fox Pro based software, you need to "Open" your Accounting.
-		</para>
-		<sect2>
-			<title>Opening Accounts</title>
-			<para>
-			Now that you have completed most of the setup, its time to start moving in!
-			</para>
-			<para>
-			There are two important sets of data you need to enter before you start your operations.
-			</para>
-			<itemizedlist>
-				<listitem>
-					<para>Opening Account balances.</para>
-				</listitem>
-				<listitem>
-					<para>Opening Stock balances.</para>
-				</listitem>
-			</itemizedlist>
-			<para>
-			To setup your accounts and stock correctly you will need accurate data to work with. Make sure you have the data setup for this.
-			</para>
-			<sect3>
-				<title>Opening Accounts</title>
-				<para>
-				We usually recommend that you start using accounting in a new financial year, but you could start midway too. To setup your accounts, you will need the following for the “day” you start using accounting in ERPNext:
-				</para>
-				<para>
-				Opening capital accounts - like your shareholder’s (or owner’) capital, loans, bank balances on that day. List of outstanding sales and purchase invoices (Payables and Receivables).
-				</para>
-				<para>
-				Based on Voucher Type
-				</para>
-				<para>
-				You can select accounts based on the voucher type. In such a scenario, your balance sheet should be balanced.
-				</para>
-				<para>
-				Also, note that if there are more than 300 ledgers, the system will crash. Thus to avoid such a situation, you can open accounts by using temporary accounts.
-				</para>
-			</sect3>
-			<sect3>
-				<title>Temporary Accounts</title>
-				<para>
-				A nice way to simplify opening is to use a temporary account just for opening. These accounts will become zero once all your old invoices and opening balances of bank, debt stock etc are entered. In the standard chart of accounts, a Temperory Opening account is created under assets
-				</para>
-			</sect3>
-			<sect3>
-				<title>The Opening Entry</title>
-				<para>
-				In ERPNext Opening Accounts are setup by submitting a special Journal Entries (Journal Voucher).
-				</para>
-				<note>				
-				<para>
-				Make sure to set “Is Opening” as “Yes” in the More Info section.
-				</para>
-				</note>
-				<programlisting>Setup > Opening Accounts and Stock > Opening Accounting Entries.
-				</programlisting>
-				<para>
-				Complete Journal Entries on the Debit and Credit side.
-				</para>
-				<para>
-				To update opening balance is to make Journal Voucher for an individual/group of accounts. For example, if you want to update balance in three bank accounts, then make Journal Vouchers in this manner.
-				</para>
-				<para>
-				Temporary Asset and Liability account is used for balancing purpose. When you update opening balance in Liability Account, you can use Temporary Asset Account for balancing. This way, you can update opening balance in Asset and Liability accounts.
-				</para>
-				<para>
-				You can make two Opening Journal Vouchers:
-				</para>
-				<itemizedlist>
-					<listitem>
-						<para>For all assets (excluding Accounts Receivables): This entry will contain all your assets except the amounts you are expecting from your Customers against outstanding Sales Invoices. You will have to update your receivables by making an individual entry for each Invoice (this is because, the system will help you track the invoices which are yet to be paid). You can credit the sum of all these debits against the Temperory Opening account.</para>
-					</listitem>
-					<listitem>
-						<para>For all liabilities: Similarly you need to pass a Journal Voucher for your Opening Liabilities (except for the bills you have to pay) against Temperory Opening account.</para>
-					</listitem>
-					<listitem>
-						<para>In this method you can update opening balance of specific balancesheet accounts and not for all.</para>
-					</listitem>
-				</itemizedlist>
-				<note>
-						<para>Opening entry is only for balance sheet accounts and not for expense or Income accounts.</para>
-				</note>
-			</sect3>
-			<sect3>
-				<title>Outstanding Invoices</title>
-				<para>
-				After your Opening Journal Vouchers are made, you will need to enter each Sales Invoice and Purchase Invoice that is yet to be paid. Since you have already booked the income or expense on these invoices in the previous period, select the temp opening account Temporary Opening in the “Income” and “Expense” accounts.
-				</para>
-				<important>
-				<para>Make sure to set each invoice as “Is Opening”!</para>
-				</important>
-				<para>
-				If you don’t care what items are in that invoice, just make a dummy item entry in the Invoice. Item code in the Invoice is not necessary, so it should not be such a problem.
-
-
-				</para>
-				<note>
-				<para>Once all your invoices are entered, your Temperory Opening account will have a balance of zero!</para>
-				</note>
-			</sect3>
-		</sect2>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Closing">
-		<title>Closing a Financial Period</title>
-		<para>
-		At the end of every year or (quarterly or maybe even monthly), after completing auditing, you can close your books of accounts. This means that you make all your special entries like:
-		</para>
-		<itemizedlist>
-			<listitem>
-				<para>Depreciation</para>
-			</listitem>
-			<listitem>
-				<para>Change in value of Assets</para>
-			</listitem>
-			<listitem>
-				<para>Defer taxes and liabilities</para>
-			</listitem>
-			<listitem>
-				<para>Update bad debts</para>
-			</listitem>
-		</itemizedlist>
-		<para>
-		etc. and book your Profit or Loss.
-		</para>
-		<para>
-		By doing this, your balance in your Income and Expense Accounts become zero. You start a new Fiscal Year (or period) with a balanced Balance Sheet and fresh Profit and Loss account. In ERPNext after making all the special entries via Journal Voucher for the current fiscal year, you should set all your Income and Expense accounts to zero via:
-		</para>
-		<programlisting>Accounts > Tools > Period Closing Voucher
-		</programlisting>
-		<para>
-		Posting Date will be when this entry should be executed. If your Fiscal Year ends on 31st December, then that date should be selected as Posting Date in the Period Closing Voucher.
-		</para>
-		<para>
-		Transaction Date will be Period Closing Voucher's creation date.
-		</para>
-		<para>
-		Closing Fiscal Year will be an year for which you are closing your financial statement.
-		</para>
-		<para>
-		This voucher will transfer Profit or Loss (availed from PL statment) to Closing Account Head. You should select a libility account like Reserves and Surplus, or Capital Fund account as Closing Account.
-		</para>
-		<para>
-		The Period Closing Voucher will make accounting entries (GL Entry) making all your Income and Expense Accounts zero and transferring Profit/Loss balance to the Closing Account.
-		</para>
-		<important>
-		<para>If accounting entries are made in a closing fiscal year, even after Period Closing Voucher was created for that Fiscal Year, you should create another Period Closing Voucher. Later voucher will only transfer the pending PL balance into Closing Account Head.</para>
-		</important>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Reports">
-		<title>Accounting Reports</title>
-		<para>
-		Some of the major accounting reports are:
-		</para>
-		<para>
-		General Ledger: General Ledger is based on the table GL Entry and can be filtered by Account and between a period. This will help you to get a full update for all entries done in that period for that Account.
-		</para>
-		<para>
-		Trial Balance: Trial Balance is the list of Account balances for all your Accounts (“Ledger” and “Group”) on a particular date. For each Account it will give you the:
-		</para>
-		<itemizedlist>
-			<listitem>
-				<para>Opening</para>
-			</listitem>
-			<listitem>
-				<para>Debits</para>
-			</listitem>
-			<listitem>
-				<para>Credits</para>
-			</listitem>
-			<listitem>
-				<para>Closing</para>
-			</listitem>
-		</itemizedlist>
-		<para>
-		The sum of all closing balances in a Trial Balance must be zero.
-		</para>
-		<para>
-		Accounts Payable and Accounts Receivable (AP / AR): These reports help you to track the outstanding invoices sent to Customer and Suppliers. In this report, you will get your outstanding amounts period wise. i.e. between 0-30 days, 30-60 days and so on. You can also get your payables and receivables from direct reports on Sales Invoice and Purchase Invoice.
-		</para>
-		<para>
-		Sales and Purchase Register: In this report, each tax Account is transposed in columns. For each Invoice and invoice Item, you will get the amount of individual tax that has been paid, based on the Taxes and Charges table.
-		</para>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Reconciliation">
-		<title>Bank Reconciliation</title>
-		<para>
-		A Bank Reconciliation is a process that explains the difference between the bank balance shown in an organisation's bank statement, as supplied by the bank, and the corresponding amount shown in the organisation's own accounting records at a particular point in time.
-		</para>
-		<para>
-		Such differences may occur, for example, because a cheque or a list of cheques issued by the organisation has not been presented to the bank, a banking transaction, such as a credit received, or a charge made by the bank, has not yet been recorded in the organisations books, or either the bank or the organisation itself has made an error. The Bank Reconciliation statement in ERPNext comes in the form of a report.
-		</para>
-		<para>
-		When you get the report, check whether the field 'Balance as per bank' matches the Bank Account Statement. If there is a match then all the clearance dates are updated. If there is a mismatch then check clearance dates and journal entries
-		</para>
-		<para>
-		To add clearance entries go to:
-		</para>
-		<programlisting>Accounts > Tools > Bank Reconciliation
-		</programlisting>
-		<sect2>
-			<title>Bank Reconciliation Tool</title>
-			<para>
-			The Bank Reconciliation tool in ERPNext, helps add clearance dates to the account statements. To Reconcile cheque payments go to Accounts and click on Bank Reconciliation.
-			</para>
-			<para>
-			Step 1: Select the Bank Account against which you intend to reconcile. For example; HDFC Bank, ICICI Bank, or Citibank etc.
-			</para>
-			<para>
-			Step 2: Select the Date range that you wish to reconcile for.
-			</para>
-			<para>
-			Step 3: Click on 'Get Reconciled Entries' All the entries in the specified date range will be shown in a table below.
-			</para>
-			<para>
-			Step 4: Click on the JV from the table and update clearance date.
-			</para>
-			<para>
-			Step 5: Click on the button 'Update Clearance Date'.
-			</para>
-		</sect2>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Budgeting">
-		<title>Budgetting</title>
-		<para>
-		ERPNext will help you set and manage budgets on your Cost Centers. This is useful when, for example, you are doing online sales. You have a budget for search ads, and you want ERPNext to stop or warn you from over spending, based on that budget.
-		</para>
-		<para>
-		Budgets are also great for planning purposes. When you are making plans for the next financial year, you would typically target a revenue based on which you would set your expenses. Setting a budget will ensure that your expenses do not get out of hand, at any point, as per your plans. You can define it in the Cost Center. If you have seasonal sales you can also define a budget distribution that the budget will follow.
-		</para>
-		<para>
-		In order to allocate budget, go to
-		</para>
-		<programlisting>Accounts > Setup > Chart of Cost Centers
-		</programlisting>
-		<para>
-		and click on Chart of Cost Center. Select a Cost Center and click on Open.
-		</para>
-		<para>
-		ERPNext allows you to take a few budget actions. It signifies whether to stop , warn or Ignore if you exceed budgets.
-		</para>
-		<para>
-		These can be defined from the Company record.
-		</para>
-		<para>
-		Even if you choose to “ignore” budget overruns, you will get a wealth of information from the “Budget vs Actual” variance report. This report shows month wise actual expenses as compared to the budgeted expenses.
-		</para>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Chart">
-		<title>Chart Of Accounts</title>
-		<para>
-		The Chart of Accounts forms the blueprint of your organization. The overall structure of your Chart of Accounts is based on a system of double entry accounting that has become a standard all over the world to quantify how a company is doing financially. The Chart of Accounts helps you to answer:
-		</para>
-		<itemizedlist>
-			<listitem>
-				<para>What is your organisation worth?</para>
-			</listitem>
-			<listitem>
-				<para>How much debt have you taken?</para>
-			</listitem>
-			<listitem>
-				<para>How much profit are you making (and hence paying tax)?</para>
-			</listitem>
-			<listitem>
-				<para>How much are you selling?</para>
-			</listitem>
-			<listitem>
-				<para>What is your expense break-up</para>
-			</listitem>
-		</itemizedlist>
-		<para>
-		You may note that as a business manager, it is very valuable to see how well your business is doing.
-		</para>
-		<note>
-		<para>If you can’t read a Balance Sheet it's a good opportunity to start learning about this. It will be worth the effort. Your Chart of Accounts is the heart of your financial reports, is there is a Chart of Account for available for your country in ERPNext you can set it in the Wizard Setup. If you need help configuring your Chart of Account contact a Accountant..</para>
-		</note>
-		<para>
-		To edit your Chart of Accounts in ERPNext go to:
-		</para>
-		<programlisting>Accounts > Setup > Chart of Accounts
-		</programlisting>
-		<para>
-		Chart of Accounts is a tree view of the names of the Accounts (Ledgers and Groups) that a Company requires to manage its books of accounts. ERPNext sets up a simple chart of accounts for each Company you create, but you have to modify it according to your needs and legal requirements. ￼ For each company, Chart of Accounts signifies the way to classify the accounting entries, mostly based on statutory (tax, compliance to government regulations) requirements.
-		</para>
-		<sect2>
-			<title>Balance Sheet Accounts</title>
-			<para>
-			The Balance Sheet has Application of Funds (Assets) and Sources of Funds (Liabilities) that signify the net-worth of your company at any given time. When you begin or end a financial period, all the Assets are equal to the Liabilities.
-			</para>
-			<note>
-			<para>If you are new to accounting, you might be wondering, how can Assets be equal to Liabilities? That would mean the company has nothing of its own. Thats right. All the “investment” made in the company to buy assets (like land, furniture, machines) is made by the owners and is a liability to the company. If the company would want to shut down, it would need to sell all the assets and pay back all the liabilities (including profits) to the owners, leaving itself with nothing.</para>
-			</note>
-			<para>
-			All the accounts under this represent an asset owned by the company like "Bank Account", "Land and Property", "Furniture" or a liability (funds that the company owes to others) like "Owners funds", "Debt" etc.
-			</para>
-			<para>
-			Two special accounts to note here are Accounts Receivable (money you have to collect from your customers) and Accounts Payable (money you have to pay to your suppliers) under Assets and Liabilities respectively.
-			</para>
-		</sect2>
-		<sect2>
-			<title>Profit and Loss Accounts</title>
-			<para>
-			Profit and Loss is the group of Income and Expense accounts that represent your accounting transactions over a period.
-			</para>
-			<para>
-			Unlike Balance sheet accounts, Profit and Loss accounts (or PL accounts) do not represent net worth (assets), but rather represent the amount of money spent and collected in servicing customers during the period. Hence at the beginning and end of your Fiscal Year, they become zero.
-			</para>
-			<note>
-			<para>On the first day of the year you have not made any profit or loss, but you still have assets, hence balance sheet accounts never become zero at the beginning or end of a period</para>
-			</note>
-		</sect2>
-		<sect2>
-			<title>Groups and Ledgers</title>
-			<para>
-			There are two main kinds of Accounts in ERPNext - Group and Ledger. Groups can have sub-groups and ledgers within them, whereas ledgers are the leaf nodes of your chart and cannot be further classified.
-			</para>
-			<para>
-			Accounting Transactions can only be made against Ledger Accounts (not Groups)
-			</para>
-			<important>
-			<para> The term "Ledger" means a page in an accounting book where entries are made. There is usually one ledger for each account (like a Customer or a Supplier).</para>
-			</important>
-			<note>
-			<para>An Account “Ledger” is also sometimes called as Account “Head”.</para>
-			</note>
-			<sect3>
-				<title>Other Account Types</title>
-				<para>
-				In ERPNext, you can also specify more information when you create a new Account, this is there to help you select that particular account in a scenario like Bank Account or a Tax Account and has no effect on the Chart itself. You can also tag if an account represents a Customer, Supplier or Employee in "Master Type".
-				</para>
-			</sect3>
-			<sect3>
-				<title>Creating / Editing Accounts</title>
-				<para>
-				To create new Accounts, explore your Chart of Accounts and click on an Account group under which you want to create the new Account. On the right side, you will see an option to “Open” or “Add Child” a new Account.
-				</para>
-				<para>
-				Option to create will only appear if you click on a Group (folder) type Account.
-				</para>
-				<para>
-				ERPNext creates a standard structure for you when the Company is created but it is up to you to modify or add or remove accounts.
-				</para>
-				<para>
-				Typically, you might want to create Accounts for
-				</para>
-				<itemizedlist>
-					<listitem>
-						<para>Types of Expenses (travel, salaries, telephone etc) under Expenses.</para>
-					</listitem>
-					<listitem>
-						<para>Taxes (VAT, Sales Tax etc based on your country) under Current Liabilities.</para>
-					</listitem>
-					<listitem>
-						<para>Types of Sales (for example, Product Sales, Service Sales etc.) under Income.</para>
-					</listitem>
-					<listitem>
-						<para>Types of Assets (building, machinery, furniture etc.) under Fixed Assets.</para>
-					</listitem>
-				</itemizedlist>
-			</sect3>
-		</sect2>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Cost_Center">
-		<title>Cost Center and Budgeting</title>
-		<para>
-		Your Chart of Accounts is mainly designed to provide reports to the government and tax authorities. ￼ Most businesses have multiple activities like different product lines, market segments, areas of business, etc that share some common overheads.They should ideally have their own structure to report, whether they are profitable or not. For this purpose, there is an alternate structure, called the Chart of Cost Centers.
-		</para>
-		<sect2>
-			<title>Cost Center</title>
-			<para>
-			You can create a tree of Cost Centers to represent your business better. Each Income / Expense entry is also tagged against a Cost Center. For example, if you have two types of sales:
-			</para>
-			<itemizedlist>
-				<listitem>
-					<para>Walk-in Sales</para>
-				</listitem>
-				<listitem>
-					<para>Online Sales</para>
-				</listitem>
-			</itemizedlist>
-			<para>
-			You may not have shipping expenses for your walk-in customers, and no shop- rent for your online customers. If you want to get the profitability of each of these separately, you should create the two as Cost Centers and mark all sales as either "Walk-in" or "Online". Mark your all your purchases in the same way.
-			</para>
-			<para>
-			Thus when you do your analysis you get a better understanding as to which side of your business is doing better. Since ERPNext has an option to add multiple Companies, you can create Cost Centers for each Company and manage it separately.
-			</para>
-			<para>
-			To setup your Chart of Cost Centers go to:
-			</para>
-			<programlisting>Accounts > Setup > Chart of Cost Centers
-			</programlisting>
-			<para>
-			Cost centers help you in one more activity, budgeting.
-			</para>
-		</sect2>
-		<sect2>
-			<title>Budgeting</title>
-			<para>
-			ERPNext will help you set and manage budgets on your Cost Centers. This is useful when, for example, you are doing online sales. You have a budget for search ads, and you want ERPNext to stop or warn you from over spending, based on that budget.
-			</para>
-			<para>
-			Budgets are also great for planning purposes. When you are making plans for the next financial year, you would typically target a revenue based on which you would set your expenses. Setting a budget will ensure that your expenses do not get out of hand, at any point, as per your plans.
-			</para>
-			<para>
-			You can define it in the Cost Center. If you have seasonal sales you can also define a budget distribution that the budget will follow.
-			</para>
-			<programlisting>Accounts > Setup > Budget Distribution > New Budget Distribution
-			</programlisting>
-			<sect3>
-				<title>Budget Actions</title>
-				<para>
-				ERPNext allows you to either:
-				</para>
-				<itemizedlist>
-					<listitem>
-						<para>Stop.</para>
-					</listitem>
-					<listitem>
-						<para>Warn or,</para>
-					</listitem>
-					<listitem>
-						<para>Ignore</para>
-					</listitem>
-				</itemizedlist>
-				<para>
-				if you exceed budgets.
-				</para>
-				<para>
-				These can be defined from the Company record.
-				</para>
-				<para>
-				Even if you choose to “ignore” budget overruns, you will get a wealth of information from the “Budget vs Actual” variance report.
-				</para>
-				<note>
-				<para>When you set a budget, it has to be set as per Account under the Cost Center. For example if you have a Cost Center “Online Sales”, you can restrict “Advertising Budget” by creating a row with that Account and defining the amount.</para>
-				</note>
-			</sect3>
-		</sect2>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Fiscal_Year">
-		<title>Fiscal Year</title>
-		<para>
-		A fiscal year is also known as a financial year or a budget year. It is used for calculating financial statements in businesses and other organisations. The fiscal year may or may not be the same as a calendar year. For tax purposes, companies can choose to be calendar-year taxpayers or fiscal-year taxpayers. In many jurisdictions, regulatory laws regarding accounting and taxation require such reports once per twelve months. However, it is not mandatory that the period should be a calendar year (that is, 1 January to 31 December).
-		</para>
-		<para>
-		A fiscal year usually starts at the beginning of a quarter, such as April 1, July 1 or October 1. However, most companies' fiscal year also coincides with the calendar year, which starts January 1. For the most part, it is simpler and easier that way. For some organizations, there are advantages in starting the fiscal year at a different time. For example, businesses that are seasonal might start their fiscal year on July 1 or October 1. A business that has most of its income in the fall and most of its expenses in the spring might also choose to start its fiscal year on October 1. That way, they know what their income will be for that year, and can adjust their expenses to maintain their desired profit margins.
-		</para>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Payment">
-		<title>Payment Tool</title>
-		<para>
-		The Payment Tool Feature allows non-accounting personnel to generate Journal Vouchers by populating relevant fields in the Journal Voucher with account and payment details
-		</para>
-		<para>
-		To go to Payment Tool, go to:
-		</para>
-		<programlisting>Accounts > Tools > Payment Tool
-		</programlisting>
-		<orderedlist>
-			<listitem>
-				<para>Select the Company Name.</para>
-			</listitem>
-			<listitem>
-				<para>Select the Party Type (Customer or Supplier) and the name of the customer or supplier against whom the payment has been made or received.</para>
-			</listitem>
-			<listitem>
-				<para>Use the Received Or Paid field to specify 'Received' if payment is being received or 'Paid' if User is making the payment.</para>
-			</listitem>
-			<listitem>
-				<para>Select the Mode of Payment and the Payment Account .</para>
-			</listitem>
-			<listitem>
-				<para>Enter the Reference Number and Reference Date of the payment, for instance, the Cheque no. and Cheque date in case the payment is being made by cheque.</para>
-			</listitem>
-			<listitem>
-				<para>Click on Get Outstanding Vouchers to fetch all the valid Vouchers, Invoices and Orders against which a payment can be made/received. These will appear in the Against Voucher section.</para>
-			</listitem>
-			<listitem>
-				<para>Once details have been fetched, click on the detail entry and enter the payment amount made against that Invoice/Order/Voucher.</para>
-			</listitem>
-			<listitem>
-				<para>Click on 'Make Journal Voucher' to generate a new Journal Voucher with the relevant Party Details and Credit/Debit details filled in.</para>
-			</listitem>
-		</orderedlist>
-		<note>
-		<para>In case User is paying a customer or receiving payment from a supplier, add the details regarding the relevant invoices and orders manually.</para>
-		</note>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Payment_Reconsiliation">
-		<title>Payment Reconciliation</title>
-		<para>
-		Reconciliation is an accounting process used to compare two sets of records to ensure the figures are in agreement and are accurate. It is the key process used to determine whether the money leaving an account matches the amount spent, ensuring the two values are balanced at the end of the recording period. In Payment Reconciliation, the invoices are matched against the payments made to the bank. Thus if you have many payments which are not reconciled with their respective invoices, you can use the payment reconciliation tool. To go to payment reconciliation tool, go to accounts and click on 'Payment Reconciliation'
-		</para>
-		<para>
-		Step 1: Select the Account against whom the payments need to be reconciled.
-		</para>
-		<para>
-		Step 2: Mention the Voucher Type, whether it is Purchase Invoice, Sales Invoice or Journal Voucher.
-		</para>
-		<para>
-		Step 3: Select the Voucher Number and click on ' Pull Payment Entries'. All the payment entries will be pulled into a table below.
-		</para>
-		<para>
-		Step 4: Click on the entry row to allocate a particular amount.
-		</para>
-		<para>
-		Step 5: Click on the button 'Allocate' You will get a message that says 'Amount allocated successfully'
-		</para>
-		<para>
-		Step 6: Click again on 'Pull Payment Entries' to refresh the tables with filters.
-		</para>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-POS">
-		<title>Point Of Sale POS Invoice</title>
-		<para>
-		Point of sale (POS) is the place where a retail transaction is completed. It is the point at which a customer makes a payment to the merchant in exchange for goods or services. For retail operations, the delivery of goods, accrual of sale and payment all happens in one event, that is usually called the “Point of Sale”.
-		</para>
-		<para>
-		You can make a Sales Invoice of type POS by checking on “Is POS”. When you check this, you will notice that some fields get hidden and some new ones emerge.
-		</para>
-		<note>
-		<para>In retail, you may not create a separate Customer record for each customer. You can create a general Customer called “Walk-in Customer” and make all your transactions against this Customer record.</para>
-		</note>		
-		<sect2>
-			<title>Setting Up POS</title>
-			<para>
-			In ERPNext all Sales and Purchase transactions, like Sales Invoice, Quotation, Sales Order, Purchase Order etc. can be edited via the POS. There two steps to Setup POS:
-			</para>
-			<orderedlist>
-				<listitem>
-					<para>Enable POS View via
-					<programlisting>(Setup > Customize > Feature Setup)
-					</programlisting>
-					</para>
-				</listitem>
-				<listitem>
-					<para>Create a POS Setting record</para>
-				</listitem>
-			</orderedlist>
-			<para>
-			Switch to POS View: Open any sales / purchase transaction. Click on the Computer Icon.
-			</para>
-			<para>
-			Different sections of the POS
-			</para>
-			<itemizedlist>
-				<listitem>
-					<para>Update Stock: If this is checked, Stock Ledger Entries will be made when you “Submit” this Sales Invoice thereby eliminating the need for a separate Delivery Note.</para>
-				</listitem>
-				<listitem>
-					<para>In your Items table, update inventory information like Warehouse (saved as default), Serial Number, or Batch Number if applicable.</para>
-				</listitem>
-				<listitem>
-					<para>Update Payment Details like your Bank / Cash Account, Paid amount etc. </para>
-				</listitem>
-				<listitem>
-					<para>If you are writing off certain amount. For example when you receive extra cash as a result of not having exact denomination of change, check on ‘Write off Outstanding Amount’ and set the Account.</para>
-				</listitem>
-			</itemizedlist>
-			<para>
-			Adding an Item: At the billing counter, the retailer needs to select Items which the consumer buys. In the POS interface you can select an Item by two methods. One, is by clicking on the Item image and the other, is through the Barcode / Serial No.
-			</para>
-			<para>
-			Select Item - To select a product click on the Item image and add it into the cart. A cart is an area that prepares a customer for checkout by allowing to edit product information, adjust taxes and add discounts.
-			</para>
-			<para>
-			Barcode / Serial No - A Barcode / Serial No is an optical machine-readable representation of data relating to the object to which it is attached. Enter Barcode / Serial No in the box as shown in the image below and pause for a second, the item will be automatically added to the cart.
-			</para>
-			<note>
-			<para>To change the quantity of an Item, enter your desired quantity in the quantity box. These are mostly used if the same Item is purchased in bulk.</para>
-			</note>
-			<para>
-			If your product list is very long use the Search field, type the product name in Search box.
-			</para>
-			<para>
-			Removing an Item: There are two ways to remove an Item.
-			</para>
-			<itemizedlist>
-				<listitem>
-					<para>Select an Item by clicking on the row of that Item from Item cart. Then click on “Del” button. OR</para>
-				</listitem>
-				<listitem>
-					<para>Enter 0(zero) quantity of any item to delete that item.</para>
-				</listitem>
-			</itemizedlist>
-			<para>
-			To remove multiple Items together, select multiple rows and click on “Del” button.
-			</para>
-			<note>
-			<para>Delete button appears only when Items are selected.</para>
-			</note>
-			<para>
-			Make Payment: After all the Items and their quantities are added into the cart, you are ready to make the Payment. Payment process is divided into 3 steps -
-			</para>
-			<orderedlist>
-				<listitem>
-					<para>Click on “Make Payment” to get the Payment window.</para>
-				</listitem>
-				<listitem>
-					<para>Select your “Mode of Payment”.</para>
-				</listitem>
-				<listitem>
-					<para>Click on “Pay” button to Save the document.</para>
-				</listitem>
-			</orderedlist>
-			<para>
-			Submit the document to finalise the record. After the document is submitted, you can either print or email it directly to the customer.
-			</para>
-			<para>
-			Accounting entries (GL Entry) for a Point of Sale:
-			</para>
-			<para>
-			Debits:
-			</para>
-			<itemizedlist>
-				<listitem>
-					<para>Customer (grand total)</para>
-				</listitem>
-				<listitem>
-					<para>Bank / Cash (payment)</para>
-				</listitem>
-			</itemizedlist>
-			<para>
-			Credits:
-			</para>
-			<itemizedlist>
-				<listitem>
-					<para>Income (net total, minus taxes for each Item)</para>
-				</listitem>
-				<listitem>
-					<para>Taxes (liabilities to be paid to the government)</para>
-				</listitem>
-				<listitem>
-					<para>Customer (payment)
-</para>
-				</listitem>
-				<listitem>
-					<para>Write Off (optional)</para>
-				</listitem>
-			</itemizedlist>
-			<para>
-			To see entries after “Submit”, click on “View Ledger”.
-			</para>
-		</sect2>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Item">
-		<title>Item Wise Tax</title>
-		<para>
-		Taxes selected in the Tax and Other Charges in transactions are applied on all the items. If you need different taxes applied on items selected in the same transaction, you should setup you item and tax master as explained in the steps below.
-		</para>
-		<para>
-		Step 1: Mention Tax Applicable in the Item master: Item master has tax table where you can list taxes which will be applied on it. Tax rate mentioned in the item master gets preference over tax rate entered in the transactions. For example, if you provide tax rate for VAT as 10% for item ABC, where for same VAT ledger 12% rate is entered in the Sales Order/Invoice, for item ABC, tax rate applied would be 10%, as mentioned in the item master.
-		</para>
-		<para>
-		Step 2: Setup Taxes and Other Charges: In Taxes and Other Charges master, you should select all the applicable taxes which could be applicable on item. For example, if few items has VAT 5 applied on them, other has Service Tax applied, and some other has Excise Duty applicable, then you tax master should have all these taxes selected.
-		</para>
-		<para>
-		Step 3: Set Tax Rate as Zero in Taxes and Charges Master: In the Taxes and Other Charges master, tax rate will be updated as ZERO. It means, tax rate applicable on items will be pulled from the respective Item master. While for other items, 0% tax will be applied, means no other taxes will be applied on that item. Based on the above setting, you will have taxes applied on items as mentioned in the respective item master. Check following for an instance.
-		</para>
-	</sect1>
+<para>You can create a Sales Invoice directly from</para>
+<programlisting>Accounting > Documents > Sales Invoice > New Sales Invoice</programlisting>
+<para>or Click on Make Invoice at the right hand corner of the Delivery Note.</para>
+<sect2>
+<title>Accounting Impact</title>
+<para>All Sales must be booked against an “Income Account”. This refers to an Account in the “Income” section of your Chart of Accounts.
+	It is a good practice to classify your income by type (like product income, service income etc). The Income Account must be set for
+	each row of the Items table.</para>
+<note><para>To set default Income Accounts for Items, you can set it in the Item or Item Group.</para></note>
+<para>The other account that is affected is the Account of the Customer. That is automatically set from “Debit To” in the heading
+	section.</para>
+<para>You must also mention the Cost Centers in which your Income must be booked. Remember that your Cost Centers tell you the
+	profitability of the different lines of business or product. You can also set a default Cost Center in the Item master.</para>
+<sect3>
+<title>Accounting entries (GL Entry) for a typical double entry “Sale”:</title>
+<para>When booking a sale (accrual):</para>
+<para>Debit: Customer (grand total) Credit: Income (net total, minus taxes for each Item) Credit: Taxes (liabilities to be paid to the
+	government)</para>
+<note><para>To see entries in your Sales Invoice after you “Submit”, click on “View Ledger”.</para></note>
+</sect3>
+<sect3>
+<title>Dates</title>
+<para>Posting Date: The date on which the Sales Invoice will affect your books of accounts i.e. your General Ledger. This will affect
+	all your balances in that accounting period.</para>
+<para>Due Date: The date on which the payment is due (if you have sold on credit). This can be automatically set from the Customer
+	master.</para>
+</sect3>
+<sect3>
+<title>Recurring Invoices</title>
+<para>If you have a contract with a Customer where you bill the Customer on a monthly, quarterly, half-yearly or annual basis, you
+	can check the “Recurring Invoice” box. Here you can fill in the details of how frequently you want to bill this Invoice and the
+	period for which the contract is valid.</para>
+<para>ERPNext will automatically create new Invoices and mail it to the email ids you set.</para>
+</sect3>
+</sect2>
+<sect2>
+<title>"Pro Forma" Invoice</title>
+<para>If you want to give an Invoice to a Customer to make a payment before you deliver, i.e. you operate on a payment first basis,
+	you should create a Quotation and title it as a “Pro-forma Invoice” (or something similar) using the Print Heading feature.</para>
+<para>“Pro Forma” means for formality. Why do this? Because if you book a Sales Invoice it will show up in your “Accounts Receivable”
+	and “Income”. This is not ideal as your Customer may or may not decide to pay up. But since your Customer wants an “Invoice”, you
+	could give the Customer a Quotation (in ERPNext) titled as “Pro Forma Invoice”. This way everyone is happy.</para>
+</sect2>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Purchase">
+<title>Purchase Invoice</title>
+<para>Purchase Invoice is the exact opposite of your Sales Invoice. It is the bill that your Supplier sends you for products or
+	services delivered. Here you accrue expenses to your Supplier. Making a Purchase Invoice is very similar to making a
+	Purchase Order.</para>
+<para>To make a new Purchase Invoice, go to:</para>
+<programlisting>Accounts > Documents > Purchase Invoice > New Purchase Invoice</programlisting>
+<para>or click on “Make Purchase Invoice” in Purchase Order or Purchase Receipt.</para>
+<note><para>The concept of “Posting Date” is again same as Sales Invoice. “Bill No” and “Bill Date” helps to track the bill number
+	as set by your Supplier for reference.</para></note>
+<sect2>
+<title>Accounting Impact</title>
+<para>Like in Sales Invoice, you have to enter an Expense or an Asset account for each row in your Items table. This helps to indicate
+	if the Item is an Asset or an Expense. You must also enter a Cost Center. These can also be set in the Item master.</para>
+<para>The Purchase Invoice will affect your accounts as follows:</para>
+<para>Accounting entries (GL Entry) for a typical double entry “purchase”:</para>
+<para>Debits:</para>
+<itemizedlist>
+<listitem>
+<para>Expense or Asset (net totals, excluding taxes)</para>
+</listitem>
+<listitem>
+<para>Taxes (assets if VAT-type or expense again).</para>
+</listitem>
+</itemizedlist>
+<para>Credits:</para>
+<itemizedlist>
+<listitem>
+<para>Supplier</para>
+</listitem>
+</itemizedlist>
+<para>To see entries in your Purchase Invoice after you “Submit”, click on “View Ledger”.</para>
+<sect3>
+<title>Is purchase an “Expense” or an “Asset”?</title>
+<para>If the Item is consumed immediately on purchase, or if it is a service, then the purchase becomes an “Expense”. For example,
+	a telephone bill or travel bill is an “Expense” - it is already consumed.</para>
+<para>For inventory Items, that have a value, these purchases are not yet “Expense”, because they still have a value while they
+	remain in your stock. They are “Assets”. If they are raw-materials (used in a process), they will become “Expense” the moment
+	they are consumed in the process. If they are to be sold to a Customer, they become “Expense” when you ship them to the
+	Customer.</para>
+</sect3>
+<sect3>
+<title>Deducting Taxes at Source</title>
+<para>In many countries, the law may require you to deduct taxes, while paying your suppliers. These taxes could be based on a
+	standard rate. Under these type of schemes, typically if a Supplier crosses a certain threshold of payment, and if the type
+	of product is taxable, you may have to deduct some tax (which you pay back to your government, on your Supplier’s behalf).</para>
+<para>To do this, you will have to make a new Tax Account under “Tax Liabilities” or similar and credit this Account by the
+	percent you	are bound to deduct for every transaction.</para>
+<important><para>Taxes are an essential part of accounting, if you are miscalculating taxes your business may be at risk of fines
+	and	tax charges. If you are unsure about the calculation or application of any tax consult your accountant or tax
+	specialist.</para></important>
+</sect3>
+</sect2>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Payments">
+<title>Making Payments</title>
+<para>Payments made against Sales Invoices or Purchase Invoices can be made by clicking on “Make Payment Entry” button on “Submitted”
+	invoices.</para>
+<orderedlist>
+<listitem><para>Update the “Bank Account” (you can also set the default account in the Company master).</para></listitem>
+<listitem><para>Update posting date.</para></listitem>
+<listitem><para>Enter the cheque number, cheque date.</para></listitem>
+<listitem><para>Save and Submit.</para></listitem>
+</orderedlist>
+<para>Payments can also be made independent of invoices by creating a new Journal Voucher and selecting the type of payment.</para>
+<para>Incoming Payment: For payments from Customers:</para>
+<itemizedlist>
+<listitem><para>Debit: Bank or Cash Account</para></listitem>
+<listitem><para>Credit: Customer</para></listitem>
+</itemizedlist>
+<note>
+<para>Remember to add “Against Sales Invoice” or “Is Advance” as applicable.</para>
+</note>
+<para>Outgoing Payment: For payments to Suppliers:</para>
+<itemizedlist>
+<listitem><para>Debit: Supplier</para></listitem>
+<listitem><para>Credit: Bank or Cash Account</para></listitem>
+</itemizedlist>
+<sect2>
+<title>Reconciling Cheque Payments</title>
+<para>If you are receiving payments or making payments via cheques, the bank statements will not accurately match the dates of your
+	entry, this is because the bank usually takes time to “clear” these payments. Also you may have mailed a cheque to your Supplier
+	and it may be a few days before it is received and deposited by the Supplier. In ERPNext you can synchronize your bank statements
+	and your Journal Vouchers using the “Bank Reconciliation” tool.</para>
+<para>To use this, go to:</para>
+<programlisting>Accounts > Tools > Bank Reconciliation</programlisting>
+<para>Select your “Bank” Account and enter the dates of your statement. Here you will get all the “Bank Voucher” type entries. In each
+	of the entry on the right most column, update the “Clearance Date” and click on “Update”.</para>
+<para>By doing this you will be able to sync your bank statements and entries into the system.</para>
+</sect2>
+<sect2>
+<title>Managing Outstanding Payments</title>
+<para>In most cases, apart from retail sales, billing and payments are separate activities. There are several combinations in which
+	these payments are done. These cases apply to both sales and purchases.</para>
+<itemizedlist>
+<listitem>
+<para>They can be upfront (100% in advance).</para>
+</listitem>
+<listitem>
+<para>Post shipment. Either on delivery or within a few days of delivery.</para>
+</listitem>
+<listitem>
+<para>Part in advance and part on or post delivery.</para>
+</listitem>
+<listitem>
+<para>Payments can be made together for a bunch of invoices.</para>
+</listitem>
+<listitem>
+<para>Advances can be given together for a bunch of invoices (and can be split across invoices).</para>
+</listitem>
+</itemizedlist>
+<para>ERPNext allows you to manage all these scenarios. All accounting entries (GL Entry) can be made against a Sales Invoice,
+	Purchase Invoice or Journal Vouchers (in special cases, an invoice can be made via a Sales Invoice too).</para>
+<para>The total outstanding amount against an invoice is the sum of all the accounting entries that are made “against” (or are linked
+	to) that invoice. This way you can combine or split payments in Journal Vouchers to manage the scenarios.</para>
+</sect2>
+<sect2>
+<title>Matching Payments to Invoices</title>
+<para>In complex scenarios, especially in the capital goods industry, sometimes there is no direct link between payments and invoices.
+You send invoices to your Customers and your Customer sends you block payments or payments based on some schedule that is not linked
+to your invoices.</para>
+<para>In such cases, you can use the Payment to Invoice Matching Tool.</para>
+<programlisting>Accounts > Tools > Payment Reconciliation</programlisting>
+<para>In this tool, you can select an account (your Customer’s account) and click on “Pull Payment Entries” and it will select all
+	un-linked Journal Vouchers and Sales Invoices from that Customer.</para>
+<para>To cancel off some payments and invoices, select the Invoices and Journal Vouchers and click on “Reconcile”.</para>
+</sect2>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Advance">
+<title>Advance Payment Entry</title>
+<para>Payment done by the customer before accepting delivery of the product is an Advance Payment. For Orders of high value, the
+	business houses expect to receive advance.</para>
+<para>For Example: Consider a customer- Jane D'souza placing an order for a double bed costing Rs 100000/- She is asked to give
+	some advance before the furniture house begins work on her order. She gives them Rs 1000/- in cash.</para>
+<para>Go to Accounts and open a new Journal Voucher to make the advance entry.</para>
+<programlisting>Accounts > Documents > Journal Voucher > New Journal Voucher</programlisting>
+<para>Mention the voucher type as cash voucher. This differs for different customers. If somebody pays by cheque the voucher type
+	will be Bank Voucher. Then select the customer account and make the respective debit and credit entries.</para>
+<para>Since the customer has given 10000/- as cash advance,it will be recorded as a credit entry against the customer. To balance
+	it with the debit entry[Double accounting Entry]enter 10000/- as debit against the company's cash account. In the row "Is Advance"
+	click 'Yes'.</para>
+<sect2>
+<title>Double Entry Accounting</title>
+<para>Double entry bookkeeping is a system of accounting in which every transaction has a corresponding positive and negative entry :
+	debits and credits. Every transaction involves a debit entry in one account and a credit entry in another account. This means that
+	every transaction must be recorded in two accounts; one account will be debited because it receives value and the other account will
+	be credited because it has given value.</para>
+<para>Save and submit the JV. If this document is not saved it will not be pulled in other accounting documents.</para>
+<para>When you make a new Sales Invoice for the same customer, mention the advance in the Sales Invoice Form.</para>
+<para>To link the Sales Invoice to the Journal Voucher which mentions the advance payment entry, click on ‘Get Advances Received’.
+	Allocate the amount of advance in the advances table. The accounting will be adjusted accordingly.</para>
+</sect2>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Journal">
+<title>Journal Vouchers</title>
+<para>All types of accounting entries other than Sales Invoice and Purchase Invoice are made using the Journal Voucher. A Journal
+	Voucher (also called Journal Entry) is a standard accounting transaction that affects multiple Accounts and the sum of debits is
+	equal to the sum of credits.</para>
+<para>To create a Journal Voucher go to:</para>
+<programlisting>Accounts > Documents > Journal Voucher > New Journal Voucher</programlisting>
+<para>In a Journal Voucher, you must select.</para>
+<orderedlist>
+<listitem>
+<para>Type of Voucher from the drop down.</para>
+</listitem>
+<listitem>
+<para>Add rows for the individual accounting entries. In each row, you must specify:</para>
+</listitem>
+<listitem>
+<orderedlist>
+<listitem>
+<para>The Account that will be affected.</para>
+</listitem>
+<listitem>
+<para>The amount to Debit or Credit.</para>
+</listitem>
+<listitem>
+<para>The Cost Center (if it is an Income or Expense).</para>
+</listitem>
+<listitem>
+<para>Against Voucher: Link it to a voucher or invoice if it affects the “outstanding” amount of that invoice.</para>
+</listitem>
+<listitem>
+<para>Is Advance: Select “Yes” if you want to make it selectable in an Invoice.  Other information in case it is a Bank Payment or a
+	bill.</para>
+</listitem>
+</orderedlist>
+</listitem>
+</orderedlist>
+<para>Difference: The “Difference” field is the difference between the Debit and Credit amounts. This should be zero if the Journal
+	Voucher is to be “Submitted”. If this number is not zero, you can click on “Make Difference Entry” to add a new row with the amount
+	required to make the total as zero.</para>
+<sect2>
+<title>Common Entries</title>
+<para>A look at some of the common accounting entries that can be done via Journal Voucher.</para>
+<sect3>
+<title>Expenses (non accruing)</title>
+<para>Many times it may not be necessary to accrue an expense, but it can be directly booked against an expense Account on payment.
+	For example a travel allowance or a telephone bill. You can directly debit Telephone Expense (instead of your telephone company)
+	and credit your Bank on payment.</para>
+<itemizedlist>
+<listitem>
+<para>Debit: Expense Account (like Telephone expense).</para>
+</listitem>
+<listitem>
+<para>Credit: Bank or Cash Account.</para>
+</listitem>
+</itemizedlist>
+</sect3>
+<sect3>
+<title>Bad Debts or Write Offs</title>
+<para>If you are writing off an Invoice as a bad debt, you can create a Journal Voucher similar to a Payment, except instead of
+	debiting your Bank, you can debit an Expense Account called Bad Debts.</para>
+<itemizedlist>
+<listitem>
+<para>Debit: Bad Debts Written Off.</para>
+</listitem>
+<listitem>
+<para>Credit: Asset (the Account under which you had booked the asset to be depreciated).</para>
+</listitem>
+</itemizedlist>
+<note><para>There may be regulations in your country that define by how much amount you can depreciate a class of Assets.</para></note>
+</sect3>
+</sect2>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Credit">
+<title>Credit Limit</title>
+<para>A credit limit is the maximum amount of credit that a financial institution or other lender will extend to a debtor for a
+	particular line of credit. From an organisation's perspective, it is the maximum amount of credit which a customer gets on goods
+	purchased.</para>
+<para>To set credit limit go to Customer- Master</para>
+<programlisting>Selling > Document > Customer</programlisting>
+<para>Go to the 'More Info section' and enter the amount in the field Credit Limit.</para>
+<para>In case a need arises to allow more credit to the customer as a good-will, the Credit Controller has access to submit
+	order even if credit limit is crossed.</para>
+<para>To allow any other role to submit transactions by customers whose credit limit has expired, go to accounting settings and make
+	changes.</para>
+<para>In the field Credit Controller, select the role who would be authorized to accept orders or raise credit limits of
+	customers.</para>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Openning">
+<title>Openning Entry</title>
+<para>If you are a new company you can start using ERPNext accounting module by going to chart of accounts.</para>
+<para>However, if you are migrating from a legacy accounting system like Tally or a Fox Pro based software, you need to "Open" your
+	 Accounting.</para>
+<sect2>
+<title>Opening Accounts</title>
+<para>Now that you have completed most of the setup, its time to start moving in!</para>
+<para>There are two important sets of data you need to enter before you start your operations.</para>
+<itemizedlist>
+<listitem><para>Opening Account balances.</para></listitem>
+<listitem><para>Opening Stock balances.</para></listitem>
+</itemizedlist>
+<para>To setup your accounts and stock correctly you will need accurate data to work with. Make sure you have the data setup for
+	this.</para>
+<sect3>
+<title>Opening Accounts</title>
+<para>We usually recommend that you start using accounting in a new financial year, but you could start midway too. To setup your
+	accounts, you will need the following for the “day” you start using accounting in ERPNext:</para>
+<para>Opening capital accounts - like your shareholder’s (or owner’) capital, loans, bank balances on that day. List of outstanding
+	sales and purchase invoices (Payables and Receivables).</para>
+<para>Based on Voucher Type</para>
+<para>You can select accounts based on the voucher type. In such a scenario, your balance sheet should be balanced.</para>
+<para>Also, note that if there are more than 300 ledgers, the system will crash. Thus to avoid such a situation, you can open accounts
+	by using temporary accounts.</para>
+</sect3>
+<sect3>
+<title>Temporary Accounts</title>
+<para>A nice way to simplify opening is to use a temporary account just for opening. These accounts will become zero once all your
+	old invoices and opening balances of bank, debt stock etc are entered. In the standard chart of accounts, a Temperory Opening
+	account is created under assets</para>
+</sect3>
+<sect3>
+<title>The Opening Entry</title>
+<para>In ERPNext Opening Accounts are setup by submitting a special Journal Entries (Journal Voucher).</para>
+<note><para>Make sure to set “Is Opening” as “Yes” in the More Info section.</para></note>
+<programlisting>Setup > Opening Accounts and Stock > Opening Accounting Entries.</programlisting>
+<para>Complete Journal Entries on the Debit and Credit side.</para>
+<para>To update opening balance is to make Journal Voucher for an individual/group of accounts. For example, if you want to update
+	balance in three bank accounts, then make Journal Vouchers in this manner.</para>
+<para>Temporary Asset and Liability account is used for balancing purpose. When you update opening balance in Liability Account, you
+	can use Temporary Asset Account for balancing. This way, you can update opening balance in Asset and Liability accounts.</para>
+<para>You can make two Opening Journal Vouchers:</para>
+<itemizedlist>
+<listitem><para>For all assets (excluding Accounts Receivables): This entry will contain all your assets except the amounts you are
+	expecting from your Customers against outstanding Sales Invoices. You will have to update your receivables by making an individual
+	entry for each Invoice (this is because, the system will help you track the invoices which are yet to be paid). You can credit the
+	sum of all these debits against the Temperory Opening account.</para></listitem>
+<listitem>
+<para>For all liabilities: Similarly you need to pass a Journal Voucher for your Opening Liabilities (except for the bills you have
+	to pay) against Temperory Opening account.</para></listitem>
+<listitem><para>In this method you can update opening balance of specific balancesheet accounts and not for all.</para></listitem>
+</itemizedlist>
+<note><para>Opening entry is only for balance sheet accounts and not for expense or Income accounts.</para></note>
+</sect3>
+<sect3>
+<title>Outstanding Invoices</title>
+<para>After your Opening Journal Vouchers are made, you will need to enter each Sales Invoice and Purchase Invoice that is yet to
+	be paid. Since you have already booked the income or expense on these invoices in the previous period, select the temp opening
+	account Temporary Opening in the “Income” and “Expense” accounts.</para>
+<important><para>Make sure to set each invoice as “Is Opening”!</para></important>
+<para>If you don’t care what items are in that invoice, just make a dummy item entry in the Invoice. Item code in the Invoice is not
+	necessary, so it should not be such a problem.</para>
+<note><para>Once all your invoices are entered, your Temperory Opening account will have a balance of zero!</para></note>
+</sect3>
+</sect2>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Closing">
+<title>Closing a Financial Period</title>
+<para>At the end of every year or (quarterly or maybe even monthly), after completing auditing, you can close your books of accounts.
+	This means that you make all your special entries like:</para>
+<itemizedlist>
+<listitem><para>Depreciation</para></listitem>
+<listitem><para>Change in value of Assets</para></listitem>
+<listitem><para>Defer taxes and liabilities</para></listitem>
+<listitem><para>Update bad debts</para></listitem>
+</itemizedlist>
+<para>etc. and book your Profit or Loss.</para>
+<para>By doing this, your balance in your Income and Expense Accounts become zero. You start a new Fiscal Year (or period) with
+	a balanced Balance Sheet and fresh Profit and Loss account. In ERPNext after making all the special entries via Journal Voucher
+	for the current fiscal year, you should set all your Income and Expense accounts to zero via:</para>
+<programlisting>Accounts > Tools > Period Closing Voucher</programlisting>
+<para>Posting Date will be when this entry should be executed. If your Fiscal Year ends on 31st December, then that date should be
+	selected as Posting Date in the Period Closing Voucher.</para>
+<para>Transaction Date will be Period Closing Voucher's creation date.</para>
+<para>Closing Fiscal Year will be an year for which you are closing your financial statement.</para>
+<para>This voucher will transfer Profit or Loss (availed from PL statment) to Closing Account Head. You should select a libility
+	account like Reserves and Surplus, or Capital Fund account as Closing Account.</para>
+<para>The Period Closing Voucher will make accounting entries (GL Entry) making all your Income and Expense Accounts zero and
+	transferring Profit/Loss balance to the Closing Account.</para>
+<important><para>If accounting entries are made in a closing fiscal year, even after Period Closing Voucher was created for that
+	Fiscal Year, you should create another Period Closing Voucher. Later voucher will only transfer the pending PL balance into Closing
+	Account Head.</para></important>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Reports">
+<title>Accounting Reports</title>
+<para>Some of the major accounting reports are:</para>
+<para>General Ledger: General Ledger is based on the table GL Entry and can be filtered by Account and between a period. This will
+	help you to get a full update for all entries done in that period for that Account.</para>
+<para>Trial Balance: Trial Balance is the list of Account balances for all your Accounts (“Ledger” and “Group”) on a particular date.
+	For each Account it will give you the:</para>
+<itemizedlist>
+<listitem><para>Opening</para></listitem>
+<listitem><para>Debits</para></listitem>
+<listitem><para>Credits</para></listitem>
+<listitem><para>Closing</para></listitem>
+</itemizedlist>
+<para>The sum of all closing balances in a Trial Balance must be zero.</para>
+<para>Accounts Payable and Accounts Receivable (AP / AR): These reports help you to track the outstanding invoices sent to Customer
+	and Suppliers. In this report, you will get your outstanding amounts period wise. i.e. between 0-30 days, 30-60 days and so on.
+	You can also get your payables and receivables from direct reports on Sales Invoice and Purchase Invoice.</para>
+<para>Sales and Purchase Register: In this report, each tax Account is transposed in columns. For each Invoice and invoice Item,
+	you will get the amount of individual tax that has been paid, based on the Taxes and Charges table.</para>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Reconciliation">
+<title>Bank Reconciliation</title>
+<para>A Bank Reconciliation is a process that explains the difference between the bank balance shown in an organisation's bank
+	statement, as supplied by the bank, and the corresponding amount shown in the organisation's own accounting records at a
+	particular point in time.</para>
+<para>Such differences may occur, for example, because a cheque or a list of cheques issued by the organisation has not been presented
+	to the bank, a banking transaction, such as a credit received, or a charge made by the bank, has not yet been recorded in the
+	organisations books, or either the bank or the organisation itself has made an error. The Bank Reconciliation statement in ERPNext
+	comes in the form of a report.</para>
+<para>When you get the report, check whether the field 'Balance as per bank' matches the Bank Account Statement. If there is a match
+	then all the clearance dates are updated. If there is a mismatch then check clearance dates and journal entries</para>
+<para>To add clearance entries go to:</para>
+<programlisting>Accounts > Tools > Bank Reconciliation</programlisting>
+<sect2>
+<title>Bank Reconciliation Tool</title>
+<para>The Bank Reconciliation tool in ERPNext, helps add clearance dates to the account statements. To Reconcile cheque payments go to
+	Accounts and click on Bank Reconciliation.</para>
+<para>Step 1: Select the Bank Account against which you intend to reconcile. For example; HDFC Bank, ICICI Bank, or Citibank
+	etc.</para>
+<para>Step 2: Select the Date range that you wish to reconcile for.</para>
+<para>Step 3: Click on 'Get Reconciled Entries' All the entries in the specified date range will be shown in a table below.</para>
+<para>Step 4: Click on the JV from the table and update clearance date.</para>
+<para>Step 5: Click on the button 'Update Clearance Date'.</para>
+</sect2>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Budgeting">
+<title>Budgetting</title>
+<para>ERPNext will help you set and manage budgets on your Cost Centers. This is useful when, for example, you are doing online sales.
+	You have a budget for search ads, and you want ERPNext to stop or warn you from over spending, based on that budget.</para>
+<para>Budgets are also great for planning purposes. When you are making plans for the next financial year, you would typically target
+	a revenue based on which you would set your expenses. Setting a budget will ensure that your expenses do not get out of hand, at any
+	point, as per your plans. You can define it in the Cost Center. If you have seasonal sales you can also define a budget distribution
+	that the budget will follow.</para>
+<para>In order to allocate budget, go to</para>
+<programlisting>Accounts > Setup > Chart of Cost Centers</programlisting>
+<para>and click on Chart of Cost Center. Select a Cost Center and click on Open.</para>
+<para>ERPNext allows you to take a few budget actions. It signifies whether to stop , warn or Ignore if you exceed budgets.</para>
+<para>These can be defined from the Company record.</para>
+<para>Even if you choose to “ignore” budget overruns, you will get a wealth of information from the “Budget vs Actual” variance report.
+	This report shows month wise actual expenses as compared to the budgeted expenses.</para>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Chart">
+<title>Chart Of Accounts</title>
+<para>The Chart of Accounts forms the blueprint of your organization. The overall structure of your Chart of Accounts is based on a
+	system of double entry accounting that has become a standard all over the world to quantify how a company is doing financially.
+	The Chart of Accounts helps you to answer:</para>
+<itemizedlist>
+<listitem><para>What is your organisation worth?</para></listitem>
+<listitem><para>How much debt have you taken?</para></listitem>
+<listitem><para>How much profit are you making (and hence paying tax)?</para></listitem>
+<listitem><para>How much are you selling?</para></listitem>
+<listitem><para>What is your expense break-up</para></listitem>
+</itemizedlist>
+<para>You may note that as a business manager, it is very valuable to see how well your business is doing.</para>
+<note><para>If you can’t read a Balance Sheet it's a good opportunity to start learning about this. It will be worth
+	the effort. Your Chart of Accounts is the heart of your financial reports, is there is a Chart of Account for
+	available for your country in ERPNext you can set it in the Wizard Setup. If you need help configuring your Chart of
+	Account contact a Accountant..</para></note>
+<para>To edit your Chart of Accounts in ERPNext go to:</para>
+<programlisting>Accounts > Setup > Chart of Accounts</programlisting>
+<para>Chart of Accounts is a tree view of the names of the Accounts (Ledgers and Groups) that a Company requires to
+	manage its books of accounts. ERPNext sets up a simple chart of accounts for each Company you create, but you have to modify
+	it according to your needs and legal requirements. ￼ For each company, Chart of Accounts signifies the way to classify the
+	accounting entries, mostly based on statutory (tax, compliance to government regulations) requirements.</para>
+<sect2>
+<title>Balance Sheet Accounts</title>
+<para>The Balance Sheet has Application of Funds (Assets) and Sources of Funds (Liabilities) that signify the net-worth of your
+	company at any given time. When you begin or end a financial period, all the Assets are equal to the Liabilities.</para>
+<note><para>If you are new to accounting, you might be wondering, how can Assets be equal to Liabilities? That would mean the
+	company has nothing of its own. Thats right. All the “investment” made in the company to buy assets (like land, furniture, machines)
+	is made by the owners and is a liability to the company. If the company would want to shut down, it would need to sell all the
+	assets and pay back all the liabilities (including profits) to the owners, leaving itself with nothing.</para></note>
+<para>All the accounts under this represent an asset owned by the company like "Bank Account", "Land and Property", "Furniture" or a
+	liability (funds that the company owes to others) like "Owners funds", "Debt" etc.</para>
+<para>Two special accounts to note here are Accounts Receivable (money you have to collect from your customers) and Accounts Payable
+	(money you have to pay to your suppliers) under Assets and Liabilities respectively.</para>
+</sect2>
+<sect2>
+<title>Profit and Loss Accounts</title>
+<para>Profit and Loss is the group of Income and Expense accounts that represent your accounting transactions over a period.</para>
+<para>Unlike Balance sheet accounts, Profit and Loss accounts (or PL accounts) do not represent net worth (assets), but rather
+	represent the amount of money spent and collected in servicing customers during the period. Hence at the beginning and end
+	of your Fiscal Year, they become zero.</para>
+<note><para>On the first day of the year you have not made any profit or loss, but you still have assets, hence balance sheet accounts
+	never become zero at the beginning or end of a period</para></note>
+</sect2>
+<sect2>
+<title>Groups and Ledgers</title>
+<para>There are two main kinds of Accounts in ERPNext - Group and Ledger. Groups can have sub-groups and ledgers within them, whereas
+	ledgers are the leaf nodes of your chart and cannot be further classified.</para>
+<para>Accounting Transactions can only be made against Ledger Accounts (not Groups)</para>
+<important><para> The term "Ledger" means a page in an accounting book where entries are made. There is usually one ledger for each
+	account (like a Customer or a Supplier).</para></important>
+<note><para>An Account “Ledger” is also sometimes called as Account “Head”.</para></note>
+<sect3>
+<title>Other Account Types</title>
+<para>In ERPNext, you can also specify more information when you create a new Account, this is there to help you select that particular
+	account in a scenario like Bank Account or a Tax Account and has no effect on the Chart itself. You can also tag if an account
+	represents a Customer, Supplier or Employee in "Master Type".</para>
+</sect3>
+<sect3>
+<title>Creating / Editing Accounts</title>
+<para>To create new Accounts, explore your Chart of Accounts and click on an Account group under which you want to create the new
+	Account. On the right side, you will see an option to “Open” or “Add Child” a new Account.</para>
+<para>Option to create will only appear if you click on a Group (folder) type Account.</para>
+<para>ERPNext creates a standard structure for you when the Company is created but it is up to you to modify or add or remove
+	accounts.</para>
+<para>Typically, you might want to create Accounts for</para>
+<itemizedlist>
+<listitem><para>Types of Expenses (travel, salaries, telephone etc) under Expenses.</para></listitem>
+<listitem><para>Taxes (VAT, Sales Tax etc based on your country) under Current Liabilities.</para></listitem>
+<listitem><para>Types of Sales (for example, Product Sales, Service Sales etc.) under Income.</para></listitem>
+<listitem><para>Types of Assets (building, machinery, furniture etc.) under Fixed Assets.</para></listitem>
+</itemizedlist>
+</sect3>
+</sect2>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Cost_Center">
+<title>Cost Center and Budgeting</title>
+<para>Your Chart of Accounts is mainly designed to provide reports to the government and tax authorities. ￼ Most businesses have
+	multiple activities like different product lines, market segments, areas of business, etc that share some common overheads.
+	They should ideally have their own structure to report, whether they are profitable or not. For this purpose, there is an
+	alternate structure, called the Chart of Cost Centers.</para>
+<sect2>
+<title>Cost Center</title>
+<para>You can create a tree of Cost Centers to represent your business better. Each Income / Expense entry is also tagged against a
+	Cost Center. For example, if you have two types of sales:</para>
+<itemizedlist>
+<listitem><para>Walk-in Sales</para></listitem>
+<listitem><para>Online Sales</para></listitem>
+</itemizedlist>
+<para>You may not have shipping expenses for your walk-in customers, and no shop- rent for your online customers. If you want to get
+	the profitability of each of these separately, you should create the two as Cost Centers and mark all sales as either "Walk-in" or
+	"Online". Mark your all your purchases in the same way.</para>
+<para>Thus when you do your analysis you get a better understanding as to which side of your business is doing better. Since ERPNext
+	has an option to add multiple Companies, you can create Cost Centers for each Company and manage it separately.</para>
+<para>To setup your Chart of Cost Centers go to:</para>
+<programlisting>Accounts > Setup > Chart of Cost Centers</programlisting>
+<para>Cost centers help you in one more activity, budgeting.</para>
+</sect2>
+<sect2>
+<title>Budgeting</title>
+<para>ERPNext will help you set and manage budgets on your Cost Centers. This is useful when, for example, you are doing online
+	sales. You have a budget for search ads, and you want ERPNext to stop or warn you from over spending, based on that budget.</para>
+<para>Budgets are also great for planning purposes. When you are making plans for the next financial year, you would typically
+	target a revenue based on which you would set your expenses. Setting a budget will ensure that your expenses do not get out of hand,
+	at any point, as per your plans.</para>
+<para>You can define it in the Cost Center. If you have seasonal sales you can also define a budget distribution that the budget
+	will follow.</para>
+<programlisting>Accounts > Setup > Budget Distribution > New Budget Distribution</programlisting>
+<sect3>
+<title>Budget Actions</title>
+<para>ERPNext allows you to either:</para>
+<itemizedlist>
+<listitem><para>Stop.</para></listitem>
+<listitem><para>Warn or,</para></listitem>
+<listitem><para>Ignore</para></listitem>
+</itemizedlist>
+<para>if you exceed budgets.</para>
+<para>These can be defined from the Company record.</para>
+<para>Even if you choose to “ignore” budget overruns, you will get a wealth of information from the “Budget vs Actual” variance
+	report.</para>
+<note><para>When you set a budget, it has to be set as per Account under the Cost Center. For example if you have a Cost Center
+	“Online Sales”, you can restrict “Advertising Budget” by creating a row with that Account and defining the amount.</para></note>
+</sect3>
+</sect2>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Fiscal_Year">
+<title>Fiscal Year</title>
+<para>A fiscal year is also known as a financial year or a budget year. It is used for calculating financial statements in
+	businesses and other organisations. The fiscal year may or may not be the same as a calendar year. For tax purposes, companies
+	can choose to be calendar-year taxpayers or fiscal-year taxpayers. In many jurisdictions, regulatory laws regarding accounting
+	and taxation require such reports once per twelve months. However, it is not mandatory that the period should be a calendar year
+	(that is, 1 January to 31 December).</para>
+<para>A fiscal year usually starts at the beginning of a quarter, such as April 1, July 1 or October 1. However, most companies'
+	fiscal year also coincides with the calendar year, which starts January 1. For the most part, it is simpler and easier that way.
+	For some organizations, there are advantages in starting the fiscal year at a different time. For example, businesses that are
+	seasonal might start their fiscal year on July 1 or October 1. A business that has most of its income in the fall and most of
+	its expenses in the spring might also choose to start its fiscal year on October 1. That way, they know what their income will
+	be for that year, and can adjust their expenses to maintain their desired profit margins.</para>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Payment">
+<title>Payment Tool</title>
+<para>The Payment Tool Feature allows non-accounting personnel to generate Journal Vouchers by populating relevant fields in the
+	Journal	Voucher with account and payment details</para>
+<para>To go to Payment Tool, go to:</para>
+<programlisting>Accounts > Tools > Payment Tool</programlisting>
+<orderedlist>
+<listitem><para>Select the Company Name.</para></listitem>
+<listitem><para>Select the Party Type (Customer or Supplier) and the name of the customer or supplier against whom the payment has
+	been made or received.</para></listitem>
+<listitem><para>Use the Received Or Paid field to specify 'Received' if payment is being received or 'Paid' if User is making the
+	payment.</para></listitem>
+<listitem><para>Select the Mode of Payment and the Payment Account .</para></listitem>
+<listitem><para>Enter the Reference Number and Reference Date of the payment, for instance, the Cheque no. and Cheque date in case
+	the payment is being made by cheque.</para></listitem>
+<listitem><para>Click on Get Outstanding Vouchers to fetch all the valid Vouchers, Invoices and Orders against which a payment can
+	be made/received. These will appear in the Against Voucher section.</para></listitem>
+<listitem><para>Once details have been fetched, click on the detail entry and enter the payment amount made against that Invoice/Order/
+	Voucher.</para></listitem>
+<listitem><para>Click on 'Make Journal Voucher' to generate a new Journal Voucher with the relevant Party Details and Credit/Debit
+	details filled in.</para></listitem>
+</orderedlist>
+<note><para>In case User is paying a customer or receiving payment from a supplier, add the details regarding the relevant invoices
+	and orders manually.</para></note>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Payment_Reconsiliation">
+<title>Payment Reconciliation</title>
+<para>Reconciliation is an accounting process used to compare two sets of records to ensure the figures are in agreement and are
+	accurate. It is the key process used to determine whether the money leaving an account matches the amount spent, ensuring the two
+	values are balanced at the end of the recording period. In Payment Reconciliation, the invoices are matched against the payments
+	made to the bank. Thus if you have many payments which are not reconciled with their respective invoices, you can use the payment
+	reconciliation tool. To go to payment reconciliation tool, go to accounts and click on 'Payment Reconciliation'</para>
+<para>Step 1: Select the Account against whom the payments need to be reconciled.</para>
+<para>Step 2: Mention the Voucher Type, whether it is Purchase Invoice, Sales Invoice or Journal Voucher.</para>
+<para>Step 3: Select the Voucher Number and click on ' Pull Payment Entries'. All the payment entries will be pulled into a table
+	 below.</para>
+<para>Step 4: Click on the entry row to allocate a particular amount.</para>
+<para>Step 5: Click on the button 'Allocate' You will get a message that says 'Amount allocated successfully'</para>
+<para>Step 6: Click again on 'Pull Payment Entries' to refresh the tables with filters.</para>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-POS">
+<title>Point Of Sale POS Invoice</title>
+<para>Point of sale (POS) is the place where a retail transaction is completed. It is the point at which a customer makes a payment
+	to the merchant in exchange for goods or services. For retail operations, the delivery of goods, accrual of sale and payment
+	all happens in one event, that is usually called the “Point of Sale”.</para>
+<para>You can make a Sales Invoice of type POS by checking on “Is POS”. When you check this, you will notice that some fields get
+	hidden and some new ones emerge.</para>
+<note><para>In retail, you may not create a separate Customer record for each customer. You can create a general Customer called
+	“Walk-in Customer” and make all your transactions against this Customer record.</para></note>
+<sect2>
+<title>Setting Up POS</title>
+<para>In ERPNext all Sales and Purchase transactions, like Sales Invoice, Quotation, Sales Order, Purchase Order etc. can be edited
+	via the POS. There two steps to Setup POS:</para>
+<orderedlist>
+<listitem><para>Enable POS View via<programlisting>(Setup > Customize > Feature Setup)</programlisting></para></listitem>
+<listitem><para>Create a POS Setting record</para></listitem>
+</orderedlist>
+<para>Switch to POS View: Open any sales / purchase transaction. Click on the Computer Icon.</para>
+<para>Different sections of the POS</para>
+<itemizedlist>
+<listitem><para>Update Stock: If this is checked, Stock Ledger Entries will be made when you “Submit” this Sales Invoice thereby
+	eliminating the need for a separate Delivery Note.</para></listitem>
+<listitem><para>In your Items table, update inventory information like Warehouse (saved as default), Serial Number, or Batch Number
+	if applicable.</para></listitem>
+<listitem><para>Update Payment Details like your Bank / Cash Account, Paid amount etc. </para></listitem>
+<listitem><para>If you are writing off certain amount. For example when you receive extra cash as a result of not having exact
+	denomination of change, check on ‘Write off Outstanding Amount’ and set the Account.</para></listitem>
+</itemizedlist><para>Adding an Item: At the billing counter, the retailer needs to select Items which the consumer buys. In the
+POS interface you can select an Item by two methods. One, is by clicking on the Item image and the other, is through the Barcode /
+Serial No.</para>
+<para>Select Item - To select a product click on the Item image and add it into the cart. A cart is an area that prepares a customer
+	for checkout by allowing to edit product information, adjust taxes and add discounts.</para>
+<para>Barcode / Serial No - A Barcode / Serial No is an optical machine-readable representation of data relating to the object to
+	which it is attached. Enter Barcode / Serial No in the box as shown in the image below and pause for a second, the item will be
+	automatically added to the cart.</para>
+<note><para>To change the quantity of an Item, enter your desired quantity in the quantity box. These are mostly used if the same
+	Item is purchased in bulk.</para></note>
+<para>If your product list is very long use the Search field, type the product name in Search box.</para>
+<para>Removing an Item: There are two ways to remove an Item.</para>
+<itemizedlist>
+<listitem><para>Select an Item by clicking on the row of that Item from Item cart. Then click on “Del” button. OR</para></listitem>
+<listitem><para>Enter 0(zero) quantity of any item to delete that item.</para></listitem>
+</itemizedlist>
+<para>To remove multiple Items together, select multiple rows and click on “Del” button.</para>
+<note><para>Delete button appears only when Items are selected.</para></note>
+<para>Make Payment: After all the Items and their quantities are added into the cart, you are ready to make the Payment. Payment
+	process is divided into 3 steps:</para>
+<orderedlist>
+<listitem><para>Click on “Make Payment” to get the Payment window.</para></listitem>
+<listitem><para>Select your “Mode of Payment”.</para></listitem>
+<listitem><para>Click on “Pay” button to Save the document.</para></listitem>
+</orderedlist>
+<para>Submit the document to finalise the record. After the document is submitted, you can either print or email it directly to the
+	customer.</para>
+<para>Accounting entries (GL Entry) for a Point of Sale:</para>
+<para>Debits:</para>
+<itemizedlist>
+<listitem><para>Customer (grand total)</para></listitem>
+<listitem><para>Bank / Cash (payment)</para></listitem>
+</itemizedlist><para>Credits:</para><itemizedlist>
+<listitem><para>Income (net total, minus taxes for each Item)</para></listitem>
+<listitem><para>Taxes (liabilities to be paid to the government)</para></listitem>
+<listitem><para>Customer (payment)</para></listitem>
+<listitem><para>Write Off (optional)</para></listitem>
+</itemizedlist>
+<para>To see entries after “Submit”, click on “View Ledger”.</para>
+</sect2>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Accounts-Item">
+<title>Item Wise Tax</title>
+<para>Taxes selected in the Tax and Other Charges in transactions are applied on all the items. If you need different taxes applied
+	on items selected in the same transaction, you should setup you item and tax master as explained in the steps below.</para>
+<para>Step 1: Mention Tax Applicable in the Item master: Item master has tax table where you can list taxes which will be applied on
+	it. Tax rate mentioned in the item master gets preference over tax rate entered in the transactions. For example, if you provide tax
+	rate for VAT as 10% for item ABC, where for same VAT ledger 12% rate is entered in the Sales Order/Invoice, for item ABC, tax rate
+	applied would be 10%, as mentioned in the item master.</para>
+<para>Step 2: Setup Taxes and Other Charges: In Taxes and Other Charges master, you should select all the applicable taxes which could
+	e applicable on item. For example, if few items has VAT 5 applied on them, other has Service Tax applied, and some other has Excise
+	Duty applicable, then you tax master should have all these taxes selected.</para>
+<para>Step 3: Set Tax Rate as Zero in Taxes and Charges Master: In the Taxes and Other Charges master, tax rate will be updated as
+	ZERO. It means, tax rate applicable on items will be pulled from the respective Item master. While for other items, 0% tax will be
+	applied, means no other taxes will be applied on that item. Based on the above setting, you will have taxes applied on items as
+	mentioned in the respective item master. Check following for an instance.</para>
+</sect1>
 </chapter>

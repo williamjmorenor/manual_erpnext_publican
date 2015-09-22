@@ -7,14 +7,14 @@
 <para>Before you start implementation, lets get familiar with the terminology that is used and some basic concepts in ERPNext.</para>
 <sect2>
 <title>ERPNext</title>
-<para>ERPNext is a modern tool that covers not only accounting but also all other business functions, on an integrated platform.
-	It has many benefits over both traditional accounting as well as ERP applications.</para>
+<para>ERPNext is a modern tool that covers not only accounting but also all other business functions, on an integrated platform. It has
+	many benefits over both traditional accounting as well as ERP applications.</para>
 <para>Benefits over traditional accounting software:</para>
 <para>
 <itemizedlist>
 <listitem><para>Do a lot more than just accounting! Manage inventory, billing, quotes, leads, payroll and a lot more.</para></listitem>
 <listitem><para>Keep all your data safe and in one place. Don’t keep hunting for data when you need it across spreadsheets and
-	different computers. -Manage everyone on the same page. All users get the same updated data.</para></listitem>
+	different computers. -Manage everyone on the same page.All users get the same updated data.</para></listitem>
 <listitem><para>Stop repetitive work. Don’t enter the same information from your word processor to your accounting tool. It's all
 	integrated.</para></listitem>
 <listitem><para>Keep track. Get the entire history of a customer or a deal in one place.</para></listitem>
@@ -36,53 +36,56 @@ you can create multiple Company records, each representing a different legal ent
 but they will share the Customer, Supplier and Item records</para>
 <para><emphasis role="bold">Customer:</emphasis> Represents a customer. A Customer can be an individual or an organizations. You can
 create multiple Contacts and Addresses for each Customer.</para>
-<para><emphasis role="bold">Supplier:</emphasis> Represents a supplier of goods or services. Your telephone company is a Supplier, so
-is your raw materials Supplier. Again, a Supplier can be an individual or an organization and has multiple Contacts and Addresses.</para>
+<para><emphasis role="bold">Supplier:</emphasis> Represents a supplier of goods or services. Your telephone company is a Supplier,
+so is your raw materials Supplier. Again, a Supplier can be an individual or an organization and has multiple Contacts and
+Addresses.</para>
 <para><emphasis role="bold">Item:</emphasis> A Product, sub-product or Service that is either bought, sold or manufactured and is
 uniquely identified.</para>
-<para><emphasis role="bold">Account:</emphasis> An Account is a heading under which financial and business transactions are carried on.
-For example, “Travel Expense” is an account, “Customer Zoe”, “Supplier Mae” are accounts. ERPNext creates accounts for Customers and
-Suppliers automatically.</para>
+<para><emphasis role="bold">Account:</emphasis> An Account is a heading under which financial and business transactions are carried
+on. For example, “Travel Expense” is an account, “Customer Zoe”, “Supplier Mae” are accounts. ERPNext creates accounts for Customers
+and Suppliers automatically.</para>
 <para><emphasis role="bold">Address:</emphasis> An address represents location details of a Customer or Supplier. These can be of
 different locations such as Head Office, Factory, Warehouse, Shop etc.</para>
 <para><emphasis role="bold">Contact:</emphasis> An individual Contact belongs to a Customer or Supplier or is just an independent.
 A Contact has a name and contact details like email and phone number.</para>
-<para><emphasis role="bold">Communication:</emphasis> A list of all Communication with a Contact or Lead. All emails sent from
-the system are added to the Communication table.</para>
+<para><emphasis role="bold">Communication:</emphasis> A list of all Communication with a Contact or Lead. All emails sent from the
+system are added to the Communication table.</para>
 <para><emphasis role="bold">Price List:</emphasis> A Price List is a place where different rate plans can be stored. It’s a name
 you give to a set of Item Prices stored under a particular List.</para>
 </sect2>
 <sect2 id="sect2-ERPNext-Manual_ERPNext-Concepts_and_Terms-Accounting">
 <title>Accounting</title>
-<para><emphasis role="bold">Fiscal Year:</emphasis> Represents a Financial Year or Accounting Year. You can operate multiple Fiscal
-Years at the same time. Each Fiscal Year has a start date and an end date and transactions can only be recorded in this period.
-When you “close” a fiscal year, it's balances are transferred as “opening” balances for the next fiscal year.</para>
+<para><emphasis role="bold">Fiscal Year:</emphasis> Represents a Financial Year or Accounting Year. You can operate multiple
+Fiscal Years at the same time. Each Fiscal Year has a start date and an end date and transactions can only be recorded in this
+period. When you “close” a fiscal year, it's balances are transferred as “opening” balances for the next fiscal year.</para>
 <para><emphasis role="bold">Cost Center:</emphasis> A Cost Center is like an Account, but the only difference is that its structure
-represents your business more closely than Accounts. For example in your Chart of Accounts, you separate your expenses by type (say
-travel, marketing etc). In your Chart of Cost Centers, you can separate them by product line or business group (for example online
-sales, retail sales).</para>
+represents your business more closely than Accounts. For example in your Chart of Accounts, you separate your expenses by type
+(say travel, marketing etc). In your Chart of Cost Centers, you can separate them by product line or business group (for example
+online sales, retail sales).</para>
 <para><emphasis role="bold">Journal Voucher:</emphasis> A document that contains General Ledger (GL) entries and the sum of Debits
 and Credits of those entries is the same. In ERPNext you can update Payments, Returns etc using Journal Vouchers.</para>
 <para><emphasis role="bold">Sales Invoice:</emphasis> A bill sent to Customers for delivery of Items (goods or services).</para>
 <para><emphasis role="bold">Purchase Invoice:</emphasis> A bill sent by a Supplier for delivery of Items (goods or services).</para>
-<para><emphasis role="bold">Currency:</emphasis> ERPNext allows you to book transactions in multiple currencies. There is only
-one currency for your book of accounts though. While posting your Invoices, payments in different currencies, the amount is converted
-to the default currency by the specified conversion rate.</para>
+<para>
+<emphasis role="bold">Currency:</emphasis> ERPNext allows you to book transactions in multiple currencies. There is only one currency
+for your book of accounts though. While posting your Invoices, payments in different currencies, the amount is converted to the default
+currency by the specified conversion rate.
+</para>
 </sect2>
 <sect2 id="sect2-ERPNext-Manual_ERPNext-Concepts_and_Terms-Selling">
 <title>Selling</title>
 <para><emphasis role="bold">Customer Group:</emphasis> A classification of Customers, usually based on market segment.</para>
-<para><emphasis role="bold">Lead:</emphasis> A person who could be a future source of business. A Lead may generate
-Opportunities. (from: “may lead to a sale”).</para>
+<para><emphasis role="bold">Lead:</emphasis> A person who could be a future source of business. A Lead may generate Opportunities.
+(from: “may lead to a sale”).</para>
 <para><emphasis role="bold">Opportunity:</emphasis> A potential sale. (from: “opportunity for a business”).</para>
-<para><emphasis role="bold">Sales Order:</emphasis> A note confirming the terms of delivery and price of
-an Item (product or service) by the Customer. Deliveries, Production Orders and Invoices are made on basis of Sales Orders.</para>
-<para><emphasis role="bold">Territory:</emphasis> A geographical area classification for sales management. You can set
-targets for Territories and each sale is linked to a Territory.</para>
-<para><emphasis role="bold">Sales Partner:</emphasis> A third party distributer / dealer / affiliate / commission agent
-who sells the company’s products usually for a commission.</para>
-<para><emphasis role="bold">Sales Person:</emphasis> Someone who pitches to the Customer and closes deals. You can set
-targets for Sales Persons and tag them in transactions.</para>
+<para><emphasis role="bold">Sales Order:</emphasis> A note confirming the terms of delivery and price of an Item (product or service)
+by the Customer. Deliveries, Production Orders and Invoices are made on basis of Sales Orders.</para>
+<para><emphasis role="bold">Territory:</emphasis> A geographical area classification for sales management. You can set targets for
+Territories and each sale is linked to a Territory.</para>
+<para><emphasis role="bold">Sales Partner:</emphasis> A third party distributer / dealer / affiliate / commission agent who sells
+the company’s products usually for a commission.</para>
+<para><emphasis role="bold">Sales Person:</emphasis> Someone who pitches to the Customer and closes deals. You can set targets for
+Sales Persons and tag them in transactions.</para>
 </sect2>
 <sect2 id="sect2-ERPNext-Manual_ERPNext-Concepts_and_Terms-Buying">
 <title>Buying</title>
@@ -94,17 +97,17 @@ based on reorder level or projected quantity in Production Plan for purchasing a
 <sect2 id="sect2-ERPNext-Manual_ERPNext-Concepts_and_Terms-Stock">
 <title>Stock (Inventory)</title>
 <para><emphasis role="bold">Warehouse:</emphasis> A logical Warehouse against which stock entries are made.</para>
-<para><emphasis role="bold">Stock Entry:</emphasis> Material transfer from a Warehouse, to a Warehouse or
-from one Warehouse to another.</para>
-<para><emphasis role="bold">Delivery Note:</emphasis> A list of Items with quantities for shipment. A Delivery Note will
-reduce the stock of Items for the Warehouse from where you ship. A Delivery Note is usually made against a Sales Order.</para>
-<para><emphasis role="bold">Purchase Receipt:</emphasis> A note stating that a particular set of Items were received from
-the Supplier, most likely against a Purchase Order.</para>
+<para><emphasis role="bold">Stock Entry:</emphasis> Material transfer from a Warehouse, to a Warehouse or from one Warehouse to
+another.</para>
+<para><emphasis role="bold">Delivery Note:</emphasis> A list of Items with quantities for shipment. A Delivery Note will reduce the
+stock of Items for the Warehouse from where you ship. A Delivery Note is usually made against a Sales Order.</para>
+<para><emphasis role="bold">Purchase Receipt:</emphasis> A note stating that a particular set of Items were received from the Supplier,
+most likely against a Purchase Order.</para>
 <para><emphasis role="bold">Serial Number:</emphasis> A unique number given to a particular unit of an Item.</para>
-<para><emphasis role="bold">Batch:</emphasis> A number given to a group of units of a particular Item that may be purchased
-or manufactured in a group.</para>
-<para><emphasis role="bold">Stock Ledger Entry:</emphasis> A unified table for all material movement from one warehouse to
-another. This is the table that is updated when a Stock Entry, Delivery Note, Purchase Receipt, and Sales Invoice (POS) is made.</para>
+<para><emphasis role="bold">Batch:</emphasis> A number given to a group of units of a particular Item that may be purchased or
+manufactured in a group.</para>
+<para><emphasis role="bold">Stock Ledger Entry:</emphasis> A unified table for all material movement from one warehouse to another.
+This is the table that is updated when a Stock Entry, Delivery Note, Purchase Receipt, and Sales Invoice (POS) is made.</para>
 <para><emphasis role="bold">Stock Reconciliation:</emphasis> Update Stock of multiple Items from a spreadsheet (CSV) file.</para>
 <para><emphasis role="bold">Quality Inspection:</emphasis> A note prepared to record certain parameters of an Item at the time of
 Receipt from Supplier, or Delivery to Customer.</para>
@@ -112,16 +115,16 @@ Receipt from Supplier, or Delivery to Customer.</para>
 </sect2>
 <sect2 id="sect2-ERPNext-Manual_ERPNext-Concepts_and_Terms-Human_Resource">
 <title>Human Resource Management</title>
-<para><emphasis role="bold">Employee:</emphasis> Record of a person who has been in present or past, in the employment of
-the company.</para>
+<para><emphasis role="bold">Employee:</emphasis> Record of a person who has been in present or past, in the employment of the
+company.</para>
 <para><emphasis role="bold">Leave Application:</emphasis> A record of an approved or rejected request for leave.</para>
 <para><emphasis role="bold">Leave Type:</emphasis> A type of leave (for example, Sick Leave, Maternity Leave etc.)</para>
 <para><emphasis role="bold">Salary Manager:</emphasis> A tool that will help creation of multiple Salary Slips for Employees.</para>
 <para><emphasis role="bold">Salary Slip:</emphasis> A record of the monthly salary given to an Employee.</para>
-<para><emphasis role="bold">Salary Structure:</emphasis> A template identifying all the components of an Employees' salary
-(earnings) and tax and other social security deductions.</para>
-<para><emphasis role="bold">Appraisal:</emphasis> A record of the performance of an Employee over a specified period based on
-certain parameters.</para>
+<para><emphasis role="bold">Salary Structure:</emphasis> A template identifying all the components of an Employees' salary (earnings)
+and tax and other social security deductions.</para>
+<para><emphasis role="bold">Appraisal:</emphasis> A record of the performance of an Employee over a specified period based on certain
+parameters.</para>
 <para><emphasis role="bold">Appraisal Template:</emphasis> A template recording the different parameters of Employee performance
 and their weightage for a particular role.</para>
 <para><emphasis role="bold">Attendance:</emphasis> A record indicating presence or absence of an Employee on a particular day.</para>
@@ -143,13 +146,13 @@ Requests based on Open Sales Orders in a given period.</para>
 <para><emphasis role="bold">Global Defaults:</emphasis> This is the sect2 where you set default values for various parameters
 of the system.</para>
 <para><emphasis role="bold">Print Heading:</emphasis> Text of your terms of contract.</para>
-<para><emphasis role="bold">Unit of Measure (UOM:</emphasis> How quantity is measured for an Item. For example (Kg, No, Pair,
-Packet) etc.</para>
+<para><emphasis role="bold">Unit of Measure (UOM:</emphasis> How quantity is measured for an Item. For example (Kg, No, Pair, Packet)
+etc.</para>
 </sect2>
 <sect2 id="sect2-ERPNext-Manual_ERPNext-Concepts_and_Terms-Website">
 <title>Website</title>
-<para><emphasis role="bold">Blog Post:</emphasis> A short article that appears in the “Blog” section of the website generated
-from the ERPNext website module. Blog is a short from of “Web Log”.</para>
+<para><emphasis role="bold">Blog Post:</emphasis> A short article that appears in the “Blog” section of the website generated from
+the ERPNext website module. Blog is a short from of “Web Log”.</para>
 <para><emphasis role="bold">Web Page:</emphasis> A web page with a unique URL (web address) on the website generated from
 ERPNext.</para>
 </sect2>

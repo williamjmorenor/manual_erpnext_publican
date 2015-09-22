@@ -3,1344 +3,1001 @@
 %BOOK_ENTITIES;
 ]>
 <appendix id="chap-ERPNext-Manual_ERPNext-Guide">
-	<title>Guide Books</title>
-	<para>
-	There are three standard workflows for order fulfillment. These guides explains step by step taking an example case how to execute these in ERPNext.
-	</para>
-	<orderedlist>
-		<listitem>
-			<para>Engineer To Order: Products are designed as per customer's requirements and manufactured once the contract is completed. Examples: Construction, Furniture, Capital Goods etc.</para>
-		</listitem>
-		<listitem>
-			<para>Make To Order: Products are fixed, but fulfillment (manufacutring / procurement) only starts after receipt of order: Light Engineering, Machinery, Furniture etc.</para>
-		</listitem>
-		<listitem>
-			<para>Make To Stock: Products are fixed and usually available in stock and are shipped as soon as order is received. Examples: Consumer Goods, Retail etc.</para>
-		</listitem>
-	</orderedlist>
-	<sect1>
-		<title>Test Instance</title>
-		<para>
-		It is highly recommended to have a test instance in which to practice before going to a request for production.
-		</para>
-		<para>
-		We recommend completing the test cycles as it deems necessary in this instance to do so before the final implementation of the system. You can even have two running instances for testing before working with actual operating data.
-		</para>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Guide-Engineer">
-		<title>Engineer To Order</title>
-		<para>
-		This guide explains how a manufacturing unit would run its operations based on an engineer-to-order type of workflow. In engineer to order companies, a deal goes through multiple stages of discussions going back and forth. At each stage, new proposals are made and new costing for the product is prepared. For this study, a furniture making company, Supreme Furniture, is used as a case-example.
-		</para>
-		<para>
-		Supreme Furniture deals in all-types of furniture. They have a small showroom, where they keep some samples. However, they produce only after a Customer confirms the order and gives their specifications clearly.
-		</para>
-		<note>
-		<para>Production Orders are issued based on customised order obtained after multiple iterations and may change even after production begins.</para>
-		</note>
-		<para>
-		To explain the production cycle we will consider an example of a custom-made bed cum wardrobe for a child. Please read the Overview section to get a glimpse of all the steps required to complete an engineer-to-order cycle.
-		</para>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Overview">
-			<title>Overview</title>
-			<para>
-			Overview of executing a complete cycle of an engineer-to-order workflow:
-			</para>
-			<orderedlist>
-				<listitem>
-					<para>Create an Item along with codes for finished products, Customers/Lead, and Suppliers.</para>
-				</listitem>
-				<listitem>
-					<para>Create Bill of Materials for estimating the cost, which can be amended.</para>
-				</listitem>
-				<listitem>
-					<para>Create Quotations during the proposal phase.</para>
-				</listitem>
-				<listitem>
-					<para>Create Sales Order.</para>
-				</listitem>
-				<listitem>
-					<para>Create Advance Payment Entry and raise Sales Invoice.</para>
-				</listitem>
-				<listitem>
-					<para>Use Production Planning Tool to perform the following steps:</para>
-				<orderedlist>
-					<listitem>
-						<para>Create Production Order.</para>
-					</listitem>
-					<listitem>
-						<para>Create Material Requests.</para>
-					</listitem>
-				</orderedlist>
-				</listitem>
-				<listitem>
-					<para>Create and submit Purchase Order for your Suppliers:</para>
-				<orderedlist>
-					<listitem>
-						<para>Create and submit Purchase Receipts when you receive material from your Suppliers.</para>
-					</listitem>
-					<listitem>
-						<para>Create and submit Purchase Invoice and make Payment Entry.</para>
-					</listitem>
-				</orderedlist>
-				</listitem>
-				<listitem>
-					<para>Manufacture by transfering raw-materials via Production Order to work-in-progress Warehouse to start production:</para>
-				<orderedlist>
-					<listitem>
-						<para>Update finished goods and back-flush via Production Order.</para>
-					</listitem>
-				</orderedlist>
-				</listitem>
-				<listitem>
-					<para>Create and submit pending Sales Invoice to complete Customer billing.</para>
-				</listitem>
-				<listitem>
-					<para>Review Gross Profit Report.</para>
-				</listitem>
-			</orderedlist>
-			<para>
-			To begin the order cylce create an Item, Lead/Customer, Supplier and Warehouse.
-			</para>
-		</sect2>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Setting">
-			<title>Setting Up</title>
-			<para>
-			In an engineer-to-order system, the products are manufactured based on the client's product requirements followed by their Sales Order. To begin this order cycle, it is essential to create an Item master along with raw materials and sub assemblies, Warehouse, Customers, and Suppliers.
-			</para>
-			<sect3>
-			<title>Customer</title>
-			<programlisting>Selling > Customer > New Customer</programlisting>
-			<para>
-			A Customer, who is sometimes known as a client, buyer, or purchaser is the one who receives goods, services, products, or ideas, from a seller for a monetary consideration. A Customer can also receive goods or services from a vendor or a Supplier for other valuable considerations. In this case-example, the Customer is Ms. Jane Dsouza. She is keen on making a multipurpose bed for her daughter.
-			</para>
-			<para>
-			After setting up the Customer name in the system, it is time to create an Item based on the requirement of the Customer. In this example, the Customer Ms. Jane Dsouza wants a baby bed with a wardrobe attached to it. Thus, create an Item, and the possible raw materials that will go into its making.
-			</para>
-			</sect3>
-			<sect3>
-			<title>Item</title>
-			<para>
-			An Item is your company's product or a service. The term Item is applicable to your core products as well as your raw materials. It can be a product or service that you buy/sell from your Customers/Suppliers. ERPNext allows you to manage all sorts of Items like raw-materials, sub-assemblies, finished goods, Item variants and service Items.
-			</para>
-			<programlisting>Stock > Item > New Item</programlisting>
-			<para>
-			Make Items for all the raw materials that will go into the final product. Let us call the final product as Child Bed Baby. The raw materials required will be wood, plywood, fevicol, hinges, nails, beadings, slotted angles, foam, wooden panels, sponge, coir, paint etc. The raw materials will also be created as Items. However, their Item Group will be raw materials.
-			</para>
-			<para>
-			You can store milestones as Items. For example, the baby-bed cum wardrobe custom order requires one bed, one wardrobe and 5 drawers. So the Item-milestones can be bed, wardrobe and drawers individually. The final product will be a result of assembling these milestone Item
-			</para>
-			</sect3>
-			<sect3>
-			<title>Item Codification</title>
-			<para>
-			Item Codification helps in keeping a count of long and and complicated names. It is preferred if you have lots of products
-			</para>
-			<para>
-			In this example, lets make Bbed-1 as one product milestone, Bwardrobe-1 as another and Bdrawer-1 as the last milestone product. Note that B stands for the Baby range, then comes the name of the Item along with the order no in this category. The product is codified so that there is no confusion with other orders. The completed and assembled Item will be ‘Child Bed Baby’.
-			</para>
-			</sect3>
-			<sect3>
-			<title>Sub-assembly</title>
-			<para>
-			An assembled unit forming a component to be incorporated into a larger assembly is known as a Sub-assembly. To produce an Item , you require a lot of raw-materials. These raw-materials themselves have to be manufactured in some cases. Thus, along with standard raw materials, there is a requirement of raw materials with their own Bill of Materials. These raw materials have their own BOM’s and are called sub-assemblies.
-			</para>
-			<para>
-			Note that for milestone Items like Bwardrobe1, Bbed1 and Bdrawers1:
-			</para>
-			<orderedlist>
-				<listitem>
-					<para>Allow BOM’ field should be marked as 'Yes'. They should be grouped as raw materials, since these will be produced in-house and will go into the making of the final product. The Item milestones are the sub-assemblies.</para>
-				</listitem>
-				<listitem>
-					<para>‘Allow Production Order’ should be marked as 'No'. All sub-assemblies will follow the one Production Order raised for the main product Child Bed Baby.</para>
-				</listitem>
-			</orderedlist>
-			<para>
-			In this example Child Bed Baby is the final product, the Bbed1, Bwardrobe1 and Bdrawers1 are sub-assemblies.
-			</para>
-			</sect3>
-			<sect3>
-			<title>Warehouse</title>
-			<para>
-			A Warehouse is a commercial building for storage of goods. Warehouses are used by manufacturers, importers, exporters, wholesalers, transport businesses, customs, etc. They are usually large plain buildings in industrial areas of cities, towns, and villages. They usually have loading docks to load and unload goods from trucks.
-			</para>
-			<programlisting>Setup > Warehouse</programlisting>
-			<para>
-			This is a mandatory field. No Item form will be saved without a Warehouse master. In E-T-O type of company, create one Warehouse for Work-In-Progress and one for Finished Goods.
-			</para>
-			<note>
-			<para>The Warehouses should be under the 'Stock-Expenses' category. Here the goods will be under the parent group 'Stock-Expenses'. Assign these Warehouses to Items accordingly. Select Stock-Expenses under parent group section in the system. You will have to create this new Warehouses in the system. The existing work-in-progress and finished goods Warehouses are by default categorised under 'Assets' by the system. For E-T-O transactions, the finished goods will come under the expense category. Thus, create new Warehouses under Stock-Expenses category.</para>
-			</note>
-			<note>
-			<para>In reality you may not have three Warehouses. You may have only one, which you use for raw material, for manufacturing/stitching/producing and also for storing finished goods. In this case, you have to only imagine separate spaces for each activity, and name them accordingly. For system entry purpose, having three different Warehouses for stocking raw materials, manufacturing unfinished goods and storing finished goods is a necessity.</para>
-			</note>
-			</sect3>
-			<sect3>
-			<title>Suppliers and Contacts</title>
-			<para>
-			Suppliers are companies or individuals who provide you with products or services. They are treated in exactly the same manner as Customers.
-			</para>
-			<programlisting>Buying > Supplier > New Supplier</programlisting>
-			<para>
-			Suppliers are separate from Contacts and Addresses. Suppliers can have multiple Contacts and Addresses.
-			</para>
-			<para>
-			Make the Bill of Materials based on your design document and product requirements specified by the client.
-			</para>
-			</sect3>
-		</sect2>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Boom">
-			<title>Bill of Material</title>
-			<para>
-			A Bill of Material (BOM) is a list of the raw materials, sub-assemblies, intermediate assemblies, sub-components, parts and the quantities of each needed to manufacture an end product. Make separate Bill of Material for every milestone order. Make one for the final order. Every BOM will have one Operations section and one Materials section. Mention the steps and hourly rates in the Operations section and the quantity of materials required in the Materials section.
-			</para>
-			<programlisting>Manufacturing > Bill of Materials > New Bill of Materials</programlisting>
-			<para>
-			Make a Bill of Material for Bwardrobe1.
-			</para>
-			<para>
-			After completing the Wardrobe BOM, make the Bill of Material for the bed.
-			</para>
-			<para>
-			After completion of the Bbed1 BOM, make the Bill of Material for Bdrawers-1.
-			</para>
-			<para>
-			After completion of the drawers, make a BOM for the final product. The main product Child Bed Baby is assembled together from the three milestone Items.
-			</para>
-			<para>
-			Save and submit all BOM's. Based on the client feedback give a proposal to the client in the form of Quotations. You may have to propose different quotes till the client agrees.
-
-
-			</para>
-		</sect2>		
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Phase">
-			<title>Proposal Phase</title>
-			<para>
-			In the proposal phase a client is offered various Quotations for a customised product. The Quotations are amended and adjusted as per the client's need. These Quotations serve as a basis for raising a proforma invoice or for accepting advance payment.
-			</para>
-			<sect3>
-			<title>Quotation</title>
-			<para>
-			This is the initial quote that is presented to the Customer, for approval of design and the cost of the product.
-			</para>
-			<programlisting>Selling > Quotation > New Quotation</programlisting>
-			<para>
-			The first Quotation is given to the client, Jane D’souza. She visits a few more custom furniture makers and takes Quotations from them. She realises that there is a scope of margin to negotiate. So she comes back and asks for another Quotation. The showroom supervisor gives her a second quote. He says he can give her the same product, but instead of special plywood, he will use the standard plywood. He assures her that the local plywood maker is very reliable. He also assures her that most clients prefer this plywood since it brings down the total cost and is good in quality.
-			</para>
-			<para>
-			The sales engineer then revises the bill of materials and prepares a new Quotation. It is possible to delete/cancel the existing submitted Quotation and amend it. Mention the new rate with the new design description.
-			</para>
-			<para>
-			In order to print your Quotation as Proforma Invoice, go to print heading in the Quotation’s info section. Select Proforma Invoice as your new print heading and save. The printout will have a heading as Pro-forma Invoice.
-			</para>
-			</sect3>
-			<sect3>
-			<title>Proforma Invoice</title>
-			<para>
-			With the heading as Proforma Invoice, you can bill the client in phases. A Proforma Invoice is a document that is sent to a buyer in certain circumstances - usually before all of the invoice details are known. A Proforma Invoice is not a true invoice – it is simply a document that declares the seller’s commitment to provide the goods or services specified to the buyer at certain prices.
-			</para>
-			<para>
-			Proforma invoices are not recorded as an accounts receivable by the seller nor are they recorded as an accounts payable by the buyer. To print the name Proforma Invoice on the Quotation, create a Print Heading in the system.
-			</para>
-			<para>
-			After creating the print heading, go to the Quotation and change the print heading name. Then, send it to the Customer.
-			</para>
-			<para>
-			The Customer, Jane, realises that if she wants a further decrease in price, the furniture maker will offer further non-branded raw material and decrease cost. She doesn't want to compromise on quality and thus agrees to the second quote. She confirms the order and pays them Rs. 10000/- as Advance. Advance payment is seen as an order confirmation. Based on the confirmation, create a Sales Order.
-			</para>
-			</sect3>
-		</sect2>
-
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Sales_Order">
-			<title>Sales Order</title>
-			<para>
-			A Sales Order is an order issued by a business to a Customer for products and/or services. After the proposal phase, it is time for the organisation to make a Sales Order. Based on the price agreement in the Quotation, make a Sales Order for the custom product 'Child Bed Baby'.
-			</para>
-			<programlisting>Selling > Sales Order > New Sales Order</programlisting>
-			<important>
-			<para>Sales Order is the main document that is used to track billing, delivery and manufacturing.</para>
-			</important>
-			<para>
-			Along with the Sales Order entry make the Advance Payment Entry.
-			</para>
-		</sect2>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Advance">
-			<title>Advance Payment Entry</title>
-			<para>
-			To record an advance payment a Journal Voucher is made along with a Sales Invoice for future payment.
-			</para>
-			<programlisting>Accounts > Journal Voucher > New Journal Voucher</programlisting>
-			<para>
-			Payment done by the Customer before accepting delivery of the product is an Advance Payment. This is done to confirm the order and is paid as token to start manufacturing the product. For orders of high value, the business houses expect to receive advance. Thus, open a new Journal Voucher and make the advance entry.
-			</para>
-			<para>
-			Since the Customer has given 10000/- as cash advance, it will be recorded as a credit entry against the Customer. To balance it with the debit entry (Double Entry Accounting) enter 10000/- as debit against the Company’s cash account.
-			</para>
-			<sect3>
-			<title>Sales Invoice</title>
-			<para>
-			A Sales Invoice is a bill that you send to your Customers, against which the Customer processes the payment. Sales Invoice is an accounting transaction. On submission of Sales Invoice, the system updates the receivable and books income against a Customer Account.
-			</para>
-			<programlisting>Accounts > Sales Invoice > New Sales Invoice</programlisting>
-			<para>
-			In this case, the Sales Order is made for an amount of Rs 100000/- Supreme Furniture will charge the Customer in phases. Thus they will make 3 Sales Invoices, two will charge 25,000 each and one will be for Rs 50, 000/- Quantity will be specified as 0.25, 0.25 and 0.50 respectively.
-			</para>
-			<para>
-			To link the Sales Invoice to the Journal Voucher which mentions the advance Payment Entry, click on ‘Get Advances Received’. Allocate the amount of advance in the advances table. The accounting will be adjusted accordingly.
-			</para>
-			<note>
-			<para>In case you get error while saving, due to Qty being in fraction, go to UOM master and uncheck the box that says ‘Must be whole number’.</para>
-			</note>
-			<para>
-			Save and submit the Sales Invoice. You can start making the Production Order and raise Material Requests for manufacturing this product via the Production Planning Tool.
-			</para>
-			</sect3>
-		</sect2>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Product">
-			<title>Product Planning Tool</title>
-			<para>
-			Production Planning Tool helps to plan production and purchase Items. A list of Items can be generated from the open Sales Orders in the system. This tool creates Production Orders and generates Material Requests. The Production Planning Tool will generate:
-			</para>
-			<orderedlist>
-				<listitem>
-					<para>Production Orders for selected Items</para>
-				</listitem>
-				<listitem>
-					<para>Material Requests for Items whose Projected Quantity is likely to fall below zero.</para>
-				</listitem>
-			</orderedlist>
-			<para>Go to:</para>
-			<programlisting>Manufacturing > Production Planning Tool</programlisting>
-			<para>
-			The Production Planning Tool enables you to complete the production cycle in a fast and efficient manner. From procuring materials, producing goods, to updating stocks - everything is done by clicking on buttons which appear after every transaction. The tool is user friendly and does not require you to go back and forth into the system to make and log different forms. Everything is intuitive and can be performed step by step.
-			</para>
-			<para>
-			You can pull Sales Orders directly by clicking on a button. Select the Sales Orders you wish to process and click on another button to get Items for that Sales Order. Mention Item details and click on the button ‘Make Production Orders’. It is that simple! After this you can click on another button and create Material Requests required to complete this Production Order. The whole process is fuss free and easy.
-			</para>
-			<para>
-			Use the Production Planning Tool to make Production Order.
-			</para>
-			<para>
-			Step 1: Pull Sales Order. Sales Order is an order issued by a business to a Customer.
-			</para>
-			<para>
-			Step 2: Get Items from Sales Order. Select Items by clicking on the ‘Get Items from Sales Order’ button. Check the box that says ‘Use multi-level BOM’. This box is checked because you have sub-assemblies.
-			</para>
-			<para>
-			Step 3: Create Production Order. Production Order is an order to produce a specific quantity of material within a predefined timeframe. It contains all of the relevant information required for the execution of the process, including how much should be manufactured when.
-			</para>
-			<para>
-			Step 4: Create Material Request. Material Request is a request to order materials for the production of your Item/product.
-			</para>
-			<para>
-			This request is created by clicking on the box ‘Create Material Request’. Click on the highlighted Material Request number. The click will open into a Material Request form.
-			</para>
-			<note>
-			<para>Remember to put your sub-assembly Items/ Item Milestones in the Bill of Material. The Material Request button will make purchase requests even for the sub-assembly raw material.</para>
-			</note>
-			<sect3>
-			<title>Quick Overview of PPT-Production Planning Tool</title>
-			<itemizedlist>
-				<listitem>
-					<para>Get Sales Order</para>
-				</listitem>
-				<listitem>
-					<para>Get Items from Sales Order</para>
-				</listitem>
-				<listitem>
-					<para>Create Production Order</para>
-				</listitem>
-				<listitem>
-					<para>Create Material Request</para>
-				</listitem>
-				<listitem>
-					<para>Download Materials Required</para>
-				</listitem>
-			</itemizedlist>
-			<para>
-			After production planning, it is time to check the Production Order, Transfer Raw Materials and Update Finished Goods. However, before proceeding to manufacture, you are required to complete the Buying process by completing the Purchase Orders and Purchase Receipts.
-			</para>
-			</sect3>
-		</sect2>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Buying">
-			<title>Buying</title>
-			<para>
-			Buying raw materials when there is no Stock can be done by raising Material Requests and completing the purchase cycle. The purchase cycle includes making Purchase Orders and Purchase Receipts along with Purchase Invoice and Payment Entry through Journal Voucher.
-			</para>
-
-			<sect3>
-			<title>Purchase Order</title>
-			<para>
-			Purchase Order (PO) is a commercial document and first official offer issued by a buyer to a seller, indicating types, quantities, and agreed prices for the products. You can make a Purchase Order from a Material Request or by directly going to:
-			</para>
-			<programlisting>Buying > Purchase Order > New Purchase Order</programlisting>
-			<para>
-			Make the Purchase Order, save and submit it. After saving, click on 'Make Purchase Receipt'. Save and submit the Purchase Receipts.
-			</para>
-			</sect3>
-			<sect3>
-			<title>Purchase Receipt</title>
-			<para>
-			Purchase Receipt is a record that is made when a material is received. It is also known as a Goods Received Note (GRN). It contains detail information of the Items purchased including the name of the Item, the price as well as the time when the purchase has been made. You can make a Purchase Receipt from the Purchase Order or directly from the Stock module.
-			</para>
-			<programlisting>Stock > Purchase Receipt > New Purchase Receipt</programlisting>
-			<note>
-			<para>Note that only when the Purchase Receipt is submitted, the Stock balance is updated. To see the Stock balance go to the Stock module and select the Stock Balance Report from the Reports section.</para>
-			</note>
-			<para>
-			When the Purchase Receipt is saved and submitted, click on the Action button and make Purchase Invoice.
-			</para>
-			</sect3>
-			<sect3>
-			<title>Purchase Invoice</title>
-			<para>
-			A Purchase Invoice can be used to prove that something was bought and an amount was paid for it. To create a new Purchase Invoice, go to:
-			</para>
-			<programlisting>Accounts > Purchase Invoice > New Purchase Invoice</programlisting>
-			</sect3>
-			<sect3>
-			<title>Payment Entry</title>
-			<para>
-			Payment Entry is done to book all accounting transactions in your system. It is an important step of Book Keeping. To register a Payment Entry, go to:
-			</para>
-			<programlisting>Accounts > Journal Voucher > New Journal Voucher</programlisting>
-			<para>
-			Save and submit the Payment Entry. This was a complete cycle for the Material Request of Nut Bolts. Now repeat the same process for other requests which were generated by the Production Planning Tool:
-			</para>	
-			<orderedlist>
-			<listitem>
-			<para>Material Request </para>
-			</listitem>
-			<listitem>
-			<para>Purchase Order</para>
-			</listitem>
-			<listitem>
-			<para>Purchase Receipt</para>
-			</listitem>
-			<listitem>
-			<para>Purchase Invoice</para>
-			</listitem>
-			<listitem>
-			<para>Journal Voucher</para>
-			</listitem>
-			</orderedlist>	
-			<para>
-			Once Buying is done you can proceed to manufacture.
-			</para>
-			</sect3>
-		</sect2>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Manufacturing">
-			<title>Manufacturing</title>
-			<para>
-			To manufacture a product, a Production Order is made. Raw materials are transferred from the stores to the work-in-progress Warehouse before completion. After completion, the raw materials are consumed from the work-in-progress Warehouse and updated in the finished goods Warehouse. Production Orders can be made directly from the Manufacturing module or from the Production Planning Tool.
-			</para>
-			<programlisting>Manufacturing > Production Order > New Production Order</programlisting>
-			<sect3>
-			<title>Create a Production Order</title>
-			<para>
-			A submitted Production Order has an Action button on the right hand corner which provides option to 'Transfer Raw materials' and Update Finished Goods'.
-			</para>
-			</sect3>
-			<sect3>
-			<title>Transfer Raw Materials</title>
-			<para>
-			To transfer raw materials you can either use the 'Transfer Raw Material' button or make a Stock Entry manually .
-			</para>
-			<para>
-			On this form, mention the Source Warehouse and the Target Warehouse. The Source Warehouse is a place from where you issue or transfer materials. A Target Warehouse is a place where Stock/Item is received. In this example, the system will transfer raw materials from the stores Warehouse to the work-in-progress Warehouse. The raw materials which are transferred are pulled from the Bill of Materials of that product.
-			</para>
-			<note>
-			<para>Note: If you get an error while transferring raw materials, it may be due to inaccurate 'purpose' selection, while making a manual Stock Entry. To transfer materials, the 'purpose' should be 'Material Transfer' and to transfer materials to finished goods Warehouse, the 'purpose' should be 'Manufacture/Repack'.</para>
-			</note>
-			<note>
-			<para>If you get negative error, ensure that you have enough Stock. Your Purchase Receipt should be saved and submitted.</para>
-			</note>
-			<para>
-			After transferring the material to the work-in-progress Warehouse, the product gets manufactured. After completion, it is essential to shift the finished product to the finished goods Warehouse. Thus, one more Stock Entry has to be done that updates the finished goods in the Warehouse.
-			</para>
-			</sect3>
-			<sect3>
-			<title>Update Finished Goods</title>
-			<para>
-			Under this section, you will mention your source Warehouse as 'Work-in-progress-SOG' and target Warehouse as 'Finished Goods-SOG'. The purpose will be Manufacture/Repack. This is so because, once the product gets manufactured, it is supposed to go to finished goods Stock to enable delivery.
-			</para>
-			<para>
-			This step performs the backflush by raising a Stock Entry for materials that have been consumed while manufacturing the finished goods Item.
-			</para>
-			<note>
-			<para> If you wish to get Stock and valuation rates at this stage, press on ‘Get Stock and Rate’. Valuation rate is the average rate divided by the actual price of an item. This is arrived at by the FIFO method - weighted average of the lot. (b) At this stage if you wish to change the BOM manufacturing quantity, you can do so by clicking on ‘Get Items’.</para>
-			</note>
-			<para>
-			Save and submit the Stock Entry. To see if everything has occurred as planned, go back to the Production Order. The Production Order will show that it is 100% complete. The green line will be complete. After manufacturing the product is delivered and billed.
-			</para>
-			</sect3>
-		</sect2>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Billing">
-			<title>Shipping and Billing</title>
-			<para>
-			Shipping goods requires a Delivery Note and Billing involves making a Sales Invoice and a Payment Entry.
-			</para>
-			<sect3>
-			<title>Delivery Note</title>
-			<para>
-			Delivery Note is a document accompanying a shipment of goods that lists the description, and quantity of the goods delivered [1]. You can make a Delivery Note from Stocks or from a submitted Sales Order by clicking on the Action button placed at the right hand corner of the form. To create a Delivery Note, go to:
-			</para>
-			<programlisting>Stocks > Delivery Note > New Delivery Note</programlisting>
-			<para>
-			Make a Delivery Note and save it after affirming the shipping address. In case the document has no shipping address, create one by clicking on the + button. You can create the new address in the address form, which opens after clicking the + button. Save it and come back to the Delivery Note. Submit the Delivery Note.
-			</para>
-			</sect3>
-			<sect3>
-			<title>Sales Invoice</title>
-			<para>
-			A Sales Invoice is a bill that you send to your Customers against which the Customer processes the payment. Sales Invoice is an accounting transaction. On submission of Sales Invoice, the system updates the receivables and books income against a Customer account. To create a Sales Invoice, go to:
-			</para>
-			<programlisting>Accounts > Sales Invoice > New Sales Invoice</programlisting>
-			<para>
-			You can either make a Sales Invoice from the Accounts module or make it by clicking on the right hand corner of the Delivery Note.
-			</para>
-			<para>
-			The client Jane D’souza has been given 1 Sales Invoice. Now raise another 2 Sales Invoices. One for 25000/- and another for 50000/- and then make Payment Entries for both.
-			</para>
-			<para>
-			Save and submit the Invoice. When you submit the Invoice, an email pop-up box will appear. Correct / Change / Confirm the email ID and click on 'Send' button. An email will be sent.
-			</para>
-			</sect3>
-			<sect3>
-			<title>Payment Entry</title>
-			<para>
-			Payment Entry is a part of booking-keeping. It records accounts and manages balance sheets. You can make it through a Journal Voucher or directly from a submitted Invoice by clicking on the 'Make Payment Entry' button.
-			</para>
-			<programlisting>Accounts > Journal Voucher</programlisting>
-			<para>
-			You can see how much profit you made on this order by going to Gross Profit Report.
-			</para>
-			</sect3>
-		</sect2>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Reports">
-			<title>Gross Profit Report</title>
-			<para>
-			This report shows how much profit you made on each order.
-			</para>
-			<programlisting>Accounts > Gross Profit Report</programlisting>
-			<para>
-			You can go to module-specific 'Reports' section and choose to see any other report-type, depending upon your need for information.
-			</para>
-			<para>
-			For this study, a jute artefact company, Shades of Green, is used as a case-example
-			</para>
-		</sect2>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Guide-Make">
-		<title>Make To Order</title>
-		<para>
-		This guide explains how a manufacturing unit would run its operations based on a make-to-order type of workflow. In a make to order system, the products are standard but are manufactured or procured only when a confirmed order is received from the customer.
-		</para>
-		<para>
-		Shades of Green is an eco-friendly company that manufactures and trades in jute gift items. It manufactures items based on make-to-order type of manufacturing. Shades of Green has retail outlets and they also produce based on orders. For their retail outlets and distribution they manufacture in advance. But, for big orders by corporates, schools and colleges, they manufacture after the order is confirmed. This guide gives a step-by-step account of the production process run through ERPNext. Let us take an example of producing a Jute Pen Stand.
-		</para>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Overview">
-			<title>Overview</title>
-			<para>
-			Overview of executing a complete cycle of a make-to-order workflow:
-			</para>
-			<orderedlist>
-				<listitem>
-					<para>Create an Item, along with raw-materials, Customers and Suppliers.</para>
-				</listitem>
-				<listitem>
-					<para>Create Bill of Materials.</para>
-				</listitem>
-				<listitem>
-					<para>Create a Price List.</para>
-				</listitem>
-				<listitem>
-					<para>Create and submit the Sales Order.</para>
-				</listitem>
-				<listitem>
-					<para>Use Production Planning Tool to perform the following steps:</para>
-				<orderedlist>
-					<listitem>
-						<para>Pull Sales Order and Items.</para>
-					</listitem>
-					<listitem>
-						<para>Create Production Order.</para>
-					</listitem>
-					<listitem>
-						<para>Create Material Requests.</para>
-					</listitem>
-				</orderedlist>	
-				</listitem>
-				<listitem>
-					<para>Create and submit Purchase Order for your Suppliers.</para>
-				<orderedlist>
-					<listitem>
-						<para>Create and submit Purchase Receipts when you receive material from your Suppliers.</para>
-					</listitem>
-				</orderedlist>	
-				</listitem>
-				<listitem>
-					<para>Manufacture by transfering raw-materials via Production Order to work-in-progress warehouse to start production.</para>
-				<orderedlist>
-					<listitem>
-						<para>Update finished goods and back-flush via Production Order.</para>
-					</listitem>
-				</orderedlist>	
-				</listitem>
-				<listitem>
-					<para>Create and submit Sales Invoice to complete billing and payment.</para>
-				</listitem>
-				<listitem>
-					<para>Review Stock Balance Report and Gross Profit Report.</para>
-				</listitem>
-			</orderedlist>
-		</sect2>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Setting">
-			<title>Setting Up</title>
-			<para>
-			In a make-to-order system, the products are pre-defined. To begin the order cycle, it is essential to create an Item master, Customers, and Suppliers.
-			</para>
-			<sect3>
-				<title>Item</title>
-				<para>
-				An Item is your company's product or a service. The term Item is applicable to your core products as well as your raw materials. It can be a product or service that you buy/sell from your customers/ suppliers. ERPNext allows you to manage all sorts of Items like raw-materials, sub-assemblies, finished goods, Item variants and service Items.
-				</para>
-				<programlisting>Stock > Item > New Item</programlisting>
-				<para>
-				Since Jute Pen Stand is a sales Item, it is grouped as a 'Product’. The material that goes into making of this product like jute wire and fabric paint will also be called Item. However, the Item Group of jute wire and fabric paint will be termed as raw-material.
-				</para>
-				<orderedlist>
-					<listitem>
-						<para>Click Yes on ‘Allow Bill of Materials’,</para>
-					</listitem>
-					<listitem>
-						<para>Click Yes on ‘Allow Production Order’ and</para>
-					</listitem>
-					<listitem>
-						<para>Click No on ‘Is Purchase Item’.</para>
-					</listitem>
-				</orderedlist>
-				<note>
-				<para>Please mention the Default Warehouse for this Item as “Finished Goods”. This product is available at the Finished Goods Warehouse only after it gets manufactured at the Work-in-Progress Warehouse. It cannot be kept in stores, because it is not purchased, it is manufactured.</para>
-				</note>
-				<note>
-				<para>In reality you may not have three Warehouses. You may have one, which you use for raw materials, for manufacturing/stitching/producing and also for storing finished goods. In such cases, you have to only imagine separate spaces for each activity, and name them accordingly. For system entry purpose, having three different Warehouses for stocking raw materials, manufacturing unfinished goods and storing finished goods is a good practice.</para>
-				</note>
-			</sect3>
-			<sect3>
-				<title>Create Items for all raw materials</title>
-				<orderedlist>
-					<listitem>
-						<para>Mention Item Group as Raw Material.</para>
-					</listitem>
-
-					<listitem>
-						<para>Click No on ‘Allow Bill of Materials’ (since BOM is required only for products), unless you produce raw-materials in-house.</para>
-					</listitem>
-					<listitem>
-						<para>Click No on Allow Production Order, and</para>
-					</listitem>
-					<listitem>
-						<para>Click Yes on ‘Is Purchase Item’.</para>
-					</listitem>
-				</orderedlist>
-				<para>Following is the list of raw materials that will go into making of a Jute Pen-Stand.</para>
-				<orderedlist>
-					<listitem>
-						<para>Fabric Colour.</para>
-					</listitem>
-
-					<listitem>
-						<para>Jute Wire.</para>
-					</listitem>
-					<listitem>
-						<para>Tree Glue.</para>
-					</listitem>
-				</orderedlist>
-				<para>Make a Bill of Materials with the help of these raw materials.</para>
-				<para>Customers are separate from Contacts and Addresses. Customers can have multiple Contacts and Addresses.</para>
-			</sect3>
-			<sect3>
-				<title>Suppliers and Contacts</title>
-				<para>
-				Suppliers are companies or individuals who provide you with products or services. They are treated in exactly the same manner as Customers.
-				</para>
-				<programlisting>Buying > Supplier > New Supplier</programlisting>
-				<para>
-				Before making the Price List and the Sales Order, make the Bill of Materials based on your design document.
-				</para>
-			</sect3>
-		</sect2>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Bill">
-			<title>Bill of Materials</title>
-			<para>
-			A Bill of Material (BOM) is a list of the raw materials, sub-assemblies, intermediate assemblies, sub-components, parts and the quantities of each needed to manufacture an end product.
-			</para>
-			<programlisting>Manufacturing > Bill of Materials > New Bill of Materials</programlisting>
-			<para>
-			Let us make a BOM for the Jute Pen Stand. In the Bill of Materials we state the operations steps required to manufacture this Item. We also mention the raw materials required to manufacture this Item.
-			</para>
-			<para>
-			Operations: List the operations step and the hourly rates along with the quantity of raw material required to produce the product.
-			</para>
-			<note>
-			<para>Check the box that says ‘With Operations-Manage Cost of Operation'.</para>
-			</note>
-			<para>
-			Materials Required: Mention the raw material list that is required to make the product.
-			</para>
-			<note>
-			<para>Please specify the hour rates. This will help in calculating the actual expenses in producing this Item.</para>
-			</note>
-			<important>
-			<para>You can enter the rates manually by adjusting as per the UOM. Since Tree Glue was purchased in Kg, calculate the rate for 10 gm and enter the rate accordingly. Do not forget to mention rates for every material.</para>
-			</important>
-			<para>
-			Save the BOM and submit it. Do not forget to submit the BOM. This is an important step. The pricing is fixed only after the BOM is submitted. After submitting, you can create a Price List and Item Price into the system.
-			</para>
-		</sect2>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Price">
-			<title>Price List</title>
-			<para>
-			A Price List is a master for storing different rate plans based on Customer, currency, region, shipping cost etc.
-			</para>
-			<programlisting>Stock > Price List > New Price List</programlisting>
-			<para>
-			Since you can maintain different prices for different regions, lets create a Price List for all the Indian Customers.
-			</para>
-			<para>
-			After creating a Price List template, you can click on the Action button and select to Add prices. The displayed form has a button 'New'. Click on that button to get a field for Item Price.
-			</para>
-			<para>
-			Based on the hourly rates of the labourers and the cost of raw material available in the Bill of Materials, you can devise your Item rate. After creating a Price List and Item prices, it is time to create a Sales Order.
-			</para>
-		</sect2>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Sales">
-			<title>Sales Order</title>
-			<para>
-			A Sales Order is an order issued by a business to a Customer for products and / or services. On completing the Bill of Materials, proceed to make a Sales Order into the system. Assuming that Shades of Green has received an order to deliver 50 Jute Pen-stands, create the Sales Order entry, go to:
-			</para>
-			<programlisting>Selling > Sales Order > Sales Order</programlisting>
-			<para>
-			Let us create a Sales Order based on the customer requirement.
-			</para>
-			<para>
-			Save and submit the Sales Order. After creating the Sales Order the process to manufacture them begins. However, in order to manufacture, it is necessary that a Bill of Materials be made. This helps in production planning and making purchases as per requirements of the raw materials.
-			</para>
-			<note>
-			<para>Sales Order is the main document that is used to track billing, delivery and manufacturing.</para>
-			</note>
-			<para>
-			Once the Sales Order is ready, we can proceed to the Production Planning Tool. This tool allows to pull a list of Items and Sales Orders, and generate a Production Order along with Material Requests.
-			</para>
-		</sect2>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Production">
-			<title>Production Planning Tool</title>
-			<para>
-			Production Planning Tool helps to plan production and purchase Items. A list of Items can be generated from the open Sales Orders in the system. This tool creates Production Orders and generates Material Requests.
-			</para>
-			<para>
-			The Production Planning Tool will generate:
-			</para>
-			<orderedlist>
-				<listitem>
-				<para>Production Orders for selected Items.</para>
-				</listitem>
-				<listitem>
-				<para>Material Requests for Items whose Projected Quantity is likely to fall below zero.</para>
-				</listitem>
-			</orderedlist>
-			<programlisting>Manufacturing > Production Planning Tool</programlisting>
-			<para>
-			The Production Planning Tool enables you to complete the production cycle in a fast and efficient manner. From procuring materials, producing goods, to updating stocks - everything is done by clicking on buttons which appear after every transaction. The tool is user friendly and does not require you to go back and forth into the system to make and log different forms. Everything is intuitive and can be performed step by step.
-			</para>
-			<para>
-			You can pull Sales Orders directly by clicking on a button. Select the Sales Orders you wish to process and click on another button to get Items for that Sales Order. Mention Item details and click on the button ‘Make Production Orders’. It is that simple! After this you can click on another button and create Material Requests required to complete this Production Order. The whole process is fuss free and easy.
-			</para>
-			<note>
-			<para>Use the Production Planning Tool to make Production Order.</para>
-			</note>
-			<para>
-			Pull Sales Order: Sales Order is an order issued by a business to a Customer.
-			</para>
-			<para>
-			Get Items from Sales Order: Select Items by clicking on the ‘Get Items from Sales Order’ button. Do not tick the box that says ‘Use multi-level BOM’. This box is checked only if you have sub-assemblies. In other words, only if you have a BOM within a BOM. In the current example, there are no sub-assemblies.
-			</para>
-			<para>
-			Create Production Order: Production Order is an order to produce a specific quantity of material within a predefined timeframe. It contains all of the relevant information required for the execution of the process, including how much should be manufactured when.
-			</para>
-			<para>
-			Create Material Request: Material Request is a request to order materials for the production of your Item/product. This request is created by clicking on the box ‘Create Material Request’. Click on the highlighted Material Request number. The click will open into a Material Request Form.
-			</para>
-			<itemizedlist>
-				<listitem>
-					<para>Get Sales Order</para>
-				</listitem>
-				<listitem>
-					<para>Get Items from Sales Order</para>
-				</listitem>
-				<listitem>
-					<para>Create Production Order</para>
-				</listitem>
-				<listitem>
-					<para>Create Material Request</para>
-				</listitem>
-				<listitem>
-					<para>Download Materials Required</para>
-				</listitem>
-			</itemizedlist>
-			<para>
-			After production planning, it is time to check the Production Order, Transfer Raw Materials and Update Finished Goods. However, before proceeding to manufacture, you are required to complete the Buying process by completing the Purchase Orders and Purchase Receipts.
-			</para>
-		</sect2>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Purchase">
-			<title>Purchase Order</title>
-			<para>
-			A Purchase Order is created from a Material Request or from a Supplier Quotation, when there is no raw material in stock. After receiving the raw material a Purchase Receipt is generated.
-			</para>
-			<para>
-			Purchase Order (PO) is a commercial document and first official offer issued by a buyer to a seller, indicating types, quantities, and agreed prices for the products. You can make a Purchase Order from a Material Request or by directly going to:
-			</para>
-			<programlisting>Buying > Purchase Order > New Purchase Order</programlisting>
-			<para>
-			Make Purchase Order: Click on the ‘Make Purchase Order’ button, on the right side, upper corner of Material Request form, and create a Purchase Order for the same.
-			</para>
-			<para>
-			Submit Purchase Order: This is an important step. You can bill a Purchase Order only when it is submitted.
-			</para>
-			<sect3>
-				<title>Purchase Receipt</title>
-				<para>
-				Purchase Receipt is a record that is made when a material is received. It is also known as a Goods Received Note (GRN). It contains detail information of the Items purchased including the name of the Item, the price as well as the time when the purchase has been made. You can make a Purchase Receipt from the Purchase Order or directly from the Stock module.
-				</para>
-				<programlisting>Stock > Purchase Receipt > New Purchase Receipt</programlisting>
-				<para>
-				In this manner create Purchase Orders and Purchase Receipts for all the Material Requests created by the Production Planning Tool. Remember to save and submit all the forms.
-				</para>
-				<note>
-				<para>Note that only when the Purchase Receipt is submitted, the Stock balance is updated. To see the Stock balance go to the Stock module and select the Stock Balance Report from the Reports section.</para>
-				</note>
-				<para>
-				After completing the Buying process by making Purchase Order and Purchase Receipt, proceed to manufacture the product.
-				</para>
-			</sect3>
-		</sect2>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Manufacturing">
-			<title>Manufacturing</title>
-			<para>
-			To manufacture a product, a Production Order is made. Raw materials are transferred from the stores to the work-in-progress Warehouse before completion. After completion, the raw materials are consumed from the work-in-progress Warehouse and updated in the finished goods Warehouse. Production Orders can be made directly from the Manufacturing module or from the Production Planning Tool.
-			</para>
-			<programlisting>Manufacturing > Production Order > New Production Order</programlisting>
-			<para>
-			Save and submit the Production Order: A submitted Production Order has an Action button on the right hand corner which provides option to 'Transfer Raw materials' and Update Finished Goods'. After completion of the Production Order, transfer the raw materials from stores to the work-in-progress Warehouse.
-			</para>
-			<sect3>
-				<title>Transfer Raw Materials</title>
-				<para>
-				To transfer raw materials you can either use the 'Transfer Raw Material' button or raise a Stock Entry manually .
-				</para>
-				<para>
-				Click on Action and select ‘Transfer Raw Material’. On this form, mention the Source Warehouse and the Target Warehouse. The Source Warehouse is a place from where you issue or transfer materials. A Target Warehouse is a place where Stock/Item is received. In this example, the system will transfer raw materials from the stores Warehouse to the work-in-progress Warehouse. The raw materials which are transferred are pulled from the Bill of Materials of that product.
-				</para>
-				<note>
-				<para>If you get an error while transferring raw materials, it may be due to inaccurate 'purpose' selection, while making a manual Stock Entry. To transfer materials, the 'purpose' should be 'Material Transfer' and to transfer materials to finished goods Warehouse, the 'purpose' should be 'Manufacture/Repack'.</para>
-				</note>
-				<important>
-				<para> If you get negative error, ensure that you have enough Stock. Your Purchase Receipt should be saved and submitted.</para>
-				</important>
-				<para>
-				After transferring the material to the work-in-progress Warehouse, the product gets manufactured. After completion, it is essential to shift the finished product to the finished goods Warehouse. Thus, one more Stock Entry has to be done that updates the finished goods in the Warehouse.
-				</para>
-			</sect3>
-			<sect3>
-				<title>Update Finished Goods</title>
-				<para>
-				Under this section, you will mention your source Warehouse as 'Work-in-progress-SOG' and target Warehouse as 'Finished Goods-SOG'. The purpose will be Manufacture/Repack. This is so because, once the product gets manufactured, it is supposed to go to finished goods Stock to enable delivery.
-				</para>
-				<para>
-				Click on Update Finished Goods: This step performs the backflush by raising a Stock Entry for materials that have been consumed while manufacturing the finished goods Item.
-				</para>
-				<note>
-				<para>If you wish to get Stock and valuation rates at this stage, press on ‘Get Stock and Rate’. Valuation rate is the average rate divided by the actual price of an item. This is arrived at by the FIFO method - weighted average of the lot.</para>
-				</note>
-				<note>
-				<para> At this stage if you wish to change the BOM manufacturing quantity, you can do so by clicking on ‘Get Items’.</para>
-				</note>
-				<para>
-				Save and submit the document. To see if everything has occurred as planned, go back to the Production Order. The Production Order will show that it is 100% complete. The green line will be complete. After manufacturing the product is delivered and billed.
-				</para>
-			</sect3>
-		</sect2>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Shipping">
-			<title>Shipping and Billing</title>
-			<para>
-			Shipping goods requires a Delivery Note and Billing involves making a Sales Invoice and a Payment Entry. Delivery Note is a document accompanying a shipment of goods that lists the description, and quantity of the goods delivered [1]. You can make a Delivery Note from Stocks or from a submitted Sales Order by clicking on the Action button placed at the right hand corner of the form.
-			</para>
-			<programlisting>Stocks > Delivery Note > New Delivery Note</programlisting>
-			<sect3>
-				<title>Delivery Note</title>
-				<para>
-				Make a Delivery Note and save it after affirming the shipping address. In case the document has no shipping address, create one by clicking on the + button. You can create the new address in the address form, which opens after clicking the + button . Save it and come back to the Delivery Note. Submit the Delivery Note.
-				</para>
-			</sect3>
-			<sect3>
-				<title>Sales Invoice</title>
-				<para>
-				A Sales Invoice is a bill that you send to your Customers against which the Customer processes the payment. Sales Invoice is an accounting transaction. On submission of Sales Invoice, the system updates the receivables and books income against a Customer account.
-				</para>
-				<programlisting>Accounts > Sales Invoice > New Sales Invoice</programlisting>
-				<para>
-				You can either make a Sales Invoice from the Accounts module or make it by clicking on the right hand corner of the Delivery Note.
-				</para>
-				<para>
-				Save and submit the Invoice. When you submit the Invoice, an email pop-up box will appear. Correct / change / Confirm the email ID and click on 'Send' button. An email will be sent.
-				</para>
-			</sect3>
-			<sect3>
-				<title>Payment Entry</title>
-				<para>
-				Payment Entry is a part of booking-keeping. It records accounts and manages balance sheets. You can make it through a Journal Voucher or directly from a submitted Invoice by clicking on the 'Make Payment Entry' button.
-				</para>
-				<programlisting>Accounts > Journal Voucher</programlisting>
-			</sect3>
-			<sect3>
-				<title>Double Entry Accounting</title>
-				<para>
-				Double Entry Accounting or bookkeeping is a system of accounting in which every transaction has a corresponding positive and a negative entry: debits and credits. Every transaction involves a debit entry in one account and a credit entry in another account. This means that every transaction must be recorded in two accounts; one account will be debited, because it receives value and the other account will be credited, because it has given value.
-				</para>
-			</sect3>
-			<sect3>
-				<title>Journal Voucher</title>
-				<para>
-				To make a Payment Entry update the Journal Voucher with debit and credit columns. Make sure to click on the button that says ‘Make Difference Entry’. Note that the reference number and reference date is mandatory along with the Account entry. In case for some reason, the account section is blank, it means that you have not selected your default bank account. To do so from the same form, click on the triangle button next to the Company and set the default master account.
-				</para>
-				<para>
-				The click will take you to the Master-Company page. Now enter your default entry account as HDFC Bank / Axis Bank etc and save. This will enable the system to post debit / credit entries directly against this particular account.
-				</para>
-				<para>
-				Save and submit the Payment Entry. After submitting, you can check the Gross Profit Report, and review your profits. You can also check your Stock Balance Report.
-				</para>
-			</sect3>
-		</sect2>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Reports">
-			<title>Reports</title>
-			<para>
-			This page features two reports which you can review; the Stock Balance Report and the Gross Profit Report. The Stock Balance Report shows the Incoming Quantity of the raw material before consumption and the closing quantity after consumption. The Gross Profit Report shows gross profit on individual orders.
-			</para>
-			<sect3>
-				<title>Gross Profit Report</title>
-				<para>
-				A Gross Profit Report shows the profit that you have earned on a specific order. This report subtracts the raw material cost and gives gross profit earned on individual orders.
-				</para>
-				<programlisting>Accounts > Gross Profits</programlisting>
-				<para>
-				You can go to module-specific 'Reports' section and choose to see any other report-type, depending upon your need for information. With the Gross Profit Report, the case-example of a complete business-cycle is over.
-				</para>
-			</sect3>
-		</sect2>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Guide-Order">
-		<title>Make To Stock</title>
-		<para>
-		This guide explains how a manufacturing unit would run its operations based on a make-to-order type of workflow. In a make to order system, the products are standard but are manufactured or procured only when a confirmed order is received from the customer.
-		</para>
-		<para>
-		For this study, a jute artefact company, Shades of Green, is used as a case-example.
-		</para>
-		<para>
-		Shades of Green is an eco-friendly company that manufactures and trades in jute gift items. It manufactures items based on make-to-order type of manufacturing. Shades of Green has retail outlets and they also produce based on orders. For their retail outlets and distribution they manufacture in advance. But, for big orders by corporates, schools and colleges, they manufacture after the order is confirmed. This guide gives a step-by-step account of the production process run through ERPNext. Let us take an example of producing a Jute Pen Stand.
-		</para>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Overview">
-		<title>Overview</title>
-		<para>
-		Overview of executing a complete cycle of a make-to-order workflow:
-		</para>
-		<orderedlist>
-			<listitem>
-				<para>Create an Item, along with raw-materials, Customers and Suppliers.</para>
-			</listitem>
-			<listitem>
-				<para>Create Bill of Materials.</para>
-			</listitem>
-			<listitem>
-				<para>Create a Price List.</para>
-			</listitem>
-			<listitem>
-				<para>Create and submit the Sales Order.</para>
-			</listitem>
-			<listitem>
-				<para>Use Production Planning Tool to perform the following steps:</para>
-				<orderedlist>
-					<listitem>
-						<para>Pull Sales Order and Items.</para>
-					</listitem>
-					<listitem>
-						<para>Create Production Order.</para>
-					</listitem>
-					<listitem>
-						<para>Create Material Requests.</para>
-					</listitem>
-				</orderedlist>
-			</listitem>
-			<listitem>
-				<para>Create and submit Purchase Order for your Suppliers.</para>
-				<orderedlist>
-					<listitem>
-						<para>Create and submit Purchase Receipts when you receive material from your Suppliers.</para>
-					</listitem>
-				</orderedlist>
-			</listitem>
-			<listitem>
-				<para>Manufacture by transfering raw-materials via Production Order to work-in-progress warehouse to start production.</para>
-				<orderedlist>
-					<listitem>
-						<para>Update finished goods and back-flush via Production Order.
-						</para>
-					</listitem>
-				</orderedlist>
-			</listitem>
-			<listitem>
-				<para>Create and submit Sales Invoice to complete billing and payment.</para>
-			</listitem>
-			<listitem>
-				<para>Review Stock Balance Report and Gross Profit Report.</para>
-			</listitem>
-		</orderedlist>
-		</sect2>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Setting">
-		<title>Setting Up</title>
-		<para>
-		In a make-to-order system, the products are pre-defined. To begin the order cycle, it is essential to create an Item master, Customers, and Suppliers.
-		</para>
-		<sect3>
-		<title>Item</title>
-		<para>
-		An Item is your company's product or a service. The term Item is applicable to your core products as well as your raw materials. It can be a product or service that you buy/sell from your customers/ suppliers. ERPNext allows you to manage all sorts of Items like raw-materials, sub-assemblies, finished goods, Item variants and service Items.
-		</para>
-		<programlisting>Stock > Item > New Item</programlisting>
-		<para>
-		Create an Item "Jute Pen Stand": Since Jute Pen Stand is a sales Item, it is grouped as a 'Product’. The material that goes into making of this product like jute wire and fabric paint will also be called Item. However, the Item Group of jute wire and fabric paint will be termed as raw-material.
-		</para>
-		<orderedlist>
-			<listitem>
-				<para>Click Yes on ‘Allow Bill of Materials’.</para>
-			</listitem>
-			<listitem>
-				<para>Click Yes on ‘Allow Production Order’ and</para>
-			</listitem>
-			<listitem>
-				<para>Click No on ‘Is Purchase Item’.</para>
-			</listitem>
-		</orderedlist>
-		<note>
-		<para>Please mention the Default Warehouse for this Item as “Finished Goods”. This product is available at the Finished Goods Warehouse only after it gets manufactured at the Work-in-Progress Warehouse. It cannot be kept in stores, because it is not purchased, it is manufactured.</para>
-		</note>
-		<note>
-		<para>In reality you may not have three Warehouses. You may have one, which you use for raw materials, for manufacturing/stitching/producing and also for storing finished goods. In such cases, you have to only imagine separate spaces for each activity, and name them accordingly. For system entry purpose, having three different Warehouses for stocking raw materials, manufacturing unfinished goods and storing finished goods is a good practice.</para>
-		</note>
-		<para>
-		Create Items for all raw materials
-		</para>
-		<orderedlist>
-			<listitem>
-				<para>Mention Item Group as Raw Material.</para>
-			</listitem>
-			<listitem>
-				<para>Click No on ‘Allow Bill of Materials’ (since BOM is required only for products), unless you produce raw-materials in-house.</para>
-			</listitem>
-			<listitem>
-				<para>Click No on Allow Production Order, and</para>
-			</listitem>
-			<listitem>
-				<para>Click Yes on ‘Is Purchase Item’.</para>
-			</listitem>
-		</orderedlist>
-		<para>
-		Following is the list of raw materials that will go into making of a Jute Pen-Stand.
-		</para>
-		<orderedlist>
-			<listitem>
-				<para>Fabric Colour</para>
-			</listitem>
-			<listitem>
-				<para>Jute Wire</para>
-			</listitem>
-			<listitem>
-				<para>Tree Glue</para>
-			</listitem>
-		</orderedlist>
-		<para>
-		Make a Bill of Materials with the help of these raw materials.
-		</para>
-		</sect3>
-		<sect3>
-			<title>Customers and Contacts</title>
-			<para>
-			A Customer, who is sometimes known as a client, buyer, or purchaser is the one who receives goods, services, products, or ideas, from a seller for a monetary consideration. A Customer can also receive goods or services from a vendor or a Supplier for other valuable considerations.
-			</para>
-			<programlisting>Selling > Customer > New Customer</programlisting>
-			<para>
-			A Customer name is the name of the organisation and a Contact name is the name of the user who is coordinating.
-			</para>
-			<para>
-			Customers are separate from Contacts and Addresses. Customers can have multiple Contacts and Addresses.
-			</para>
-		</sect3>
-		<sect3>
-			<title>Suppliers and Contacts</title>
-			<para>
-			Suppliers are companies or individuals who provide you with products or services. They are treated in exactly the same manner as Customers.
-			</para>
-			<programlisting>Buying > Supplier > New Supplier</programlisting>
-			<para>
-			Before making the Price List and the Sales Order, make the Bill of Materials based on your design document.
-			</para>
-		</sect3>
-		</sect2>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Bill">
-		<title>Bill of Materials</title>
-		<para>
-		A Bill of Material (BOM) is a list of the raw materials, sub-assemblies, intermediate assemblies, sub-components, parts and the quantities of each needed to manufacture an end product.
-		</para>
-		<programlisting>Manufacturing > Bill of Materials > New Bill of Materials</programlisting>
-		<para>
-		Let us make a BOM for the Jute Pen Stand. In the Bill of Materials we state the operations steps required to manufacture this Item. We also mention the raw materials required to manufacture this Item.
-		</para>
-		<para>
-		Operations: List the operations step and the hourly rates along with the quantity of raw material required to produce the product.
-		</para>
-		<note>
-		<para>Check the box that says ‘With Operations-Manage Cost of Operation'.</para>
-		</note>
-		<para>
-		Materials Required: Mention the raw material list that is required to make the product.
-		</para>
-		<note>
-		<para>Please specify the hour rates. This will help in calculating the actual expenses in producing this Item.</para>
-		</note>
-		<important>
-		<para>You can enter the rates manually by adjusting as per the UOM. Since Tree Glue was purchased in Kg, calculate the rate for 10 gm and enter the rate accordingly. Do not forget to mention rates for every material.</para>
-		</important>
-		<para>
-		Save the BOM and submit it. Do not forget to submit the BOM. This is an important step. The pricing is fixed only after the BOM is submitted. After submitting, you can create a Price List and Item Price into the system.
-		</para>
-		</sect2>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Price">
-		<title>Price List</title>
-		<para>
-		A Price List is a master for storing different rate plans based on Customer, currency, region, shipping cost etc.
-		</para>
-		<programlisting>Stock > Price List > New Price List</programlisting>
-		<para>
-		Create a Price List: Since you can maintain different prices for different regions, lets create a Price List for all the Indian Customers. After creating a Price List template, you can click on the Action button and select to Add prices. The displayed form has a button 'New'. Click on that button to get a field for Item Price.
-		</para>
-		<para>
-		Add Item price: Based on the hourly rates of the labourers and the cost of raw material available in the Bill of Materials, you can devise your Item rate.
-		</para>
-		<para>
-		After creating a Price List and Item prices, it is time to create a Sales Order.
-		</para>
-		</sect2>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Planning">
-		<title>Sales Order</title>
-		<para>
-		A Sales Order is an order issued by a business to a Customer for products and / or services. On completing the Bill of Materials, proceed to make a Sales Order into the system. Assuming that Shades of Green has received an order to deliver 50 Jute Pen-stands, create the Sales Order entry.
-		</para>
-		<programlisting>Selling > Sales Order > Sales Order</programlisting>
-		<para>
-		Let us create a Sales Order based on the customer requirement. Save and submit the Sales Order. After creating the Sales Order the process to manufacture them begins. However, in order to manufacture, it is necessary that a Bill of Materials be made. This helps in production planning and making purchases as per requirements of the raw materials.
-		</para>
-		<note>
-		<para>Sales Order is the main document that is used to track billing, delivery and manufacturing.</para>
-		</note>
-		<para>
-		Once the Sales Order is ready, we can proceed to the Production Planning Tool. This tool allows to pull a list of Items and Sales Orders, and generate a Production Order along with Material Requests
-		</para>
-		</sect2>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Production">
-		<title>Production Planning Tool</title>
-		<para>
-		Production Planning Tool helps to plan production and purchase Items. A list of Items can be generated from the open Sales Orders in the system. This tool creates Production Orders and generates Material Requests. The Production Planning Tool will generate:
-		</para>
-		<orderedlist>
-			<listitem>
-				<para>Production Orders for selected Items</para>
-			</listitem>
-			<listitem>
-				<para>Material Requests for Items whose Projected Quantity is likely to fall below zero.</para>
-			</listitem>
-		</orderedlist>
-		<programlisting>Manufacturing > Production Planning Tool</programlisting>
-		<para>
-		The Production Planning Tool enables you to complete the production cycle in a fast and efficient manner. From procuring materials, producing goods, to updating stocks - everything is done by clicking on buttons which appear after every transaction. The tool is user friendly and does not require you to go back and forth into the system to make and log different forms. Everything is intuitive and can be performed step by step.
-		</para>
-		<para>
-		You can pull Sales Orders directly by clicking on a button. Select the Sales Orders you wish to process and click on another button to get Items for that Sales Order. Mention Item details and click on the button ‘Make Production Orders’. It is that simple! After this you can click on another button and create Material Requests required to complete this Production Order. The whole process is fuss free and easy.
-		</para>
-		<para>
-		Step 1: Pull Sales Order. Sales Order is an order issued by a business to a Customer.
-		</para>
-		<para>
-		Step 2: Get Items from Sales Order. Select Items by clicking on the ‘Get Items from Sales Order’ button. Do not tick the box that says ‘Use multi-level BOM’. This box is checked only if you have sub-assemblies. In other words, only if you have a BOM within a BOM. In the current example, there are no sub-assemblies.
-		</para>
-		<para>
-		Step 3: Create Production Order. Production Order is an order to produce a specific quantity of material within a predefined timeframe. It contains all of the relevant information required for the execution of the process, including how much should be manufactured when.
-		</para>
-		<para>
-		Step 4: Create Material Request. Material Request is a request to order materials for the production of your Item/product.
-		</para>
-		<para>
-		Quick Overview of PPT-Production Planning Tool
-		</para>
-		<orderedlist>
-			<listitem>
-				<para>Get Sales Order</para>
-			</listitem>
-			<listitem>
-				<para>Get Items from Sales Order</para>
-			</listitem>
-			<listitem>
-				<para>Create Production Order</para>
-			</listitem>
-			<listitem>
-				<para>Create Material Request</para>
-			</listitem>
-			<listitem>
-				<para>Download Materials Required</para>
-			</listitem>
-		</orderedlist>
-		<para>
-		After production planning, it is time to check the Production Order, Transfer Raw Materials and Update Finished Goods. However, before proceeding to manufacture, you are required to complete the Buying process by completing the Purchase Orders and Purchase Receipts.
-		</para>
-		</sect2>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Buying">
-		<title>Purchase Order</title>
-		<para>
-		A Purchase Order is created from a Material Request or from a Supplier Quotation, when there is no raw material in stock. After receiving the raw material a Purchase Receipt is generated.
-		</para>
-		<sect3>
-		<title>Purchase Order</title>
-		<para>
-		Purchase Order (PO) is a commercial document and first official offer issued by a buyer to a seller, indicating types, quantities, and agreed prices for the products. You can make a Purchase Order from a Material Request or by directly going to:
-		</para>
-		<programlisting>Buying > Purchase Order > New Purchase Order</programlisting>
-		<para>
-		Step 1: Make Purchase Order. Click on the ‘Make Purchase Order’ button, on the right side, upper corner of Material Request form, and create a Purchase Order for the same.
-		</para>
-		<para>
-		Step 2: Submit Purchase Order. This is an important step. You can bill a Purchase Order only when it is submitted.
-		</para>
-		</sect3>
-		<sect3>
-		<title>Purchase Receipt</title>
-		<para>
-		Purchase Receipt is a record that is made when a material is received. It is also known as a Goods Received Note (GRN). It contains detail information of the Items purchased including the name of the Item, the price as well as the time when the purchase has been made. You can make a Purchase Receipt from the Purchase Order or directly from the Stock module.
-		</para>
-		<programlisting>Stock > Purchase Receipt > New Purchase Receipt</programlisting>
-		<para>
-		In this manner create Purchase Orders and Purchase Receipts for all the Material Requests created by the Production Planning Tool. Remember to save and submit all the forms.
-		</para>
-		<note>
-		<para>Note that only when the Purchase Receipt is submitted, the Stock balance is updated. To see the Stock balance go to the Stock module and select the Stock Balance Report from the Reports section.</para>
-		</note>
-		<para>
-		After completing the Buying process by making Purchase Order and Purchase Receipt, proceed to manufacture the product.
-		</para>
-		</sect3>
-		</sect2>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Manufacturing">
-		<title>Manufacturing</title>
-		<para>
-		To manufacture a product, a Production Order is made. Raw materials are transferred from the stores to the work-in-progress Warehouse before completion. After completion, the raw materials are consumed from the work-in-progress Warehouse and updated in the finished goods Warehouse. Production Orders can be made directly from the Manufacturing module or from the Production Planning Tool.
-		</para>
-		<programlisting>Manufacturing > Production Order > New Production Order</programlisting>
-		<para>
-		Step 1: Save and submit the Production Order. A submitted Production Order has an Action button on the right hand corner which provides option to 'Transfer Raw materials' and Update Finished Goods'.
-		</para>
-		<para>
-		After completion of the Production Order, transfer the raw materials from stores to the work-in-progress Warehouse.
-		</para>
-		<para>
-		Step 2: Click on Action and select ‘Transfer Raw Material’. On this form, mention the Source Warehouse and the Target Warehouse. The Source Warehouse is a place from where you issue or transfer materials. A Target Warehouse is a place where Stock/Item is received. In this example, the system will transfer raw materials from the stores Warehouse to the work-in-progress Warehouse. The raw materials which are transferred are pulled from the Bill of Materials of that product.
-		</para>
-		<note>
-		<para> If you get an error while transferring raw materials, it may be due to inaccurate 'purpose' selection, while making a manual Stock Entry. To transfer materials, the 'purpose' should be 'Material Transfer' and to transfer materials to finished goods Warehouse, the 'purpose' should be 'Manufacture/Repack'.</para>
-		</note>
-		<para>
-		After transferring the material to the work-in-progress Warehouse, the product gets manufactured. After completion, it is essential to shift the finished product to the finished goods Warehouse. Thus, one more Stock Entry has to be done that updates the finished goods in the Warehouse.
-		</para>
-		<para>
-		Step 3: Click on Update Finished Goods. Under this section, you will mention your source Warehouse as 'Work-in-progress-SOG' and target Warehouse as 'Finished Goods-SOG'. The purpose will be Manufacture/Repack. This is so because, once the product gets manufactured, it is supposed to go to finished goods Stock to enable delivery. This step performs the backflush by raising a Stock Entry for materials that have been consumed while manufacturing the finished goods Item.
-		</para>
-		<para>
-		Save and submit the document. To see if everything has occurred as planned, go back to the Production Order. The Production Order will show that it is 100% complete. The green line will be complete. After manufacturing the product is delivered and billed.
-		</para>
-		</sect2>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Selling">
-		<title>Shipping and Billing</title>
-		<para>
-		Shipping goods requires a Delivery Note and Billing involves making a Sales Invoice and a Payment Entry. Delivery Note is a document accompanying a shipment of goods that lists the description, and quantity of the goods delivered. You can make a Delivery Note from Stocks or from a submitted Sales Order by clicking on the Action button placed at the right hand corner of the form.
-		</para>
-		<programlisting>Stocks > Delivery Note > New Delivery Note</programlisting>
-		<sect3>
-		<title>Delivery Note</title>
-		<para>
-		Make a Delivery Note and save it after affirming the shipping address. In case the document has no shipping address, create one by clicking on the + button. You can create the new address in the address form, which opens after clicking the + button . Save it and come back to the Delivery Note. Submit the Delivery Note.
-		</para>
-		</sect3>
-		<sect3>
-		<title>Sales Invoice</title>
-		<para>
-		A Sales Invoice is a bill that you send to your Customers against which the Customer processes the payment. Sales Invoice is an accounting transaction. On submission of Sales Invoice, the system updates the receivables and books income against a Customer account.
-		</para>
-		<programlisting>Accounts > Sales Invoice > New Sales Invoice</programlisting>
-		<para>
-		You can either make a Sales Invoice from the Accounts module or make it by clicking on the right hand corner of the Delivery Note.
-		</para>
-		</sect3>
-		<sect3>
-		<title>Payment Entry</title>
-		<para>
-		Payment Entry is a part of booking-keeping. It records accounts and manages balance sheets. You can make it through a Journal Voucher or directly from a submitted Invoice by clicking on the 'Make Payment Entry' button.
-		</para>
-		<programlisting>Accounts > Journal Voucher</programlisting>
-		</sect3>
-		<sect3>
-		<title>Double Entry Accounting</title>
-		<para>
-		Double Entry Accounting or bookkeeping is a system of accounting in which every transaction has a corresponding positive and a negative entry: debits and credits. Every transaction involves a debit entry in one account and a credit entry in another account. This means that every transaction must be recorded in two accounts; one account will be debited, because it receives value and the other account will be credited, because it has given value.
-		</para>
-		</sect3>
-	<sect3>
-		<title>Journal Voucher</title>
-		<para>
-		To make a Payment Entry update the Journal Voucher with debit and credit columns. Make sure to click on the button that says ‘Make Difference Entry’. Note that the reference number and reference date is mandatory along with the Account entry. In case for some reason, the account section is blank, it means that you have not selected your default bank account. To do so from the same form, click on the triangle button next to the Company and set the default master account.
-		</para>
-		<para>
-		The click will take you to the Master-Company page. Now enter your default entry account as HDFC Bank / Axis Bank etc and save. This will enable the system to post debit / credit entries directly against this particular account.
-		</para>
-		<para>
-		Save and submit the Payment Entry. After submitting, you can check the Gross Profit Report, and review your profits. You can also check your Stock Balance Report.
-		</para>
-		</sect3>		
-		</sect2>
-		<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Reports">
-		<title>Reports</title>
-		<para>
-		This page features two reports which you can review; the Stock Balance Report and the Gross Profit Report. The Stock Balance Report shows the Incoming Quantity of the raw material before consumption and the closing quantity after consumption. The Gross Profit Report shows gross profit on individual orders.
-		</para>
-		<sect3>
-		<title>Stock Balance Report</title>
-		<para>While reviewing stock balance of the raw material, note that the stocks which were purchased and consumed during the production of Jute Pen Stand-1, have become zero after consumption.</para>
-		<programlisting>Stock > Stock Balance</programlisting>
-		</sect3>
-		<sect3>
-		<title>Gross Profit Report</title>
-		<para>A Gross Profit Report shows the profit that you have earned on a specific order. This report subtracts the raw material cost and gives gross profit earned on individual orders.</para>
-		<programlisting>Accounts > Gross Profits</programlisting>
-		<para>You can go to module-specific 'Reports' section and choose to see any other report-type, depending upon your need for information. With the Gross Profit Report, the case-example of a complete business-cycle is over.</para>
-		</sect3>
-		</sect2>
-	</sect1>
+<title>Guide Books</title>
+<para>There are three standard workflows for order fulfillment. These guides explains step by step taking an example case
+	how to execute these in ERPNext.</para>
+<orderedlist>
+<listitem><para>Engineer To Order: Products are designed as per customer's requirements and manufactured once the contract
+	is completed. Examples: Construction, Furniture, Capital Goods etc.</para></listitem>
+<listitem><para>Make To Order: Products are fixed, but fulfillment (manufacutring / procurement) only starts after receipt
+	of order: Light Engineering, Machinery, Furniture etc.</para></listitem>
+<listitem><para>Make To Stock: Products are fixed and usually available in stock and are shipped as soon as order is received.
+	Examples: Consumer Goods, Retail etc.</para></listitem>
+</orderedlist>
+<sect1>
+<title>Test Instance</title>
+<para>It is highly recommended to have a test instance in which to practice before going to a request for production.</para>
+<para>We recommend completing the test cycles as it deems necessary in this instance to do so before the final implementation
+	of the system. You can even have two running instances for testing before working with actual operating data.</para>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Guide-Engineer">
+<title>Engineer To Order</title>
+<para>This guide explains how a manufacturing unit would run its operations based on an engineer-to-order type of workflow. In
+	engineer to order companies, a deal goes through multiple stages of discussions going back and forth. At each stage, new
+	proposals are made and new costing for the product is prepared. For this study, a furniture making company, Supreme Furniture,
+	is used as a case-example.</para>
+<para>Supreme Furniture deals in all-types of furniture. They have a small showroom, where they keep some samples. However, they
+	produce only after a Customer confirms the order and gives their specifications clearly.</para>
+<note><para>Production Orders are issued based on customised order obtained after multiple iterations and may change even after
+	production begins.</para></note>
+<para>To explain the production cycle we will consider an example of a custom-made bed cum wardrobe for a child. Please read the
+	Overview section to get a glimpse of all the steps required to complete an engineer-to-order cycle.</para>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Overview">
+<title>Overview</title>
+<para>Overview of executing a complete cycle of an engineer-to-order workflow:</para>
+<orderedlist>
+<listitem><para>Create an Item along with codes for finished products, Customers/Lead, and Suppliers.</para></listitem>
+<listitem><para>Create Bill of Materials for estimating the cost, which can be amended.</para></listitem>
+<listitem><para>Create Quotations during the proposal phase.</para></listitem>
+<listitem><para>Create Sales Order.</para></listitem>
+<listitem><para>Create Advance Payment Entry and raise Sales Invoice.</para></listitem>
+<listitem><para>Use Production Planning Tool to perform the following steps:</para>
+<orderedlist>
+<listitem><para>Create Production Order.</para></listitem>
+<listitem><para>Create Material Requests.</para></listitem>
+</orderedlist></listitem>
+<listitem><para>Create and submit Purchase Order for your Suppliers:</para>
+<orderedlist>
+<listitem><para>Create and submit Purchase Receipts when you receive material from your Suppliers.</para></listitem>
+<listitem><para>Create and submit Purchase Invoice and make Payment Entry.</para></listitem>
+</orderedlist></listitem>
+<listitem><para>Manufacture by transfering raw-materials via Production Order to work-in-progress Warehouse to start
+	production:</para>
+<orderedlist>
+<listitem><para>Update finished goods and back-flush via Production Order.</para></listitem>
+</orderedlist></listitem>
+<listitem><para>Create and submit pending Sales Invoice to complete Customer billing.</para></listitem>
+<listitem><para>Review Gross Profit Report.</para></listitem>
+</orderedlist>
+<para>To begin the order cylce create an Item, Lead/Customer, Supplier and Warehouse.</para>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Setting">
+<title>Setting Up</title>
+<para>In an engineer-to-order system, the products are manufactured based on the client's product requirements followed by
+	their Sales Order. To begin this order cycle, it is essential to create an Item master along with raw materials and sub
+	assemblies, Warehouse, Customers, and Suppliers.</para>
+<sect3>
+<title>Customer</title>
+<programlisting>Selling > Customer > New Customer</programlisting>
+<para>A Customer, who is sometimes known as a client, buyer, or purchaser is the one who receives goods, services, products,
+	or ideas, from a seller for a monetary consideration. A Customer can also receive goods or services from a vendor or a
+	Supplier for other valuable considerations. In this case-example, the Customer is Ms. Jane Dsouza. She is keen on making
+	a multipurpose bed for her daughter.</para>
+<para>After setting up the Customer name in the system, it is time to create an Item based on the requirement of the Customer.
+	In this example, the Customer Ms. Jane Dsouza wants a baby bed with a wardrobe attached to it. Thus, create an Item, and the
+	possible raw materials that will go into its making.</para>
+</sect3>
+<sect3>
+<title>Item</title>
+<para>An Item is your company's product or a service. The term Item is applicable to your core products as well as your raw
+	materials. It can be a product or service that you buy/sell from your Customers/Suppliers. ERPNext allows you to manage all
+	sorts of Items like raw-materials, sub-assemblies, finished goods, Item variants and service Items.</para>
+<programlisting>Stock > Item > New Item</programlisting>
+<para>Make Items for all the raw materials that will go into the final product. Let us call the final product as Child Bed Baby.
+	The raw materials required will be wood, plywood, fevicol, hinges, nails, beadings, slotted angles, foam, wooden panels, sponge,
+	coir, paint etc. The raw materials will also be created as Items. However, their Item Group will be raw materials.</para>
+<para>You can store milestones as Items. For example, the baby-bed cum wardrobe custom order requires one bed, one wardrobe and 5
+	drawers. So the Item-milestones can be bed, wardrobe and drawers individually. The final product will be a result of assembling
+	these milestone Item</para>
+</sect3>
+<sect3>
+<title>Item Codification</title>
+<para>Item Codification helps in keeping a count of long and and complicated names. It is preferred if you have lots of
+	products</para>
+<para>In this example, lets make Bbed-1 as one product milestone, Bwardrobe-1 as another and Bdrawer-1 as the last milestone
+	product. Note that B stands for the Baby range, then comes the name of the Item along with the order no in this category. The
+	product is codified so that there is no confusion with other orders. The completed and assembled Item will be ‘Child Bed
+	Baby’.</para>
+</sect3>
+<sect3>
+<title>Sub-assembly</title>
+<para>An assembled unit forming a component to be incorporated into a larger assembly is known as a Sub-assembly. To produce an
+	Item , you require a lot of raw-materials. These raw-materials themselves have to be manufactured in some cases. Thus, along
+	with standard raw materials, there is a requirement of raw materials with their own Bill of Materials. These raw materials have
+	their own BOM’s and are called sub-assemblies.</para>
+<para>Note that for milestone Items like Bwardrobe1, Bbed1 and Bdrawers1:</para>
+<orderedlist>
+<listitem><para>Allow BOM’ field should be marked as 'Yes'. They should be grouped as raw materials, since these will be produced
+	in-house and will go into the making of the final product. The Item milestones are the sub-assemblies.</para></listitem>
+<listitem><para>‘Allow Production Order’ should be marked as 'No'. All sub-assemblies will follow the one Production Order raised
+	for the main product Child Bed Baby.</para></listitem>
+</orderedlist>
+<para>In this example Child Bed Baby is the final product, the Bbed1, Bwardrobe1 and Bdrawers1 are sub-assemblies.</para>
+</sect3>
+<sect3>
+<title>Warehouse</title>
+<para>A Warehouse is a commercial building for storage of goods. Warehouses are used by manufacturers, importers, exporters,
+	wholesalers, transport businesses, customs, etc. They are usually large plain buildings in industrial areas of cities, towns,
+	and villages. They usually have loading docks to load and unload goods from trucks.</para>
+<programlisting>Setup > Warehouse</programlisting>
+<para>This is a mandatory field. No Item form will be saved without a Warehouse master. In E-T-O type of company, create one
+	Warehouse for Work-In-Progress and one for Finished Goods.</para>
+<note><para>The Warehouses should be under the 'Stock-Expenses' category. Here the goods will be under the parent group
+	'Stock-Expenses'. Assign these Warehouses to Items accordingly. Select Stock-Expenses under parent group section in the system.
+	You will have to create this new Warehouses in the system. The existing work-in-progress and finished goods Warehouses are
+	by default categorised under 'Assets' by the system. For E-T-O transactions, the finished goods will come under the expense
+	category. Thus, create new Warehouses under Stock-Expenses category.</para></note>
+<note><para>In reality you may not have three Warehouses. You may have only one, which you use for raw material, for
+	manufacturing/stitching/producing and also for storing finished goods. In this case, you have to only imagine separate spaces
+	for each activity, and name them accordingly. For system entry purpose, having three different Warehouses for stocking raw
+	materials, manufacturing unfinished goods and storing finished goods is a necessity.</para></note>
+</sect3>
+<sect3>
+<title>Suppliers and Contacts</title>
+<para>Suppliers are companies or individuals who provide you with products or services. They are treated in exactly the same manner
+	as Customers.</para>
+<programlisting>Buying > Supplier > New Supplier</programlisting>
+<para>Suppliers are separate from Contacts and Addresses. Suppliers can have multiple Contacts and Addresses.</para>
+<para>Make the Bill of Materials based on your design document and product requirements specified by the client.</para>
+</sect3>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Boom">
+<title>Bill of Material</title>
+<para>A Bill of Material (BOM) is a list of the raw materials, sub-assemblies, intermediate assemblies, sub-components, parts
+	and the	quantities of each needed to manufacture an end product. Make separate Bill of Material for every milestone order.
+	Make one for the final order. Every BOM will have one Operations section and one Materials section. Mention the steps and
+	hourly rates in the Operations section and the quantity of materials required in the Materials section.</para>
+<programlisting>Manufacturing > Bill of Materials > New Bill of Materials</programlisting>
+<para>Make a Bill of Material for Bwardrobe1.</para>
+<para>After completing the Wardrobe BOM, make the Bill of Material for the bed.</para>
+<para>After completion of the Bbed1 BOM, make the Bill of Material for Bdrawers-1.</para>
+<para>After completion of the drawers, make a BOM for the final product. The main product Child Bed Baby is assembled together
+	from the three milestone Items.</para>
+<para>Save and submit all BOM's. Based on the client feedback give a proposal to the client in the form of Quotations. You may
+	have to propose different quotes till the client agrees.</para>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Phase">
+<title>Proposal Phase</title>
+<para>In the proposal phase a client is offered various Quotations for a customised product. The Quotations are amended and
+	adjusted as per the client's need. These Quotations serve as a basis for raising a proforma invoice or for accepting advance
+	payment.</para>
+<sect3>
+<title>Quotation</title>
+<para>This is the initial quote that is presented to the Customer, for approval of design and the cost of the product.</para>
+<programlisting>Selling > Quotation > New Quotation</programlisting>
+<para>The first Quotation is given to the client, Jane D’souza. She visits a few more custom furniture makers and takes Quotations
+	from them. She realises that there is a scope of margin to negotiate. So she comes back and asks for another Quotation. The
+	showroom supervisor gives her a second quote. He says he can give her the same product, but instead of special plywood, he will
+	use the standard plywood. He assures her that the local plywood maker is very reliable. He also assures her that most clients
+	prefer this plywood since it brings down the total cost and is good in quality.</para>
+<para>The sales engineer then revises the bill of materials and prepares a new Quotation. It is possible to delete/cancel the
+	existing submitted Quotation and amend it. Mention the new rate with the new design description.</para>
+<para>In order to print your Quotation as Proforma Invoice, go to print heading in the Quotation’s info section. Select Proforma
+	Invoice as your new print heading and save. The printout will have a heading as Pro-forma Invoice.</para>
+</sect3>
+<sect3>
+<title>Proforma Invoice</title>
+<para>With the heading as Proforma Invoice, you can bill the client in phases. A Proforma Invoice is a document that is sent to a
+	buyer in certain circumstances - usually before all of the invoice details are known. A Proforma Invoice is not a true invoice –
+	it is simply a document that declares the seller’s commitment to provide the goods or services specified to the buyer at
+	certain prices.</para>
+<para>Proforma invoices are not recorded as an accounts receivable by the seller nor are they recorded as an accounts payable
+	by the buyer. To print the name Proforma Invoice on the Quotation, create a Print Heading in the system.</para>
+<para>After creating the print heading, go to the Quotation and change the print heading name. Then, send it to the Customer.</para>
+<para>The Customer, Jane, realises that if she wants a further decrease in price, the furniture maker will offer further
+	non-branded raw material and decrease cost. She doesn't want to compromise on quality and thus agrees to the second quote.
+	She confirms the order and pays them Rs. 10000/- as Advance. Advance payment is seen as an order confirmation. Based on
+	the confirmation, create a Sales Order.</para>
+</sect3>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Sales_Order">
+<title>Sales Order</title>
+<para>A Sales Order is an order issued by a business to a Customer for products and/or services. After the proposal phase,
+	it is time for the organisation to make a Sales Order. Based on the price agreement in the Quotation, make a Sales Order
+	for the custom product 'Child Bed Baby'.</para>
+<programlisting>Selling > Sales Order > New Sales Order</programlisting>
+<important><para>Sales Order is the main document that is used to track billing, delivery and manufacturing.</para></important>
+<para>Along with the Sales Order entry make the Advance Payment Entry.</para>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Advance">
+<title>Advance Payment Entry</title>
+<para>To record an advance payment a Journal Voucher is made along with a Sales Invoice for future payment.</para>
+<programlisting>Accounts > Journal Voucher > New Journal Voucher</programlisting>
+<para>Payment done by the Customer before accepting delivery of the product is an Advance Payment. This is done to confirm the
+	order and is paid as token to start manufacturing the product. For orders of high value, the business houses expect to receive
+	advance. Thus, open a new Journal Voucher and make the advance entry.</para>
+<para>Since the Customer has given 10000/- as cash advance, it will be recorded as a credit entry against the Customer. To balance
+	it with the debit entry (Double Entry Accounting) enter 10000/- as debit against the Company’s cash account.</para>
+<sect3>
+<title>Sales Invoice</title>
+<para>A Sales Invoice is a bill that you send to your Customers, against which the Customer processes the payment. Sales Invoice
+	is an accounting transaction. On submission of Sales Invoice, the system updates the receivable and books income against a
+	Customer Account.</para>
+<programlisting>Accounts > Sales Invoice > New Sales Invoice</programlisting>
+<para>In this case, the Sales Order is made for an amount of Rs 100000/- Supreme Furniture will charge the Customer in phases.
+	Thus they will make 3 Sales Invoices, two will charge 25,000 each and one will be for Rs 50, 000/- Quantity will be specified
+	as 0.25, 0.25 and 0.50 respectively.</para>
+<para>To link the Sales Invoice to the Journal Voucher which mentions the advance Payment Entry, click on ‘Get Advances Received’.
+	Allocate the amount of advance in the advances table. The accounting will be adjusted accordingly.</para>
+<note><para>In case you get error while saving, due to Qty being in fraction, go to UOM master and uncheck the box that says
+	‘Must be whole number’.</para></note>
+<para>Save and submit the Sales Invoice. You can start making the Production Order and raise Material Requests for manufacturing
+	this product via the Production Planning Tool.</para>
+</sect3>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Product">
+<title>Product Planning Tool</title>
+<para>Production Planning Tool helps to plan production and purchase Items. A list of Items can be generated from the open
+	Sales Orders in the system. This tool creates Production Orders and generates Material Requests. The Production Planning
+	Tool will generate:</para>
+<orderedlist>
+<listitem><para>Production Orders for selected Items</para></listitem>
+<listitem><para>Material Requests for Items whose Projected Quantity is likely to fall below zero.</para></listitem>
+</orderedlist>
+<para>Go to:</para>
+<programlisting>Manufacturing > Production Planning Tool</programlisting>
+<para>The Production Planning Tool enables you to complete the production cycle in a fast and efficient manner. From procuring
+	materials, producing goods, to updating stocks - everything is done by clicking on buttons which appear after every transaction.
+	The tool is user friendly and does not require you to go back and forth into the system to make and log different forms.
+	Everything is intuitive and can be performed step by step.</para>
+<para>You can pull Sales Orders directly by clicking on a button. Select the Sales Orders you wish to process and click on another
+	button to get Items for that Sales Order. Mention Item details and click on the button ‘Make Production Orders’. It is that
+	simple! After this you can click on another button and create Material Requests required to complete this Production Order.
+	The whole process is fuss free and easy.</para>
+<para>Use the Production Planning Tool to make Production Order.</para>
+<para>Step 1: Pull Sales Order. Sales Order is an order issued by a business to a Customer.</para>
+<para>Step 2: Get Items from Sales Order. Select Items by clicking on the ‘Get Items from Sales Order’ button. Check the box that
+	says ‘Use multi-level BOM’. This box is checked because you have sub-assemblies.</para>
+<para>Step 3: Create Production Order. Production Order is an order to produce a specific quantity of material within a predefined
+	timeframe. It contains all of the relevant information required for the execution of the process, including how much should be
+	manufactured when.</para>
+<para>Step 4: Create Material Request. Material Request is a request to order materials for the production of your
+	Item/product.</para>
+<para>This request is created by clicking on the box ‘Create Material Request’. Click on the highlighted Material Request number.
+	The click will open into a Material Request form.</para>
+<note><para>Remember to put your sub-assembly Items/ Item Milestones in the Bill of Material. The Material Request button will
+	make purchase requests even for the sub-assembly raw material.</para></note>
+<sect3>
+<title>Quick Overview of PPT-Production Planning Tool</title>
+<itemizedlist>
+<listitem><para>Get Sales Order</para></listitem>
+<listitem><para>Get Items from Sales Order</para></listitem>
+<listitem><para>Create Production Order</para></listitem>
+<listitem><para>Create Material Request</para></listitem>
+<listitem><para>Download Materials Required</para></listitem>
+</itemizedlist>
+<para>After production planning, it is time to check the Production Order, Transfer Raw Materials and Update Finished Goods.
+	However, before proceeding to manufacture, you are required to complete the Buying process by completing the Purchase
+	Orders and Purchase Receipts.</para>
+</sect3>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Buying">
+<title>Buying</title>
+<para>Buying raw materials when there is no Stock can be done by raising Material Requests and completing the purchase cycle.
+	The purchase cycle includes making Purchase Orders and Purchase Receipts along with Purchase Invoice and Payment Entry
+	through Journal Voucher.
+</para>
+<sect3>
+<title>Purchase Order</title>
+<para>Purchase Order (PO) is a commercial document and first official offer issued by a buyer to a seller, indicating types,
+	quantities, and agreed prices for the products. You can make a Purchase Order from a Material Request or by directly
+	going to:</para>
+<programlisting>Buying > Purchase Order > New Purchase Order</programlisting>
+<para>Make the Purchase Order, save and submit it. After saving, click on 'Make Purchase Receipt'. Save and submit the
+	Purchase Receipts.</para>
+</sect3>
+<sect3>
+<title>Purchase Receipt</title>
+<para>Purchase Receipt is a record that is made when a material is received. It is also known as a Goods Received Note
+	(GRN). It contains detail information of the Items purchased including the name of the Item, the price as well as the
+	time when the purchase has been made. You can make a Purchase Receipt from the Purchase Order or directly from the
+	Stock module.</para>
+<programlisting>Stock > Purchase Receipt > New Purchase Receipt</programlisting>
+<note><para>Note that only when the Purchase Receipt is submitted, the Stock balance is updated. To see the Stock
+	balance go to the Stock module and select the Stock Balance Report from the Reports section.</para></note>
+<para>When the Purchase Receipt is saved and submitted, click on the Action button and make Purchase Invoice.</para>
+</sect3>
+<sect3>
+<title>Purchase Invoice</title>
+<para>A Purchase Invoice can be used to prove that something was bought and an amount was paid for it. To create a
+	new Purchase Invoice, go to:</para>
+<programlisting>Accounts > Purchase Invoice > New Purchase Invoice</programlisting>
+</sect3>
+<sect3>
+<title>Payment Entry</title>
+<para>Payment Entry is done to book all accounting transactions in your system. It is an important step of Book
+	Keeping. To register a Payment Entry, go to:</para>
+<programlisting>Accounts > Journal Voucher > New Journal Voucher</programlisting>
+<para>Save and submit the Payment Entry. This was a complete cycle for the Material Request of Nut Bolts. Now repeat
+	the same process for other requests which were generated by the Production Planning Tool:</para>
+<orderedlist>
+<listitem><para>Material Request </para></listitem>
+<listitem><para>Purchase Order</para></listitem>
+<listitem><para>Purchase Receipt</para></listitem>
+<listitem><para>Purchase Invoice</para></listitem>
+<listitem><para>Journal Voucher</para></listitem>
+</orderedlist>
+<para>Once Buying is done you can proceed to manufacture.</para>
+</sect3>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Manufacturing">
+<title>Manufacturing</title>
+<para>To manufacture a product, a Production Order is made. Raw materials are transferred from the stores to the
+	work-in-progress Warehouse before completion. After completion, the raw materials are consumed from the
+	work-in-progress Warehouse and updated in the finished goods Warehouse. Production Orders can be made directly
+	from the Manufacturing module or from the Production Planning Tool.</para>
+<programlisting>Manufacturing > Production Order > New Production Order</programlisting>
+<sect3>
+<title>Create a Production Order</title>
+<para>A submitted Production Order has an Action button on the right hand corner which provides option to 'Transfer
+	Raw materials' and Update Finished Goods'.</para>
+</sect3>
+<sect3>
+<title>Transfer Raw Materials</title>
+<para>To transfer raw materials you can either use the 'Transfer Raw Material' button or make a Stock Entry manually .</para>
+<para>On this form, mention the Source Warehouse and the Target Warehouse. The Source Warehouse is a place from where you
+	issue or transfer materials. A Target Warehouse is a place where Stock/Item is received. In this example, the system will
+	transfer raw materials from the stores Warehouse to the work-in-progress Warehouse. The raw materials which are transferred
+	are pulled from the Bill of Materials of that product.</para>
+<note><para>Note: If you get an error while transferring raw materials, it may be due to inaccurate 'purpose' selection,
+	while making a manual Stock Entry. To transfer materials, the 'purpose' should be 'Material Transfer' and to transfer materials
+	to finished goods Warehouse, the 'purpose' should be 'Manufacture/Repack'.</para></note>
+<note><para>If you get negative error, ensure that you have enough Stock. Your Purchase Receipt should be saved
+	and submitted.</para></note>
+<para>After transferring the material to the work-in-progress Warehouse, the product gets manufactured. After completion, it is
+	essential to shift the finished product to the finished goods Warehouse. Thus, one more Stock Entry has to be done that updates
+	the finished goods in the Warehouse.</para>
+</sect3>
+<sect3>
+<title>Update Finished Goods</title>
+<para>Under this section, you will mention your source Warehouse as 'Work-in-progress-SOG' and target Warehouse as 'Finished
+	Goods-SOG'. The purpose will be Manufacture/Repack. This is so because, once the product gets manufactured, it is supposed
+	to go to finished goods Stock to enable delivery.</para>
+<para>This step performs the backflush by raising a Stock Entry for materials that have been consumed while manufacturing
+	the finished goods Item.</para>
+<note><para> If you wish to get Stock and valuation rates at this stage, press on ‘Get Stock and Rate’. Valuation rate is the
+	average rate divided by the actual price of an item. This is arrived at by the FIFO method - weighted average of the lot.
+	(b) At this stage if you wish to change the BOM manufacturing quantity, you can do so by clicking on ‘Get Items’.</para></note>
+<para>Save and submit the Stock Entry. To see if everything has occurred as planned, go back to the Production Order. The
+	Production Order will show that it is 100% complete. The green line will be complete. After manufacturing the product is
+	delivered and billed.</para>
+</sect3>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Billing">
+<title>Shipping and Billing</title>
+<para>Shipping goods requires a Delivery Note and Billing involves making a Sales Invoice and a Payment Entry.</para>
+<sect3>
+<title>Delivery Note</title>
+<para>Delivery Note is a document accompanying a shipment of goods that lists the description, and quantity of the goods
+	delivered [1]. You can make a Delivery Note from Stocks or from a submitted Sales Order by clicking on the Action button
+	placed at the right hand corner of the form. To create a Delivery Note, go to:</para>
+<programlisting>Stocks > Delivery Note > New Delivery Note</programlisting>
+<para>Make a Delivery Note and save it after affirming the shipping address. In case the document has no shipping address,
+	create one by clicking on the + button. You can create the new address in the address form, which opens after clicking
+	the + button. Save it and come back to the Delivery Note. Submit the Delivery Note.</para>
+</sect3>
+<sect3>
+<title>Sales Invoice</title>
+<para>A Sales Invoice is a bill that you send to your Customers against which the Customer processes the payment. Sales Invoice
+	is an	accounting transaction. On submission of Sales Invoice, the system updates the receivables and books income against
+	a Customer account. To create a Sales Invoice, go to:</para>
+<programlisting>Accounts > Sales Invoice > New Sales Invoice</programlisting>
+<para>You can either make a Sales Invoice from the Accounts module or make it by clicking on the right hand corner of
+	the Delivery Note.</para>
+<para>The client Jane D’souza has been given 1 Sales Invoice. Now raise another 2 Sales Invoices. One for 25000/-
+	and another for 50000/- and then make Payment Entries for both.</para>
+<para>Save and submit the Invoice. When you submit the Invoice, an email pop-up box will appear. Correct / Change / Confirm
+	the email ID and click on 'Send' button. An email will be sent.</para>
+</sect3>
+<sect3>
+<title>Payment Entry</title>
+<para>Payment Entry is a part of booking-keeping. It records accounts and manages balance sheets. You can make it through a
+	Journal Voucher or directly from a submitted Invoice by clicking on the 'Make Payment Entry' button.</para>
+<programlisting>Accounts > Journal Voucher</programlisting>
+<para>You can see how much profit you made on this order by going to Gross Profit Report.</para>
+</sect3>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Engineer-Reports">
+<title>Gross Profit Report</title>
+<para>This report shows how much profit you made on each order.</para>
+<programlisting>Accounts > Gross Profit Report</programlisting>
+<para>You can go to module-specific 'Reports' section and choose to see any other report-type, depending upon your need
+	for information.</para>
+<para>For this study, a jute artefact company, Shades of Green, is used as a case-example</para>
+</sect2>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Guide-Make">
+<title>Make To Order</title>
+<para>This guide explains how a manufacturing unit would run its operations based on a make-to-order type of workflow. In
+	a make to order system, the products are standard but are manufactured or procured only when a confirmed order is received
+	from the customer.</para>
+<para>Shades of Green is an eco-friendly company that manufactures and trades in jute gift items. It manufactures items
+	based on make-to-order type of manufacturing. Shades of Green has retail outlets and they also produce based on orders.
+	For their retail outlets and distribution they manufacture in advance. But, for big orders by corporates, schools and colleges,
+	they manufacture after the order is confirmed. This guide gives a step-by-step account of the production process run through
+	ERPNext. Let us take an example of producing a Jute Pen Stand.</para>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Overview">
+<title>Overview</title>
+<para>Overview of executing a complete cycle of a make-to-order workflow:</para>
+<orderedlist>
+<listitem><para>Create an Item, along with raw-materials, Customers and Suppliers.</para></listitem>
+<listitem><para>Create Bill of Materials.</para></listitem>
+<listitem><para>Create a Price List.</para></listitem>
+<listitem><para>Create and submit the Sales Order.</para></listitem>
+<listitem><para>Use Production Planning Tool to perform the following steps:</para>
+<orderedlist>
+<listitem><para>Pull Sales Order and Items.</para></listitem>
+<listitem><para>Create Production Order.</para></listitem>
+<listitem><para>Create Material Requests.</para></listitem>
+</orderedlist></listitem>
+<listitem><para>Create and submit Purchase Order for your Suppliers.</para>
+<orderedlist><listitem><para>Create and submit Purchase Receipts when you receive material from your Suppliers.</para></listitem>
+</orderedlist></listitem>
+<listitem><para>Manufacture by transfering raw-materials via Production Order to work-in-progress warehouse to start production.</para>
+<orderedlist><listitem><para>Update finished goods and back-flush via Production Order.</para></listitem></orderedlist></listitem>
+<listitem><para>Create and submit Sales Invoice to complete billing and payment.</para></listitem>
+<listitem><para>Review Stock Balance Report and Gross Profit Report.</para></listitem>
+</orderedlist>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Setting">
+<title>Setting Up</title>
+<para>In a make-to-order system, the products are pre-defined. To begin the order cycle, it is essential to create an
+	Item master, Customers, and Suppliers.</para>
+<sect3>
+<title>Item</title>
+<para>An Item is your company's product or a service. The term Item is applicable to your core products as well as your raw
+	materials. It can be a product or service that you buy/sell from your customers/ suppliers. ERPNext allows you to manage all
+	sorts of Items like raw-materials, sub-assemblies, finished goods, Item variants and service Items.</para>
+<programlisting>Stock > Item > New Item</programlisting>
+<para>Since Jute Pen Stand is a sales Item, it is grouped as a 'Product’. The material that goes into making of this product
+	like jute wire and fabric paint will also be called Item. However, the Item Group of jute wire and fabric paint will be termed
+	as raw-material.</para>
+<orderedlist>
+<listitem><para>Click Yes on ‘Allow Bill of Materials’,</para></listitem>
+<listitem><para>Click Yes on ‘Allow Production Order’ and</para></listitem>
+<listitem><para>Click No on ‘Is Purchase Item’.</para></listitem>
+</orderedlist>
+<note><para>Please mention the Default Warehouse for this Item as “Finished Goods”. This product is available at the Finished Goods
+	Warehouse only after it gets manufactured at the Work-in-Progress Warehouse. It cannot be kept in stores, because it is not
+	purchased, it is manufactured.</para></note>
+<note><para>In reality you may not have three Warehouses. You may have one, which you use for raw materials, for manufacturing/
+	stitching/producing and also for storing finished goods. In such cases, you have to only imagine separate spaces for each
+	activity, and name them accordingly. For system entry purpose, having three different Warehouses for stocking raw materials,
+	manufacturing unfinished goods and storing finished goods is a good practice.</para></note>
+</sect3>
+<sect3>
+<title>Create Items for all raw materials</title>
+<orderedlist>
+<listitem><para>Mention Item Group as Raw Material.</para></listitem>
+<listitem><para>Click No on ‘Allow Bill of Materials’ (since BOM is required only for products), unless you produce
+	raw-materials in-house.</para></listitem>
+<listitem><para>Click No on Allow Production Order, and</para></listitem>
+<listitem><para>Click Yes on ‘Is Purchase Item’.</para></listitem>
+</orderedlist>
+<para>Following is the list of raw materials that will go into making of a Jute Pen-Stand.</para>
+<orderedlist>
+<listitem><para>Fabric Colour.</para></listitem>
+<listitem><para>Jute Wire.</para></listitem>
+<listitem><para>Tree Glue.</para></listitem>
+</orderedlist>
+<para>Make a Bill of Materials with the help of these raw materials.</para>
+<para>Customers are separate from Contacts and Addresses. Customers can have multiple Contacts and Addresses.</para>
+</sect3>
+<sect3>
+<title>Suppliers and Contacts</title>
+<para>Suppliers are companies or individuals who provide you with products or services. They are treated in
+	exactly the same manner as Customers.</para>
+<programlisting>Buying > Supplier > New Supplier</programlisting>
+<para>Before making the Price List and the Sales Order, make the Bill of Materials based on your design document.</para>
+</sect3>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Bill">
+<title>Bill of Materials</title>
+<para>A Bill of Material (BOM) is a list of the raw materials, sub-assemblies, intermediate assemblies, sub-components,
+	parts and the quantities of each needed to manufacture an end product.</para>
+<programlisting>Manufacturing > Bill of Materials > New Bill of Materials</programlisting>
+<para>Let us make a BOM for the Jute Pen Stand. In the Bill of Materials we state the operations steps required to
+	manufacture this Item. We also mention the raw materials required to manufacture this Item.</para>
+<para>Operations: List the operations step and the hourly rates along with the quantity of raw material required to
+	produce the product.</para>
+<note><para>Check the box that says ‘With Operations-Manage Cost of Operation'.</para></note>
+<para>Materials Required: Mention the raw material list that is required to make the product.</para>
+<note><para>Please specify the hour rates. This will help in calculating the actual expenses in producing this Item.</para></note>
+<important><para>You can enter the rates manually by adjusting as per the UOM. Since Tree Glue was purchased in Kg, calculate
+	the rate for 10 gm and enter the rate accordingly. Do not forget to mention rates for every material.</para></important>
+<para>Save the BOM and submit it. Do not forget to submit the BOM. This is an important step. The pricing is fixed only
+	after the BOM is submitted. After submitting, you can create a Price List and Item Price into the system.</para>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Price">
+<title>Price List</title>
+<para>A Price List is a master for storing different rate plans based on Customer, currency, region, shipping cost etc.</para>
+<programlisting>Stock > Price List > New Price List</programlisting>
+<para>Since you can maintain different prices for different regions, lets create a Price List for all the Indian Customers.</para>
+<para>After creating a Price List template, you can click on the Action button and select to Add prices. The displayed form
+	has a button 'New'. Click on that button to get a field for Item Price.</para>
+<para>Based on the hourly rates of the labourers and the cost of raw material available in the Bill of Materials, you can
+	devise your Item rate. After creating a Price List and Item prices, it is time to create a Sales Order.</para>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Sales">
+<title>Sales Order</title>
+<para>A Sales Order is an order issued by a business to a Customer for products and / or services. On completing the Bill of
+	Materials, proceed to make a Sales Order into the system. Assuming that Shades of Green has received an order to deliver
+	50 Jute Pen-stands, create the Sales Order entry, go to:</para>
+<programlisting>Selling > Sales Order > Sales Order</programlisting>
+<para>Let us create a Sales Order based on the customer requirement.</para>
+<para>Save and submit the Sales Order. After creating the Sales Order the process to manufacture them begins. However, in
+	order to manufacture, it is necessary that a Bill of Materials be made. This helps in production planning and making
+	purchases as per requirements of the raw materials.</para>
+<note><para>Sales Order is the main document that is used to track billing, delivery and manufacturing.</para></note>
+<para>Once the Sales Order is ready, we can proceed to the Production Planning Tool. This tool allows to pull a list of
+	Items and Sales Orders, and generate a Production Order along with Material Requests.</para>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Production">
+<title>Production Planning Tool</title>
+<para>Production Planning Tool helps to plan production and purchase Items. A list of Items can be generated from the open
+	Sales Orders in the system. This tool creates Production Orders and generates Material Requests.</para>
+<para>The Production Planning Tool will generate:</para>
+<orderedlist>
+<listitem><para>Production Orders for selected Items.</para></listitem>
+<listitem><para>Material Requests for Items whose Projected Quantity is likely to fall below zero.</para></listitem>
+</orderedlist>
+<programlisting>Manufacturing > Production Planning Tool</programlisting>
+<para>The Production Planning Tool enables you to complete the production cycle in a fast and efficient manner. From procuring
+	materials, producing goods, to updating stocks - everything is done by clicking on buttons which appear after every transaction.
+	The tool is user friendly and does not require you to go back and forth into the system to make and log different forms.
+	Everything is intuitive and can be performed step by step.</para>
+<para>You can pull Sales Orders directly by clicking on a button. Select the Sales Orders you wish to process and click on
+	another button to get Items for that Sales Order. Mention Item details and click on the button ‘Make Production Orders’.
+	It is that simple! After this you can click on another button and create Material Requests required to complete this
+	Production Order. The whole process is fuss free and easy.</para>
+<note><para>Use the Production Planning Tool to make Production Order.</para></note>
+<para>Pull Sales Order: Sales Order is an order issued by a business to a Customer.</para>
+<para>Get Items from Sales Order: Select Items by clicking on the ‘Get Items from Sales Order’ button. Do not tick the box
+	that says ‘Use multi-level BOM’. This box is checked only if you have sub-assemblies. In other words, only if you have a BOM
+	within a BOM. In the current example, there are no sub-assemblies.</para>
+<para>Create Production Order: Production Order is an order to produce a specific quantity of material within a predefined
+	timeframe. It contains all of the relevant information required for the execution of the process, including how much should be
+	manufactured when.</para>
+<para>Create Material Request: Material Request is a request to order materials for the production of your Item/product. This
+	request is created by clicking on the box ‘Create Material Request’. Click on the highlighted Material Request number. The
+	click will open into a Material Request Form.</para>
+<itemizedlist>
+<listitem><para>Get Sales Order</para></listitem>
+<listitem><para>Get Items from Sales Order</para></listitem>
+<listitem><para>Create Production Order</para></listitem>
+<listitem><para>Create Material Request</para></listitem>
+<listitem><para>Download Materials Required</para></listitem>
+</itemizedlist>
+<para>After production planning, it is time to check the Production Order, Transfer Raw Materials and Update Finished Goods.
+	However, before proceeding to manufacture, you are required to complete the Buying process by completing the Purchase Orders
+	and Purchase Receipts.</para>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Purchase">
+<title>Purchase Order</title>
+<para>A Purchase Order is created from a Material Request or from a Supplier Quotation, when there is no raw material in stock.
+	After receiving the raw material a Purchase Receipt is generated.</para>
+<para>Purchase Order (PO) is a commercial document and first official offer issued by a buyer to a seller, indicating types,
+	quantities, and agreed prices for the products. You can make a Purchase Order from a Material Request or by directly going to:</para>
+<programlisting>Buying > Purchase Order > New Purchase Order</programlisting>
+<para>Make Purchase Order: Click on the ‘Make Purchase Order’ button, on the right side, upper corner of Material Request form,
+	and create a Purchase Order for the same.</para>
+<para>Submit Purchase Order: This is an important step. You can bill a Purchase Order only when it is submitted.</para>
+<sect3>
+<title>Purchase Receipt</title>
+<para>Purchase Receipt is a record that is made when a material is received. It is also known as a Goods Received Note (GRN). It
+	contains detail information of the Items purchased including the name of the Item, the price as well as the time when the
+	purchase has been made. You can make a Purchase Receipt from the Purchase Order or directly from the Stock module.</para>
+<programlisting>Stock > Purchase Receipt > New Purchase Receipt</programlisting>
+<para>In this manner create Purchase Orders and Purchase Receipts for all the Material Requests created by the Production
+	Planning Tool. Remember to save and submit all the forms.</para>
+<note><para>Note that only when the Purchase Receipt is submitted, the Stock balance is updated. To see the Stock balance go
+	to the Stock module and select the Stock Balance Report from the Reports section.</para></note>
+<para>After completing the Buying process by making Purchase Order and Purchase Receipt, proceed to manufacture the product.</para>
+</sect3>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Manufacturing">
+<title>Manufacturing</title>
+<para>To manufacture a product, a Production Order is made. Raw materials are transferred from the stores to the work-in-progress
+	Warehouse before completion. After completion, the raw materials are consumed from the work-in-progress Warehouse and updated
+	in the finished goods Warehouse. Production Orders can be made directly from the Manufacturing module or from the Production
+	Planning Tool.</para>
+<programlisting>Manufacturing > Production Order > New Production Order</programlisting>
+<para>Save and submit the Production Order: A submitted Production Order has an Action button on the right hand corner which
+	provides option to 'Transfer Raw materials' and Update Finished Goods'. After completion of the Production Order, transfer
+	the raw materials from stores to the work-in-progress Warehouse.</para>
+<sect3>
+<title>Transfer Raw Materials</title>
+<para>To transfer raw materials you can either use the 'Transfer Raw Material' button or raise a Stock Entry manually .</para>
+<para>Click on Action and select ‘Transfer Raw Material’. On this form, mention the Source Warehouse and the Target Warehouse.
+	The Source Warehouse is a place from where you issue or transfer materials. A Target Warehouse is a place where Stock/Item is
+	received. In this example, the system will transfer raw materials from the stores Warehouse to the work-in-progress Warehouse.
+	The raw materials which are transferred are pulled from the Bill of Materials of that product.</para>
+<note><para>If you get an error while transferring raw materials, it may be due to inaccurate 'purpose' selection, while making
+	a manual Stock Entry. To transfer materials, the 'purpose' should be 'Material Transfer' and to transfer materials to finished
+	goods Warehouse, the 'purpose' should be 'Manufacture/Repack'.</para></note>
+<important><para> If you get negative error, ensure that you have enough Stock. Your Purchase Receipt should be saved and
+	submitted.</para></important>
+<para>After transferring the material to the work-in-progress Warehouse, the product gets manufactured. After completion, it is
+	essential to shift the finished product to the finished goods Warehouse. Thus, one more Stock Entry has to be done that updates
+	the finished goods in the Warehouse.</para>
+</sect3>
+<sect3>
+<title>Update Finished Goods</title>
+<para>Under this section, you will mention your source Warehouse as 'Work-in-progress-SOG' and target Warehouse as 'Finished
+	Goods-SOG'. The purpose will be Manufacture/Repack. This is so because, once the product gets manufactured, it is supposed
+	to go to finished goods Stock to enable delivery.</para>
+<para>Click on Update Finished Goods: This step performs the backflush by raising a Stock Entry for materials that have been
+	consumed while manufacturing the finished goods Item.</para>
+<note><para>If you wish to get Stock and valuation rates at this stage, press on ‘Get Stock and Rate’. Valuation rate is
+	the average rate divided by the actual price of an item. This is arrived at by the FIFO method - weighted average of
+	the lot.</para></note>
+<note><para> At this stage if you wish to change the BOM manufacturing quantity, you can do so by clicking on ‘Get
+	Items’.</para></note>
+<para>Save and submit the document. To see if everything has occurred as planned, go back to the Production Order. The
+	Production Order will show that it is 100% complete. The green line will be complete. After manufacturing the product
+	is delivered and billed.</para>
+</sect3>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Shipping">
+<title>Shipping and Billing</title>
+<para>Shipping goods requires a Delivery Note and Billing involves making a Sales Invoice and a Payment Entry. Delivery
+	Note is a document accompanying a shipment of goods that lists the description, and quantity of the goods delivered [1].
+	You can make a Delivery Note from Stocks or from a submitted Sales Order by clicking on the Action button placed at the
+	right hand corner of the form.</para>
+<programlisting>Stocks > Delivery Note > New Delivery Note</programlisting>
+<sect3>
+<title>Delivery Note</title>
+<para>Make a Delivery Note and save it after affirming the shipping address. In case the document has no shipping address,
+	create one by clicking on the + button. You can create the new address in the address form, which opens after clicking the
+	+ button . Save it and come back to the Delivery Note. Submit the Delivery Note.</para>
+</sect3>
+<sect3>
+<title>Sales Invoice</title>
+<para>A Sales Invoice is a bill that you send to your Customers against which the Customer processes the payment. Sales
+	Invoice is an accounting transaction. On submission of Sales Invoice, the system updates the receivables and books income
+	against a Customer account.</para>
+<programlisting>Accounts > Sales Invoice > New Sales Invoice</programlisting>
+<para>You can either make a Sales Invoice from the Accounts module or make it by clicking on the right hand corner of the
+	Delivery Note.</para>
+<para>Save and submit the Invoice. When you submit the Invoice, an email pop-up box will appear. Correct / change / Confirm
+	the email ID and click on 'Send' button. An email will be sent.</para>
+</sect3>
+<sect3>
+<title>Payment Entry</title>
+<para>Payment Entry is a part of booking-keeping. It records accounts and manages balance sheets. You can make it through a
+	Journal Voucher or directly from a submitted Invoice by clicking on the 'Make Payment Entry' button.</para>
+<programlisting>Accounts > Journal Voucher</programlisting>
+</sect3>
+<sect3>
+<title>Double Entry Accounting</title>
+<para>Double Entry Accounting or bookkeeping is a system of accounting in which every transaction has a corresponding positive
+	and a negative entry: debits and credits. Every transaction involves a debit entry in one account and a credit entry in another
+	account. This means that every transaction must be recorded in two accounts; one account will be debited, because it receives
+	value and the other account will be credited, because it has given value.</para>
+</sect3>
+<sect3>
+<title>Journal Voucher</title>
+<para>To make a Payment Entry update the Journal Voucher with debit and credit columns. Make sure to click on the button that
+	says ‘Make Difference Entry’. Note that the reference number and reference date is mandatory along with the Account entry. In
+	case for some reason, the account section is blank, it means that you have not selected your default bank account. To do so
+	from the same form, click on the triangle button next to the Company and set the default master account.</para>
+<para>The click will take you to the Master-Company page. Now enter your default entry account as HDFC Bank / Axis Bank etc
+	and save. This will enable the system to post debit / credit entries directly against this particular account.</para>
+<para>Save and submit the Payment Entry. After submitting, you can check the Gross Profit Report, and review your profits. You can
+	also check your Stock Balance Report.</para>
+</sect3>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Make-Reports">
+<title>Reports</title>
+<para>This page features two reports which you can review; the Stock Balance Report and the Gross Profit Report. The Stock
+	Balance Report shows the Incoming Quantity of the raw material before consumption and the closing quantity after consumption.
+	The Gross Profit Report shows gross profit on individual orders.</para>
+<sect3>
+<title>Gross Profit Report</title>
+<para>A Gross Profit Report shows the profit that you have earned on a specific order. This report subtracts the raw material
+	cost and gives gross profit earned on individual orders.</para>
+<programlisting>Accounts > Gross Profits</programlisting>
+<para>You can go to module-specific 'Reports' section and choose to see any other report-type, depending upon your need for
+	information. With the Gross Profit Report, the case-example of a complete business-cycle is over.</para>
+</sect3>
+</sect2>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Guide-Order">
+<title>Make To Stock</title>
+<para>This guide explains how a manufacturing unit would run its operations based on a make-to-order type of workflow.
+	In a make to order system, the products are standard but are manufactured or procured only when a confirmed order
+	is received from the customer.</para>
+<para>For this study, a jute artefact company, Shades of Green, is used as a case-example.</para>
+<para>Shades of Green is an eco-friendly company that manufactures and trades in jute gift items. It manufactures items
+	based on make-to-order type of manufacturing. Shades of Green has retail outlets and they also produce based on orders.
+	For their retail outlets and distribution they manufacture in advance. But, for big orders by corporates, schools and
+	colleges, they manufacture after the order is confirmed. This guide gives a step-by-step
+	account of the production process run through ERPNext. Let us take an example of producing a Jute Pen Stand.</para>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Overview">
+<title>Overview</title>
+<para>Overview of executing a complete cycle of a make-to-order workflow:</para>
+<orderedlist>
+<listitem><para>Create an Item, along with raw-materials, Customers and Suppliers.</para></listitem>
+<listitem><para>Create Bill of Materials.</para></listitem>
+<listitem><para>Create a Price List.</para></listitem>
+<listitem><para>Create and submit the Sales Order.</para></listitem>
+<listitem><para>Use Production Planning Tool to perform the following steps:</para>
+<orderedlist>
+<listitem><para>Pull Sales Order and Items.</para></listitem>
+<listitem><para>Create Production Order.</para></listitem>
+<listitem><para>Create Material Requests.</para></listitem>
+</orderedlist></listitem>
+<listitem><para>Create and submit Purchase Order for your Suppliers.</para>
+<orderedlist>
+<listitem><para>Create and submit Purchase Receipts when you receive material from your Suppliers.</para></listitem>
+</orderedlist></listitem>
+<listitem><para>Manufacture by transfering raw-materials via Production Order to work-in-progress warehouse to start production.</para>
+<orderedlist>
+<listitem><para>Update finished goods and back-flush via Production Order.</para></listitem>
+</orderedlist></listitem>
+<listitem><para>Create and submit Sales Invoice to complete billing and payment.</para></listitem>
+<listitem><para>Review Stock Balance Report and Gross Profit Report.</para></listitem>
+</orderedlist>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Setting">
+<title>Setting Up</title>
+<para>In a make-to-order system, the products are pre-defined. To begin the order cycle, it is essential to create an Item master,
+	Customers, and Suppliers.</para>
+<sect3>
+<title>Item</title>
+<para>An Item is your company's product or a service. The term Item is applicable to your core products as well as your raw
+	materials. It can be a product or service that you buy/sell from your customers/ suppliers. ERPNext allows you to manage
+	all sorts of Items like raw-materials, sub-assemblies, finished goods, Item variants and service Items.</para>
+<programlisting>Stock > Item > New Item</programlisting>
+<para>Create an Item "Jute Pen Stand": Since Jute Pen Stand is a sales Item, it is grouped as a 'Product’. The material that
+	goes into making of this product like jute wire and fabric paint will also be called Item. However, the Item Group of jute
+	wire and fabric paint will be termed as raw-material.</para>
+<orderedlist>
+<listitem><para>Click Yes on ‘Allow Bill of Materials’.</para></listitem>
+<listitem><para>Click Yes on ‘Allow Production Order’ and</para></listitem>
+<listitem><para>Click No on ‘Is Purchase Item’.</para></listitem>
+</orderedlist>
+<note><para>Please mention the Default Warehouse for this Item as “Finished Goods”. This product is available at the Finished
+	Goods Warehouse only after it gets manufactured at the Work-in-Progress Warehouse. It cannot be kept in stores, because it
+	is not purchased, it is manufactured.</para></note>
+<note><para>In reality you may not have three Warehouses. You may have one, which you use for raw materials, for manufacturing/
+	stitching/producing and also for storing finished goods. In such cases, you have to only imagine separate spaces for each
+	activity, and name them accordingly. For system entry purpose, having three different Warehouses for stocking raw materials,
+	manufacturing unfinished goods and storing finished goods is a good practice.</para></note>
+<para>Create Items for all raw materials</para>
+<orderedlist>
+<listitem><para>Mention Item Group as Raw Material.</para></listitem>
+<listitem><para>Click No on ‘Allow Bill of Materials’ (since BOM is required only for products), unless you produce raw-materials
+	in-house.</para></listitem>
+<listitem><para>Click No on Allow Production Order, and</para></listitem>
+<listitem><para>Click Yes on ‘Is Purchase Item’.</para></listitem>
+</orderedlist>
+<para>Following is the list of raw materials that will go into making of a Jute Pen-Stand.</para>
+<orderedlist>
+<listitem><para>Fabric Colour</para></listitem>
+<listitem><para>Jute Wire</para></listitem>
+<listitem><para>Tree Glue</para></listitem>
+</orderedlist>
+<para>Make a Bill of Materials with the help of these raw materials.</para>
+</sect3>
+<sect3>
+<title>Customers and Contacts</title>
+<para>A Customer, who is sometimes known as a client, buyer, or purchaser is the one who receives goods, services, products, or
+	ideas, from a seller for a monetary consideration. A Customer can also receive goods or services from a vendor or a Supplier
+	for other valuable considerations.</para>
+<programlisting>Selling > Customer > New Customer</programlisting>
+<para>A Customer name is the name of the organisation and a Contact name is the name of the user who is coordinating.</para>
+<para>Customers are separate from Contacts and Addresses. Customers can have multiple Contacts and Addresses.</para>
+</sect3>
+<sect3>
+<title>Suppliers and Contacts</title>
+<para>Suppliers are companies or individuals who provide you with products or services. They are treated in exactly the same
+	manner as Customers.</para>
+<programlisting>Buying > Supplier > New Supplier</programlisting>
+<para>Before making the Price List and the Sales Order, make the Bill of Materials based on your design document.</para>
+</sect3>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Bill">
+<title>Bill of Materials</title>
+<para>A Bill of Material (BOM) is a list of the raw materials, sub-assemblies, intermediate assemblies, sub-components, parts
+	and the quantities of each needed to manufacture an end product.</para>
+<programlisting>Manufacturing > Bill of Materials > New Bill of Materials</programlisting>
+<para>Let us make a BOM for the Jute Pen Stand. In the Bill of Materials we state the operations steps required to manufacture
+	this Item. We also mention the raw materials required to manufacture this Item.</para>
+<para>Operations: List the operations step and the hourly rates along with the quantity of raw material required to produce
+	the product.</para>
+<note><para>Check the box that says ‘With Operations-Manage Cost of Operation'.</para></note>
+<para>Materials Required: Mention the raw material list that is required to make the product.</para>
+<note><para>Please specify the hour rates. This will help in calculating the actual expenses in producing this Item.</para></note>
+<important><para>You can enter the rates manually by adjusting as per the UOM. Since Tree Glue was purchased in Kg, calculate
+	the rate for 10 gm and enter the rate accordingly. Do not forget to mention rates for every material.</para></important>
+<para>Save the BOM and submit it. Do not forget to submit the BOM. This is an important step. The pricing is fixed only after the
+	BOM is submitt ed. After submitting, you can create a Price List and Item Price into the system.</para>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Price">
+<title>Price List</title>
+<para>A Price List is a master for storing different rate plans based on Customer, currency, region, shipping cost etc.</para>
+<programlisting>Stock > Price List > New Price List</programlisting>
+<para>Create a Price List: Since you can maintain different prices for different regions, lets create a Price List for all the
+	Indian Customers. After creating a Price List template, you can click on the Action button and select to Add prices. The
+	displayed form has a button 'New'. Click on that button to get a field for Item Price.</para>
+<para>Add Item price: Based on the hourly rates of the labourers and the cost of raw material available in the Bill of Materials,
+	you can devise your Item rate.</para>
+<para>After creating a Price List and Item prices, it is time to create a Sales Order.</para>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Planning">
+<title>Sales Order</title>
+<para>A Sales Order is an order issued by a business to a Customer for products and / or services. On completing the Bill of
+	Materials, proceed to make a Sales Order into the system. Assuming that Shades of Green has received an order to deliver 50
+	Jute Pen-stands, create the Sales Order entry.</para>
+<programlisting>Selling > Sales Order > Sales Order</programlisting>
+<para>Let us create a Sales Order based on the customer requirement. Save and submit the Sales Order. After creating the Sales
+	Order the process to manufacture them begins. However, in order to manufacture, it is necessary that a Bill of Materials be
+	made. This helps in production planning and making purchases as per requirements of the raw materials.</para>
+<note><para>Sales Order is the main document that is used to track billing, delivery and manufacturing.</para></note>
+<para>Once the Sales Order is ready, we can proceed to the Production Planning Tool. This tool allows to pull a list of Items
+	and Sales Orders, and generate a Production Order along with Material Requests</para>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Production">
+<title>Production Planning Tool</title>
+<para>Production Planning Tool helps to plan production and purchase Items. A list of Items can be generated from the open
+	Sales Orders in the system. This tool creates Production Orders and generates Material Requests. The Production Planning Tool
+	will generate:</para>
+<orderedlist>
+<listitem><para>Production Orders for selected Items</para></listitem>
+<listitem><para>Material Requests for Items whose Projected Quantity is likely to fall below zero.</para></listitem>
+</orderedlist>
+<programlisting>Manufacturing > Production Planning Tool</programlisting>
+<para>The Production Planning Tool enables you to complete the production cycle in a fast and efficient manner. From procuring
+	materials, producing goods, to updating stocks - everything is done by clicking on buttons which appear after every transaction.
+	The tool is user friendly and does not require you to go back and forth into the system to make and log different forms.
+	Everything is intuitive and can be performed step by step.</para>
+<para>You can pull Sales Orders directly by clicking on a button. Select the Sales Orders you wish to process and click on
+	another button to get Items for that Sales Order. Mention Item details and click on the button ‘Make Production Orders’. It is
+	that simple! After this you can click on another button and create Material Requests required to complete this Production Order.
+	The whole process is fuss free and easy.</para>
+<para>Step 1: Pull Sales Order. Sales Order is an order issued by a business to a Customer.</para>
+<para>Step 2: Get Items from Sales Order. Select Items by clicking on the ‘Get Items from Sales Order’ button. Do not tick the box
+	that says ‘Use multi-level BOM’. This box is checked only if you have sub-assemblies. In other words, only if you have a BOM
+	within a BOM. In the current example, there are no sub-assemblies.</para>
+<para>Step 3: Create Production Order. Production Order is an order to produce a specific quantity of material within a predefined
+	timeframe. It contains all of the relevant information required for the execution of the process, including how much should be
+	manufactured when.</para>
+<para>Step 4: Create Material Request. Material Request is a request to order materials for the production of your
+	Item/product.</para>
+<para>Quick Overview of PPT-Production Planning Tool</para>
+<orderedlist>
+<listitem><para>Get Sales Order</para></listitem>
+<listitem><para>Get Items from Sales Order</para></listitem>
+<listitem><para>Create Production Order</para></listitem>
+<listitem><para>Create Material Request</para></listitem>
+<listitem><para>Download Materials Required</para></listitem>
+</orderedlist>
+<para>After production planning, it is time to check the Production Order, Transfer Raw Materials and Update Finished Goods.
+	However, before proceeding to manufacture, you are required to complete the Buying process by completing the Purchase Orders
+	and Purchase Receipts.</para>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Buying">
+<title>Purchase Order</title>
+<para>A Purchase Order is created from a Material Request or from a Supplier Quotation, when there is no raw material in stock.
+	After receiving the raw material a Purchase Receipt is generated.</para>
+<sect3>
+<title>Purchase Order</title>
+<para>Purchase Order (PO) is a commercial document and first official offer issued by a buyer to a seller, indicating types,
+	quantities, and agreed prices for the products. You can make a Purchase Order from a Material Request or by directly going to:</para>
+<programlisting>Buying > Purchase Order > New Purchase Order</programlisting>
+<para>Step 1: Make Purchase Order. Click on the ‘Make Purchase Order’ button, on the right side, upper corner of Material Request
+	form, and create a Purchase Order for the same.</para>
+<para>Step 2: Submit Purchase Order. This is an important step. You can bill a Purchase Order only when it is submitted.</para>
+</sect3>
+<sect3>
+<title>Purchase Receipt</title>
+<para>Purchase Receipt is a record that is made when a material is received. It is also known as a Goods Received Note
+	(GRN). It contains detail information of the Items purchased including the name of the Item, the price as well as the
+	time when the purchase has been made. You can make a Purchase Receipt from the Purchase Order or directly from the
+	Stock module.</para>
+<programlisting>Stock > Purchase Receipt > New Purchase Receipt</programlisting>
+<para>In this manner create Purchase Orders and Purchase Receipts for all the Material Requests created by the Production
+	Planning Tool. Remember to save and submit all the forms.</para>
+<note><para>Note that only when the Purchase Receipt is submitted, the Stock balance is updated. To see the Stock balance
+	go to the Stock module and select the Stock Balance Report from the Reports section.</para></note>
+<para>After completing the Buying process by making Purchase Order and Purchase Receipt, proceed to manufacture the product.</para>
+</sect3>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Manufacturing">
+<title>Manufacturing</title>
+<para>To manufacture a product, a Production Order is made. Raw materials are transferred from the stores to the work-in-progress
+	Warehouse before completion. After completion, the raw materials are consumed from the work-in-progress Warehouse and updated
+	in the finished goods Warehouse. Production Orders can be made directly from the Manufacturing module or from the Production
+	Planning Tool.</para>
+<programlisting>Manufacturing > Production Order > New Production Order</programlisting>
+<para>Step 1: Save and submit the Production Order. A submitted Production Order has an Action button on the right hand corner
+	which provides option to 'Transfer Raw materials' and Update Finished Goods'.</para>
+<para>After completion of the Production Order, transfer the raw materials from stores to the work-in-progress Warehouse.</para>
+<para>Step 2: Click on Action and select ‘Transfer Raw Material’. On this form, mention the Source Warehouse and the Target
+	Warehouse. The Source Warehouse is a place from where you issue or transfer materials. A Target Warehouse is a place where
+	Stock/Item is received. In this example, the system will transfer raw materials from the stores Warehouse to the work-in-progress
+	Warehouse. The raw materials which are transferred are pulled from the Bill of Materials of that product.</para>
+<note><para> If you get an error while transferring raw materials, it may be due to inaccurate 'purpose' selection, while making
+	a manual Stock Entry. To transfer materials, the 'purpose' should be 'Material Transfer' and to transfer materials to finished
+	goods Warehouse, the 'purpose' should be 'Manufacture/Repack'.</para></note>
+<para>After transferring the material to the work-in-progress Warehouse, the product gets manufactured. After completion, it is
+	essential to shift the finished product to the finished goods Warehouse. Thus, one more Stock Entry has to be done that updates
+	the finished goods in the Warehouse.</para>
+<para>Step 3: Click on Update Finished Goods. Under this section, you will mention your source Warehouse as 'Work-in-progress-SOG'
+	and target Warehouse as 'Finished Goods-SOG'. The purpose will be Manufacture/Repack. This is so because, once the product gets
+	manufactured, it is supposed to go to finished goods Stock to enable delivery. This step performs the backflush by raising a Stock
+	Entry for materials that have been consumed while manufacturing the finished goods Item.</para>
+<para>Save and submit the document. To see if everything has occurred as planned, go back to the Production Order. The Production
+	Order will show that it is 100% complete. The green line will be complete. After manufacturing the product is delivered and
+	billed.</para>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Selling">
+<title>Shipping and Billing</title>
+<para>Shipping goods requires a Delivery Note and Billing involves making a Sales Invoice and a Payment Entry. Delivery
+	Note is a document accompanying a shipment of goods that lists the description, and quantity of the goods delivered.
+	You can make a Delivery Note from Stocks or from a submitted Sales Order by clicking on the Action button placed at the
+	right hand corner of the form.</para>
+<programlisting>Stocks > Delivery Note > New Delivery Note</programlisting>
+<sect3>
+<title>Delivery Note</title>
+<para>Make a Delivery Note and save it after affirming the shipping address. In case the document has no shipping address,
+	create one by clicking on the + button. You can create the new address in the address form, which opens after clicking
+	the + button . Save it and come back to the Delivery Note. Submit the Delivery Note.</para>
+</sect3>
+<sect3>
+<title>Sales Invoice</title>
+<para>A Sales Invoice is a bill that you send to your Customers against which the Customer processes the payment. Sales
+	Invoice is an accounting transaction. On submission of Sales Invoice, the system updates the receivables and books income
+	against a Customer account.</para>
+<programlisting>Accounts > Sales Invoice > New Sales Invoice</programlisting>
+<para>You can either make a Sales Invoice from the Accounts module or make it by clicking on the right hand corner of the
+	Delivery Note.</para>
+</sect3>
+<sect3>
+<title>Payment Entry</title>
+<para>Payment Entry is a part of booking-keeping. It records accounts and manages balance sheets. You can make it through a
+	Journal Voucher or directly from a submitted Invoice by clicking on the 'Make Payment Entry' button.</para>
+<programlisting>Accounts > Journal Voucher</programlisting>
+</sect3>
+<sect3>
+<title>Double Entry Accounting</title>
+<para>Double Entry Accounting or bookkeeping is a system of accounting in which every transaction has a corresponding positive
+	and a negative entry: debits and credits. Every transaction involves a debit entry in one account and a credit entry in
+	another account. This means that every transaction must be recorded in two accounts; one account will be debited, because it
+	receives value and the other account will be credited, because it has given value.</para>
+</sect3>
+<sect3>
+<title>Journal Voucher</title>
+<para>To make a Payment Entry update the Journal Voucher with debit and credit columns. Make sure to click on the button that
+	says ‘Make Difference Entry’. Note that the reference number and reference date is mandatory along with the Account entry.
+	In case for some reason, the account section is blank, it means that you have not selected your default bank account. To do
+	so from the same form, click on the triangle button next to the Company and set the default master account.</para>
+<para>The click will take you to the Master-Company page. Now enter your default entry account as HDFC Bank / Axis Bank etc
+	and save. This will enable the system to post debit / credit entries directly against this particular account.</para>
+<para>Save and submit the Payment Entry. After submitting, you can check the Gross Profit Report, and review your profits. You
+	can also check your Stock Balance Report.</para>
+</sect3>
+</sect2>
+<sect2 id="sect2-ERPNext-Manual_ERPNext-Guide-Order-Reports">
+<title>Reports</title>
+<para>This page features two reports which you can review; the Stock Balance Report and the Gross Profit Report. The Stock Balance
+	Report shows the Incoming Quantity of the raw material before consumption and the closing quantity after consumption. The Gross
+	Profit Report shows gross profit on individual orders.</para>
+<sect3>
+<title>Stock Balance Report</title>
+<para>While reviewing stock balance of the raw material, note that the stocks which were purchased and consumed during the
+	production of Jute Pen Stand-1, have become zero after consumption.</para>
+<programlisting>Stock > Stock Balance</programlisting>
+</sect3>
+<sect3>
+<title>Gross Profit Report</title>
+<para>A Gross Profit Report shows the profit that you have earned on a specific order. This report subtracts the raw material
+	cost and gives gross profit earned on individual orders.</para>
+<programlisting>Accounts > Gross Profits</programlisting>
+<para>You can go to module-specific 'Reports' section and choose to see any other report-type, depending upon your need for
+	information. With the Gross Profit Report, the case-example of a complete business-cycle is over.</para>
+</sect3>
+</sect2>
+</sect1>
 </appendix>

@@ -1,155 +1,250 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2015-05-10 23:47-0600\n"
-"PO-Revision-Date: 2015-05-10 23:47-0600\n"
+"POT-Creation-Date: 2015-07-06 20:43-0600\n"
+"PO-Revision-Date: 2015-07-06 20:43-0600\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
-"Language: en-US \n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Publican v4.2.6\n"
 
+#. Tag: keyword
+#, no-c-format
 msgid "Project"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Projects"
 msgstr ""
 
+#. Tag: indexterm
+#, no-c-format
 msgid "<primary>Projects</primary>"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "&PRODUCT; helps you manage your Projects by breaking them into Tasks and allocating them to different people."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Purchasing and selling can also be tracked against Projects and this can help the company keep tabs on its budget, delivery and profitability for a Project."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Projects can be used to manage internal projects, manufacturing jobs or service jobs. For service jobs, Time Sheets can also be created that can be used to bill Customers if billing is done on a Time and Money basis."
 msgstr ""
 
+#. Tag: indexterm
+#, no-c-format
 msgid "<primary>Projects</primary><secondary>Project</secondary>"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Project management in ERPNext is Task driven. You can create Project and assign multiple Tasks against it."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Project can be divided into multiple Tasks. Task can be created via Project document itself or can be created via Task"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Managing expenses"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You can book Expense Claim against a project task. The system shall update the total amount from expense claims in the project costing section."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Cost Center"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You can make a Cost Center against a Project or use an existing cost center to track all expenses made against that project."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Project Costing"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The Project Costing section helps you track the time and expenses incurred against the project."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The Costing Section is updated based on Time Logs made."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Gross Margin is the difference between Total Costing Amount and Total Billing Amount."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Billing"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You can make/link a Sales Order against a project. Once linked you can use the standard sales module to bill your customer against the Project."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Gantt Chart"
 msgstr ""
 
+#. Tag: indexterm
+#, no-c-format
 msgid "<primary>Projects</primary><secondary>Project</secondary><tertiary>Gantt Chart</tertiary>"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "A Gantt Chart illustrates a project schedule. ERPNext gives you a illustrated view of tasks scheduled against that project in Gantt Chart View."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "A Gantt chart is a type of bar chart, it illustrate the start and finish dates of the terminal elements and summary elements of a project (Tasks), also show the dependency (i.e., precedence network) relationships between activities."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Task"
 msgstr ""
 
+#. Tag: indexterm
+#, no-c-format
 msgid "<primary>Projects</primary><secondary>Task</secondary>"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Project is divided into Tasks. In ERPNext, you can also create a Task independently. A Task can have either of the following status - Open, Working, Pending Review, Closed, Cancelled."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "By default each new Task created shall have the status set to 'Open'."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "If a Time Log is made against a task, its status shall be set to 'Working'."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Managing Time"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "ERPNext uses Time Log to track the progress of a Task. You can create multiple Time Logs against each task. The Actual Start and End Time along with the costing shall then be updated based on the Time Log."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Managing Expenses"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You can book Expense Claim against a task. The system shall update the total amount from expense claims in the costing section."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Time Log"
 msgstr ""
 
+#. Tag: indexterm
+#, no-c-format
 msgid "<primary>Projects</primary><secondary>Time Log</secondary>"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Time Logs are a way to track time worked. They can be used to track the following"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Billable work to Customers."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Production Order Operations."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Tasks."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Project."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Internal References."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Creating Time Logs"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To create a new Time Log, you can go to"
 msgstr ""
 
+#. Tag: programlisting
+#, no-c-format
 msgid "Projects &gt; Time Log &gt; new Time Log\n"
 "			"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You can also create a new Time Log via Calendar."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Billing using Time Logs"
 msgstr ""
 
+#. Tag: indexterm
+#, no-c-format
 msgid "<primary>Projects</primary><secondary>Time Log</secondary><tertiary>Billing</tertiary><seealso>Types of Production Planning</seealso>"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "If you wish to bill against a Time Log you need to select the 'Billable' option. In the costing section, the system will pull up the Costing and Billing rate from Activity Cost based on the Employee and Activity Type specified. The system shall then calculate the Costing and Billing amount based on the Hours mentioned in the Time Log. If 'Billable' is not selected, the system shall display the 'Billing Amount' as 0. After submitting the Time Log, you need to create Time Log batch to further bill the Time Log."
 msgstr ""
 

@@ -1,554 +1,903 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2015-05-10 23:47-0600\n"
-"PO-Revision-Date: 2015-05-10 23:47-0600\n"
+"POT-Creation-Date: 2015-07-06 20:43-0600\n"
+"PO-Revision-Date: 2015-07-06 20:43-0600\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
-"Language: en-US \n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Publican v4.2.6\n"
 
+#. Tag: title
+#, no-c-format
 msgid "Selling"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Selling is the communication that happens with the customer prior to and during the sale. You might be managing all the communication yourself or you may have a small team of sales people to handle this. ERPNext helps you track the communication leading up to the sale, by keeping all your documents in an organized and searchable manner."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "ERPNext helps you track business Opportunities from Leads and Customers, send them Quotations and make confirmed Sales Orders."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Selling Setup"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "This section includes information on how to setup customer groups, sales partners, sales persons and terms and conditions. It has instructions on how to configure selling settings, in order to enable default fields."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Customer Group"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Customer Group is a category where you specify your customer group type. Your customers can be Individuals or they can be corporate(Company) customers. Your customers could also be government officials or non-profit organisations. ERPNext allows you to create your own Customer Groups. To create a new Customer Group, go to"
 msgstr ""
 
+#. Tag: programlisting
+#, no-c-format
 msgid "Selling &gt; Setup &gt; Customer Group\n"
 "		"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Customer Group master is maintained in tree strcuture. This allows you to set parent Customer Groups, and Child Customer Groups under those Parent Groups. Setting up this structure shall allow you making intelligent sales report based on Customer Group master."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Sales Partner"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "People who assist you in getting business are termed as Sales Partners. Sales Partners can be represented by different names in ERPNext. You can call them Channel Partner, Distributor, Dealer, Agent, Retailer, Implementation Partner, Reseller etc. For each Sales Partner, you can define commission offer to them. When Sales Partner is selected in transactions, there commission is calculated over Net Total of Sales Order/Invoice or Delivery Note."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You can track Sales Personwise commission in the report under Selling module. To create a sales partner go to:"
 msgstr ""
 
+#. Tag: programlisting
+#, no-c-format
 msgid "Selling &gt; Setup &gt; Sales Partner\n"
 "		"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Sales Partners are saved with Sales Partner name provided by user."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To include the name of your Partner on your website, check the \"Show in Website\" box. When click on \"Show in Website\", you will see field where you can attach logo of partner's company and enter brief and introduction of partner."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Sales Person"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The person who helps in selling your products or services is called a Sales Person. Sales Person master is maintained in tree struture. This allows you defining the heirarchy within the Sales Team. To add/edit Sales Person, go to:"
 msgstr ""
 
+#. Tag: programlisting
+#, no-c-format
 msgid "Selling &gt; Setup &gt; Sales Person\n"
 "		"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "A Sales Person Group called \"Sales Team\" will be created by default. You can click in it to find option to insert new parent and child Sales Person records. Sales Person master will be saved with the name of Sales Person."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Selling Settings"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Selling Setting is where you can define propertiese which will be applied in your selling transactions. Let's check into each property one by one."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Customer Naming By"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "When customer is saved, system generated unique ID for that Customer. Using that Customer ID, you can select Customer in other transactions. Bydefault Customer will be saved with Customer Name. If you wish to save Customer using a naming series, you should set Customer Naming By as \"Naming Series\". You can set Naming Series for customer naming from:"
 msgstr ""
 
+#. Tag: programlisting
+#, no-c-format
 msgid "Setup &gt; Settings &gt; Naming Series\n"
 "			"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Campaign Naming By"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Just like for Customer, you can also configure as how ID will be generated for the Campaign master. Bydefault Campaign will be saved with Campaign Name provided while its creation."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Default Customer Group"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Customer Group in this field will be auto-updated when you open new Customer form. While converting Quotation created for Lead into Sales Order, system attempts to convert Lead into Customer in the backend. While creating Customer in the backend, system pickup Customer Group and Territory as defined in the Selling Setting. If system doesn't find any values, then following validation message will be raised."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To resolve this, you should: Either manually convert Lead into Customer, and define Customer Group and Territory manually while creating Customer, or define Default Customer Group and Territory in the Selling Setting. Then you should have Lead automatically converted into Customer when convert Quotation into Sales Order."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Default Territory"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Territory defined in this field will be auto-updated in the Territory field of Customer master. Just like Customer Group, Territory is also checked when system tries creating Customer in the backend."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Sales Order Required"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "If you wish to make Sales Order creation mandatory before creation of Sales Invoice, then you should set Sales Order Required field as Yes. Bydefault, this will be \"No\" for a value."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Delivery Note Required"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To make Delivery Note creation as mandatory before Sales Invoice creation, you should set this field as \"Yes\". It will be \"No\" by default."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Default Price List"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Price List set in this field will be auto-updated in the Price List field of Sales transactions."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Maintain Same Rate Throughout Sales Cycle"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "System bydefault validates that item price will be same throughout sales cycle (Sales Order - Delivery Note - Sales Invoice). If you could have item price changing within the cycle, and you need to bypass validation of same rate throughout cycle, then you should uncheck this field and save."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Allow User to Edit Price List Rate in Transaction"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Item table of the sale transactions has field called Price List Rate. This field be non-editale by default in all the sales transactions. This is to ensure that price of an item is fetched from Item Price record, and user is not able to edit it. If you need to enable user to edit Item Price, fetched from Price List of an item, you should uncheck this field."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Customer Master"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "A customer, who is sometimes known as a client, buyer, or purchaser is the one who receives goods, services, products, or ideas, from a seller for a monetary consideration. A customer can also receive goods or services from a vendor or a supplier for other valuable considerations. You can either directly create your Customers via"
 msgstr ""
 
+#. Tag: programlisting
+#, no-c-format
 msgid "Selling &gt; Customer\n"
 "		"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "or upload it via the Data Import Tool."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Customers are separate from Contacts and Addresses. A Customer can have multiple Contacts and Addresses."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Contacts and Addresses"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Contacts and Addresses in ERPNext are stored separately so that you can attach multiple Contacts or Addresses to Customers and Suppliers. To add a Contact or Address directly from the Customer record, click on “New Contact” or “New Address”."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "When you select a Customer in any transaction, one Contact and Address gets pre-selected. This is the “Default Contact or Address”."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To Import multiple Contacts and Addresses from a spreadsheet, use the Data Import Tool."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Integration with Accounts"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "In ERPNext, there is a separate Account record for each Customer, for each Company. When you create a new Customer, ERPNext will automatically create an Account Ledger for the Customer under “Accounts Receivable” in the Company set in the Customer record."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "If you want to change the Account Group under which the Customer Account is created, you can set it in the Company master."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "If you want to create an Account in another Company, just change the Company value and “Save” the Customer again."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Customer Settings"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You can link a Price List to a Customer (select “Default Price List”), so that when you select that Customer, the Price List will be automatically selected. You can set “Credit Days” so that it is automatically set in the Sales Invoices made against this Customer. You can set how much credit you want to allow for a Customer by adding the “Credit Limit”. You can also set a global “Credit Limit” in the Company master. ERPNext allows you to group your Customers and also divide them into Territories. Grouping will help you get better analysis of your data and identify which Customers are profitable and which are not. Territories will help you set sales targets for the respective territories."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You can group your Customers so that you can get trend analysis for each group. Typically Customers are grouped by market segment (that is usually based on your domain)."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "If you think all this is too much effort, you can leave it at “Default Customer Group”. But all this effort, will pay off when you start getting reports."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Territory"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "If your business operates in multiple Territories (could be countries, states or cities) it is usually a great idea to build your structure in the system. Once you group your Customers by Territories, you can set annual targets for each Item Group and get reports that will show your actual performance in the territory v/s what you had planned."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Sales Persons behave exactly like Territories. You can create an organization chart of Sales Persons where each Sales Person’s target can be set individually. Again as in Territory, the target has to be set against Item Group."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "A Sales Partner is a third party distributor / dealer / commission agent / affiliate / reseller who sells the companies products, for a commission. This is useful if you make the end sale to the Customer, involving your Sales Partner. If you sell to your Sales Partner who in-turn sells it to the Customer, then you must make a Customer instead."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Discount"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "While making your sales transactions like a Quotation (or Sales Order) you would already have noticed that there is a “Discount” column. On the left is the “Price List Rate” on the right is the “Basic Rate”. You can add a “Discount” value to update the basic rate."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Since your taxes are calculated on Items, you must apply your discounts here so that you apply the tax on the discounted rate, which is the case for most taxes."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The second way to apply discount is to add it in your Taxes and Charges table. This way you can explicitly show the Customer the discount you have applied on the order. If you choose this method, remember that you will tax your Customer at the full rate, not the discounted rate. So this is not a good way to track discounts."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "There is a third way to do it. Create an Item called “Discount” and make sure that all the taxes apply in the same way as the main Items. (This method is useful if only one type of tax is applicable on the sale). This way your “Discount” will appear as an expense. You will see a slightly higher income and expense but your profits will still remain the same. This method might be interesting where you want detailed accounting of your discounts."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The maximum Discount that can be applied on an Item can be fixed in the Item master."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Lead"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To get the customer through the door, you may be doing all or any of the following:"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Listing your product on directories."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Maintaining an updated and searchable website."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Meeting people at trade events."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Advertising your product or services."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "When you send out the word that you are around and have something valuable to offer, people will come in to check out your product. These are your Leads."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "They are called Leads because they may lead you to a sale. Sales people usually work on leads by calling them, building a relationship and sending information about their products or services. It is important to track all this conversation to enable another person who may have to follow-up on that contact. The new person is then able to know the history of that particular Lead. To create a Lead, go to:"
 msgstr ""
 
+#. Tag: programlisting
+#, no-c-format
 msgid "Selling &gt; Lead &gt; New Lead\n"
 "		"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "ERPNext gives you a lot of options you may want to store about your Leads. For example what is the source, how likely are they to give you business etc. If you have a healthy number of leads, this information will help you prioritize who you want to work with."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "ERPNext makes it easy to follow-up on leads by updating the “Next Contact” details. This will add a new event in the Calendar for the User who has to contact the lead next."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Difference between Lead, Contact and Customer"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The difference is that a Lead is a potential Customer, someone who can give you business. A Customer is an organization or individual who has given you business before (and has an Account in your system). A Contact is a person who belongs to the Customer."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "A Lead can be converted to a Customer by clicking on the “Create Customer” button. Once the Customer is created, the Lead becomes “Converted” and any further Opportunities from the same source can be created against the Customer."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Opportunity"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "When you know a Lead is looking for some products or services to buy, you can track that as an Opportunity. You can create an Opportunity from:"
 msgstr ""
 
+#. Tag: programlisting
+#, no-c-format
 msgid "Selling &gt; Opportunity &gt; New Opportunity\n"
 "		"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You can also open a “Open” Lead and click on “Create Opportunity” button."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "An Opportunity can also come from an existing Customer. You can create multiple Opportunities against the same Lead. In Opportunity, apart from the Communication, you can also add the Items for which the Lead or Contact is looking for."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Leads and Opportunities are often referred as your “Sales Pipeline” this is what you need to track if you want to be able to predict how much business you are going to get in the future. Its always a good idea to be able to track what is coming in order to adjust your resources."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Quotation"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "During a sale, the customer may request for a written note about the products or services you are planning to offer, along with the prices and other terms of engagement. This is called a “Proposal” or an “Estimate” or a “Pro Forma Invoice”or a Quotation. To create a new Quotation go to:"
 msgstr ""
 
+#. Tag: programlisting
+#, no-c-format
 msgid "Selling &gt; Quotation &gt; New Quotation\n"
 "		"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "A Quotation contains details about:"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The recipient of the Quotation."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The Items and quantities you are offering."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The rates at which they are offered. For details refer."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The taxes applicable."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Other charges (like shipping, insurance) if applicable."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The validity of contract."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The time of delivery."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Other conditions."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Images look great on Quotations. To add images to your Quotations, attach the corresponding image in the Item master."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Rates"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The rates you quote may depend on two things."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The Price List: If you have multiple Price Lists, you can select a Price List or tag it to the Customer (so that it is auto-selected). Your Item prices will automatically be updated from the Price List."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The Currency: If you are quoting to a Customer in a different currency, you will have to update the conversion rates to enable ERPNext to save the information in your standard Currency. This will help you to analyze the value of your Quotations in standard Currency."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Taxes"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To add taxes to your Quotation, you can either select a tax template, Sales Taxes and Charges Master or add the taxes on your own. You can add taxes in the same manner as the Sales Taxes and Charges Master."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Terms and Conditions"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Each Quotation must ideally contain a set of terms, of your contract. It is usually a good idea to make templates of your Terms and Conditions, so that you have a standard set of terms. You can do this by going to:"
 msgstr ""
 
+#. Tag: programlisting
+#, no-c-format
 msgid "Selling &gt; Terms and Conditions\n"
 "			"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "What should Terms and Conditions Contain?"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Validity of the offer."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Payment Terms (In Advance, On Credit, part advance etc)."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "What is extra (or payable by the Customer)."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Safety / usage warning."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Warranty if any."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Returns Policy."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Terms of shipping, if applicable."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Ways of addressing disputes, indemnity, liability, etc."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Address and Contact of your Company."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Submission"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Quotation is a “Submittable” transaction. Since you send this Quotation to your Customer or Lead, you must freeze it so that changes are not made after you send the Quotation. See Document Stages."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Quotations can also be titled as “Proforma Invoice” or “Proposal”. Select the right heading in the “Print Heading” field in the “More Info” section. To create new Print Headings go to Setup &gt; Branding and Printing &gt; Print Headings."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "While making your sales transactions like a Quotation (or Sales Order) you would already have noticed that there is a “Discount” column. On the left is the “Price List Rate” on the right is the “Basic Rate”. You can add a “Discount” value to update the basic rate. To understand more about discount read Discount."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Sales Order"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The Sales Order confirms your sales and triggers purchase (Material Request) shipment (Delivery Note), billing (Sales Invoice) and manufacturing (Production Plan). A Sales Order is usually a binding Contract with your Customer. Once your customer confirms the Quotation you can convert your Quotation into a Sales Order."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Alternatively, you can create a Sales Order directly from:"
 msgstr ""
 
+#. Tag: programlisting
+#, no-c-format
 msgid "Selling &gt; Sales Order &gt; New Sales Order\n"
 "		"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Most of the information in your Sales Order is the same as the Quotation. There are a few amongst other things that a Sales Order will ask you to update."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Expected date of delivery."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Customer Purchase Order number: If your customer has sent you a Purchase Order, you can update its number for future reference (in billing)."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Packing List"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The “Packing List” table will be automatically updated when you “Save” the Sales Order. If any Items in your table are Sales BOM (packets), then the “Packing List” will contain the exploded (detailed) list of your Items."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Reservation and Warehouses"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "If your Sales Order contains Items for which inventory is tracked (Is Stock Item is “Yes”) then, ERPNext will ask you for “Reservation Warehouse”. If you have set a default Warehouse for the Item, it will automatically set this Warehouse here. This “reserved” quantity will help you project what is the quantity you need to purchase based on all your commitments."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Sales Team"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Sales Partner: If this Sale was booked via a Sales Partner, you can update the Sales Partner’s details with commission and other info that you can aggregate."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Sales Persons: ERPNext allows you to tag multiple Sales Persons who may have worked on this deal. You can also split the amount in targets of different Sales Persons and track how much incentives they earned on this deal."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Recurring Sales Orders"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "If you have a recurring contract with a Customer where you are required to generate a Sales Order on a monthly, quarterly, half-yearly or annual basis, you can check the “Convert To Recurring Order” box."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Here you can fill in the details like; of how frequently you want to generate an Order in the 'Recurring Type' field, specify the day of of the month on which the Order needs to be generated in the 'Repeat On Day Of Month' field and the date on which the recurring orders should stop in the 'End Date' field."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Recurring Type: Here you can update how frequently you want to generate an Order."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Repeat On Day Of Month: You can specify the day of of the month on which the Order needs to be generated."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "End Date: The date on which the recurring orders should stop can be specified here."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "On updating the Sales Order, a Recurring ID will be generated which will be same for all recurring orders generated from this particular Sales Order. ERPNext will automatically create new Order and mail a notification to the email IDs you set in the 'Notification Email Address'field."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Next Steps"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Once you “Submit” your Sales Order, you can now trigger different aspects of your organization:"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To begin purchase click on “Make Purchase Request”"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To make a shipment entry click on “Make Delivery Note”"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To bill, make “Make Sales Invoice”"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To stop further process on this Sales Order, click on “Stop”"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Sales Order is a “Submittable” transaction. See Document Stages. You will be able to execute dependent steps (like making a Delivery Note) only after “Submitting” this Sales Order."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Sales Order with Order type Maintenance"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "When the 'Order Type' of the Sales Order is 'Maintenance' follow the steps given below:"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Step 1: Enter Currency, Price list and Item details."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Step 2: Mention taxes and other information."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Step 3: Save and Submit the form."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Step 4: Once the form is submitted, the Action button will provide three choices.i) Maintenance Visit ii) Maintenance Schedule iii) Invoice."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "By clicking on the Action button and selecting 'Maintenance Visit' you can directly fill the visit form. The Sales Order details will be fetched directly."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "By clicking on the Action button and selecting 'Maintenance Schedule' you can fill the schedule details. The Sales Order details will be fetched directly."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "By clicking on the Invoice button you can make an Invoice for your services . The sales orders details will be fetched directly."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Sales Person Target Allocation"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "With management of Sales Person, ERPNext also allow you to assign target to Sales Persons based on Item Group and Territory. Based on target allocated and actual sales booked by Sales Person, you will get target variance report for the Sales Person."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To allocate target, you should open specific Sales Person master."
 msgstr ""
 
-msgid ""
-"\n"
+#. Tag: programlisting
+#, no-c-format
+msgid "\n"
 "		Selling &gt; Setup &gt; Sales Person &gt; (Open Sales Person)\n"
 "		"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Campaign"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "A Campaign is a full-scale implementation of a sales strategy to promote a product or a service. This is done in a market segment of a particular geographical area, to achieve specified objectives."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Sales Bill of Material"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Sales BOM stands for Sales Bill-of-Material. It's a master where you can list item which are bundled together and sold as one item. For instance, when laptop is delivered, you need to ensure that charger, mouse and laptop bag are delivered and stock level of these items gets affected. To address this scenario, you can set create Sales BOM for the main item, i.e. laptop, and list deliverable items i.e. laptop + charger + other accessories as child items. Following are the steps on how to setup Sales BOM master, and how is it used in the sales transactions. To create new Sales BOM, Go to:"
 msgstr ""
 
-msgid ""
-"\n"
+#. Tag: programlisting
+#, no-c-format
+msgid "\n"
 "		Selling &gt;&gt; Setup &gt;&gt; Sales BOM &gt;&gt; New\n"
 "		"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "In Sales BOM master, there are two sections. Sales BOM Item and Package Item. In Sales BOM item, you will select a Parent Item. The parent item must be a non-stock item. This is non-stock item because there is no stock maintained for it but only the Package Items. If you want to maintain stock for the Parent Item, then you must create a regular Bill of Material (BOM) and package them using a Stock Entry Transactions."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "In Package Item section, you will list all the child items for which we maintain stock and is delivered to customer."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Save Sales BOM after enter Sales BOM and Packing Items, with Qty. Once Sales BOM is saved, it will not be editable again. When making Sales transactions like Sales Invoice, Sales Order and Delivery Note, Parent Item will be selected in the main item table. On selection on Parent Item in the main item table, its child items will be fetched in Packing List table of the transaction. If child item is the serialized item, you will be able to specify its Serial Mo. in packing List table itself. On submission of transaction, system will reduce the stock level of child items from warehouse specified in Packing List table."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Use Sales BOM to Manage Schemes:"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "This work-around in Sales BOM was discovered when a customer dealing into nutrition product asked for feature to manage schemes like \"Buy One Get One Free\". To manage the same, he created a non-stock item which was used as Parent Item. In description of item, he entered scheme details with items image indicating the offer. The saleable product was selected in Package Item where qty was two. Hence every time they sold one qty of Parent item under scheme, system deducted two quantities of product from Warehouse."
 msgstr ""
 

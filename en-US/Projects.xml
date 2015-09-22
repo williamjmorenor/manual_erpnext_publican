@@ -3,146 +3,99 @@
 %BOOK_ENTITIES;
 ]>
 <chapter id="chap-ERPNext-Manual_ERPNext-Projects">
-	<chapterinfo>
-		<keywordset>
-			<keyword>Project</keyword>
-		</keywordset>
-	</chapterinfo>
-	<title>Projects</title>
-	<indexterm><primary>Projects</primary></indexterm>
-	<para>
-	&PRODUCT; helps you manage your Projects by breaking them into Tasks and allocating them to different people.
-	</para>
-	<para>
-	Purchasing and selling can also be tracked against Projects and this can help the company keep tabs on its budget, delivery and profitability for a Project.
-	</para>
-	<para>
-	Projects can be used to manage internal projects, manufacturing jobs or service jobs. For service jobs, Time Sheets can also be created that can be used to bill Customers if billing is done on a Time and Money basis.
-	</para>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Projects-Project">
-		<title>Project</title>
-		<indexterm><primary>Projects</primary><secondary>Project</secondary></indexterm>
-		<para>
-		Project management in ERPNext is Task driven. You can create Project and assign multiple Tasks against it.
-		</para>
-		<para>
-		Project can be divided into multiple Tasks. Task can be created via Project document itself or can be created via Task
-		</para>
-		<sect2>
-			<title>Managing expenses</title>
-			<para>
-			You can book Expense Claim against a project task. The system shall update the total amount from expense claims in the project costing section.
-			</para>
-			<sect3>
-				<title>Cost Center</title>
-				<para>
-				You can make a Cost Center against a Project or use an existing cost center to track all expenses made against that project.
-				</para>
-			</sect3>
-			<sect3>
-				<title>Project Costing</title>
-				<para>
-				The Project Costing section helps you track the time and expenses incurred against the project.
-				</para>
-				<itemizedlist>
-					<listitem>
-						<para>The Costing Section is updated based on Time Logs made.</para>
-					</listitem>
-					<listitem>
-						<para>Gross Margin is the difference between Total Costing Amount and Total Billing Amount.</para>
-					</listitem>
-				</itemizedlist>
-			</sect3>
-			<sect3>
-				<title>Billing
-
-</title>
-				<para>
-				You can make/link a Sales Order against a project. Once linked you can use the standard sales module to bill your customer against the Project.
-				</para>
-			</sect3>
-		</sect2>
-			<sect2>
-				<title>Gantt Chart</title>
-				<indexterm><primary>Projects</primary><secondary>Project</secondary><tertiary>Gantt Chart</tertiary></indexterm>
-				<para>
-				A Gantt Chart illustrates a project schedule. ERPNext gives you a illustrated view of tasks scheduled against that project in Gantt Chart View.
-				</para>
-				<para>
-				A Gantt chart is a type of bar chart, it illustrate the start and finish dates of the terminal elements and summary elements of a project (Tasks), also show the dependency (i.e., precedence network) relationships between activities.
-				</para>
-			</sect2>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Projects-Task">
-		<title>Task</title>
-		<indexterm><primary>Projects</primary><secondary>Task</secondary></indexterm>
-		<para>
-		Project is divided into Tasks. In ERPNext, you can also create a Task independently. A Task can have either of the following status - Open, Working, Pending Review, Closed, Cancelled.
-		</para>
-		<itemizedlist>
-			<listitem>
-				<para>By default each new Task created shall have the status set to 'Open'.</para>
-			</listitem>
-			<listitem>
-				<para>If a Time Log is made against a task, its status shall be set to 'Working'.</para>
-			</listitem>
-		</itemizedlist>
-		<sect2>
-			<title>Managing Time</title>
-			<para>
-			ERPNext uses Time Log to track the progress of a Task. You can create multiple Time Logs against each task. The Actual Start and End Time along with the costing shall then be updated based on the Time Log.
-			</para>
-			<sect3>
-				<title>Managing Expenses</title>
-				<para>
-				You can book Expense Claim against a task. The system shall update the total amount from expense claims in the costing section.
-				</para>
-			</sect3>
-		</sect2>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Projects-Time">
-		<title>Time Log</title>
-		<indexterm><primary>Projects</primary><secondary>Time Log</secondary></indexterm>
-		<para>
-		Time Logs are a way to track time worked. They can be used to track the following
-		</para>
-		<itemizedlist>
-			<listitem>
-				<para>Billable work to Customers.</para>
-			</listitem>
-			<listitem>
-				<para>Production Order Operations.</para>
-			</listitem>
-			<listitem>
-				<para>Tasks.</para>
-			</listitem>
-			<listitem>
-				<para>Project.</para>
-			</listitem>
-			<listitem>
-				<para>Internal References.</para>
-			</listitem>
-			<listitem>
-				<para></para>
-			</listitem>
-		</itemizedlist>
-		<sect2>
-			<title>Creating Time Logs</title>
-			<para>
-			To create a new Time Log, you can go to
-			</para>
-			<programlisting>Projects > Time Log > new Time Log
-			</programlisting>
-			<para>
-			You can also create a new Time Log via Calendar.
-			</para>
-			<sect3>
-				<title id="billing-projects">Billing using Time Logs</title>
-				<indexterm><primary>Projects</primary><secondary>Time Log</secondary><tertiary>Billing</tertiary><seealso>Types of Production Planning</seealso></indexterm>
-				<para>
-				If you wish to bill against a Time Log you need to select the 'Billable' option. In the costing section, the system will pull up the Costing and Billing rate from Activity Cost based on the Employee and Activity Type specified. The system shall then calculate the Costing and Billing amount based on the Hours mentioned in the Time Log. If 'Billable' is not selected, the system shall display the 'Billing Amount' as 0. After submitting the Time Log, you need to create Time Log batch to further bill the Time Log.
-				</para>
-			</sect3>
-		</sect2>	
-	</sect1>
+<chapterinfo><keywordset><keyword>Project</keyword></keywordset></chapterinfo>
+<title>Projects</title>
+<indexterm><primary>Projects</primary></indexterm>
+<para>&PRODUCT; helps you manage your Projects by breaking them into Tasks and allocating them to different people.</para>
+<para>Purchasing and selling can also be tracked against Projects and this can help the company keep tabs on its budget,
+	delivery and profitability for a Project.</para>
+<para>Projects can be used to manage internal projects, manufacturing jobs or service jobs. For service jobs, Time Sheets can
+	also be created that can be used to bill Customers if billing is done on a Time and Money basis.</para>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Projects-Project">
+<title>Project</title>
+<indexterm><primary>Projects</primary><secondary>Project</secondary></indexterm>
+<para>Project management in ERPNext is Task driven. You can create Project and assign multiple Tasks against it.</para>
+<para>Project can be divided into multiple Tasks. Task can be created via Project document itself or can be created via Task</para>
+<sect2>
+<title>Managing expenses</title>
+<para>You can book Expense Claim against a project task. The system shall update the total amount from expense claims in the
+	project costing section.</para>
+<sect3>
+<title>Cost Center</title>
+<para>You can make a Cost Center against a Project or use an existing cost center to track all expenses made against that
+	project.</para>
+</sect3>
+<sect3>
+<title>Project Costing</title>
+<para>The Project Costing section helps you track the time and expenses incurred against the project.</para>
+<itemizedlist>
+<listitem><para>The Costing Section is updated based on Time Logs made.</para></listitem>
+<listitem><para>Gross Margin is the difference between Total Costing Amount and Total Billing Amount.</para></listitem>
+</itemizedlist>
+</sect3>
+<sect3>
+<title>Billing</title>
+<para>You can make/link a Sales Order against a project. Once linked you can use the standard sales module to bill your
+	customer against the Project.</para>
+</sect3>
+</sect2>
+<sect2>
+<title>Gantt Chart</title>
+<indexterm><primary>Projects</primary><secondary>Project</secondary><tertiary>Gantt Chart</tertiary></indexterm>
+<para>A Gantt Chart illustrates a project schedule. ERPNext gives you a illustrated view of tasks scheduled
+	against that project in Gantt Chart View.</para>
+<para>A Gantt chart is a type of bar chart, it illustrate the start and finish dates of the terminal elements and summary
+	elements of a project (Tasks), also show the dependency (i.e., precedence network) relationships between activities.</para>
+</sect2>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Projects-Task">
+<title>Task</title>
+<indexterm><primary>Projects</primary><secondary>Task</secondary></indexterm>
+<para>Project is divided into Tasks. In ERPNext, you can also create a Task independently. A Task can have either of the following
+	status - Open, Working, Pending Review, Closed, Cancelled.</para>
+<itemizedlist>
+<listitem><para>By default each new Task created shall have the status set to 'Open'.</para></listitem>
+<listitem><para>If a Time Log is made against a task, its status shall be set to 'Working'.</para></listitem>
+</itemizedlist>
+<sect2>
+<title>Managing Time</title>
+<para>ERPNext uses Time Log to track the progress of a Task. You can create multiple Time Logs against each task. The Actual Start
+	and End Time along with the costing shall then be updated based on the Time Log.</para>
+<sect3>
+<title>Managing Expenses</title>
+<para>You can book Expense Claim against a task. The system shall update the total amount from expense claims in the costing
+	section.</para>
+</sect3>
+</sect2>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Projects-Time">
+<title>Time Log</title>
+<indexterm><primary>Projects</primary><secondary>Time Log</secondary></indexterm>
+<para>Time Logs are a way to track time worked. They can be used to track the following</para>
+<itemizedlist>
+<listitem><para>Billable work to Customers.</para></listitem>
+<listitem><para>Production Order Operations.</para></listitem>
+<listitem><para>Tasks.</para></listitem>
+<listitem><para>Project.</para></listitem>
+<listitem><para>Internal References.</para></listitem>
+</itemizedlist>
+<sect2>
+<title>Creating Time Logs</title>
+<para>To create a new Time Log, you can go to</para>
+<programlisting>Projects > Time Log > new Time Log</programlisting>
+<para>You can also create a new Time Log via Calendar.</para>
+<sect3>
+<title id="billing-projects">Billing using Time Logs</title>
+<indexterm>
+	<primary>Projects</primary><secondary>Time Log</secondary><tertiary>Billing</tertiary>
+<seealso>Types of Production Planning</seealso>
+</indexterm>
+<para>If you wish to bill against a Time Log you need to select the 'Billable' option. In the costing section, the system
+	will pull up the Costing and Billing rate from Activity Cost based on the Employee and Activity Type specified. The
+	system shall then calculate the Costing and Billing amount based on the Hours mentioned in the Time Log. If 'Billable'
+	is not selected, the system shall display the 'Billing Amount' as 0. After submitting the Time Log, you need to create
+	Time Log batch to further bill the Time Log.</para>
+</sect3>
+</sect2>
+</sect1>
 </chapter>

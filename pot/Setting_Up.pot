@@ -1,1158 +1,1864 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2015-05-10 23:47-0600\n"
-"PO-Revision-Date: 2015-05-10 23:47-0600\n"
+"POT-Creation-Date: 2015-07-06 20:43-0600\n"
+"PO-Revision-Date: 2015-07-06 20:43-0600\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
-"Language: en-US \n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Publican v4.2.6\n"
 
+#. Tag: title
+#, no-c-format
 msgid "Setting Up"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Setting up an ERP system is like starting your business all over again, although in the virtual world. Thankfully it is not as hard as the real business and you get to do a trial too!"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Implementation requires the implementer to take a step back and set aside some time to do this right. This is usually not a couple-of-hours, after-work kind of a project."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Setup Wizard"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The first time than you logging into ERPNext you will need to create the firt company and define many defaults settings like language and currency."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The Setup Wizard helps you quickly setup your ERPnext by helping you create your company, Items, Customer, Suppliers and will also setup a basic website with this data. Here is a quick overview of the steps:"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Step 1: Language"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You can change the System Language after Septup Wizard, but some things of the system will not be updated. Please be carefull selecting the system language. You will note than the Setup Wizard will update to the selected language."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "This step is mandatory."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Select your language. ERPNext is available in more than 20 languages."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Step 2: Currency and Timezone"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Please note than many settings and options in ERPNext are specifics and only available for certains countries. For example Charts of Account are Country Specifics, is there is a Chart of Accounts available for your country ERPNext will let you select it in the Wizard Setup"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Set your country name, currency and timezone."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Step 3: Profile Details"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "This will be the system administrator, please choose a strong password and be sure to not forget it."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Enter Users Profile Details like Name, User ID and preferred password."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Step 4: Company Details"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Enter Company Details like Name, Abbreviation and Financial Year Details."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Company Abbreviation"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "These will be appened to your Account Heads, for example if your abbreviation is WP, then your Sales account will be Sales - WPL"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "For Example: East Wind will be abbreviated as EW. Shades of Green will be abbreviated as SOG. In case you wish to give your own abbreviation, you can do so. The text field allows any type of text."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Financial Year"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Any annual period at the end of which a firm's accounts are made up is called a Financial Year. Some countries have their account year starting from 1st January and some 1st April."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The end date will be set automatically"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Step 5: Letterhead and Logo"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "This step is not mandatory."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Attach Company Letterhead and Company Logo."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Step 6: Tax Details"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Enter any three types of taxes which you regularly pay. This wizard will create a tax master which will calculate the taxes as per the tax-type."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Just set the tax name and the standard percentage levied."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Some examples of tax types are given below."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "<emphasis role=\"bold\">VAT:</emphasis> A value added tax (VAT) is a form of consumption tax. From the perspective of the buyer, it is a tax on the purchase price. From that of the seller, it is a tax only on the value added to a product, material, or a service. From an accounting point of view, by the stage of its manufacture or distribution. The manufacturer remits to the government the difference between these two amounts, and retains the rest for themselves to offset the taxes they had previously paid on the inputs."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The purpose of VAT is to generate tax revenues to the government similar to the corporate income tax or the personal income tax. For Example: When you shop at a departmental store and avail discount on the products, the store charges you 5% extra on the total bill as the VAT."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To setup VAT in the setup wizard , simply enter the percentage amount levied by your government. To setup VAT at a later stage read setting-up-taxes"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Step 7: Customers"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Enter your Customer names and the contact person from that organisation."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "<emphasis role=\"bold\">Difference between a customer name and a contact name</emphasis>"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "A customer name is the name of the organisation and a contact name is the name of the user who is operating the ERPNext system. For Example: If American Power Mills is an organisation name and their founder Shiv Agarwal has installed ERPNext on his system. Then,"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "<emphasis role=\"bold\">Customer Name:</emphasis> American Power Mills"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "<emphasis role=\"bold\">Contact Name:</emphasis> Shiv Agarwal"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To understand Customer in detail visit Customer Details"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Step 8: Suppliers"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Enter a few of your Suppliers' names."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To understand Suppliers in detail visit Supplier Master"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Step 9: Item Names"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "In this final step, please enter the names of the Items you buy or sell."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Please set the group of the item (Product / Service) and unit of measure. Don't worry you will be able to edit all of this later."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "<emphasis role=\"bold\">Thats it!</emphasis>"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Once you are done with the setup wizard you will see the familiar desktop page."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Users And Permissions"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "In ERPNext, you can create multiple users and assign them different roles. There are some users which can only access the public facing part of ERPNext (i.e. the website). Such users are called \"Website Users\"."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "ERPNext implements permission control at the User and Role level. Each user in the system can be assigned multiple roles and permissions."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The most important role is the \"System Manager\". Any user having this role can add other users and set roles to all users."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Adding Users"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Users can be added by the System Manager. If you are a System Manager, you can add Users via"
 msgstr ""
 
-msgid ""
-"\n"
+#. Tag: programlisting
+#, no-c-format
+msgid "\n"
 "		Setup &gt; User\n"
 "		"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "List of Users"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To add new user, click on \"New\"."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Add the user details"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Add user details such as First Name, Last Name, Email etc."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The user's Email will become the user id."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "After adding these details, save the user."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Setting Roles"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "After saving, you will see a list of roles and a checkbox next to it. Just check the roles you want the the user to have and save the document. To click on what permissions translate into roles, click on the role name."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Setting Module Access"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Users will have access to all modules for which they have role based access. If you want to block certain modules for certain users, un-check the module from the list."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Security Settings"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "If you wish to give the user access to the system only between office hours, or during weekends, mention it under security settings."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Role Based Permissions"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "ERPNext has a role-based permission system. It means that you can assign Roles to Users, and set Permissions on Roles. The permission structure also allows you to define different permission rules for different fields, using a concept called Permission \"Level\" of a field. Once roles are assigned to a user, it gives you the ability to limit access for a user to only specic documents."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To start with, go to:"
 msgstr ""
 
-msgid ""
-"\n"
+#. Tag: programlisting
+#, no-c-format
+msgid "\n"
 "		Setup &gt; Users and Permissions &gt; Role Permissions Manager\n"
 "		"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Permissions are applied on a combination of:"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "<emphasis role=\"bold\">Roles:</emphasis> As we saw earlier, Users are assigned to Roles and it is on these Roles that permission rules are applied."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "<emphasis role=\"bold\">Document Types:</emphasis> Each type of document, master or transaction, has a separate list of Role based permissions."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "<emphasis>Examples of Document Types are Sales Invoice, Leave Application, Stock Entry, etc.</emphasis>"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "<emphasis role=\"bold\">Permission \"Levels\":</emphasis> In each document, you can group fields by \"levels\". Each group of field is denoted by a unique number (0, 1, 2, 3, etc.). A separate set of permission rules can be applied to each field group. By default all fields are of level 0."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "<emphasis>Permission \"Level\" connects the group of fields with level X to a permission rule with level X.</emphasis>"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "<emphasis role=\"bold\">Document Stages:</emphasis> Permissions are applied on each stage of the document like on Creation, Saving, Submission, Cancellation and Amendment. A role can be permitted to Print, Email, Import or Export data, access Reports, or define User Permissions."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "<emphasis role=\"bold\">Apply User Permissions: </emphasis> This switch decides whether User Permissions should be applied for the role on selected Document Stages."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "If enabled, a user with that role will be able to access only specific Documents for that Document Type. Such specific Document access is defined in the list of User Permissions. Additionally, User Permissions defined for other Document Types also get applied if they are related to the current Document Type through Link Fields."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To set, User Permissions go to:"
 msgstr ""
 
-msgid ""
-"\n"
+#. Tag: programlisting
+#, no-c-format
+msgid "\n"
 "		Setup &gt; Users and Permissions &gt; User Permissions Manager\n"
 "		"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "<emphasis role=\"bold\">To add a new rule, </emphasis> click on \"Add a New Rule\" button and a pop-up box will ask you to select a Role and a Permission Level. Once you select this and click on \"Add\", this will add a new row to your rules table."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Leave Application is a good <emphasis role=\"bold\">example</emphasis> that encompasses all areas of Permission System."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "<emphasis role=\"bold\">It should be created by an Employee. </emphasis> For this, Employee Role should be given Read, Write, Create permissions."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "<emphasis role=\"bold\">An Employee should only be able to access his/her Leave Application. </emphasis> Hence, Apply User Permissions should be enabled for Employee Role, and a User Permission record should be created for each User Employee combination. (This effort is reduced for Employee Document Type, by programmatically creating User Permission records.)"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "<emphasis role=\"bold\">HR Manager should be able to see all Leave Applications. </emphasis> Create a Permission Rule for HR Manager at Level 0, with Read permissions. Apply User Permissions should be disabled."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "<emphasis role=\"bold\">Leave Approver should be able to see and update Leave Applications applicable to him/her. </emphasis> Leave Approver is given Read and Write access at Level 0, with Apply User Permissions enabled. Relevant Employee Documents should be enlisted in the User Permissions of Leave Approvers. (This effort is reduced for Leave Approvers mentioned in Employee Documents, by programmatically creating User Permission records.)"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "<emphasis role=\"bold\">It should be Approved / Rejected only by HR User or Leave Approver. </emphasis> The Status field of Leave Application is set at Level 1. HR User and Leave Approver are given Read and Write permissions for Level 1, while everyone else (All) are given Read permission for Level 1."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "<emphasis role=\"bold\">HR User should be able to delegate Leave Applications to his/her subordinates HR. </emphasis> User is given the right to Set User Permissions. A User with HR User role would be able to defined User Permissions on Leave Application for other users."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "User Permissions"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Limit access for a User to a set of documents using User Permissions Manager."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Role Base Permissions define the periphery of document types within which a user with a set of Roles can move around in. However, you can have an even finer control by defining User Permissions for a User. By setting specific documents in User Permissions list, you can limit access for that User to specific documents of a particular DocType, on the condition that \"Apply User Permissions\" is checked in Role Permissions Manager."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Sharing"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "In addition to user and role permissions, you can also Share a document with another user if you have sharing rights."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To share a document, open the document, click on the \"+\" icon under sharing and select the user"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Settings"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "In <emphasis>Setup &gt; Settings</emphasis> you will find ways to manage your system settings like defaults, number and currency formats, global session timeout settings etc."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "System Settings"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You can localize ERPNext to use particular timezone, date, number or currency format and also set global session expiry via System Settings."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To open System Settings, go to:"
 msgstr ""
 
-msgid ""
-"\n"
+#. Tag: programlisting
+#, no-c-format
+msgid "\n"
 "		Setup &gt; Settings &gt; System Settings\n"
 "		"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Show or Hide Modules"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You can globally switch off certain desktop module via:"
 msgstr ""
 
-msgid ""
-"\n"
+#. Tag: programlisting
+#, no-c-format
+msgid "\n"
 "		Setup &gt; Settings &gt; Show or Hide Modules\n"
 "		"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "For example if you are in the services business, you want to hide the Manufacturing Module, you can do this via Show or Hide Modules"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Naming Series"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "<emphasis role=\"Bold\">Naming Series</emphasis>"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Data records are broadly classified as “Master” or “Transaction”. A master record is a record that has a “name”, for example a Customer, Item, Supplier, Employee etc. A Transaction is a record that has a “number”. Examples of transactions include Sales Invoices, Quotations etc. You make transactions against a number of master records."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "ERPNext allows you to make prefixes to your transactions, with each prefix forming its own series. For example a series with prefix INV12 will have numbers INV120001, INV120002 and so on."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You can have multiple series for all your transactions. It is common to have a separate series for each financial year. For example in Sales Invoice you could have:"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "INV120001"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "INV120002"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "INV-A-120002"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "etc. You could also have a separate series for each type of Customer or for each of your retail outlets."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "<emphasis role=\"Bold\">Managing Naming Series for Documents</emphasis>"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To setup a series, go to:"
 msgstr ""
 
-msgid ""
-"\n"
+#. Tag: programlisting
+#, no-c-format
+msgid "\n"
 "		Setup &gt; Tools &gt; Update Numbering Series\n"
 "		"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "In this form:"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Select the transaction for which you want to make the series The system will update the current series in the text box."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Edit the series as required with unique prefixes for each series. Each prefix must be on a new line."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The first prefix will be the default prefix. If you want the user to explicitly select a series instead of the default one, check the “User must always select” check box."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You can also update the starting point of a series by entering the series name and the starting point in the “Update Series” section."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Global Defaults"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You can set default values for your documents from Global Defaults"
 msgstr ""
 
-msgid ""
-"\n"
+#. Tag: programlisting
+#, no-c-format
+msgid "\n"
 "		Setup &gt; Settings &gt; Global Defaults\n"
 "		"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Whenever a new document is created, these values will be set as default."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Data Management"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You can import, export bulk edit data from and to spreadsheet files (.csv) from the Data Import Export Tool. This tool will be very helpful initially to setup your data from other systems."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Data Import Tool"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The Data Import Tool is a great way to upload (or edit) bulk data, specially master data, into the system. To Open the data import tool, you either go to Setup or go to the Transaction you want to Import. If Data Import is allowed, you will see an Import Button:"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The tool has two sections, one to download a template and the second to upload the data."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Only those DocTypes are allowed for Import whose Document Type is \"Master\" or Allow Import property is set."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Downloading The Template"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Data in ERPNext is stored in tables, much like a spreadsheet with columns and rows of data. Each entity in ERPNext can have multiple child tables associated with it too. The child tables are linked to the parent tables and are implemented where there are multiple values for any property. For example an Item can have multiple prices, An Invoice has multiple Items and so on."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Click on the table you want to download or \"All Tables\""
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "For bulk editing, you can click on \"Download With Data\""
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Fill in the Template"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "After downloading the template, open it in a spreadsheet application and fill in the data below the column headings."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Then export your template or save it as a Comma Separated Values (CSV) file."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Upload the .csv File"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Finally attach the .csv file in the section. Click on the \"Upload and Import\" button."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Make sure that if your application allows, use encoding as UTF-8."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Keep the ID column blank for new records."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Uploading All Tables (Main + Child)"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "If you select all tables, you will get columns belonging to all the tables in one row separated by ~ columns. If you have multiple child rows then you must start a new main item on a new row."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To see how its done, enter a few records manually using forms and export \"All Tables\" with \"Download with Data\""
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Overwriting"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "ERPNext also allows you to overwrite all or certain columns. If you want to update certain columns, you can download the template with data. Remember to check on the Overwrite box before uploading."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "For child records, if you select Overwrite, it will delete all the child records of that parent."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Upload Limitations"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "ERPNext restricts the amount of data you can upload in one file. Though the number may vary based on the type of data. It is usually safe to upload around 1000 rows of a table at one go. If the system will not accept, then you will see an error."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Why is this? Uploading a lot of data can cause your system to crash, specially if there are other users doing things in parallel. Hence ERPNext restricts the number of “writes” you can process in one request."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "How to Attach files?"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "When you open a form, on the right sidebar, you will see a section to attach files. Click on “Add” and select the file you want to attach. Click on “Upload” and you are set."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "What is a CSV file?"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "A CSV (Comma Separated Value) file is a data file that you can upload into ERPNext to update various data. Any spreadsheet file from popular spreadsheet applications like MS Excel or Open Office Spreadsheet can be saved as a CSV file."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "If you are using Microsoft Excel and using non-English characters, make sure to save your file encoded as UTF-8. For older versions of Excel, there is no clear way of saving as UTF-8. So save your file as a CSV, then open it in Notepad, and save as “UTF-8”. (Sorry blame Microsoft for this!)"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Bulk Renaming of Records"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You can rename a document if ERPNext (if it is allowed) by going to Menu &gt; Rename in the document."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Alternatively, if you want to rename a whole bunch of records, just go to:"
 msgstr ""
 
-msgid ""
-"\n"
+#. Tag: programlisting
+#, no-c-format
+msgid "\n"
 "		Setup &gt; Data &gt; Rename Tool\n"
 "		"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "This tool will allow you to rename multiple records at the same time."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Example"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To rename multiple records, upload a .csv file with the old name in the first column and the new name in the second column and click on Upload."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Email"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Email is at the heart of electronic communication and ERPNext is deeply integrated with Email. You can create multiple email accounts, automatically create transactions like Lead, Issue from incoming emails, send documents to your contacts via ERPnext. You can also setup email digests and email alerts to send you reminders."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Email Accounts"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You can manage multiple incoming and outgoing Email Accounts in ERPNext. There has to be atleast one default outgoing account and one default incoming account. If you are on the ERPNext cloud, the default outgoing email is set by Frappe Team."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Note for self implementers: For outgoing emails, you should setup your own SMTP server or sign up with an SMTP relay service like mandrill.com or sendgrid.com that allows a larger number of transactional emails to be sent. Regular email services like GMail will restrict you to a limited number of emails per day."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Default Email Accounts"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "ERPNext will create templates for a bunch of email accounts by default. Not all of them are enabled. To enable them, you must set your account details."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "There are 2 types of email accounts, outgoing and incoming. Outgoing email accounts use an SMTP service to send emails and emails are retrived from your inbox using a POP service. Most email providers such as GMail, Outlook or Yahoo provide these services."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Outgoing Email Accounts"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "All emails sent from the system, either by the user to a contact or notifications or transaction emails, will be sent from an Outgoing Email Account."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To setup an outgoing Email Account, check on Enable Outgoing and set your SMTP server settings, if you are using a popular email service, these will be preset for you."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Incoming Email Accounts"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To setup an incoming Email Account, check on Enable Incoming and set your POP3 settings, if you are using a popular email service, these will be preset for you."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "How ERPNext handles replies"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "In ERPNext when you send an email to a contact like a customer, the sender will be the user who sent the email. In the Reply-To property, the email id will be of the default incoming account (like replies@yourcompany.com). ERPNext will automatically extract these emails from the incoming account and tag it to the relvant communication"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Notification for unreplied messages"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "If you would like ERPNext to notify you if an email is unreplied for a certain amount of time, then you can set Notify if Unreplied. Here you can set the number of minutes to wait before notifications are sent and whom the notifications must go to."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Email Alerts"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You can configure various email alerts in your system to remind you of important activities such as:"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Completion date of a Task."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Expected Delivery Date of a Sales Order."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Expected Payment Date."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Reminder of followup."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "If an Order greater than a particular value is received or sent."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Expiry notification for a Contract."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Completion / Status change of a Task."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "For this, you need to setup an Email Alert."
 msgstr ""
 
+#. Tag: programlisting
+#, no-c-format
 msgid "Setup &gt; Email &gt; Email Alert"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Setting Up An Alert"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To setup an Email Alert:"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Select which Document Type you want watch changes on."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Define what events you want to watch. Events are:"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "New: When a new document of the selected type is made."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Save / Submit / Cancel: When a document of the selected type is saved, submitted, cancelled."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Value Change: When a particular value in the selected type changes."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Days Before / Days After: Trigger this alert a few days before or after the <emphasis role=\"Bold\">Reference Date</emphasis>. To set the days, set <emphasis role=\"Bold\">Days Before or After</emphasis>. This can be useful in reminding you of upcoming due dates or reminding you to follow up on certain leads of quotations."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Set additional conditions if you want."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Set the recipients of this alert. The recipient could either be a field of the document or a list of fixed email ids."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Compose the message"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Email Digest"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Email Digests allow you to get regular updates about your sales, expenses and other critical numbers directly in your Inbox."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Email Digests are a great way for top managers to keep track of the big numbers like “Sales Booked” or “Amount Collected” or “Invoices Raised” etc."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To set up Email Digest, go to:"
 msgstr ""
 
-msgid ""
-"\n"
+#. Tag: programlisting
+#, no-c-format
+msgid "\n"
 "		Setup &gt; Email &gt; Email Digest\n"
 "		"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Sending Email from any Document"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "In ERPNext you can send any document as email (with a PDF attachment) by clicking on Menu &gt; Email from any open document."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Printing and Branding"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Documents that you send to your customers carry your brand and image and they must be tailored to your requirements. ERPNext gives you many options so that you can set your oraganization's branding in your documents."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Print Settings"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "In Print Settings you can set your default printing preferences like Paper Size, default text size, whether you want output as PDF or HTML etc."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To edit print settings, go to:"
 msgstr ""
 
-msgid ""
-"\n"
+#. Tag: programlisting
+#, no-c-format
+msgid "\n"
 "		Setup &gt; Printing and Branding &gt; Print Settings\n"
 "		"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Print Format Builder"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The Print Format Builder helps you quickly make a simple customized Print Format by dragging and dropping data fields and adding custom text or HTML."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You can create a new Print Format either by going to:"
 msgstr ""
 
-msgid ""
-"\n"
+#. Tag: programlisting
+#, no-c-format
+msgid "\n"
 "		Setup &gt; Printing and Branding &gt; Print Format Builder\n"
 "		"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "or Open the document for which you want to make a print format. Click the Printer icon, or go to Menu &gt; Print and click on the Edit button. Note: You must have System Manager permission to do this."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Make a new Format"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Add a new Field"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To add a field, just drag it from the left sidebar and add it in your layout. You can edit the layout by clicking on the settings icon.To add a field, just drag it from the left sidebar and add it in your layout. You can edit the layout by clicking on the settings icon."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Remove Field"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To remove a field, just drag it back into the fields sidebar."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Cutomize"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You can add customized text, HTML in your print format, just add the Custom HTML field (in dark colour) and add it to the the place where you want to add the text. Then click on Edit HTML to edit your content."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To save your format, just click on the Save button on the top."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Print Headings"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Print Headings are the names which you can give to your sales invoices, supplier quotations etc. You can create a list of names for different business communications. You can create print headings from :"
 msgstr ""
 
-msgid ""
-"\n"
+#. Tag: programlisting
+#, no-c-format
+msgid "\n"
 "		Setup &gt; Printing &gt; Print Heading &gt; New Print Heading\n"
 "		"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Example of a change in print heading is shown below:"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Letter Heads"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You can manage multiple letter heads in ERPNext. In a letter head you can:"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Create an image with your logo, brand and other information that you want to put on your letter head."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Attach the image in your Letter Head record by clicking on image icon to automatically generate the HTML required for this Letter Head."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "If you want to make this the default letter head, click on “Is Default”."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Your letter head will now appear in all Prints and Emails of documents."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You can create / manage Letter Heads from:"
 msgstr ""
 
-msgid ""
-"\n"
+#. Tag: programlisting
+#, no-c-format
+msgid "\n"
 "		Setup &gt; Printing &gt; Letter Head &gt; New Letter Head\n"
 "		"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "This is how the letter head looks in a document print:"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Address Template"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Each region has its own way of defining Addresses. To manage multiple address formats for your Documents (like Quotation, Purchase Invoice etc.), you can create country-wise Address Templates."
 msgstr ""
 
-msgid ""
-"\n"
+#. Tag: programlisting
+#, no-c-format
+msgid "\n"
 "		Setup &gt; Printing and Branding &gt; Address Template\n"
 "		"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "A default Address Template is created when you setup the system. You can either edit or update it or create a new template."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "One template is default and will apply to all countries that do not have an specific template."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "<emphasis role=\"Bold\">Template</emphasis>"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The templating engine is based on HTML and the Jinja Templating system and all the fields (including Custom Fields) will be available for creating the template."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "<emphasis role=\"Bold\">Example</emphasis>"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Terms And Conditions"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Terms and conditions are the general and special arrangements, provisions, requirements, rules, specifications, and standards that a company follows. These specifications are an integral part of an agreement or contract that the company gets into with its customers, suppliers or partners."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Make a new Terms and Conditions"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To setup Terms and Condition master, go to:"
 msgstr ""
 
-msgid ""
-"\n"
+#. Tag: programlisting
+#, no-c-format
+msgid "\n"
 "		Selling &gt; Terms and Condition &gt; New\n"
 "		"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Editing in HTML"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Content of Terms and Condition can be formatted as per your preference, and also insert images where needed. If you have expertise in HTML, you will also find option to edit the content of Terms and Condition in HTML."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "This also allows you to use Terms and Condition master for footer, which otherwise is not availale in ERPNext as dedicated functionality. Since contents of Terms and Condition is always the last to appear in the print format, details of footer should be inserted at the end of the content, so that it actually appears as footer in the print format."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Select in Transaction"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "In transactions, you will find section of Terms and Condition where you will be able to search and fetched required Terms and Condition master."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Setting Up Taxes"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "One of the primary motivator for compulsory use of accounting tools is calculation of Taxes. You may or may not make money but your government will (to help your country be safe and prosperous). And if you don’t calculate your taxes correctly, they get very unhappy. Ok, philosophy aside, ERPNext allows you to make configurable tax templates that you can apply to your sales or purchase."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Tax Accounts: For Tax Accounts that you want to use in the tax templates, you must go to Chart of Accounts and mention them as type “Tax” in your Chart of Item."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Item Tax: If some of your Items require different tax rates as compared to others, mention them in the Item tax table. Even if you have selected your sales and purchase taxes as default tax rates, the system will pull the Item tax rate for calculations. Item tax will get preference over other sales or purchase taxes. However, if you wish to apply default sales and purchase taxes, do not mention item tax rates in the Item master. The system will then select the sales or purchase tax rate specified by you as default rates."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Inclusive and Exclusive Tax: ERPNext allows you to enter Item rates which are tax inclusive."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Exception to the rule: Item tax settings are required only if a particular Item has a different tax rate than the rate defined in the standard tax Account"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Item tax is overwrite-able: You can overwrite or change the item tax rate by going to the Item master in the Item tax table."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Sales Taxes and Charges Master"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You must usually collect taxes from your Customer and pay them to the government. At times, you may have to pay multiple taxes to multiple government bodies like local government, state or provincial and federal or central government."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The way ERPNext sets up taxes is via templates. Other types of charges that may apply to your invoices (like shipping, insurance etc.) can also be configured as taxes."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Select template and modify as per your need."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To create a new sales tax template called Sales Taxes and Charges Master, you have to go to:"
 msgstr ""
 
-msgid ""
-"\n"
+#. Tag: programlisting
+#, no-c-format
+msgid "\n"
 "	Setup &gt; Accounts &gt; Sales Taxes and Charge Master\n"
 "	"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "When you create a new master, you will have to add a row for each tax type."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The tax rate you define here will be the standard tax rate for all Items. If there are Items that have different rates, they must be added in the Item Tax table in the Item master."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "In each row, you have to mention:"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Calculation Type:"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "On Net Total : This can be on net total (total amount without taxes)."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "On Previous Row Total/Amount: You can apply taxes on previous row total / amount. If you select this option, the tax will be applied as a percentage of the previous row (in the tax table) amount or total. Previous row amount means a particular tax amount.And, previous row total means net total plus taxes applied up to that row. In the Enter Row Field, mention row number on which you want to apply the current tax. If you want to apply the tax on the 3rd row, mention \"3\" in the Enter Row field."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Actual : Enter as per actual amount in rate column."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Account Head: The Account ledger under which this tax will be booked"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Cost Center: If the tax / charge is an income (like shipping) it needs to be booked against - a Cost Center."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Description: Description of the tax (that will be printed in invoices / quotes)."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Rate: Tax rate."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Amount: Tax amount."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Total: Cumulative total to this point"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Enter Row: If based on \"Previous Row Total\" you can select the row number which will be taken as a base for this calculation (default is the previous row)."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Is this Tax included in Basic Rate?: If you check this, it means that this tax will not be shown below the item table, but will be included in the rate in your main item table. This is useful when you want to give a flat price (inclusive of all taxes) to your customers."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Once you setup your template, you can select this in your sales transactions."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Purchase Taxes and Charges Master"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Similar to your Sales Taxes and Charges Master is the Purchase Taxes and Charges Master."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "This is the tax template that you can use in your Purchase Orders and Purchase Invoices. If you have value added taxes (VAT), where you pay to the government the difference between your incoming and outgoing taxes, you can select the same Account that you use for sales taxes. For more details see Purchase Taxes."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The columns in this table are similar to the Sales Taxes and Charges Master with the difference as follows:"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Consider Tax or Charge for: In this section you can specify if the tax / charge is only for valuation (not a part of total) or only for total (does not add value to the item) or for both."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "POS Setting"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "POS includes advanced features to cater to different functionality, such as inventory management, CRM, financials, warehousing, etc., all built into the POS software. Prior to the modern POS, all of these functions were done independently and required the manual re-keying of information, which could lead to entry errors."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "If you are in retail operations, you want your Point of Sale to be as quick and efficient as possible. To do this, you can create a POS Setting for a user from:"
 msgstr ""
 
-msgid ""
-"\n"
+#. Tag: programlisting
+#, no-c-format
+msgid "\n"
 "	Accounts &gt; Point-of-Sale Setting\n"
 "	"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Set default values as defined."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "If you specify a particular User, the POS setting will be applied only to that User. If the User option is left blank, the setting will be set for all users. To understand POS in detail visit Point of Sale"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Price List"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "ERPNext lets you maintain multiple selling and buying prices for an Item using Price Lists. A PriceList is a name you can give to a set of Item prices."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Why would you want Price Lists? You have different prices for different zones (based on the shipping costs), for different currencies etc."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "An Item can have multiple prices based on customer, currency, region, shipping cost etc, which can be stored as different rate plans. In ERPNext, you are required to store all the lists separately. Buying Price List is different from Selling Price List and thus is stored separately."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Standard Buying and Selling Price List are created by default."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "<emphasis role=\"Bold\">Step to create Price List.</emphasis>"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Step 1: Go to"
 msgstr ""
 
-msgid ""
-"\n"
+#. Tag: programlisting
+#, no-c-format
+msgid "\n"
 "	Selling/Buying/Stock &gt; Setup &gt; Price List &gt;&gt; New\n"
 "	"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Step 2: Enter name of new Price List."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Step 3: Select Currency"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Select Currency for this Price List. Currency option in Price List allows you to maintain item's price in Currency other than your companies base currency."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Step 4: Select Buying and Selling"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Select for which transaction this Price List is application. Mostly it will be one of the Buying or Selling, however you can choose both as well."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Step 5: Select Territory"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Select Territory for which this Price List will be applicable."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Step 6: Save Price List."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "These Price List will be used when creating Item Price record to track selling or buying price of an item. Click here to learn more about Item Price."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To disable specific Price List, uncheck Enabled field in it. Disabled Price List will not be availale for selection in the Sales and Purchase transactions."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Authorization Rule"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Authorization Rule is a tool to define rule for conditional authorization."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "If you sales and purchase transactions of higher value or discount requires an authorization from senior manager, you can set authorization rule for it. To create new Authorization Rule, go to:"
 msgstr ""
 
-msgid ""
-"\n"
+#. Tag: programlisting
+#, no-c-format
+msgid "\n"
 "	Setup &gt;&gt; Customize &gt;&gt; Authorization Rule\n"
 "	"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "SMS Setting"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To integrate SMS in ERPNext, approach a SMS Gateway Provider who provides HTTP API. They will create an account for you and will provide an unique username and password."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To configure SMS Settings in ERPNext, find out their HTTP API (a document which describes the method of accessing their SMS interface from 3rd party applications). In this document, you will get an URL which is used to send the SMS using HTTP request. Using this URL, you can configure SMS Settings in ERPNext."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Note: the string up to the \"?\" is the SMS Gateway URL"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Stock Reconciliation For Non Serialized Item"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Stock Reconciliation is the process of counting and evaluating stock-in-trade, usually at an organisations year end in order to value the total stock for preparation of the accounts. In this process actual physical stocks are checked and recorded in the system. The actual stocks and the stock in the system should be in agreement and accurate. If they are not, you can use the stock reconciliation tool to reconcile stock balance and value with actuals."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Difference between Serialized and Non-serialized Items."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "A serial number is a unique, identifying number or group of numbers and letters assigned to an individual Item. Serialized items are generally high value items for which you need to warranty's and service agreements. Mostly items as machinery, equipments and high-value electronics (computers, printers etc.) are serialized."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Non Serialized items are generally fast moving and low value item, hence doesn't need tracking for each unit. Items like screw, cotton waste, other consumables, stationary products can be categorized as non-serialized."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Stock Reconciliation option is available for the non serialized Items only. For seriazlized and batch items, you should create Material Receipt entry in Stock Entry form."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Opening Stocks"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "You can upload your opening stock balance in the system using Stock Reconciliation. Stock Reconciliation will update your stock for a given Item on a given date for a given Warehouse to the given quantity."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Tip: Stock Reconciliation can also be used to update the “value” of an Item. To understand how Items are valued read Valuation."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To perform Stock Reconciliation, go to:"
 msgstr ""
 
+#. Tag: programlisting
+#, no-c-format
 msgid "Stock &gt;&gt; Tools &gt;&gt; Stock Reconciliation &gt;&gt; New Stock Reconciliation\n"
 "	"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Download Template"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "A predefined template of an spreadsheet file should be followed for importing item's stock levels and valuations. Open new Stock Reconciliation form to see download option."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Enter Data in csv file."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Fill the template with the information than you want to update."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "The csv format is case-sensitive. Do not edit the headers which are preset in the template. In the Item Code and Warehouse column, enter exact Item Code and Warehouse as created in your ERPNext account. For quatity, enter stock level you wish to set for that item, in a specific warehouse. If you do not want to change the quantity or valuation rate of an Item, you should leave it blank."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Note: Make sure you do not put zero if you do not want to change the quantity amount or valuation amount. The system will calculate zero as zero quantity. So leave the field blank."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Upload file and Enter Values in Stock Reconciliation Form"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Save and upload your .csv file"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Posting Date: Posting Date will be date when you want uploaded stock to reflect in the report. Posting Date selection option allows you making back dated stock reconcialiation as well."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Difference Account: When making Stock Reconciliation for updating opening balance, then you should select Balance Sheet account. Bydefault Temporary Asset and Temporary Liability Account are created in the chart of account which can be used here. Since Warehouse ledger is debit account, Difference Account selected here should be \"Temporary Liability Account\", which is credit account."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "If you are making Stock Reconciliation for correcting stock level or valuation of an item, then you can select any expense account in which you would want difference amount (derived from difference of valuation of item) should be booked. If Expense Account is selected as Difference Account, you will also need to select Cost Center as it is mandatory with any income and expense account selection."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "After reviewing saved Reconciliation Data, submit the Stock Reconciliation. On successful submission, the data will be updated in the system. To check the submitted data go to stock and view stock level report."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Note: While filling the valuation rates of Items, if you wish to find out the valuation rates of all items, you can go to stock and click on Item Prices report. The report will show you all types of rates."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Review the reconciliation data"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Verify your information."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Territory"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "Territory is a place to signify where your customers come from. If you operate in one country, you can give that country name as your Territory. For Example, India, US, or Rest of the World, could be your Territories. If you operate in many locations, ERPNext allows you to create more Territories. You can also have child Territories under parent Territories. This helps in assigning different regions to different sales staff."
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "To add more territories to an existing tree, click on \"Add Child\""
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Third Party Backups"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "If you wish to store your backups on a periodic basis,on Dropbox, you can do it directly through ERPNext."
 msgstr ""
 
+#. Tag: programlisting
+#, no-c-format
 msgid "Setup &gt; Manage 3rd Party Backups\n"
 "	"
 msgstr ""
 
+#. Tag: title
+#, no-c-format
 msgid "Workflows"
 msgstr ""
 
+#. Tag: para
+#, no-c-format
 msgid "In order to allow multiple people to submit multiple requests, for approvals, by multiple users, ERPNext requires you to fill the workflow conditions. ERPNext tracks the multiple permissions before submission."
 msgstr ""
 

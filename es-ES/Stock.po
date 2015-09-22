@@ -1,60 +1,89 @@
+# William Moreno Reyes <william>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2015-04-22 17:50-0600\n"
-"PO-Revision-Date: 2015-04-22 17:50-0600\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: None\n"
-"Language: en-US \n"
+"PO-Revision-Date: 2015-07-06 20:58-0600\n"
+"Last-Translator: William Moreno Reyes <william>\n"
+"Language-Team: william\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Publican v4.2.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
 
 msgid "Stock"
-msgstr ""
+msgstr "Inventario"
 
 msgid "For most small business that deal in physical goods, a large part of their net worth is invested in the stock in hand."
 msgstr ""
+"Para pequeñas entidades que lidian con inventarios de bienes, una gran parte "
+"de su capital neto esta invertido en inventarios."
 
 msgid "There are three main types of entries:"
-msgstr ""
+msgstr "Hay tres tipos principales de movimientos de inventarios:"
 
 msgid "Purchase Receipt: Items received from Suppliers against Purchase Orders."
 msgstr ""
+"Orden de Compra: Artículos recibidos de un Proveedor contra una Orden de "
+"Compra."
 
 msgid "Stock Entry: Items transferred from one Warehouse to another."
-msgstr ""
+msgstr "Entrada de Inventario: Artículos transferidos de un Almacén a otro."
 
 msgid "Delivery Note: Items shipped to Customers."
-msgstr ""
+msgstr "Nota de Envió: Artículos enviados a los Clientes."
 
 msgid "Tracking stock is not just about adding and subtracting quantities. Some complications arise when:"
 msgstr ""
+"Llevar control del inventario no es sumar y restar cantidades. Existen "
+"algunas complicaciones cuando:"
 
 msgid "Back-dated (past) entries are made / edited: This affects future stock levels and may lead to negative stock."
 msgstr ""
+"Se realizan o editan transacciones de fechas anteriores: Esto afecta los "
+"niveles de inventario futuros y puede ocasionar inventarios negativos."
 
 msgid "Stock has to be valued based on First-in-First-out: ERPNext needs to maintain a sequence of all transactions to know the exact value of your Items."
 msgstr ""
+"Inventario valuado en base a Primeras Entradas Primeras Salidas: ERPNext "
+"necesita mantener una secuencia de todas las transacciones para conocer el "
+"costo exacto de cada Artículo."
 
 msgid "Stock reports are required at any point in time in the past: You have to lookup what was the quantity / value your stock of Item X on date Y."
 msgstr ""
+"Reportes de inventarios son requeridos para cualquier fecha anterior. Hay "
+"que determinar que cantidad/precio de inventario existe para el producto X "
+"en la fecha Y."
 
 msgid "To manage this, ERPNext collects all inventory transactions in a table called the Stock Ledger Entry. All Purchase Receipts, Stock Entries and Delivery Notes update this table."
 msgstr ""
+"Para manejar esta situación, ERPNect registra todos los movimientos de "
+"inventarios en una tabla denominada Libro Mayor de Inventario. Todas las "
+"Ordenes de Compra, Entradas de Almacén y Notas de Envio se registran en esta "
+"tabla."
 
 msgid "Item Master"
-msgstr ""
+msgstr "Maestro de Artículos"
 
 msgid "An Item is your companys' product or a service. The term Item is applicable to your core products as well as your raw materials. It can be a product or service that you buy/sell from your customers/ suppliers. ERPNext allows you to manage all sorts of items like raw-materials, sub-assemblies, finished goods, item variants and service items."
 msgstr ""
+"Un Artículo en un producto o servicio de su compañía. El termino Artículo se "
+"refiere tanto a sus productos materiales como a sus materias primas. Puede "
+"ser un bien que compra/vende a sus proveedores/clientes. ERPNext le permite "
+"administrar toda clase de productos como materias primas, piezas, artículos "
+"para la venta, variantes y servicios."
 
 msgid "ERPNext is optimized for itemized management of your sales and purchase. If you are in services, you can create an Item for each services that your offer. Completing the Item Master is very essential for successful implementation of ERPNext."
 msgstr ""
+"ERPNext esta optimizada para una administración de sus compras y ventas en "
+"base a Artículos, puede crear un Artículo par cada servicio que preste. "
+"Completar el Maestro de Artículos es esencial para un implementación exitosa "
+"de ERPNext."
 
 msgid "Item Codification"
-msgstr ""
+msgstr "Codificación de Artículos"
 
 msgid "If you already have a full-fledged business with a number of physical items, you would have probably coded your items. If you have not, you have a choice. We recommend that you should codify if you have lot of products with long or complicated names. In case you have few products with short names, it is preferable to keep the Item Code same as Item Name."
 msgstr ""
@@ -224,6 +253,128 @@ msgstr ""
 msgid "In stock transactions, Batch IDs will be filtered based on Item Code, Warehouse, Batch Expiry Date (compared with Posting date of a transaction) and Actual Qty in Warehouse. While searching for Batch ID without value in Warehouse field, then Actual Qty filter won't be applied."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
+msgid "Material Request"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A Material Request is a simple document identifying a requirement of a set of Items (products or services) for a particular reason. To generate a Material Request manually go to:"
+msgstr ""
+
+#. Tag: programlisting
+#, no-c-format
+msgid " Stock &gt; Documents &gt; Material Request &gt; New"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Automatically from a Sales Order."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Automatically when the Projected Quantity of an Item in stores reaches a particular level."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Automatically from your Bill of Materials if you use Production Plan to plan your manufacturing activities."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "If your Items are inventory items, you must also mention the Warehouse where you expect these Items to be delivered. This helps to keep track of the Projected Quantity for this Item."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "A Material Request can be of type:"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Purchase - If the request material is to be purchased."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Material Transfer - If the requested material is to be shifted from one warehouse to another."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "AMaterial Issue - If the requested material is to be Issued."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Material Request is not mandatory. It is ideal if you have centralized buying so that you can collect this information from various departments."
+msgstr ""
+
+msgid "Stock Entry"
+msgstr ""
+
+msgid "A Stock Entry is a simple document that lets you record Item movement from a Warehouse, to a Warehouse and between Warehouses. To make a Stock Entry you have to go to:"
+msgstr ""
+
+msgid "Stock &gt; Stock Entry &gt; New"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Material Issue - If the material is being issued. (Outgoing Material)"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Material Receipt - If the material is being received. (Incoming Material)"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Material Transfer - If the material is being moved from one warehouse to another."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Material Transfer for Manufacturing - If the material being transfered is for Manufacturing Process."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Manufacture - If the Material is being received from a Manufacturing/Production Operation."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Repack - If the Original item/items is being repacked into new item/items."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Subcontract - If the Material is being issued for a sub-contract activity."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Sales Return - If the Material that was sold was returned by the customer."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Purchase Return - If you have returned a material supplied by a supplier."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "In the Stock Entry you have to update the Items table with all your transactions. For each row, you must enter a “Source Warehouse” or a “Target Warehouse” or both (if you are recording a movement)."
+msgstr ""
+
+msgid "To update Stock from a spreadsheet, see Stock Reconciliation."
+msgstr ""
+
 msgid "Purchase Receipt"
 msgstr ""
 
@@ -258,6 +409,21 @@ msgstr ""
 msgid "If your Purchase Order for an Item is in a different Unit of Measure (UOM) than what you stock (Stock UOM), then you will need to update the “UOM Conversion Factor”."
 msgstr ""
 
+#. Tag: title
+#, no-c-format
+msgid "Stock UOM Replace Utility"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "This tool will help you to change the UOM (Unit of measurement) of an existing Item."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "You need to select an Item, system fetches the Existing UOM of that item. You can then select the new UOM for that item +and specify the conversion factor."
+msgstr ""
+
 msgid "Currency Conversions"
 msgstr ""
 
@@ -286,6 +452,16 @@ msgid "Adding value to your Items post Purchase Receipt:"
 msgstr ""
 
 msgid "Some times, certain expenses that add value to your purchased Items are known only after a while. Common example is, if you are importing the Items, you will come to know of Customs Duty etc only when your “Clearing Agent” sends you a bill. If you want to attribute this cost to your purchased Items, you will have to use the Landed Cost Wizard. Why “Landed Cost”? Because it represents the charges that you paid when it landed in your possession."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Installation Note"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "You can use installation note to record the instalation of a product having a serial number."
 msgstr ""
 
 msgid "Delivery Note"
@@ -335,12 +511,6 @@ msgstr ""
 msgid "A Stock Ledger Entry is made for each Item and stock is updated. Pending Quantity in the Sales Order is updated (if applicable)."
 msgstr ""
 
-msgid "Stock Entry"
-msgstr ""
-
-msgid "A Stock Entry is a simple document that lets you record Item movement from a Warehouse, to a Warehouse and between Warehouses. To make a Stock Entry you have to go to:"
-msgstr ""
-
 msgid "Stock &gt; Stock Entry\n"
 "	"
 msgstr ""
@@ -360,17 +530,13 @@ msgstr ""
 msgid "We will look into the special features of the Stock Entry later when we discuss Accounting and Manufacturing processes. In the Stock Entry you have to update the Items table with all your transactions. For each row, you must enter a “Source Warehouse” or a “Target Warehouse” or both (if you are recording a movement)."
 msgstr ""
 
-msgid "To update Stock from a spreadsheet, see Stock Reconciliation."
-msgstr ""
-
 msgid "Material Issue"
 msgstr ""
 
 msgid "A Warehouse stocks materials required for manufacturing or trading. The Material Issue form has to be submitted to order materials out of a Warehouse by any department."
 msgstr ""
 
-msgid "Stock &gt; Stock Entry &gt; New Stock Entry\n"
-"	"
+msgid "Stock &gt; Stock Entry &gt; New"
 msgstr ""
 
 msgid "Go to Stock Entry. Click on New Stock Entry Select the option “Material Issue” under Purpose. Provide Source Warehouse details. Provide the BOM Number. Save"
@@ -545,8 +711,7 @@ msgstr ""
 msgid "In perpetual inventory, the system will maintain seperate account balance for each warehouse under separate account head. To create that account head, enter \"Create Account Under\" in Warehouse master."
 msgstr ""
 
-#, fuzzy
-msgid "Migrate To Perpetual Inventory"
+msgid "Activate Perpetual Inventory"
 msgstr ""
 
 msgid "Setup &gt; Accounts Settings &gt; Make Accounting Entry For Every Stock Movement\n"
@@ -562,8 +727,7 @@ msgstr ""
 msgid "At the end of an accounting period, the total value of items to be sold, need to be booked as the company’s assets, often known as stock-in-hand. The difference between the value of the items remaining to be sold and the previous period’s stock-in-hand value can be positive or negative. If positive, this value is removed from expenses (cost-of-goods-sold) and is added to assets (stock-in-hand / fixed-assets). If negative, a reverse entry is passed. This complete process is called Periodic Inventory. If you are an existing user using Periodic Inventory and want to use Perpetual Inventory, you have to follow some steps to migrate."
 msgstr ""
 
-#, fuzzy
-msgid "Migrate To Perpetual Inventory"
+msgid "Activate Perpetual Inventory"
 msgstr ""
 
 msgid "Existing Users, need to follow some steps to activate the new Perpetual Inventory system. As Perpetual Inventory always maintains a sync between stock and account balance, it is not possible to enable it with existing Warehouse setup. You have to create a whole new set of Warehouses, each linked to relevant account."
@@ -683,4 +847,3 @@ msgstr ""
 
 #~ msgid "Best Practices"
 #~ msgstr ""
-

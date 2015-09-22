@@ -146,7 +146,8 @@ msgstr "Cuando se registra una venta (devengo):"
 msgid "Debit: Customer (grand total) Credit: Income (net total, minus taxes for each Item) Credit: Taxes (liabilities to be paid to the government)"
 msgstr "Débito: Cliente (Gran Total) Crédito: Ingreso (Total Neto: Menos impuestos para cada Articulo) Crédito: Impuestos (Cuentas por pagar al estado)"
 
-msgid "To see entries in your Sales Invoice after you “Submit”, click on “View Ledger”."
+#, fuzzy
+msgid "To see entries in your Purchase Invoice after you “Submit”, click on “View Ledger”."
 msgstr "Para ver los registros de su Factura de Proveedor después de \"Presentar\", clic en \"Ver Registros\"."
 
 msgid "Dates"
@@ -204,7 +205,8 @@ msgstr "La Factura de Compra afectara sus cuentas como se detalla a continuació
 msgid "Accounting entries (GL Entry) for a typical double entry “purchase”:"
 msgstr "Registros Contables (Entradas del Libro Mayor) de un registro tipico por partida doble de una \"compra\":"
 
-msgid "Debits:"
+#, fuzzy
+msgid "Debits"
 msgstr "Debitos:"
 
 msgid "Expense or Asset (net totals, excluding taxes)"
@@ -213,13 +215,15 @@ msgstr "Gasto o Activo (Total Neto, excluyendo impuestos)"
 msgid "Taxes (assets if VAT-type or expense again)."
 msgstr "Impuestos (impuestos de tipo IVA)."
 
-msgid "Credits:"
+#, fuzzy
+msgid "Credits"
 msgstr "Creditos:"
 
 msgid "Supplier"
 msgstr "Proveedor"
 
-msgid "To see entries in your Sales Invoice after you “Submit”, click on “View Ledger”."
+#, fuzzy
+msgid "To see entries in your Purchase Invoice after you “Submit”, click on “View Ledger”."
 msgstr "Para ver los registros de su Factura de Proveedor después de \"Presentar\", clic en \"Ver Registros\"."
 
 msgid "Is purchase an “Expense” or an “Asset”?"
@@ -282,7 +286,8 @@ msgstr ""
 msgid "Debit: Supplier"
 msgstr ""
 
-msgid "Credit: Bank or Cash Account"
+#, fuzzy
+msgid "Credit: Bank or Cash Account."
 msgstr ""
 
 msgid "Reconciling Cheque Payments"
@@ -294,8 +299,7 @@ msgstr ""
 msgid "To use this, go to:"
 msgstr ""
 
-#, fuzzy
-msgid "Accounts &gt; Tools &gt; Payment Reconciliation\n"
+msgid "Accounts &gt; Tools &gt; Bank Reconciliation\n"
 "		"
 msgstr ""
 
@@ -341,8 +345,7 @@ msgstr ""
 msgid "In such cases, you can use the Payment to Invoice Matching Tool."
 msgstr ""
 
-#, fuzzy
-msgid "Accounts &gt; Tools &gt; Payment Reconciliation\n"
+msgid "Accounts &gt; Tools &gt; Bank Reconciliation\n"
 "		"
 msgstr ""
 
@@ -419,7 +422,8 @@ msgstr ""
 msgid "Against Voucher: Link it to a voucher or invoice if it affects the “outstanding” amount of that invoice."
 msgstr ""
 
-msgid "Is Advance: Select “Yes” if you want to make it selectable in an Invoice. Other information in case it is a Bank Payment or a bill."
+#, fuzzy
+msgid "Is Advance: Select “Yes” if you want to make it selectable in an Invoice.  Other information in case it is a Bank Payment or a bill."
 msgstr ""
 
 msgid "Difference: The “Difference” field is the difference between the Debit and Credit amounts. This should be zero if the Journal Voucher is to be “Submitted”. If this number is not zero, you can click on “Make Difference Entry” to add a new row with the amount required to make the total as zero."
@@ -440,7 +444,8 @@ msgstr ""
 msgid "Debit: Expense Account (like Telephone expense)."
 msgstr ""
 
-msgid "Credit: Bank or Cash Account"
+#, fuzzy
+msgid "Credit: Bank or Cash Account."
 msgstr ""
 
 msgid "Bad Debts or Write Offs"
@@ -483,7 +488,8 @@ msgstr ""
 msgid "In the field Credit Controller, select the role who would be authorized to accept orders or raise credit limits of customers."
 msgstr ""
 
-msgid "Openning Entry"
+#, fuzzy
+msgid "The Opening Entry"
 msgstr ""
 
 msgid "If you are a new company you can start using ERPNext accounting module by going to chart of accounts."
@@ -531,7 +537,8 @@ msgstr ""
 msgid "A nice way to simplify opening is to use a temporary account just for opening. These accounts will become zero once all your old invoices and opening balances of bank, debt stock etc are entered. In the standard chart of accounts, a Temperory Opening account is created under assets"
 msgstr ""
 
-msgid "Openning Entry"
+#, fuzzy
+msgid "The Opening Entry"
 msgstr ""
 
 msgid "In ERPNext Opening Accounts are setup by submitting a special Journal Entries (Journal Voucher)."
@@ -644,10 +651,12 @@ msgstr ""
 msgid "Opening"
 msgstr ""
 
-msgid "Debits:"
+#, fuzzy
+msgid "Debits"
 msgstr "Debitos:"
 
-msgid "Credits:"
+#, fuzzy
+msgid "Credits"
 msgstr "Creditos:"
 
 msgid "Closing"
@@ -662,7 +671,8 @@ msgstr ""
 msgid "Sales and Purchase Register: In this report, each tax Account is transposed in columns. For each Invoice and invoice Item, you will get the amount of individual tax that has been paid, based on the Taxes and Charges table."
 msgstr ""
 
-msgid "Bank Reconciliation"
+#, fuzzy
+msgid "Bank Reconciliation Tool"
 msgstr ""
 
 msgid "A Bank Reconciliation is a process that explains the difference between the bank balance shown in an organisation's bank statement, as supplied by the bank, and the corresponding amount shown in the organisation's own accounting records at a particular point in time."
@@ -677,7 +687,8 @@ msgstr ""
 msgid "To add clearance entries go to:"
 msgstr ""
 
-msgid "Bank Reconciliation"
+#, fuzzy
+msgid "Bank Reconciliation Tool"
 msgstr ""
 
 msgid "The Bank Reconciliation tool in ERPNext, helps add clearance dates to the account statements. To Reconcile cheque payments go to Accounts and click on Bank Reconciliation."
@@ -698,7 +709,8 @@ msgstr ""
 msgid "Step 5: Click on the button 'Update Clearance Date'."
 msgstr ""
 
-msgid "Budgetting"
+#, fuzzy
+msgid "Budgeting"
 msgstr ""
 
 msgid "ERPNext will help you set and manage budgets on your Cost Centers. This is useful when, for example, you are doing online sales. You have a budget for search ads, and you want ERPNext to stop or warn you from over spending, based on that budget."
@@ -872,7 +884,8 @@ msgstr ""
 msgid "Cost centers help you in one more activity, budgeting."
 msgstr ""
 
-msgid "Budgetting"
+#, fuzzy
+msgid "Budgeting"
 msgstr ""
 
 msgid "Budgets are also great for planning purposes. When you are making plans for the next financial year, you would typically target a revenue based on which you would set your expenses. Setting a budget will ensure that your expenses do not get out of hand, at any point, as per your plans."
@@ -1022,7 +1035,8 @@ msgstr ""
 msgid "In your Items table, update inventory information like Warehouse (saved as default), Serial Number, or Batch Number if applicable."
 msgstr ""
 
-msgid "Update Payment Details like your Bank / Cash Account, Paid amount etc."
+#, fuzzy
+msgid "Update Payment Details like your Bank / Cash Account, Paid amount etc. "
 msgstr ""
 
 msgid "If you are writing off certain amount. For example when you receive extra cash as a result of not having exact denomination of change, check on ‘Write off Outstanding Amount’ and set the Account."
@@ -1115,9 +1129,9 @@ msgstr ""
 #~ msgid "Accounting Entries"
 #~ msgstr ""
 
-#~ msgid "Item"
+#~ msgid "Text"
 #~ msgstr ""
 
-#~ msgid "Text"
+#~ msgid "Item"
 #~ msgstr ""
 

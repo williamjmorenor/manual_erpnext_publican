@@ -219,6 +219,63 @@ We believe if you do this small investment, it will help you rationalize things 
 	In stock transactions, Batch IDs will be filtered based on Item Code, Warehouse, Batch Expiry Date (compared with Posting date of a transaction) and Actual Qty in Warehouse. While searching for Batch ID without value in Warehouse field, then Actual Qty filter won't be applied.
 	</para>
 	</sect1>
+	<sect1>
+	<title>Material Request</title>
+	<para>
+	A Material Request is a simple document identifying a requirement of a set of Items (products or services) for a particular reason. To generate a Material Request manually go to:
+	</para>
+	<programlisting> Stock > Documents > Material Request > New</programlisting>
+	<para>
+	<itemizedlist>
+	<listitem><para>Automatically from a Sales Order.</para></listitem>
+	<listitem><para>Automatically when the Projected Quantity of an Item in stores reaches a particular level.</para></listitem>
+	<listitem><para>Automatically from your Bill of Materials if you use Production Plan to plan your manufacturing activities.</para></listitem>
+	<listitem><para>If your Items are inventory items, you must also mention the Warehouse where you expect these Items to be delivered. This helps to keep track of the Projected Quantity for this Item.</para></listitem>
+	</itemizedlist>
+	</para>
+	<para>
+	A Material Request can be of type:
+	</para>
+	<para>
+	<itemizedlist>
+	<listitem><para>Purchase - If the request material is to be purchased.</para></listitem>
+	<listitem><para>Material Transfer - If the requested material is to be shifted from one warehouse to another.</para></listitem>
+	<listitem><para>AMaterial Issue - If the requested material is to be Issued.</para></listitem>
+	</itemizedlist>
+	</para>
+	<note>
+	<para>Material Request is not mandatory. It is ideal if you have centralized buying so that you can collect this information from various departments.</para>
+	</note>
+	</sect1>
+	<sect1>
+	<title>Stock Entry</title>
+	<para>
+	A Stock Entry is a simple document that lets you record Item movement from a Warehouse, to a Warehouse and between Warehouses. To make a Stock Entry you have to go to:
+	</para>
+	<programlisting>Stock > Stock Entry > New</programlisting>
+	<para>
+	Stock > Stock Entry > New
+	</para>
+	<para>
+	<itemizedlist>
+	<listitem><para>Material Issue - If the material is being issued. (Outgoing Material)</para></listitem>
+	<listitem><para>Material Receipt - If the material is being received. (Incoming Material)</para></listitem>
+	<listitem><para>Material Transfer - If the material is being moved from one warehouse to another.</para></listitem>
+	<listitem><para>Material Transfer for Manufacturing - If the material being transfered is for Manufacturing Process.</para></listitem>
+	<listitem><para>Manufacture - If the Material is being received from a Manufacturing/Production Operation.</para></listitem>
+	<listitem><para>Repack - If the Original item/items is being repacked into new item/items.</para></listitem>
+	<listitem><para>Subcontract - If the Material is being issued for a sub-contract activity.</para></listitem>
+	<listitem><para>Sales Return - If the Material that was sold was returned by the customer.</para></listitem>
+	<listitem><para>Purchase Return - If you have returned a material supplied by a supplier.</para></listitem>
+	</itemizedlist>
+	</para>
+	<para>
+	In the Stock Entry you have to update the Items table with all your transactions. For each row, you must enter a “Source Warehouse” or a “Target Warehouse” or both (if you are recording a movement).
+	</para>
+	<note>
+	<para>To update Stock from a spreadsheet, see Stock Reconciliation.</para>
+	</note>
+	</sect1>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Stock-Purchase">
 	<title>Purchase Receipt</title>
 	<para>
@@ -253,6 +310,16 @@ We believe if you do this small investment, it will help you rationalize things 
 			</para>
 		</sect2>
 		<sect2>
+		<title>Stock UOM Replace Utility</title>
+		<para>
+		This tool will help you to change the UOM (Unit of measurement) of an existing Item.
+		</para>
+		<para>
+		You need to select an Item, system fetches the Existing UOM of that item. You can then select the new UOM for that item 
++and specify the conversion factor.
+		</para>
+		</sect2>
+		<sect2>
 			<title>Currency Conversions</title>
 			<para>
 			Since the incoming Item affects the value of your inventory, it is important to convert it into your base Currency, if you have ordered in another Currency. You will need to update the Currency Conversion Rate if applicable.
@@ -282,6 +349,12 @@ We believe if you do this small investment, it will help you rationalize things 
 			Some times, certain expenses that add value to your purchased Items are known only after a while. Common example is, if you are importing the Items, you will come to know of Customs Duty etc only when your “Clearing Agent” sends you a bill. If you want to attribute this cost to your purchased Items, you will have to use the Landed Cost Wizard. Why “Landed Cost”? Because it represents the charges that you paid when it landed in your possession.
 			</para>
 		</sect2>
+	</sect1>
+	<sect1>
+	<title>Installation Note</title>
+	<para>
+	You can use installation note to record the instalation of a product having a serial number.
+	</para>
 	</sect1>
 	<sect1 id="sect1-ERPNext-Manual_ERPNext-Stock-Delivery">
 	<title>Delivery Note</title>

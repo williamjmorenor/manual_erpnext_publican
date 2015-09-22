@@ -69,10 +69,12 @@ msgstr ""
 msgid "Select the Item for which you want to make the BOM."
 msgstr ""
 
-msgid "Add the operations that you have to go through to make that particular Item in the “Operations” table. For each operation, you will be asked to enter a Workstation. You must create new Workstations as and when necessary."
+#, fuzzy
+msgid "Add the operations that you have to go through to make that particular Item in the “Operations” table. For each operation, you will be asked to enter a Workstation. You must create new Workstations as and when necessary. "
 msgstr ""
 
-msgid "Add the list of Items you require for each operation, with its quantity. This Item could be a purchased Item or a sub-assembly with its own BOM. If the row Item is a manufactured Item and has multiple BOMs, select the appropriate BOM. You can also define if a part of the Item goes into scrap."
+#, fuzzy
+msgid "Add the list of Items you require for each operation, with its quantity. This Item could be a purchased Item or a sub-assembly with its own BOM. If the row Item is a manufactured Item and has multiple BOMs, select the appropriate BOM.   You can also define if a part of the Item goes into scrap."
 msgstr ""
 
 msgid "Workstations are defined only for product costing and Production Order Operations scheduling purposes not inventory. Inventory is tracked in Warehouses not Workstations."
@@ -106,7 +108,8 @@ msgstr ""
 msgid "Step 2: Get Item from Sales Orders. You can add/remove or change quantity of these Items."
 msgstr ""
 
-msgid "Step 3: Create Production Orders."
+#, fuzzy
+msgid "Create Production Order:"
 msgstr ""
 
 msgid "Step 4: Create Material Request. Create Material Request for Items with projected shortfall."
@@ -137,7 +140,8 @@ msgid "Manufacturing &gt; Production Order &gt; New Production Order\n"
 "		"
 msgstr ""
 
-msgid "Step 3: Create Production Orders."
+#, fuzzy
+msgid "Create Production Order:"
 msgstr ""
 
 msgid "Select the Item to be produced (must have a Bill of Materials)."
@@ -318,9 +322,9 @@ msgstr ""
 msgid "Small manufacturing companies are usually make-to-order or engineer-to-order and can hardly afford to have a high level of standardization. Thus small manufacturing businesses should aim for repeatability by innovating processes and creating a common platform for products."
 msgstr ""
 
-#~ msgid "MRP"
+#~ msgid "Text"
 #~ msgstr ""
 
-#~ msgid "Text"
+#~ msgid "MRP"
 #~ msgstr ""
 

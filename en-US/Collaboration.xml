@@ -3,111 +3,90 @@
 %BOOK_ENTITIES;
 ]>
 <chapter id="chap-ERPNext-Manual_ERPNext-Collaboration">
-	<title>Collaboration Tools</title>
-	<para>
-	We live in an era when people are very comfortable communicating, discussing, asking, assigning work and getting feedback electronically. The Internet acts as a great medium to collaborate on work too. Taking this concept into ERP system, we have designed a bunch of tools whereby you can Assign transactions, manage your To Dos, share and maintain a Calendar, maintain a company wise Knowledge Base, Tag and Comment on transactions and send your Orders, Invoices etc via Email. You can also send instant messages to other users using the Messaging tool.
-	</para>
-	<para>
-	These tools are integrated into all aspects of the product so that you can effectively manage your data and collaborate with your co-workers.
-	</para>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Collaboration-ToDo">
-		<title>To Do</title>
-		<para>
-		To Do is a simple tool where all the activities assigned to you and assigned by you are listed. You can also add your own to-do items in the list.
-		</para>
-		<para>
-		When task is completed, you should simply remove assignment from the assigned document. With this, task will be removed from your Todo list as well. For Todo which are not assigned via document, you can set their status as Closed from the Todo record itself.
-		</para>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Collaboration-Messages">
-		<title>Messages</title>
-		<para>
-		You can send and receive messages from the system by using the Messages tool. If you send a message to a user, and the user is logged in, it will appear as a popup message and the unread messages counter in the top toolbar will be updated.
-		</para>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Collaboration-Notes">
-		<title>Notes</title>
-		<para>
-		You can store your long notes under this section. It can contain your partner lists, frequently used passwords, terms and conditions, or any other document which needs to be shared. Following are the steps to create new Note. To create a new note, go to:
-		</para>
-		<programlisting>Home > Note > New</programlisting>
-		<note>
-		<para>Notes can also be used as a knowledge base internally. You can also attach file in the Notes, and make it accessible to specific set of users only.</para>
-		</note>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Collaboration-Calendar">
-		<title>Calendar</title>
-		<para>
-		The Calendar is a tool where you can create and share Events and also see auto-generated events from the system. You can switch calender view based on Month, Week and Day.
-		</para>
-		<sect2>
-			<title>Creating Events in Calender</title>
-			<para>
-			There are many options to add events to the calendar
-			</para>
-			<itemizedlist>
-				<listitem>
-					<para>Creating Event Manually: To create event manually, you should first determine Calender View. If Event's start and end time will be within one day, then you should first switch to Day view.</para>
-				</listitem>
-				<listitem>
-					<para>Event Based on Lead: In the Lead form, you will find a field called Next Contact By and Next Contact Date. Event will be auto created for date and person person specified in this field.</para>
-				</listitem>
-				<listitem>
-					<para>Birthday Event: Birthday Event is created based on Date of Birth specified in the Employee master.</para>
-				</listitem>
-				<listitem>
-					<para>Recurring Events: You can set events as recurring in specific interval by Checking the "Repeat This Event".</para>
-				</listitem>
-			</itemizedlist>
-			<sect3>
-				<title>Permission for Event</title>
-				<para>You can set Event as Private or Public. Private Events will be visible only to you, and if any other user selected in the participants table. Instead of User, you can also assign permission for event based on Role. Public Event, like Birthday will be visible to all.</para>
-			</sect3>
-			<sect3>
-				<title>Event Reminders</title>
-				<para>There are two ways you can receive email reminder for an event:</para>
-				<itemizedlist>
-					<listitem>
-						<para>Enable Reminder in Event: In the Event master, checking "Send an email reminder in the morning" will trigger notifcation email to all the participants for this event.</para>
-					</listitem>
-					<listitem>
-						<para>Create Email Digest: To get email reminders for event, you should set Email Digest for Calender Events.
-
-Email Digest can be set from:</para>
-						<programlisting>Setup > Email > Email Digest</programlisting>
-					</listitem>
-				</itemizedlist>
-			</sect3>
-		</sect2>
-	</sect1>
-	<sect1 id="sect1-ERPNext-Manual_ERPNext-Collaboration-Assignment">
-		<title>Assignmet</title>
-		<para>
-		Assign To feature in ERPNext allows you to allocate particular document to specific user, whom needs to further work on that document. For example, if Sales Order needs to be approved/submitted by Sales Manager, first draft user can allocate that Sales Order to Sales Manager. On allocating document to Sales Manager, it will be added to that user's ToDo list. Same way, allocation can also be done to Material User and Account user who needs to create Delivery Note and Sales Invoice respectively against this Sales Note.
-		</para>
-		<important>
-		<para>Permissions restriction cannot be done based on Assigned To</para>
-		</important>
-		<para>
-		Following are the steps to assign document to another user.
-		</para>
-		<para>
-		Step 1: Click on the Assign To Button. Assign to option is located at the footer of document. Clicking on Assignment Icon on the tool bar will fast-forward you to footer of same document.
-		</para>
-		<para>
-		Step 2: Assign to User. In the Assign To section, you will find option to select User to whom this document will be assigned to. You can assign one document to multiple people at a time.
-		</para>
-		<para>
-		With assignment, you can also leave a comment for the review of asignee.
-		</para>
-		<para>
-		User will be able to remove assignment by clicking on "Assignment Completed" button in the document.
-		</para>
-	<sect2 id="ERPNext-Collaboration-Tags">
-		<title>Tags</title>
-		<para>
-		Like Assignments and Comments, you can also add your own tags to each type of transactions. These tags can help you search a document and also classify it. ERPNext will also show you all the important tags in the document list.
-		</para>
-	</sect2>
-	</sect1>
+<title>Collaboration Tools</title>
+<para>We live in an era when people are very comfortable communicating, discussing, asking, assigning work and getting
+	feedback electronically. The Internet acts as a great medium to collaborate on work too. Taking this concept into ERP
+	system, we have designed a bunch of tools whereby you can Assign transactions, manage your To Dos, share and maintain
+	a Calendar, maintain a company wise Knowledge Base, Tag and Comment on transactions and send your Orders, Invoices etc
+	via Email. You can also send instant messages to other users using the Messaging tool.</para>
+<para>These tools are integrated into all aspects of the product so that you can effectively manage your data and collaborate
+	with your co-workers.</para>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Collaboration-ToDo">
+<title>To Do</title>
+<para>To Do is a simple tool where all the activities assigned to you and assigned by you are listed. You can also add your
+	own to-do items in the list.</para>
+<para>When task is completed, you should simply remove assignment from the assigned document. With this, task will be removed
+	from your Todo list as well. For Todo which are not assigned via document, you can set their status as Closed from the Todo
+	record itself.</para>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Collaboration-Messages">
+<title>Messages</title>
+<para>You can send and receive messages from the system by using the Messages tool. If you send a message to a user, and the
+	user is logged in, it will appear as a popup message and the unread messages counter in the top toolbar will be updated.</para>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Collaboration-Notes">
+<title>Notes</title>
+<para>You can store your long notes under this section. It can contain your partner lists, frequently used passwords, terms and
+	conditions, or any other document which needs to be shared. Following are the steps to create new Note. To create a new note,
+	go to:</para>
+<programlisting>Home > Note > New</programlisting>
+<note><para>Notes can also be used as a knowledge base internally. You can also attach file in the Notes, and make it accessible
+	to specific set of users only.</para></note>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Collaboration-Calendar">
+<title>Calendar</title>
+<para>The Calendar is a tool where you can create and share Events and also see auto-generated events from the system. You can
+	switch calender view based on Month, Week and Day.</para>
+<sect2>
+<title>Creating Events in Calender</title>
+<para>There are many options to add events to the calendar</para>
+<itemizedlist>
+<listitem><para>Creating Event Manually: To create event manually, you should first determine Calender View. If Event's start
+	and end time will be within one day, then you should first switch to Day view.</para></listitem>
+<listitem><para>Event Based on Lead: In the Lead form, you will find a field called Next Contact By and Next Contact Date.
+	Event will be auto created for date and person person specified in this field.</para></listitem>
+<listitem><para>Birthday Event: Birthday Event is created based on Date of Birth specified in the Employee master.</para></listitem>
+<listitem><para>Recurring Events: You can set events as recurring in specific interval by Checking the "Repeat This
+	Event".</para></listitem>
+</itemizedlist>
+<sect3>
+<title>Permission for Event</title>
+<para>You can set Event as Private or Public. Private Events will be visible only to you, and if any other user selected in the
+	participants table. Instead of User, you can also assign permission for event based on Role. Public Event, like Birthday will
+	be visible to all.</para>
+</sect3>
+<sect3>
+<title>Event Reminders</title>
+<para>There are two ways you can receive email reminder for an event:</para>
+<itemizedlist>
+<listitem>
+<para>Enable Reminder in Event: In the Event master, checking "Send an email reminder in the morning" will trigger notifcation
+	email to all the participants for this event.</para></listitem>
+<listitem><para>Create Email Digest: To get email reminders for event, you should set Email Digest for Calender Events. Email
+	Digest can be set from:</para><programlisting>Setup > Email > Email Digest</programlisting></listitem>
+</itemizedlist>
+</sect3>
+</sect2>
+</sect1>
+<sect1 id="sect1-ERPNext-Manual_ERPNext-Collaboration-Assignment">
+<title>Assignmet</title>
+<para>Assign To feature in ERPNext allows you to allocate particular document to specific user, whom needs to further work on that
+	document. For example, if Sales Order needs to be approved/submitted by Sales Manager, first draft user can allocate that Sales
+	Order to Sales Manager. On allocating document to Sales Manager, it will be added to that user's ToDo list. Same way, allocation
+	can also be done to Material User and Account user who needs to create Delivery Note and Sales Invoice respectively against this
+	Sales Note.</para>
+<important><para>Permissions restriction cannot be done based on Assigned To</para></important>
+<para>Following are the steps to assign document to another user.</para>
+<para>Step 1: Click on the Assign To Button. Assign to option is located at the footer of document. Clicking on Assignment Icon on
+	the tool bar will fast-forward you to footer of same document.</para>
+<para>Step 2: Assign to User. In the Assign To section, you will find option to select User to whom this document will be assigned
+	to. You can assign one document to multiple people at a time.</para>
+<para>With assignment, you can also leave a comment for the review of asignee.</para>
+<para>User will be able to remove assignment by clicking on "Assignment Completed" button in the document.</para>
+<sect2 id="ERPNext-Collaboration-Tags">
+<title>Tags</title>
+<para>Like Assignments and Comments, you can also add your own tags to each type of transactions. These tags can help you search a
+	document and also classify it. ERPNext will also show you all the important tags in the document list.</para>
+</sect2>
+</sect1>
 </chapter>

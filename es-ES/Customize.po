@@ -56,42 +56,42 @@ msgstr ""
 msgid "Custim Scripts should be written using the Python programming language. It is recommended to have prior knowledge of programming before experimenting with Custom scritps as they can affect the stability of the system."
 msgstr ""
 
+#~ msgid "Make Read Only After Saving"
+#~ msgstr ""
+
 #~ msgid "Custom Script Examples"
 #~ msgstr ""
 
-#~ msgid "Restrict Purpose of Stock Entry"
-#~ msgstr ""
-
-#~ msgid "Customize Form"
-#~ msgstr ""
-
-#~ msgid "Collaboration Tools"
-#~ msgstr ""
-
-#~ msgid "Hiding Modules And Features"
+#~ msgid "Text"
 #~ msgstr ""
 
 #~ msgid "Restrict User Based on Child Record"
 #~ msgstr ""
 
-#~ msgid "Generate Item Code Based On Custom Logic"
-#~ msgstr ""
-
 #~ msgid "Date Validation"
 #~ msgstr ""
 
-#~ msgid "Custom Script Fetch Values From Master"
+#~ msgid "Hiding Modules And Features"
 #~ msgstr ""
 
-#~ msgid "Make Read Only After Saving"
+#~ msgid "Restrict Purpose of Stock Entry"
 #~ msgstr ""
 
 #~ msgid "Restrict Cancel Rights"
 #~ msgstr ""
 
+#~ msgid "Customize Form"
+#~ msgstr ""
+
 #~ msgid "Print Format"
 #~ msgstr ""
 
-#~ msgid "Text"
+#~ msgid "Collaboration Tools"
+#~ msgstr ""
+
+#~ msgid "Generate Item Code Based On Custom Logic"
+#~ msgstr ""
+
+#~ msgid "Custom Script Fetch Values From Master"
 #~ msgstr ""
 
