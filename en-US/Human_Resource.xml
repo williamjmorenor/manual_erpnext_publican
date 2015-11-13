@@ -18,7 +18,7 @@
 	go to:</para>
 <programlisting>HR > Employee > New Employee</programlisting>
 <sect2>
-<title>Numbering Employees (Employee ID)</tile>
+<title>Numbering Employees (Employee ID)</title>
 <para>By fault, in ERPNext Employee Records are Numbered. You can have multiple series if you are a really large company and want
 	 to have separate numbering series for separate locations etc. You can set the numbering series just like any other transaction
 	  by going to:</para>
@@ -192,7 +192,7 @@
 <listitem><para>Employment Type (like Permanent, Temp, Contractor, Intern etc).</para></listitem>
 <listitem><para>Branch (if there are multiple offices).</para></listitem>
 <listitem><para>Department (if any, like Accounting, Sales etc).</para></listitem>
-<listitem<para>Designation (CEO, Sales Manager etc).</para></listitem>
+<listitem><para>Designation (CEO, Sales Manager etc).</para></listitem>
 <listitem><para>Grade (A, B, C etc, usually based on seniority).</para></listitem>
 </itemizedlist>
 <sect2>
