@@ -1,1469 +1,889 @@
-# 
-# AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2015-07-06 20:43-0600\n"
-"PO-Revision-Date: 2015-07-06 20:43-0600\n"
+"POT-Creation-Date: 2017-02-23 23:40-0600\n"
+"PO-Revision-Date: 2017-02-23 23:40-0600\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
+"Language: en-US \n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Publican v4.3.2\n"
 
-#. Tag: title
-#, no-c-format
 msgid "Guide Books"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "There are three standard workflows for order fulfillment. These guides explains step by step taking an example case how to execute these in ERPNext."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Engineer To Order: Products are designed as per customer's requirements and manufactured once the contract is completed. Examples: Construction, Furniture, Capital Goods etc."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Make To Order: Products are fixed, but fulfillment (manufacutring / procurement) only starts after receipt of order: Light Engineering, Machinery, Furniture etc."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Make To Stock: Products are fixed and usually available in stock and are shipped as soon as order is received. Examples: Consumer Goods, Retail etc."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Test Instance"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "It is highly recommended to have a test instance in which to practice before going to a request for production."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "We recommend completing the test cycles as it deems necessary in this instance to do so before the final implementation of the system. You can even have two running instances for testing before working with actual operating data."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Engineer To Order"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "This guide explains how a manufacturing unit would run its operations based on an engineer-to-order type of workflow. In engineer to order companies, a deal goes through multiple stages of discussions going back and forth. At each stage, new proposals are made and new costing for the product is prepared. For this study, a furniture making company, Supreme Furniture, is used as a case-example."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Supreme Furniture deals in all-types of furniture. They have a small showroom, where they keep some samples. However, they produce only after a Customer confirms the order and gives their specifications clearly."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Production Orders are issued based on customised order obtained after multiple iterations and may change even after production begins."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "To explain the production cycle we will consider an example of a custom-made bed cum wardrobe for a child. Please read the Overview section to get a glimpse of all the steps required to complete an engineer-to-order cycle."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Overview"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Overview of executing a complete cycle of an engineer-to-order workflow:"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Create an Item along with codes for finished products, Customers/Lead, and Suppliers."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Create Bill of Materials for estimating the cost, which can be amended."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Create Quotations during the proposal phase."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Create Sales Order."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Create Advance Payment Entry and raise Sales Invoice."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Use Production Planning Tool to perform the following steps:"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Create Production Order."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Create Material Requests."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Create and submit Purchase Order for your Suppliers:"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Create and submit Purchase Receipts when you receive material from your Suppliers."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Create and submit Purchase Invoice and make Payment Entry."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Manufacture by transfering raw-materials via Production Order to work-in-progress Warehouse to start production:"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Update finished goods and back-flush via Production Order."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Create and submit pending Sales Invoice to complete Customer billing."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Review Gross Profit Report."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "To begin the order cylce create an Item, Lead/Customer, Supplier and Warehouse."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Setting Up"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "In an engineer-to-order system, the products are manufactured based on the client's product requirements followed by their Sales Order. To begin this order cycle, it is essential to create an Item master along with raw materials and sub assemblies, Warehouse, Customers, and Suppliers."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Customer"
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
 msgid "Selling &gt; Customer &gt; New Customer"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "A Customer, who is sometimes known as a client, buyer, or purchaser is the one who receives goods, services, products, or ideas, from a seller for a monetary consideration. A Customer can also receive goods or services from a vendor or a Supplier for other valuable considerations. In this case-example, the Customer is Ms. Jane Dsouza. She is keen on making a multipurpose bed for her daughter."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "After setting up the Customer name in the system, it is time to create an Item based on the requirement of the Customer. In this example, the Customer Ms. Jane Dsouza wants a baby bed with a wardrobe attached to it. Thus, create an Item, and the possible raw materials that will go into its making."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Item"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "An Item is your company's product or a service. The term Item is applicable to your core products as well as your raw materials. It can be a product or service that you buy/sell from your Customers/Suppliers. ERPNext allows you to manage all sorts of Items like raw-materials, sub-assemblies, finished goods, Item variants and service Items."
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
 msgid "Stock &gt; Item &gt; New Item"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Make Items for all the raw materials that will go into the final product. Let us call the final product as Child Bed Baby. The raw materials required will be wood, plywood, fevicol, hinges, nails, beadings, slotted angles, foam, wooden panels, sponge, coir, paint etc. The raw materials will also be created as Items. However, their Item Group will be raw materials."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "You can store milestones as Items. For example, the baby-bed cum wardrobe custom order requires one bed, one wardrobe and 5 drawers. So the Item-milestones can be bed, wardrobe and drawers individually. The final product will be a result of assembling these milestone Item"
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Item Codification"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Item Codification helps in keeping a count of long and and complicated names. It is preferred if you have lots of products"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "In this example, lets make Bbed-1 as one product milestone, Bwardrobe-1 as another and Bdrawer-1 as the last milestone product. Note that B stands for the Baby range, then comes the name of the Item along with the order no in this category. The product is codified so that there is no confusion with other orders. The completed and assembled Item will be ‘Child Bed Baby’."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Sub-assembly"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "An assembled unit forming a component to be incorporated into a larger assembly is known as a Sub-assembly. To produce an Item , you require a lot of raw-materials. These raw-materials themselves have to be manufactured in some cases. Thus, along with standard raw materials, there is a requirement of raw materials with their own Bill of Materials. These raw materials have their own BOM’s and are called sub-assemblies."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Note that for milestone Items like Bwardrobe1, Bbed1 and Bdrawers1:"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Allow BOM’ field should be marked as 'Yes'. They should be grouped as raw materials, since these will be produced in-house and will go into the making of the final product. The Item milestones are the sub-assemblies."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "‘Allow Production Order’ should be marked as 'No'. All sub-assemblies will follow the one Production Order raised for the main product Child Bed Baby."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "In this example Child Bed Baby is the final product, the Bbed1, Bwardrobe1 and Bdrawers1 are sub-assemblies."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Warehouse"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "A Warehouse is a commercial building for storage of goods. Warehouses are used by manufacturers, importers, exporters, wholesalers, transport businesses, customs, etc. They are usually large plain buildings in industrial areas of cities, towns, and villages. They usually have loading docks to load and unload goods from trucks."
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
 msgid "Setup &gt; Warehouse"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "This is a mandatory field. No Item form will be saved without a Warehouse master. In E-T-O type of company, create one Warehouse for Work-In-Progress and one for Finished Goods."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "The Warehouses should be under the 'Stock-Expenses' category. Here the goods will be under the parent group 'Stock-Expenses'. Assign these Warehouses to Items accordingly. Select Stock-Expenses under parent group section in the system. You will have to create this new Warehouses in the system. The existing work-in-progress and finished goods Warehouses are by default categorised under 'Assets' by the system. For E-T-O transactions, the finished goods will come under the expense category. Thus, create new Warehouses under Stock-Expenses category."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "In reality you may not have three Warehouses. You may have only one, which you use for raw material, for manufacturing/stitching/producing and also for storing finished goods. In this case, you have to only imagine separate spaces for each activity, and name them accordingly. For system entry purpose, having three different Warehouses for stocking raw materials, manufacturing unfinished goods and storing finished goods is a necessity."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Suppliers and Contacts"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Suppliers are companies or individuals who provide you with products or services. They are treated in exactly the same manner as Customers."
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
 msgid "Buying &gt; Supplier &gt; New Supplier"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Suppliers are separate from Contacts and Addresses. Suppliers can have multiple Contacts and Addresses."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Make the Bill of Materials based on your design document and product requirements specified by the client."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Bill of Material"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "A Bill of Material (BOM) is a list of the raw materials, sub-assemblies, intermediate assemblies, sub-components, parts and the quantities of each needed to manufacture an end product. Make separate Bill of Material for every milestone order. Make one for the final order. Every BOM will have one Operations section and one Materials section. Mention the steps and hourly rates in the Operations section and the quantity of materials required in the Materials section."
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
 msgid "Manufacturing &gt; Bill of Materials &gt; New Bill of Materials"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Make a Bill of Material for Bwardrobe1."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "After completing the Wardrobe BOM, make the Bill of Material for the bed."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "After completion of the Bbed1 BOM, make the Bill of Material for Bdrawers-1."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "After completion of the drawers, make a BOM for the final product. The main product Child Bed Baby is assembled together from the three milestone Items."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Save and submit all BOM's. Based on the client feedback give a proposal to the client in the form of Quotations. You may have to propose different quotes till the client agrees."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Proposal Phase"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "In the proposal phase a client is offered various Quotations for a customised product. The Quotations are amended and adjusted as per the client's need. These Quotations serve as a basis for raising a proforma invoice or for accepting advance payment."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Quotation"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "This is the initial quote that is presented to the Customer, for approval of design and the cost of the product."
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
 msgid "Selling &gt; Quotation &gt; New Quotation"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "The first Quotation is given to the client, Jane D’souza. She visits a few more custom furniture makers and takes Quotations from them. She realises that there is a scope of margin to negotiate. So she comes back and asks for another Quotation. The showroom supervisor gives her a second quote. He says he can give her the same product, but instead of special plywood, he will use the standard plywood. He assures her that the local plywood maker is very reliable. He also assures her that most clients prefer this plywood since it brings down the total cost and is good in quality."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "The sales engineer then revises the bill of materials and prepares a new Quotation. It is possible to delete/cancel the existing submitted Quotation and amend it. Mention the new rate with the new design description."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "In order to print your Quotation as Proforma Invoice, go to print heading in the Quotation’s info section. Select Proforma Invoice as your new print heading and save. The printout will have a heading as Pro-forma Invoice."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Proforma Invoice"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "With the heading as Proforma Invoice, you can bill the client in phases. A Proforma Invoice is a document that is sent to a buyer in certain circumstances - usually before all of the invoice details are known. A Proforma Invoice is not a true invoice – it is simply a document that declares the seller’s commitment to provide the goods or services specified to the buyer at certain prices."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Proforma invoices are not recorded as an accounts receivable by the seller nor are they recorded as an accounts payable by the buyer. To print the name Proforma Invoice on the Quotation, create a Print Heading in the system."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "After creating the print heading, go to the Quotation and change the print heading name. Then, send it to the Customer."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "The Customer, Jane, realises that if she wants a further decrease in price, the furniture maker will offer further non-branded raw material and decrease cost. She doesn't want to compromise on quality and thus agrees to the second quote. She confirms the order and pays them Rs. 10000/- as Advance. Advance payment is seen as an order confirmation. Based on the confirmation, create a Sales Order."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Sales Order"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "A Sales Order is an order issued by a business to a Customer for products and/or services. After the proposal phase, it is time for the organisation to make a Sales Order. Based on the price agreement in the Quotation, make a Sales Order for the custom product 'Child Bed Baby'."
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
 msgid "Selling &gt; Sales Order &gt; New Sales Order"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Sales Order is the main document that is used to track billing, delivery and manufacturing."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Along with the Sales Order entry make the Advance Payment Entry."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Advance Payment Entry"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "To record an advance payment a Journal Voucher is made along with a Sales Invoice for future payment."
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
 msgid "Accounts &gt; Journal Voucher &gt; New Journal Voucher"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Payment done by the Customer before accepting delivery of the product is an Advance Payment. This is done to confirm the order and is paid as token to start manufacturing the product. For orders of high value, the business houses expect to receive advance. Thus, open a new Journal Voucher and make the advance entry."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Since the Customer has given 10000/- as cash advance, it will be recorded as a credit entry against the Customer. To balance it with the debit entry (Double Entry Accounting) enter 10000/- as debit against the Company’s cash account."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Sales Invoice"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "A Sales Invoice is a bill that you send to your Customers, against which the Customer processes the payment. Sales Invoice is an accounting transaction. On submission of Sales Invoice, the system updates the receivable and books income against a Customer Account."
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
 msgid "Accounts &gt; Sales Invoice &gt; New Sales Invoice"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "In this case, the Sales Order is made for an amount of Rs 100000/- Supreme Furniture will charge the Customer in phases. Thus they will make 3 Sales Invoices, two will charge 25,000 each and one will be for Rs 50, 000/- Quantity will be specified as 0.25, 0.25 and 0.50 respectively."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "To link the Sales Invoice to the Journal Voucher which mentions the advance Payment Entry, click on ‘Get Advances Received’. Allocate the amount of advance in the advances table. The accounting will be adjusted accordingly."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "In case you get error while saving, due to Qty being in fraction, go to UOM master and uncheck the box that says ‘Must be whole number’."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Save and submit the Sales Invoice. You can start making the Production Order and raise Material Requests for manufacturing this product via the Production Planning Tool."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Product Planning Tool"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Production Planning Tool helps to plan production and purchase Items. A list of Items can be generated from the open Sales Orders in the system. This tool creates Production Orders and generates Material Requests. The Production Planning Tool will generate:"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Production Orders for selected Items"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Material Requests for Items whose Projected Quantity is likely to fall below zero."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Go to:"
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
 msgid "Manufacturing &gt; Production Planning Tool"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "The Production Planning Tool enables you to complete the production cycle in a fast and efficient manner. From procuring materials, producing goods, to updating stocks - everything is done by clicking on buttons which appear after every transaction. The tool is user friendly and does not require you to go back and forth into the system to make and log different forms. Everything is intuitive and can be performed step by step."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "You can pull Sales Orders directly by clicking on a button. Select the Sales Orders you wish to process and click on another button to get Items for that Sales Order. Mention Item details and click on the button ‘Make Production Orders’. It is that simple! After this you can click on another button and create Material Requests required to complete this Production Order. The whole process is fuss free and easy."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Use the Production Planning Tool to make Production Order."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Step 1: Pull Sales Order. Sales Order is an order issued by a business to a Customer."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Step 2: Get Items from Sales Order. Select Items by clicking on the ‘Get Items from Sales Order’ button. Check the box that says ‘Use multi-level BOM’. This box is checked because you have sub-assemblies."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Step 3: Create Production Order. Production Order is an order to produce a specific quantity of material within a predefined timeframe. It contains all of the relevant information required for the execution of the process, including how much should be manufactured when."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Step 4: Create Material Request. Material Request is a request to order materials for the production of your Item/product."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "This request is created by clicking on the box ‘Create Material Request’. Click on the highlighted Material Request number. The click will open into a Material Request form."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Remember to put your sub-assembly Items/ Item Milestones in the Bill of Material. The Material Request button will make purchase requests even for the sub-assembly raw material."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Quick Overview of PPT-Production Planning Tool"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Get Sales Order"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Get Items from Sales Order"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Create Production Order"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Create Material Request"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Download Materials Required"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "After production planning, it is time to check the Production Order, Transfer Raw Materials and Update Finished Goods. However, before proceeding to manufacture, you are required to complete the Buying process by completing the Purchase Orders and Purchase Receipts."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Buying"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Buying raw materials when there is no Stock can be done by raising Material Requests and completing the purchase cycle. The purchase cycle includes making Purchase Orders and Purchase Receipts along with Purchase Invoice and Payment Entry through Journal Voucher."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Purchase Order"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Purchase Order (PO) is a commercial document and first official offer issued by a buyer to a seller, indicating types, quantities, and agreed prices for the products. You can make a Purchase Order from a Material Request or by directly going to:"
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
 msgid "Buying &gt; Purchase Order &gt; New Purchase Order"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Make the Purchase Order, save and submit it. After saving, click on 'Make Purchase Receipt'. Save and submit the Purchase Receipts."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Purchase Receipt"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Purchase Receipt is a record that is made when a material is received. It is also known as a Goods Received Note (GRN). It contains detail information of the Items purchased including the name of the Item, the price as well as the time when the purchase has been made. You can make a Purchase Receipt from the Purchase Order or directly from the Stock module."
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
 msgid "Stock &gt; Purchase Receipt &gt; New Purchase Receipt"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Note that only when the Purchase Receipt is submitted, the Stock balance is updated. To see the Stock balance go to the Stock module and select the Stock Balance Report from the Reports section."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "When the Purchase Receipt is saved and submitted, click on the Action button and make Purchase Invoice."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Purchase Invoice"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "A Purchase Invoice can be used to prove that something was bought and an amount was paid for it. To create a new Purchase Invoice, go to:"
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
 msgid "Accounts &gt; Purchase Invoice &gt; New Purchase Invoice"
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Payment Entry"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Payment Entry is done to book all accounting transactions in your system. It is an important step of Book Keeping. To register a Payment Entry, go to:"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Save and submit the Payment Entry. This was a complete cycle for the Material Request of Nut Bolts. Now repeat the same process for other requests which were generated by the Production Planning Tool:"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Material Request"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Journal Voucher"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Once Buying is done you can proceed to manufacture."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Manufacturing"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "To manufacture a product, a Production Order is made. Raw materials are transferred from the stores to the work-in-progress Warehouse before completion. After completion, the raw materials are consumed from the work-in-progress Warehouse and updated in the finished goods Warehouse. Production Orders can be made directly from the Manufacturing module or from the Production Planning Tool."
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
 msgid "Manufacturing &gt; Production Order &gt; New Production Order"
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Create a Production Order"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "A submitted Production Order has an Action button on the right hand corner which provides option to 'Transfer Raw materials' and Update Finished Goods'."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Transfer Raw Materials"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "To transfer raw materials you can either use the 'Transfer Raw Material' button or make a Stock Entry manually ."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "On this form, mention the Source Warehouse and the Target Warehouse. The Source Warehouse is a place from where you issue or transfer materials. A Target Warehouse is a place where Stock/Item is received. In this example, the system will transfer raw materials from the stores Warehouse to the work-in-progress Warehouse. The raw materials which are transferred are pulled from the Bill of Materials of that product."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Note: If you get an error while transferring raw materials, it may be due to inaccurate 'purpose' selection, while making a manual Stock Entry. To transfer materials, the 'purpose' should be 'Material Transfer' and to transfer materials to finished goods Warehouse, the 'purpose' should be 'Manufacture/Repack'."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "If you get negative error, ensure that you have enough Stock. Your Purchase Receipt should be saved and submitted."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "After transferring the material to the work-in-progress Warehouse, the product gets manufactured. After completion, it is essential to shift the finished product to the finished goods Warehouse. Thus, one more Stock Entry has to be done that updates the finished goods in the Warehouse."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Update Finished Goods"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Under this section, you will mention your source Warehouse as 'Work-in-progress-SOG' and target Warehouse as 'Finished Goods-SOG'. The purpose will be Manufacture/Repack. This is so because, once the product gets manufactured, it is supposed to go to finished goods Stock to enable delivery."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "This step performs the backflush by raising a Stock Entry for materials that have been consumed while manufacturing the finished goods Item."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "If you wish to get Stock and valuation rates at this stage, press on ‘Get Stock and Rate’. Valuation rate is the average rate divided by the actual price of an item. This is arrived at by the FIFO method - weighted average of the lot. (b) At this stage if you wish to change the BOM manufacturing quantity, you can do so by clicking on ‘Get Items’."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Save and submit the Stock Entry. To see if everything has occurred as planned, go back to the Production Order. The Production Order will show that it is 100% complete. The green line will be complete. After manufacturing the product is delivered and billed."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Shipping and Billing"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Shipping goods requires a Delivery Note and Billing involves making a Sales Invoice and a Payment Entry."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Delivery Note"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Delivery Note is a document accompanying a shipment of goods that lists the description, and quantity of the goods delivered [1]. You can make a Delivery Note from Stocks or from a submitted Sales Order by clicking on the Action button placed at the right hand corner of the form. To create a Delivery Note, go to:"
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
 msgid "Stocks &gt; Delivery Note &gt; New Delivery Note"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Make a Delivery Note and save it after affirming the shipping address. In case the document has no shipping address, create one by clicking on the + button. You can create the new address in the address form, which opens after clicking the + button. Save it and come back to the Delivery Note. Submit the Delivery Note."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "A Sales Invoice is a bill that you send to your Customers against which the Customer processes the payment. Sales Invoice is an accounting transaction. On submission of Sales Invoice, the system updates the receivables and books income against a Customer account. To create a Sales Invoice, go to:"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "You can either make a Sales Invoice from the Accounts module or make it by clicking on the right hand corner of the Delivery Note."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "The client Jane D’souza has been given 1 Sales Invoice. Now raise another 2 Sales Invoices. One for 25000/- and another for 50000/- and then make Payment Entries for both."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Save and submit the Invoice. When you submit the Invoice, an email pop-up box will appear. Correct / Change / Confirm the email ID and click on 'Send' button. An email will be sent."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Payment Entry is a part of booking-keeping. It records accounts and manages balance sheets. You can make it through a Journal Voucher or directly from a submitted Invoice by clicking on the 'Make Payment Entry' button."
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
 msgid "Accounts &gt; Journal Voucher"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "You can see how much profit you made on this order by going to Gross Profit Report."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Gross Profit Report"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "This report shows how much profit you made on each order."
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
 msgid "Accounts &gt; Gross Profit Report"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "You can go to module-specific 'Reports' section and choose to see any other report-type, depending upon your need for information."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "For this study, a jute artefact company, Shades of Green, is used as a case-example"
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Make To Order"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "This guide explains how a manufacturing unit would run its operations based on a make-to-order type of workflow. In a make to order system, the products are standard but are manufactured or procured only when a confirmed order is received from the customer."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Shades of Green is an eco-friendly company that manufactures and trades in jute gift items. It manufactures items based on make-to-order type of manufacturing. Shades of Green has retail outlets and they also produce based on orders. For their retail outlets and distribution they manufacture in advance. But, for big orders by corporates, schools and colleges, they manufacture after the order is confirmed. This guide gives a step-by-step account of the production process run through ERPNext. Let us take an example of producing a Jute Pen Stand."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Overview of executing a complete cycle of a make-to-order workflow:"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Create an Item, along with raw-materials, Customers and Suppliers."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Create Bill of Materials."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Create a Price List."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Create and submit the Sales Order."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Pull Sales Order and Items."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Create and submit Purchase Order for your Suppliers."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Manufacture by transfering raw-materials via Production Order to work-in-progress warehouse to start production."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Create and submit Sales Invoice to complete billing and payment."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Review Stock Balance Report and Gross Profit Report."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "In a make-to-order system, the products are pre-defined. To begin the order cycle, it is essential to create an Item master, Customers, and Suppliers."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "An Item is your company's product or a service. The term Item is applicable to your core products as well as your raw materials. It can be a product or service that you buy/sell from your customers/ suppliers. ERPNext allows you to manage all sorts of Items like raw-materials, sub-assemblies, finished goods, Item variants and service Items."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Since Jute Pen Stand is a sales Item, it is grouped as a 'Product’. The material that goes into making of this product like jute wire and fabric paint will also be called Item. However, the Item Group of jute wire and fabric paint will be termed as raw-material."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Click Yes on ‘Allow Bill of Materials’,"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Click Yes on ‘Allow Production Order’ and"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Click No on ‘Is Purchase Item’."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Please mention the Default Warehouse for this Item as “Finished Goods”. This product is available at the Finished Goods Warehouse only after it gets manufactured at the Work-in-Progress Warehouse. It cannot be kept in stores, because it is not purchased, it is manufactured."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
-msgid "In reality you may not have three Warehouses. You may have one, which you use for raw materials, for manufacturing/stitching/producing and also for storing finished goods. In such cases, you have to only imagine separate spaces for each activity, and name them accordingly. For system entry purpose, having three different Warehouses for stocking raw materials, manufacturing unfinished goods and storing finished goods is a good practice."
+msgid "In reality you may not have three Warehouses. You may have one, which you use for raw materials, for manufacturing/ stitching/producing and also for storing finished goods. In such cases, you have to only imagine separate spaces for each activity, and name them accordingly. For system entry purpose, having three different Warehouses for stocking raw materials, manufacturing unfinished goods and storing finished goods is a good practice."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Create Items for all raw materials"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Mention Item Group as Raw Material."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Click No on ‘Allow Bill of Materials’ (since BOM is required only for products), unless you produce raw-materials in-house."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Click No on Allow Production Order, and"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Click Yes on ‘Is Purchase Item’."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Following is the list of raw materials that will go into making of a Jute Pen-Stand."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Fabric Colour."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Jute Wire."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Tree Glue."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Make a Bill of Materials with the help of these raw materials."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Customers are separate from Contacts and Addresses. Customers can have multiple Contacts and Addresses."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Before making the Price List and the Sales Order, make the Bill of Materials based on your design document."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Bill of Materials"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "A Bill of Material (BOM) is a list of the raw materials, sub-assemblies, intermediate assemblies, sub-components, parts and the quantities of each needed to manufacture an end product."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Let us make a BOM for the Jute Pen Stand. In the Bill of Materials we state the operations steps required to manufacture this Item. We also mention the raw materials required to manufacture this Item."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Operations: List the operations step and the hourly rates along with the quantity of raw material required to produce the product."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Check the box that says ‘With Operations-Manage Cost of Operation'."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Materials Required: Mention the raw material list that is required to make the product."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Please specify the hour rates. This will help in calculating the actual expenses in producing this Item."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "You can enter the rates manually by adjusting as per the UOM. Since Tree Glue was purchased in Kg, calculate the rate for 10 gm and enter the rate accordingly. Do not forget to mention rates for every material."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Save the BOM and submit it. Do not forget to submit the BOM. This is an important step. The pricing is fixed only after the BOM is submitted. After submitting, you can create a Price List and Item Price into the system."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Price List"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "A Price List is a master for storing different rate plans based on Customer, currency, region, shipping cost etc."
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
 msgid "Stock &gt; Price List &gt; New Price List"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Since you can maintain different prices for different regions, lets create a Price List for all the Indian Customers."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "After creating a Price List template, you can click on the Action button and select to Add prices. The displayed form has a button 'New'. Click on that button to get a field for Item Price."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Based on the hourly rates of the labourers and the cost of raw material available in the Bill of Materials, you can devise your Item rate. After creating a Price List and Item prices, it is time to create a Sales Order."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "A Sales Order is an order issued by a business to a Customer for products and / or services. On completing the Bill of Materials, proceed to make a Sales Order into the system. Assuming that Shades of Green has received an order to deliver 50 Jute Pen-stands, create the Sales Order entry, go to:"
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
 msgid "Selling &gt; Sales Order &gt; Sales Order"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Let us create a Sales Order based on the customer requirement."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Save and submit the Sales Order. After creating the Sales Order the process to manufacture them begins. However, in order to manufacture, it is necessary that a Bill of Materials be made. This helps in production planning and making purchases as per requirements of the raw materials."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Once the Sales Order is ready, we can proceed to the Production Planning Tool. This tool allows to pull a list of Items and Sales Orders, and generate a Production Order along with Material Requests."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Production Planning Tool"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Production Planning Tool helps to plan production and purchase Items. A list of Items can be generated from the open Sales Orders in the system. This tool creates Production Orders and generates Material Requests."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "The Production Planning Tool will generate:"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Production Orders for selected Items."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Pull Sales Order: Sales Order is an order issued by a business to a Customer."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Get Items from Sales Order: Select Items by clicking on the ‘Get Items from Sales Order’ button. Do not tick the box that says ‘Use multi-level BOM’. This box is checked only if you have sub-assemblies. In other words, only if you have a BOM within a BOM. In the current example, there are no sub-assemblies."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Create Production Order: Production Order is an order to produce a specific quantity of material within a predefined timeframe. It contains all of the relevant information required for the execution of the process, including how much should be manufactured when."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Create Material Request: Material Request is a request to order materials for the production of your Item/product. This request is created by clicking on the box ‘Create Material Request’. Click on the highlighted Material Request number. The click will open into a Material Request Form."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "A Purchase Order is created from a Material Request or from a Supplier Quotation, when there is no raw material in stock. After receiving the raw material a Purchase Receipt is generated."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Make Purchase Order: Click on the ‘Make Purchase Order’ button, on the right side, upper corner of Material Request form, and create a Purchase Order for the same."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Submit Purchase Order: This is an important step. You can bill a Purchase Order only when it is submitted."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "In this manner create Purchase Orders and Purchase Receipts for all the Material Requests created by the Production Planning Tool. Remember to save and submit all the forms."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "After completing the Buying process by making Purchase Order and Purchase Receipt, proceed to manufacture the product."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Save and submit the Production Order: A submitted Production Order has an Action button on the right hand corner which provides option to 'Transfer Raw materials' and Update Finished Goods'. After completion of the Production Order, transfer the raw materials from stores to the work-in-progress Warehouse."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "To transfer raw materials you can either use the 'Transfer Raw Material' button or raise a Stock Entry manually ."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Click on Action and select ‘Transfer Raw Material’. On this form, mention the Source Warehouse and the Target Warehouse. The Source Warehouse is a place from where you issue or transfer materials. A Target Warehouse is a place where Stock/Item is received. In this example, the system will transfer raw materials from the stores Warehouse to the work-in-progress Warehouse. The raw materials which are transferred are pulled from the Bill of Materials of that product."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "If you get an error while transferring raw materials, it may be due to inaccurate 'purpose' selection, while making a manual Stock Entry. To transfer materials, the 'purpose' should be 'Material Transfer' and to transfer materials to finished goods Warehouse, the 'purpose' should be 'Manufacture/Repack'."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Click on Update Finished Goods: This step performs the backflush by raising a Stock Entry for materials that have been consumed while manufacturing the finished goods Item."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "If you wish to get Stock and valuation rates at this stage, press on ‘Get Stock and Rate’. Valuation rate is the average rate divided by the actual price of an item. This is arrived at by the FIFO method - weighted average of the lot."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "At this stage if you wish to change the BOM manufacturing quantity, you can do so by clicking on ‘Get Items’."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Save and submit the document. To see if everything has occurred as planned, go back to the Production Order. The Production Order will show that it is 100% complete. The green line will be complete. After manufacturing the product is delivered and billed."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Shipping goods requires a Delivery Note and Billing involves making a Sales Invoice and a Payment Entry. Delivery Note is a document accompanying a shipment of goods that lists the description, and quantity of the goods delivered [1]. You can make a Delivery Note from Stocks or from a submitted Sales Order by clicking on the Action button placed at the right hand corner of the form."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Make a Delivery Note and save it after affirming the shipping address. In case the document has no shipping address, create one by clicking on the + button. You can create the new address in the address form, which opens after clicking the + button . Save it and come back to the Delivery Note. Submit the Delivery Note."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "A Sales Invoice is a bill that you send to your Customers against which the Customer processes the payment. Sales Invoice is an accounting transaction. On submission of Sales Invoice, the system updates the receivables and books income against a Customer account."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Save and submit the Invoice. When you submit the Invoice, an email pop-up box will appear. Correct / change / Confirm the email ID and click on 'Send' button. An email will be sent."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Double Entry Accounting"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Double Entry Accounting or bookkeeping is a system of accounting in which every transaction has a corresponding positive and a negative entry: debits and credits. Every transaction involves a debit entry in one account and a credit entry in another account. This means that every transaction must be recorded in two accounts; one account will be debited, because it receives value and the other account will be credited, because it has given value."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "To make a Payment Entry update the Journal Voucher with debit and credit columns. Make sure to click on the button that says ‘Make Difference Entry’. Note that the reference number and reference date is mandatory along with the Account entry. In case for some reason, the account section is blank, it means that you have not selected your default bank account. To do so from the same form, click on the triangle button next to the Company and set the default master account."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "The click will take you to the Master-Company page. Now enter your default entry account as HDFC Bank / Axis Bank etc and save. This will enable the system to post debit / credit entries directly against this particular account."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Save and submit the Payment Entry. After submitting, you can check the Gross Profit Report, and review your profits. You can also check your Stock Balance Report."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Reports"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "This page features two reports which you can review; the Stock Balance Report and the Gross Profit Report. The Stock Balance Report shows the Incoming Quantity of the raw material before consumption and the closing quantity after consumption. The Gross Profit Report shows gross profit on individual orders."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "A Gross Profit Report shows the profit that you have earned on a specific order. This report subtracts the raw material cost and gives gross profit earned on individual orders."
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
 msgid "Accounts &gt; Gross Profits"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "You can go to module-specific 'Reports' section and choose to see any other report-type, depending upon your need for information. With the Gross Profit Report, the case-example of a complete business-cycle is over."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Make To Stock"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "For this study, a jute artefact company, Shades of Green, is used as a case-example."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Create an Item \"Jute Pen Stand\": Since Jute Pen Stand is a sales Item, it is grouped as a 'Product’. The material that goes into making of this product like jute wire and fabric paint will also be called Item. However, the Item Group of jute wire and fabric paint will be termed as raw-material."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Click Yes on ‘Allow Bill of Materials’."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Fabric Colour"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Jute Wire"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Tree Glue"
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Customers and Contacts"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "A Customer, who is sometimes known as a client, buyer, or purchaser is the one who receives goods, services, products, or ideas, from a seller for a monetary consideration. A Customer can also receive goods or services from a vendor or a Supplier for other valuable considerations."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "A Customer name is the name of the organisation and a Contact name is the name of the user who is coordinating."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
+msgid "Save the BOM and submit it. Do not forget to submit the BOM. This is an important step. The pricing is fixed only after the BOM is submitt ed. After submitting, you can create a Price List and Item Price into the system."
+msgstr ""
+
 msgid "Create a Price List: Since you can maintain different prices for different regions, lets create a Price List for all the Indian Customers. After creating a Price List template, you can click on the Action button and select to Add prices. The displayed form has a button 'New'. Click on that button to get a field for Item Price."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Add Item price: Based on the hourly rates of the labourers and the cost of raw material available in the Bill of Materials, you can devise your Item rate."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "After creating a Price List and Item prices, it is time to create a Sales Order."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "A Sales Order is an order issued by a business to a Customer for products and / or services. On completing the Bill of Materials, proceed to make a Sales Order into the system. Assuming that Shades of Green has received an order to deliver 50 Jute Pen-stands, create the Sales Order entry."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Let us create a Sales Order based on the customer requirement. Save and submit the Sales Order. After creating the Sales Order the process to manufacture them begins. However, in order to manufacture, it is necessary that a Bill of Materials be made. This helps in production planning and making purchases as per requirements of the raw materials."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Once the Sales Order is ready, we can proceed to the Production Planning Tool. This tool allows to pull a list of Items and Sales Orders, and generate a Production Order along with Material Requests"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Step 2: Get Items from Sales Order. Select Items by clicking on the ‘Get Items from Sales Order’ button. Do not tick the box that says ‘Use multi-level BOM’. This box is checked only if you have sub-assemblies. In other words, only if you have a BOM within a BOM. In the current example, there are no sub-assemblies."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Step 1: Make Purchase Order. Click on the ‘Make Purchase Order’ button, on the right side, upper corner of Material Request form, and create a Purchase Order for the same."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Step 2: Submit Purchase Order. This is an important step. You can bill a Purchase Order only when it is submitted."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Step 1: Save and submit the Production Order. A submitted Production Order has an Action button on the right hand corner which provides option to 'Transfer Raw materials' and Update Finished Goods'."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "After completion of the Production Order, transfer the raw materials from stores to the work-in-progress Warehouse."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Step 2: Click on Action and select ‘Transfer Raw Material’. On this form, mention the Source Warehouse and the Target Warehouse. The Source Warehouse is a place from where you issue or transfer materials. A Target Warehouse is a place where Stock/Item is received. In this example, the system will transfer raw materials from the stores Warehouse to the work-in-progress Warehouse. The raw materials which are transferred are pulled from the Bill of Materials of that product."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Step 3: Click on Update Finished Goods. Under this section, you will mention your source Warehouse as 'Work-in-progress-SOG' and target Warehouse as 'Finished Goods-SOG'. The purpose will be Manufacture/Repack. This is so because, once the product gets manufactured, it is supposed to go to finished goods Stock to enable delivery. This step performs the backflush by raising a Stock Entry for materials that have been consumed while manufacturing the finished goods Item."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Shipping goods requires a Delivery Note and Billing involves making a Sales Invoice and a Payment Entry. Delivery Note is a document accompanying a shipment of goods that lists the description, and quantity of the goods delivered. You can make a Delivery Note from Stocks or from a submitted Sales Order by clicking on the Action button placed at the right hand corner of the form."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Stock Balance Report"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "While reviewing stock balance of the raw material, note that the stocks which were purchased and consumed during the production of Jute Pen Stand-1, have become zero after consumption."
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
 msgid "Stock &gt; Stock Balance"
 msgstr ""
 

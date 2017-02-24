@@ -65,8 +65,8 @@ msgstr ""
 msgid "To define the Top Bar Menus, Brand, Footers and Home Page, go to:"
 msgstr ""
 
-msgid "Website &gt; Website Settings\n"
-"			"
+#, fuzzy
+msgid "Website &gt; Website Settings"
 msgstr ""
 
 msgid "Create seperate web pages which will be linked to the main web-icons like company, contact, products etc."
@@ -81,8 +81,8 @@ msgstr ""
 msgid "Static Content like your Home Page, About Us, Contact Us, Terms pages can be created using the Web Page. To create a new Web Page, go to:"
 msgstr ""
 
-msgid "Website &gt; Web Page &gt; New Web Page\n"
-"		"
+#, fuzzy
+msgid "Website &gt; Web Page &gt; New Web Page"
 msgstr ""
 
 msgid "A web site will have the next sections:"
@@ -106,8 +106,8 @@ msgstr ""
 msgid "Add forms to the website that will add / update data in your tables. Allow users to edit / manage multiple web forms. You can add forms in your website for example, Contact Us, Inquiry, Complaint etc. Data from these can fill up records like Lead, Opportunity, Issue etc. The user can also be allowed manage multiple records (like Complaints etc.). To create a new Web Form go to:"
 msgstr ""
 
-msgid "Website &gt; Web Form &gt; New Web Form\n"
-"		"
+#, fuzzy
+msgid "Website &gt; Web Form &gt; New Web Form"
 msgstr ""
 
 msgid "And fill the next information:"
@@ -155,8 +155,8 @@ msgstr ""
 msgid "Blogs are a great way to share your thoughts about your business and keep your customers and readers updated of what you are up to. In the age of internet, writing assumes a lot of significance because when people come to your website, they want to read about you and your product. To create a new blog, just create a new Blog from:"
 msgstr ""
 
-msgid "Website &gt; Blog &gt; New Blog\n"
-"		"
+#, fuzzy
+msgid "Website &gt; Blog &gt; New Blog"
 msgstr ""
 
 msgid "You can format a blog using the Markdown format.You can also access your blog by going to the page “blog.html”."
@@ -195,8 +195,8 @@ msgstr ""
 msgid "On the Webpage, a shopping cart is an icon that allows you to store all the things that you have earmarked for purchasing. It is a graphical representation of a shopping basket or a shopping cart that allows you to save the items you intend to buy. This software displays the price of the product . It also displays shipping and handling charges, along with taxes, if applicable. To set up a shopping cart, go to the selling module."
 msgstr ""
 
-msgid "Selling &gt; Shopping Cart Settings\n"
-"		"
+#, fuzzy
+msgid "Selling &gt; Shopping Cart Settings"
 msgstr ""
 
 msgid "On the Website, the shopping cart image will be seen below the Item price. Customers can click on the cart and enter the amount of quantity they wish to buy. The Item number will be stored on the right hand corner of the page, next to the flower sign."

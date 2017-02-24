@@ -19,9 +19,15 @@ msgstr "William"
 msgid "Moreno"
 msgstr "Moreno"
 
-msgid "RMS Consultores"
-msgstr "RMS Consultores"
+msgid "Cristhian"
+msgstr ""
 
-msgid "Sistemas Contables"
-msgstr "Sistemas Contables"
+msgid "Gonzalez"
+msgstr ""
+
+#~ msgid "Sistemas Contables"
+#~ msgstr "Sistemas Contables"
+
+#~ msgid "RMS Consultores"
+#~ msgstr "RMS Consultores"
 

@@ -124,7 +124,7 @@
 <programlisting>Buying > Documents > Purchase Order > New Purchase Order</programlisting>
 <para>Entering a Purchase Order is very similar to a Purchase Request, additionally you will have to set:</para>
 <itemizedlist>
-<listitem><para>Supplier. </para></listitem>
+<listitem><para>Supplier</para></listitem>
 <listitem><para>A “Required By” date on each Item: If you are expecting part delivery, your Supplier will know how
 	much quantity to deliver at which date. This will help you from preventing over-supply. It will also help you to track
 	how well your Supplier is doing on timeliness.</para></listitem>
@@ -186,5 +186,102 @@
 	only for total (does not add value to the item) or for both.</para>
 <para>Add or Deduct: Whether you want to add or deduct the tax.</para>
 </sect2>
+</sect1>
+<sect1>
+<title>Buying Process</title>
+<para>The first step to complete a buying cicle is to create a Supplier
+and some Items in the inventory, to create a supplier in the Buying 
+module select "Supplier"</para>
+<para>In the suppliers list select new.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="./images/compras001.png" />
+</imageobject>
+</mediaobject>
+<para>Fill the basic supplier information.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="./images/compras002.png" />
+</imageobject>
+</mediaobject>
+<para>Click in save.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="./images/compras003.png" />
+</imageobject>
+</mediaobject>
+<para>Now we have a supplier we need to create some items to buy,
+in the Buying module select Items</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="./images/compras004.png" />
+</imageobject>
+</mediaobject>
+<para>In the item list select new</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="./images/compras005.png" />
+</imageobject>
+</mediaobject>
+<para>Fill the basic item data and click save.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="./images/compras006.png" />
+</imageobject>
+</mediaobject>
+<para>To create a new supplier invoice we must go the accountin module and
+select Supplier Bill</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="./images/compras008.png" />
+</imageobject>
+</mediaobject>
+<para>Select New</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="./images/compras009.png" />
+</imageobject>
+</mediaobject>
+<para>Fill the Supplier and items info.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="./images/compras010.png" />
+</imageobject>
+</mediaobject>
+<para>Click in save.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="./images/compras011.png" />
+</imageobject>
+</mediaobject>
+<para>This will save the bill in as a draft, to record the transaction to
+the system click in Present.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="./images/compras012.png" />
+</imageobject>
+</mediaobject>
+<para>We can verify than we have a record in the inventory versus a payable
+account.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="./images/compras013.png" />
+</imageobject>
+</mediaobject>
+<para>To procces the suplier pay in the accountin module select Payable
+bills and the select the bill you want to pay and select Pay entry, click in New.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="./images/compras014.png" />
+</imageobject>
+</mediaobject>
+<para>Fill the paymen information and click in Save.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="./images/compras015.png" />
+</imageobject>
+</mediaobject>
+<para>Click in present to record the transaction.</para>
+<para>Puede validar que el pago fue aplicado.</para>
 </sect1>
 </chapter>

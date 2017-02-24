@@ -1,399 +1,241 @@
-# 
-# AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2015-07-06 20:43-0600\n"
-"PO-Revision-Date: 2015-07-06 20:43-0600\n"
+"POT-Creation-Date: 2017-02-23 23:40-0600\n"
+"PO-Revision-Date: 2017-02-23 23:40-0600\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
+"Language: en-US \n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Publican v4.3.2\n"
 
-#. Tag: title
-#, no-c-format
 msgid "Website"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Websites are a core component of any business and having a good website usually means:"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Invest lot of money."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Difficult to update."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Not interactive."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Unless you are a web designer yourself. Wouldn't it be nice if there was a way to update your product catalog on your site automatically from your ERP? We thought exactly the same and hence built a small Website Development app right inside ERPNext! Using ERPNext’s Website module, you can"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Create Web Pages."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Write a Blog."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Publish your Product Catalog using the Item master"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Though not necessary, to make a good website, you might have to know a bit of HTML / CSS or hire the services of a professional. The good part is that once this is setup, you can add and edit content, blogs and products directly from your ERP."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Website Setup"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "This is the layout of a ERPNext´s Website"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Top Bar: The header has two main parts, the “Brand” or the logo section and the menu items. These menu items can directly link to Web Pages or the Blogs page or Products page. The standard Website header bar is with black background."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Background: The website is generated using a standard width of 900 pixels and has a page “effect”. You can set a background color or image to enhance the effect of the page."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Content: The inner content of your pages has a width of 800px and if it is a two-column layout like Blog, it will have a width of 540 px."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Footer: The footer section contains a list of links (this is where you typically put links like “Contact Us”, “Terms and Conditions”,etc) and the name of your company."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Defining Menus and Home Page"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "To define the Top Bar Menus, Brand, Footers and Home Page, go to:"
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
-msgid "Website &gt; Website Settings\n"
-"			"
+msgid "Website &gt; Website Settings"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Create seperate web pages which will be linked to the main web-icons like company, contact, products etc."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "A menu item cannot be linked to a page and also be a parent. For example, if you click on About button, it will show a drop-down list, whose items will be clickable. There will be no page on About. About will not open into a page. It is only a button. The drop-down list menu will be clickable and open into new pages."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Websites"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Static Content like your Home Page, About Us, Contact Us, Terms pages can be created using the Web Page. To create a new Web Page, go to:"
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
-msgid "Website &gt; Web Page &gt; New Web Page\n"
-"		"
+msgid "Website &gt; Web Page &gt; New Web Page"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "A web site will have the next sections:"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Title: The first thing to set is the title of your page. The title has the maximum weight for search engines so choose a title that reflects the keywords that you are targeting for your audience."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Content: After selecting your layout, you can add content (text, images, etc) to each of your content boxes. You can add content in Markdown or HTML format. Read the section on how to format using Markdown, for more details."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Page Link: The web link to your page will be the value of the “Page Name” field + “.html”. For example if your page name is contact-us, the web link of your page will be yoursite.com/contact-us.html."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Images: You can attach images to your web page and show them using the HTML tag or using markdown format. the link to your file will be assets/manualerpnextcom/old_images/erpnext/filename"
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Website Forms"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Add forms to the website that will add / update data in your tables. Allow users to edit / manage multiple web forms. You can add forms in your website for example, Contact Us, Inquiry, Complaint etc. Data from these can fill up records like Lead, Opportunity, Issue etc. The user can also be allowed manage multiple records (like Complaints etc.). To create a new Web Form go to:"
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
-msgid "Website &gt; Web Form &gt; New Web Form\n"
-"		"
+msgid "Website &gt; Web Form &gt; New Web Form"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "And fill the next information:"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Set the Web Form title and url."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Select the DocType in which you want the user to store the records."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Select if you require the user to login, edit records, manage multiple records etc."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Add the fields you want in the record."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Once you create the web form, you can view it on the url and test it out!"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Your data will be stored in the table you have selected."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Styling The Website"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "You can set some basic styles to your page using the styles feature."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Some of the things than you can costumize are:"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Background: You can either set a solid background by selecting a color. You can attach a file and select it in the “Background Image” box."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Fonts: Fonts: Font family of your body text (includes some Open Source fonts). Font- size: Font-size of your website body text (large is good). Heading Font: Font family of your headings. Apart from this you can also add custom style rules using CSS."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Custom CSS: There are tons of CSS rules and tricks that fall out of scope of this manual. But you could add your own style to certain elements like h1, h2 etc and also create your own style classes that you can use in elements in your body content."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Blog Post"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Blogs are a great way to share your thoughts about your business and keep your customers and readers updated of what you are up to. In the age of internet, writing assumes a lot of significance because when people come to your website, they want to read about you and your product. To create a new blog, just create a new Blog from:"
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
-msgid "Website &gt; Blog &gt; New Blog\n"
-"		"
+msgid "Website &gt; Blog &gt; New Blog"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "You can format a blog using the Markdown format.You can also access your blog by going to the page “blog.html”."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Add Productos to Website"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "To list your Item on the Website, fill the Item details and save the file. Once the file is saved, a plus (+) button will appear next to the Image icon. Click on the plus button and add your Item image. The html code will be generated automatically."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Under the Website section, please check the box that says 'show in Website'. Once the box is checked, the page will display other fields for entering information."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "The page name will be generated automatically. Mention the Item-Group under which the Item will be displayed."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Item Groups"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Mention the Item Group under this column. If you wish to list your Item under the broad category products, name your Item Group as Products. In case you have various varieties of Item and want to classify them under different names, make Item Groups with those names and check the box that says 'show in Website'. For Example, if you wish to create a category called 'Bags', create a Item Group named Bags."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Once the Item Group is created go to the Website Settings page under Website. Enter the Label, Url, and Parent Label."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Webpage labels"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Add more Items under a particular Item Group. To add more Items under a certain Label, mention the Item Group on the Item Page. The Items will be added automatically on the Webpage, under the Item Group Label. For Example, To add Item-Kiddies Bag and Butterfly Print Bag, check the 'Show in Website'box. The Items will be placed under the Label Bags on the Webpage."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Shopping Cart"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "On the Webpage, a shopping cart is an icon that allows you to store all the things that you have earmarked for purchasing. It is a graphical representation of a shopping basket or a shopping cart that allows you to save the items you intend to buy. This software displays the price of the product . It also displays shipping and handling charges, along with taxes, if applicable. To set up a shopping cart, go to the selling module."
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
-msgid "Selling &gt; Shopping Cart Settings\n"
-"		"
+msgid "Selling &gt; Shopping Cart Settings"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "On the Website, the shopping cart image will be seen below the Item price. Customers can click on the cart and enter the amount of quantity they wish to buy. The Item number will be stored on the right hand corner of the page, next to the flower sign."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Customer Portal"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Customer Portal is designed to give easy accesibility to customers of a company. This portal allows customers to login and find out information relevant to them.They can trace communication history of their mails. They can also check order status by logging into the website."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Customer Orders Invoices And Shipping Status"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "ERPNext Web Portal gives your customers quick access to their Orders, Invoices and Shipments Customers can check the status of their orders, invoices, and shipping status by logging on to the web."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Once an order is raised, either using the Shopping Cart or from within ERPNext, your customer can view the order and keep an eye on the billing and shipment status. When the invoice and payment against these orders are submitted, the customer can see the updated status on the portal, at a glance."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Sign Up"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Customers have to log-in to the Company Website, and sign-up as a customer."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Step 1: Click on Login Icon."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Step 2: Click on Sign Up Icon."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Step 3: Enter Customer Name and ID. After the sign up process, a mail will be sent to the customers email id with the password details."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Portal Login"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "To login into the customer account, the customer has to use his email id and the password sent by ERPNext; generated through the sign-up process."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Issues"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "The customer portal makes it very easy for a customer to raise concerns. A simple and intuitive interface facilitates your customer to report their concerns as Issues. They can view the complete thread of their conversation."
 msgstr ""
 

@@ -16,12 +16,18 @@ msgstr ""
 msgid "ERPNext User Manual"
 msgstr "Manual de Usuario de ERPNext"
 
-msgid "ERP for Entrepreneurs."
-msgstr "Un ERP para emprendedores"
+msgid "A ERP system for Entrepreneurs and SMEs."
+msgstr ""
 
 msgid "ERPNext"
 msgstr "ERPNext"
 
-msgid "ERPNext helps you take full control of your business. It is as powerful as it is easy to use."
-msgstr "ERPNext le ayuda a tener un control total de su negocio. Es tanto poderoso como fácil de usar."
+msgid "Entrepreneurs and SMEs have the same complexity of large companies but do not hace the resources to invest in a custom solutions to run theirs business and keep track of accounting, taxes, bills and invoices. ERPNext helps you to take full control of your business. It is powerful, flexible, customisable and easy to use."
+msgstr ""
+
+#~ msgid "ERP for Entrepreneurs."
+#~ msgstr "Un ERP para emprendedores"
+
+#~ msgid "ERPNext helps you take full control of your business. It is as powerful as it is easy to use."
+#~ msgstr "ERPNext le ayuda a tener un control total de su negocio. Es tanto poderoso como fácil de usar."
 

@@ -26,25 +26,26 @@ msgstr ""
 msgid "There are many fields you can add in your Employee records. As the organisation grows, it becomes difficult to manage more records. It is advisable to keep updating and entering records to facilitate data management of employees. Employee records also help in keeping a list of your team’s skills, previous employment history and emergency information. To create new Employee go to:"
 msgstr ""
 
-msgid "HR &gt; Employee &gt; New Employee\n"
-"		"
+#, fuzzy
+msgid "HR &gt; Employee &gt; New Employee"
 msgstr ""
 
 msgid "Numbering Employees (Employee ID)"
 msgstr ""
 
-msgid "By default, in ERPNext Employee Records are Numbered. You can have multiple series if you are a really large company and want to have separate numbering series for separate locations etc. You can set the numbering series just like any other transaction by going to:"
+#, fuzzy
+msgid "By fault, in ERPNext Employee Records are Numbered. You can have multiple series if you are a really large company and want to have separate numbering series for separate locations etc. You can set the numbering series just like any other transaction by going to:"
 msgstr ""
 
-msgid "Setup &gt; Customize &gt; Document Numbering Series.\n"
-"			"
+#, fuzzy
+msgid "Setup &gt; Customize &gt; Document Numbering Series."
 msgstr ""
 
 msgid "Alternatively, you can create employees by the “Employee Number” field if you already have an existing Employee Numbering system you want to follow. To set this, go to:"
 msgstr ""
 
-msgid "Setup &gt; Global Defaults &gt; HR\n"
-"			"
+#, fuzzy
+msgid "Setup &gt; Global Defaults &gt; HR"
 msgstr ""
 
 msgid "Leave"
@@ -53,15 +54,15 @@ msgstr ""
 msgid "Fixed number of leaves per Employee can be allocated using the Leave Allocation Tool. If you have special leaves to be allocated, you can also allocate them manually by creating new Leave Allocation records."
 msgstr ""
 
-msgid "HR &gt; Leave Allocation &gt; New Leave Allocation\n"
-"		"
+#, fuzzy
+msgid "HR &gt; Leave Allocation &gt; New Leave Allocation"
 msgstr ""
 
 msgid "If your company has a formal system where Employees have to apply for leaves to be able to qualify as paid leaveas, you can create Leave Application to track approval and usage of leaves. You have to mention the Employee, Leave Type and the period for which the leave is taken. If you want specific users to approve leaves, you can give “Submission” rights to those users only."
 msgstr ""
 
-msgid "HR &gt; Leave Application &gt; Make New Leave Application\n"
-"		"
+#, fuzzy
+msgid "HR &gt; Leave Application &gt; Make New Leave Application"
 msgstr ""
 
 msgid "If you want all users to create their own Leave Applications, you can set their “Employee ID” as a match rule in the Leave Application Permission settings."
@@ -73,15 +74,15 @@ msgstr ""
 msgid "An Attendance record stating that an Employee has been present on a particular day can be created manually by:"
 msgstr ""
 
-msgid "HR &gt; Attendance &gt; New Attendance \n"
-"		"
+#, fuzzy
+msgid "HR &gt; Attendance &gt; New Attendance "
 msgstr ""
 
 msgid "It can also be done by collecting attendance information via an automated system like a swipe card. You can even upload a CSV file with the attendance information. You can get a monthly report of your Attendance data by going to the “Monthly Attendance Details” report. To upload the attendance go to:"
 msgstr ""
 
-msgid "HR &gt; Upload Attendance\n"
-"		"
+#, fuzzy
+msgid "HR &gt; Upload Attendance"
 msgstr ""
 
 msgid "Salary And Payroll"
@@ -135,8 +136,8 @@ msgstr ""
 msgid "To create a new Salary Structure go to:"
 msgstr ""
 
-msgid "HR &gt; Salary Structure &gt; New Salary Structure\n"
-"			"
+#, fuzzy
+msgid "HR &gt; Salary Structure &gt; New Salary Structure"
 msgstr ""
 
 msgid "In the Salary Structure:"
@@ -163,8 +164,8 @@ msgstr ""
 msgid "Once the Salary Structure is created, you can make a salary slip from the same form or you can process your payroll for the month using the Salary Manager. To create a salary slip from Salary Structure, click on the button Make Salary Slip. Through Salary Manager:"
 msgstr ""
 
-msgid "HR &gt; Process Payroll\n"
-"				"
+#, fuzzy
+msgid "HR &gt; Process Payroll"
 msgstr ""
 
 msgid "In the Salary Manager tool:"
@@ -200,8 +201,8 @@ msgstr ""
 msgid "Expense Claim is made when Employee’s make expenses out of their pocket on behalf of the company. For example, if they take a customer out for lunch, they can make a request for reimbursement via the Expense Claim form. To make a new Expense Claim, go to:"
 msgstr ""
 
-msgid "HR &gt; Expense Claim &gt; New Expense Claim\n"
-"		"
+#, fuzzy
+msgid "HR &gt; Expense Claim &gt; New Expense Claim"
 msgstr ""
 
 msgid "Set the Employee ID, date and the list of expenses that are to be claimed and “Submit” the record."
@@ -231,8 +232,8 @@ msgstr ""
 msgid "In ERPNext, you can manage Employee Appraisals by creating an Appraisal Template for each role with the parameters that define the performance by giving appropriate weightage to each parameter."
 msgstr ""
 
-msgid "HR &gt; Appraisal &gt; New Appraisal\n"
-"		"
+#, fuzzy
+msgid "HR &gt; Appraisal &gt; New Appraisal"
 msgstr ""
 
 msgid "Step 1: Select an Appraisal Template. After you select the template, the remaining form appears."
@@ -250,8 +251,8 @@ msgstr ""
 msgid "Holiday List is a list which contains the dates of holidays along with the occasion of that holiday. The list is generally valid for one calendar year. Most organisations have a standard Holiday-List for their employees. Some even have different holiday lists for laborers and a different one for management staff. To set up a holiday list in the system, Go to Human Resources Module and Click on Holiday List."
 msgstr ""
 
-msgid "Human Resources &gt;Holiday List &gt; New Holiday List\n"
-"		"
+#, fuzzy
+msgid "Human Resources &gt;Holiday List &gt; New Holiday List"
 msgstr ""
 
 msgid "Step 1: Give a name to the Holiday list."

@@ -53,6 +53,42 @@ msgstr "Conceptos y Términos"
 msgid "Before you start implementation, lets get familiar with the terminology that is used and some basic concepts in ERPNext."
 msgstr "Antes de iniciar con la implementación, hay que familiarizarse con la terminología requerida y algunos conceptos básicos en ERPNext."
 
+msgid "ERPNext"
+msgstr ""
+
+msgid "ERPNext is a modern tool that covers not only accounting but also all other business functions, on an integrated platform. It has many benefits over both traditional accounting as well as ERP applications."
+msgstr ""
+
+msgid "Benefits over traditional accounting software:"
+msgstr ""
+
+msgid "Do a lot more than just accounting! Manage inventory, billing, quotes, leads, payroll and a lot more."
+msgstr ""
+
+msgid "Keep all your data safe and in one place. Don’t keep hunting for data when you need it across spreadsheets and different computers. -Manage everyone on the same page. All users get the same updated data."
+msgstr ""
+
+msgid "Stop repetitive work. Don’t enter the same information from your word processor to your accounting tool. It's all integrated."
+msgstr ""
+
+msgid "Keep track. Get the entire history of a customer or a deal in one place."
+msgstr ""
+
+msgid "Benefits over other ERPs"
+msgstr ""
+
+msgid "Saves money."
+msgstr ""
+
+msgid "Easier to configure: Big ERPs are notoriously hard to setup and will ask you a zillion questions before you can do something meaningful."
+msgstr ""
+
+msgid "Easier to use: Modern web like user interface will keep your users happy and in familiar territory."
+msgstr ""
+
+msgid "Open Source : This software is always free and you can host it anywhere you like."
+msgstr ""
+
 msgid "Basic Concepts"
 msgstr "Conceptos Básicos"
 

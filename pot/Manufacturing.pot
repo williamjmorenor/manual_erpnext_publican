@@ -1,523 +1,316 @@
-# 
-# AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2015-07-06 20:43-0600\n"
-"PO-Revision-Date: 2015-07-06 20:43-0600\n"
+"POT-Creation-Date: 2017-02-23 23:40-0600\n"
+"PO-Revision-Date: 2017-02-23 23:40-0600\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
+"Language: en-US \n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Publican v4.3.2\n"
 
-#. Tag: title
-#, no-c-format
 msgid "Manufacturing"
 msgstr ""
 
-#. Tag: indexterm
-#, no-c-format
 msgid "<primary>Manufacturing</primary>"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "The Manufacturing module in ERPNext helps you to maintain multi-level Bill of Materials (BOMs) for your Items. It helps in product costing, production planning , creating production orders for your manufacturing shop floors and planning inventory by getting your material requirement via BOMs (also called Material Requirements Planning MRP)."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Types of Production Planning"
 msgstr ""
 
-#. Tag: indexterm
-#, no-c-format
 msgid "<primary>Manufacturing</primary><secondary>Types of Production Planning</secondary>"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Broadly there are three types of Production Planning Systems:"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Make-to-Stock: In these systems, production is planned based on a forecast and the Items are then sold to distributors or customers. All fast moving consumer goods that are sold in retail shops like soaps, packaged water etc and electronics like phones etc are Made-to-Stock."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Make-to-Order: In these systems, manufacturing takes place after a firm order is placed by a customer."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Engineer-to-Order: In this case each sale is a separate project and has to be designed and engineered to the requirements of the customer. Common examples of this are any custom business like furniture, machine tools, speciality devices, metal fabrication etc."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Most small and medium sized manufacturing businesses are based on a make-to- order or engineer-to-order system and so is ERPNext. For engineer-to-order systems, the Manufacturing module should be used along with the Projects module. See <xref linkend=\"billing-projects\" />"
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Manufacturing and Inventory"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "You can track work-in-progress by creating work-in-progress Warehouses. ERPNext will help you track material movement by automatically creating Stock Entries from your Production Orders by building from Bill of Materials."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Bill Of Materials"
 msgstr ""
 
-#. Tag: indexterm
-#, no-c-format
 msgid "<primary>Manufacturing</primary><secondary>Bill Of Materials</secondary>"
 msgstr ""
 
-#. Tag: indexterm
-#, no-c-format
 msgid "<primary>Manufacturing</primary><secondary>BOM</secondary>"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "At the heart of the Manufacturing system is the Bill of Materials (BOM). The BOM is a list of all materials (either bought or made) and operations that go into a finished product or sub-Item. In ERPNext, the component could have its own BOM hence forming a tree of Items with multiple levels. To make accurate Purchase Requests, you must always maintain correct BOMs. To make a new BOM:"
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
-msgid "Manufacturing &gt; Bill of Materials &gt; New BOM\n"
-"		"
+msgid "Manufacturing &gt; Bill of Materials &gt; New BOM"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "In the BOM form:"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Select the Item for which you want to make the BOM."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
-msgid "Add the operations that you have to go through to make that particular Item in the “Operations” table. For each operation, you will be asked to enter a Workstation. You must create new Workstations as and when necessary. "
+msgid "Add the operations that you have to go through to make that particular Item in the “Operations” table. For each operation, you will be asked to enter a Workstation. You must create new Workstations as and when necessary."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
-msgid "Add the list of Items you require for each operation, with its quantity. This Item could be a purchased Item or a sub-assembly with its own BOM. If the row Item is a manufactured Item and has multiple BOMs, select the appropriate BOM.   You can also define if a part of the Item goes into scrap."
+msgid "Add the list of Items you require for each operation, with its quantity. This Item could be a purchased Item or a sub-assembly with its own BOM. If the row Item is a manufactured Item and has multiple BOMs, select the appropriate BOM. You can also define if a part of the Item goes into scrap."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Workstations are defined only for product costing and Production Order Operations scheduling purposes not inventory. Inventory is tracked in Warehouses not Workstations."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "The “Full BOM” section will list all the Items of that BOM right up to the lower most child node. This table is automatically updated if any of the BOMs of the sub-Items are updated."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Production Planning Tool"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Production Planning Tool helps you plan production and purchase of Items for a period (usually a week or a month). This list of Items can be generated from the open Sales Orders in the system and will generate:"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Production Orders for each Item."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Purchase Requests for Items whose Projected Quantity is likely to fall below zero."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "To use the Production Planning Tool, go to:"
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
-msgid "Manufacturing &gt; Production Planning Tool\n"
-"		"
+msgid "Manufacturing &gt; Production Planning Tool"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Step 1: Select and get Sales Order. Select sales orders for MRP using filters (Time, Item, and Customer)"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Step 2: Get Item from Sales Orders. You can add/remove or change quantity of these Items."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Step 3: Create Production Orders."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Step 4: Create Material Request. Create Material Request for Items with projected shortfall."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "The Production Planning Tool is used in two stages:"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Selection of Open Sales Orders for the period based on “Expected Delivery Date”."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Selection of Items from those Sales Orders."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "The tool will update if you have already created Production Orders for a particular Item against its Sales Order (“Planned Quantity”). You can always edit the Item list and increase / reduce quantities to plan your production."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "How do you change a Production Plan? The output of the Production Planning Tool is the Production Order. Once your orders are created, you can change them by amending the Production Orders."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Production Order"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Production Order (also called as Work Order) is a document that is given to the manufacturing shop floor by the Production Planner as a signal to produce a certain quantity of a certain Item. Production Order also helps to generate the material requirements (Stock Entry) for the Item to be produced from its Bill of Materials. The Production Order is generated directly from the Production Planning Tool based on Sales Orders. You can also create a direct Production Order by:"
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
-msgid "Manufacturing &gt; Production Order &gt; New Production Order\n"
-"		"
+msgid "Manufacturing &gt; Production Order &gt; New Production Order"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Create Production Order:"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Select the Item to be produced (must have a Bill of Materials)."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Select the BOM."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Select Quantities."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Select Warehouses. WIP (Work-in-Progress) is where your Items will be transferred when you begin production and FG (Finished Goods) where you store finished Items before they are shipped."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Mention the Planned Start Date (an Estimated Date at which you want the Production to begin.)."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
-msgid "Select if you want to consider sub-assemblies (sub-Items that have their own BOM) as stock items or you want to explode the entire BOM when you make Stock Entries for this Item. What it means is that if you also maintain stock of your sub assemblies then you should set this as “No” and in your Stock Entries, it will also list the sub-assembly Item (not is sub-components)."
+msgid "Select if you want to consider sub-assemblies (sub-Items that have their own BOM) as stock items or you want to explode the entire BOM when you make Stock Entries for this Item. What it means is that if you also maintain stock of your sub assemblies then you should set this as “No” and in your Stock Entries, it will also list the sub-assembly Item (not is sub- components)."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "“Submit” the Production Order."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Once you “Submit”, you will see two more buttons:"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "On Submitting the Production Order, the system will reserve a slot for each of the Production Order Operations serially after the planned start date based on the workstation availability. The Workstation availability depends on the Workstation timings, holiday list and if some other Production Order Operation was scheduled in that slot. You can mention the number of days for the system to try scheduling the operations in the Manufacturing Settings. This is set to 30 Days by default. If the operation requires time exceeding the available slot, system shall ask you to break the operations. Once the scheduling is done system shall create Time Logs and save them. You can Modify them and submit them later."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "You can also create additional time logs against an Operation. For doing so select the respective operation and click on 'Make Time Log'."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Transfer Raw Material: This will create a Stock Entry with all the Items required to complete this Production Order to be added to the WIP Warehouse. (this will add sub-Items with BOM as one Item or explode their children based on your setting above)."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Update Finished Goods: This will create a Stock Entry that will deduct all the sub-Items from the WIP Warehouse and add them to the Finished Goods Warehouse."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "To check all Time Logs made against the Production Order click on 'Show Time Logs'"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "You can also partially complete a Production Order by updating the Finished Goods stock creating a Stock Entry."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "When you Update Finished Goods to the Finished Goods Warehouse, the “Produced Quantity” will be updated in the Production Order."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "In order to make a Production Order against an Item you must specify 'Yes' to \"Allow Production Order\" on the Item form."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Subcontrating"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Subcontracting is a type of job contract that seeks to outsource certain types of work to other companies. It allows work on more than one phase of the project to be done at once, often leading to a quicker completion. Subcontracting is practiced by various industries. For example, manufacturers making a number of products from complex components subcontract certain components and package them at their facilities. If your business involves outsourcing certain processes to a third party Supplier, where you buy the raw material from, you can track this by using the sub-contracting feature of ERPNext."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Setup Sub-Contracting:"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Create separate Items for the unprocessed and the processed product. For example if you supply unpainted X to your Supplier and the Supplier returns you X, you can create two Items: “X-unpainted” and “X”."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Create a Warehouse for your Supplier so that you can keep track of Items supplied. (you may supply a months worth of Items in one go)."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "For the processed Item, in the Item master, set “Is Sub Contracted Item” to “Yes”."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Step 1: Make a Bill of Materials for the processed Item, with the unprocessed Items as sub-items. For example, If you are manufacturing a pen, the processed pen will be named under Bill of Materials(BOM), whereas, the refill, knob, and other items which go into the making of pen, will be categorized as sub-items."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Step 2: Make a Purchase Order for the processed Item. When you “Save”, in the “Raw Materials Supplied”, all your un-processed Items will be updated based on your Bill of Materials."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Step 3: Make a Stock Entry to deliver the raw material Items to your Supplier."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Step 4: Receive the Items from your Supplier via Purchase Receipt. Make sure to check the “Consumed Quantity” in the “Raw Materials” table so that the correct stock is maintained at the Supplier’s end."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Make sure that the “Rate” of processed Item is the processing rate (excluding the raw material rate)."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "ERPNext will automatically add the raw material rate for your valuation purpose when you receive the finished Item in your stock."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Make To Order Manufacturing"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Make-to-order is a manufacturing process in which manufacturing starts only after a customer's order is received. The company has some standard items but the product is only made when the customer places an order. This is true for furniture, for designer gift items etc. Manufacturing after receiving customer's orders means to start a pull-type supply chain operation because manufacturing is performed when demand is confirmed, i.e. being pulled by demand. In this type of manufacturing, production orders are linked to one or more sales orders."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "In ERPNext, to follow Make-To-Order type of manufacturing, you can make Production Orders directly from Sales Orders or from Production Planning Tool ( Material Resource Planning). Visit Production Planning Tool to understand in detail, how to make Production Orders. Go to the Manufacturing Module to check your Production Order. Manually check the Production Order and Submit the Order. After submitting, click on the Action button, to get a drop-down list. Select Transfer Raw Material."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "The system will update Stock Entry accordingly. Once the Material is transferred update finished goods by clicking on the Action button. Select the option 'Update Finished Goods'. Save and Submit the Order."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Make To Stock Manufacturing"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Make-to-stock manufacturing is a system based on keeping stocks ready for customers in order to provide instant availability to customers. Products like FMCG goods and electronics are made and stocked. Here, the production cycle is completed before the sales orders are made. This strategy is used by businesses to match production with consumer demand forecasts. The make-to-stock (MTS) method forecasts demand, to determine how much stock should be produced. If demand for the product can be accurately forecasted, the MTS strategy can be an efficient choice. The main drawback to the make-to-stock (MTS) method is that it relies heavily on the accuracy of demand forecasts. Inaccurate forecasts will lead to losses stemming from excessive inventory or stockouts."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "In ERPNext, You can manually forecast and make Production Orders. To make Production Orders, you can use the Production Planning Tool. Go to the Manufacturing Module to check your Production Order. Manually check the Production Order and submit the order. After submitting, click on the Action button, to get a drop-down list. Select Transfer Raw Material."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Quality Inspection"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "In ERPNext, you can mark your incoming or outgoing products for Quality Inspection. To enable ERPNext to perform this function, go to :"
 msgstr ""
 
-#. Tag: programlisting
-#, no-c-format
-msgid "Stock &gt; Quality Inspection\n"
-"		"
+msgid "Stock &gt; Quality Inspection"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Step 1: Mention Inspection Type and Item Details"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Step 2: Enter Specification Details"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Save and Submit the Document."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "BOM Replace Tool"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Replace BOM is the utility to replace BOM of sub-assembly item, which is already updated in the BOM of Finished Good item. Let's consider a scenario to understand this better."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "If company manufactures computers, Bill of Material of its finished item will constitute of: Monitor, Key Board, Mouse, CPU."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Out of all the items above, CPU is asembled separately. Hence separate BOM will be created for the CPU. Following are the items from the BOM of CPU with:250 GB Hard Disk, Mother Board, Processor, SMTP, DVD player."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "If we have more items to be added , or existing items to be edited in the BOM of CPU, then we should create new BOM for it: 350 GB Hard Disk, Mother Board, Processor, SMTP, DVD player."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "To update new BOM updated in the BOM of finished item, where CPU is selected as raw-material, you can use BOM Replace tool. In this tool, you should select Current BOM, and New BOM. On clicking Replace button, current BOM of CPU will be replaced with New BOM in the BOM of finished Item (Computer)."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "BOM Replace Tool will not work for replacing finsihed item in BOM. You should Cancel and Amend current BOM, or create a new BOM for finished item."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Material Requirements Planning (MRP):"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "The earliest ERP systems were made for manufacturing. The earliest adopters were automobile companies who had thousands of raw materials and sub- assemblies and found it very hard to keep track of requirements and plan purchases. They started using computers to build the material requirements from forecasts and Bill of Materials."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Later these systems were expanded to include Finances, Payroll, Order Processing, and Purchasing and thus became the more generic Enterprise Resource Systems (ERP). More recently Customer Relationship Management (CRM) was added as a function and is now an integral part of ERP systems."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "These days the term ERP is used to describe systems that help manage any kind of organization like education institutes (Education ERP) or Hospitals (Hospital ERP) and so on."
 msgstr ""
 
-#. Tag: title
-#, no-c-format
 msgid "Learn Manufacturing"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "The state of art manufacturing philosophy (the rationale behind the planning processes) comes from Japanese auto major Toyota. At the time when American manufacturers depended on MRP systems to plan their manufacturing based on their sales forecasts, they turned around the problem by discovering a leaner way of planning their production. They realized that:"
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "The biggest cause of wastage in manufacturing is variation (in product and quantity)."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "So they standardized their products and sub-assemblies and sold fixed quantities based on what they produced or did not produce based on what they sold. This way, they had an extremely predictable and stable product mix. If they sold less than planned, they would simply stop production."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Their card signaling system kanban, would notify all their suppliers to stop production too. Hence they never used any of the complex material planning tools like MRP to play day-to-day material requirements, but a simple signaling system that said either STOP or GO."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "They combined this system with neatly managed factories with well labeled racks."
 msgstr ""
 
-#. Tag: para
-#, no-c-format
 msgid "Small manufacturing companies are usually make-to-order or engineer-to-order and can hardly afford to have a high level of standardization. Thus small manufacturing businesses should aim for repeatability by innovating processes and creating a common platform for products."
 msgstr ""
 

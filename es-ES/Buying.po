@@ -26,7 +26,8 @@ msgstr ""
 msgid "Let us look at the various options that can be configured:"
 msgstr ""
 
-msgid "Supplier Naming By: When a Supplier is saved, system generates a unique identity or name for that Supplier which can be used to refer the Supplier in various Buying transactions. If not configured otherwise, ERPNext uses the Supplier's Name as the unique name. If you want to identify Suppliers using names like SUPP-00001, SUPP-00002, or such other patterned series, select the value of Supplier Naming By as \"Naming Series\". You can define or select the Naming Series pattern from:"
+#, fuzzy
+msgid "Supplier Naming By: When a Supplier is saved, system generates a unique identity or name for that Supplier which can be used to refer the Supplier in various Buying transactions.If not configured otherwise, ERPNext uses the Supplier's Name as the unique name. If you want to identify Suppliers using names like SUPP-00001, SUPP-00002, or such other patterned series, select the value of Supplier Naming By as \"Naming Series\".You can define or select the Naming Series pattern from:"
 msgstr ""
 
 msgid "Setup &gt; Settings &gt; Naming Series"
@@ -53,8 +54,8 @@ msgstr ""
 msgid "A supplier may be distinguished from a contractor or subcontractor, who commonly adds specialized input to deliverables. A supplier is also known as a vendor. There are different types of suppliers based on their goods and products. ERPNext allows you to create your own categories of suppliers. These categories are known as Supplier Type. For Example, if your suppliers are mainly pharmaceutical companies and FMCG distributors, You can create a new Type for them and name them accordingly. Based on what the suppliers supply, they are classified into different categories called Supplier Type. There can be different types of suppliers. You can create your own category of Supplier Type."
 msgstr ""
 
-msgid "Buying &gt; Setup &gt; Supplier Type &gt; New Supplier Type\n"
-"		"
+#, fuzzy
+msgid "Buying &gt; Setup &gt; Supplier Type &gt; New Supplier Type"
 msgstr ""
 
 msgid "You can classify your suppliers from a range of choice available in ERPNext. Choose from a set of given options like Distributor, Electrical,Hardware, Local, Pharmaceutical, Raw material, Services etc. Classifying your supplier into different types facilitates accounting and payments."
@@ -66,8 +67,8 @@ msgstr ""
 msgid "Suppliers are companies or individuals who provide you with products or services. They are treated in exactly the same manner as Customers in ERPNext. You can create a new Supplier via:"
 msgstr ""
 
-msgid "Buying &gt; Documents &gt; Supplier &gt; New Supplier\n"
-"		"
+#, fuzzy
+msgid "Buying &gt; Documents &gt; Supplier &gt; New Supplier"
 msgstr ""
 
 msgid "Contacts and Addresses"
@@ -91,8 +92,8 @@ msgstr ""
 msgid "If you want to create an Account in another Company, just change the Company value and “Save” the Supplier again."
 msgstr ""
 
-msgid "Buying &gt; Contact &gt; New Contact\n"
-"			"
+#, fuzzy
+msgid "Buying &gt; Contact &gt; New Contact"
 msgstr ""
 
 msgid "You can also import from the Data Import Tool"
@@ -104,8 +105,8 @@ msgstr ""
 msgid "A Material Request is a simple document identifying a requirement of a set of Items (products or services) for a particular reason. To generate a Material Request manually go to:"
 msgstr ""
 
-msgid "Buying &gt; Documents &gt; Material Request &gt; New Material Request\n"
-"		"
+#, fuzzy
+msgid "Buying &gt; Documents &gt; Material Request &gt; New Material Request"
 msgstr ""
 
 msgid "A Material Request can be generated:"
@@ -153,8 +154,8 @@ msgstr ""
 msgid "You can also make a Supplier Quotation directly from:"
 msgstr ""
 
-msgid "Buying &gt; Documents &gt; Supplier Quotation &gt; New Supplier Quotation\n"
-"		"
+#, fuzzy
+msgid "Buying &gt; Documents &gt; Supplier Quotation &gt; New Supplier Quotation"
 msgstr ""
 
 msgid "If you have multiple Suppliers who supply you with the same Item, you usually send out a message (Request for Quote) to various Suppliers. In many cases, especially if you have centralized buying, you may want to record all the quotes so that:"
@@ -178,15 +179,15 @@ msgstr ""
 msgid "In ERPNext, you can also make a Purchase Order directly by going to:"
 msgstr ""
 
-msgid "Buying &gt; Documents &gt; Purchase Order &gt; New Purchase Order\n"
-"		"
+#, fuzzy
+msgid "Buying &gt; Documents &gt; Purchase Order &gt; New Purchase Order"
 msgstr ""
 
 msgid "Entering a Purchase Order is very similar to a Purchase Request, additionally you will have to set:"
 msgstr ""
 
 #, fuzzy
-msgid "Supplier. "
+msgid "Supplier"
 msgstr ""
 
 msgid "A “Required By” date on each Item: If you are expecting part delivery, your Supplier will know how much quantity to deliver at which date. This will help you from preventing over-supply. It will also help you to track how well your Supplier is doing on timeliness."
@@ -240,8 +241,8 @@ msgstr ""
 msgid "For Tax Accounts that you want to use in the tax templates, you must mention them as type “Tax” in your Chart of Accounts. Similar to your Sales Taxes and Charges Master is the Purchase Taxes and Charges Master. This is the tax template that you can use in your Purchase Orders and Purchase Invoices."
 msgstr ""
 
-msgid "Buying &gt; Setup &gt; Purchase Taxes and Charges Master &gt; New Purchase Taxes and Charges Master\n"
-"		"
+#, fuzzy
+msgid "Buying &gt; Setup &gt; Purchase Taxes and Charges Master &gt; New Purchase Taxes and Charges Master"
 msgstr ""
 
 msgid "You can specify if the tax / charge is only for valuation (not a part of total) or only for total (does not add value to the item) or for both. If you select a particular tax as your Default tax, the system will apply this tax to all the purchase transactions by default."
@@ -278,6 +279,57 @@ msgid "Consider Tax or Charge for: In this section you can specify if the tax / 
 msgstr ""
 
 msgid "Add or Deduct: Whether you want to add or deduct the tax."
+msgstr ""
+
+msgid "Buying Process"
+msgstr ""
+
+msgid "The first step to complete a buying cicle is to create a Supplier and some Items in the inventory, to create a supplier in the Buying module select \"Supplier\""
+msgstr ""
+
+msgid "In the suppliers list select new."
+msgstr ""
+
+msgid "Fill the basic supplier information."
+msgstr ""
+
+msgid "Click in save."
+msgstr ""
+
+msgid "Now we have a supplier we need to create some items to buy, in the Buying module select Items"
+msgstr ""
+
+msgid "In the item list select new"
+msgstr ""
+
+msgid "Fill the basic item data and click save."
+msgstr ""
+
+msgid "To create a new supplier invoice we must go the accountin module and select Supplier Bill"
+msgstr ""
+
+msgid "Select New"
+msgstr ""
+
+msgid "Fill the Supplier and items info."
+msgstr ""
+
+msgid "This will save the bill in as a draft, to record the transaction to the system click in Present."
+msgstr ""
+
+msgid "We can verify than we have a record in the inventory versus a payable account."
+msgstr ""
+
+msgid "To procces the suplier pay in the accountin module select Payable bills and the select the bill you want to pay and select Pay entry, click in New."
+msgstr ""
+
+msgid "Fill the paymen information and click in Save."
+msgstr ""
+
+msgid "Click in present to record the transaction."
+msgstr ""
+
+msgid "Puede validar que el pago fue aplicado."
 msgstr ""
 
 #~ msgid "Text"

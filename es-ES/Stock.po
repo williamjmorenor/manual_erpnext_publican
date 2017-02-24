@@ -17,17 +17,13 @@ msgid "Stock"
 msgstr "Inventario"
 
 msgid "For most small business that deal in physical goods, a large part of their net worth is invested in the stock in hand."
-msgstr ""
-"Para pequeñas entidades que lidian con inventarios de bienes, una gran parte "
-"de su capital neto esta invertido en inventarios."
+msgstr "Para pequeñas entidades que lidian con inventarios de bienes, una gran parte de su capital neto esta invertido en inventarios."
 
 msgid "There are three main types of entries:"
 msgstr "Hay tres tipos principales de movimientos de inventarios:"
 
 msgid "Purchase Receipt: Items received from Suppliers against Purchase Orders."
-msgstr ""
-"Orden de Compra: Artículos recibidos de un Proveedor contra una Orden de "
-"Compra."
+msgstr "Orden de Compra: Artículos recibidos de un Proveedor contra una Orden de Compra."
 
 msgid "Stock Entry: Items transferred from one Warehouse to another."
 msgstr "Entrada de Inventario: Artículos transferidos de un Almacén a otro."
@@ -36,51 +32,28 @@ msgid "Delivery Note: Items shipped to Customers."
 msgstr "Nota de Envió: Artículos enviados a los Clientes."
 
 msgid "Tracking stock is not just about adding and subtracting quantities. Some complications arise when:"
-msgstr ""
-"Llevar control del inventario no es sumar y restar cantidades. Existen "
-"algunas complicaciones cuando:"
+msgstr "Llevar control del inventario no es sumar y restar cantidades. Existen algunas complicaciones cuando:"
 
 msgid "Back-dated (past) entries are made / edited: This affects future stock levels and may lead to negative stock."
-msgstr ""
-"Se realizan o editan transacciones de fechas anteriores: Esto afecta los "
-"niveles de inventario futuros y puede ocasionar inventarios negativos."
+msgstr "Se realizan o editan transacciones de fechas anteriores: Esto afecta los niveles de inventario futuros y puede ocasionar inventarios negativos."
 
 msgid "Stock has to be valued based on First-in-First-out: ERPNext needs to maintain a sequence of all transactions to know the exact value of your Items."
-msgstr ""
-"Inventario valuado en base a Primeras Entradas Primeras Salidas: ERPNext "
-"necesita mantener una secuencia de todas las transacciones para conocer el "
-"costo exacto de cada Artículo."
+msgstr "Inventario valuado en base a Primeras Entradas Primeras Salidas: ERPNext necesita mantener una secuencia de todas las transacciones para conocer el costo exacto de cada Artículo."
 
 msgid "Stock reports are required at any point in time in the past: You have to lookup what was the quantity / value your stock of Item X on date Y."
-msgstr ""
-"Reportes de inventarios son requeridos para cualquier fecha anterior. Hay "
-"que determinar que cantidad/precio de inventario existe para el producto X "
-"en la fecha Y."
+msgstr "Reportes de inventarios son requeridos para cualquier fecha anterior. Hay que determinar que cantidad/precio de inventario existe para el producto X en la fecha Y."
 
 msgid "To manage this, ERPNext collects all inventory transactions in a table called the Stock Ledger Entry. All Purchase Receipts, Stock Entries and Delivery Notes update this table."
-msgstr ""
-"Para manejar esta situación, ERPNect registra todos los movimientos de "
-"inventarios en una tabla denominada Libro Mayor de Inventario. Todas las "
-"Ordenes de Compra, Entradas de Almacén y Notas de Envio se registran en esta "
-"tabla."
+msgstr "Para manejar esta situación, ERPNect registra todos los movimientos de inventarios en una tabla denominada Libro Mayor de Inventario. Todas las Ordenes de Compra, Entradas de Almacén y Notas de Envio se registran en esta tabla."
 
 msgid "Item Master"
 msgstr "Maestro de Artículos"
 
 msgid "An Item is your companys' product or a service. The term Item is applicable to your core products as well as your raw materials. It can be a product or service that you buy/sell from your customers/ suppliers. ERPNext allows you to manage all sorts of items like raw-materials, sub-assemblies, finished goods, item variants and service items."
-msgstr ""
-"Un Artículo en un producto o servicio de su compañía. El termino Artículo se "
-"refiere tanto a sus productos materiales como a sus materias primas. Puede "
-"ser un bien que compra/vende a sus proveedores/clientes. ERPNext le permite "
-"administrar toda clase de productos como materias primas, piezas, artículos "
-"para la venta, variantes y servicios."
+msgstr "Un Artículo en un producto o servicio de su compañía. El termino Artículo se refiere tanto a sus productos materiales como a sus materias primas. Puede ser un bien que compra/vende a sus proveedores/clientes. ERPNext le permite administrar toda clase de productos como materias primas, piezas, artículos para la venta, variantes y servicios."
 
 msgid "ERPNext is optimized for itemized management of your sales and purchase. If you are in services, you can create an Item for each services that your offer. Completing the Item Master is very essential for successful implementation of ERPNext."
-msgstr ""
-"ERPNext esta optimizada para una administración de sus compras y ventas en "
-"base a Artículos, puede crear un Artículo par cada servicio que preste. "
-"Completar el Maestro de Artículos es esencial para un implementación exitosa "
-"de ERPNext."
+msgstr "ERPNext esta optimizada para una administración de sus compras y ventas en base a Artículos, puede crear un Artículo par cada servicio que preste. Completar el Maestro de Artículos es esencial para un implementación exitosa de ERPNext."
 
 msgid "Item Codification"
 msgstr "Codificación de Artículos"
@@ -319,7 +292,9 @@ msgstr ""
 msgid "A Stock Entry is a simple document that lets you record Item movement from a Warehouse, to a Warehouse and between Warehouses. To make a Stock Entry you have to go to:"
 msgstr ""
 
-msgid "Stock &gt; Stock Entry &gt; New"
+#, fuzzy
+msgid "Stock &gt; Stock Entry &gt; New Stock Entry\n"
+"	"
 msgstr ""
 
 #. Tag: para
@@ -536,7 +511,9 @@ msgstr ""
 msgid "A Warehouse stocks materials required for manufacturing or trading. The Material Issue form has to be submitted to order materials out of a Warehouse by any department."
 msgstr ""
 
-msgid "Stock &gt; Stock Entry &gt; New"
+#, fuzzy
+msgid "Stock &gt; Stock Entry &gt; New Stock Entry\n"
+"	"
 msgstr ""
 
 msgid "Go to Stock Entry. Click on New Stock Entry Select the option “Material Issue” under Purpose. Provide Source Warehouse details. Provide the BOM Number. Save"
@@ -711,7 +688,8 @@ msgstr ""
 msgid "In perpetual inventory, the system will maintain seperate account balance for each warehouse under separate account head. To create that account head, enter \"Create Account Under\" in Warehouse master."
 msgstr ""
 
-msgid "Activate Perpetual Inventory"
+#, fuzzy
+msgid "Migrate To Perpetual Inventory"
 msgstr ""
 
 msgid "Setup &gt; Accounts Settings &gt; Make Accounting Entry For Every Stock Movement\n"
@@ -727,7 +705,8 @@ msgstr ""
 msgid "At the end of an accounting period, the total value of items to be sold, need to be booked as the company’s assets, often known as stock-in-hand. The difference between the value of the items remaining to be sold and the previous period’s stock-in-hand value can be positive or negative. If positive, this value is removed from expenses (cost-of-goods-sold) and is added to assets (stock-in-hand / fixed-assets). If negative, a reverse entry is passed. This complete process is called Periodic Inventory. If you are an existing user using Periodic Inventory and want to use Perpetual Inventory, you have to follow some steps to migrate."
 msgstr ""
 
-msgid "Activate Perpetual Inventory"
+#, fuzzy
+msgid "Migrate To Perpetual Inventory"
 msgstr ""
 
 msgid "Existing Users, need to follow some steps to activate the new Perpetual Inventory system. As Perpetual Inventory always maintains a sync between stock and account balance, it is not possible to enable it with existing Warehouse setup. You have to create a whole new set of Warehouses, each linked to relevant account."
@@ -847,3 +826,4 @@ msgstr ""
 
 #~ msgid "Best Practices"
 #~ msgstr ""
+

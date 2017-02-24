@@ -28,14 +28,15 @@ msgstr ""
 msgid "This section includes information on how to setup customer groups, sales partners, sales persons and terms and conditions. It has instructions on how to configure selling settings, in order to enable default fields."
 msgstr ""
 
-msgid "Customer Group"
+#, fuzzy
+msgid "Default Customer Group"
 msgstr ""
 
 msgid "Customer Group is a category where you specify your customer group type. Your customers can be Individuals or they can be corporate(Company) customers. Your customers could also be government officials or non-profit organisations. ERPNext allows you to create your own Customer Groups. To create a new Customer Group, go to"
 msgstr ""
 
-msgid "Selling &gt; Setup &gt; Customer Group\n"
-"		"
+#, fuzzy
+msgid "Selling &gt; Setup &gt; Customer Group"
 msgstr ""
 
 msgid "Customer Group master is maintained in tree strcuture. This allows you to set parent Customer Groups, and Child Customer Groups under those Parent Groups. Setting up this structure shall allow you making intelligent sales report based on Customer Group master."
@@ -50,8 +51,8 @@ msgstr ""
 msgid "You can track Sales Personwise commission in the report under Selling module. To create a sales partner go to:"
 msgstr ""
 
-msgid "Selling &gt; Setup &gt; Sales Partner\n"
-"		"
+#, fuzzy
+msgid "Selling &gt; Setup &gt; Sales Partner"
 msgstr ""
 
 msgid "Sales Partners are saved with Sales Partner name provided by user."
@@ -66,8 +67,8 @@ msgstr ""
 msgid "The person who helps in selling your products or services is called a Sales Person. Sales Person master is maintained in tree struture. This allows you defining the heirarchy within the Sales Team. To add/edit Sales Person, go to:"
 msgstr ""
 
-msgid "Selling &gt; Setup &gt; Sales Person\n"
-"		"
+#, fuzzy
+msgid "Selling &gt; Setup &gt; Sales Person"
 msgstr ""
 
 msgid "A Sales Person Group called \"Sales Team\" will be created by default. You can click in it to find option to insert new parent and child Sales Person records. Sales Person master will be saved with the name of Sales Person."
@@ -85,8 +86,8 @@ msgstr ""
 msgid "When customer is saved, system generated unique ID for that Customer. Using that Customer ID, you can select Customer in other transactions. Bydefault Customer will be saved with Customer Name. If you wish to save Customer using a naming series, you should set Customer Naming By as \"Naming Series\". You can set Naming Series for customer naming from:"
 msgstr ""
 
-msgid "Setup &gt; Settings &gt; Naming Series\n"
-"			"
+#, fuzzy
+msgid "Setup &gt; Settings &gt; Naming Series"
 msgstr ""
 
 msgid "Campaign Naming By"
@@ -95,7 +96,8 @@ msgstr ""
 msgid "Just like for Customer, you can also configure as how ID will be generated for the Campaign master. Bydefault Campaign will be saved with Campaign Name provided while its creation."
 msgstr ""
 
-msgid "Customer Group"
+#, fuzzy
+msgid "Default Customer Group"
 msgstr ""
 
 msgid "Customer Group in this field will be auto-updated when you open new Customer form. While converting Quotation created for Lead into Sales Order, system attempts to convert Lead into Customer in the backend. While creating Customer in the backend, system pickup Customer Group and Territory as defined in the Selling Setting. If system doesn't find any values, then following validation message will be raised."
@@ -146,8 +148,8 @@ msgstr ""
 msgid "A customer, who is sometimes known as a client, buyer, or purchaser is the one who receives goods, services, products, or ideas, from a seller for a monetary consideration. A customer can also receive goods or services from a vendor or a supplier for other valuable considerations. You can either directly create your Customers via"
 msgstr ""
 
-msgid "Selling &gt; Customer\n"
-"		"
+#, fuzzy
+msgid "Selling &gt; Customer"
 msgstr ""
 
 msgid "or upload it via the Data Import Tool."
@@ -246,8 +248,8 @@ msgstr ""
 msgid "They are called Leads because they may lead you to a sale. Sales people usually work on leads by calling them, building a relationship and sending information about their products or services. It is important to track all this conversation to enable another person who may have to follow-up on that contact. The new person is then able to know the history of that particular Lead. To create a Lead, go to:"
 msgstr ""
 
-msgid "Selling &gt; Lead &gt; New Lead\n"
-"		"
+#, fuzzy
+msgid "Selling &gt; Lead &gt; New Lead"
 msgstr ""
 
 msgid "ERPNext gives you a lot of options you may want to store about your Leads. For example what is the source, how likely are they to give you business etc. If you have a healthy number of leads, this information will help you prioritize who you want to work with."
@@ -271,8 +273,8 @@ msgstr ""
 msgid "When you know a Lead is looking for some products or services to buy, you can track that as an Opportunity. You can create an Opportunity from:"
 msgstr ""
 
-msgid "Selling &gt; Opportunity &gt; New Opportunity\n"
-"		"
+#, fuzzy
+msgid "Selling &gt; Opportunity &gt; New Opportunity"
 msgstr ""
 
 msgid "You can also open a “Open” Lead and click on “Create Opportunity” button."
@@ -290,8 +292,8 @@ msgstr ""
 msgid "During a sale, the customer may request for a written note about the products or services you are planning to offer, along with the prices and other terms of engagement. This is called a “Proposal” or an “Estimate” or a “Pro Forma Invoice”or a Quotation. To create a new Quotation go to:"
 msgstr ""
 
-msgid "Selling &gt; Quotation &gt; New Quotation\n"
-"		"
+#, fuzzy
+msgid "Selling &gt; Quotation &gt; New Quotation"
 msgstr ""
 
 msgid "A Quotation contains details about:"
@@ -348,8 +350,8 @@ msgstr ""
 msgid "Each Quotation must ideally contain a set of terms, of your contract. It is usually a good idea to make templates of your Terms and Conditions, so that you have a standard set of terms. You can do this by going to:"
 msgstr ""
 
-msgid "Selling &gt; Terms and Conditions\n"
-"			"
+#, fuzzy
+msgid "Selling &gt; Terms and Conditions"
 msgstr ""
 
 msgid "What should Terms and Conditions Contain?"
@@ -403,8 +405,8 @@ msgstr ""
 msgid "Alternatively, you can create a Sales Order directly from:"
 msgstr ""
 
-msgid "Selling &gt; Sales Order &gt; New Sales Order\n"
-"		"
+#, fuzzy
+msgid "Selling &gt; Sales Order &gt; New Sales Order"
 msgstr ""
 
 msgid "Most of the information in your Sales Order is the same as the Quotation. There are a few amongst other things that a Sales Order will ask you to update."
@@ -515,10 +517,8 @@ msgstr ""
 msgid "To allocate target, you should open specific Sales Person master."
 msgstr ""
 
-msgid ""
-"\n"
-"		Selling &gt; Setup &gt; Sales Person &gt; (Open Sales Person)\n"
-"		"
+#, fuzzy
+msgid "Selling &gt; Setup &gt; Sales Person &gt; (Open Sales Person)"
 msgstr ""
 
 msgid "Campaign"
@@ -533,10 +533,8 @@ msgstr ""
 msgid "Sales BOM stands for Sales Bill-of-Material. It's a master where you can list item which are bundled together and sold as one item. For instance, when laptop is delivered, you need to ensure that charger, mouse and laptop bag are delivered and stock level of these items gets affected. To address this scenario, you can set create Sales BOM for the main item, i.e. laptop, and list deliverable items i.e. laptop + charger + other accessories as child items. Following are the steps on how to setup Sales BOM master, and how is it used in the sales transactions. To create new Sales BOM, Go to:"
 msgstr ""
 
-msgid ""
-"\n"
-"		Selling &gt;&gt; Setup &gt;&gt; Sales BOM &gt;&gt; New\n"
-"		"
+#, fuzzy
+msgid "Selling &gt;&gt; Setup &gt;&gt; Sales BOM &gt;&gt; New"
 msgstr ""
 
 msgid "In Sales BOM master, there are two sections. Sales BOM Item and Package Item. In Sales BOM item, you will select a Parent Item. The parent item must be a non-stock item. This is non-stock item because there is no stock maintained for it but only the Package Items. If you want to maintain stock for the Parent Item, then you must create a regular Bill of Material (BOM) and package them using a Stock Entry Transactions."
@@ -554,9 +552,9 @@ msgstr ""
 msgid "This work-around in Sales BOM was discovered when a customer dealing into nutrition product asked for feature to manage schemes like \"Buy One Get One Free\". To manage the same, he created a non-stock item which was used as Parent Item. In description of item, he entered scheme details with items image indicating the offer. The saleable product was selected in Package Item where qty was two. Hence every time they sold one qty of Parent item under scheme, system deducted two quantities of product from Warehouse."
 msgstr ""
 
-#~ msgid "Text"
+#~ msgid "Item Price"
 #~ msgstr ""
 
-#~ msgid "Item Price"
+#~ msgid "Text"
 #~ msgstr ""
 

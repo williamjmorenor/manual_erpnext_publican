@@ -197,8 +197,7 @@ msgstr ""
 msgid "Make the Bill of Materials based on your design document and product requirements specified by the client."
 msgstr ""
 
-#, fuzzy
-msgid "Bill of Materials"
+msgid "Bill of Material"
 msgstr ""
 
 msgid "A Bill of Material (BOM) is a list of the raw materials, sub-assemblies, intermediate assemblies, sub-components, parts and the quantities of each needed to manufacture an end product. Make separate Bill of Material for every milestone order. Make one for the final order. Every BOM will have one Operations section and one Materials section. Mention the steps and hourly rates in the Operations section and the quantity of materials required in the Materials section."
@@ -261,7 +260,8 @@ msgstr ""
 msgid "The Customer, Jane, realises that if she wants a further decrease in price, the furniture maker will offer further non-branded raw material and decrease cost. She doesn't want to compromise on quality and thus agrees to the second quote. She confirms the order and pays them Rs. 10000/- as Advance. Advance payment is seen as an order confirmation. Based on the confirmation, create a Sales Order."
 msgstr ""
 
-msgid "Sales Order"
+#, fuzzy
+msgid "Get Sales Order"
 msgstr ""
 
 msgid "A Sales Order is an order issued by a business to a Customer for products and/or services. After the proposal phase, it is time for the organisation to make a Sales Order. Based on the price agreement in the Quotation, make a Sales Order for the custom product 'Child Bed Baby'."
@@ -360,7 +360,8 @@ msgstr ""
 msgid "Quick Overview of PPT-Production Planning Tool"
 msgstr ""
 
-msgid "Sales Order"
+#, fuzzy
+msgid "Get Sales Order"
 msgstr ""
 
 msgid "Get Items from Sales Order"
@@ -600,7 +601,8 @@ msgstr ""
 msgid "Please mention the Default Warehouse for this Item as “Finished Goods”. This product is available at the Finished Goods Warehouse only after it gets manufactured at the Work-in-Progress Warehouse. It cannot be kept in stores, because it is not purchased, it is manufactured."
 msgstr ""
 
-msgid "In reality you may not have three Warehouses. You may have one, which you use for raw materials, for manufacturing/stitching/producing and also for storing finished goods. In such cases, you have to only imagine separate spaces for each activity, and name them accordingly. For system entry purpose, having three different Warehouses for stocking raw materials, manufacturing unfinished goods and storing finished goods is a good practice."
+#, fuzzy
+msgid "In reality you may not have three Warehouses. You may have one, which you use for raw materials, for manufacturing/ stitching/producing and also for storing finished goods. In such cases, you have to only imagine separate spaces for each activity, and name them accordingly. For system entry purpose, having three different Warehouses for stocking raw materials, manufacturing unfinished goods and storing finished goods is a good practice."
 msgstr ""
 
 msgid "Create Items for all raw materials"
@@ -639,8 +641,7 @@ msgstr ""
 msgid "Before making the Price List and the Sales Order, make the Bill of Materials based on your design document."
 msgstr ""
 
-#, fuzzy
-msgid "Bill of Materials"
+msgid "Bill of Material"
 msgstr ""
 
 msgid "A Bill of Material (BOM) is a list of the raw materials, sub-assemblies, intermediate assemblies, sub-components, parts and the quantities of each needed to manufacture an end product."
@@ -664,7 +665,8 @@ msgstr ""
 msgid "You can enter the rates manually by adjusting as per the UOM. Since Tree Glue was purchased in Kg, calculate the rate for 10 gm and enter the rate accordingly. Do not forget to mention rates for every material."
 msgstr ""
 
-msgid "Save the BOM and submit it. Do not forget to submit the BOM. This is an important step. The pricing is fixed only after the BOM is submitted. After submitting, you can create a Price List and Item Price into the system."
+#, fuzzy
+msgid "Save the BOM and submit it. Do not forget to submit the BOM. This is an important step. The pricing is fixed only after the BOM is submitt ed. After submitting, you can create a Price List and Item Price into the system."
 msgstr ""
 
 msgid "Price List"
@@ -835,6 +837,10 @@ msgstr ""
 msgid "A Customer name is the name of the organisation and a Contact name is the name of the user who is coordinating."
 msgstr ""
 
+#, fuzzy
+msgid "Save the BOM and submit it. Do not forget to submit the BOM. This is an important step. The pricing is fixed only after the BOM is submitt ed. After submitting, you can create a Price List and Item Price into the system."
+msgstr ""
+
 msgid "Create a Price List: Since you can maintain different prices for different regions, lets create a Price List for all the Indian Customers. After creating a Price List template, you can click on the Action button and select to Add prices. The displayed form has a button 'New'. Click on that button to get a field for Item Price."
 msgstr ""
 
@@ -886,18 +892,18 @@ msgstr ""
 msgid "Stock &gt; Stock Balance"
 msgstr ""
 
+#~ msgid "Selling and Custumer Billing"
+#~ msgstr ""
+
 #~ msgid "Text"
 #~ msgstr ""
 
-#~ msgid "Selling and Custumer Billing"
+#~ msgid "Supplier Billing"
 #~ msgstr ""
 
 #~ msgid "Planning and Forecasting"
 #~ msgstr ""
 
 #~ msgid "BOM"
-#~ msgstr ""
-
-#~ msgid "Supplier Billing"
 #~ msgstr ""
 

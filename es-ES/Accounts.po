@@ -115,8 +115,8 @@ msgstr "Una Factura de Venta es una factura que enviá a sus clientes, contra la
 msgid "You can create a Sales Invoice directly from"
 msgstr "Puede crear una Factura de Ventas directamente desde:"
 
-msgid "Accounting &gt; Documents &gt; Sales Invoice &gt; New Sales Invoice\n"
-"		"
+#, fuzzy
+msgid "Accounting &gt; Documents &gt; Sales Invoice &gt; New Sales Invoice"
 msgstr "Contabilidad &gt; Documentos &gt; Facturas de Venta &gt; Nueva Factura de Venta"
 
 msgid "or Click on Make Invoice at the right hand corner of the Delivery Note."
@@ -146,8 +146,7 @@ msgstr "Cuando se registra una venta (devengo):"
 msgid "Debit: Customer (grand total) Credit: Income (net total, minus taxes for each Item) Credit: Taxes (liabilities to be paid to the government)"
 msgstr "Débito: Cliente (Gran Total) Crédito: Ingreso (Total Neto: Menos impuestos para cada Articulo) Crédito: Impuestos (Cuentas por pagar al estado)"
 
-#, fuzzy
-msgid "To see entries in your Purchase Invoice after you “Submit”, click on “View Ledger”."
+msgid "To see entries in your Sales Invoice after you “Submit”, click on “View Ledger”."
 msgstr "Para ver los registros de su Factura de Proveedor después de \"Presentar\", clic en \"Ver Registros\"."
 
 msgid "Dates"
@@ -186,8 +185,8 @@ msgstr "Factura de Compra es exactamente lo opuesto a las Facturas de Venta. Es 
 msgid "To make a new Purchase Invoice, go to:"
 msgstr "Para hacer una nueva Factura de Compra, valla a:"
 
-msgid "Accounts &gt; Documents &gt; Purchase Invoice &gt; New Purchase Invoice\n"
-"		"
+#, fuzzy
+msgid "Accounts &gt; Documents &gt; Purchase Invoice &gt; New Purchase Invoice"
 msgstr "Contabilidad &gt; Documentos &gt; Factura de Compra &gt; Nueva Factura de Compra"
 
 msgid "or click on “Make Purchase Invoice” in Purchase Order or Purchase Receipt."
@@ -205,8 +204,7 @@ msgstr "La Factura de Compra afectara sus cuentas como se detalla a continuació
 msgid "Accounting entries (GL Entry) for a typical double entry “purchase”:"
 msgstr "Registros Contables (Entradas del Libro Mayor) de un registro tipico por partida doble de una \"compra\":"
 
-#, fuzzy
-msgid "Debits"
+msgid "Debits:"
 msgstr "Debitos:"
 
 msgid "Expense or Asset (net totals, excluding taxes)"
@@ -215,15 +213,13 @@ msgstr "Gasto o Activo (Total Neto, excluyendo impuestos)"
 msgid "Taxes (assets if VAT-type or expense again)."
 msgstr "Impuestos (impuestos de tipo IVA)."
 
-#, fuzzy
-msgid "Credits"
+msgid "Credits:"
 msgstr "Creditos:"
 
 msgid "Supplier"
 msgstr "Proveedor"
 
-#, fuzzy
-msgid "To see entries in your Purchase Invoice after you “Submit”, click on “View Ledger”."
+msgid "To see entries in your Sales Invoice after you “Submit”, click on “View Ledger”."
 msgstr "Para ver los registros de su Factura de Proveedor después de \"Presentar\", clic en \"Ver Registros\"."
 
 msgid "Is purchase an “Expense” or an “Asset”?"
@@ -286,8 +282,7 @@ msgstr ""
 msgid "Debit: Supplier"
 msgstr ""
 
-#, fuzzy
-msgid "Credit: Bank or Cash Account."
+msgid "Credit: Bank or Cash Account"
 msgstr ""
 
 msgid "Reconciling Cheque Payments"
@@ -299,8 +294,8 @@ msgstr ""
 msgid "To use this, go to:"
 msgstr ""
 
-msgid "Accounts &gt; Tools &gt; Bank Reconciliation\n"
-"		"
+#, fuzzy
+msgid "Accounts &gt; Tools &gt; Payment Reconciliation"
 msgstr ""
 
 msgid "Select your “Bank” Account and enter the dates of your statement. Here you will get all the “Bank Voucher” type entries. In each of the entry on the right most column, update the “Clearance Date” and click on “Update”."
@@ -345,8 +340,8 @@ msgstr ""
 msgid "In such cases, you can use the Payment to Invoice Matching Tool."
 msgstr ""
 
-msgid "Accounts &gt; Tools &gt; Bank Reconciliation\n"
-"		"
+#, fuzzy
+msgid "Accounts &gt; Tools &gt; Payment Reconciliation"
 msgstr ""
 
 msgid "In this tool, you can select an account (your Customer’s account) and click on “Pull Payment Entries” and it will select all un-linked Journal Vouchers and Sales Invoices from that Customer."
@@ -367,8 +362,8 @@ msgstr ""
 msgid "Go to Accounts and open a new Journal Voucher to make the advance entry."
 msgstr ""
 
-msgid "Accounts &gt; Documents &gt; Journal Voucher &gt; New Journal Voucher\n"
-"		"
+#, fuzzy
+msgid "Accounts &gt; Documents &gt; Journal Voucher &gt; New Journal Voucher"
 msgstr ""
 
 msgid "Mention the voucher type as cash voucher. This differs for different customers. If somebody pays by cheque the voucher type will be Bank Voucher. Then select the customer account and make the respective debit and credit entries."
@@ -422,7 +417,6 @@ msgstr ""
 msgid "Against Voucher: Link it to a voucher or invoice if it affects the “outstanding” amount of that invoice."
 msgstr ""
 
-#, fuzzy
 msgid "Is Advance: Select “Yes” if you want to make it selectable in an Invoice.  Other information in case it is a Bank Payment or a bill."
 msgstr ""
 
@@ -444,8 +438,7 @@ msgstr ""
 msgid "Debit: Expense Account (like Telephone expense)."
 msgstr ""
 
-#, fuzzy
-msgid "Credit: Bank or Cash Account."
+msgid "Credit: Bank or Cash Account"
 msgstr ""
 
 msgid "Bad Debts or Write Offs"
@@ -472,8 +465,8 @@ msgstr ""
 msgid "To set credit limit go to Customer- Master"
 msgstr ""
 
-msgid "Selling &gt; Document &gt; Customer\n"
-"		"
+#, fuzzy
+msgid "Selling &gt; Document &gt; Customer"
 msgstr ""
 
 msgid "Go to the 'More Info section' and enter the amount in the field Credit Limit."
@@ -488,8 +481,7 @@ msgstr ""
 msgid "In the field Credit Controller, select the role who would be authorized to accept orders or raise credit limits of customers."
 msgstr ""
 
-#, fuzzy
-msgid "The Opening Entry"
+msgid "Openning Entry"
 msgstr ""
 
 msgid "If you are a new company you can start using ERPNext accounting module by going to chart of accounts."
@@ -537,8 +529,7 @@ msgstr ""
 msgid "A nice way to simplify opening is to use a temporary account just for opening. These accounts will become zero once all your old invoices and opening balances of bank, debt stock etc are entered. In the standard chart of accounts, a Temperory Opening account is created under assets"
 msgstr ""
 
-#, fuzzy
-msgid "The Opening Entry"
+msgid "Openning Entry"
 msgstr ""
 
 msgid "In ERPNext Opening Accounts are setup by submitting a special Journal Entries (Journal Voucher)."
@@ -547,8 +538,8 @@ msgstr ""
 msgid "Make sure to set “Is Opening” as “Yes” in the More Info section."
 msgstr ""
 
-msgid "Setup &gt; Opening Accounts and Stock &gt; Opening Accounting Entries.\n"
-"				"
+#, fuzzy
+msgid "Setup &gt; Opening Accounts and Stock &gt; Opening Accounting Entries."
 msgstr ""
 
 msgid "Complete Journal Entries on the Debit and Credit side."
@@ -614,8 +605,8 @@ msgstr ""
 msgid "By doing this, your balance in your Income and Expense Accounts become zero. You start a new Fiscal Year (or period) with a balanced Balance Sheet and fresh Profit and Loss account. In ERPNext after making all the special entries via Journal Voucher for the current fiscal year, you should set all your Income and Expense accounts to zero via:"
 msgstr ""
 
-msgid "Accounts &gt; Tools &gt; Period Closing Voucher\n"
-"		"
+#, fuzzy
+msgid "Accounts &gt; Tools &gt; Period Closing Voucher"
 msgstr ""
 
 msgid "Posting Date will be when this entry should be executed. If your Fiscal Year ends on 31st December, then that date should be selected as Posting Date in the Period Closing Voucher."
@@ -651,12 +642,10 @@ msgstr ""
 msgid "Opening"
 msgstr ""
 
-#, fuzzy
-msgid "Debits"
+msgid "Debits:"
 msgstr "Debitos:"
 
-#, fuzzy
-msgid "Credits"
+msgid "Credits:"
 msgstr "Creditos:"
 
 msgid "Closing"
@@ -671,8 +660,7 @@ msgstr ""
 msgid "Sales and Purchase Register: In this report, each tax Account is transposed in columns. For each Invoice and invoice Item, you will get the amount of individual tax that has been paid, based on the Taxes and Charges table."
 msgstr ""
 
-#, fuzzy
-msgid "Bank Reconciliation Tool"
+msgid "Bank Reconciliation"
 msgstr ""
 
 msgid "A Bank Reconciliation is a process that explains the difference between the bank balance shown in an organisation's bank statement, as supplied by the bank, and the corresponding amount shown in the organisation's own accounting records at a particular point in time."
@@ -687,8 +675,7 @@ msgstr ""
 msgid "To add clearance entries go to:"
 msgstr ""
 
-#, fuzzy
-msgid "Bank Reconciliation Tool"
+msgid "Bank Reconciliation"
 msgstr ""
 
 msgid "The Bank Reconciliation tool in ERPNext, helps add clearance dates to the account statements. To Reconcile cheque payments go to Accounts and click on Bank Reconciliation."
@@ -709,8 +696,7 @@ msgstr ""
 msgid "Step 5: Click on the button 'Update Clearance Date'."
 msgstr ""
 
-#, fuzzy
-msgid "Budgeting"
+msgid "Budgetting"
 msgstr ""
 
 msgid "ERPNext will help you set and manage budgets on your Cost Centers. This is useful when, for example, you are doing online sales. You have a budget for search ads, and you want ERPNext to stop or warn you from over spending, based on that budget."
@@ -722,8 +708,8 @@ msgstr ""
 msgid "In order to allocate budget, go to"
 msgstr ""
 
-msgid "Accounts &gt; Setup &gt; Chart of Cost Centers\n"
-"		"
+#, fuzzy
+msgid "Accounts &gt; Setup &gt; Chart of Cost Centers"
 msgstr ""
 
 msgid "and click on Chart of Cost Center. Select a Cost Center and click on Open."
@@ -768,8 +754,8 @@ msgstr ""
 msgid "To edit your Chart of Accounts in ERPNext go to:"
 msgstr ""
 
-msgid "Accounts &gt; Setup &gt; Chart of Accounts\n"
-"		"
+#, fuzzy
+msgid "Accounts &gt; Setup &gt; Chart of Accounts"
 msgstr ""
 
 msgid "Chart of Accounts is a tree view of the names of the Accounts (Ledgers and Groups) that a Company requires to manage its books of accounts. ERPNext sets up a simple chart of accounts for each Company you create, but you have to modify it according to your needs and legal requirements. ￼ For each company, Chart of Accounts signifies the way to classify the accounting entries, mostly based on statutory (tax, compliance to government regulations) requirements."
@@ -853,7 +839,8 @@ msgstr ""
 msgid "Cost Center and Budgeting"
 msgstr ""
 
-msgid "Your Chart of Accounts is mainly designed to provide reports to the government and tax authorities. ￼ Most businesses have multiple activities like different product lines, market segments, areas of business, etc that share some common overheads.They should ideally have their own structure to report, whether they are profitable or not. For this purpose, there is an alternate structure, called the Chart of Cost Centers."
+#, fuzzy
+msgid "Your Chart of Accounts is mainly designed to provide reports to the government and tax authorities. ￼ Most businesses have multiple activities like different product lines, market segments, areas of business, etc that share some common overheads. They should ideally have their own structure to report, whether they are profitable or not. For this purpose, there is an alternate structure, called the Chart of Cost Centers."
 msgstr ""
 
 msgid "Cost Center"
@@ -877,15 +864,10 @@ msgstr ""
 msgid "To setup your Chart of Cost Centers go to:"
 msgstr ""
 
-msgid "Accounts &gt; Setup &gt; Chart of Cost Centers\n"
-"			"
-msgstr ""
-
 msgid "Cost centers help you in one more activity, budgeting."
 msgstr ""
 
-#, fuzzy
-msgid "Budgeting"
+msgid "Budgetting"
 msgstr ""
 
 msgid "Budgets are also great for planning purposes. When you are making plans for the next financial year, you would typically target a revenue based on which you would set your expenses. Setting a budget will ensure that your expenses do not get out of hand, at any point, as per your plans."
@@ -894,8 +876,8 @@ msgstr ""
 msgid "You can define it in the Cost Center. If you have seasonal sales you can also define a budget distribution that the budget will follow."
 msgstr ""
 
-msgid "Accounts &gt; Setup &gt; Budget Distribution &gt; New Budget Distribution\n"
-"			"
+#, fuzzy
+msgid "Accounts &gt; Setup &gt; Budget Distribution &gt; New Budget Distribution"
 msgstr ""
 
 msgid "Budget Actions"
@@ -940,8 +922,8 @@ msgstr ""
 msgid "To go to Payment Tool, go to:"
 msgstr ""
 
-msgid "Accounts &gt; Tools &gt; Payment Tool\n"
-"		"
+#, fuzzy
+msgid "Accounts &gt; Tools &gt; Payment Tool"
 msgstr ""
 
 msgid "Select the Company Name."
@@ -962,7 +944,8 @@ msgstr ""
 msgid "Click on Get Outstanding Vouchers to fetch all the valid Vouchers, Invoices and Orders against which a payment can be made/received. These will appear in the Against Voucher section."
 msgstr ""
 
-msgid "Once details have been fetched, click on the detail entry and enter the payment amount made against that Invoice/Order/Voucher."
+#, fuzzy
+msgid "Once details have been fetched, click on the detail entry and enter the payment amount made against that Invoice/Order/ Voucher."
 msgstr ""
 
 msgid "Click on 'Make Journal Voucher' to generate a new Journal Voucher with the relevant Party Details and Credit/Debit details filled in."
@@ -1016,8 +999,8 @@ msgstr ""
 msgid "Enable POS View via"
 msgstr ""
 
-msgid "(Setup &gt; Customize &gt; Feature Setup)\n"
-"					"
+#, fuzzy
+msgid "(Setup &gt; Customize &gt; Feature Setup)"
 msgstr ""
 
 msgid "Create a POS Setting record"
@@ -1035,7 +1018,6 @@ msgstr ""
 msgid "In your Items table, update inventory information like Warehouse (saved as default), Serial Number, or Batch Number if applicable."
 msgstr ""
 
-#, fuzzy
 msgid "Update Payment Details like your Bank / Cash Account, Paid amount etc. "
 msgstr ""
 
@@ -1072,7 +1054,8 @@ msgstr ""
 msgid "Delete button appears only when Items are selected."
 msgstr ""
 
-msgid "Make Payment: After all the Items and their quantities are added into the cart, you are ready to make the Payment. Payment process is divided into 3 steps -"
+#, fuzzy
+msgid "Make Payment: After all the Items and their quantities are added into the cart, you are ready to make the Payment. Payment process is divided into 3 steps:"
 msgstr ""
 
 msgid "Click on “Make Payment” to get the Payment window."
@@ -1120,18 +1103,19 @@ msgstr ""
 msgid "Step 1: Mention Tax Applicable in the Item master: Item master has tax table where you can list taxes which will be applied on it. Tax rate mentioned in the item master gets preference over tax rate entered in the transactions. For example, if you provide tax rate for VAT as 10% for item ABC, where for same VAT ledger 12% rate is entered in the Sales Order/Invoice, for item ABC, tax rate applied would be 10%, as mentioned in the item master."
 msgstr ""
 
-msgid "Step 2: Setup Taxes and Other Charges: In Taxes and Other Charges master, you should select all the applicable taxes which could be applicable on item. For example, if few items has VAT 5 applied on them, other has Service Tax applied, and some other has Excise Duty applicable, then you tax master should have all these taxes selected."
+#, fuzzy
+msgid "Step 2: Setup Taxes and Other Charges: In Taxes and Other Charges master, you should select all the applicable taxes which could e applicable on item. For example, if few items has VAT 5 applied on them, other has Service Tax applied, and some other has Excise Duty applicable, then you tax master should have all these taxes selected."
 msgstr ""
 
 msgid "Step 3: Set Tax Rate as Zero in Taxes and Charges Master: In the Taxes and Other Charges master, tax rate will be updated as ZERO. It means, tax rate applicable on items will be pulled from the respective Item master. While for other items, 0% tax will be applied, means no other taxes will be applied on that item. Based on the above setting, you will have taxes applied on items as mentioned in the respective item master. Check following for an instance."
 msgstr ""
 
-#~ msgid "Accounting Entries"
+#~ msgid "Item"
 #~ msgstr ""
 
 #~ msgid "Text"
 #~ msgstr ""
 
-#~ msgid "Item"
+#~ msgid "Accounting Entries"
 #~ msgstr ""
 
