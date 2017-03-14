@@ -1,11 +1,12 @@
 # William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <williamjmorenor@gmail.com>, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2015-04-21 00:43-0600\n"
-"PO-Revision-Date: 2015-04-21 01:25-0600\n"
-"Last-Translator: William Moreno Reyes <william>\n"
-"Language-Team: william\n"
+"PO-Revision-Date: 2017-03-04 14:04-0600\n"
+"Last-Translator: William Moreno Reyes <williamjmorenor@gmail.com>\n"
+"Language-Team: William Moreno\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
@@ -17,13 +18,13 @@ msgid "ERPNext User Manual"
 msgstr "Manual de Usuario de ERPNext"
 
 msgid "A ERP system for Entrepreneurs and SMEs."
-msgstr ""
+msgstr "Un sistema ERP para Pymes y Emprendedores."
 
 msgid "ERPNext"
 msgstr "ERPNext"
 
 msgid "Entrepreneurs and SMEs have the same complexity of large companies but do not hace the resources to invest in a custom solutions to run theirs business and keep track of accounting, taxes, bills and invoices. ERPNext helps you to take full control of your business. It is powerful, flexible, customisable and easy to use."
-msgstr ""
+msgstr "Pymes y Emprendedores tienen la misma complejidad para manejar sus operaciones que las grandes corporaciones pero generalmente no tienen los recursos para invertir en una solución contable para sus operaciones. ERPNext le ayuda a tener control sobre su negocio. Es poderoso, flexible, personalizable y fácil de usar."
 
 #~ msgid "ERP for Entrepreneurs."
 #~ msgstr "Un ERP para emprendedores"

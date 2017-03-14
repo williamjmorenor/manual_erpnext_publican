@@ -11,10 +11,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Publican v4.2.6\n"
 
-msgid "Project"
+#, fuzzy
+msgid "Project."
 msgstr ""
 
-msgid "Project"
+msgid "Projects"
 msgstr ""
 
 msgid "<primary>Projects</primary>"
@@ -80,7 +81,8 @@ msgstr ""
 msgid "A Gantt chart is a type of bar chart, it illustrate the start and finish dates of the terminal elements and summary elements of a project (Tasks), also show the dependency (i.e., precedence network) relationships between activities."
 msgstr ""
 
-msgid "Task"
+#, fuzzy
+msgid "Tasks."
 msgstr ""
 
 msgid "<primary>Projects</primary><secondary>Task</secondary>"
@@ -122,9 +124,11 @@ msgstr ""
 msgid "Production Order Operations."
 msgstr ""
 
-msgid "Task"
+#, fuzzy
+msgid "Tasks."
 msgstr ""
 
+#, fuzzy
 msgid "Project."
 msgstr ""
 
@@ -137,7 +141,6 @@ msgstr ""
 msgid "To create a new Time Log, you can go to"
 msgstr ""
 
-#, fuzzy
 msgid "Projects &gt; Time Log &gt; new Time Log"
 msgstr ""
 
@@ -147,7 +150,6 @@ msgstr ""
 msgid "Billing using Time Logs"
 msgstr ""
 
-#, fuzzy
 msgid "<primary>Projects</primary><secondary>Time Log</secondary><tertiary>Billing</tertiary> <seealso>Types of Production Planning</seealso>"
 msgstr ""
 

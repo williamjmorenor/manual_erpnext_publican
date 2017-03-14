@@ -1,130 +1,132 @@
+# William Moreno Reyes <williamjmorenor@gmail.com>, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2015-04-22 17:50-0600\n"
-"PO-Revision-Date: 2015-04-22 17:50-0600\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: None\n"
-"Language: en-US \n"
+"PO-Revision-Date: 2017-03-03 22:11-0600\n"
+"Last-Translator: William Moreno Reyes <williamjmorenor@gmail.com>\n"
+"Language-Team: William Moreno\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Publican v4.2.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
 
 msgid "Collaboration Tools"
-msgstr ""
+msgstr "Herramientas de Colaboración"
 
 msgid "We live in an era when people are very comfortable communicating, discussing, asking, assigning work and getting feedback electronically. The Internet acts as a great medium to collaborate on work too. Taking this concept into ERP system, we have designed a bunch of tools whereby you can Assign transactions, manage your To Dos, share and maintain a Calendar, maintain a company wise Knowledge Base, Tag and Comment on transactions and send your Orders, Invoices etc via Email. You can also send instant messages to other users using the Messaging tool."
-msgstr ""
+msgstr "Vivimos en una era en que las personas se mienten muy a gusto comunicándose, discutiendo, preguntando, asignando tareas y recibiendo retro alimentación de forma electrónica, ERPNext cuenta con una cantidad de herramientas de colaboración."
 
 msgid "These tools are integrated into all aspects of the product so that you can effectively manage your data and collaborate with your co-workers."
-msgstr ""
+msgstr "Estas herramientas se integran con todos los aspectos del sistema para manejar efectivamente la comunicación de su equipo."
 
 msgid "To Do"
-msgstr ""
+msgstr "Para Hacer"
 
 msgid "To Do is a simple tool where all the activities assigned to you and assigned by you are listed. You can also add your own to-do items in the list."
-msgstr ""
+msgstr "La lista de cosas por hacer es una herramienta sencillas se muestran todas las tareas que tiene asignadas."
 
 msgid "When task is completed, you should simply remove assignment from the assigned document. With this, task will be removed from your Todo list as well. For Todo which are not assigned via document, you can set their status as Closed from the Todo record itself."
-msgstr ""
+msgstr "Cuando una tarea de completa puede quitar la asignación, si la herramienta no esta relacionada con un documento puede marcar la tarea como cerrada."
 
 msgid "Messages"
-msgstr ""
+msgstr "Mensajes"
 
 msgid "You can send and receive messages from the system by using the Messages tool. If you send a message to a user, and the user is logged in, it will appear as a popup message and the unread messages counter in the top toolbar will be updated."
-msgstr ""
+msgstr "Puede enviar y recibir mensajes desde el sistema usando la herramienta de mensajes. Si envía un mensaje a un usuario que ha iniciado sesión este recibirá una notificación."
 
 msgid "Notes"
-msgstr ""
+msgstr "Notas"
 
 msgid "You can store your long notes under this section. It can contain your partner lists, frequently used passwords, terms and conditions, or any other document which needs to be shared. Following are the steps to create new Note. To create a new note, go to:"
-msgstr ""
+msgstr "Puede almacenar notas extensas en esta sección. Puede contener listas de clientes, datos de acceso, para crear una nueva nota valla a:"
 
 msgid "Home &gt; Note &gt; New"
 msgstr ""
 
 msgid "Notes can also be used as a knowledge base internally. You can also attach file in the Notes, and make it accessible to specific set of users only."
-msgstr ""
+msgstr "Las notas se pueden usar como una base de información interna."
 
 msgid "Calendar"
-msgstr ""
+msgstr "Calendario"
 
 msgid "The Calendar is a tool where you can create and share Events and also see auto-generated events from the system. You can switch calender view based on Month, Week and Day."
-msgstr ""
+msgstr "Con el calendario puede crear y compartir Eventos, los eventos pueden generarse por eventos del sistema."
 
 msgid "Creating Events in Calender"
-msgstr ""
+msgstr "Creando evento en el Calendario"
 
 msgid "There are many options to add events to the calendar"
-msgstr ""
+msgstr "Hay muchas opciones para crear eventos en el calendario"
 
 msgid "Creating Event Manually: To create event manually, you should first determine Calender View. If Event's start and end time will be within one day, then you should first switch to Day view."
-msgstr ""
+msgstr "Manualmente."
 
 msgid "Event Based on Lead: In the Lead form, you will find a field called Next Contact By and Next Contact Date. Event will be auto created for date and person person specified in this field."
-msgstr ""
+msgstr "Eventos basados en oportunidades."
 
 msgid "Birthday Event: Birthday Event is created based on Date of Birth specified in the Employee master."
-msgstr ""
+msgstr "Cumpleaños."
 
 msgid "Recurring Events: You can set events as recurring in specific interval by Checking the \"Repeat This Event\"."
-msgstr ""
+msgstr "Eventos Recurrentes."
 
 msgid "Permission for Event"
-msgstr ""
+msgstr "Permiso para un Evento"
 
 msgid "You can set Event as Private or Public. Private Events will be visible only to you, and if any other user selected in the participants table. Instead of User, you can also assign permission for event based on Role. Public Event, like Birthday will be visible to all."
-msgstr ""
+msgstr "Puede establecer los eventos como Públicos o Privados. Los eventos privados solo serán visibles para usted y los usuarios que seleccione. También puede asignar permisos por Roles."
 
 msgid "Event Reminders"
-msgstr ""
+msgstr "Recordatorios de Eventos"
 
 msgid "There are two ways you can receive email reminder for an event:"
-msgstr ""
+msgstr "Hay dos formas de recibir un correo electrónico como recordatorio de un evento:"
 
 msgid "Enable Reminder in Event: In the Event master, checking \"Send an email reminder in the morning\" will trigger notifcation email to all the participants for this event."
-msgstr ""
+msgstr "Habilitando los recordatorios en el Evento."
 
 msgid "Create Email Digest: To get email reminders for event, you should set Email Digest for Calender Events. Email Digest can be set from:"
-msgstr ""
+msgstr "Crear un resumen por correo electrónico."
 
 msgid "Setup &gt; Email &gt; Email Digest"
 msgstr ""
 
 msgid "Assignmet"
-msgstr ""
+msgstr "Asignaciones"
 
 msgid "Assign To feature in ERPNext allows you to allocate particular document to specific user, whom needs to further work on that document. For example, if Sales Order needs to be approved/submitted by Sales Manager, first draft user can allocate that Sales Order to Sales Manager. On allocating document to Sales Manager, it will be added to that user's ToDo list. Same way, allocation can also be done to Material User and Account user who needs to create Delivery Note and Sales Invoice respectively against this Sales Note."
-msgstr ""
+msgstr "Las asignaciones son una característica de ERPNext que le permite designar un documento a un usuario especifico."
 
 msgid "Permissions restriction cannot be done based on Assigned To"
-msgstr ""
+msgstr "Restricciones de permisos no pueden se establecidas desde la opción de asignar a:"
 
 msgid "Following are the steps to assign document to another user."
-msgstr ""
+msgstr "Los pasos para asignar un documento a otro usuario son:"
 
 msgid "Step 1: Click on the Assign To Button. Assign to option is located at the footer of document. Clicking on Assignment Icon on the tool bar will fast-forward you to footer of same document."
-msgstr ""
+msgstr "Paso 1: Hacer clic en el botón asignar a."
 
 msgid "Step 2: Assign to User. In the Assign To section, you will find option to select User to whom this document will be assigned to. You can assign one document to multiple people at a time."
-msgstr ""
+msgstr "Paso 2: Asignar al usuario. Puede asignar un documento a múltiples usuarios al mismo tiempo."
 
 msgid "With assignment, you can also leave a comment for the review of asignee."
-msgstr ""
+msgstr "Al asignar una tarea puede dejar un comentario."
 
 msgid "User will be able to remove assignment by clicking on \"Assignment Completed\" button in the document."
-msgstr ""
+msgstr "Los usuarios pueden remover una asignación marcándola como completada."
 
 msgid "Tags"
-msgstr ""
+msgstr "Etiquetas"
 
 msgid "Like Assignments and Comments, you can also add your own tags to each type of transactions. These tags can help you search a document and also classify it. ERPNext will also show you all the important tags in the document list."
-msgstr ""
-
-#~ msgid "Collaborating Around Forms"
-#~ msgstr ""
+msgstr "De forma similar a los comentario y asignaciones, puede crear su propias etiquetas. Puede usar las etiquetas para buscar y clasificar documentos."
 
 #~ msgid "Text"
+#~ msgstr ""
+
+#~ msgid "Collaborating Around Forms"
 #~ msgstr ""
 

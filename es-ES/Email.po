@@ -152,7 +152,6 @@ msgstr "Los Boletines son una gran forma para los administradores para dar segui
 msgid "To set up Email Digest, go to:"
 msgstr "Para configurar un Boletín de Correo Electrónico, valla a:"
 
-#, fuzzy
 msgid "Setup &gt; Email &gt; Email Digest"
 msgstr "Configuración &gt; Correo Electrónico &gt; Boletín de Correo Electrónico"
 

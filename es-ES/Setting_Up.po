@@ -9,13 +9,14 @@
 # William Moreno Reyes <william>, 2015.
 # William Moreno Reyes <william>, 2015.
 # William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <williamjmorenor@gmail.com>, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2015-04-21 00:43-0600\n"
-"PO-Revision-Date: 2015-04-24 12:01-0600\n"
-"Last-Translator: William Moreno Reyes <william>\n"
-"Language-Team: william\n"
+"PO-Revision-Date: 2017-03-04 00:27-0600\n"
+"Last-Translator: William Moreno Reyes <williamjmorenor@gmail.com>\n"
+"Language-Team: William Moreno\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
@@ -24,7 +25,7 @@ msgstr ""
 "X-Generator: Virtaal 0.7.1\n"
 
 #, fuzzy
-msgid "Setting Up Taxes"
+msgid "Settings"
 msgstr "Configuración"
 
 msgid "Setting up an ERP system is like starting your business all over again, although in the virtual world. Thankfully it is not as hard as the real business and you get to do a trial too!"
@@ -132,7 +133,6 @@ msgstr "Paso 7: Clientes"
 msgid "Enter your Customer names and the contact person from that organisation."
 msgstr "Introduzca los nombres de sus Clientes y las personas de contacto para esas organizaciones."
 
-#, fuzzy
 msgid "<emphasis role=\"bold\">Difference between a customer name and a contact name</emphasis>:A customer name is the name of the organisation and a contact name is the name of the user who is operating the ERPNext system. For Example: If American Power Mills is an organisation name and their founder Shiv Agarwal has installed ERPNext on his system. Then,"
 msgstr "El nombre de un cliente es el nombre de una organización y el nombre del contacto es el nombre para el usuario que esta operando el sistema ERPNext. Por ejemplo: Si RMS Consultores es una organización y su fundador es William Moreno."
 
@@ -163,79 +163,77 @@ msgstr "Es este paso final, por favor introduzca los detalles de los Artículos 
 msgid "Please set the group of the item (Product / Service) and unit of measure. Don't worry you will be able to edit all of this later."
 msgstr "Por favor detalle el grupo de Artículos (Producto / Servicio) y la unidad de medida (UOM). No se preocupe podrá editarlas luego. "
 
-#, fuzzy
-msgid "<emphasis role=\"Bold\">Example</emphasis>"
+msgid "<emphasis role=\"bold\">Thats it!</emphasis>"
 msgstr "<emphasis role=\"bold\">¡Eso es todo!</emphasis>"
 
 msgid "Once you are done with the setup wizard you will see the familiar desktop page."
 msgstr "Una vez que se haya terminado el asistente de configuración accederá al escritorio."
 
 msgid "Users And Permissions"
-msgstr ""
+msgstr "Usuarios y Permisos"
 
 msgid "In ERPNext, you can create multiple users and assign them different roles. There are some users which can only access the public facing part of ERPNext (i.e. the website). Such users are called \"Website Users\"."
-msgstr ""
+msgstr "En ERPNext puede crear multiples usuarios y asignarles diferentes roles. Existen algunos usuarios que solo tienen acceso a la parte pública de ERPNext. Estos usuarios se conocen como \"Usuarios del Sitio Web\"."
 
 msgid "ERPNext implements permission control at the User and Role level. Each user in the system can be assigned multiple roles and permissions."
-msgstr ""
+msgstr "ERPNext implemente control de permisos a nivel de usuario y de rol. Cada usuario del sistema puede tener asignados múltiples roles y permisos."
 
 msgid "The most important role is the \"System Manager\". Any user having this role can add other users and set roles to all users."
-msgstr ""
+msgstr "El rol mas importante es el \"Administrador del Sistema\". Cada usuario con este rol puede establecer permisos a otros usuarios."
 
 msgid "Adding Users"
-msgstr ""
+msgstr "Agregando Usuarios."
 
 msgid "Users can be added by the System Manager. If you are a System Manager, you can add Users via"
-msgstr ""
+msgstr "Los usuarios se puede crear por el usuario administrador. Si usted tiene privilegios de administrador puede agregar mas usuarios vía:"
 
-#, fuzzy
 msgid "Setup &gt; User"
 msgstr ""
 
 msgid "List of Users"
-msgstr ""
+msgstr "Lista de usuarios"
 
 msgid "To add new user, click on \"New\"."
-msgstr ""
+msgstr "Para agregar un nuevo usuario, clic en \"Nuevo\"."
 
 msgid "Add the user details"
-msgstr ""
+msgstr "Agregar los detalles del usuario"
 
 msgid "Add user details such as First Name, Last Name, Email etc."
-msgstr ""
+msgstr "Agregar información como Nombre, Apellido, Corre Electrónico, etc."
 
 msgid "The user's Email will become the user id."
-msgstr ""
+msgstr "El correo electrónico del usuario se establece como su ID de usuario."
 
 msgid "After adding these details, save the user."
-msgstr ""
+msgstr "Luego de agregar la información requerida, guarde los cambios."
 
 msgid "Setting Roles"
-msgstr ""
+msgstr "Estableciendo Roles"
 
 msgid "After saving, you will see a list of roles and a checkbox next to it. Just check the roles you want the the user to have and save the document. To click on what permissions translate into roles, click on the role name."
-msgstr ""
+msgstr "Después de guardar el nuevo usuario podrá ver una lista de roles disponibles y casillas de verificación junta a ellos. Puede editar los permisos haciendo clic en el nombre del rol."
 
 msgid "Setting Module Access"
-msgstr ""
+msgstr "Estableciendo acceso a módulos. "
 
 msgid "Users will have access to all modules for which they have role based access. If you want to block certain modules for certain users, un-check the module from the list."
-msgstr ""
+msgstr "Los usuarios tendrán acceso a los módulos del sistema de acuerdo a los roles asignados."
 
 msgid "Security Settings"
-msgstr ""
+msgstr "Configuración de Seguridad"
 
 msgid "If you wish to give the user access to the system only between office hours, or during weekends, mention it under security settings."
-msgstr ""
+msgstr "Si usted desea que los usuarios tengan acceso al sistema sólo en horas laborales puede seleccionarlo desde las opciones de seguridad."
 
 msgid "Role Based Permissions"
-msgstr ""
+msgstr "Permisos basados en roles."
 
 msgid "ERPNext has a role-based permission system. It means that you can assign Roles to Users, and set Permissions on Roles. The permission structure also allows you to define different permission rules for different fields, using a concept called Permission \"Level\" of a field. Once roles are assigned to a user, it gives you the ability to limit access for a user to only specic documents."
-msgstr ""
+msgstr "ERPNext tiene un sistema de permisos basado en roles. Esto significa que puede agregar roles a los usuarios y establecer permisos para los roles. "
 
 msgid "To start with, go to:"
-msgstr ""
+msgstr "Para iniciar, valla a:"
 
 msgid ""
 "\n"
@@ -244,34 +242,34 @@ msgid ""
 msgstr ""
 
 msgid "Permissions are applied on a combination of:"
-msgstr ""
+msgstr "Los permisos de aplican como una combinación de:"
 
 msgid "<emphasis role=\"bold\">Roles:</emphasis> As we saw earlier, Users are assigned to Roles and it is on these Roles that permission rules are applied."
-msgstr ""
+msgstr "<emphasis role=\"bold\">Roles:</emphasis> Como hemos visto, los usuarios son asignados a los roles y es en los roles donde se establecen los permisos."
 
 msgid "<emphasis role=\"bold\">Document Types:</emphasis> Each type of document, master or transaction, has a separate list of Role based permissions."
-msgstr ""
+msgstr "<emphasis role=\"bold\">Tipo de Documento:</emphasis> Se pueden establecer permisos para cada documento y operación."
 
 msgid "<emphasis>Examples of Document Types are Sales Invoice, Leave Application, Stock Entry, etc.</emphasis>"
-msgstr ""
+msgstr "<emphasis>Ejemplos de documentos son las facturas, entradas de inventario, etc.</emphasis>"
 
 msgid "<emphasis role=\"bold\">Permission \"Levels\":</emphasis> In each document, you can group fields by \"levels\". Each group of field is denoted by a unique number (0, 1, 2, 3, etc.). A separate set of permission rules can be applied to each field group. By default all fields are of level 0."
-msgstr ""
+msgstr "<emphasis role=\"bold\">Niveles de Permiso:</emphasis> En cada documento se pueden establecer campos por niveles. Cada grupo de campos se denomina con un número único. Se pueden establecer permisos por cada campo."
 
 msgid "<emphasis>Permission \"Level\" connects the group of fields with level X to a permission rule with level X.</emphasis>"
-msgstr ""
+msgstr "<emphasis>Los niveles de permiso relacionan los grupos de campos con una regla de autorización.</emphasis>"
 
 msgid "<emphasis role=\"bold\">Document Stages:</emphasis> Permissions are applied on each stage of the document like on Creation, Saving, Submission, Cancellation and Amendment. A role can be permitted to Print, Email, Import or Export data, access Reports, or define User Permissions."
-msgstr ""
+msgstr "<emphasis role=\"bold\">Estados del Documento:</emphasis> Se pueden establecer permisos para cada etapa de un documento como Crear, Guardar, Cancelar, Grabar."
 
 msgid "<emphasis role=\"bold\">Apply User Permissions: </emphasis> This switch decides whether User Permissions should be applied for the role on selected Document Stages."
-msgstr ""
+msgstr "<emphasis role=\"bold\">Aplicar permisos de usuario: </emphasis> Determina si los permisos del usuario de deben aplicar para el rol en determinados estados del documento."
 
 msgid "If enabled, a user with that role will be able to access only specific Documents for that Document Type. Such specific Document access is defined in the list of User Permissions. Additionally, User Permissions defined for other Document Types also get applied if they are related to the current Document Type through Link Fields."
-msgstr ""
+msgstr "Si esta habilitado, un usuario con ese determinado rol sólo tendrá acceso a determinados documentos de ese mismo tipo."
 
 msgid "To set, User Permissions go to:"
-msgstr ""
+msgstr "Para establer los permisos de usuario valla a:"
 
 msgid ""
 "\n"
@@ -280,61 +278,41 @@ msgid ""
 msgstr ""
 
 msgid "<emphasis role=\"bold\">To add a new rule, </emphasis> click on \"Add a New Rule\" button and a pop-up box will ask you to select a Role and a Permission Level. Once you select this and click on \"Add\", this will add a new row to your rules table."
-msgstr ""
-
-msgid "Leave Application is a good <emphasis role=\"bold\">example</emphasis> that encompasses all areas of Permission System."
-msgstr ""
-
-msgid "<emphasis role=\"bold\">It should be created by an Employee. </emphasis> For this, Employee Role should be given Read, Write, Create permissions."
-msgstr ""
-
-msgid "<emphasis role=\"bold\">An Employee should only be able to access his/her Leave Application. </emphasis> Hence, Apply User Permissions should be enabled for Employee Role, and a User Permission record should be created for each User Employee combination. (This effort is reduced for Employee Document Type, by programmatically creating User Permission records.)"
-msgstr ""
-
-msgid "<emphasis role=\"bold\">HR Manager should be able to see all Leave Applications. </emphasis> Create a Permission Rule for HR Manager at Level 0, with Read permissions. Apply User Permissions should be disabled."
-msgstr ""
-
-msgid "<emphasis role=\"bold\">Leave Approver should be able to see and update Leave Applications applicable to him/her. </emphasis> Leave Approver is given Read and Write access at Level 0, with Apply User Permissions enabled. Relevant Employee Documents should be enlisted in the User Permissions of Leave Approvers. (This effort is reduced for Leave Approvers mentioned in Employee Documents, by programmatically creating User Permission records.)"
-msgstr ""
-
-msgid "<emphasis role=\"bold\">It should be Approved / Rejected only by HR User or Leave Approver. </emphasis> The Status field of Leave Application is set at Level 1. HR User and Leave Approver are given Read and Write permissions for Level 1, while everyone else (All) are given Read permission for Level 1."
-msgstr ""
-
-msgid "<emphasis role=\"bold\">HR User should be able to delegate Leave Applications to his/her subordinates HR. </emphasis> User is given the right to Set User Permissions. A User with HR User role would be able to defined User Permissions on Leave Application for other users."
-msgstr ""
+msgstr "<emphasis role=\"bold\">Para agregar una nueva regla, </emphasis> "
 
 msgid "User Permissions"
-msgstr ""
+msgstr "Permisos de Usuario"
 
 msgid "Limit access for a User to a set of documents using User Permissions Manager."
-msgstr ""
+msgstr "Puede limitar el acceso de un usuario a un grupo de documentos usando permisos de usuario."
 
 msgid "Role Base Permissions define the periphery of document types within which a user with a set of Roles can move around in. However, you can have an even finer control by defining User Permissions for a User. By setting specific documents in User Permissions list, you can limit access for that User to specific documents of a particular DocType, on the condition that \"Apply User Permissions\" is checked in Role Permissions Manager."
-msgstr ""
+msgstr "Los permisos basados en roles definen los tipos de documentos a los que un usuario puede acceder según sus roles. Estableciendo permisos específicos para cada usuario brinda un mejor control, puede establecer permisos de usuario para un usuario particular desde cualquier documento si en Administrador de Roles selecciona \"Aplicar permisos de usuarios\"."
 
 msgid "Sharing"
-msgstr ""
+msgstr "Compartiendo"
 
 msgid "In addition to user and role permissions, you can also Share a document with another user if you have sharing rights."
-msgstr ""
+msgstr "De forma adicional a los permisos por rol y por usuario puede compartir documentos con otros usuarios si tiene los privilegios necesarios."
 
 msgid "To share a document, open the document, click on the \"+\" icon under sharing and select the user"
-msgstr ""
+msgstr "Para compartir un documento haga clic en el icono \"+\" bajo la sección de compartir y seleccione los usuarios."
 
-msgid "Setting Roles"
-msgstr ""
+#, fuzzy
+msgid "Settings"
+msgstr "Configuración"
 
 msgid "In <emphasis>Setup &gt; Settings</emphasis> you will find ways to manage your system settings like defaults, number and currency formats, global session timeout settings etc."
-msgstr ""
+msgstr "En <emphasis>Ajustes &gt; Configuración</emphasis> podrá encontrar los acciones para configurar su sistema."
 
 msgid "System Settings"
-msgstr ""
+msgstr "Ajustes del Sistema"
 
 msgid "You can localize ERPNext to use particular timezone, date, number or currency format and also set global session expiry via System Settings."
-msgstr ""
+msgstr "Puede configurar ERPNext para usar una determinada zona horario, fecha, moneda y establecer expirar sesiones en Ajustes del Sistema."
 
 msgid "To open System Settings, go to:"
-msgstr ""
+msgstr "Para acceder a la configuración del sistema valla a:"
 
 msgid ""
 "\n"
@@ -343,10 +321,10 @@ msgid ""
 msgstr ""
 
 msgid "Show or Hide Modules"
-msgstr ""
+msgstr "Mostrar u Ocultar Módulos"
 
 msgid "You can globally switch off certain desktop module via:"
-msgstr ""
+msgstr "Puede deshabilitar globalmente módulos via:"
 
 msgid ""
 "\n"
@@ -355,23 +333,23 @@ msgid ""
 msgstr ""
 
 msgid "For example if you are in the services business, you want to hide the Manufacturing Module, you can do this via Show or Hide Modules"
-msgstr ""
+msgstr "Por ejemplo si se dedica a la compra puede puede ocultar el módulo de Manufactura."
 
 msgid "Naming Series"
-msgstr ""
+msgstr "Números de Series"
 
 #, fuzzy
-msgid "<emphasis role=\"Bold\">Example</emphasis>"
-msgstr "<emphasis role=\"bold\">¡Eso es todo!</emphasis>"
+msgid "<emphasis role=\"Bold\">Managing Naming Series for Documents</emphasis>"
+msgstr "<emphasis role=\"Bold\">Administrados Series de Documentos</emphasis>"
 
 msgid "Data records are broadly classified as “Master” or “Transaction”. A master record is a record that has a “name”, for example a Customer, Item, Supplier, Employee etc. A Transaction is a record that has a “number”. Examples of transactions include Sales Invoices, Quotations etc. You make transactions against a number of master records."
-msgstr ""
+msgstr "Los registros de clasifican como \"Maestros\" o \"Transaccione\". Un registro maestro tiene un \"nombre\" como puede un cliente, un producto, etc. Un transacciones es un registro que tiene un número de identificación como facturas, recibos, etc. Puede realizar transacciones con registros maestros"
 
 msgid "ERPNext allows you to make prefixes to your transactions, with each prefix forming its own series. For example a series with prefix INV12 will have numbers INV120001, INV120002 and so on."
-msgstr ""
+msgstr "ERPNext le permite establecer prefijos para sus transacciones, cada prefijo da lugar a una serie."
 
 msgid "You can have multiple series for all your transactions. It is common to have a separate series for each financial year. For example in Sales Invoice you could have:"
-msgstr ""
+msgstr "Puede tener múltiples series para sus transacciones. Es común tener series separadas para cada año fiscal, por ejemplo:"
 
 msgid "INV120001"
 msgstr ""
@@ -383,13 +361,14 @@ msgid "INV-A-120002"
 msgstr ""
 
 msgid "etc. You could also have a separate series for each type of Customer or for each of your retail outlets."
-msgstr ""
+msgstr "etc. Puede incluso llevar series separadas para tipo de cliente."
 
+#, fuzzy
 msgid "<emphasis role=\"Bold\">Managing Naming Series for Documents</emphasis>"
-msgstr ""
+msgstr "<emphasis role=\"Bold\">Administrados Series de Documentos</emphasis>"
 
 msgid "To setup a series, go to:"
-msgstr ""
+msgstr "Para configurar una serie valla a:"
 
 msgid ""
 "\n"
@@ -398,25 +377,25 @@ msgid ""
 msgstr ""
 
 msgid "In this form:"
-msgstr ""
+msgstr "En este formulario:"
 
 msgid "Select the transaction for which you want to make the series The system will update the current series in the text box."
-msgstr ""
+msgstr "Seleccione la transacción para la que desea configurar la serie. El sistema le mostrara las series existentes."
 
 msgid "Edit the series as required with unique prefixes for each series. Each prefix must be on a new line."
-msgstr ""
+msgstr "Edite las series con un prefijo único, cada prefijo en una linea. "
 
 msgid "The first prefix will be the default prefix. If you want the user to explicitly select a series instead of the default one, check the “User must always select” check box."
-msgstr ""
+msgstr "El primer prefijo se establecerá como predeterminado. Si quiere configurar que el usuario siempre elija la serie seleccione \"El usuario siempre debe elegir\"."
 
 msgid "You can also update the starting point of a series by entering the series name and the starting point in the “Update Series” section."
-msgstr ""
+msgstr "Puede actualizar el inicio de una serie especificando el nombre de la serie y la numeración en la sección \"Actualizar series\"."
 
 msgid "Global Defaults"
-msgstr ""
+msgstr "Predeterminados Globales"
 
 msgid "You can set default values for your documents from Global Defaults"
-msgstr ""
+msgstr "Puede establecer configuraciones globales para sus documentos"
 
 msgid ""
 "\n"
@@ -425,749 +404,746 @@ msgid ""
 msgstr ""
 
 msgid "Whenever a new document is created, these values will be set as default."
-msgstr ""
+msgstr "Cada vez que cree un nuevo documento estos valores se tomaran como predeterminados."
 
 msgid "Data Management"
-msgstr ""
+msgstr "Administración de Datos"
 
 msgid "You can import, export bulk edit data from and to spreadsheet files (.csv) from the Data Import Export Tool. This tool will be very helpful initially to setup your data from other systems."
-msgstr ""
+msgstr "Puede importar, exportar y editar datos de forma masiva desde un archivo .csv con la Herramienta de Importación y Exportación de Datos."
 
 msgid "Data Import Tool"
-msgstr ""
+msgstr "Herramienta de importación de datos"
 
 msgid "The Data Import Tool is a great way to upload (or edit) bulk data, specially master data, into the system. To Open the data import tool, you either go to Setup or go to the Transaction you want to Import. If Data Import is allowed, you will see an Import Button:"
-msgstr ""
+msgstr "Esta herramienta le permite subir o editar varios registros al mismo tiempo. Para abrir la herramienta seleccione el tipo de transacción que desea importar, si es posible importar la información vera un botón Importar:"
 
 msgid "The tool has two sections, one to download a template and the second to upload the data."
-msgstr ""
+msgstr "La herramienta tiene dos secciones, una para descargar una plantilla y otra para subir la información."
 
 msgid "Only those DocTypes are allowed for Import whose Document Type is \"Master\" or Allow Import property is set."
-msgstr ""
+msgstr "Sólo es posible importar datos a aquellos documentos considerados maestros."
 
 msgid "Downloading The Template"
-msgstr ""
+msgstr "Descargando la Plantilla"
 
 msgid "Data in ERPNext is stored in tables, much like a spreadsheet with columns and rows of data. Each entity in ERPNext can have multiple child tables associated with it too. The child tables are linked to the parent tables and are implemented where there are multiple values for any property. For example an Item can have multiple prices, An Invoice has multiple Items and so on."
-msgstr ""
+msgstr "ERPNext almacena la información en tablas, cada entidad puede tener multiples tablas asociadas."
 
 msgid "Click on the table you want to download or \"All Tables\""
-msgstr ""
+msgstr "Seleccione la tabla que desea descargar."
 
 msgid "For bulk editing, you can click on \"Download With Data\""
-msgstr ""
+msgstr "Para editar registros seleccione \"Descargar con Datos\""
 
 msgid "Fill in the Template"
-msgstr ""
+msgstr "Complete la plantilla"
 
 msgid "After downloading the template, open it in a spreadsheet application and fill in the data below the column headings."
-msgstr ""
+msgstr "Después de bajar llene la información con un editor de hojas de calculo."
 
 msgid "Then export your template or save it as a Comma Separated Values (CSV) file."
-msgstr ""
+msgstr "Guarde la plantilla como un archivo separado por comas (.csv)."
 
 msgid "Upload the .csv File"
-msgstr ""
+msgstr "Suba el archivo .csv"
 
 msgid "Finally attach the .csv file in the section. Click on the \"Upload and Import\" button."
-msgstr ""
+msgstr "Adjunte el archivo .csv y de clic in \"Subir e Importar\"."
 
 msgid "Make sure that if your application allows, use encoding as UTF-8."
-msgstr ""
+msgstr "De ser posible use como codificación UTF-8."
 
 msgid "Keep the ID column blank for new records."
-msgstr ""
+msgstr "Mantenga la columna ID en blanco para  nuevos registros"
 
-msgid "Uploading All Tables (Main + Child)"
-msgstr ""
+#~ msgid "Setup &gt; Email &gt; Email Alert"
+#~ msgstr ""
 
-msgid "If you select all tables, you will get columns belonging to all the tables in one row separated by ~ columns. If you have multiple child rows then you must start a new main item on a new row."
-msgstr ""
+#~ msgid "<emphasis role=\"bold\">An Employee should only be able to access his/her Leave Application. </emphasis> Hence, Apply User Permissions should be enabled for Employee Role, and a User Permission record should be created for each User Employee combination. (This effort is reduced for Employee Document Type, by programmatically creating User Permission records.)"
+#~ msgstr ""
 
-msgid "To see how its done, enter a few records manually using forms and export \"All Tables\" with \"Download with Data\""
-msgstr ""
+#~ msgid "A serial number is a unique, identifying number or group of numbers and letters assigned to an individual Item. Serialized items are generally high value items for which you need to warranty's and service agreements. Mostly items as machinery, equipments and high-value electronics (computers, printers etc.) are serialized."
+#~ msgstr ""
 
-msgid "Overwriting"
-msgstr ""
+#~ msgid "Step 3: Select Currency"
+#~ msgstr ""
 
-msgid "ERPNext also allows you to overwrite all or certain columns. If you want to update certain columns, you can download the template with data. Remember to check on the Overwrite box before uploading."
-msgstr ""
+#~ msgid "Stock Reconciliation For Non Serialized Item"
+#~ msgstr ""
 
-msgid "For child records, if you select Overwrite, it will delete all the child records of that parent."
-msgstr ""
+#~ msgid "Item Tax: If some of your Items require different tax rates as compared to others, mention them in the Item tax table. Even if you have selected your sales and purchase taxes as default tax rates, the system will pull the Item tax rate for calculations. Item tax will get preference over other sales or purchase taxes. However, if you wish to apply default sales and purchase taxes, do not mention item tax rates in the Item master. The system will then select the sales or purchase tax rate specified by you as default rates."
+#~ msgstr ""
 
-msgid "Upload Limitations"
-msgstr ""
+#~ msgid "You can manage multiple incoming and outgoing Email Accounts in ERPNext. There has to be atleast one default outgoing account and one default incoming account. If you are on the ERPNext cloud, the default outgoing email is set by Frappe Team."
+#~ msgstr ""
 
-msgid "ERPNext restricts the amount of data you can upload in one file. Though the number may vary based on the type of data. It is usually safe to upload around 1000 rows of a table at one go. If the system will not accept, then you will see an error."
-msgstr ""
+#~ msgid "Print Headings are the names which you can give to your sales invoices, supplier quotations etc. You can create a list of names for different business communications. You can create print headings from :"
+#~ msgstr ""
 
-msgid "Why is this? Uploading a lot of data can cause your system to crash, specially if there are other users doing things in parallel. Hence ERPNext restricts the number of “writes” you can process in one request."
-msgstr ""
+#~ msgid "Price List"
+#~ msgstr ""
 
-msgid "How to Attach files?"
-msgstr ""
+#~ msgid "Cost Center: If the tax / charge is an income (like shipping) it needs to be booked against - a Cost Center."
+#~ msgstr ""
 
-msgid "When you open a form, on the right sidebar, you will see a section to attach files. Click on “Add” and select the file you want to attach. Click on “Upload” and you are set."
-msgstr ""
+#~ msgid "Save / Submit / Cancel: When a document of the selected type is saved, submitted, cancelled."
+#~ msgstr ""
 
-msgid "What is a CSV file?"
-msgstr ""
+#~ msgid "Overwriting"
+#~ msgstr ""
 
-msgid "A CSV (Comma Separated Value) file is a data file that you can upload into ERPNext to update various data. Any spreadsheet file from popular spreadsheet applications like MS Excel or Open Office Spreadsheet can be saved as a CSV file."
-msgstr ""
+#~ msgid "Email Digest"
+#~ msgstr ""
 
-msgid "If you are using Microsoft Excel and using non-English characters, make sure to save your file encoded as UTF-8. For older versions of Excel, there is no clear way of saving as UTF-8. So save your file as a CSV, then open it in Notepad, and save as “UTF-8”. (Sorry blame Microsoft for this!)"
-msgstr ""
+#~ msgid "POS Setting"
+#~ msgstr ""
 
-msgid "Bulk Renaming of Records"
-msgstr ""
+#~ msgid "Stock &gt;&gt; Tools &gt;&gt; Stock Reconciliation &gt;&gt; New Stock Reconciliation"
+#~ msgstr ""
 
-msgid "You can rename a document if ERPNext (if it is allowed) by going to Menu &gt; Rename in the document."
-msgstr ""
+#~ msgid "To add a field, just drag it from the left sidebar and add it in your layout. You can edit the layout by clicking on the settings icon.To add a field, just drag it from the left sidebar and add it in your layout. You can edit the layout by clicking on the settings icon."
+#~ msgstr ""
 
-msgid "Alternatively, if you want to rename a whole bunch of records, just go to:"
-msgstr ""
+#~ msgid "ERPNext also allows you to overwrite all or certain columns. If you want to update certain columns, you can download the template with data. Remember to check on the Overwrite box before uploading."
+#~ msgstr ""
 
-msgid ""
-"\n"
-"		Setup &gt; Data &gt; Rename Tool\n"
-"		"
-msgstr ""
+#~ msgid "Sales Taxes and Charges Master"
+#~ msgstr ""
 
-msgid "This tool will allow you to rename multiple records at the same time."
-msgstr ""
+#~ msgid "Set the recipients of this alert. The recipient could either be a field of the document or a list of fixed email ids."
+#~ msgstr ""
 
-msgid "Example"
-msgstr ""
+#~ msgid "Enter Row: If based on \"Previous Row Total\" you can select the row number which will be taken as a base for this calculation (default is the previous row)."
+#~ msgstr ""
 
-msgid "To rename multiple records, upload a .csv file with the old name in the first column and the new name in the second column and click on Upload."
-msgstr ""
+#~ msgid "Third Party Backups"
+#~ msgstr ""
 
-msgid "Email"
-msgstr ""
+#~ msgid "The tax rate you define here will be the standard tax rate for all Items. If there are Items that have different rates, they must be added in the Item Tax table in the Item master."
+#~ msgstr ""
 
-msgid "Email is at the heart of electronic communication and ERPNext is deeply integrated with Email. You can create multiple email accounts, automatically create transactions like Lead, Issue from incoming emails, send documents to your contacts via ERPnext. You can also setup email digests and email alerts to send you reminders."
-msgstr ""
+#~ msgid "In transactions, you will find section of Terms and Condition where you will be able to search and fetched required Terms and Condition master."
+#~ msgstr ""
 
-msgid "Email Accounts"
-msgstr ""
-
-msgid "You can manage multiple incoming and outgoing Email Accounts in ERPNext. There has to be atleast one default outgoing account and one default incoming account. If you are on the ERPNext cloud, the default outgoing email is set by Frappe Team."
-msgstr ""
-
-msgid "Note for self implementers: For outgoing emails, you should setup your own SMTP server or sign up with an SMTP relay service like mandrill.com or sendgrid.com that allows a larger number of transactional emails to be sent. Regular email services like GMail will restrict you to a limited number of emails per day."
-msgstr ""
-
-msgid "Default Email Accounts"
-msgstr ""
-
-msgid "ERPNext will create templates for a bunch of email accounts by default. Not all of them are enabled. To enable them, you must set your account details."
-msgstr ""
-
-msgid "There are 2 types of email accounts, outgoing and incoming. Outgoing email accounts use an SMTP service to send emails and emails are retrived from your inbox using a POP service. Most email providers such as GMail, Outlook or Yahoo provide these services."
-msgstr ""
-
-msgid "Outgoing Email Accounts"
-msgstr ""
-
-msgid "All emails sent from the system, either by the user to a contact or notifications or transaction emails, will be sent from an Outgoing Email Account."
-msgstr ""
-
-msgid "To setup an outgoing Email Account, check on Enable Outgoing and set your SMTP server settings, if you are using a popular email service, these will be preset for you."
-msgstr ""
-
-msgid "Incoming Email Accounts"
-msgstr ""
-
-msgid "To setup an incoming Email Account, check on Enable Incoming and set your POP3 settings, if you are using a popular email service, these will be preset for you."
-msgstr ""
-
-msgid "How ERPNext handles replies"
-msgstr ""
-
-msgid "In ERPNext when you send an email to a contact like a customer, the sender will be the user who sent the email. In the Reply-To property, the email id will be of the default incoming account (like replies@yourcompany.com). ERPNext will automatically extract these emails from the incoming account and tag it to the relvant communication"
-msgstr ""
-
-msgid "Notification for unreplied messages"
-msgstr ""
-
-msgid "If you would like ERPNext to notify you if an email is unreplied for a certain amount of time, then you can set Notify if Unreplied. Here you can set the number of minutes to wait before notifications are sent and whom the notifications must go to."
-msgstr ""
-
-msgid "Email Alerts"
-msgstr ""
-
-msgid "You can configure various email alerts in your system to remind you of important activities such as:"
-msgstr ""
-
-msgid "Completion date of a Task."
-msgstr ""
-
-msgid "Expected Delivery Date of a Sales Order."
-msgstr ""
-
-msgid "Expected Payment Date."
-msgstr ""
-
-msgid "Reminder of followup."
-msgstr ""
-
-msgid "If an Order greater than a particular value is received or sent."
-msgstr ""
-
-msgid "Expiry notification for a Contract."
-msgstr ""
-
-msgid "Completion / Status change of a Task."
-msgstr ""
-
-msgid "For this, you need to setup an Email Alert."
-msgstr ""
-
-msgid "Setup &gt; Email &gt; Email Alert"
-msgstr ""
-
-msgid "Setting Up An Alert"
-msgstr ""
-
-msgid "To setup an Email Alert:"
-msgstr ""
-
-msgid "Select which Document Type you want watch changes on."
-msgstr ""
-
-msgid "Define what events you want to watch. Events are:"
-msgstr ""
-
-msgid "New: When a new document of the selected type is made."
-msgstr ""
-
-msgid "Save / Submit / Cancel: When a document of the selected type is saved, submitted, cancelled."
-msgstr ""
-
-msgid "Value Change: When a particular value in the selected type changes."
-msgstr ""
-
-msgid "Days Before / Days After: Trigger this alert a few days before or after the <emphasis role=\"Bold\">Reference Date</emphasis>. To set the days, set <emphasis role=\"Bold\">Days Before or After</emphasis>. This can be useful in reminding you of upcoming due dates or reminding you to follow up on certain leads of quotations."
-msgstr ""
-
-msgid "Set additional conditions if you want."
-msgstr ""
-
-msgid "Set the recipients of this alert. The recipient could either be a field of the document or a list of fixed email ids."
-msgstr ""
-
-msgid "Compose the message"
-msgstr ""
-
-msgid "Email Digest"
-msgstr ""
-
-msgid "Email Digests allow you to get regular updates about your sales, expenses and other critical numbers directly in your Inbox."
-msgstr ""
-
-msgid "Email Digests are a great way for top managers to keep track of the big numbers like “Sales Booked” or “Amount Collected” or “Invoices Raised” etc."
-msgstr ""
-
-msgid "To set up Email Digest, go to:"
-msgstr ""
-
-msgid ""
-"\n"
-"		Setup &gt; Email &gt; Email Digest\n"
-"		"
-msgstr ""
-
-msgid "Sending Email from any Document"
-msgstr ""
-
-msgid "In ERPNext you can send any document as email (with a PDF attachment) by clicking on Menu &gt; Email from any open document."
-msgstr ""
-
-msgid "Printing and Branding"
-msgstr ""
-
-msgid "Documents that you send to your customers carry your brand and image and they must be tailored to your requirements. ERPNext gives you many options so that you can set your oraganization's branding in your documents."
-msgstr ""
-
-msgid "Print Settings"
-msgstr ""
-
-msgid "In Print Settings you can set your default printing preferences like Paper Size, default text size, whether you want output as PDF or HTML etc."
-msgstr ""
-
-msgid "To edit print settings, go to:"
-msgstr ""
-
-msgid ""
-"\n"
-"		Setup &gt; Printing and Branding &gt; Print Settings\n"
-"		"
-msgstr ""
-
-msgid "Print Format Builder"
-msgstr ""
-
-msgid "The Print Format Builder helps you quickly make a simple customized Print Format by dragging and dropping data fields and adding custom text or HTML."
-msgstr ""
-
-msgid "You can create a new Print Format either by going to:"
-msgstr ""
-
-msgid ""
-"\n"
-"		Setup &gt; Printing and Branding &gt; Print Format Builder\n"
-"		"
-msgstr ""
-
-msgid "or Open the document for which you want to make a print format. Click the Printer icon, or go to Menu &gt; Print and click on the Edit button. Note: You must have System Manager permission to do this."
-msgstr ""
-
-msgid "Make a new Format"
-msgstr ""
-
-msgid "Add a new Field"
-msgstr ""
-
-msgid "To add a field, just drag it from the left sidebar and add it in your layout. You can edit the layout by clicking on the settings icon.To add a field, just drag it from the left sidebar and add it in your layout. You can edit the layout by clicking on the settings icon."
-msgstr ""
-
-msgid "Remove Field"
-msgstr ""
-
-msgid "To remove a field, just drag it back into the fields sidebar."
-msgstr ""
-
-msgid "Cutomize"
-msgstr ""
-
-msgid "You can add customized text, HTML in your print format, just add the Custom HTML field (in dark colour) and add it to the the place where you want to add the text. Then click on Edit HTML to edit your content."
-msgstr ""
-
-msgid "To save your format, just click on the Save button on the top."
-msgstr ""
-
-msgid "Print Headings"
-msgstr ""
-
-msgid "Print Headings are the names which you can give to your sales invoices, supplier quotations etc. You can create a list of names for different business communications. You can create print headings from :"
-msgstr ""
-
-msgid ""
-"\n"
-"		Setup &gt; Printing &gt; Print Heading &gt; New Print Heading\n"
-"		"
-msgstr ""
-
-msgid "Example of a change in print heading is shown below:"
-msgstr ""
-
-msgid "Letter Heads"
-msgstr ""
-
-msgid "You can manage multiple letter heads in ERPNext. In a letter head you can:"
-msgstr ""
-
-msgid "Create an image with your logo, brand and other information that you want to put on your letter head."
-msgstr ""
-
-msgid "Attach the image in your Letter Head record by clicking on image icon to automatically generate the HTML required for this Letter Head."
-msgstr ""
-
-msgid "If you want to make this the default letter head, click on “Is Default”."
-msgstr ""
-
-msgid "Your letter head will now appear in all Prints and Emails of documents."
-msgstr ""
-
-msgid "You can create / manage Letter Heads from:"
-msgstr ""
-
-msgid ""
-"\n"
-"		Setup &gt; Printing &gt; Letter Head &gt; New Letter Head\n"
-"		"
-msgstr ""
-
-msgid "This is how the letter head looks in a document print:"
-msgstr ""
-
-msgid "Address Template"
-msgstr ""
-
-msgid "Each region has its own way of defining Addresses. To manage multiple address formats for your Documents (like Quotation, Purchase Invoice etc.), you can create country-wise Address Templates."
-msgstr ""
-
-msgid ""
+#~ msgid ""
 "\n"
 "		Setup &gt; Printing and Branding &gt; Address Template\n"
 "		"
-msgstr ""
+#~ msgstr ""
 
-msgid "A default Address Template is created when you setup the system. You can either edit or update it or create a new template."
-msgstr ""
+#~ msgid "Difference between Serialized and Non-serialized Items."
+#~ msgstr ""
 
-msgid "One template is default and will apply to all countries that do not have an specific template."
-msgstr ""
+#~ msgid "ERPNext will create templates for a bunch of email accounts by default. Not all of them are enabled. To enable them, you must set your account details."
+#~ msgstr ""
 
-#, fuzzy
-msgid "<emphasis role=\"Bold\">Example</emphasis>"
-msgstr "<emphasis role=\"bold\">¡Eso es todo!</emphasis>"
+#~ msgid "Expiry notification for a Contract."
+#~ msgstr ""
 
-msgid "The templating engine is based on HTML and the Jinja Templating system and all the fields (including Custom Fields) will be available for creating the template."
-msgstr ""
+#~ msgid "If you want to make this the default letter head, click on “Is Default”."
+#~ msgstr ""
 
-#, fuzzy
-msgid "<emphasis role=\"Bold\">Example</emphasis>"
-msgstr "<emphasis role=\"bold\">¡Eso es todo!</emphasis>"
+#~ msgid "The columns in this table are similar to the Sales Taxes and Charges Master with the difference as follows:"
+#~ msgstr ""
 
-msgid "Terms And Conditions"
-msgstr ""
+#~ msgid "To rename multiple records, upload a .csv file with the old name in the first column and the new name in the second column and click on Upload."
+#~ msgstr ""
 
-msgid "Terms and conditions are the general and special arrangements, provisions, requirements, rules, specifications, and standards that a company follows. These specifications are an integral part of an agreement or contract that the company gets into with its customers, suppliers or partners."
-msgstr ""
+#~ msgid "In order to allow multiple people to submit multiple requests, for approvals, by multiple users, ERPNext requires you to fill the workflow conditions. ERPNext tracks the multiple permissions before submission."
+#~ msgstr ""
 
-msgid "Make a new Terms and Conditions"
-msgstr ""
+#~ msgid "Example"
+#~ msgstr ""
 
-msgid "To setup Terms and Condition master, go to:"
-msgstr ""
+#~ msgid "Rate: Tax rate."
+#~ msgstr ""
 
-msgid ""
-"\n"
-"		Selling &gt; Terms and Condition &gt; New\n"
-"		"
-msgstr ""
+#~ msgid "Setting Up An Alert"
+#~ msgstr ""
 
-msgid "Editing in HTML"
-msgstr ""
+#~ msgid "Notification for unreplied messages"
+#~ msgstr ""
 
-msgid "Content of Terms and Condition can be formatted as per your preference, and also insert images where needed. If you have expertise in HTML, you will also find option to edit the content of Terms and Condition in HTML."
-msgstr ""
+#~ msgid "Authorization Rule is a tool to define rule for conditional authorization."
+#~ msgstr ""
 
-msgid "This also allows you to use Terms and Condition master for footer, which otherwise is not availale in ERPNext as dedicated functionality. Since contents of Terms and Condition is always the last to appear in the print format, details of footer should be inserted at the end of the content, so that it actually appears as footer in the print format."
-msgstr ""
+#~ msgid "Consider Tax or Charge for: In this section you can specify if the tax / charge is only for valuation (not a part of total) or only for total (does not add value to the item) or for both."
+#~ msgstr ""
 
-msgid "Select in Transaction"
-msgstr ""
+#~ msgid "Example of a change in print heading is shown below:"
+#~ msgstr ""
 
-msgid "In transactions, you will find section of Terms and Condition where you will be able to search and fetched required Terms and Condition master."
-msgstr ""
+#~ msgid "You can configure various email alerts in your system to remind you of important activities such as:"
+#~ msgstr ""
 
-#, fuzzy
-msgid "Setting Up Taxes"
-msgstr "Configuración"
+#~ msgid "Letter Heads"
+#~ msgstr ""
 
-msgid "One of the primary motivator for compulsory use of accounting tools is calculation of Taxes. You may or may not make money but your government will (to help your country be safe and prosperous). And if you don’t calculate your taxes correctly, they get very unhappy. Ok, philosophy aside, ERPNext allows you to make configurable tax templates that you can apply to your sales or purchase."
-msgstr ""
+#~ msgid "<emphasis role=\"bold\">It should be created by an Employee. </emphasis> For this, Employee Role should be given Read, Write, Create permissions."
+#~ msgstr ""
 
-msgid "Tax Accounts: For Tax Accounts that you want to use in the tax templates, you must go to Chart of Accounts and mention them as type “Tax” in your Chart of Item."
-msgstr ""
-
-msgid "Item Tax: If some of your Items require different tax rates as compared to others, mention them in the Item tax table. Even if you have selected your sales and purchase taxes as default tax rates, the system will pull the Item tax rate for calculations. Item tax will get preference over other sales or purchase taxes. However, if you wish to apply default sales and purchase taxes, do not mention item tax rates in the Item master. The system will then select the sales or purchase tax rate specified by you as default rates."
-msgstr ""
-
-msgid "Inclusive and Exclusive Tax: ERPNext allows you to enter Item rates which are tax inclusive."
-msgstr ""
-
-msgid "Exception to the rule: Item tax settings are required only if a particular Item has a different tax rate than the rate defined in the standard tax Account"
-msgstr ""
-
-msgid "Item tax is overwrite-able: You can overwrite or change the item tax rate by going to the Item master in the Item tax table."
-msgstr ""
-
-msgid "Sales Taxes and Charges Master"
-msgstr ""
-
-msgid "You must usually collect taxes from your Customer and pay them to the government. At times, you may have to pay multiple taxes to multiple government bodies like local government, state or provincial and federal or central government."
-msgstr ""
-
-msgid "The way ERPNext sets up taxes is via templates. Other types of charges that may apply to your invoices (like shipping, insurance etc.) can also be configured as taxes."
-msgstr ""
-
-msgid "Select template and modify as per your need."
-msgstr ""
-
-msgid "To create a new sales tax template called Sales Taxes and Charges Master, you have to go to:"
-msgstr ""
-
-msgid ""
-"\n"
-"	Setup &gt; Accounts &gt; Sales Taxes and Charge Master\n"
-"	"
-msgstr ""
-
-msgid "When you create a new master, you will have to add a row for each tax type."
-msgstr ""
-
-msgid "The tax rate you define here will be the standard tax rate for all Items. If there are Items that have different rates, they must be added in the Item Tax table in the Item master."
-msgstr ""
-
-msgid "In each row, you have to mention:"
-msgstr ""
-
-msgid "Calculation Type:"
-msgstr ""
-
-msgid "On Net Total : This can be on net total (total amount without taxes)."
-msgstr ""
-
-msgid "On Previous Row Total/Amount: You can apply taxes on previous row total / amount. If you select this option, the tax will be applied as a percentage of the previous row (in the tax table) amount or total. Previous row amount means a particular tax amount.And, previous row total means net total plus taxes applied up to that row. In the Enter Row Field, mention row number on which you want to apply the current tax. If you want to apply the tax on the 3rd row, mention \"3\" in the Enter Row field."
-msgstr ""
-
-msgid "Actual : Enter as per actual amount in rate column."
-msgstr ""
-
-msgid "Account Head: The Account ledger under which this tax will be booked"
-msgstr ""
-
-msgid "Cost Center: If the tax / charge is an income (like shipping) it needs to be booked against - a Cost Center."
-msgstr ""
-
-msgid "Description: Description of the tax (that will be printed in invoices / quotes)."
-msgstr ""
-
-msgid "Rate: Tax rate."
-msgstr ""
-
-msgid "Amount: Tax amount."
-msgstr ""
-
-msgid "Total: Cumulative total to this point"
-msgstr ""
-
-msgid "Enter Row: If based on \"Previous Row Total\" you can select the row number which will be taken as a base for this calculation (default is the previous row)."
-msgstr ""
-
-msgid "Is this Tax included in Basic Rate?: If you check this, it means that this tax will not be shown below the item table, but will be included in the rate in your main item table. This is useful when you want to give a flat price (inclusive of all taxes) to your customers."
-msgstr ""
-
-msgid "Once you setup your template, you can select this in your sales transactions."
-msgstr ""
-
-msgid "Purchase Taxes and Charges Master"
-msgstr ""
-
-msgid "Similar to your Sales Taxes and Charges Master is the Purchase Taxes and Charges Master."
-msgstr ""
-
-msgid "This is the tax template that you can use in your Purchase Orders and Purchase Invoices. If you have value added taxes (VAT), where you pay to the government the difference between your incoming and outgoing taxes, you can select the same Account that you use for sales taxes. For more details see Purchase Taxes."
-msgstr ""
-
-msgid "The columns in this table are similar to the Sales Taxes and Charges Master with the difference as follows:"
-msgstr ""
-
-msgid "Consider Tax or Charge for: In this section you can specify if the tax / charge is only for valuation (not a part of total) or only for total (does not add value to the item) or for both."
-msgstr ""
-
-msgid "POS Setting"
-msgstr ""
-
-msgid "POS includes advanced features to cater to different functionality, such as inventory management, CRM, financials, warehousing, etc., all built into the POS software. Prior to the modern POS, all of these functions were done independently and required the manual re-keying of information, which could lead to entry errors."
-msgstr ""
-
-msgid "If you are in retail operations, you want your Point of Sale to be as quick and efficient as possible. To do this, you can create a POS Setting for a user from:"
-msgstr ""
-
-msgid ""
-"\n"
-"	Accounts &gt; Point-of-Sale Setting\n"
-"	"
-msgstr ""
-
-msgid "Set default values as defined."
-msgstr ""
-
-msgid "If you specify a particular User, the POS setting will be applied only to that User. If the User option is left blank, the setting will be set for all users. To understand POS in detail visit Point of Sale"
-msgstr ""
-
-msgid "Price List"
-msgstr ""
-
-msgid "ERPNext lets you maintain multiple selling and buying prices for an Item using Price Lists. A PriceList is a name you can give to a set of Item prices."
-msgstr ""
-
-msgid "Why would you want Price Lists? You have different prices for different zones (based on the shipping costs), for different currencies etc."
-msgstr ""
-
-msgid "An Item can have multiple prices based on customer, currency, region, shipping cost etc, which can be stored as different rate plans. In ERPNext, you are required to store all the lists separately. Buying Price List is different from Selling Price List and thus is stored separately."
-msgstr ""
-
-msgid "Standard Buying and Selling Price List are created by default."
-msgstr ""
-
-msgid "<emphasis role=\"Bold\">Step to create Price List.</emphasis>"
-msgstr ""
-
-msgid "Step 1: Go to"
-msgstr ""
-
-msgid ""
-"\n"
-"	Selling/Buying/Stock &gt; Setup &gt; Price List &gt;&gt; New\n"
-"	"
-msgstr ""
-
-msgid "Step 2: Enter name of new Price List."
-msgstr ""
-
-msgid "Step 3: Select Currency"
-msgstr ""
-
-msgid "Select Currency for this Price List. Currency option in Price List allows you to maintain item's price in Currency other than your companies base currency."
-msgstr ""
-
-msgid "Step 4: Select Buying and Selling"
-msgstr ""
-
-msgid "Select for which transaction this Price List is application. Mostly it will be one of the Buying or Selling, however you can choose both as well."
-msgstr ""
-
-msgid "Step 5: Select Territory"
-msgstr ""
-
-msgid "Select Territory for which this Price List will be applicable."
-msgstr ""
-
-msgid "Step 6: Save Price List."
-msgstr ""
-
-msgid "These Price List will be used when creating Item Price record to track selling or buying price of an item. Click here to learn more about Item Price."
-msgstr ""
-
-msgid "To disable specific Price List, uncheck Enabled field in it. Disabled Price List will not be availale for selection in the Sales and Purchase transactions."
-msgstr ""
-
-msgid "Authorization Rule"
-msgstr ""
-
-msgid "Authorization Rule is a tool to define rule for conditional authorization."
-msgstr ""
-
-msgid "If you sales and purchase transactions of higher value or discount requires an authorization from senior manager, you can set authorization rule for it. To create new Authorization Rule, go to:"
-msgstr ""
-
-#, fuzzy
-msgid "Setup &gt;&gt; Customize &gt;&gt; Authorization Rule"
-msgstr ""
-
-msgid "SMS Setting"
-msgstr ""
-
-msgid "To integrate SMS in ERPNext, approach a SMS Gateway Provider who provides HTTP API. They will create an account for you and will provide an unique username and password."
-msgstr ""
-
-msgid "To configure SMS Settings in ERPNext, find out their HTTP API (a document which describes the method of accessing their SMS interface from 3rd party applications). In this document, you will get an URL which is used to send the SMS using HTTP request. Using this URL, you can configure SMS Settings in ERPNext."
-msgstr ""
-
-msgid "Note: the string up to the \"?\" is the SMS Gateway URL"
-msgstr ""
-
-msgid "Stock Reconciliation For Non Serialized Item"
-msgstr ""
-
-msgid "Stock Reconciliation is the process of counting and evaluating stock-in-trade, usually at an organisations year end in order to value the total stock for preparation of the accounts. In this process actual physical stocks are checked and recorded in the system. The actual stocks and the stock in the system should be in agreement and accurate. If they are not, you can use the stock reconciliation tool to reconcile stock balance and value with actuals."
-msgstr ""
-
-msgid "Difference between Serialized and Non-serialized Items."
-msgstr ""
-
-msgid "A serial number is a unique, identifying number or group of numbers and letters assigned to an individual Item. Serialized items are generally high value items for which you need to warranty's and service agreements. Mostly items as machinery, equipments and high-value electronics (computers, printers etc.) are serialized."
-msgstr ""
-
-msgid "Non Serialized items are generally fast moving and low value item, hence doesn't need tracking for each unit. Items like screw, cotton waste, other consumables, stationary products can be categorized as non-serialized."
-msgstr ""
-
-msgid "Stock Reconciliation option is available for the non serialized Items only. For seriazlized and batch items, you should create Material Receipt entry in Stock Entry form."
-msgstr ""
-
-msgid "Opening Stocks"
-msgstr ""
-
-msgid "You can upload your opening stock balance in the system using Stock Reconciliation. Stock Reconciliation will update your stock for a given Item on a given date for a given Warehouse to the given quantity."
-msgstr ""
-
-msgid "Tip: Stock Reconciliation can also be used to update the “value” of an Item. To understand how Items are valued read Valuation."
-msgstr ""
-
-msgid "To perform Stock Reconciliation, go to:"
-msgstr ""
-
-#, fuzzy
-msgid "Stock &gt;&gt; Tools &gt;&gt; Stock Reconciliation &gt;&gt; New Stock Reconciliation"
-msgstr ""
-
-msgid "Download Template"
-msgstr ""
-
-msgid "A predefined template of an spreadsheet file should be followed for importing item's stock levels and valuations. Open new Stock Reconciliation form to see download option."
-msgstr ""
-
-msgid "Enter Data in csv file."
-msgstr ""
-
-msgid "Fill the template with the information than you want to update."
-msgstr ""
-
-msgid "The csv format is case-sensitive. Do not edit the headers which are preset in the template. In the Item Code and Warehouse column, enter exact Item Code and Warehouse as created in your ERPNext account. For quatity, enter stock level you wish to set for that item, in a specific warehouse. If you do not want to change the quantity or valuation rate of an Item, you should leave it blank."
-msgstr ""
-
-msgid "Note: Make sure you do not put zero if you do not want to change the quantity amount or valuation amount. The system will calculate zero as zero quantity. So leave the field blank."
-msgstr ""
-
-msgid "Upload file and Enter Values in Stock Reconciliation Form"
-msgstr ""
-
-msgid "Save and upload your .csv file"
-msgstr ""
-
-msgid "Posting Date: Posting Date will be date when you want uploaded stock to reflect in the report. Posting Date selection option allows you making back dated stock reconcialiation as well."
-msgstr ""
-
-msgid "Difference Account: When making Stock Reconciliation for updating opening balance, then you should select Balance Sheet account. Bydefault Temporary Asset and Temporary Liability Account are created in the chart of account which can be used here. Since Warehouse ledger is debit account, Difference Account selected here should be \"Temporary Liability Account\", which is credit account."
-msgstr ""
-
-msgid "If you are making Stock Reconciliation for correcting stock level or valuation of an item, then you can select any expense account in which you would want difference amount (derived from difference of valuation of item) should be booked. If Expense Account is selected as Difference Account, you will also need to select Cost Center as it is mandatory with any income and expense account selection."
-msgstr ""
-
-msgid "After reviewing saved Reconciliation Data, submit the Stock Reconciliation. On successful submission, the data will be updated in the system. To check the submitted data go to stock and view stock level report."
-msgstr ""
-
-msgid "Note: While filling the valuation rates of Items, if you wish to find out the valuation rates of all items, you can go to stock and click on Item Prices report. The report will show you all types of rates."
-msgstr ""
-
-msgid "Review the reconciliation data"
-msgstr ""
-
-msgid "Verify your information."
-msgstr ""
-
-msgid "Territory"
-msgstr ""
-
-msgid "Territory is a place to signify where your customers come from. If you operate in one country, you can give that country name as your Territory. For Example, India, US, or Rest of the World, could be your Territories. If you operate in many locations, ERPNext allows you to create more Territories. You can also have child Territories under parent Territories. This helps in assigning different regions to different sales staff."
-msgstr ""
-
-msgid "To add more territories to an existing tree, click on \"Add Child\""
-msgstr ""
-
-msgid "Third Party Backups"
-msgstr ""
-
-msgid "If you wish to store your backups on a periodic basis,on Dropbox, you can do it directly through ERPNext."
-msgstr ""
-
-#, fuzzy
-msgid "Setup &gt; Manage 3rd Party Backups"
-msgstr ""
-
-msgid "Workflows"
-msgstr ""
-
-msgid "In order to allow multiple people to submit multiple requests, for approvals, by multiple users, ERPNext requires you to fill the workflow conditions. ERPNext tracks the multiple permissions before submission."
-msgstr ""
+#~ msgid "Inclusive and Exclusive Tax: ERPNext allows you to enter Item rates which are tax inclusive."
+#~ msgstr ""
 
 #~ msgid "<emphasis role=\"bold\">Difference between a customer name and a contact name</emphasis>"
 #~ msgstr "<emphasis role=\"bold\">Diferencia entre un Cliente y un Nombre de Contacto</emphasis>"
+
+#~ msgid ""
+"\n"
+"	Setup &gt; Accounts &gt; Sales Taxes and Charge Master\n"
+"	"
+#~ msgstr ""
+
+#~ msgid "Territory is a place to signify where your customers come from. If you operate in one country, you can give that country name as your Territory. For Example, India, US, or Rest of the World, could be your Territories. If you operate in many locations, ERPNext allows you to create more Territories. You can also have child Territories under parent Territories. This helps in assigning different regions to different sales staff."
+#~ msgstr ""
+
+#~ msgid ""
+"\n"
+"	Accounts &gt; Point-of-Sale Setting\n"
+"	"
+#~ msgstr ""
+
+#~ msgid ""
+"\n"
+"	Selling/Buying/Stock &gt; Setup &gt; Price List &gt;&gt; New\n"
+"	"
+#~ msgstr ""
+
+#~ msgid "To perform Stock Reconciliation, go to:"
+#~ msgstr ""
+
+#~ msgid "Workflows"
+#~ msgstr ""
+
+#~ msgid "Upload file and Enter Values in Stock Reconciliation Form"
+#~ msgstr ""
+
+#~ msgid "Terms and conditions are the general and special arrangements, provisions, requirements, rules, specifications, and standards that a company follows. These specifications are an integral part of an agreement or contract that the company gets into with its customers, suppliers or partners."
+#~ msgstr ""
+
+#~ msgid "To setup Terms and Condition master, go to:"
+#~ msgstr ""
+
+#~ msgid "How ERPNext handles replies"
+#~ msgstr ""
+
+#~ msgid "Editing in HTML"
+#~ msgstr ""
+
+#~ msgid "Uploading All Tables (Main + Child)"
+#~ msgstr ""
+
+#~ msgid "Expected Payment Date."
+#~ msgstr ""
+
+#~ msgid "In ERPNext when you send an email to a contact like a customer, the sender will be the user who sent the email. In the Reply-To property, the email id will be of the default incoming account (like replies@yourcompany.com). ERPNext will automatically extract these emails from the incoming account and tag it to the relvant communication"
+#~ msgstr ""
+
+#~ msgid "Difference Account: When making Stock Reconciliation for updating opening balance, then you should select Balance Sheet account. Bydefault Temporary Asset and Temporary Liability Account are created in the chart of account which can be used here. Since Warehouse ledger is debit account, Difference Account selected here should be \"Temporary Liability Account\", which is credit account."
+#~ msgstr ""
+
+#~ msgid "Select Territory for which this Price List will be applicable."
+#~ msgstr ""
+
+#~ msgid "To add more territories to an existing tree, click on \"Add Child\""
+#~ msgstr ""
+
+#~ msgid "Once you setup your template, you can select this in your sales transactions."
+#~ msgstr ""
+
+#~ msgid "Your letter head will now appear in all Prints and Emails of documents."
+#~ msgstr ""
+
+#~ msgid "Email is at the heart of electronic communication and ERPNext is deeply integrated with Email. You can create multiple email accounts, automatically create transactions like Lead, Issue from incoming emails, send documents to your contacts via ERPnext. You can also setup email digests and email alerts to send you reminders."
+#~ msgstr ""
+
+#~ msgid "You can add customized text, HTML in your print format, just add the Custom HTML field (in dark colour) and add it to the the place where you want to add the text. Then click on Edit HTML to edit your content."
+#~ msgstr ""
+
+#~ msgid "To integrate SMS in ERPNext, approach a SMS Gateway Provider who provides HTTP API. They will create an account for you and will provide an unique username and password."
+#~ msgstr ""
+
+#~ msgid "Expected Delivery Date of a Sales Order."
+#~ msgstr ""
+
+#~ msgid "Compose the message"
+#~ msgstr ""
+
+#~ msgid "Calculation Type:"
+#~ msgstr ""
+
+#~ msgid "You can manage multiple letter heads in ERPNext. In a letter head you can:"
+#~ msgstr ""
+
+#~ msgid "Email Digests allow you to get regular updates about your sales, expenses and other critical numbers directly in your Inbox."
+#~ msgstr ""
+
+#~ msgid "The Print Format Builder helps you quickly make a simple customized Print Format by dragging and dropping data fields and adding custom text or HTML."
+#~ msgstr ""
+
+#~ msgid "Description: Description of the tax (that will be printed in invoices / quotes)."
+#~ msgstr ""
+
+#~ msgid "Completion date of a Task."
+#~ msgstr ""
+
+#~ msgid "Printing and Branding"
+#~ msgstr ""
+
+#~ msgid "On Previous Row Total/Amount: You can apply taxes on previous row total / amount. If you select this option, the tax will be applied as a percentage of the previous row (in the tax table) amount or total. Previous row amount means a particular tax amount.And, previous row total means net total plus taxes applied up to that row. In the Enter Row Field, mention row number on which you want to apply the current tax. If you want to apply the tax on the 3rd row, mention \"3\" in the Enter Row field."
+#~ msgstr ""
+
+#~ msgid "Review the reconciliation data"
+#~ msgstr ""
+
+#~ msgid "Territory"
+#~ msgstr ""
+
+#~ msgid "SMS Setting"
+#~ msgstr ""
+
+#~ msgid "Completion / Status change of a Task."
+#~ msgstr ""
+
+#~ msgid ""
+"\n"
+"		Setup &gt; Printing and Branding &gt; Print Settings\n"
+"		"
+#~ msgstr ""
+
+#~ msgid "Print Format Builder"
+#~ msgstr ""
+
+#~ msgid "Select in Transaction"
+#~ msgstr ""
+
+#~ msgid "Enter Data in csv file."
+#~ msgstr ""
+
+#~ msgid "Reminder of followup."
+#~ msgstr ""
+
+#~ msgid "Terms And Conditions"
+#~ msgstr ""
+
+#~ msgid "What is a CSV file?"
+#~ msgstr ""
+
+#~ msgid ""
+"\n"
+"		Setup &gt; Printing &gt; Letter Head &gt; New Letter Head\n"
+"		"
+#~ msgstr ""
+
+#~ msgid ""
+"\n"
+"		Selling &gt; Terms and Condition &gt; New\n"
+"		"
+#~ msgstr ""
+
+#~ msgid "Leave Application is a good <emphasis role=\"bold\">example</emphasis> that encompasses all areas of Permission System."
+#~ msgstr ""
+
+#~ msgid "Fill the template with the information than you want to update."
+#~ msgstr ""
+
+#~ msgid "You must usually collect taxes from your Customer and pay them to the government. At times, you may have to pay multiple taxes to multiple government bodies like local government, state or provincial and federal or central government."
+#~ msgstr ""
+
+#~ msgid "There are 2 types of email accounts, outgoing and incoming. Outgoing email accounts use an SMTP service to send emails and emails are retrived from your inbox using a POP service. Most email providers such as GMail, Outlook or Yahoo provide these services."
+#~ msgstr ""
+
+#~ msgid "Similar to your Sales Taxes and Charges Master is the Purchase Taxes and Charges Master."
+#~ msgstr ""
+
+#~ msgid "On Net Total : This can be on net total (total amount without taxes)."
+#~ msgstr ""
+
+#~ msgid "To create a new sales tax template called Sales Taxes and Charges Master, you have to go to:"
+#~ msgstr ""
+
+#~ msgid "In Print Settings you can set your default printing preferences like Paper Size, default text size, whether you want output as PDF or HTML etc."
+#~ msgstr ""
+
+#~ msgid "Email"
+#~ msgstr ""
+
+#~ msgid "If you are in retail operations, you want your Point of Sale to be as quick and efficient as possible. To do this, you can create a POS Setting for a user from:"
+#~ msgstr ""
+
+#~ msgid "Print Headings"
+#~ msgstr ""
+
+#~ msgid "POS includes advanced features to cater to different functionality, such as inventory management, CRM, financials, warehousing, etc., all built into the POS software. Prior to the modern POS, all of these functions were done independently and required the manual re-keying of information, which could lead to entry errors."
+#~ msgstr ""
+
+#~ msgid "You can rename a document if ERPNext (if it is allowed) by going to Menu &gt; Rename in the document."
+#~ msgstr ""
+
+#~ msgid "In ERPNext you can send any document as email (with a PDF attachment) by clicking on Menu &gt; Email from any open document."
+#~ msgstr ""
+
+#~ msgid "Each region has its own way of defining Addresses. To manage multiple address formats for your Documents (like Quotation, Purchase Invoice etc.), you can create country-wise Address Templates."
+#~ msgstr ""
+
+#~ msgid "Step 4: Select Buying and Selling"
+#~ msgstr ""
+
+#~ msgid "Sending Email from any Document"
+#~ msgstr ""
+
+#~ msgid "Amount: Tax amount."
+#~ msgstr ""
+
+#~ msgid "Email Alerts"
+#~ msgstr ""
+
+#~ msgid "A predefined template of an spreadsheet file should be followed for importing item's stock levels and valuations. Open new Stock Reconciliation form to see download option."
+#~ msgstr ""
+
+#~ msgid "Select for which transaction this Price List is application. Mostly it will be one of the Buying or Selling, however you can choose both as well."
+#~ msgstr ""
+
+#~ msgid "How to Attach files?"
+#~ msgstr ""
+
+#~ msgid "If you wish to store your backups on a periodic basis,on Dropbox, you can do it directly through ERPNext."
+#~ msgstr ""
+
+#~ msgid "Note for self implementers: For outgoing emails, you should setup your own SMTP server or sign up with an SMTP relay service like mandrill.com or sendgrid.com that allows a larger number of transactional emails to be sent. Regular email services like GMail will restrict you to a limited number of emails per day."
+#~ msgstr ""
+
+#~ msgid "Authorization Rule"
+#~ msgstr ""
+
+#~ msgid "Set default values as defined."
+#~ msgstr ""
+
+#~ msgid "Actual : Enter as per actual amount in rate column."
+#~ msgstr ""
+
+#~ msgid "<emphasis role=\"bold\">HR User should be able to delegate Leave Applications to his/her subordinates HR. </emphasis> User is given the right to Set User Permissions. A User with HR User role would be able to defined User Permissions on Leave Application for other users."
+#~ msgstr ""
+
+#~ msgid ""
+"\n"
+"		Setup &gt; Printing &gt; Print Heading &gt; New Print Heading\n"
+"		"
+#~ msgstr ""
+
+#~ msgid "You can create / manage Letter Heads from:"
+#~ msgstr ""
+
+#~ msgid "Upload Limitations"
+#~ msgstr ""
+
+#~ msgid "Posting Date: Posting Date will be date when you want uploaded stock to reflect in the report. Posting Date selection option allows you making back dated stock reconcialiation as well."
+#~ msgstr ""
+
+#~ msgid "Remove Field"
+#~ msgstr ""
+
+#~ msgid "Bulk Renaming of Records"
+#~ msgstr ""
+
+#~ msgid "Step 5: Select Territory"
+#~ msgstr ""
+
+#~ msgid "The way ERPNext sets up taxes is via templates. Other types of charges that may apply to your invoices (like shipping, insurance etc.) can also be configured as taxes."
+#~ msgstr ""
+
+#~ msgid "Incoming Email Accounts"
+#~ msgstr ""
+
+#~ msgid "Alternatively, if you want to rename a whole bunch of records, just go to:"
+#~ msgstr ""
+
+#~ msgid "A CSV (Comma Separated Value) file is a data file that you can upload into ERPNext to update various data. Any spreadsheet file from popular spreadsheet applications like MS Excel or Open Office Spreadsheet can be saved as a CSV file."
+#~ msgstr ""
+
+#~ msgid "Documents that you send to your customers carry your brand and image and they must be tailored to your requirements. ERPNext gives you many options so that you can set your oraganization's branding in your documents."
+#~ msgstr ""
+
+#~ msgid "Stock Reconciliation option is available for the non serialized Items only. For seriazlized and batch items, you should create Material Receipt entry in Stock Entry form."
+#~ msgstr ""
+
+#~ msgid "Save and upload your .csv file"
+#~ msgstr ""
+
+#~ msgid "Note: the string up to the \"?\" is the SMS Gateway URL"
+#~ msgstr ""
+
+#~ msgid "To setup an incoming Email Account, check on Enable Incoming and set your POP3 settings, if you are using a popular email service, these will be preset for you."
+#~ msgstr ""
+
+#~ msgid "When you create a new master, you will have to add a row for each tax type."
+#~ msgstr ""
+
+#~ msgid "Select which Document Type you want watch changes on."
+#~ msgstr ""
+
+#~ msgid "This tool will allow you to rename multiple records at the same time."
+#~ msgstr ""
+
+#~ msgid "To remove a field, just drag it back into the fields sidebar."
+#~ msgstr ""
+
+#~ msgid "Non Serialized items are generally fast moving and low value item, hence doesn't need tracking for each unit. Items like screw, cotton waste, other consumables, stationary products can be categorized as non-serialized."
+#~ msgstr ""
+
+#~ msgid "Setup &gt;&gt; Customize &gt;&gt; Authorization Rule"
+#~ msgstr ""
+
+#~ msgid "If you are making Stock Reconciliation for correcting stock level or valuation of an item, then you can select any expense account in which you would want difference amount (derived from difference of valuation of item) should be booked. If Expense Account is selected as Difference Account, you will also need to select Cost Center as it is mandatory with any income and expense account selection."
+#~ msgstr ""
+
+#~ msgid "To edit print settings, go to:"
+#~ msgstr ""
+
+#~ msgid "In each row, you have to mention:"
+#~ msgstr ""
+
+#~ msgid "To configure SMS Settings in ERPNext, find out their HTTP API (a document which describes the method of accessing their SMS interface from 3rd party applications). In this document, you will get an URL which is used to send the SMS using HTTP request. Using this URL, you can configure SMS Settings in ERPNext."
+#~ msgstr ""
+
+#~ msgid "Set additional conditions if you want."
+#~ msgstr ""
+
+#~ msgid "Attach the image in your Letter Head record by clicking on image icon to automatically generate the HTML required for this Letter Head."
+#~ msgstr ""
+
+#~ msgid "To disable specific Price List, uncheck Enabled field in it. Disabled Price List will not be availale for selection in the Sales and Purchase transactions."
+#~ msgstr ""
+
+#~ msgid "Email Digests are a great way for top managers to keep track of the big numbers like “Sales Booked” or “Amount Collected” or “Invoices Raised” etc."
+#~ msgstr ""
+
+#~ msgid "ERPNext restricts the amount of data you can upload in one file. Though the number may vary based on the type of data. It is usually safe to upload around 1000 rows of a table at one go. If the system will not accept, then you will see an error."
+#~ msgstr ""
+
+#~ msgid "Add a new Field"
+#~ msgstr ""
+
+#~ msgid "To save your format, just click on the Save button on the top."
+#~ msgstr ""
+
+#~ msgid "If you are using Microsoft Excel and using non-English characters, make sure to save your file encoded as UTF-8. For older versions of Excel, there is no clear way of saving as UTF-8. So save your file as a CSV, then open it in Notepad, and save as “UTF-8”. (Sorry blame Microsoft for this!)"
+#~ msgstr ""
+
+#~ msgid "Select Currency for this Price List. Currency option in Price List allows you to maintain item's price in Currency other than your companies base currency."
+#~ msgstr ""
+
+#~ msgid "Tax Accounts: For Tax Accounts that you want to use in the tax templates, you must go to Chart of Accounts and mention them as type “Tax” in your Chart of Item."
+#~ msgstr ""
+
+#~ msgid "Stock Reconciliation is the process of counting and evaluating stock-in-trade, usually at an organisations year end in order to value the total stock for preparation of the accounts. In this process actual physical stocks are checked and recorded in the system. The actual stocks and the stock in the system should be in agreement and accurate. If they are not, you can use the stock reconciliation tool to reconcile stock balance and value with actuals."
+#~ msgstr ""
+
+#~ msgid "Make a new Terms and Conditions"
+#~ msgstr ""
+
+#~ msgid "All emails sent from the system, either by the user to a contact or notifications or transaction emails, will be sent from an Outgoing Email Account."
+#~ msgstr ""
+
+#~ msgid "If you sales and purchase transactions of higher value or discount requires an authorization from senior manager, you can set authorization rule for it. To create new Authorization Rule, go to:"
+#~ msgstr ""
+
+#~ msgid "Account Head: The Account ledger under which this tax will be booked"
+#~ msgstr ""
+
+#~ msgid "Address Template"
+#~ msgstr ""
+
+#~ msgid "This also allows you to use Terms and Condition master for footer, which otherwise is not availale in ERPNext as dedicated functionality. Since contents of Terms and Condition is always the last to appear in the print format, details of footer should be inserted at the end of the content, so that it actually appears as footer in the print format."
+#~ msgstr ""
+
+#~ msgid "If you would like ERPNext to notify you if an email is unreplied for a certain amount of time, then you can set Notify if Unreplied. Here you can set the number of minutes to wait before notifications are sent and whom the notifications must go to."
+#~ msgstr ""
+
+#~ msgid "To setup an outgoing Email Account, check on Enable Outgoing and set your SMTP server settings, if you are using a popular email service, these will be preset for you."
+#~ msgstr ""
+
+#~ msgid "Standard Buying and Selling Price List are created by default."
+#~ msgstr ""
+
+#~ msgid "Total: Cumulative total to this point"
+#~ msgstr ""
+
+#~ msgid "Make a new Format"
+#~ msgstr ""
+
+#~ msgid "If an Order greater than a particular value is received or sent."
+#~ msgstr ""
+
+#~ msgid "This is how the letter head looks in a document print:"
+#~ msgstr ""
+
+#~ msgid ""
+"\n"
+"		Setup &gt; Printing and Branding &gt; Print Format Builder\n"
+"		"
+#~ msgstr ""
+
+#~ msgid "An Item can have multiple prices based on customer, currency, region, shipping cost etc, which can be stored as different rate plans. In ERPNext, you are required to store all the lists separately. Buying Price List is different from Selling Price List and thus is stored separately."
+#~ msgstr ""
+
+#~ msgid "Opening Stocks"
+#~ msgstr ""
+
+#~ msgid "ERPNext lets you maintain multiple selling and buying prices for an Item using Price Lists. A PriceList is a name you can give to a set of Item prices."
+#~ msgstr ""
+
+#~ msgid "These Price List will be used when creating Item Price record to track selling or buying price of an item. Click here to learn more about Item Price."
+#~ msgstr ""
+
+#~ msgid ""
+"\n"
+"		Setup &gt; Email &gt; Email Digest\n"
+"		"
+#~ msgstr ""
+
+#~ msgid "Outgoing Email Accounts"
+#~ msgstr ""
+
+#~ msgid "Is this Tax included in Basic Rate?: If you check this, it means that this tax will not be shown below the item table, but will be included in the rate in your main item table. This is useful when you want to give a flat price (inclusive of all taxes) to your customers."
+#~ msgstr ""
+
+#~ msgid "Why would you want Price Lists? You have different prices for different zones (based on the shipping costs), for different currencies etc."
+#~ msgstr ""
+
+#~ msgid "Default Email Accounts"
+#~ msgstr ""
+
+#~ msgid "This is the tax template that you can use in your Purchase Orders and Purchase Invoices. If you have value added taxes (VAT), where you pay to the government the difference between your incoming and outgoing taxes, you can select the same Account that you use for sales taxes. For more details see Purchase Taxes."
+#~ msgstr ""
+
+#~ msgid "Days Before / Days After: Trigger this alert a few days before or after the <emphasis role=\"Bold\">Reference Date</emphasis>. To set the days, set <emphasis role=\"Bold\">Days Before or After</emphasis>. This can be useful in reminding you of upcoming due dates or reminding you to follow up on certain leads of quotations."
+#~ msgstr ""
+
+#~ msgid "<emphasis role=\"bold\">HR Manager should be able to see all Leave Applications. </emphasis> Create a Permission Rule for HR Manager at Level 0, with Read permissions. Apply User Permissions should be disabled."
+#~ msgstr ""
+
+#~ msgid "Step 1: Go to"
+#~ msgstr ""
+
+#~ msgid "After reviewing saved Reconciliation Data, submit the Stock Reconciliation. On successful submission, the data will be updated in the system. To check the submitted data go to stock and view stock level report."
+#~ msgstr ""
+
+#~ msgid "A default Address Template is created when you setup the system. You can either edit or update it or create a new template."
+#~ msgstr ""
+
+#~ msgid "To see how its done, enter a few records manually using forms and export \"All Tables\" with \"Download with Data\""
+#~ msgstr ""
+
+#~ msgid "Note: While filling the valuation rates of Items, if you wish to find out the valuation rates of all items, you can go to stock and click on Item Prices report. The report will show you all types of rates."
+#~ msgstr ""
+
+#~ msgid "The templating engine is based on HTML and the Jinja Templating system and all the fields (including Custom Fields) will be available for creating the template."
+#~ msgstr ""
+
+#~ msgid "Email Accounts"
+#~ msgstr ""
+
+#~ msgid "For child records, if you select Overwrite, it will delete all the child records of that parent."
+#~ msgstr ""
+
+#~ msgid "Content of Terms and Condition can be formatted as per your preference, and also insert images where needed. If you have expertise in HTML, you will also find option to edit the content of Terms and Condition in HTML."
+#~ msgstr ""
+
+#~ msgid "New: When a new document of the selected type is made."
+#~ msgstr ""
+
+#~ msgid "Item tax is overwrite-able: You can overwrite or change the item tax rate by going to the Item master in the Item tax table."
+#~ msgstr ""
+
+#~ msgid "Purchase Taxes and Charges Master"
+#~ msgstr ""
+
+#~ msgid "Value Change: When a particular value in the selected type changes."
+#~ msgstr ""
+
+#~ msgid "When you open a form, on the right sidebar, you will see a section to attach files. Click on “Add” and select the file you want to attach. Click on “Upload” and you are set."
+#~ msgstr ""
+
+#~ msgid "Verify your information."
+#~ msgstr ""
+
+#~ msgid "You can upload your opening stock balance in the system using Stock Reconciliation. Stock Reconciliation will update your stock for a given Item on a given date for a given Warehouse to the given quantity."
+#~ msgstr ""
+
+#~ msgid "Step 6: Save Price List."
+#~ msgstr ""
+
+#~ msgid "or Open the document for which you want to make a print format. Click the Printer icon, or go to Menu &gt; Print and click on the Edit button. Note: You must have System Manager permission to do this."
+#~ msgstr ""
+
+#~ msgid "One of the primary motivator for compulsory use of accounting tools is calculation of Taxes. You may or may not make money but your government will (to help your country be safe and prosperous). And if you don’t calculate your taxes correctly, they get very unhappy. Ok, philosophy aside, ERPNext allows you to make configurable tax templates that you can apply to your sales or purchase."
+#~ msgstr ""
+
+#~ msgid "Define what events you want to watch. Events are:"
+#~ msgstr ""
+
+#~ msgid "Select template and modify as per your need."
+#~ msgstr ""
+
+#~ msgid "Cutomize"
+#~ msgstr ""
+
+#~ msgid "Setup &gt; Manage 3rd Party Backups"
+#~ msgstr ""
+
+#~ msgid "<emphasis role=\"bold\">It should be Approved / Rejected only by HR User or Leave Approver. </emphasis> The Status field of Leave Application is set at Level 1. HR User and Leave Approver are given Read and Write permissions for Level 1, while everyone else (All) are given Read permission for Level 1."
+#~ msgstr ""
+
+#~ msgid "Why is this? Uploading a lot of data can cause your system to crash, specially if there are other users doing things in parallel. Hence ERPNext restricts the number of “writes” you can process in one request."
+#~ msgstr ""
+
+#~ msgid "<emphasis role=\"bold\">Leave Approver should be able to see and update Leave Applications applicable to him/her. </emphasis> Leave Approver is given Read and Write access at Level 0, with Apply User Permissions enabled. Relevant Employee Documents should be enlisted in the User Permissions of Leave Approvers. (This effort is reduced for Leave Approvers mentioned in Employee Documents, by programmatically creating User Permission records.)"
+#~ msgstr ""
+
+#~ msgid "Step 2: Enter name of new Price List."
+#~ msgstr ""
+
+#~ msgid "Tip: Stock Reconciliation can also be used to update the “value” of an Item. To understand how Items are valued read Valuation."
+#~ msgstr ""
+
+#~ msgid "The csv format is case-sensitive. Do not edit the headers which are preset in the template. In the Item Code and Warehouse column, enter exact Item Code and Warehouse as created in your ERPNext account. For quatity, enter stock level you wish to set for that item, in a specific warehouse. If you do not want to change the quantity or valuation rate of an Item, you should leave it blank."
+#~ msgstr ""
+
+#~ msgid "Create an image with your logo, brand and other information that you want to put on your letter head."
+#~ msgstr ""
+
+#~ msgid ""
+"\n"
+"		Setup &gt; Data &gt; Rename Tool\n"
+"		"
+#~ msgstr ""
+
+#~ msgid "Exception to the rule: Item tax settings are required only if a particular Item has a different tax rate than the rate defined in the standard tax Account"
+#~ msgstr ""
+
+#~ msgid "One template is default and will apply to all countries that do not have an specific template."
+#~ msgstr ""
+
+#~ msgid "<emphasis role=\"Bold\">Step to create Price List.</emphasis>"
+#~ msgstr ""
+
+#~ msgid "For this, you need to setup an Email Alert."
+#~ msgstr ""
+
+#~ msgid "If you specify a particular User, the POS setting will be applied only to that User. If the User option is left blank, the setting will be set for all users. To understand POS in detail visit Point of Sale"
+#~ msgstr ""
+
+#~ msgid "To setup an Email Alert:"
+#~ msgstr ""
+
+#~ msgid "Note: Make sure you do not put zero if you do not want to change the quantity amount or valuation amount. The system will calculate zero as zero quantity. So leave the field blank."
+#~ msgstr ""
+
+#~ msgid "If you select all tables, you will get columns belonging to all the tables in one row separated by ~ columns. If you have multiple child rows then you must start a new main item on a new row."
+#~ msgstr ""
+
+#~ msgid "You can create a new Print Format either by going to:"
+#~ msgstr ""
 

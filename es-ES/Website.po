@@ -1,248 +1,245 @@
+# William Moreno Reyes <williamjmorenor@gmail.com>, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2015-04-22 17:50-0600\n"
-"PO-Revision-Date: 2015-04-22 17:50-0600\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: None\n"
-"Language: en-US \n"
+"PO-Revision-Date: 2017-03-03 21:12-0600\n"
+"Last-Translator: William Moreno Reyes <williamjmorenor@gmail.com>\n"
+"Language-Team: William Moreno\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Publican v4.2.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
 
 msgid "Website"
-msgstr ""
+msgstr "Sitio Web"
 
 msgid "Websites are a core component of any business and having a good website usually means:"
-msgstr ""
+msgstr "Los sitios WEB forman parte de cualquier negocio tener un buen sitio WEB generalmente implica:"
 
 msgid "Invest lot of money."
-msgstr ""
+msgstr "Invertir mucho dinero."
 
 msgid "Difficult to update."
-msgstr ""
+msgstr "Dificultad al actualizar."
 
 msgid "Not interactive."
-msgstr ""
+msgstr "No interactivo."
 
 msgid "Unless you are a web designer yourself. Wouldn't it be nice if there was a way to update your product catalog on your site automatically from your ERP? We thought exactly the same and hence built a small Website Development app right inside ERPNext! Using ERPNext’s Website module, you can"
-msgstr ""
+msgstr "Al menos que sea un diseñador WEB. No sería bueno si hubiera una forma de actualizar su catalogo en linea desde su ERP? Creemos exactamente eso y por ello ERPNext cuenta con una aplicación para administrar una página WEB integrada, usted puede:"
 
 msgid "Create Web Pages."
-msgstr ""
+msgstr "Crear páginas WEB."
 
 msgid "Write a Blog."
-msgstr ""
+msgstr "Escribir un Blog."
 
 msgid "Publish your Product Catalog using the Item master"
-msgstr ""
+msgstr "Publicar su Catalogo de Productos en linea desde el inventario"
 
 msgid "Though not necessary, to make a good website, you might have to know a bit of HTML / CSS or hire the services of a professional. The good part is that once this is setup, you can add and edit content, blogs and products directly from your ERP."
-msgstr ""
+msgstr "Si bien no es necesario, para hacer un buen sitio WEB se debe saber un poco de HTML/CSS."
 
 msgid "Website Setup"
-msgstr ""
+msgstr "Configuración del sitio WEB."
 
 msgid "This is the layout of a ERPNext´s Website"
-msgstr ""
+msgstr "Este es el diseño de su sitio WEB en ERPNext"
 
 msgid "Top Bar: The header has two main parts, the “Brand” or the logo section and the menu items. These menu items can directly link to Web Pages or the Blogs page or Products page. The standard Website header bar is with black background."
-msgstr ""
+msgstr "Barra Superior: El encabezado tiene dos partes principales, la \"Marca\" o logotipo y el menú de elementos. "
 
 msgid "Background: The website is generated using a standard width of 900 pixels and has a page “effect”. You can set a background color or image to enhance the effect of the page."
-msgstr ""
+msgstr "Fondo: El sitio WEB se genera usando un ancho estándar de 900 pixeles."
 
 msgid "Content: The inner content of your pages has a width of 800px and if it is a two-column layout like Blog, it will have a width of 540 px."
-msgstr ""
+msgstr "Contenido: El contenido principal de su página tiene un ancho de 800 pixeles y tiene una disposición de dos columnas."
 
 msgid "Footer: The footer section contains a list of links (this is where you typically put links like “Contact Us”, “Terms and Conditions”,etc) and the name of your company."
-msgstr ""
+msgstr "Pie de Página: Contiene una lista de vínculos (generalmente cosas \"Información de Contacto\", \"Terminos y Condiciones\", etc). "
 
 msgid "Defining Menus and Home Page"
-msgstr ""
+msgstr "Definiendo Menús y Página Principal"
 
 msgid "To define the Top Bar Menus, Brand, Footers and Home Page, go to:"
-msgstr ""
+msgstr "Para definir la los Menús, Marca, Píe de Página y Página de inicio, valla a:"
 
-#, fuzzy
 msgid "Website &gt; Website Settings"
-msgstr ""
+msgstr "Sitio WEB &gt; Configuración del Sitio WEB"
 
 msgid "Create seperate web pages which will be linked to the main web-icons like company, contact, products etc."
-msgstr ""
+msgstr "Cree páginas web individuales que serán vinculadas con los iconos del menú principal."
 
 msgid "A menu item cannot be linked to a page and also be a parent. For example, if you click on About button, it will show a drop-down list, whose items will be clickable. There will be no page on About. About will not open into a page. It is only a button. The drop-down list menu will be clickable and open into new pages."
-msgstr ""
+msgstr "Un elemento del menú puede ser vinculado a una página y un elemento padre. Por ejemplo. si hace clic en el botón Acerca de, va a mostrar una menú desplegable, los elemento de ese mené son seleccionables."
 
 msgid "Websites"
-msgstr ""
+msgstr "Páginas WEB"
 
 msgid "Static Content like your Home Page, About Us, Contact Us, Terms pages can be created using the Web Page. To create a new Web Page, go to:"
-msgstr ""
+msgstr "Usando páginas WEB se pueden crear contenido estático."
 
-#, fuzzy
 msgid "Website &gt; Web Page &gt; New Web Page"
-msgstr ""
+msgstr "Sitio Web &gt; Página Web &gt; Nueva Página Web"
 
 msgid "A web site will have the next sections:"
-msgstr ""
+msgstr "Un sitio WEB cuenta con las siguientes secciones:"
 
 msgid "Title: The first thing to set is the title of your page. The title has the maximum weight for search engines so choose a title that reflects the keywords that you are targeting for your audience."
-msgstr ""
+msgstr "Titulo: Lo primero es configurar su página."
 
 msgid "Content: After selecting your layout, you can add content (text, images, etc) to each of your content boxes. You can add content in Markdown or HTML format. Read the section on how to format using Markdown, for more details."
-msgstr ""
+msgstr "Contenido: Luego de seleccionar la disposición puede agregar contenido."
 
 msgid "Page Link: The web link to your page will be the value of the “Page Name” field + “.html”. For example if your page name is contact-us, the web link of your page will be yoursite.com/contact-us.html."
-msgstr ""
+msgstr "Vinculo a la Página: El link de página web."
 
 msgid "Images: You can attach images to your web page and show them using the HTML tag or using markdown format. the link to your file will be assets/manualerpnextcom/old_images/erpnext/filename"
-msgstr ""
+msgstr "Imágenes: Puede agregar imágenes a su sitio WEB."
 
 msgid "Website Forms"
-msgstr ""
+msgstr "Formularios WEB"
 
 msgid "Add forms to the website that will add / update data in your tables. Allow users to edit / manage multiple web forms. You can add forms in your website for example, Contact Us, Inquiry, Complaint etc. Data from these can fill up records like Lead, Opportunity, Issue etc. The user can also be allowed manage multiple records (like Complaints etc.). To create a new Web Form go to:"
-msgstr ""
+msgstr "Le permite agregar información que sera agregada a la base de datos del sistema."
 
-#, fuzzy
 msgid "Website &gt; Web Form &gt; New Web Form"
-msgstr ""
+msgstr "Website &gt; Web Form &gt; New Web Form"
 
 msgid "And fill the next information:"
-msgstr ""
+msgstr "Completar la siguiente información:"
 
 msgid "Set the Web Form title and url."
-msgstr ""
+msgstr "Titulo y url."
 
 msgid "Select the DocType in which you want the user to store the records."
-msgstr ""
+msgstr "Seleccione el tipo de documento es que almacenara la información."
 
 msgid "Select if you require the user to login, edit records, manage multiple records etc."
-msgstr ""
+msgstr "Seleccionar si se quiere inicio de sesión."
 
 msgid "Add the fields you want in the record."
-msgstr ""
+msgstr "Agregue los campos que desea."
 
 msgid "Once you create the web form, you can view it on the url and test it out!"
-msgstr ""
+msgstr "Una vez que cree el formulario web podra verlo visitando la url definida."
 
 msgid "Your data will be stored in the table you have selected."
-msgstr ""
+msgstr "La información sera almacenada en la tabla seleccionada."
 
 msgid "Styling The Website"
-msgstr ""
+msgstr "Estilo del Sitio Web"
 
 msgid "You can set some basic styles to your page using the styles feature."
-msgstr ""
+msgstr "Puede aplicar estilos a su página web."
 
 msgid "Some of the things than you can costumize are:"
-msgstr ""
+msgstr "Algunos aspecto que puede personalizar son:"
 
 msgid "Background: You can either set a solid background by selecting a color. You can attach a file and select it in the “Background Image” box."
-msgstr ""
+msgstr "Fondo."
 
 msgid "Fonts: Fonts: Font family of your body text (includes some Open Source fonts). Font- size: Font-size of your website body text (large is good). Heading Font: Font family of your headings. Apart from this you can also add custom style rules using CSS."
-msgstr ""
+msgstr "Fuentes."
 
 msgid "Custom CSS: There are tons of CSS rules and tricks that fall out of scope of this manual. But you could add your own style to certain elements like h1, h2 etc and also create your own style classes that you can use in elements in your body content."
-msgstr ""
+msgstr "CCS Personalizado."
 
 msgid "Blog Post"
-msgstr ""
+msgstr "Artículos del Blog"
 
 msgid "Blogs are a great way to share your thoughts about your business and keep your customers and readers updated of what you are up to. In the age of internet, writing assumes a lot of significance because when people come to your website, they want to read about you and your product. To create a new blog, just create a new Blog from:"
-msgstr ""
+msgstr "Los blogs son geniales para mantener informados a sus usuarios"
 
-#, fuzzy
 msgid "Website &gt; Blog &gt; New Blog"
 msgstr ""
 
 msgid "You can format a blog using the Markdown format.You can also access your blog by going to the page “blog.html”."
-msgstr ""
+msgstr "Puede dar formato al blog usando formato Markdown."
 
 msgid "Add Productos to Website"
-msgstr ""
+msgstr "Agregar un producto al sitio WEB"
 
 msgid "To list your Item on the Website, fill the Item details and save the file. Once the file is saved, a plus (+) button will appear next to the Image icon. Click on the plus button and add your Item image. The html code will be generated automatically."
-msgstr ""
+msgstr "Puede mostrar un producto en el sitio WEB, complete la información del producto."
 
 msgid "Under the Website section, please check the box that says 'show in Website'. Once the box is checked, the page will display other fields for entering information."
-msgstr ""
+msgstr "En la sección WEB seleccione mostrar en el sitio WEB."
 
 msgid "The page name will be generated automatically. Mention the Item-Group under which the Item will be displayed."
-msgstr ""
+msgstr "Una página WEB sera generada automáticamente. "
 
 msgid "Item Groups"
-msgstr ""
+msgstr "Grupos de Items"
 
 msgid "Mention the Item Group under this column. If you wish to list your Item under the broad category products, name your Item Group as Products. In case you have various varieties of Item and want to classify them under different names, make Item Groups with those names and check the box that says 'show in Website'. For Example, if you wish to create a category called 'Bags', create a Item Group named Bags."
-msgstr ""
+msgstr "Puede crear listas de productos relacionados un categoría de elementos."
 
 msgid "Once the Item Group is created go to the Website Settings page under Website. Enter the Label, Url, and Parent Label."
-msgstr ""
+msgstr "Una vez que cree el grupo de productos valla al sitio WEB en la dirección especificada."
 
 msgid "Webpage labels"
-msgstr ""
+msgstr "Etiquetas de la Página WEB"
 
 msgid "Add more Items under a particular Item Group. To add more Items under a certain Label, mention the Item Group on the Item Page. The Items will be added automatically on the Webpage, under the Item Group Label. For Example, To add Item-Kiddies Bag and Butterfly Print Bag, check the 'Show in Website'box. The Items will be placed under the Label Bags on the Webpage."
-msgstr ""
+msgstr "Puede agregar mas elementos a un grupo particular de elementos."
 
 msgid "Shopping Cart"
-msgstr ""
+msgstr "Carrito de Compras "
 
 msgid "On the Webpage, a shopping cart is an icon that allows you to store all the things that you have earmarked for purchasing. It is a graphical representation of a shopping basket or a shopping cart that allows you to save the items you intend to buy. This software displays the price of the product . It also displays shipping and handling charges, along with taxes, if applicable. To set up a shopping cart, go to the selling module."
-msgstr ""
+msgstr "Puede agregar un icono de un carrito de compras para almacenar productos seleccionados para comprar."
 
-#, fuzzy
 msgid "Selling &gt; Shopping Cart Settings"
 msgstr ""
 
 msgid "On the Website, the shopping cart image will be seen below the Item price. Customers can click on the cart and enter the amount of quantity they wish to buy. The Item number will be stored on the right hand corner of the page, next to the flower sign."
-msgstr ""
+msgstr "En el sitio WEB el icono del carrito de compras sera visible bajo el precio del artículo,"
 
 msgid "Customer Portal"
-msgstr ""
+msgstr "Portal de Cliente"
 
 msgid "Customer Portal is designed to give easy accesibility to customers of a company. This portal allows customers to login and find out information relevant to them.They can trace communication history of their mails. They can also check order status by logging into the website."
-msgstr ""
+msgstr "El portal del cliente le permite fácil acceso a los clientes de su compañía."
 
 msgid "Customer Orders Invoices And Shipping Status"
-msgstr ""
+msgstr "Ordenes de Compras Factura y Estatus de Envío"
 
 msgid "ERPNext Web Portal gives your customers quick access to their Orders, Invoices and Shipments Customers can check the status of their orders, invoices, and shipping status by logging on to the web."
-msgstr ""
+msgstr "El portal del cliente de ERPNext le permite al cliente acceso a sus Ordenes, Facturas y Envíos iniciando sesión en el sitio web. "
 
 msgid "Once an order is raised, either using the Shopping Cart or from within ERPNext, your customer can view the order and keep an eye on the billing and shipment status. When the invoice and payment against these orders are submitted, the customer can see the updated status on the portal, at a glance."
-msgstr ""
+msgstr "Una vez que se genera una orden de compra usando el carrito de compras o desde el ERP el cliente puede tener acceso desde el portal del cliente."
 
 msgid "Sign Up"
-msgstr ""
+msgstr "Inicio de Sesión"
 
 msgid "Customers have to log-in to the Company Website, and sign-up as a customer."
-msgstr ""
+msgstr "Los clientes deben iniciar sesión en la página de la compañía y crear una cuenta como cliente."
 
 msgid "Step 1: Click on Login Icon."
-msgstr ""
+msgstr "Paso 1: Clic en el Icono de Inicio de Sesión."
 
 msgid "Step 2: Click on Sign Up Icon."
-msgstr ""
+msgstr "Paso 2: Clic en el Icono de Crear Cuenta."
 
 msgid "Step 3: Enter Customer Name and ID. After the sign up process, a mail will be sent to the customers email id with the password details."
-msgstr ""
+msgstr "Paso 3. Introduzca el nombre del cliente e ID, luego de crear su cuenta se le enviara un correo electrónico de inicio de sesión."
 
 msgid "Portal Login"
-msgstr ""
+msgstr "Inicio de Sesión en el Portal"
 
 msgid "To login into the customer account, the customer has to use his email id and the password sent by ERPNext; generated through the sign-up process."
-msgstr ""
+msgstr "Para iniciar sesión en la cuenta de cliente debe usar su corre e ID generados en el proceso de crear su cuenta."
 
 msgid "Issues"
-msgstr ""
+msgstr "Solicitudes"
 
 msgid "The customer portal makes it very easy for a customer to raise concerns. A simple and intuitive interface facilitates your customer to report their concerns as Issues. They can view the complete thread of their conversation."
-msgstr ""
+msgstr "El portal del cliente hace muy fácil solicitar soporte. Hay una interfaz de usuario intuitiva que para que sus clientes hagan cualquier solicitud."
 
 #~ msgid "Text"
 #~ msgstr ""

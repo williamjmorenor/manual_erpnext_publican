@@ -1,337 +1,349 @@
+# William Moreno Reyes <williamjmorenor@gmail.com>, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2015-04-22 17:50-0600\n"
-"PO-Revision-Date: 2015-04-22 17:50-0600\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: None\n"
-"Language: en-US \n"
+"PO-Revision-Date: 2017-03-04 23:05-0600\n"
+"Last-Translator: William Moreno Reyes <williamjmorenor@gmail.com>\n"
+"Language-Team: William Moreno\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Publican v4.2.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
 
 msgid "Buying"
-msgstr ""
+msgstr "Compras"
 
 msgid "If your business involves physical goods, buying is one of your core business activity. Your suppliers are as important as your customers and they must be provided with as much accurate information as possible. Buying in right amounts, in right quantities, can affect your cash flow and profitability. ERPNext contains a set of transactions that will make your buying process as efficient and seamless as possible."
-msgstr ""
+msgstr "Si negocio implica productos, el proceso de compras es una actividad principal en su negocio. Sus proveedores son tan valiosos como sus clientes y deben contar con la información mas precisa posible. Realizar las compras correctas en cantidades adecuadas pueden afectar su flujo de caja y rentabilidad. ERPNext contiene una serie de transacciones que hacen posible su proceso compras eficiente y sencillo."
 
 msgid "Buying Settings"
-msgstr ""
+msgstr "Configuración de Compras"
 
 msgid "Buying Settings is where you can define properties which will be applied in the Buying module's transactions."
-msgstr ""
+msgstr "En la configuración de compras puede establecer la configuración global del módulo de compras."
 
 msgid "Let us look at the various options that can be configured:"
-msgstr ""
+msgstr "Algunas opciones que puede configurar son:"
 
-#, fuzzy
 msgid "Supplier Naming By: When a Supplier is saved, system generates a unique identity or name for that Supplier which can be used to refer the Supplier in various Buying transactions.If not configured otherwise, ERPNext uses the Supplier's Name as the unique name. If you want to identify Suppliers using names like SUPP-00001, SUPP-00002, or such other patterned series, select the value of Supplier Naming By as \"Naming Series\".You can define or select the Naming Series pattern from:"
-msgstr ""
+msgstr "Nombrar a los clientes por: Cuando guarde un nuevo usuario el sistema va a generar una identificación única. Si no provee parámetros, ERPNext va a usar el nombre del proveedor como ID."
 
 msgid "Setup &gt; Settings &gt; Naming Series"
 msgstr ""
 
 msgid "Default Supplier Type: Configure what should be the value of Supplier Type when a new Supplier is created."
-msgstr ""
+msgstr "Tipo de proveedor por defecto: Configure como se debe tratar un nuevo proveedor al guardarlo."
 
 msgid "Default Buying Price List: Configure what should be the value of Buying Price List when a new Buying transaction is created."
-msgstr ""
+msgstr "Lista de precios por defecto: Configure la lista de precios por defecto al realizar compras."
 
 msgid "Maintain Same Rate Throughout Purchase Cycle: If this is checked, ERPNext will stop you if you change the Item's price in a Purchase Invoice or Purchase Receipt created based on a Purchase Order, i.e. it will maintain the same price throughout the purchase cycle. If there is a requirement where you need the Item's price to change, you should uncheck this option."
-msgstr ""
+msgstr "Mantener el Mismo precio en el ciclo de precio: Si selecciona esta opción ERPNext no le permitirá cambiar el precio de los productos al avanzar en el proceso de compra."
 
 msgid "Purchase Order Required: If this option is configured \"Yes\", ERPNext will prevent you from creating a Purchase Invoice or a Purchase Receipt without first creating a Purchase Order."
-msgstr ""
+msgstr "Requerir Orden de Compra. Si se selecciona esta opción ERPNext no le permitirá crear una factura de compra sin antes tener una orden de compra."
 
 msgid "Purchase Receipt Required: If this option is configured \"Yes\", ERPNext will prevent you from creating a Purchase Invoice without first creating a Purchase Receipt."
-msgstr ""
+msgstr "Recibo de Compra Requerido: Si selecciona esta opción no podrá crear una nueva factura sin haber recibido previamente los productos."
 
 msgid "Supplier Type"
-msgstr ""
+msgstr "Tipo de Proveedor"
 
 msgid "A supplier may be distinguished from a contractor or subcontractor, who commonly adds specialized input to deliverables. A supplier is also known as a vendor. There are different types of suppliers based on their goods and products. ERPNext allows you to create your own categories of suppliers. These categories are known as Supplier Type. For Example, if your suppliers are mainly pharmaceutical companies and FMCG distributors, You can create a new Type for them and name them accordingly. Based on what the suppliers supply, they are classified into different categories called Supplier Type. There can be different types of suppliers. You can create your own category of Supplier Type."
-msgstr ""
+msgstr "Los proveedores pueden tener diferentes características. ERPNext le permite clasificar sus proveedores en categorías. Estas categorías se conocen como Tipos de Proveedor. "
 
-#, fuzzy
 msgid "Buying &gt; Setup &gt; Supplier Type &gt; New Supplier Type"
 msgstr ""
 
 msgid "You can classify your suppliers from a range of choice available in ERPNext. Choose from a set of given options like Distributor, Electrical,Hardware, Local, Pharmaceutical, Raw material, Services etc. Classifying your supplier into different types facilitates accounting and payments."
-msgstr ""
+msgstr "Puede clasificar sus proveedores desde un rango de opciones provistas por el sistema. Clasificar sus proveedores facilitara los procesos de contabilidad y pago."
 
 msgid "Supplier Master"
-msgstr ""
+msgstr "Maestro de Proveedores"
 
 msgid "Suppliers are companies or individuals who provide you with products or services. They are treated in exactly the same manner as Customers in ERPNext. You can create a new Supplier via:"
-msgstr ""
+msgstr "Un proveedor puede ser una empresa o un individuo que le venden productos o servicios. Tienen un tratamiento similar a sus Clientes. Puede crear un nuevo proveedor vía."
 
-#, fuzzy
 msgid "Buying &gt; Documents &gt; Supplier &gt; New Supplier"
 msgstr ""
 
 msgid "Contacts and Addresses"
-msgstr ""
+msgstr "Contactos y Direcciones"
 
 msgid "Contacts and Addresses in ERPNext are stored separately so that you can attach multiple Contacts or Addresses to Customers and Suppliers. To add a Contact or Address go to Buying and click on “New Contact” or “New Address”."
-msgstr ""
+msgstr "ERPNext almacena por separado contactos relacionados a Clientes y Proveedores."
 
 msgid "When you select a Supplier in any transaction, one Contact and Address gets pre-selected. This is the “Default Contact or Address”. So make sure you set your defaults correctly!"
-msgstr ""
+msgstr "Cuando selecciona un proveedor en una transacción se selecciona un contacto relacionado al proveedor."
 
 msgid "Integration with Accounts"
-msgstr ""
+msgstr "Integración con Contabilidad"
 
 msgid "In ERPNext, there is a separate Account record for each Supplier, of Each company. When you create a new Supplier, ERPNext will automatically create an Account Ledger for the Supplier under “Accounts Payable” in the Company set in the Supplier record."
-msgstr ""
+msgstr "En ERPNext hay un registro separado por cada proveedor. Cuando cree un nuevo proveedor el sistema creara automáticamente una nueva cuenta de pasivo."
 
 msgid "If you want to change the Account Group under which the Supplier Account is created, you can set it in the Company master."
-msgstr ""
+msgstr "Puede cambiar la cuenta donde se registran sus proveedores desde el Maestro de Cuentas."
 
 msgid "If you want to create an Account in another Company, just change the Company value and “Save” the Supplier again."
-msgstr ""
+msgstr "Puede crear una cuenta en una compañía diferente cambien el valor \"Empresa\" y guardando de nuevo el registro."
 
-#, fuzzy
 msgid "Buying &gt; Contact &gt; New Contact"
 msgstr ""
 
 msgid "You can also import from the Data Import Tool"
-msgstr ""
+msgstr "Puede hacer uso de la herramienta para importar datos"
 
 msgid "Material Request"
-msgstr ""
+msgstr "Solicitud de Materiales"
 
 msgid "A Material Request is a simple document identifying a requirement of a set of Items (products or services) for a particular reason. To generate a Material Request manually go to:"
-msgstr ""
+msgstr "Una solicitud de materiales es una lista de productos (bienes o servicios) que se necesitan por alguna razón. Para generar una orden de compra valla a:"
 
-#, fuzzy
 msgid "Buying &gt; Documents &gt; Material Request &gt; New Material Request"
 msgstr ""
 
 msgid "A Material Request can be generated:"
-msgstr ""
+msgstr "Una solicitud de materiales se puede generar desde:"
 
 msgid "By a User."
-msgstr ""
+msgstr "Por un usuario."
 
 msgid "Automatically from a Sales Order."
-msgstr ""
+msgstr "De forma automática desde una orden de venta."
 
 msgid "Automatically when the Projected Quantity of an Item in stores reaches a particular level."
-msgstr ""
+msgstr "De forma automática cuando las existencias de un producto bajan del mínimo establecido."
 
 msgid "Automatically from your Bill of Materials if you use Production Plan to plan your manufacturing activities."
-msgstr ""
+msgstr "De forma automática desde una Orden de Materiales si una un Plan de Producción."
 
 msgid "In the Material Request form:"
-msgstr ""
+msgstr "En el formulario de Solicitud de Materiales"
 
 msgid "Fill in the Items you want and their quantities."
-msgstr ""
+msgstr "Llene la lista de productos y sus cantidades."
 
 msgid "If your Items are inventory items, you must also mention the Warehouse where you expect these Items to be delivered. This helps to keep track of the Projected Quantity for this Item."
-msgstr ""
+msgstr "Si los productos son parte de su inventario, deberá mencionar el almacén donde espera recibirlos. Esto le ayuda a llevar control de las existencias estimadas."
 
 msgid "You can optionally add the Terms, using the Terms and Conditions master and also the reason."
-msgstr ""
+msgstr "Puede de forma opcional agregar los términos y condiciones de la compra."
 
 msgid "Material Request is not mandatory. It is ideal if you have centralized buying so that you can collect this information from various departments."
-msgstr ""
+msgstr "Las solicitudes de materiales no son exigidas. Son ideales si tiene un flujo de compras descentralizado para recolectar información desde varios departamentos. "
 
 msgid "Authorization"
-msgstr ""
+msgstr "Autorización"
 
 msgid "If you want your Material Request to be authorized by a senior person like a Purchase Manager then you can give “Submit” rights only to that person. Everyone can create requests, but only the authorized person can “Submit”."
-msgstr ""
+msgstr "Puede establecer privilegios para autorizar una solicitud de materiales. Cualquiera puede abrir una solicitud de materiales pero sólo las personas autorizadas pueden autorizarlas."
 
 msgid "Supplier Quotation"
-msgstr ""
+msgstr "Cotización del Proveedor"
 
 msgid "A Supplier Quotation is a formal statement of promise by potential supplier to supply the goods or services required by a buyer, at specified prices, and within a specified period. A quotation may also contain terms of sale and payment, and warranties. Acceptance of quotation by the buyer constitutes an agreement binding on both parties. You can make a supplier quotation from a Material Request"
-msgstr ""
+msgstr "Una cotización de un proveedor es un documento formal para presupuestar una posible compra. Puede crear las cotizaciones del proveer desde la solicitud de materiales."
 
 msgid "You can also make a Supplier Quotation directly from:"
-msgstr ""
+msgstr "Puede crear cotizaciones de sus proveedores directamente desde:"
 
-#, fuzzy
 msgid "Buying &gt; Documents &gt; Supplier Quotation &gt; New Supplier Quotation"
 msgstr ""
 
 msgid "If you have multiple Suppliers who supply you with the same Item, you usually send out a message (Request for Quote) to various Suppliers. In many cases, especially if you have centralized buying, you may want to record all the quotes so that:"
-msgstr ""
+msgstr "Si tiene varios proveedores de un mismo bien o servicio probablemente desee guardar un registros de sus presupuestos para:"
 
 msgid "You can easily compare prices in the future."
-msgstr ""
+msgstr "Comparar precios en el futuro."
 
 msgid "Audit whether all Suppliers were given the opportunity to quote."
-msgstr ""
+msgstr "Confirmar que se han realizados cotizaciones con todos los proveedores."
 
 msgid "Supplier Quotations are not necessary for most small businesses. Always evaluate the cost of collecting information to the value it really provides! You could only do this for high value items."
-msgstr ""
+msgstr "Cotizaciones de proveedores no son necesarios para la mayoría de pequeños negocios."
 
 msgid "Purchase Order"
-msgstr ""
+msgstr "Orden de Compra"
 
 msgid "A Purchase Order is analogous to a Sales Order. It is usually a binding contract with your Supplier that you promise to buy a set of Items under the given conditions. A Purchase Order can be automatically created from a Material Request or Supplier Quotation."
-msgstr ""
+msgstr "Una Orden de compra en análoga una orden de vente. Es usualmente un tipo de contrato con su proveedor para la compra de algunos artículos bajo determinadas condiciones. Puede generar una Orden de Compra desde una Solicitud de Materiales."
 
 msgid "In ERPNext, you can also make a Purchase Order directly by going to:"
-msgstr ""
+msgstr "En ERPNext puede generar ordenes de compra directamente desde:"
 
-#, fuzzy
 msgid "Buying &gt; Documents &gt; Purchase Order &gt; New Purchase Order"
 msgstr ""
 
 msgid "Entering a Purchase Order is very similar to a Purchase Request, additionally you will have to set:"
-msgstr ""
+msgstr "Ingresas una Orden de Compra es similar a llenar una solicitud de compra, adicionalmente debe proveer:"
 
-#, fuzzy
 msgid "Supplier"
-msgstr ""
+msgstr "Proveedor"
 
 msgid "A “Required By” date on each Item: If you are expecting part delivery, your Supplier will know how much quantity to deliver at which date. This will help you from preventing over-supply. It will also help you to track how well your Supplier is doing on timeliness."
-msgstr ""
+msgstr "Especificar una fecha de requerimiento: esta información puede ayudar a su proveedor a planificar los envíos de productos."
 
 msgid "Taxes"
-msgstr ""
+msgstr "Impuestos"
 
 msgid "If your Supplier is going to charge you additional taxes or charge like a shipping or insurance charge, you can add it here. It will help you to accurately track your costs. Also, if some of these charges add to the value of the product you will have to mention them in the Taxes table. You can also use templates for your taxes. For more information on setting up your taxes see the Purchase Taxes and Charges Master."
-msgstr ""
-
-msgid "Value Added Taxes (VAT)"
-msgstr ""
-
-msgid "Many a times, the tax paid by you to a Supplier, for an Item, is the same tax which you collect from your Customer. In many regions, what you pay to your government is only the difference between what you collect from your Customer and what you pay to your Supplier. This is called Value Added Tax (VAT)."
-msgstr ""
-
-msgid "For example you buy Items worth X and sell them for 1.3X. So your Customer pays 1.3 times the tax you pay your Supplier. Since you have already paid tax to your Supplier for X, what you owe your government is only the tax on 0.3X."
-msgstr ""
-
-msgid "This is very easy to track in ERPNext since each tax head is also an Account. Ideally you must create two Accounts for each type of VAT you pay and collect, “Purchase VAT-X” (asset) and “Sales VAT-X” (liability), or something to that effect."
-msgstr ""
-
-msgid "Purchase UOM and Stock UOM Conversion"
-msgstr ""
-
-msgid "You can change your UOM as per your stock requirements in the Purchase Order form. For example, If you have bought your raw material in large quantities with UOM -boxes, and wish to stock them in UOM- Nos; you can do so while making your Purchase Order."
-msgstr ""
-
-msgid "Step 1: Store UOM as Nos in the Item form."
-msgstr ""
-
-msgid "Step 2: In the Purchase Order mention UOM as Box. (Since material arrives in Boxes)."
-msgstr ""
-
-msgid "Step 3: In the Warehouse and Reference section, the UOM will be pulled in as Nos (from the Item form)."
-msgstr ""
-
-msgid "Step 4: Mention the UOM conversion factor. For example, (100);If one box has 100 pieces."
-msgstr ""
-
-msgid "Step 5: Notice that the stock quantity will be updated accordingly."
-msgstr ""
-
-msgid "Step 6: Save and Submit the Form."
-msgstr ""
+msgstr "Puede añadir información de cualquier impuesto o cargo adicionar que le cobre el proveedor. Puede especificar si algunos de esos cargos de deben agregar al precio de producto y definir plantillas de impuestos."
 
 msgid "Purchase Taxes"
-msgstr ""
+msgstr "Impuestos de Compras"
 
 msgid "For Tax Accounts that you want to use in the tax templates, you must mention them as type “Tax” in your Chart of Accounts. Similar to your Sales Taxes and Charges Master is the Purchase Taxes and Charges Master. This is the tax template that you can use in your Purchase Orders and Purchase Invoices."
 msgstr ""
+"Las cuentas que use para el registro de impuestos deben identificarse en el "
+"catalogo de cuentas como cuentas de impuestos. De forma similar a los "
+"impuestos de venta puede crear plantillas para los impuestos de compras."
 
-#, fuzzy
 msgid "Buying &gt; Setup &gt; Purchase Taxes and Charges Master &gt; New Purchase Taxes and Charges Master"
 msgstr ""
 
 msgid "You can specify if the tax / charge is only for valuation (not a part of total) or only for total (does not add value to the item) or for both. If you select a particular tax as your Default tax, the system will apply this tax to all the purchase transactions by default."
 msgstr ""
+"Puede especificar si el impuesto es parte del total o se debe agregar al "
+"precio del producto. Si selecciona un impuesto como predeterminado del "
+"sistema se aplicara este impuesto a todas las compras por defecto."
 
 msgid "Calculation Type"
-msgstr ""
+msgstr "Tipo de calculo"
 
 msgid "This can be on Net Total (that is the sum of basic amount). On Previous Row Total / Amount (for cumulative taxes or charges). If you select this option, the tax will be applied as a percentage of the previous row (in the tax table) amount or total. Actual (as mentioned)."
 msgstr ""
+"El impuesto se puede calcular sobre el total neto, en base al valor de la "
+"última fila."
 
 msgid "Account Head: The Account ledger under which this tax will be booked."
 msgstr ""
+"Cuenta de Registro: La cuenta contable en la que lleva registro de los "
+"impuestos de compra."
 
 msgid "Cost Center: If the tax / charge is an income (like shipping) or expense it needs to be booked against a Cost Center."
 msgstr ""
+"Centro de Costo: Si el cobro se puede considerar como un gasto (costos de "
+"envió por ejemplo) puede seleccionar un centro de costos."
 
 msgid "Description: Description of the tax (that will be printed in invoices / quotes)."
 msgstr ""
+"Descripción: Descripción del impuesto (a como sera impreso en la "
+"documentación)."
 
 msgid "Rate: Tax rate."
-msgstr ""
+msgstr "Tasa."
 
 msgid "Amount: Tax amount."
-msgstr ""
+msgstr "Monto."
 
 msgid "Total: Cumulative total to this point."
-msgstr ""
+msgstr "Total."
 
 msgid "Enter Row: If based on \"Previous Row Total\" you can select the row number which will be taken as a base for this calculation (default is the previous row)."
 msgstr ""
+"Fila: Si selecciona calcular los impuestos en base a una fila determinada "
+"debe especificar cual fila aplicar."
 
 msgid "Consider Tax or Charge for: In this section you can specify if the tax / charge is only for valuation (not a part of total) or only for total (does not add value to the item) or for both."
 msgstr ""
+"Considerar Impuestos o Cargos para: Puede especificar si los impuestos o "
+"cargos son parte del total o se deben sumar al valor del producto."
 
 msgid "Add or Deduct: Whether you want to add or deduct the tax."
 msgstr ""
+"Agregar o Deducir: Especificar si el valor de los impuestos de debe sumar o "
+"restar de la operación."
 
 msgid "Buying Process"
-msgstr ""
+msgstr "Proceso de Compras"
 
 msgid "The first step to complete a buying cicle is to create a Supplier and some Items in the inventory, to create a supplier in the Buying module select \"Supplier\""
-msgstr ""
+msgstr "El primer paso para completar un compra es crear un proveedor y algunos elementos en el inventario, para crear un proveedor en el módulo de compras seleccione \"proveedor\""
 
 msgid "In the suppliers list select new."
-msgstr ""
+msgstr "En la lista de proveedores seleccione nuevo."
 
 msgid "Fill the basic supplier information."
-msgstr ""
+msgstr "Complete la información básica del proveedor."
 
 msgid "Click in save."
-msgstr ""
+msgstr "Clic en guardar."
 
 msgid "Now we have a supplier we need to create some items to buy, in the Buying module select Items"
-msgstr ""
+msgstr "Ahora que tenemos un proveedor necesitamos crear algunos productos para la compra, en el módulo de compra seleccione productos"
 
 msgid "In the item list select new"
-msgstr ""
+msgstr "En la lista productos seleccione nuevo"
 
 msgid "Fill the basic item data and click save."
-msgstr ""
+msgstr "Llene la información básica y de clic en guardar."
 
 msgid "To create a new supplier invoice we must go the accountin module and select Supplier Bill"
-msgstr ""
+msgstr "Para crear una factura de proveedor debemos ir al módulo de contabilidad y selecciones Factura de Compra"
 
 msgid "Select New"
-msgstr ""
+msgstr "Seleccione Nuevo"
 
 msgid "Fill the Supplier and items info."
-msgstr ""
+msgstr "Llene la información de proveedor y la lista de productos."
 
 msgid "This will save the bill in as a draft, to record the transaction to the system click in Present."
-msgstr ""
+msgstr "La factura se va a guarda como borrador, para registrar la operaciones en el sistema seleccione presentar."
 
 msgid "We can verify than we have a record in the inventory versus a payable account."
-msgstr ""
+msgstr "Puede verificar el registro en el inventario versus una cuenta por pagar."
 
 msgid "To procces the suplier pay in the accountin module select Payable bills and the select the bill you want to pay and select Pay entry, click in New."
-msgstr ""
+msgstr "Para procesar un pago a un proveedor seleccione en la lista de facturas por pagar seleccione la factura que desea cancelar y seleccione entrada de pago, clic en nuevo."
 
 msgid "Fill the paymen information and click in Save."
-msgstr ""
+msgstr "Complete la información del pago y de clic en guardar."
 
 msgid "Click in present to record the transaction."
-msgstr ""
+msgstr "Clic en presentar para registrar la transacción."
 
 msgid "Puede validar que el pago fue aplicado."
-msgstr ""
+msgstr "Puede validar que el pago fue aplicado."
+
+#~ msgid "For example you buy Items worth X and sell them for 1.3X. So your Customer pays 1.3 times the tax you pay your Supplier. Since you have already paid tax to your Supplier for X, what you owe your government is only the tax on 0.3X."
+#~ msgstr ""
 
 #~ msgid "Text"
 #~ msgstr ""
 
+#~ msgid "Many a times, the tax paid by you to a Supplier, for an Item, is the same tax which you collect from your Customer. In many regions, what you pay to your government is only the difference between what you collect from your Customer and what you pay to your Supplier. This is called Value Added Tax (VAT)."
+#~ msgstr ""
+
+#~ msgid "This is very easy to track in ERPNext since each tax head is also an Account. Ideally you must create two Accounts for each type of VAT you pay and collect, “Purchase VAT-X” (asset) and “Sales VAT-X” (liability), or something to that effect."
+#~ msgstr ""
+
+#~ msgid "Step 2: In the Purchase Order mention UOM as Box. (Since material arrives in Boxes)."
+#~ msgstr ""
+
+#~ msgid "You can change your UOM as per your stock requirements in the Purchase Order form. For example, If you have bought your raw material in large quantities with UOM -boxes, and wish to stock them in UOM- Nos; you can do so while making your Purchase Order."
+#~ msgstr ""
+
+#~ msgid "Step 4: Mention the UOM conversion factor. For example, (100);If one box has 100 pieces."
+#~ msgstr ""
+
+#~ msgid "Step 5: Notice that the stock quantity will be updated accordingly."
+#~ msgstr ""
+
+#~ msgid "Step 1: Store UOM as Nos in the Item form."
+#~ msgstr ""
+
+#~ msgid "Purchase UOM and Stock UOM Conversion"
+#~ msgstr ""
+
+#~ msgid "Value Added Taxes (VAT)"
+#~ msgstr ""
+
+#~ msgid "Step 3: In the Warehouse and Reference section, the UOM will be pulled in as Nos (from the Item form)."
+#~ msgstr ""
+
+#~ msgid "Step 6: Save and Submit the Form."
+#~ msgstr ""

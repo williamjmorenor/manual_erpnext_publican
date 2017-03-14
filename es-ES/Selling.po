@@ -1,12 +1,13 @@
 # William Moreno Reyes <william>, 2015.
+# William Moreno Reyes <williamjmorenor@gmail.com>, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
 "POT-Creation-Date: 2015-04-22 17:50-0600\n"
-"PO-Revision-Date: 2015-04-30 10:05-0600\n"
-"Last-Translator: William Moreno Reyes <william>\n"
-"Language-Team: william\n"
-"Language: en\n"
+"PO-Revision-Date: 2017-03-04 21:42-0600\n"
+"Last-Translator: William Moreno Reyes <williamjmorenor@gmail.com>\n"
+"Language-Team: William Moreno\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -17,544 +18,527 @@ msgid "Selling"
 msgstr "Ventas"
 
 msgid "Selling is the communication that happens with the customer prior to and during the sale. You might be managing all the communication yourself or you may have a small team of sales people to handle this. ERPNext helps you track the communication leading up to the sale, by keeping all your documents in an organized and searchable manner."
-msgstr ""
+msgstr "El proceso de ventas es la comunicación que mantiene el vendedor con el cliente previo o durante la venta. Puede manejar la comunicación usted mismo o con un pequeño equipo de ventas. ERPNext le permite llevar registro de las comunicaciones desde el registro a la venta, manteniendo un registro de sus documentos."
 
 msgid "ERPNext helps you track business Opportunities from Leads and Customers, send them Quotations and make confirmed Sales Orders."
-msgstr ""
+msgstr "ERPNext le ayuda a llevar control de sus oportunidades iniciativas y clientes, enviar cotización y confirmar Ordenes de Ventas."
 
 msgid "Selling Setup"
-msgstr ""
+msgstr "Configuración de Ventas"
 
 msgid "This section includes information on how to setup customer groups, sales partners, sales persons and terms and conditions. It has instructions on how to configure selling settings, in order to enable default fields."
-msgstr ""
+msgstr "Esta sección incluye información sobre configuración de grupos de clientes, socios de ventas, personal de ventas y términos y condiciones. Contiene instrucciones de como configurar los valores predeterminados del módulo de ventas."
 
-#, fuzzy
-msgid "Default Customer Group"
-msgstr ""
+msgid "Customer Group"
+msgstr "Grupos de Clientes por Defecto"
 
 msgid "Customer Group is a category where you specify your customer group type. Your customers can be Individuals or they can be corporate(Company) customers. Your customers could also be government officials or non-profit organisations. ERPNext allows you to create your own Customer Groups. To create a new Customer Group, go to"
-msgstr ""
+msgstr "Un grupo de clientes es una categoría para especificar a sus clientes por tipo. Sus clientes pueden ser individuos o empresas. Incluso entidades del gobierno u organizaciones sin fines de lucro. Para crear un nuevo grupo de clientes valla a:"
 
-#, fuzzy
 msgid "Selling &gt; Setup &gt; Customer Group"
 msgstr ""
 
 msgid "Customer Group master is maintained in tree strcuture. This allows you to set parent Customer Groups, and Child Customer Groups under those Parent Groups. Setting up this structure shall allow you making intelligent sales report based on Customer Group master."
-msgstr ""
-
-msgid "Sales Partner"
-msgstr ""
-
-msgid "People who assist you in getting business are termed as Sales Partners. Sales Partners can be represented by different names in ERPNext. You can call them Channel Partner, Distributor, Dealer, Agent, Retailer, Implementation Partner, Reseller etc. For each Sales Partner, you can define commission offer to them. When Sales Partner is selected in transactions, there commission is calculated over Net Total of Sales Order/Invoice or Delivery Note."
-msgstr ""
-
-msgid "You can track Sales Personwise commission in the report under Selling module. To create a sales partner go to:"
-msgstr ""
-
-#, fuzzy
-msgid "Selling &gt; Setup &gt; Sales Partner"
-msgstr ""
-
-msgid "Sales Partners are saved with Sales Partner name provided by user."
-msgstr ""
-
-msgid "To include the name of your Partner on your website, check the \"Show in Website\" box. When click on \"Show in Website\", you will see field where you can attach logo of partner's company and enter brief and introduction of partner."
-msgstr ""
-
-msgid "Sales Person"
-msgstr ""
-
-msgid "The person who helps in selling your products or services is called a Sales Person. Sales Person master is maintained in tree struture. This allows you defining the heirarchy within the Sales Team. To add/edit Sales Person, go to:"
-msgstr ""
-
-#, fuzzy
-msgid "Selling &gt; Setup &gt; Sales Person"
-msgstr ""
-
-msgid "A Sales Person Group called \"Sales Team\" will be created by default. You can click in it to find option to insert new parent and child Sales Person records. Sales Person master will be saved with the name of Sales Person."
-msgstr ""
+msgstr "Los grupos de clientes se mantienen en una estructura de árbol. Esto permite tener grupos de clientes padres e hijos. De esta forma puede obtener reportes de ventas inteligentes."
 
 msgid "Selling Settings"
-msgstr ""
+msgstr "Configuración de Ventas"
 
 msgid "Selling Setting is where you can define propertiese which will be applied in your selling transactions. Let's check into each property one by one."
-msgstr ""
+msgstr "La configuración de ventas es donde define los parámetros de sus operaciones de compras."
 
 msgid "Customer Naming By"
-msgstr ""
+msgstr "Nombrar clientes por"
 
 msgid "When customer is saved, system generated unique ID for that Customer. Using that Customer ID, you can select Customer in other transactions. Bydefault Customer will be saved with Customer Name. If you wish to save Customer using a naming series, you should set Customer Naming By as \"Naming Series\". You can set Naming Series for customer naming from:"
-msgstr ""
+msgstr "Cuando crea un cliente el sistema de asigna un ID único, por defecto se usa el nombre del cliente. "
 
-#, fuzzy
 msgid "Setup &gt; Settings &gt; Naming Series"
 msgstr ""
 
 msgid "Campaign Naming By"
-msgstr ""
+msgstr "Nombrar Campañas por"
 
 msgid "Just like for Customer, you can also configure as how ID will be generated for the Campaign master. Bydefault Campaign will be saved with Campaign Name provided while its creation."
-msgstr ""
+msgstr "De forma similar a los clientes, puede configurar el ID que se va a asignar en el maestro de campañas. Por defecto se va usar el nombre de la campaña."
 
-#, fuzzy
-msgid "Default Customer Group"
-msgstr ""
+msgid "Customer Group"
+msgstr "Grupos de Clientes por Defecto"
 
 msgid "Customer Group in this field will be auto-updated when you open new Customer form. While converting Quotation created for Lead into Sales Order, system attempts to convert Lead into Customer in the backend. While creating Customer in the backend, system pickup Customer Group and Territory as defined in the Selling Setting. If system doesn't find any values, then following validation message will be raised."
-msgstr ""
+msgstr "Este campo se va a completar por defecto cuando cree un nuevo cliente. Cuando genera una orden de venta a partir de una oportunidad o un proforma el cliente va a tratar de crear un cliente a partir de la oportunidad. Al crear clientes de forma automática va a usar el grupo y territorio definido por defecto, si no se encuentran estos datos se va generar un error."
 
 msgid "To resolve this, you should: Either manually convert Lead into Customer, and define Customer Group and Territory manually while creating Customer, or define Default Customer Group and Territory in the Selling Setting. Then you should have Lead automatically converted into Customer when convert Quotation into Sales Order."
-msgstr ""
+msgstr "Para resolver esto establezca el grupo y territorio del cliente manualmente al crear un cliente a partir de una oportunidad."
 
 msgid "Default Territory"
-msgstr ""
+msgstr "Territorio por Defecto"
 
 msgid "Territory defined in this field will be auto-updated in the Territory field of Customer master. Just like Customer Group, Territory is also checked when system tries creating Customer in the backend."
-msgstr ""
+msgstr "El territorio definido en este campo sera utilizado al crear usuarios nuevos."
 
 msgid "Sales Order Required"
-msgstr ""
+msgstr "Orden de Venta Requerida"
 
 msgid "If you wish to make Sales Order creation mandatory before creation of Sales Invoice, then you should set Sales Order Required field as Yes. Bydefault, this will be \"No\" for a value."
-msgstr ""
+msgstr "Seleccione esta opción si desea hacer obligatorio el uso de Ordenes de Venta."
 
 msgid "Delivery Note Required"
-msgstr ""
+msgstr "Nota de Entrega Requerida"
 
 msgid "To make Delivery Note creation as mandatory before Sales Invoice creation, you should set this field as \"Yes\". It will be \"No\" by default."
-msgstr ""
+msgstr "Seleccione esta opción para hacer obligatoria la orden de entrega."
 
 msgid "Default Price List"
-msgstr ""
+msgstr "Lista de Precios por Defecto"
 
 msgid "Price List set in this field will be auto-updated in the Price List field of Sales transactions."
-msgstr ""
+msgstr "La lista de precios por defecto para las transacciones de venta."
 
 msgid "Maintain Same Rate Throughout Sales Cycle"
-msgstr ""
+msgstr "Mantener el mismo precio a lo largo del ciclo"
 
 msgid "System bydefault validates that item price will be same throughout sales cycle (Sales Order - Delivery Note - Sales Invoice). If you could have item price changing within the cycle, and you need to bypass validation of same rate throughout cycle, then you should uncheck this field and save."
-msgstr ""
+msgstr "Seleccione esta opción para evitar que se varíen los precios de los productos durante el ciclo de ventas."
 
 msgid "Allow User to Edit Price List Rate in Transaction"
-msgstr ""
+msgstr "Permitir a los usuarios editar la lista de precio en transacciones"
 
 msgid "Item table of the sale transactions has field called Price List Rate. This field be non-editale by default in all the sales transactions. This is to ensure that price of an item is fetched from Item Price record, and user is not able to edit it. If you need to enable user to edit Item Price, fetched from Price List of an item, you should uncheck this field."
-msgstr ""
+msgstr "El campo lista de precio es no editable por defecto para asegurar que se utilicen los precios de la lista de precios maestra. Seleccione esta opción si necesita que los usuarios puedan editar la lista de precios."
 
 msgid "Customer Master"
-msgstr ""
+msgstr "Maestro de Clientes"
 
 msgid "A customer, who is sometimes known as a client, buyer, or purchaser is the one who receives goods, services, products, or ideas, from a seller for a monetary consideration. A customer can also receive goods or services from a vendor or a supplier for other valuable considerations. You can either directly create your Customers via"
-msgstr ""
+msgstr "Un cliente es una persona que adquiere sus productos. Puede crear clientes vía:"
 
-#, fuzzy
 msgid "Selling &gt; Customer"
 msgstr ""
 
 msgid "or upload it via the Data Import Tool."
-msgstr ""
+msgstr "o subirlos mediante la herramienta para importar datos."
 
 msgid "Customers are separate from Contacts and Addresses. A Customer can have multiple Contacts and Addresses."
-msgstr ""
+msgstr "Los clientes de guardan por separado de contactos. Un cliente puede tener varios contactos asignados."
 
 msgid "Contacts and Addresses"
-msgstr ""
+msgstr "Contactos y Direcciones"
 
 msgid "Contacts and Addresses in ERPNext are stored separately so that you can attach multiple Contacts or Addresses to Customers and Suppliers. To add a Contact or Address directly from the Customer record, click on “New Contact” or “New Address”."
-msgstr ""
+msgstr "Contactos y Direcciones se guardan por separado, de esta forma puede vincular varios contactos o direcciones con Clientes o Proveedores."
 
 msgid "When you select a Customer in any transaction, one Contact and Address gets pre-selected. This is the “Default Contact or Address”."
-msgstr ""
+msgstr "Cuando selecciona un cliente en cualquier transacción se estable una dirección y contacto según los valores por defecto."
 
 msgid "To Import multiple Contacts and Addresses from a spreadsheet, use the Data Import Tool."
-msgstr ""
+msgstr "Puede importar varios contactos y direcciones desde una hoja de calculo usando la herramienta para importar datos."
 
 msgid "Integration with Accounts"
-msgstr ""
+msgstr "Integración con Contabilidad"
 
 msgid "In ERPNext, there is a separate Account record for each Customer, for each Company. When you create a new Customer, ERPNext will automatically create an Account Ledger for the Customer under “Accounts Receivable” in the Company set in the Customer record."
-msgstr ""
+msgstr "En ERPNext, hay un registro separado por cada cliente. Cuando cree un cliente se va a crear una cuenta de cliente automáticamente."
 
 msgid "If you want to change the Account Group under which the Customer Account is created, you can set it in the Company master."
-msgstr ""
+msgstr "Si desea cambiar el grupo de cuentas donde se generan las cuentas de clientes puede definirlo en el maestro de la empresa."
 
 msgid "If you want to create an Account in another Company, just change the Company value and “Save” the Customer again."
-msgstr ""
+msgstr "Si desea crear clientes para una empresa diferente cambie el valor de la compañía y guarde nuevamente el cliente."
 
 msgid "Customer Settings"
-msgstr ""
+msgstr "Configuración de Clientes"
 
 msgid "You can link a Price List to a Customer (select “Default Price List”), so that when you select that Customer, the Price List will be automatically selected. You can set “Credit Days” so that it is automatically set in the Sales Invoices made against this Customer. You can set how much credit you want to allow for a Customer by adding the “Credit Limit”. You can also set a global “Credit Limit” in the Company master. ERPNext allows you to group your Customers and also divide them into Territories. Grouping will help you get better analysis of your data and identify which Customers are profitable and which are not. Territories will help you set sales targets for the respective territories."
-msgstr ""
+msgstr "Puede vincular una lista de precios a un cliente, así al seleccionar al cliente la lista de precios sera automáticamente establecida. Puede establecer los días de crédito. Puede agrupar sus clientes por grupos y territorios. Agrupar sus clientes le permite hacer análisis de ventas y establecer metas por terrios"
 
 msgid "You can group your Customers so that you can get trend analysis for each group. Typically Customers are grouped by market segment (that is usually based on your domain)."
-msgstr ""
+msgstr "Puede agrupar sus clientes por segmentos de mercado. "
 
 msgid "If you think all this is too much effort, you can leave it at “Default Customer Group”. But all this effort, will pay off when you start getting reports."
-msgstr ""
+msgstr "Si considera que es mucho trabajo puede dejar todos los clientes en el grupo por defecto, pero no podrá sacar el mayor provecho a los reportes."
 
 msgid "Territory"
-msgstr ""
+msgstr "Territorio"
 
 msgid "If your business operates in multiple Territories (could be countries, states or cities) it is usually a great idea to build your structure in the system. Once you group your Customers by Territories, you can set annual targets for each Item Group and get reports that will show your actual performance in the territory v/s what you had planned."
-msgstr ""
+msgstr "Si su empresa opera en múltiples territorios (países, estados, ciudades) es recomendable tener esa distribución en el sistema. Una vez que agrupe sus clientes por territorios, puede establecer metas por territorio y obtener reportes de su desempeño versus sus proyecciones. "
+
+msgid "Sales Person"
+msgstr "Personal de Ventas"
 
 msgid "Sales Persons behave exactly like Territories. You can create an organization chart of Sales Persons where each Sales Person’s target can be set individually. Again as in Territory, the target has to be set against Item Group."
-msgstr ""
+msgstr "El personal de ventas funciona igual que los territorio, puede crear un árbol de sus personal de ventas, cada elemento puede ser un vendedor. Igual que con un territorio puede establecer metas por agente."
+
+msgid "Sales Partner"
+msgstr "Socio de Ventas"
 
 msgid "A Sales Partner is a third party distributor / dealer / commission agent / affiliate / reseller who sells the companies products, for a commission. This is useful if you make the end sale to the Customer, involving your Sales Partner. If you sell to your Sales Partner who in-turn sells it to the Customer, then you must make a Customer instead."
-msgstr ""
+msgstr "Un socio de ventas es un tercero distribuidos / comisionista / afiliado / minorista que vende productos de su compañía, por una comisión. Es útil si al momento de realizar una factura tome en cuenta sus socios de ventas. Si usted vende un producto a sus distribuidores y ellos a sus vez revenden sus productos, entonces debe crear un cliente en lugar de un socio de ventas."
 
 msgid "Discount"
-msgstr ""
+msgstr "Descuentos"
 
 msgid "While making your sales transactions like a Quotation (or Sales Order) you would already have noticed that there is a “Discount” column. On the left is the “Price List Rate” on the right is the “Basic Rate”. You can add a “Discount” value to update the basic rate."
-msgstr ""
+msgstr "Al realizar sus transacciones como cotizaciones (o Ordenes de Ventas) posiblemente haya notado que hay una columna de descuentos. Puede agregar un descuento a su tarifa básica."
 
 msgid "Since your taxes are calculated on Items, you must apply your discounts here so that you apply the tax on the discounted rate, which is the case for most taxes."
-msgstr ""
+msgstr "Dado que los impuestos se calculan en base a los artículos, debe aplicar sus descuentos desde el producto para aplicar los impuestos sobre el precio descontado, que es el caso para la mayoría de los impuestos."
 
 msgid "The second way to apply discount is to add it in your Taxes and Charges table. This way you can explicitly show the Customer the discount you have applied on the order. If you choose this method, remember that you will tax your Customer at the full rate, not the discounted rate. So this is not a good way to track discounts."
-msgstr ""
+msgstr "La segunda forma de aplicar un descuento es agregarlos su plantilla de impuestos. De esta forma puede mostrar directamente el descuento a sus compradores. Si elige este método recuerde que el descuento se aplica sobre el monto total. Esta es una forma de registrar sus descuentos."
 
 msgid "There is a third way to do it. Create an Item called “Discount” and make sure that all the taxes apply in the same way as the main Items. (This method is useful if only one type of tax is applicable on the sale). This way your “Discount” will appear as an expense. You will see a slightly higher income and expense but your profits will still remain the same. This method might be interesting where you want detailed accounting of your discounts."
-msgstr ""
+msgstr "Puede utilizar un tercer método para aplicar un descuento creando un producto que se llame descuentos y asegurándose que aplica los mismos impuestos que los productos principales. De esta forma el descuento se registra como un gasto."
 
 msgid "The maximum Discount that can be applied on an Item can be fixed in the Item master."
-msgstr ""
+msgstr "Puede configurar el descuento máximo aplicable desde el maestro de artículos."
 
 msgid "Lead"
-msgstr ""
+msgstr "Iniciativa"
 
 msgid "To get the customer through the door, you may be doing all or any of the following:"
-msgstr ""
+msgstr "Para alcanzar a sus clientes es posible que usted esta haciendo:"
 
 msgid "Listing your product on directories."
-msgstr ""
+msgstr "Publicidad de sus productos en catálogos."
 
 msgid "Maintaining an updated and searchable website."
-msgstr ""
+msgstr "Manteniendo un sitio web actualizado."
 
 msgid "Meeting people at trade events."
-msgstr ""
+msgstr "Encontrándose con personas en eventos."
 
 msgid "Advertising your product or services."
-msgstr ""
+msgstr "Utilizando servicios de de publicidad."
 
 msgid "When you send out the word that you are around and have something valuable to offer, people will come in to check out your product. These are your Leads."
-msgstr ""
+msgstr "Cuando usted anuncia que tiene productos valiosos que ofrecer, las personas se van a acercar para ver sus productos. Estas son sus iniciativas."
 
 msgid "They are called Leads because they may lead you to a sale. Sales people usually work on leads by calling them, building a relationship and sending information about their products or services. It is important to track all this conversation to enable another person who may have to follow-up on that contact. The new person is then able to know the history of that particular Lead. To create a Lead, go to:"
-msgstr ""
+msgstr "Las llamamos iniciativas porque pueden llevar a un venta. El personal de ventas suele trabajar en iniciativas haciendo llamadas, enviando correos, visitando clientes. Es importante llevar un registro de estas actividades. Para crea una iniciativa valla a:"
 
-#, fuzzy
 msgid "Selling &gt; Lead &gt; New Lead"
 msgstr ""
 
 msgid "ERPNext gives you a lot of options you may want to store about your Leads. For example what is the source, how likely are they to give you business etc. If you have a healthy number of leads, this information will help you prioritize who you want to work with."
-msgstr ""
+msgstr "ERPNext le brinda muchas opciones para guardar registro de sus iniciativas. Por ejemplo la fuente de la iniciativa. que nivel de posibilidad hay de cerrar el negocio. Cuando tenga una cantidad suficiente de iniciativas podrá tener información de que tareas priorizar."
 
 msgid "ERPNext makes it easy to follow-up on leads by updating the “Next Contact” details. This will add a new event in the Calendar for the User who has to contact the lead next."
-msgstr ""
+msgstr "ERPNext facilita llevar seguimiento de sus iniciativas mediante la opción siguiente contacto. Estos contactos se vas a agregar en el calendario de la persona asignada para dar seguimiento a la iniciativa."
 
 msgid "Difference between Lead, Contact and Customer"
-msgstr ""
+msgstr "Diferencias entre Oportunidad, Contacto y Cliente"
 
 msgid "The difference is that a Lead is a potential Customer, someone who can give you business. A Customer is an organization or individual who has given you business before (and has an Account in your system). A Contact is a person who belongs to the Customer."
-msgstr ""
+msgstr "Una oportunidad es un cliente en potencia. Un cliente es una persona u organización que ya ha hecho negocios con su empresa. Un contacto es una persona que esta asignada a un Cliente"
 
 msgid "A Lead can be converted to a Customer by clicking on the “Create Customer” button. Once the Customer is created, the Lead becomes “Converted” and any further Opportunities from the same source can be created against the Customer."
-msgstr ""
+msgstr "Un cliente puede convertirse en un cliente haciendo clic en Crear Cliente. Una vez que se crea el cliente la oportunidad se establece como \"Convertida\" y futuras oportunidades se pueden registrar directamente desde el cliente."
 
 msgid "Opportunity"
-msgstr ""
+msgstr "Oportunidad"
 
 msgid "When you know a Lead is looking for some products or services to buy, you can track that as an Opportunity. You can create an Opportunity from:"
-msgstr ""
+msgstr "Cuando una iniciativa se convierte en un cliente en busca de un producto o servicio para comprar, usted puede llevar seguimiento a una oportunidad. Puede crear una nueva oportunidad desde:"
 
-#, fuzzy
 msgid "Selling &gt; Opportunity &gt; New Opportunity"
 msgstr ""
 
 msgid "You can also open a “Open” Lead and click on “Create Opportunity” button."
-msgstr ""
+msgstr "Puede abrir una iniciativa y hacer clic en el botón crear oportunidad."
 
 msgid "An Opportunity can also come from an existing Customer. You can create multiple Opportunities against the same Lead. In Opportunity, apart from the Communication, you can also add the Items for which the Lead or Contact is looking for."
-msgstr ""
+msgstr "Una oportunidad puede crearse desde un cliente existente. Puede crear múltiples oportunidades desde una misma iniciativa. En una oportunidad aparte de llevar registro de la comunicación con el cliente puede agregar los productos o servicios que el cliente necesita."
 
 msgid "Leads and Opportunities are often referred as your “Sales Pipeline” this is what you need to track if you want to be able to predict how much business you are going to get in the future. Its always a good idea to be able to track what is coming in order to adjust your resources."
-msgstr ""
+msgstr "Iniciativas y Oportunidades forman parte del flujo de ventas, esto es lo que necesita para llevar registro de sus oportunidades de negocio y tratar de predecir los negocios que puede tener en el futuro. Es una buena idea ser capaz de llevar registro de sus oportunidades para hacer una proyección de sus recursos."
 
 msgid "Quotation"
-msgstr ""
+msgstr "Cotización"
 
 msgid "During a sale, the customer may request for a written note about the products or services you are planning to offer, along with the prices and other terms of engagement. This is called a “Proposal” or an “Estimate” or a “Pro Forma Invoice”or a Quotation. To create a new Quotation go to:"
-msgstr ""
+msgstr "Durante una venta un cliente puede solicitarle una nota escrita solo los bienes y servicios que ofrece y su oferta de precio. Esto se conoce como una oferta, un estimado, proforma, presupuesto o cotización:"
 
-#, fuzzy
 msgid "Selling &gt; Quotation &gt; New Quotation"
 msgstr ""
 
 msgid "A Quotation contains details about:"
-msgstr ""
+msgstr "Una cotización contiene detalles sobre:"
 
 msgid "The recipient of the Quotation."
-msgstr ""
+msgstr "El destinatario de la oferta."
 
 msgid "The Items and quantities you are offering."
-msgstr ""
+msgstr "Los productos y cantidades que están ofreciendo."
 
 msgid "The rates at which they are offered. For details refer."
-msgstr ""
+msgstr "Las tasas a las que se esta haciendo la oferta."
 
 msgid "The taxes applicable."
-msgstr ""
+msgstr "Impuestos aplicables."
 
 msgid "Other charges (like shipping, insurance) if applicable."
-msgstr ""
+msgstr "Otros cargos (envío, garantía) si es aplicable."
 
 msgid "The validity of contract."
-msgstr ""
+msgstr "La validez del contrato."
 
 msgid "The time of delivery."
-msgstr ""
+msgstr "El tiempo de entrega."
 
 msgid "Other conditions."
-msgstr ""
+msgstr "Otras condiciones."
 
 msgid "Images look great on Quotations. To add images to your Quotations, attach the corresponding image in the Item master."
-msgstr ""
+msgstr "Las imágenes se ven genial en las proformas. Para agregar imágenes agregue los elementos correspondientes en el Maestro de Archivos."
 
 msgid "Rates"
-msgstr ""
+msgstr "Tasas"
 
 msgid "The rates you quote may depend on two things."
-msgstr ""
+msgstr "Los precios en su oferta dependen de dos cosas."
 
 msgid "The Price List: If you have multiple Price Lists, you can select a Price List or tag it to the Customer (so that it is auto-selected). Your Item prices will automatically be updated from the Price List."
-msgstr ""
+msgstr "La lista de precios aplicables."
 
 msgid "The Currency: If you are quoting to a Customer in a different currency, you will have to update the conversion rates to enable ERPNext to save the information in your standard Currency. This will help you to analyze the value of your Quotations in standard Currency."
-msgstr ""
+msgstr "La tasa de cambio."
 
 msgid "Taxes"
-msgstr ""
+msgstr "Impuestos"
 
 msgid "To add taxes to your Quotation, you can either select a tax template, Sales Taxes and Charges Master or add the taxes on your own. You can add taxes in the same manner as the Sales Taxes and Charges Master."
-msgstr ""
+msgstr "Para agregar registro de impuestos a su cotización  puede utilizar una plantilla de impuestos. Puede agregar impuestos de la misma forma que los impuestos de ventas y el maestro de archivos."
 
 msgid "Terms and Conditions"
-msgstr ""
+msgstr "Términos y Condiciones"
 
 msgid "Each Quotation must ideally contain a set of terms, of your contract. It is usually a good idea to make templates of your Terms and Conditions, so that you have a standard set of terms. You can do this by going to:"
-msgstr ""
+msgstr "idealmente cada cotización debe detallar los términos y condiciones aplicables. Puede crear plantillas de términos y condiciones para tener un registro estándar de los mismos desde: "
 
-#, fuzzy
 msgid "Selling &gt; Terms and Conditions"
 msgstr ""
 
-msgid "What should Terms and Conditions Contain?"
-msgstr ""
-
-msgid "Validity of the offer."
-msgstr ""
-
-msgid "Payment Terms (In Advance, On Credit, part advance etc)."
-msgstr ""
-
-msgid "What is extra (or payable by the Customer)."
-msgstr ""
-
-msgid "Safety / usage warning."
-msgstr ""
-
-msgid "Warranty if any."
-msgstr ""
-
-msgid "Returns Policy."
-msgstr ""
-
-msgid "Terms of shipping, if applicable."
-msgstr ""
-
-msgid "Ways of addressing disputes, indemnity, liability, etc."
-msgstr ""
-
-msgid "Address and Contact of your Company."
-msgstr ""
-
-msgid "Submission"
-msgstr ""
-
-msgid "Quotation is a “Submittable” transaction. Since you send this Quotation to your Customer or Lead, you must freeze it so that changes are not made after you send the Quotation. See Document Stages."
-msgstr ""
-
-msgid "Quotations can also be titled as “Proforma Invoice” or “Proposal”. Select the right heading in the “Print Heading” field in the “More Info” section. To create new Print Headings go to Setup &gt; Branding and Printing &gt; Print Headings."
-msgstr ""
-
-msgid "While making your sales transactions like a Quotation (or Sales Order) you would already have noticed that there is a “Discount” column. On the left is the “Price List Rate” on the right is the “Basic Rate”. You can add a “Discount” value to update the basic rate. To understand more about discount read Discount."
-msgstr ""
-
 msgid "Sales Order"
-msgstr ""
+msgstr "Orden de Ventas"
 
 msgid "The Sales Order confirms your sales and triggers purchase (Material Request) shipment (Delivery Note), billing (Sales Invoice) and manufacturing (Production Plan). A Sales Order is usually a binding Contract with your Customer. Once your customer confirms the Quotation you can convert your Quotation into a Sales Order."
-msgstr ""
+msgstr "Una orden de ventas confirma una venta. Una orden de ventas usualmente se origina de una confirmación de un cliente en base a una cotización, puede crear una orden de compra desde una cotización."
 
 msgid "Alternatively, you can create a Sales Order directly from:"
-msgstr ""
+msgstr "Alternativamente, puede crear directamente una orden de venta desde:"
 
-#, fuzzy
 msgid "Selling &gt; Sales Order &gt; New Sales Order"
 msgstr ""
 
-msgid "Most of the information in your Sales Order is the same as the Quotation. There are a few amongst other things that a Sales Order will ask you to update."
-msgstr ""
-
-msgid "Expected date of delivery."
-msgstr ""
-
-msgid "Customer Purchase Order number: If your customer has sent you a Purchase Order, you can update its number for future reference (in billing)."
-msgstr ""
-
-msgid "Packing List"
-msgstr ""
-
-msgid "The “Packing List” table will be automatically updated when you “Save” the Sales Order. If any Items in your table are Sales BOM (packets), then the “Packing List” will contain the exploded (detailed) list of your Items."
-msgstr ""
-
-msgid "Reservation and Warehouses"
-msgstr ""
-
-msgid "If your Sales Order contains Items for which inventory is tracked (Is Stock Item is “Yes”) then, ERPNext will ask you for “Reservation Warehouse”. If you have set a default Warehouse for the Item, it will automatically set this Warehouse here. This “reserved” quantity will help you project what is the quantity you need to purchase based on all your commitments."
-msgstr ""
-
-msgid "Sales Team"
-msgstr ""
-
-msgid "Sales Partner: If this Sale was booked via a Sales Partner, you can update the Sales Partner’s details with commission and other info that you can aggregate."
-msgstr ""
-
-msgid "Sales Persons: ERPNext allows you to tag multiple Sales Persons who may have worked on this deal. You can also split the amount in targets of different Sales Persons and track how much incentives they earned on this deal."
-msgstr ""
-
-msgid "Recurring Sales Orders"
-msgstr ""
-
-msgid "If you have a recurring contract with a Customer where you are required to generate a Sales Order on a monthly, quarterly, half-yearly or annual basis, you can check the “Convert To Recurring Order” box."
-msgstr ""
-
-msgid "Here you can fill in the details like; of how frequently you want to generate an Order in the 'Recurring Type' field, specify the day of of the month on which the Order needs to be generated in the 'Repeat On Day Of Month' field and the date on which the recurring orders should stop in the 'End Date' field."
-msgstr ""
-
-msgid "Recurring Type: Here you can update how frequently you want to generate an Order."
-msgstr ""
-
-msgid "Repeat On Day Of Month: You can specify the day of of the month on which the Order needs to be generated."
-msgstr ""
-
-msgid "End Date: The date on which the recurring orders should stop can be specified here."
-msgstr ""
-
-msgid "On updating the Sales Order, a Recurring ID will be generated which will be same for all recurring orders generated from this particular Sales Order. ERPNext will automatically create new Order and mail a notification to the email IDs you set in the 'Notification Email Address'field."
-msgstr ""
-
 msgid "Next Steps"
-msgstr ""
+msgstr "Próximos pasos"
 
 msgid "Once you “Submit” your Sales Order, you can now trigger different aspects of your organization:"
-msgstr ""
+msgstr "Una vez registra una orden de venta esto puede iniciar varios procesos en su empresa:"
 
 msgid "To begin purchase click on “Make Purchase Request”"
-msgstr ""
+msgstr "Puede iniciar un proceso de compra mediante una solicitud de compra."
 
 msgid "To make a shipment entry click on “Make Delivery Note”"
-msgstr ""
+msgstr "Puede hacer un envío desde hacer nota de entrega."
 
 msgid "To bill, make “Make Sales Invoice”"
-msgstr ""
+msgstr "Puede generar una factura desde hacer factura de ventas."
 
 msgid "To stop further process on this Sales Order, click on “Stop”"
-msgstr ""
+msgstr "Para detener procesos relacionados a una orden de venta haga clic en detener."
+
+msgid "Submission"
+msgstr "Presentar"
 
 msgid "Sales Order is a “Submittable” transaction. See Document Stages. You will be able to execute dependent steps (like making a Delivery Note) only after “Submitting” this Sales Order."
-msgstr ""
+msgstr "Las ordenes de venta deben ser aprobadas. Usted puede realizar los pasos siguientes una vez que la orden de venta sea aprobada."
 
-msgid "Sales Order with Order type Maintenance"
-msgstr ""
+#~ msgid "Text"
+#~ msgstr ""
 
-msgid "When the 'Order Type' of the Sales Order is 'Maintenance' follow the steps given below:"
-msgstr ""
+#~ msgid "Repeat On Day Of Month: You can specify the day of of the month on which the Order needs to be generated."
+#~ msgstr ""
 
-msgid "Step 1: Enter Currency, Price list and Item details."
-msgstr ""
+#~ msgid "Step 1: Enter Currency, Price list and Item details."
+#~ msgstr ""
 
-msgid "Step 2: Mention taxes and other information."
-msgstr ""
+#~ msgid "Sales Bill of Material"
+#~ msgstr ""
 
-msgid "Step 3: Save and Submit the form."
-msgstr ""
+#~ msgid "Use Sales BOM to Manage Schemes:"
+#~ msgstr ""
 
-msgid "Step 4: Once the form is submitted, the Action button will provide three choices.i) Maintenance Visit ii) Maintenance Schedule iii) Invoice."
-msgstr ""
+#~ msgid "Sales Partners are saved with Sales Partner name provided by user."
+#~ msgstr ""
 
-msgid "By clicking on the Action button and selecting 'Maintenance Visit' you can directly fill the visit form. The Sales Order details will be fetched directly."
-msgstr ""
+#~ msgid "Sales BOM stands for Sales Bill-of-Material. It's a master where you can list item which are bundled together and sold as one item. For instance, when laptop is delivered, you need to ensure that charger, mouse and laptop bag are delivered and stock level of these items gets affected. To address this scenario, you can set create Sales BOM for the main item, i.e. laptop, and list deliverable items i.e. laptop + charger + other accessories as child items. Following are the steps on how to setup Sales BOM master, and how is it used in the sales transactions. To create new Sales BOM, Go to:"
+#~ msgstr ""
 
-msgid "By clicking on the Action button and selecting 'Maintenance Schedule' you can fill the schedule details. The Sales Order details will be fetched directly."
-msgstr ""
+#~ msgid "Payment Terms (In Advance, On Credit, part advance etc)."
+#~ msgstr ""
 
-msgid "By clicking on the Invoice button you can make an Invoice for your services . The sales orders details will be fetched directly."
-msgstr ""
+#~ msgid "Warranty if any."
+#~ msgstr ""
 
-msgid "Sales Person Target Allocation"
-msgstr ""
+#~ msgid "Save Sales BOM after enter Sales BOM and Packing Items, with Qty. Once Sales BOM is saved, it will not be editable again. When making Sales transactions like Sales Invoice, Sales Order and Delivery Note, Parent Item will be selected in the main item table. On selection on Parent Item in the main item table, its child items will be fetched in Packing List table of the transaction. If child item is the serialized item, you will be able to specify its Serial Mo. in packing List table itself. On submission of transaction, system will reduce the stock level of child items from warehouse specified in Packing List table."
+#~ msgstr ""
 
-msgid "With management of Sales Person, ERPNext also allow you to assign target to Sales Persons based on Item Group and Territory. Based on target allocated and actual sales booked by Sales Person, you will get target variance report for the Sales Person."
-msgstr ""
+#~ msgid "In Sales BOM master, there are two sections. Sales BOM Item and Package Item. In Sales BOM item, you will select a Parent Item. The parent item must be a non-stock item. This is non-stock item because there is no stock maintained for it but only the Package Items. If you want to maintain stock for the Parent Item, then you must create a regular Bill of Material (BOM) and package them using a Stock Entry Transactions."
+#~ msgstr ""
 
-msgid "To allocate target, you should open specific Sales Person master."
-msgstr ""
+#~ msgid "End Date: The date on which the recurring orders should stop can be specified here."
+#~ msgstr ""
 
-#, fuzzy
-msgid "Selling &gt; Setup &gt; Sales Person &gt; (Open Sales Person)"
-msgstr ""
+#~ msgid "To allocate target, you should open specific Sales Person master."
+#~ msgstr ""
 
-msgid "Campaign"
-msgstr ""
+#~ msgid "Terms of shipping, if applicable."
+#~ msgstr ""
 
-msgid "A Campaign is a full-scale implementation of a sales strategy to promote a product or a service. This is done in a market segment of a particular geographical area, to achieve specified objectives."
-msgstr ""
+#~ msgid "Recurring Sales Orders"
+#~ msgstr ""
 
-msgid "Sales Bill of Material"
-msgstr ""
+#~ msgid "Address and Contact of your Company."
+#~ msgstr ""
 
-msgid "Sales BOM stands for Sales Bill-of-Material. It's a master where you can list item which are bundled together and sold as one item. For instance, when laptop is delivered, you need to ensure that charger, mouse and laptop bag are delivered and stock level of these items gets affected. To address this scenario, you can set create Sales BOM for the main item, i.e. laptop, and list deliverable items i.e. laptop + charger + other accessories as child items. Following are the steps on how to setup Sales BOM master, and how is it used in the sales transactions. To create new Sales BOM, Go to:"
-msgstr ""
+#~ msgid "Selling &gt;&gt; Setup &gt;&gt; Sales BOM &gt;&gt; New"
+#~ msgstr ""
 
-#, fuzzy
-msgid "Selling &gt;&gt; Setup &gt;&gt; Sales BOM &gt;&gt; New"
-msgstr ""
+#~ msgid "A Sales Person Group called \"Sales Team\" will be created by default. You can click in it to find option to insert new parent and child Sales Person records. Sales Person master will be saved with the name of Sales Person."
+#~ msgstr ""
 
-msgid "In Sales BOM master, there are two sections. Sales BOM Item and Package Item. In Sales BOM item, you will select a Parent Item. The parent item must be a non-stock item. This is non-stock item because there is no stock maintained for it but only the Package Items. If you want to maintain stock for the Parent Item, then you must create a regular Bill of Material (BOM) and package them using a Stock Entry Transactions."
-msgstr ""
+#~ msgid "Selling &gt; Setup &gt; Sales Person &gt; (Open Sales Person)"
+#~ msgstr ""
 
-msgid "In Package Item section, you will list all the child items for which we maintain stock and is delivered to customer."
-msgstr ""
+#~ msgid "On updating the Sales Order, a Recurring ID will be generated which will be same for all recurring orders generated from this particular Sales Order. ERPNext will automatically create new Order and mail a notification to the email IDs you set in the 'Notification Email Address'field."
+#~ msgstr ""
 
-msgid "Save Sales BOM after enter Sales BOM and Packing Items, with Qty. Once Sales BOM is saved, it will not be editable again. When making Sales transactions like Sales Invoice, Sales Order and Delivery Note, Parent Item will be selected in the main item table. On selection on Parent Item in the main item table, its child items will be fetched in Packing List table of the transaction. If child item is the serialized item, you will be able to specify its Serial Mo. in packing List table itself. On submission of transaction, system will reduce the stock level of child items from warehouse specified in Packing List table."
-msgstr ""
+#~ msgid "Step 3: Save and Submit the form."
+#~ msgstr ""
 
-msgid "Use Sales BOM to Manage Schemes:"
-msgstr ""
+#~ msgid "Reservation and Warehouses"
+#~ msgstr ""
 
-msgid "This work-around in Sales BOM was discovered when a customer dealing into nutrition product asked for feature to manage schemes like \"Buy One Get One Free\". To manage the same, he created a non-stock item which was used as Parent Item. In description of item, he entered scheme details with items image indicating the offer. The saleable product was selected in Package Item where qty was two. Hence every time they sold one qty of Parent item under scheme, system deducted two quantities of product from Warehouse."
-msgstr ""
+#~ msgid "Campaign"
+#~ msgstr ""
+
+#~ msgid "What is extra (or payable by the Customer)."
+#~ msgstr ""
+
+#~ msgid "Quotation is a “Submittable” transaction. Since you send this Quotation to your Customer or Lead, you must freeze it so that changes are not made after you send the Quotation. See Document Stages."
+#~ msgstr ""
+
+#~ msgid "Sales Person Target Allocation"
+#~ msgstr ""
+
+#~ msgid "If your Sales Order contains Items for which inventory is tracked (Is Stock Item is “Yes”) then, ERPNext will ask you for “Reservation Warehouse”. If you have set a default Warehouse for the Item, it will automatically set this Warehouse here. This “reserved” quantity will help you project what is the quantity you need to purchase based on all your commitments."
+#~ msgstr ""
+
+#~ msgid "Selling &gt; Setup &gt; Sales Partner"
+#~ msgstr ""
+
+#~ msgid "To include the name of your Partner on your website, check the \"Show in Website\" box. When click on \"Show in Website\", you will see field where you can attach logo of partner's company and enter brief and introduction of partner."
+#~ msgstr ""
+
+#~ msgid "Recurring Type: Here you can update how frequently you want to generate an Order."
+#~ msgstr ""
+
+#~ msgid "Step 4: Once the form is submitted, the Action button will provide three choices.i) Maintenance Visit ii) Maintenance Schedule iii) Invoice."
+#~ msgstr ""
+
+#~ msgid "Returns Policy."
+#~ msgstr ""
+
+#~ msgid "The “Packing List” table will be automatically updated when you “Save” the Sales Order. If any Items in your table are Sales BOM (packets), then the “Packing List” will contain the exploded (detailed) list of your Items."
+#~ msgstr ""
+
+#~ msgid "Sales Partner: If this Sale was booked via a Sales Partner, you can update the Sales Partner’s details with commission and other info that you can aggregate."
+#~ msgstr ""
+
+#~ msgid "If you have a recurring contract with a Customer where you are required to generate a Sales Order on a monthly, quarterly, half-yearly or annual basis, you can check the “Convert To Recurring Order” box."
+#~ msgstr ""
+
+#~ msgid "Sales Order with Order type Maintenance"
+#~ msgstr "Ordenes de Ventas con Orden de Mantenimiento"
+
+#~ msgid "Most of the information in your Sales Order is the same as the Quotation. There are a few amongst other things that a Sales Order will ask you to update."
+#~ msgstr ""
+
+#~ msgid "With management of Sales Person, ERPNext also allow you to assign target to Sales Persons based on Item Group and Territory. Based on target allocated and actual sales booked by Sales Person, you will get target variance report for the Sales Person."
+#~ msgstr ""
+
+#~ msgid "In Package Item section, you will list all the child items for which we maintain stock and is delivered to customer."
+#~ msgstr ""
 
 #~ msgid "Item Price"
 #~ msgstr ""
 
-#~ msgid "Text"
+#~ msgid "Customer Purchase Order number: If your customer has sent you a Purchase Order, you can update its number for future reference (in billing)."
+#~ msgstr ""
+
+#~ msgid "The person who helps in selling your products or services is called a Sales Person. Sales Person master is maintained in tree struture. This allows you defining the heirarchy within the Sales Team. To add/edit Sales Person, go to:"
+#~ msgstr ""
+
+#~ msgid "People who assist you in getting business are termed as Sales Partners. Sales Partners can be represented by different names in ERPNext. You can call them Channel Partner, Distributor, Dealer, Agent, Retailer, Implementation Partner, Reseller etc. For each Sales Partner, you can define commission offer to them. When Sales Partner is selected in transactions, there commission is calculated over Net Total of Sales Order/Invoice or Delivery Note."
+#~ msgstr ""
+
+#~ msgid "By clicking on the Action button and selecting 'Maintenance Visit' you can directly fill the visit form. The Sales Order details will be fetched directly."
+#~ msgstr ""
+
+#~ msgid "Step 2: Mention taxes and other information."
+#~ msgstr ""
+
+#~ msgid "You can track Sales Personwise commission in the report under Selling module. To create a sales partner go to:"
+#~ msgstr ""
+
+#~ msgid "Sales Persons: ERPNext allows you to tag multiple Sales Persons who may have worked on this deal. You can also split the amount in targets of different Sales Persons and track how much incentives they earned on this deal."
+#~ msgstr ""
+
+#~ msgid "Safety / usage warning."
+#~ msgstr ""
+
+#~ msgid "By clicking on the Invoice button you can make an Invoice for your services . The sales orders details will be fetched directly."
+#~ msgstr ""
+
+#~ msgid "This work-around in Sales BOM was discovered when a customer dealing into nutrition product asked for feature to manage schemes like \"Buy One Get One Free\". To manage the same, he created a non-stock item which was used as Parent Item. In description of item, he entered scheme details with items image indicating the offer. The saleable product was selected in Package Item where qty was two. Hence every time they sold one qty of Parent item under scheme, system deducted two quantities of product from Warehouse."
+#~ msgstr ""
+
+#~ msgid "Packing List"
+#~ msgstr ""
+
+#~ msgid "Here you can fill in the details like; of how frequently you want to generate an Order in the 'Recurring Type' field, specify the day of of the month on which the Order needs to be generated in the 'Repeat On Day Of Month' field and the date on which the recurring orders should stop in the 'End Date' field."
+#~ msgstr ""
+
+#~ msgid "Ways of addressing disputes, indemnity, liability, etc."
+#~ msgstr ""
+
+#~ msgid "Sales Team"
+#~ msgstr ""
+
+#~ msgid "Selling &gt; Setup &gt; Sales Person"
+#~ msgstr ""
+
+#~ msgid "When the 'Order Type' of the Sales Order is 'Maintenance' follow the steps given below:"
+#~ msgstr ""
+
+#~ msgid "By clicking on the Action button and selecting 'Maintenance Schedule' you can fill the schedule details. The Sales Order details will be fetched directly."
+#~ msgstr ""
+
+#~ msgid "What should Terms and Conditions Contain?"
+#~ msgstr ""
+
+#~ msgid "A Campaign is a full-scale implementation of a sales strategy to promote a product or a service. This is done in a market segment of a particular geographical area, to achieve specified objectives."
+#~ msgstr ""
+
+#~ msgid "Quotations can also be titled as “Proforma Invoice” or “Proposal”. Select the right heading in the “Print Heading” field in the “More Info” section. To create new Print Headings go to Setup &gt; Branding and Printing &gt; Print Headings."
+#~ msgstr ""
+
+#~ msgid "Validity of the offer."
+#~ msgstr ""
+
+#~ msgid "Expected date of delivery."
 #~ msgstr ""
 
